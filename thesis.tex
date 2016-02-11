@@ -1,0 +1,100 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,bm} %mathematische Normen
+\usepackage{ngerman} %neue deutsche Rechtschreibung und Formelsatz
+\usepackage{amsfonts} %Zusätzliche Formeln/Symbole/Sonderzeichen...
+\usepackage{amssymb} %Formelsatz
+\usepackage{graphicx} %Einbinden von Graphiken
+\usepackage{float} %Flussumgebungen
+\usepackage{cite}
+\usepackage[font=footnotesize]{caption}
+\usepackage{enumerate}
+%\usepackage[utf8]{inputenc} %linux
+\usepackage[ansinew]{inputenc} %windows
+\usepackage[left=3cm,right=2.7cm,top=2.5cm,bottom=2.7cm,includeheadfoot]{geometry}
+
+\date {\today}
+\author{Veit Lüschow}
+\title{Thermal boundary conditions}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+ 
+\section{Model}
+
+\subsection{CMB - heat flux pattern}
+We impose a heat flux balance between the inner and the outer core boundary. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
+\begin{align}
+ -\textrm{Q}_i &= \textrm{Q}_o\\
+ \Leftrightarrow \int \limits_{\Sigma_\textrm{icb}} \kappa \nabla T\big|_\textrm{\tiny{icb}} \cdot \bm e_r dS &= \int \limits_{\Sigma_\textrm{cmb}} \kappa \nabla T\big|_\textrm{\tiny{cmb}} \cdot \bm e_r dS \\
+ \Leftrightarrow \int \limits_{\Sigma_\textrm{icb}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{icb}} dS &= \int \limits_{\Sigma_\textrm{cmb}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{cmb}} dS 
+\end{align}
+For the spectral decomposition it is important to know, that only the 0th order spherical harmonic $\mathcal{Y}_0^0$ yields values $\neq$ 0 when integrated over a closed surface $\Sigma$:
+\begin{align}
+ \int \limits_{\Sigma} \frac{\partial T}{\partial r} dS = \int \limits_{\Sigma} \left(\frac{\partial T}{\partial r}\right)_0^0 \mathcal{Y}_0^0 dS
+\end{align}
+with $\left(\frac{\partial T}{\partial r}\right)_0^0$ being the spectral coefficient of degree and order 0.
+
+\begin{align}
+ \int \limits_{\Sigma_\textrm{icb}} \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{icb} \mathcal{Y}_0^0 dS &=  \int \limits_{\Sigma_\textrm{cmb}} \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{cmb} \mathcal{Y}_0^0 dS\\
+ \Leftrightarrow \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{icb}  r_i^2 &= \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{cmb} r_o^2
+\end{align}
+This allows to formulate a simple relation between the mean radial temperature gradient at the inner and outer boundary.
+\begin{equation}
+  \Leftrightarrow \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{icb} = \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{cmb} \frac{r_o^2}{r_i^2} = - \beta \frac{r_o^2}{r_i^2} = - \beta \frac{1}{a^2}
+\end{equation}
+with $\beta := - \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_{\textrm{cmb}}$ as prescribed temperature gradient at the CMB.\\
+This relation allows us to formulate Neumann boundary conditions for the stationary temperature equation that has the form of a Laplace equation,
+\begin{equation}
+ \nabla ^2 T = 0 \label{eq:laplace}
+\end{equation}
+since we have no internal sources.\\
+\begin{equation}
+ \textrm{ICB:} \quad  \frac{\partial T}{\partial r}\bigg|_{\textrm{icb}} = - \beta \frac{1}{a^2} \mathcal{Y}_0^0 \label{eq:BCicb}
+\end{equation}
+\begin{equation}
+  \textrm{CMB:} \quad \frac{\partial T}{\partial r}\bigg|_{\textrm{cmb}} = - \beta \mathcal{Y}_0^0 + Amp_l^m \mathcal{Y}_l^m \label{eq:BCcmb}
+\end{equation}
+where $Amp_l^m$ is the amplitude of the heat flux heterogeneity.\\
+The general solution of \eqref{eq:laplace} in spherical coordinates reads
+\begin{equation}
+ T = \sum \limits_{l,m} \left[ a_l^m r^l + b_l^m r^{-l-1} \right] \mathcal{Y}_l^m(\vartheta,\varphi) \label{eq:cond}
+\end{equation}
+and its radial derivative 
+\begin{equation}
+\frac{\partial T}{\partial r} = \sum \limits_{l,m} \left[l a_l^m r^{l-1} - (l+1) b_l^m r^{-l-2}\right]  \mathcal{Y}_l^m(\vartheta,\varphi). \label{eq:gradcond}
+\end{equation}
+From \eqref{eq:BCicb} and \eqref{eq:gradcond} follows immediately for $l=m=0$
+\begin{equation}
+ - b_0^0 r_i^{-2} = -\beta \frac{1}{a^2} \quad \Rightarrow \quad b_0^0 = \beta r_o^2
+\end{equation}
+and the algebraic equation 
+\begin{equation}
+ la_l^m r_i^{l-1} - (l+1) b_l^m r_i^{-l-2} = 0 \label{eq:algebraicICB}
+\end{equation}
+for all $l>0$ and $m>0$.\\
+\eqref{eq:BCcmb} and \eqref{eq:cond} together give another equation for the determination of $a_l^m$ and $b_l^m$:
+\begin{equation}
+ l a_l^m r_o^{l-1} - (l+1)b_l^m r_o^{-l-2} = Amp_l^m. \label{eq:algebraicCMB}
+\end{equation}
+Since only a heat flux pattern with $l=m=2$ will be used here, \eqref{eq:algebraicICB} and \eqref{eq:algebraicCMB} simplify to
+\begin{equation}
+ \left( \begin{matrix} 2r_o & -3r_o^{-4}\\ 2r_i & -3r_i^{-4}\end{matrix} \right) \left(\begin{matrix} a_2^2\\b_2^2 \end{matrix}\right) = \left( \begin{matrix} Amp_2^2 \\ 0 \end{matrix} \right).                                                                                                                                                
+\end{equation}
+In a nondimensional form, the solution \eqref{eq:laplace} is
+\begin{equation}
+ \hat{T} = \frac{T}{d\beta} = \left( \frac{a_0^0}{d\beta} + \frac{1}{(a-1)^2\hat{r}} \right) \mathcal{Y}_0^0 + \frac{Amp_2^2}{\beta}\cdot \frac{2a^5\hat{r}^3 - 3(a-1)^5\hat{r}^2}{6(a-1)^4(1-a^5)} \mathcal{Y}_2^2
+\end{equation}
+with $a_0^0$ being an arbitrary integration constant that is chosen to be 0 in the following.
+
+
+\newpage
+% \bibliography{literatur}
+% \bibliographystyle{apalike}
+%\bibitem[1]{literatur} Experimentellen
+
+%\end{thebibliography}
+\end{document}
