@@ -14,7 +14,7 @@
 
 \date {\today}
 \author{Veit Lüschow}
-\title{Thermal boundary conditions}
+\title{Heterogeneous core-mantle boundary heat flux in thermo-chemical core convection}
 
 \begin{document}
 \maketitle
@@ -22,8 +22,35 @@
 \tableofcontents
 \newpage
 
+\section*{Abstract}
+
+Thermal coupling between convection in Earth's mantle and core was proposed to explain asymmetric features of the geomagnetic field during the history of the Earth. The coupling is caused by laterally varying heat transport from the core to the mantle, induced by lateral temperature gradients in the lower-most mantle. Clues for the temperature gradients were found by seismic tomography.\\
+This numerical study aims to explore the influence of these non-uniform boundary conditions, as compared to uniform heat flux and isothermal boundary conditions on thermo-chemical core convection and some distinct dynamo properties. \\ 
+In our model the heat flux pattern is modeled by a single spherical harmonic of degree and order 2. This setting conserves equatorial symmetry, but imposes azimuthal heat flux gradients. \\
+Today, convection in the Earth's core is assumed to be driven predominantly by a combination of thermal and compositional buoyancy sources located at the inner-core boundary. Thermal and compositional diffusivities differ by orders of magnitude. The resulting differences in the dynamical behavior of the two components demand an approach with distinct transport equations and boundary conditions for temperature and chemical concentration. Simulations for five different ratios of thermal and chemical driving are made. \\
+We observe that fixed flux conditions promote larger flow scales and an increase of mean kinetic energy densities. The imposed flux pattern locks the outer core flow to the mantle and therefore breaks its azimuthal symmetry, even for relatively low thermal forcing ratios of 20 \%. Despite of the symmetry breaking, stable and dipolar dynamos can be maintained due to the partly chemical forcing with its uniform boundary conditions. Additionally, the chemical component partly adopts to the geometry of the heat flux pattern because advective transport of concentration is more effective in regions of increased heat flux.
+
+\section{Introduction}
+
+\section{Things to write}
+
+\begin{itemize}
+ \item Model description 
+ \item Motivation: Double diffusive, heat flux pattern
+ \item Heat flux model: consequences for linear profile / convective profile
+ \item Formation of vortex columns
+ \item Influence of chemical forcing on dipolarity (Trümper)
+ \item state of research
+ \item Numerical solution scheme
  
-\section{Model}
+\end{itemize}
+
+ 
+\section{Modeling core convection and dynamo action}
+
+The dynamics in the Earth's core has be decribed mathematically, in order to be accesible to numerical simulation. 
+
+\subsection{Equation of continuity}
 
 \subsection{CMB - heat flux pattern}
 We impose a heat flux balance between the inner and the outer core boundary. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
@@ -86,9 +113,9 @@ Since only a heat flux pattern with $l=m=2$ will be used here, \eqref{eq:algebra
 \end{equation}
 In a nondimensional form, the solution \eqref{eq:laplace} is
 \begin{equation}
- \hat{T} = \frac{T}{d\beta} = \left( \frac{a_0^0}{d\beta} + \frac{1}{(a-1)^2\hat{r}} \right) \mathcal{Y}_0^0
+ \hat{T} = \frac{T}{d\beta} = \left( \frac{a_0^0}{d\beta} + \frac{1}{(a-1)^2\hat{r}} \right) \mathcal{Y}_0^0 + \frac{Amp_2^2}{\beta}\cdot \frac{2a^5\hat{r}^3 - 3(a-1)^5\hat{r}^2}{6(a-1)^4(1-a^5)} \mathcal{Y}_2^2
 \end{equation}
-
+with $a_0^0$ being an arbitrary integration constant that is chosen to be 0 in the following.
 
 
 \newpage
