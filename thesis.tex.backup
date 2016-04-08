@@ -48,7 +48,8 @@ We observe that fixed flux conditions promote larger flow scales and an increase
  
 \section{Modeling core convection and dynamo action}
 
-The dynamics in the Earth's core has be decribed mathematically, in order to be accesible to numerical simulation. 
+Rotating convection and dynamo action in Earth's core is a topic that has been explored by many authors. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Numerical computation time is the limiting factor when it comes to the question how realistic models of the inner core are. The gap between the relevant physical parameters expected for the Earth and the parameters that are reachable for numerical modeling is still big. It cannot be expected that this 
+
 
 \subsection{Equation of continuity}
 
