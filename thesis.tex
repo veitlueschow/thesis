@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{amsmath,bm} %mathematische Normen
-\usepackage{ngerman} %neue deutsche Rechtschreibung und Formelsatz
+\usepackage[english]{babel} %neue deutsche Rechtschreibung und Formelsatz
 \usepackage{amsfonts} %Zusätzliche Formeln/Symbole/Sonderzeichen...
 \usepackage{amssymb} %Formelsatz
 \usepackage{graphicx} %Einbinden von Graphiken
@@ -48,8 +48,29 @@ We observe that fixed flux conditions promote larger flow scales and an increase
  
 \section{Modeling core convection and dynamo action}
 
-Rotating convection and dynamo action in Earth's core is a topic that has been explored by many authors. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Numerical computation time is the limiting factor when it comes to the question how realistic models of the inner core are. The gap between the relevant physical parameters expected for the Earth and the parameters that are reachable for numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of increasing computational resources within the next years. Alternatives to waiting for larger computers that are able to cope with earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results.\\
-A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either cartesian with periodic boundary conditions or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like when looking at the reachable parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. 
+Rotating convection and dynamo action in Earth's core is a topic that has been explored by many authors. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core cane be made. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of increasing computational resources within the next years. Alternatives to waiting for larger computers that are able to cope with earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results.\\
+A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either cartesian with periodic boundary conditions or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like when looking at the reachable parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which cartesian models could advance, are unreachable here. \\
+We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet boundary condition). The thermal instability is maintained by introducing a fixed in - and out flux of heat (Neumann boundary condition). The heat flux at the CMB is laterally heterogeneous, i.e.,  there are regions of higher and lower than average heat flux. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. 
+
+\subsection{Mathematical formulation}
+In the following all relevant equations are introduced. There exist numerous detailed explanations of how to model a magnetohydrodynamic system in a rotating spherical shell so that this description will be held short.\\
+\subsubsection{Frame of reference}
+The liquid outer core (LOC) is modeled by a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and r$_o$: $ a = $ R$_i$ / R$_i$ = 0.35.\\
+The LOC is constantly rotating about the z-axis of a cartesian system. The angular velocity is $\Omega$. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. For all further considerations it is nearby to chose spherical coordinates. 
+\begin{figure}[]
+ \begin{minipage}{0.45\textwidth}
+  \includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
+  \caption*{(a)}
+ \end{minipage}
+ \hfill
+\begin{minipage}{0.45\textwidth}
+  \includegraphics[width=\textwidth]{sketches/spherical_coord2.jpg} 
+  \caption*{(b)}
+  \end{minipage}
+  \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian z-axis. (b) This work uses spherical coordinates with unit vectors $ \bm e_r$, $\bm e_\Phi$ and $\bm e_\vartheta$}
+\end{figure}
+
+
 
 
 \subsection{Equation of continuity}

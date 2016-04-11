@@ -1,5 +1,8 @@
+\select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {2}Things to write}{3}
 \contentsline {section}{\numberline {3}Modeling core convection and dynamo action}{4}
-\contentsline {subsection}{\numberline {3.1}Equation of continuity}{4}
-\contentsline {subsection}{\numberline {3.2}CMB - heat flux pattern}{4}
+\contentsline {subsection}{\numberline {3.1}Mathematical formulation}{4}
+\contentsline {subsubsection}{\numberline {3.1.1}Frame of reference}{4}
+\contentsline {subsection}{\numberline {3.2}Equation of continuity}{5}
+\contentsline {subsection}{\numberline {3.3}CMB - heat flux pattern}{5}
