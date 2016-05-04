@@ -48,15 +48,13 @@ We observe that fixed flux conditions promote larger flow scales and an increase
  
 \section{Modeling core convection and dynamo action}
 
-Rotating convection and dynamo action in Earth's core is a topic that has been explored by many authors. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core cane be made. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of increasing computational resources within the next years. Alternatives to waiting for larger computers that are able to cope with earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results.\\
-A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either cartesian with periodic boundary conditions or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like when looking at the reachable parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which cartesian models could advance, are unreachable here. \\
-We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet boundary condition). The thermal instability is maintained by introducing a fixed in - and out flux of heat (Neumann boundary condition). The heat flux at the CMB is laterally heterogeneous, i.e.,  there are regions of higher and lower than average heat flux. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. 
-
-\subsection{Mathematical formulation}
-In the following all relevant equations are introduced. There exist numerous detailed explanations of how to model a magnetohydrodynamic system in a rotating spherical shell so that this description will be held short.\\
-\subsubsection{Frame of reference}
-The liquid outer core (LOC) is modeled by a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and r$_o$: $ a = $ R$_i$ / R$_i$ = 0.35.\\
-The LOC is constantly rotating about the z-axis of a cartesian system. The angular velocity is $\Omega$. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. For all further considerations it is nearby to chose spherical coordinates. 
+Rotating convection and dynamo action in Earth's core is a topic that has been explored by many authors. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be made. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of increasing computational resources within the next years. Alternatives to waiting for larger computers that are able to cope with earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results.\\
+A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like when looking at the reachable parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
+We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet boundary condition). The thermal forcing is maintained by introducing a fixed in - and out flux of heat (Neumann boundary condition). The heat flux at the CMB can be made laterally heterogeneous, i.e., there are regions of higher and lower than average heat flux. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
+In the following all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short.\\
+\subsection{Frame of reference}
+The liquid outer core (LOC) is modeled with the help of a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and r$_o$: $ a = $ R$_i$ / R$_i$ = 0.35.\\
+The LOC is constantly rotating about the z-axis of a Cartesian system. The angular velocity $\Omega$ is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study,it is quite nearby to chose spherical coordinates. 
 \begin{figure}[]
  \begin{minipage}{0.45\textwidth}
   \includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
@@ -70,10 +68,38 @@ The LOC is constantly rotating about the z-axis of a cartesian system. The angul
   \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian z-axis. (b) This work uses spherical coordinates with unit vectors $ \bm e_r$, $\bm e_\Phi$ and $\bm e_\vartheta$}
 \end{figure}
 
-
-
-
 \subsection{Equation of continuity}
+Per definition, the mass $ \mathcal{M} $ of a material volume $ \mathcal{V}(t) $ with a density $\rho$, moving with a velocity $ \bm u(\bm r,t) $ in a fluid is conserved: 
+\begin{equation}
+\frac{d \mathcal{M}(\mathcal{V})}{dt} = \frac{d}{dt} \int_{\mathcal{V}(t)} \rho(\bm r,t) d^3r  = 0
+\end{equation}
+Using Reynold's Transport Theorem (Appendix ???) and then applying Gauss's Theorem, this yields
+\begin{equation}
+  \int_{\mathcal{V}(t)} \frac{\partial \rho}{\partial t} d^3r + \int_{\partial \mathcal{V}(t)} \rho \bm u \cdot \bm {ds} = \int_{\mathcal{V}(t)} \left[ \frac{\partial \rho}{\partial t} + \bm \nabla \cdot (\rho \bm u) \right] d^3r = 0.
+\end{equation}
+Since this has to hold for all possible material volumes $\mathcal V$, one gets
+\begin{equation}
+ \frac{\partial \rho}{\partial t} + \bm \nabla \cdot (\rho \bm u) = 0,
+\end{equation}
+the general form of the equation of continuity. The introduction of the \textit{material derivative} $\frac{D }{Dt} = \frac{\partial }{\partial t} + \bm u \cdot \bm \nabla$ suggests another useful formulation:
+\begin{equation}
+ \frac{\partial \rho}{\partial t} + \rho \bm \nabla \cdot \bm u + \bm u \cdot \bm \nabla \rho =   \frac{D \rho}{D t} + \rho \bm \nabla \cdot \bm u = 0.
+\end{equation}
+
+
+\subsection{Equation of momentum}
+In a non-rotating frame of reference, the change of momentum of a material volume $\mathcal{V}$ can be written as 
+\begin{align*}
+ \frac{d}{dt} \int_{\mathcal{V}(t)} (\rho u_j) d^3r &= \int_{\mathcal{V}(t)} \left[ \frac{\partial (\rho u_j)}{\partial t} + \frac{\partial}{\partial x_i} (\rho u_j)u_i \right]d^3r \\
+    &=   \int_{\mathcal{V}(t)} \left[ \rho \frac{\partial u_j}{\partial t} + u_j \frac{\partial \rho}{\partial t}  +\rho u_j \frac{\partial u_i}{\partial x_i} + u_i \rho \frac{\partial u_j}{\partial x_i} + u_i u_j \frac{\partial \rho}{\partial x_i} \right] d^3r\\
+    &= \int_{\mathcal{V}(t)} \left[ u_j\left( \frac{\partial \rho}{\partial t} + \rho \bm \nabla \cdot \bm u + \bm u \cdot \bm \nabla \rho \right) + \rho \left( \frac{\partial u_j}{\partial t} + \bm u \cdot \nabla u_j \right) \right]d^3r \\
+    &= \int_{\mathcal{V}(t)}  \rho \frac{D \bm u}{D t} d^3r.
+\end{align*}
+Change of momentum can happen through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm g$:
+\begin{equation}
+ \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm g ds
+\end{equation}
+
 
 \subsection{CMB - heat flux pattern}
 We impose a heat flux balance between the inner and the outer core boundary. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
