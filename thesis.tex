@@ -75,7 +75,7 @@ Per definition, the mass $ \mathcal{M} $ of a material volume $ \mathcal{V}(t) $
 \end{equation}
 Using Reynold's Transport Theorem (Appendix ???) and then applying Gauss's Theorem, this yields
 \begin{equation}
-  \int_{\mathcal{V}(t)} \frac{\partial \rho}{\partial t} d^3r + \int_{\partial \mathcal{V}(t)} \rho \bm u \cdot \bm {ds} = \int_{\mathcal{V}(t)} \left[ \frac{\partial \rho}{\partial t} + \bm \nabla \cdot (\rho \bm u) \right] d^3r = 0.
+  \int_{\mathcal{V}(t)} \frac{\partial \rho}{\partial t} d^3r + \oint_{\partial \mathcal{V}(t)} \rho \bm u \cdot \bm {ds} = \int_{\mathcal{V}(t)} \left[ \frac{\partial \rho}{\partial t} + \bm \nabla \cdot (\rho \bm u) \right] d^3r = 0.
 \end{equation}
 Since this has to hold for all possible material volumes $\mathcal V$, one gets
 \begin{equation}
@@ -88,17 +88,55 @@ the general form of the equation of continuity. The introduction of the \textit{
 
 
 \subsection{Equation of momentum}
-In a non-rotating frame of reference, the change of momentum of a material volume $\mathcal{V}$ can be written as 
+In an inertial, non-rotating frame of reference, the change of momentum of a material volume $\mathcal{V}$ can be written as 
 \begin{align*}
  \frac{d}{dt} \int_{\mathcal{V}(t)} (\rho u_j) d^3r &= \int_{\mathcal{V}(t)} \left[ \frac{\partial (\rho u_j)}{\partial t} + \frac{\partial}{\partial x_i} (\rho u_j)u_i \right]d^3r \\
     &=   \int_{\mathcal{V}(t)} \left[ \rho \frac{\partial u_j}{\partial t} + u_j \frac{\partial \rho}{\partial t}  +\rho u_j \frac{\partial u_i}{\partial x_i} + u_i \rho \frac{\partial u_j}{\partial x_i} + u_i u_j \frac{\partial \rho}{\partial x_i} \right] d^3r\\
     &= \int_{\mathcal{V}(t)} \left[ u_j\left( \frac{\partial \rho}{\partial t} + \rho \bm \nabla \cdot \bm u + \bm u \cdot \bm \nabla \rho \right) + \rho \left( \frac{\partial u_j}{\partial t} + \bm u \cdot \nabla u_j \right) \right]d^3r \\
-    &= \int_{\mathcal{V}(t)}  \rho \frac{D \bm u}{D t} d^3r.
+    &= \int_{\mathcal{V}(t)}  \rho \frac{D u_j}{D t} d^3r.
 \end{align*}
-Change of momentum can happen through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm g$:
+Change of momentum can happen through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm t$:
 \begin{equation}
- \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm g ds
+ \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds
+ \label{eq:force_balance1}
 \end{equation}
+
+If a frame of reference is rotating - as in this case - it is no longer an inertial system and therefore pseudo forces have to be expected. Under the assumption of a constant rotation with the angular velocity $\Omega$ and a fixed rotation axis parallel to the Cartesian z-axis, the change of a quantity $\bm P$ in the rotating frame of reference and its change in the non-rotating inertial frame relate as
+\begin{equation}
+\left(\frac{d \bm P}{dt}\right)_F = \left(\frac{d \bm P}{dt}\right)_R + \bm \Omega \times \bm P,
+\label{eq:frame_of_reference_rule}
+\end{equation}
+where the subscripts $F$ and $R$ indicate the \textit{fixed} and the \textit{rotating} frame. Applying rule \eqref{eq:frame_of_reference_rule} twice to a position vector $\bm r$ yields 
+\begin{equation}
+ \bm a_F = \bm a_R + 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r)
+ \label{eq:frame_of_reference_accelerations}
+\end{equation}
+for accelerations $\bm a$. $2\bm \Omega \times \bm u_R$ is the Coriolis force and $\bm \Omega \times (\bm \Omega \times \bm r)$ the centripetal force. \\
+With the help of \eqref{eq:frame_of_reference_accelerations}, $\frac{D \bm u}{D t}$ can be transferred from the inertial frame to the frame of reference:
+\begin{equation}
+ \frac{D \bm u_F}{D t} = \frac{D \bm u_R}{D t} + 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r)
+ \label{eq:frame_of_reference_material}
+\end{equation}
+From now on, the subscripts $F$ and $R$ will be cut and all quantities will be measured in the rotating frame. With \eqref{eq:frame_of_reference_material}, \eqref{eq:force_balance1} changes to
+\begin{align}
+  \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds 
+  - \int_{\mathcal{V}} \rho \left( 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r) \right) d^3r.
+  \label{eq:force_balance2}
+\end{align}
+The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
+\begin{equation}
+ \oint_{\partial \mathcal{V}} \bm t ds = \int_{\mathcal{V}} \bm \nabla \cdot \underline{\tau} d^3r,
+\end{equation}
+where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq Approximation which will be discussed subsequently. This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\
+The body forces $\bm f$ consist of buoyancy forces due to the gravity force $\bm g$ and the \textit{Lorentz force} which will be discussed in section \ref{sec:lorentz}.
+
+\subsection{The Lorentz force}
+\label{sec:lorentz}
+
+\subsection{The Boussinesq Approximation}
+
+
+\subsection{Nondimensional Equations}
 
 
 \subsection{CMB - heat flux pattern}

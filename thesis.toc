@@ -5,4 +5,7 @@
 \contentsline {subsection}{\numberline {3.1}Frame of reference}{4}
 \contentsline {subsection}{\numberline {3.2}Equation of continuity}{5}
 \contentsline {subsection}{\numberline {3.3}Equation of momentum}{6}
-\contentsline {subsection}{\numberline {3.4}CMB - heat flux pattern}{6}
+\contentsline {subsection}{\numberline {3.4}The Lorentz force}{7}
+\contentsline {subsection}{\numberline {3.5}The Boussinesq Approximation}{7}
+\contentsline {subsection}{\numberline {3.6}Nondimensional Equations}{7}
+\contentsline {subsection}{\numberline {3.7}CMB - heat flux pattern}{7}
