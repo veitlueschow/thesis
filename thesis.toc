@@ -1,11 +1,21 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {section}{\numberline {2}Things to write}{3}
-\contentsline {section}{\numberline {3}Modeling core convection and dynamo action}{4}
-\contentsline {subsection}{\numberline {3.1}Frame of reference}{4}
-\contentsline {subsection}{\numberline {3.2}Equation of continuity}{5}
-\contentsline {subsection}{\numberline {3.3}Equation of momentum}{6}
-\contentsline {subsection}{\numberline {3.4}The Lorentz force}{7}
-\contentsline {subsection}{\numberline {3.5}The Boussinesq Approximation}{7}
-\contentsline {subsection}{\numberline {3.6}Nondimensional Equations}{7}
-\contentsline {subsection}{\numberline {3.7}CMB - heat flux pattern}{7}
+\contentsline {section}{\numberline {1}Introduction and Motivation}{3}
+\contentsline {subsection}{\numberline {1.1}A thermo-chemical approach to dynamo modeling}{3}
+\contentsline {subsection}{\numberline {1.2}Why use heterogeneous heat flux boundary conditions?}{3}
+\contentsline {section}{\numberline {2}Modeling core convection and dynamo action}{3}
+\contentsline {subsection}{\numberline {2.1}Frame of reference}{4}
+\contentsline {subsection}{\numberline {2.2}Equation of continuity}{5}
+\contentsline {subsection}{\numberline {2.3}Equation of momentum}{6}
+\contentsline {subsection}{\numberline {2.4}Maxwell equations, Lorentz force and Induction equation}{7}
+\contentsline {subsection}{\numberline {2.5}The Boussinesq Approximation}{8}
+\contentsline {subsection}{\numberline {2.6}Nondimensional Equations}{8}
+\contentsline {subsection}{\numberline {2.7}CMB - heat flux pattern}{8}
+\contentsline {section}{\numberline {3}Numerical Method}{10}
+\contentsline {section}{\numberline {4}State of research}{10}
+\contentsline {section}{\numberline {5}Thermo-chemical core convection}{10}
+\contentsline {subsection}{\numberline {5.1}The formation of stationary vortex columns attached to mantle heterogeneities}{10}
+\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{10}
+\contentsline {subsection}{\numberline {6.1}The creation of radial magnetic flux patches locked to the mantle}{10}
+\contentsline {subsection}{\numberline {6.2}The influence of chemical forcing on magnetic field properties}{10}
+\contentsline {section}{\numberline {7}Summary}{10}
+\contentsline {section}{\numberline {8}Conclusion and Outlook}{10}

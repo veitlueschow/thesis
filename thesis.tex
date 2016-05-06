@@ -30,20 +30,10 @@ In our model the heat flux pattern is modeled by a single spherical harmonic of 
 Today, convection in the Earth's core is assumed to be driven predominantly by a combination of thermal and compositional buoyancy sources located at the inner-core boundary. Thermal and compositional diffusivities differ by orders of magnitude. The resulting differences in the dynamical behavior of the two components demand an approach with distinct transport equations and boundary conditions for temperature and chemical concentration. Simulations for five different ratios of thermal and chemical driving are made. \\
 We observe that fixed flux conditions promote larger flow scales and an increase of mean kinetic energy densities. The imposed flux pattern locks the outer core flow to the mantle and therefore breaks its azimuthal symmetry, even for relatively low thermal forcing ratios of 20 \%. Despite of the symmetry breaking, stable and dipolar dynamos can be maintained due to the partly chemical forcing with its uniform boundary conditions. Additionally, the chemical component partly adopts to the geometry of the heat flux pattern because advective transport of concentration is more effective in regions of increased heat flux.
 
-\section{Introduction}
+\section{Introduction and Motivation}
 
-\section{Things to write}
-
-\begin{itemize}
- \item Model description 
- \item Motivation: Double diffusive, heat flux pattern
- \item Heat flux model: consequences for linear profile / convective profile
- \item Formation of vortex columns
- \item Influence of chemical forcing on dipolarity (Trümper)
- \item state of research
- \item Numerical solution scheme
- 
-\end{itemize}
+\subsection{A thermo-chemical approach to dynamo modeling}
+\subsection{Why use heterogeneous heat flux boundary conditions?}
 
  
 \section{Modeling core convection and dynamo action}
@@ -130,8 +120,17 @@ The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress ten
 where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq Approximation which will be discussed subsequently. This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\
 The body forces $\bm f$ consist of buoyancy forces due to the gravity force $\bm g$ and the \textit{Lorentz force} which will be discussed in section \ref{sec:lorentz}.
 
-\subsection{The Lorentz force}
+\subsection{Maxwell equations, Lorentz force and Induction equation}
 \label{sec:lorentz}
+The liquid outer core consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and influence the flow field. The induction equation is a transport equation for a magnetic fields $\bm B$ 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
+In the scope of core convection, a reduced form of the Maxwell equations (Pre-Maxwell equations) suffices (Zitat Davidson ???): 
+\begin{align}
+ \bm \nabla \times \bm B &= \mu_0 \bm J \quad & \text{(Amp\`{e}re's law)} \\
+ \bm \nabla \cdot \bm J &= 0 \quad & \text{(Charge conservation)}\\
+ \bm \nabla \times \bm E &= - \frac{\partial \bm B}{\partial t} \quad & \text{(Faraday's law)}\\
+ \bm \nabla \cdot \bm B &= 0 \quad & \text{(No magnetic monopoles)} 
+\end{align}
+
 
 \subsection{The Boussinesq Approximation}
 
@@ -140,7 +139,7 @@ The body forces $\bm f$ consist of buoyancy forces due to the gravity force $\bm
 
 
 \subsection{CMB - heat flux pattern}
-We impose a heat flux balance between the inner and the outer core boundary. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
+A heat flux balance between the inner and the outer core boundary is imposed. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
 \begin{align}
  -\textrm{Q}_i &= \textrm{Q}_o\\
  \Leftrightarrow \int \limits_{\Sigma_\textrm{icb}} \kappa \nabla T\big|_\textrm{\tiny{icb}} \cdot \bm e_r dS &= \int \limits_{\Sigma_\textrm{cmb}} \kappa \nabla T\big|_\textrm{\tiny{cmb}} \cdot \bm e_r dS \\
@@ -165,7 +164,7 @@ This relation allows us to formulate Neumann boundary conditions for the station
 \begin{equation}
  \nabla ^2 T = 0 \label{eq:laplace}
 \end{equation}
-since we have no internal sources.\\
+since there are no internal sources.\\
 \begin{equation}
  \textrm{ICB:} \quad  \frac{\partial T}{\partial r}\bigg|_{\textrm{icb}} = - \beta \frac{1}{a^2} \mathcal{Y}_0^0 \label{eq:BCicb}
 \end{equation}
@@ -204,7 +203,20 @@ In a nondimensional form, the solution \eqref{eq:laplace} is
 \end{equation}
 with $a_0^0$ being an arbitrary integration constant that is chosen to be 0 in the following.
 
+\section{Numerical Method}
 
+\section{State of research}
+
+\section{Thermo-chemical core convection}
+\subsection{The formation of stationary vortex columns attached to mantle heterogeneities}
+
+\section{Thermo-chemical dynamo action}
+\subsection{The creation of radial magnetic flux patches locked to the mantle}
+\subsection{The influence of chemical forcing on magnetic field properties}
+
+\section{Summary}
+
+\section{Conclusion and Outlook}
 \newpage
 % \bibliography{literatur}
 % \bibliographystyle{apalike}

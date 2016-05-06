@@ -95,9 +95,9 @@ In an inertial, non-rotating frame of reference, the change of momentum of a mat
     &= \int_{\mathcal{V}(t)} \left[ u_j\left( \frac{\partial \rho}{\partial t} + \rho \bm \nabla \cdot \bm u + \bm u \cdot \bm \nabla \rho \right) + \rho \left( \frac{\partial u_j}{\partial t} + \bm u \cdot \nabla u_j \right) \right]d^3r \\
     &= \int_{\mathcal{V}(t)}  \rho \frac{D u_j}{D t} d^3r.
 \end{align*}
-Change of momentum can happen through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm g$:
+Change of momentum can happen through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm t$:
 \begin{equation}
- \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm g ds
+ \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds
  \label{eq:force_balance1}
 \end{equation}
 
@@ -119,23 +119,37 @@ With the help of \eqref{eq:frame_of_reference_accelerations}, $\frac{D \bm u}{D 
 \end{equation}
 From now on, the subscripts $F$ and $R$ will be cut and all quantities will be measured in the rotating frame. With \eqref{eq:frame_of_reference_material}, \eqref{eq:force_balance1} changes to
 \begin{align}
-  \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm g ds 
+  \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds 
   - \int_{\mathcal{V}} \rho \left( 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r) \right) d^3r.
   \label{eq:force_balance2}
 \end{align}
-The \textit{Cauchy Theorem} relates the surface forces $\bm g$ to the stress tensor $\underline{\tau}$ linearly via $\bm g = \underline{\tau} \cdot \bm n$, where $\bm n$ is the normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
+The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
 \begin{equation}
- \oint_{\partial \mathcal{V}} \bm g ds = \int_{\mathcal{V}} \bm \nabla \cdot \underline{\tau} d^3r,
+ \oint_{\partial \mathcal{V}} \bm t ds = \int_{\mathcal{V}} \bm \nabla \cdot \underline{\tau} d^3r,
 \end{equation}
-where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq Approximation which will be discussed subsequently. This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid.
+where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq Approximation which will be discussed subsequently. This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\
+The body forces $\bm f$ consist of buoyancy forces due to the gravity force $\bm g$ and the \textit{Lorentz force} which will be discussed in section \ref{sec:lorentz}.
+
+\subsection{Maxwell equations, Lorentz force and Induction equation}
+\label{sec:lorentz}
+The liquid outer core consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and influence the flow field. The induction equation is a transport equation for a magnetic fields $\bm B$ 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
+In the scope of core convection, a reduced form of the Maxwell equations (Pre-Maxwell equations) suffices (Zitat Davidson ???): 
+\begin{align}
+ \bm \nabla \times \bm B &= \mu_0 \bm J \quad & \text{(Amp\`{e}re's law)} \\
+ \bm \nabla \cdot \bm J &= 0 \quad & \text{(Charge conservation)}\\
+ \bm \nabla \times \bm E &= - \frac{\partial \bm B}{\partial t} \quad & \text{(Faraday's law)}\\
+ \bm \nabla \cdot \bm B &= 0 \quad & \text{(No magnetic monopoles)} 
+\end{align}
+
 
 \subsection{The Boussinesq Approximation}
+
 
 \subsection{Nondimensional Equations}
 
 
 \subsection{CMB - heat flux pattern}
-We impose a heat flux balance between the inner and the outer core boundary. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
+A heat flux balance between the inner and the outer core boundary is imposed. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
 \begin{align}
  -\textrm{Q}_i &= \textrm{Q}_o\\
  \Leftrightarrow \int \limits_{\Sigma_\textrm{icb}} \kappa \nabla T\big|_\textrm{\tiny{icb}} \cdot \bm e_r dS &= \int \limits_{\Sigma_\textrm{cmb}} \kappa \nabla T\big|_\textrm{\tiny{cmb}} \cdot \bm e_r dS \\
@@ -160,7 +174,7 @@ This relation allows us to formulate Neumann boundary conditions for the station
 \begin{equation}
  \nabla ^2 T = 0 \label{eq:laplace}
 \end{equation}
-since we have no internal sources.\\
+since there are no internal sources.\\
 \begin{equation}
  \textrm{ICB:} \quad  \frac{\partial T}{\partial r}\bigg|_{\textrm{icb}} = - \beta \frac{1}{a^2} \mathcal{Y}_0^0 \label{eq:BCicb}
 \end{equation}
