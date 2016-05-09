@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  6 MAY 2016 12:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  9 MAY 2016 19:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -159,7 +159,19 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
-(/usr/share/texmf/tex/latex/caption/caption.sty
+(/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+
+
+Package natbib Warning: The `cite' package should not be used
+(natbib)                with natbib. Use option `sort' instead.
+
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+LaTeX Info: Redefining \citenum on input line 708.
+\c@NAT@ctr=\count102
+) (/usr/share/texmf/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 (/usr/share/texmf/tex/latex/caption/caption3.sty
@@ -173,7 +185,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen120
 \caption@hangindent=\dimen121
 )
-\c@ContinuedFloat=\count102
+\c@ContinuedFloat=\count103
 Package caption Info: float package is loaded.
 )
 (/usr/share/texmf/tex/latex/tools/enumerate.sty
@@ -202,9 +214,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texmf/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count103
-\Gm@cntv=\count104
-\c@Gm@tempcnt=\count105
+\Gm@cnth=\count104
+\Gm@cntv=\count105
+\c@Gm@tempcnt=\count106
 \Gm@bindingoffset=\dimen122
 \Gm@wd@mp=\dimen123
 \Gm@odd@mp=\dimen124
@@ -217,31 +229,31 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
+\scratchcounter=\count107
 \scratchdimen=\dimen130
 \scratchbox=\box30
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\nofMPsegments=\count108
+\nofMParguments=\count109
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count109
+\MPscratchCnt=\count110
 \MPscratchDim=\dimen131
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks27
 ) (/usr/share/texmf/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -324,11 +336,11 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -339,61 +351,65 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `thesis.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 41--45
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
  []
 
 [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 48.
+               Default added (so using `tbp') on input line 50.
 
 <sketches/spherical_coord.jpg, id=15, 252.945pt x 289.83281pt>
 File: sketches/spherical_coord.jpg Graphic file (type jpg)
 
 <use sketches/spherical_coord.jpg>
-Package pdftex.def Info: sketches/spherical_coord.jpg used on input line 50.
+Package pdftex.def Info: sketches/spherical_coord.jpg used on input line 52.
 (pdftex.def)             Requested size: 195.89594pt x 224.46773pt.
 
 <sketches/spherical_coord2.jpg, id=16, 209.28188pt x 216.05719pt>
 File: sketches/spherical_coord2.jpg Graphic file (type jpg)
 
 <use sketches/spherical_coord2.jpg>
-Package pdftex.def Info: sketches/spherical_coord2.jpg used on input line 55.
+Package pdftex.def Info: sketches/spherical_coord2.jpg used on input line 57.
 (pdftex.def)             Requested size: 195.89594pt x 202.2366pt.
  [4] [5 <./sketches/spherical_coord.jpg> <./sketches/spherical_coord2.jpg>] [6]
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+ [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
 
  []
 
-[8] [9] [10] (./thesis.aux) ) 
+[9] [10] (./thesis.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 3.
+
+) [11] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4613 strings out of 493315
- 65109 string characters out of 6145894
- 142302 words of memory out of 5000000
- 7969 multiletter control sequences out of 15000+600000
+ 4948 strings out of 493315
+ 69098 string characters out of 6145894
+ 147241 words of memory out of 5000000
+ 8297 multiletter control sequences out of 15000+600000
  19227 words of font info for 71 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,12n,38p,892b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/c
-mbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sh
-are/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
-hare/texmf/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/fonts/t
-ype1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/amsf
-onts/cm/cmr7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
-r/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb>
-Output written on thesis.pdf (10 pages, 230139 bytes).
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbsy10
+.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
+xmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
+exmf/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/fonts/type1/p
+ublic/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
+cmti12.pfb>
+Output written on thesis.pdf (11 pages, 239139 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

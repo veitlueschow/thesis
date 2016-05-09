@@ -6,10 +6,12 @@
 \contentsline {subsection}{\numberline {2.1}Frame of reference}{4}
 \contentsline {subsection}{\numberline {2.2}Equation of continuity}{5}
 \contentsline {subsection}{\numberline {2.3}Equation of momentum}{6}
-\contentsline {subsection}{\numberline {2.4}Maxwell equations, Lorentz force and Induction equation}{7}
-\contentsline {subsection}{\numberline {2.5}The Boussinesq Approximation}{8}
-\contentsline {subsection}{\numberline {2.6}Nondimensional Equations}{8}
-\contentsline {subsection}{\numberline {2.7}CMB - heat flux pattern}{8}
+\contentsline {subsection}{\numberline {2.4}Maxwell equations, Lorentz force and induction equation}{7}
+\contentsline {subsection}{\numberline {2.5}Conservation of energy}{8}
+\contentsline {subsection}{\numberline {2.6}Conservation of the light component}{8}
+\contentsline {subsection}{\numberline {2.7}The Boussinesq approximation}{8}
+\contentsline {subsection}{\numberline {2.8}Nondimensional equations}{8}
+\contentsline {subsection}{\numberline {2.9}CMB - heat flux pattern}{8}
 \contentsline {section}{\numberline {3}Numerical Method}{10}
 \contentsline {section}{\numberline {4}State of research}{10}
 \contentsline {section}{\numberline {5}Thermo-chemical core convection}{10}

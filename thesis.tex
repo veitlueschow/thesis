@@ -6,11 +6,13 @@
 \usepackage{graphicx} %Einbinden von Graphiken
 \usepackage{float} %Flussumgebungen
 \usepackage{cite}
+\usepackage{natbib}
 \usepackage[font=footnotesize]{caption}
 \usepackage{enumerate}
 %\usepackage[utf8]{inputenc} %linux
 \usepackage[ansinew]{inputenc} %windows
 \usepackage[left=3cm,right=2.7cm,top=2.5cm,bottom=2.7cm,includeheadfoot]{geometry}
+
 
 \date {\today}
 \author{Veit Lüschow}
@@ -117,25 +119,74 @@ The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress ten
 \begin{equation}
  \oint_{\partial \mathcal{V}} \bm t ds = \int_{\mathcal{V}} \bm \nabla \cdot \underline{\tau} d^3r,
 \end{equation}
-where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq Approximation which will be discussed subsequently. This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\
-The body forces $\bm f$ consist of buoyancy forces due to the gravity force $\bm g$ and the \textit{Lorentz force} which will be discussed in section \ref{sec:lorentz}.
+where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq approximation which will be discussed subsequently. This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\
+The body forces $\bm f$ consist of buoyancy forces due to the gravity force $\bm g$ and the \textit{Lorentz force} $\bm f_l$ which will be discussed in section \ref{sec:lorentz}.
 
-\subsection{Maxwell equations, Lorentz force and Induction equation}
+\subsection{Maxwell equations, Lorentz force and induction equation}
 \label{sec:lorentz}
 The liquid outer core consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and influence the flow field. The induction equation is a transport equation for a magnetic fields $\bm B$ 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
 In the scope of core convection, a reduced form of the Maxwell equations (Pre-Maxwell equations) suffices (Zitat Davidson ???): 
+\begin{subequations} \label{eq:maxwell}
 \begin{align}
- \bm \nabla \times \bm B &= \mu_0 \bm J \quad & \text{(Amp\`{e}re's law)} \\
- \bm \nabla \cdot \bm J &= 0 \quad & \text{(Charge conservation)}\\
+ \label{eq:ampere}
+ \bm \nabla \times \bm B &= \mu_0 \bm j \quad & \text{(Amp\`{e}re's law)} \\
+ \label{eq:charge_conservation}
+ \bm \nabla \cdot \bm j &= 0 \quad & \text{(Charge conservation)}\\
+\label{eq:faraday}
  \bm \nabla \times \bm E &= - \frac{\partial \bm B}{\partial t} \quad & \text{(Faraday's law)}\\
+ \label{eq:no_magnetic_monopoles}
  \bm \nabla \cdot \bm B &= 0 \quad & \text{(No magnetic monopoles)} 
 \end{align}
+\end{subequations}
+Additionally, an extended version of \textit{Ohm's law} for moving conductors
+\begin{equation}
+\label{eq:ohm}
+ \bm j = \sigma (\bm E + \bm u  \times \bm B)
+\end{equation}
+and an expression for the \textit{Lorentz force}
+\begin{equation}
+\label{eq:lorentz}
+ \bm f_l = \bm j \times \bm B = \frac{1}{\mu_0} (\bm \nabla \times \bm B \times \bm B)
+\end{equation}
+are needed. $\bm E$ describes the electric field, $\bm j$ the current density, $\mu_0$ the vacuum permeability and $\sigma$ the conductivity of the fluid.\\
+The \textit{induction equation}, a transport equation for the magnetic field, can be derived using \eqref{eq:faraday}, \eqref{eq:ohm} and the solenoidal character of $\bm B$ \eqref{eq:no_magnetic_monopoles} and $\bm u$:
+\begin{equation}
+ \label{eq:induction}
+ \frac{\partial \bm B}{\partial t} = \bm \nabla (\bm u \times \bm B) + \eta \bm \nabla^2 \bm B,
+\end{equation}
+where $\eta = \frac{1}{\sigma \mu_0}$ is the magnetic diffusivity.
+
+\subsection{Conservation of energy}
+\label{sec:internal_energy}
+The conservation of internal energy in a fluid reads
+\begin{equation}
+ \label{eq:internal_energy}
+ \rho \frac{D e}{D t} =  -\bm \nabla \cdot \bm q_\textrm{\tiny T} - p(\bm \nabla \cdot \bm u) + \Phi,
+\end{equation}
+where the internal energy per unit mass is described by $e$. It can be changed by either \textit{volume compression} $- p(\bm \nabla \cdot \bm u)$, \textit{viscous dissipation} $\Phi$ or a \textit{heat flux} $\bm q_\textrm{\tiny T}$ through the fluid surface. In the context of the Boussinesq approximation (section \ref{sec:boussinesq}), viscous dissipation $\Phi$ is negligible and $\bm \nabla \cdot \bm u = 0$. Furthermore, using the \textit{Fourier law} $ \bm q_\textrm{\tiny T} = - k_\textrm{\tiny T} \bm \nabla T$ and the \textit{perfect gas} approximation $e = c_\textrm{\tiny P} T$, \eqref{eq:internal_energy} can be transformed to 
+\begin{equation}
+ \label{eq:heat_equation}
+ \frac{D T}{D t} = \kappa_\textrm{\tiny T} \bm \nabla^2 T.
+\end{equation}
+Here, $\kappa_\textrm{\tiny T} = \frac{k}{c_\textrm{\tiny P} \rho}$ is the thermal diffusivity and $T$ the fluid temperature. Internal sources of $e$ in the liquid outer core are completely omitted in this study.\\
+The derivation of equation \eqref{eq:heat_equation} was adopted from \citet{kundu2008fluid}.
+
+\subsection{Conservation of the light component}
+The light component is released at the ICB as the inner core slowly crystallizes and serves as an additional source of buoyancy. In this model, the light component per unit mass, $C$, can only change by a flux $\bm q_\textrm{\tiny C}$through the surface of the fluid. According to section \ref{sec:internal_energy},
+\begin{equation*}
+ \rho \frac{D C}{Dt} = - \bm \nabla \cdot \bm q_\textrm{\tiny C}
+\end{equation*}
+can be transformed to 
+\begin{equation}
+ \frac{D C}{D t} = \kappa_\textrm{\tiny C} \bm \nabla^2 C,
+\end{equation}
+using $\bm q_\textrm{\tiny C} = - k_\textrm{\tiny C} \bm \nabla C$ and introducing $\kappa_\textrm{\tiny C} = \frac{k_\textrm{\tiny C}}{\rho}$
 
 
-\subsection{The Boussinesq Approximation}
+\subsection{The Boussinesq approximation}
+\label{sec:boussinesq}
 
-
-\subsection{Nondimensional Equations}
+\subsection{Nondimensional equations}
 
 
 \subsection{CMB - heat flux pattern}
@@ -218,6 +269,10 @@ with $a_0^0$ being an arbitrary integration constant that is chosen to be 0 in t
 
 \section{Conclusion and Outlook}
 \newpage
+
+\newpage
+ \bibliography{literatur}
+ \bibliographystyle{apalike}
 % \bibliography{literatur}
 % \bibliographystyle{apalike}
 %\bibitem[1]{literatur} Experimentellen
