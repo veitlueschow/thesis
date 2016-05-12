@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: apalike.bst
 Database file #1: literatur.bib
-You've used 1 entry,
+Warning--empty publisher in Tilgner2007
+You've used 3 entries,
             1935 wiz_defined-function locations,
-            476 strings with 3748 characters,
-and the built_in function-call counts, 328 in all, are:
-= -- 30
-> -- 13
-< -- 1
-+ -- 4
-- -- 4
-* -- 23
-:= -- 65
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 13
-empty$ -- 21
-format.name$ -- 7
-if$ -- 60
+            490 strings with 3978 characters,
+and the built_in function-call counts, 894 in all, are:
+= -- 81
+> -- 27
+< -- 4
++ -- 8
+- -- 8
+* -- 63
+:= -- 168
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 17
+chr.to.int$ -- 3
+cite$ -- 4
+duplicate$ -- 41
+empty$ -- 67
+format.name$ -- 13
+if$ -- 170
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 6
+missing$ -- 5
+newline$ -- 18
+num.names$ -- 9
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 19
 quote$ -- 0
-skip$ -- 12
+skip$ -- 33
 stack$ -- 0
-substring$ -- 12
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 36
+swap$ -- 4
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 0
-while$ -- 2
+type$ -- 14
+warning$ -- 1
+while$ -- 6
 width$ -- 0
-write$ -- 14
+write$ -- 39
+(There was 1 warning)
