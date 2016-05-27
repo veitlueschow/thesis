@@ -4,45 +4,45 @@ The top-level auxiliary file: thesis.aux
 The style file: apalike.bst
 Database file #1: literatur.bib
 Warning--empty publisher in Tilgner2007
-You've used 3 entries,
+You've used 16 entries,
             1935 wiz_defined-function locations,
-            490 strings with 3978 characters,
-and the built_in function-call counts, 894 in all, are:
-= -- 81
-> -- 27
-< -- 4
-+ -- 8
-- -- 8
-* -- 63
-:= -- 168
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 17
-chr.to.int$ -- 3
-cite$ -- 4
-duplicate$ -- 41
-empty$ -- 67
-format.name$ -- 13
-if$ -- 170
+            577 strings with 6137 characters,
+and the built_in function-call counts, 6209 in all, are:
+= -- 626
+> -- 214
+< -- 13
++ -- 76
+- -- 68
+* -- 535
+:= -- 1070
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 112
+chr.to.int$ -- 16
+cite$ -- 17
+duplicate$ -- 232
+empty$ -- 448
+format.name$ -- 98
+if$ -- 1204
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 5
-newline$ -- 18
-num.names$ -- 9
-pop$ -- 21
+missing$ -- 18
+newline$ -- 83
+num.names$ -- 48
+pop$ -- 84
 preamble$ -- 1
-purify$ -- 19
+purify$ -- 114
 quote$ -- 0
-skip$ -- 33
+skip$ -- 183
 stack$ -- 0
-substring$ -- 36
-swap$ -- 4
-text.length$ -- 1
+substring$ -- 496
+swap$ -- 26
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 92
 warning$ -- 1
-while$ -- 6
+while$ -- 59
 width$ -- 0
-write$ -- 39
+write$ -- 208
 (There was 1 warning)

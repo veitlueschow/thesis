@@ -1,18 +1,90 @@
 \begin{thebibliography}{}
 
+\bibitem[Anufriev et~al., 2005]{anufriev2005boussinesq}
+Anufriev, A., Jones, C., and Soward, A. (2005).
+\newblock The boussinesq and anelastic liquid approximations for convection in
+  the earth's core.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 152(3):163--190.
+
+\bibitem[Aubert et~al., 2008]{aubert2008thermochemical}
+Aubert, J., Amit, H., Hulot, G., and Olson, P. (2008).
+\newblock Thermochemical flows couple the earth's inner core growth to mantle
+  heterogeneity.
+\newblock {\em Nature}, 454(7205):758--761.
+
 \bibitem[Blakely, 1996]{blakely1996potential}
 Blakely, R.~J. (1996).
 \newblock {\em Potential theory in gravity and magnetic applications}.
 \newblock Cambridge University Press.
+
+\bibitem[Braginsky and Roberts, 1995]{braginsky1995equations}
+Braginsky, S.~I. and Roberts, P.~H. (1995).
+\newblock Equations governing convection in earth's core and the geodynamo.
+\newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 79(1-4):1--97.
+
+\bibitem[Christensen and Aubert, 2006]{christensen2006scaling}
+Christensen, U. and Aubert, J. (2006).
+\newblock Scaling properties of convection-driven dynamos in rotating spherical
+  shells and application to planetary magnetic fields.
+\newblock {\em Geophysical Journal International}, 166(1):97--114.
+
+\bibitem[Dormy et~al., 1998]{dormy1998mhd}
+Dormy, E., Cardin, P., and Jault, D. (1998).
+\newblock Mhd flow in a slightly differentially rotating spherical shell, with
+  conducting inner core, in a dipolar magnetic field.
+\newblock {\em Earth and Planetary Science Letters}, 160(1):15--30.
+
+\bibitem[Glatzmaier and Roberts, 1995]{glatzmaier1995three}
+Glatzmaier, G.~A. and Roberts, P.~H. (1995).
+\newblock A three-dimensional convective dynamo solution with rotating and
+  finitely conducting inner core and mantle.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 91(1):63--75.
+
+\bibitem[Hori et~al., 2014]{hori2014ancient}
+Hori, K., Wicht, J., and Dietrich, W. (2014).
+\newblock Ancient dynamos of terrestrial planets more sensitive to core-mantle
+  boundary heat flows.
+\newblock {\em Planetary and Space Science}, 98:30--40.
+
+\bibitem[Jones, 2007]{jones2007thermal}
+Jones, C. (2007).
+\newblock Thermal and compositional convection in the outer core.
+\newblock {\em Core Dynamics}, pages 131--185.
+
+\bibitem[Kuang and Bloxham, 1997]{kuang1997earth}
+Kuang, W. and Bloxham, J. (1997).
+\newblock An earth-like numerical dynamo model.
+\newblock {\em Nature}, 389(6649):371--374.
 
 \bibitem[Kundu and Cohen, 2008]{kundu2008fluid}
 Kundu, P. and Cohen, I. (2008).
 \newblock Fluid mechanics.
 \newblock {\em Academic, San Diego}.
 
+\bibitem[Olson and Christensen, 2002]{olson2002time}
+Olson, P. and Christensen, U. (2002).
+\newblock The time-averaged magnetic field in numerical dynamos with
+  non-uniform boundary heat flow.
+\newblock {\em Geophysical Journal International}, 151(3):809--823.
+
 \bibitem[Tilgner, 2007]{Tilgner2007}
 Tilgner, A. (2007).
 \newblock {\em Rotational Dynamics of the Core}, volume~8.
 \newblock cited By 12.
+
+\bibitem[Tr{\"u}mper et~al., 2012]{trumper2012numerical}
+Tr{\"u}mper, T., Breuer, M., and Hansen, U. (2012).
+\newblock Numerical study on double-diffusive convection in the earth's core.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 194:55--63.
+
+\bibitem[Wicht, 2002]{wicht2002inner}
+Wicht, J. (2002).
+\newblock Inner-core conductivity in numerical dynamo simulations.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 132(4):281--302.
+
+\bibitem[Zhang and Busse, 1987]{zhang1987onset}
+Zhang, K.-K. and Busse, F. (1987).
+\newblock On the onset of convection in rotating spherical shells.
+\newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 39(3):119--147.
 
 \end{thebibliography}

@@ -41,8 +41,8 @@ We observe that fixed flux conditions promote larger flow scales and an increase
 \section{Modeling core convection and dynamo action}
 
 Rotating convection and dynamo action in Earth's core is a topic that has been explored by many authors (REFS ???). There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for larger computers that allow to explore earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (REFS ???).\\
-A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
-We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet boundary condition). The thermal forcing is maintained by introducing a fixed in - and out flux of heat (Neumann boundary condition). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
+A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions (BC) or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
+We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
 In the following all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short (REFS ???).\\
 \subsection{Frame of reference}
 The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and r$_o$: $ a = $ R$_i$ / R$_i$ = 0.35.\\
@@ -80,6 +80,7 @@ the general form of the equation of continuity. The introduction of the \textit{
 
 
 \subsection{Equation of momentum}
+\label{sec:momentum}
 In an inertial, non-rotating frame of reference, the change of momentum of a material volume $\mathcal{V}$ can be written as 
 \begin{align*}
  \frac{d}{dt} \int_{\mathcal{V}(t)} (\rho u_j) d^3r &= \int_{\mathcal{V}(t)} \left[ \frac{\partial (\rho u_j)}{\partial t} + \frac{\partial}{\partial x_i} (\rho u_j)u_i \right]d^3r \\
@@ -111,7 +112,7 @@ With the help of \eqref{eq:frame_of_reference_accelerations}, $\frac{D \bm u}{D 
 From now on, the subscripts $F$ and $R$ will be cut and all quantities will be measured in the rotating frame. With \eqref{eq:frame_of_reference_material}, \eqref{eq:force_balance1} changes to
 \begin{align}
   \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds 
-  - \int_{\mathcal{V}} \rho \left( 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r) \right) d^3r.
+  - \int_{\mathcal{V}} \rho \left( 2\bm \Omega \times \bm u + \bm \Omega \times (\bm \Omega \times \bm r) \right) d^3r.
   \label{eq:force_balance2}
 \end{align}
 Another pseudo force that generally appears in rotating systems is the \textit{Poincar\'{e} force}. Precession driven flows are the most prominent example from geophysics where it plays a dominant role \citep{Tilgner2007}.\\
@@ -123,17 +124,19 @@ where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm 
 The body forces $\bm f$ are the \textit{buoyancy force} $\bm f_g =  \bm g \rho$ and the \textit{Lorentz force} $\bm f_l = \bm j \times \bm B$. The latter will be discussed in section \ref{sec:lorentz}.\\
 \par
 
-In the following, the gravitational field $\bm g$ will be discussed in more detail.As mentioned before, the system underlies an asymmetric heat flux at the CMB. This results in an asymmetric temperature field for which the penetration depth of the temperature perturbation to a spherical symmetric solution depends on the amplitude of the heat flux heterogeneity. Following the linear equation of state from the Boussinesq approximation (see section \ref{sec:boussinesq}), this results in a density variation proportional to the temperature variation: $\delta \bar{\rho} \sim \delta \bar{T}$.
+In the following, the gravitational field $\bm g$ will be discussed in more detail.As mentioned before, the system underlies an asymmetric heat flux at the CMB. This results in an asymmetric temperature field for which the penetration depth of the temperature perturbation to a spherical symmetric solution depends on the amplitude of the heat flux heterogeneity. Following the linear equation of state from the Boussinesq approximation (see section \ref{sec:boussinesq}), this results in a density variation proportional to the temperature variation: $\delta {\rho} \sim \delta {T}$.
 \begin{figure}[H]
  \centering
- \includegraphics[scale = 0.24]{sketches/density_var.pdf}
+ \includegraphics[scale = 0.24]{sketches/density_var.pdf} 
  \caption{Sketch of the density along the equator, near the CMB. The deviation (black) from the average density (red) results from the asymmetric heat flux at the CMB which has a asymmetric temperature field as a consequence. }
+ \label{fig:density_var}
 \end{figure}
-The total density can be split into one spherical symmetric part $\bar{\rho}(r)$ that only depends on the radial level $r$ and the density variation $\delta \bar{\rho}(r,\vartheta,\varphi)$:
+The total density can be split into one spherical symmetric part $\mathring{\rho}(r)$ that only depends on the radial level $r$ and the density variation due to the heat flux pattern $\delta \mathring{\rho}(r,\vartheta,\varphi)$:
 \begin{equation}
  \label{eq:density_split}
- \rho(r,\vartheta,\varphi) = \bar{\rho}(r) + \delta \bar{\rho}(r,\vartheta,\varphi).
+ \rho(r,\vartheta,\varphi) = \mathring{\rho}(r) + \delta \mathring{\rho}(r,\vartheta,\varphi).
 \end{equation}
+In case of a heat flux pattern proportional to the spherical harmonic $\mathcal{Y}_2^2$, the dependence of $\delta \mathring{\rho}$ on $\varphi$ is $\pi$-periodic (see Figure \ref{fig:density_var}) so that it can be expressed by the product $\delta \mathring{\rho}(r,\vartheta,\varphi) = \mathcal{C}(r,\vartheta) \cdot cos(2\varphi)$. $\mathcal{C}$ is only a function of $r$ and $\vartheta$. \\
 \textit{Gauss's} gravity law \citep{blakely1996potential} states
 \begin{equation}
  \label{eq:gauss}
@@ -141,12 +144,23 @@ The total density can be split into one spherical symmetric part $\bar{\rho}(r)$
 \end{equation}
 Integration over a sphere of radius $r$ and application of Gauss's theorem yields
 \begin{align}
+% \label{eq:grav_balance}
 \nonumber
-\label{eq:grav_balance}
-\int\limits _{\mathcal{V}(r)} \bm \nabla \cdot \bm g dV &= \int\limits_0^\pi \int\limits_0^{2\pi} r^2sin(\vartheta )d\vartheta d\varphi \bm g \cdot \bm e_r= - 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 (\rho) dr' d\vartheta d\varphi\\
-&=- 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 (\bar{\rho} + \delta \bar {\rho}) dr' d\vartheta d\varphi
+\int\limits _{\mathcal{V}(r)} \bm \nabla \cdot \bm g dV &= \int\limits_0^\pi \int\limits_0^{2\pi} r^2sin(\vartheta )d\vartheta d\varphi \bm g \cdot \bm e_r= - 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 \rho(r,\vartheta,\varphi) dr' d\vartheta d\varphi\\
+\nonumber
+&=- 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 [\mathring{\rho}(r') + \delta \mathring {\rho}(r',\vartheta,\varphi)] dr' d\vartheta d\varphi \\
+\nonumber
+&=-8\pi^2 G\int\limits_0^r \mathring{\rho}(r') dr' -  4 \pi G \int\limits_0 ^r \int\limits_0^\pi sin(\vartheta) r'^2 \mathcal{C}(r',\vartheta) \left( \int\limits_0^{2\pi} cos(2\varphi) d\varphi \right) dr' d\vartheta \\
+\nonumber
+&= -8\pi^2 G\int\limits_0^r \mathring{\rho}(r') dr'
 \end{align}
-
+Because the integration of $\delta \mathring {\rho}(r',\vartheta,\varphi)$ over $\varphi$ drops out for every value of $r$ and $\vartheta$, $\bm g$ can be expressed by
+\begin{equation}
+\label{eq:gravity_field}
+ g(\bm r) = -\frac{4 \pi G}{r^2}\int_0^r \mathring{\rho}(r')r'^2 dr
+\end{equation}
+and it is worth noticing that $\bm g$ has the same form as in the spherical symmetric case \citep{blakely1996potential}.\\
+The buoyancy force term $\bm g \rho$ will be further discussed in section \ref{sec:boussinesq}.
 
 \subsection{Maxwell equations, Lorentz force and induction equation}
 \label{sec:lorentz}
@@ -198,7 +212,7 @@ Here, $\kappa_\textrm{\tiny T} = \frac{k}{c_\textrm{\tiny P} \rho}$ is the therm
 The derivation of equation \eqref{eq:heat_equation} was adopted from \citet{kundu2008fluid}.
 
 \subsection{Conservation of the light component}
-The light component is released at the ICB as the inner core slowly crystallizes. It serves as an additional source of buoyancy. In this model, the light component per unit mass, $C$, can only change by a flux $\bm q_\textrm{\tiny C}$through the surface of the fluid. According to the equation for the conservation of the internal energy in section \ref{sec:internal_energy},
+The light component is released at the ICB as the inner core slowly crystallizes. It serves as an additional source of buoyancy. In this model, the light component per unit mass, $C$, can only change by a flux $\bm q_\textrm{\tiny C}$ through the surface of the fluid. According to the equation for the conservation of the internal energy in section \ref{sec:internal_energy},
 \begin{equation*}
  \rho \frac{D C}{Dt} = - \bm \nabla \cdot \bm q_\textrm{\tiny C}
 \end{equation*}
@@ -207,51 +221,92 @@ can be transformed to
  \frac{D C}{D t} = \kappa_\textrm{\tiny C} \bm \nabla^2 C,
 \end{equation}
 using $\bm q_\textrm{\tiny C} = - k_\textrm{\tiny C} \bm \nabla C$ and introducing $\kappa_\textrm{\tiny C} = \frac{k_\textrm{\tiny C}}{\rho}$.
-
-
-
 \subsection{The Boussinesq approximation}
-
 \label{sec:boussinesq}
-
-\subsection{Nondimensional equations}
-
-
-\subsection{CMB - heat flux pattern}
-A heat flux balance between the inner and the outer core boundary is imposed. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
+In most geophysical applications of fluid dynamics, the Boussinesq approximation is a reasonable simplification of the full equations. \\
+Starting from an adiabatic reference state, density, pressure, temperature and composition can be separated into a reference state value (denoted by an overbar) that is only dependent on the radial level $r$ and a fluctuating part (denoted by a prime):
+\begin{align}
+ T = \bar T(r) + T', \quad C = \bar C(r) + C', \quad 
+ \rho = \bar \rho(r) + \rho', \quad p = \bar p(r) + p' 
+\end{align}
+Further on, it is assumed that the typical length scale of the system (here: the shell thickness $d$) is small compared to the scale heights in the reference state. Perturbations to that state shall be small compared to the adiabat. As a result, the reference state becomes independent of position.\\ 
+Whether the assumption of a negligible small superadiabaticity is valid in the context of core convection is still debated \citep{anufriev2005boussinesq}. The alternative is to model either the fully compressible equations or to use the anelastic approximation that, in contrast to the Boussinesq model, allows density stratification. \citet{jones2007thermal} extensively discusses the implications of the choice of one of these approaches.\\
+From the approximation it follows for the system of equations that
+\begin{itemize}
+ \item[-] the equation of state takes a linear form: 
+ \begin{equation}
+  \rho' = -\bar \rho (\alpha_\textrm{\tiny T} T' + \alpha_\textrm{\tiny C} C'), 
+ \end{equation}
+ where $\alpha_\textrm{\tiny T}$, and $\alpha_\textrm{\tiny C}$ signify the thermal and compositional expansion coefficient.
+ \item[-] the equation of continuity transforms to
+\begin{equation}
+ \bm \nabla \cdot \bm u = 0 \quad \quad \quad \quad \text{(solenoidal character of } \bm u ).
+\end{equation}
+\item[-] the dissipative heating term can be neglected in the equation of momentum and internal energy (see section \ref{sec:momentum} and \ref{sec:internal_energy}).
+\item[-] the material properties such as $\alpha_\textrm{\tiny T}$, $\alpha_\textrm{\tiny C}$, $\mu$, $c_\textrm{\tiny P}$, $\eta$, $\kappa_\textrm{\tiny T}$ and $\kappa_\textrm{\tiny C}$ stay constant throughout the fluid.
+\end{itemize}
+An important advantage of the modified equations is that sound waves are \textit{filtered out}. This reduces the numerical costs without curtailing any relevant physical processes, since the short time scales of sound waves does not have to be resolved numerically.\\
+In the differential form, the equation of momentum \eqref{eq:force_balance2} now reads
+\begin{equation}
+ \frac{D \bm u}{D t} = -2\bm \Omega \times \bm u  - \bm \nabla \left( \frac{\pi'}{\bar \rho} \right) + \nu \bm \nabla^2 \bm u + \frac{1}{\mu_0 \bar \rho}(\bm \nabla \times \bm B) \times \bm B + \frac{\bm g}{\bar \rho} \rho',
+\label{eq:force_balance3}
+\end{equation}
+where $\nu = \mu/\bar \rho$ is the new kinematic viscosity. The centrifugal potential is incorporated into the pressure fluctuation term $\pi' = p' - \frac{\bar \rho \Omega^2 s^2}{2}$, where $s$ is the distance from the z-axis in cylindrical coordinates. The hydrostatic pressure gradient of the reference state $\bm \nabla \bar p$ is balanced by the gravity force $\bm g \bar \rho$ so that only $\rho'$ appears equation \eqref{eq:force_balance3}.\\
+\subsection{Boundary conditions}
+This section is dedicated to the boundary conditions.\\ 
+For the velocity field they are chosen to be \textit{no-slip}, e.g. $\bm u = 0$ on the ICB ($r = R_i$) and the CMB ($r =R_0$), in order to be comparable to other studies. Several authors state that these \textit{rigid} BC reflect what is realistic for the interaction between the inner, the outer core and the mantle \citep{glatzmaier1995three, christensen2006scaling, trumper2012numerical}. On the other hand, \citet{zhang1987onset} or \citet{kuang1997earth} argue that the Ekman layers which result from rigid boundaries are be negligibly thin in the Earth's core due to its extremely small viscosity. Because today's numerical models are forced to use a far to high viscosity, they over emphasize the effect of Ekman layers and therefore \textit{stress-free} BC are more appropriate. For a better comparison, this work follows the approach that was used by related studies \citep{olson2002time, aubert2008thermochemical, hori2014ancient}. \\
+According to \citet{trumper2012numerical}, Derichlet type BC are chosen for the chemical component. A compositional gradient, $\Delta C = C'_\textrm{\tiny ICB} - C'_\textrm{\tiny CMB}$, is imposed across the shell. In a more earth-like scenario, one would apply Neumann type conditions with fixed compositional influx at the ICB and zero outflux at the CMB \cite{braginsky1995equations}. This would further increase the complexity of the model and is therefore adjourned in this case. \\
+The mantle is assumed to be an insulator due to its rocky content \citep{dormy1998mhd}. The question whether the inner core should be treated as an insulator or not was discussed by \citet{wicht2002inner}. He found that the effect of a conducting inner core on the flow field and the magnetic field is rather small. It is hence reasonable to chose $\sigma = 0$ in the inner core in order not to be obliged to solve the induction equation in the full sphere. In the mantle and the core, the magnetic field $\bm B$ is the solution to 
+\begin{equation}
+ \label{eq:mag1}
+ \bm B = - \bm \nabla \Phi
+\end{equation}
+with $\Phi$ being a scalar potential that follows the Laplace equation 
+\begin{equation}
+ \label{eq:mag2}
+ \bm \nabla ^2 \phi = 0.
+\end{equation}
+The BC are expressed through the fact that $\bm B$ has to match the solution of \eqref{eq:mag1} at the ICB and the CMB.\\
+The thermal BC is of the Neumann type and will be discussed in more detail in the following section.
+\subsubsection{CMB - heat flux pattern}
+\label{sec:flux_pattern}
+A heat flux balance between the inner and the outer core boundary is assumed. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
 \begin{align}
  -\textrm{Q}_i &= \textrm{Q}_o\\
- \Leftrightarrow \int \limits_{\Sigma_\textrm{icb}} \kappa \nabla T\big|_\textrm{\tiny{icb}} \cdot \bm e_r dS &= \int \limits_{\Sigma_\textrm{cmb}} \kappa \nabla T\big|_\textrm{\tiny{cmb}} \cdot \bm e_r dS \\
- \Leftrightarrow \int \limits_{\Sigma_\textrm{icb}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{icb}} dS &= \int \limits_{\Sigma_\textrm{cmb}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{cmb}} dS 
+ \Leftrightarrow \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \kappa \nabla T\big|_\textrm{\tiny{ICB}} \cdot \bm e_r dS &= \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \kappa \nabla T\big|_\textrm{\tiny{CMB}} \cdot \bm e_r dS \\
+ \label{eq:fluxbalance1}
+ \Leftrightarrow \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{ICB}} dS &= \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{CMB}} dS 
 \end{align}
-For the spectral decomposition it is important to know, that only the 0th order spherical harmonic $\mathcal{Y}_0^0$ yields values $\neq$ 0 when integrated over a closed surface $\Sigma$:
+For the spectral decomposition it is important to notice that only the 0th order spherical harmonic $\mathcal{Y}_0^0$ yields values $\neq$ 0 when being integrated over a closed surface $\mathcal{S}$:
 \begin{align}
- \int \limits_{\Sigma} \frac{\partial T}{\partial r} dS = \int \limits_{\Sigma} \left(\frac{\partial T}{\partial r}\right)_0^0 \mathcal{Y}_0^0 dS
+ \int \limits_{\mathcal{S}} \frac{\partial T}{\partial r} dS = \int \limits_{\mathcal{S}} \left(\frac{\partial T}{\partial r}\right)_0^0 \mathcal{Y}_0^0 dS,
 \end{align}
 with $\left(\frac{\partial T}{\partial r}\right)_0^0$ being the spectral coefficient of degree and order 0.
-
+Thus, \eqref{eq:fluxbalance1} can be transformed into the spectral domain via
 \begin{align}
- \int \limits_{\Sigma_\textrm{icb}} \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{icb} \mathcal{Y}_0^0 dS &=  \int \limits_{\Sigma_\textrm{cmb}} \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{cmb} \mathcal{Y}_0^0 dS\\
- \Leftrightarrow \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{icb}  r_i^2 &= \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{cmb} r_o^2
+ \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{\tiny{ICB}} \mathcal{Y}_0^0 dS &=  \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{\tiny{CMB}} \mathcal{Y}_0^0 dS\\
+ \Leftrightarrow \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{\tiny{ICB}}  R_i^2 &= \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{\tiny{CMB}} R_o^2.
 \end{align}
-This allows to formulate a simple relation between the mean radial temperature gradient at the inner and outer boundary.
+This allows to formulate a simple relation between the mean radial temperature gradient at the inner and outer boundary:
 \begin{equation}
-  \Leftrightarrow \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{icb} = \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{cmb} \frac{r_o^2}{r_i^2} = - \beta \frac{r_o^2}{r_i^2} = - \beta \frac{1}{a^2}
+\label{eq:beta_relation}
+\left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{\tiny{ICB}} = \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{\tiny{CMB}} \frac{R_o^2}{R_i^2} = - \beta \frac{R_o^2}{R_i^2} = - \beta \frac{1}{a^2}
 \end{equation}
-with $\beta := - \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_{\textrm{cmb}}$ as prescribed temperature gradient at the CMB.\\
-This relation allows us to formulate Neumann boundary conditions for the stationary temperature equation that has the form of a Laplace equation,
+with $\beta := - \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_{\textrm{\tiny{CMB}}}$ as prescribed temperature gradient at the CMB.\\
+Since no internal sources of heat are assumed, the stationary form of \eqref{eq:heat_equation} takes the form of a Laplace equation. It reads
 \begin{equation}
  \nabla ^2 T = 0 \label{eq:laplace}
 \end{equation}
-since there are no internal sources.\\
+and with \eqref{eq:beta_relation} the appropriate BC are
 \begin{equation}
- \textrm{ICB:} \quad  \frac{\partial T}{\partial r}\bigg|_{\textrm{icb}} = - \beta \frac{1}{a^2} \mathcal{Y}_0^0 \label{eq:BCicb}
+ \textrm{at the ICB:} \quad  \frac{\partial T}{\partial r}\bigg|_{\textrm{\tiny{ICB}}} = - \beta \frac{1}{a^2} \mathcal{Y}_0^0 \label{eq:BCicb}
 \end{equation}
 \begin{equation}
-  \textrm{CMB:} \quad \frac{\partial T}{\partial r}\bigg|_{\textrm{cmb}} = - \beta \mathcal{Y}_0^0 + Amp_l^m \mathcal{Y}_l^m \label{eq:BCcmb}
+  \textrm{at the CMB:} \quad \frac{\partial T}{\partial r}\bigg|_{\textrm{\tiny{CMB}}} = - \beta \mathcal{Y}_0^0 + Amp_l^m \mathcal{Y}_l^m \label{eq:BCcmb}.
 \end{equation}
-where $Amp_l^m$ is the amplitude of the heat flux heterogeneity.\\
-The general solution of \eqref{eq:laplace} in spherical coordinates reads
+$Amp_l^m$ is the amplitude of the heat flux heterogeneity for a heat flux pattern $\mathcal{Y}_l^m$.\\
+\\
+In order to implement the BC into the numerical simulation scheme, a (conductive) solution to \eqref{eq:laplace} has to be found. In spherical coordinates, it reads
 \begin{equation}
  T = \sum \limits_{l,m} \left[ a_l^m r^l + b_l^m r^{-l-1} \right] \mathcal{Y}_l^m(\vartheta,\varphi) \label{eq:cond}
 \end{equation}
@@ -259,34 +314,50 @@ and its radial derivative
 \begin{equation}
 \frac{\partial T}{\partial r} = \sum \limits_{l,m} \left[l a_l^m r^{l-1} - (l+1) b_l^m r^{-l-2}\right]  \mathcal{Y}_l^m(\vartheta,\varphi). \label{eq:gradcond}
 \end{equation}
-From \eqref{eq:BCicb} and \eqref{eq:gradcond} follows immediately for $l=m=0$
+At the ICB, \eqref{eq:BCicb} and \eqref{eq:gradcond} yield
 \begin{equation}
- - b_0^0 r_i^{-2} = -\beta \frac{1}{a^2} \quad \Rightarrow \quad b_0^0 = \beta r_o^2
+ - b_0^0 R_i^{-2} = -\beta \frac{1}{a^2} \quad \Rightarrow \quad b_0^0 = \beta R_o^2
 \end{equation}
-and the algebraic equation 
+for $l=m=0$ and the algebraic equation 
 \begin{equation}
- la_l^m r_i^{l-1} - (l+1) b_l^m r_i^{-l-2} = 0 \label{eq:algebraicICB}
+ la_l^m R_i^{l-1} - (l+1) b_l^m R_i^{-l-2} = 0 \label{eq:algebraicICB}
 \end{equation}
-for all $l>0$ and $m>0$.\\
-\eqref{eq:BCcmb} and \eqref{eq:cond} together give another equation for the determination of $a_l^m$ and $b_l^m$:
+follows for all $l>0$ and $m>0$.\\
+Fot the  CMB, \eqref{eq:BCcmb} and \eqref{eq:gradcond} yield
 \begin{equation}
- l a_l^m r_o^{l-1} - (l+1)b_l^m r_o^{-l-2} = Amp_l^m. \label{eq:algebraicCMB}
+ l a_l^m R_o^{l-1} - (l+1)b_l^m R_o^{-l-2} = Amp_l^m. \label{eq:algebraicCMB}
 \end{equation}
-Since only a heat flux pattern with $l=m=2$ will be used here, \eqref{eq:algebraicICB} and \eqref{eq:algebraicCMB} simplify to
+Since only a heat flux pattern with $l=m=2$ will be used here, \eqref{eq:algebraicICB} and \eqref{eq:algebraicCMB} simplify to a linear system of equations
 \begin{equation}
- \left( \begin{matrix} 2r_o & -3r_o^{-4}\\ 2r_i & -3r_i^{-4}\end{matrix} \right) \left(\begin{matrix} a_2^2\\b_2^2 \end{matrix}\right) = \left( \begin{matrix} Amp_2^2 \\ 0 \end{matrix} \right).                                                                                                                                                
+ \left( \begin{matrix} 2R_o & -3R_o^{-4}\\ 2R_i & -3R_i^{-4}\end{matrix} \right) \left(\begin{matrix} a_2^2\\b_2^2 \end{matrix}\right) = \left( \begin{matrix} Amp_2^2 \\ 0 \end{matrix} \right).                                                                                                                                                
 \end{equation}
-In a nondimensional form, the solution \eqref{eq:laplace} is
+Inserting $a_2^2$, $b_2^2$ and $b_0^0$ into \eqref{eq:cond} gives a solution to \eqref{eq:laplace} that respects the boundary conditions \eqref{eq:BCicb} and \eqref{eq:BCcmb}:
 \begin{equation}
- \hat{T} = \frac{T}{d\beta} = \left( \frac{a_0^0}{d\beta} + \frac{1}{(a-1)^2\hat{r}} \right) \mathcal{Y}_0^0 + \frac{Amp_2^2}{\beta}\cdot \frac{2a^5\hat{r}^3 - 3(a-1)^5\hat{r}^2}{6(a-1)^4(1-a^5)} \mathcal{Y}_2^2
+ T(r,\vartheta,\varphi) = \left( a_0^0 + \frac{R_o^2 \beta}{r} \right) \mathcal{Y}_0^0 + Amp_2^2\cdot \frac{R_o^22a^5r^3 - 3R_o^2(a-1)^5r^2}{6D^4(a-1)^2(1-a^5)} \mathcal{Y}_2^2(\vartheta,\varphi)
 \end{equation}
-with $a_0^0$ being an arbitrary integration constant that is chosen to be 0 in the following.
+$a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the following. The conductive temperature profile with its spherically asymmetric part will be introduced into the equations in the density fluctuation part $\rho'$ in section \ref{sec:nondim}. 
+\subsection{Nondimensional equations}
+\label{sec:nondim}
+A common next step is to rescale the equations introduced so far in order to reduce the number of parameters and to make the relevant physical processes intuitively more accessible. The new scales are adopted from \citet{trumper2012numerical}, they are summarized in table \ref{tab:scales}.
+\begin{table}[H]
+\centering
+\begin{tabular}{ccc}
+ Variable & Symbol & New Scale\\
+ \hline
+ Length	& $\bm r$ & $D =R_o - R_i$\\
+ Time	&$t$	  & $D^2/\nu$
+\end{tabular}
+
+
+\end{table}
 
 \section{Numerical Method}
 
 \section{State of research}
 
 \section{Thermo-chemical core convection}
+
+\subsection{The temperature field}
 \subsection{The formation of stationary vortex columns attached to mantle heterogeneities}
 
 \section{Thermo-chemical dynamo action}

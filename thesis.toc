@@ -10,14 +10,16 @@
 \contentsline {subsection}{\numberline {2.5}Conservation of energy}{9}
 \contentsline {subsection}{\numberline {2.6}Conservation of the light component}{9}
 \contentsline {subsection}{\numberline {2.7}The Boussinesq approximation}{10}
-\contentsline {subsection}{\numberline {2.8}Nondimensional equations}{10}
-\contentsline {subsection}{\numberline {2.9}CMB - heat flux pattern}{10}
-\contentsline {section}{\numberline {3}Numerical Method}{12}
-\contentsline {section}{\numberline {4}State of research}{12}
-\contentsline {section}{\numberline {5}Thermo-chemical core convection}{12}
-\contentsline {subsection}{\numberline {5.1}The formation of stationary vortex columns attached to mantle heterogeneities}{12}
-\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{12}
-\contentsline {subsection}{\numberline {6.1}The creation of radial magnetic flux patches locked to the mantle}{12}
-\contentsline {subsection}{\numberline {6.2}The influence of chemical forcing on magnetic field properties}{12}
-\contentsline {section}{\numberline {7}Summary}{12}
-\contentsline {section}{\numberline {8}Conclusion and Outlook}{12}
+\contentsline {subsection}{\numberline {2.8}Boundary conditions}{11}
+\contentsline {subsubsection}{\numberline {2.8.1}CMB - heat flux pattern}{12}
+\contentsline {subsection}{\numberline {2.9}Nondimensional equations}{14}
+\contentsline {section}{\numberline {3}Numerical Method}{15}
+\contentsline {section}{\numberline {4}State of research}{15}
+\contentsline {section}{\numberline {5}Thermo-chemical core convection}{15}
+\contentsline {subsection}{\numberline {5.1}The temperature field}{15}
+\contentsline {subsection}{\numberline {5.2}The formation of stationary vortex columns attached to mantle heterogeneities}{15}
+\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{15}
+\contentsline {subsection}{\numberline {6.1}The creation of radial magnetic flux patches locked to the mantle}{15}
+\contentsline {subsection}{\numberline {6.2}The influence of chemical forcing on magnetic field properties}{15}
+\contentsline {section}{\numberline {7}Summary}{15}
+\contentsline {section}{\numberline {8}Conclusion and Outlook}{15}

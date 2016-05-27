@@ -9,9 +9,11 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2}Modeling core convection and dynamo action}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Frame of reference}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Equation of continuity}{4}}
+\newlabel{sec:continuity}{{2.2}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces (a) (REFS ???) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian z-axis. (b) This work uses spherical coordinates with unit vectors $ \bm  {e}_r$, $\bm  {e}_\Phi $ and $\bm  {e}_\vartheta $\relax }}{5}}
 \citation{Tilgner2007}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Equation of momentum}{6}}
+\newlabel{sec:momentum}{{2.3}{6}}
 \newlabel{eq:force_balance1}{{5}{6}}
 \newlabel{eq:frame_of_reference_rule}{{6}{6}}
 \newlabel{eq:frame_of_reference_accelerations}{{7}{6}}
@@ -23,6 +25,8 @@
 \newlabel{fig:density_var}{{2}{7}}
 \newlabel{eq:density_split}{{11}{7}}
 \newlabel{eq:gauss}{{12}{7}}
+\citation{blakely1996potential}
+\newlabel{eq:gravity_field}{{13}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Maxwell equations, Lorentz force and induction equation}{8}}
 \newlabel{sec:lorentz}{{2.4}{8}}
 \newlabel{eq:maxwell}{{14}{8}}
@@ -39,28 +43,66 @@
 \newlabel{eq:internal_energy}{{18}{9}}
 \newlabel{eq:heat_equation}{{19}{9}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Conservation of the light component}{9}}
+\newlabel{eq:chemical_equation}{{20}{9}}
+\citation{anufriev2005boussinesq}
+\citation{jones2007thermal}
+\citation{glatzmaier1995three,christensen2006scaling,trumper2012numerical}
+\citation{zhang1987onset}
+\citation{kuang1997earth}
+\citation{olson2002time,aubert2008thermochemical,hori2014ancient}
+\citation{trumper2012numerical}
+\citation{braginsky1995equations}
+\citation{dormy1998mhd}
+\citation{wicht2002inner}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.7}The Boussinesq approximation}{10}}
 \newlabel{sec:boussinesq}{{2.7}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.8}Nondimensional equations}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.9}CMB - heat flux pattern}{10}}
-\newlabel{eq:laplace}{{28}{10}}
-\newlabel{eq:BCicb}{{29}{10}}
-\newlabel{eq:BCcmb}{{30}{11}}
-\newlabel{eq:cond}{{31}{11}}
-\newlabel{eq:gradcond}{{32}{11}}
-\newlabel{eq:algebraicICB}{{34}{11}}
-\newlabel{eq:algebraicCMB}{{35}{11}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Numerical Method}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}State of research}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Thermo-chemical core convection}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}The formation of stationary vortex columns attached to mantle heterogeneities}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}The creation of radial magnetic flux patches locked to the mantle}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}The influence of chemical forcing on magnetic field properties}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Summary}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion and Outlook}{12}}
+\newlabel{eq:incompressible}{{23}{10}}
+\newlabel{eq:force_balance3}{{24}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8}Boundary conditions}{11}}
+\newlabel{eq:mag1}{{25}{11}}
+\newlabel{eq:mag2}{{26}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.8.1}CMB - heat flux pattern}{12}}
+\newlabel{sec:flux_pattern}{{2.8.1}{12}}
+\newlabel{eq:fluxbalance1}{{29}{12}}
+\newlabel{eq:beta_relation}{{33}{12}}
+\newlabel{eq:laplace}{{34}{12}}
+\newlabel{eq:BCicb}{{35}{12}}
+\citation{trumper2012numerical}
+\newlabel{eq:BCcmb}{{36}{13}}
+\newlabel{eq:cond}{{37}{13}}
+\newlabel{eq:gradcond}{{38}{13}}
+\newlabel{eq:algebraicICB}{{40}{13}}
+\newlabel{eq:algebraicCMB}{{41}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.9}Nondimensional equations}{14}}
+\newlabel{sec:nondim}{{2.9}{14}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Overview of the the new scales that are introduced to non-dimensionalize the magnetohydrodynamic system of equations that was introduced in the sections \ref  {sec:continuity} to \ref  {sec:boussinesq}.\relax }}{14}}
+\newlabel{tab:scales}{{1}{14}}
+\newlabel{eq:nondim}{{44}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Numerical Method}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}State of research}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Thermo-chemical core convection}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}The temperature field}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}The formation of stationary vortex columns attached to mantle heterogeneities}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}The creation of radial magnetic flux patches locked to the mantle}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}The influence of chemical forcing on magnetic field properties}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Summary}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion and Outlook}{15}}
 \bibdata{literatur}
-\bibcite{blakely1996potential}{{1}{1996}{{Blakely}}{{}}}
-\bibcite{kundu2008fluid}{{2}{2008}{{Kundu and Cohen}}{{}}}
-\bibcite{Tilgner2007}{{3}{2007}{{Tilgner}}{{}}}
+\bibcite{anufriev2005boussinesq}{{1}{2005}{{Anufriev et~al.}}{{}}}
+\bibcite{aubert2008thermochemical}{{2}{2008}{{Aubert et~al.}}{{}}}
+\bibcite{blakely1996potential}{{3}{1996}{{Blakely}}{{}}}
+\bibcite{braginsky1995equations}{{4}{1995}{{Braginsky and Roberts}}{{}}}
+\bibcite{christensen2006scaling}{{5}{2006}{{Christensen and Aubert}}{{}}}
+\bibcite{dormy1998mhd}{{6}{1998}{{Dormy et~al.}}{{}}}
+\bibcite{glatzmaier1995three}{{7}{1995}{{Glatzmaier and Roberts}}{{}}}
+\bibcite{hori2014ancient}{{8}{2014}{{Hori et~al.}}{{}}}
+\bibcite{jones2007thermal}{{9}{2007}{{Jones}}{{}}}
+\bibcite{kuang1997earth}{{10}{1997}{{Kuang and Bloxham}}{{}}}
+\bibcite{kundu2008fluid}{{11}{2008}{{Kundu and Cohen}}{{}}}
+\bibcite{olson2002time}{{12}{2002}{{Olson and Christensen}}{{}}}
+\bibcite{Tilgner2007}{{13}{2007}{{Tilgner}}{{}}}
+\bibcite{trumper2012numerical}{{14}{2012}{{Tr{\"u}mper et~al.}}{{}}}
+\bibcite{wicht2002inner}{{15}{2002}{{Wicht}}{{}}}
+\bibcite{zhang1987onset}{{16}{1987}{{Zhang and Busse}}{{}}}
 \bibstyle{apalike}
