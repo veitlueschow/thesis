@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  27 MAY 2016 13:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  30 MAY 2016 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -400,33 +400,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--313
 
  []
 
-[12] [13] [14] [15] (./thesis.bbl [16]) [17] (./thesis.aux) ) 
+[12] [13] [14] [15] [16] (./thesis.bbl [17]) [18] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5025 strings out of 493315
- 70761 string characters out of 6145894
- 148916 words of memory out of 5000000
- 8373 multiletter control sequences out of 15000+600000
- 19227 words of font info for 71 fonts, out of 8000000 for 9000
+ 5036 strings out of 493315
+ 70919 string characters out of 6145894
+ 150983 words of memory out of 5000000
+ 8382 multiletter control sequences out of 15000+600000
+ 19928 words of font info for 73 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,12n,38p,984b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/
-fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmex10
-.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
-xmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmib
-10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/s
-hare/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
-re/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
-/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (17 pages, 292080 bytes).
+</usr/share/t
+exmf/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
+mex10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sha
+re/texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
+cmmib10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></
+usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (18 pages, 297785 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 133 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

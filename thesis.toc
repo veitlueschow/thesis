@@ -13,13 +13,14 @@
 \contentsline {subsection}{\numberline {2.8}Boundary conditions}{11}
 \contentsline {subsubsection}{\numberline {2.8.1}CMB - heat flux pattern}{12}
 \contentsline {subsection}{\numberline {2.9}Nondimensional equations}{14}
-\contentsline {section}{\numberline {3}Numerical Method}{15}
-\contentsline {section}{\numberline {4}State of research}{15}
-\contentsline {section}{\numberline {5}Thermo-chemical core convection}{15}
-\contentsline {subsection}{\numberline {5.1}The temperature field}{15}
-\contentsline {subsection}{\numberline {5.2}The formation of stationary vortex columns attached to mantle heterogeneities}{15}
-\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{15}
-\contentsline {subsection}{\numberline {6.1}The creation of radial magnetic flux patches locked to the mantle}{15}
-\contentsline {subsection}{\numberline {6.2}The influence of chemical forcing on magnetic field properties}{15}
-\contentsline {section}{\numberline {7}Summary}{15}
-\contentsline {section}{\numberline {8}Conclusion and Outlook}{15}
+\contentsline {subsection}{\numberline {2.10}Conductive and convective Fluctuations}{15}
+\contentsline {section}{\numberline {3}Numerical Method}{16}
+\contentsline {section}{\numberline {4}State of research}{16}
+\contentsline {section}{\numberline {5}Thermo-chemical core convection}{16}
+\contentsline {subsection}{\numberline {5.1}The temperature field}{16}
+\contentsline {subsection}{\numberline {5.2}The formation of stationary vortex columns attached to mantle heterogeneities}{16}
+\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{16}
+\contentsline {subsection}{\numberline {6.1}The creation of radial magnetic flux patches locked to the mantle}{16}
+\contentsline {subsection}{\numberline {6.2}The influence of chemical forcing on magnetic field properties}{16}
+\contentsline {section}{\numberline {7}Summary}{16}
+\contentsline {section}{\numberline {8}Conclusion and Outlook}{16}

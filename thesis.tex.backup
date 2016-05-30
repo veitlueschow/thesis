@@ -61,6 +61,7 @@ The LOC is constantly rotating about the z-axis of a Cartesian system. The angul
 \end{figure}
 
 \subsection{Equation of continuity}
+\label{sec:continuity}
 Per definition, the mass $ \mathcal{M} $ of a material volume $ \mathcal{V}(t) $ with a density $\rho$, moving with a velocity $ \bm u(\bm r,t) $ in a fluid is conserved: 
 \begin{equation}
 \frac{d \mathcal{M}(\mathcal{V})}{dt} = \frac{d}{dt} \int_{\mathcal{V}(t)} \rho(\bm r,t) d^3r  = 0
@@ -218,6 +219,7 @@ The light component is released at the ICB as the inner core slowly crystallizes
 \end{equation*}
 can be transformed to 
 \begin{equation}
+\label{eq:chemical_equation}
  \frac{D C}{D t} = \kappa_\textrm{\tiny C} \bm \nabla^2 C,
 \end{equation}
 using $\bm q_\textrm{\tiny C} = - k_\textrm{\tiny C} \bm \nabla C$ and introducing $\kappa_\textrm{\tiny C} = \frac{k_\textrm{\tiny C}}{\rho}$.
@@ -240,6 +242,7 @@ From the approximation it follows for the system of equations that
  where $\alpha_\textrm{\tiny T}$, and $\alpha_\textrm{\tiny C}$ signify the thermal and compositional expansion coefficient.
  \item[-] the equation of continuity transforms to
 \begin{equation}
+\label{eq:incompressible}
  \bm \nabla \cdot \bm u = 0 \quad \quad \quad \quad \text{(solenoidal character of } \bm u ).
 \end{equation}
 \item[-] the dissipative heating term can be neglected in the equation of momentum and internal energy (see section \ref{sec:momentum} and \ref{sec:internal_energy}).
@@ -333,23 +336,65 @@ Since only a heat flux pattern with $l=m=2$ will be used here, \eqref{eq:algebra
 \end{equation}
 Inserting $a_2^2$, $b_2^2$ and $b_0^0$ into \eqref{eq:cond} gives a solution to \eqref{eq:laplace} that respects the boundary conditions \eqref{eq:BCicb} and \eqref{eq:BCcmb}:
 \begin{equation}
- T(r,\vartheta,\varphi) = \left( a_0^0 + \frac{R_o^2 \beta}{r} \right) \mathcal{Y}_0^0 + Amp_2^2\cdot \frac{R_o^22a^5r^3 - 3R_o^2(a-1)^5r^2}{6D^4(a-1)^2(1-a^5)} \mathcal{Y}_2^2(\vartheta,\varphi)
+ T_\textrm{\tiny{CMB}}(r,\vartheta,\varphi) = \left( a_0^0 + \frac{R_o^2 \beta}{r} \right) \mathcal{Y}_0^0 + Amp_2^2\cdot \frac{R_o^22a^5r^3 - 3R_o^2(a-1)^5r^2}{6D^4(a-1)^2(1-a^5)} \mathcal{Y}_2^2(\vartheta,\varphi)
 \end{equation}
-$a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the following. The conductive temperature profile with its spherically asymmetric part will be introduced into the equations in the density fluctuation part $\rho'$ in section \ref{sec:nondim}. 
+$a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the following. The conductive temperature profile with its spherically asymmetric part will be introduced into the equations in the density fluctuation part $\rho'$ in section \ref{sec:cond_conv}. 
 \subsection{Nondimensional equations}
 \label{sec:nondim}
-A common next step is to rescale the equations introduced so far in order to reduce the number of parameters and to make the relevant physical processes intuitively more accessible. The new scales are adopted from \citet{trumper2012numerical}, they are summarized in table \ref{tab:scales}.
+A common procedure in fluid dynamics is to \textit{rescale} the equations introduced so far in order to reduce the number of parameters and to make the relevant physical processes intuitively more accessible. The new scales are adopted from \citet{trumper2012numerical}, they are summarized in table \ref{tab:scales}.
 \begin{table}[H]
 \centering
 \begin{tabular}{ccc}
  Variable & Symbol & New Scale\\
  \hline
  Length	& $\bm r$ & $D =R_o - R_i$\\
- Time	&$t$	  & $D^2/\nu$
-\end{tabular}
-
-
+ Time	&$t$	  & $D^2/\nu$\\
+ Velocity & $\bm u$ & $\nu / D$\\
+ Temperature & $T$ & $ \beta D$\\
+ Composition & $C$ & $\Delta C$ \\
+ Pressure & $\pi$ & $\bar \rho \nu^2/D^2$\\
+ Magnetic Field & $\bm B$ & $\sqrt{\eta \Omega \mu_0 \bar \rho}$\\
+ \end{tabular}
+ \caption{Overview of the the new scales that are introduced to non-dimensionalize the magnetohydrodynamic system of equations that was introduced in the sections \ref{sec:continuity} to \ref{sec:boussinesq}.}
+ \label{tab:scales} 
 \end{table}
+The application of these scales to \eqref{eq:incompressible}, \eqref{eq:force_balance3}, \eqref{eq:heat_equation}, \eqref{eq:chemical_equation} and \eqref{eq:induction} yields a system of nondimensional equations:
+\begin{subequations} \label{eq:nondim}
+ \begin{align}
+\label{eq:incompressible^}
+{\bm {\hat \nabla}} \cdot \bm{ \hat u} = & \quad0, \\
+\label{eq:momentum^} \nonumber
+\frac{D \bm{ \hat u}}{D \hat t} = &- \bm{ \hat \nabla} \hat \pi - \frac{2}{\textrm{Ek}}\bm e_\textrm{\tiny{z}} \times \bm{ \hat u} + \bm{ \hat \nabla}^2 \bm{ \hat u} + \frac{1}{\textrm{Ek}  \textrm{Pr}_\textrm{\tiny{m}}} \left( \bm{ \hat \nabla} \times \hat{ \bm B} \right) \times \hat{ \bm B}  \\ 
+ &+ (\textrm{Ra}_\textrm{\tiny {T}} \hat{ T'} + \textrm{Ra}_\textrm{\tiny {C}} \hat{ C'} )(1-a) \hat{r} \bm e_\textrm{\tiny r}, \\
+\label{eq:heat_equation^}
+ \frac{D \hat T'}{D t} =& \quad \frac{1}{\textrm{Pr}_\textrm{\tiny T}} \bm \nabla^2 \hat T',\\
+ \label{eq:chemical_equation^}
+ \frac{D \hat C'}{D t} =& \quad \frac{1}{\textrm{Pr}_\textrm{\tiny C}} \bm \nabla^2 \hat C' \textrm{ and}\\
+  \label{eq:induction^}
+ \frac{\partial \hat{ \bm B}}{\partial \hat t} = & \quad \hat{ \bm \nabla} (\hat {\bm u} \times \hat{ \bm B}) + \frac{1}{\textrm{Pr}_\textrm{\tiny m}} \hat{ \bm \nabla}^2 \hat{ \bm B}.
+ \end{align}
+\end{subequations}
+Nondimensional variables are denoted by \^{}. The following parameters of similarity appear in the equations:
+{\allowdisplaybreaks
+ \begin{align}
+\nonumber 
+& \textrm{Thermal Rayleigh number : } & \textrm{Ra}_\textrm{\tiny {T}} = \frac{\alpha_\textrm{\tiny T} g \beta D^4}{\nu^2} \\ \nonumber 
+%  \\ \nonumber 
+&\textrm{ Compositional Rayleigh number : } & \textrm{Ra}_\textrm{\tiny C} = \frac{\alpha_\textrm{\tiny C} g \Delta C D^3}{\nu^2} \\ \nonumber 
+%  \\ \nonumber 
+ & \textrm{ Ekman number : }   & \textrm{Ek} = \frac{\nu}{\Omega D^2} \\ \nonumber 
+%  \\ \nonumber 
+& \textrm{Thermal Prandtl number : } & \textrm{Pr}_\textrm{T} = \frac{\nu}{\kappa_\textrm{T}} \\ \nonumber 
+& \textrm{Compositional Prandtl number : } & \textrm{Pr}_\textrm{C} = \frac{\nu}{\kappa_\textrm{C}} \\ \nonumber 
+& \textrm{Magnetic Prandtl number : } & \textrm{Pr}_\textrm{m} = \frac{\nu}{\eta} \\ \nonumber 
+\end{align} 
+}
+The thermal and compositional Rayleigh numbers are measures for the vigor of convection due to thermal and compositional buoyancy sources, respectively. The definitions of $\textrm{Ra}_\textrm{\tiny {T}}$ and $\textrm{Ra}_\textrm{\tiny {C}}$ slightly differ because of the different scales chosen for temperature and composition (see table \ref{tab:scales}). $\beta D$ and $\Delta C$ as scales refer to the Neumann and Derichlet type boundary conditions for $T$ and $C$, respectively.  \\
+The Ekman number describes the ratio between viscous and rotational effects on the fluid. \\
+The distinction between a thermal and a compositional Prandtl number is a key feature of this study. It allows for differences in the dynamical response of the system to either thermally or compositionally dominated convective forcing. Roughly spoken, a large Prandtl number promotes viscous effects in a fluid, whereas a small one promotes inertia effects. The magnetic Prandtl number relates viscous and magnetic diffusion. 
+\subsection{Conductive and convective Fluctuations}
+\label{sec:cond_conv}
+
 
 \section{Numerical Method}
 
