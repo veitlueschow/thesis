@@ -1,0 +1,68 @@
+clear;
+addpath(genpath('~/Documents/master/masterarbeit/matlab'));
+
+
+filename=char(filename);
+
+name=filename;
+load(filename);
+
+% Further Geometry 
+
+% teta=teta-pi/2;
+
+% [r_,phi_,teta_]     = meshgrid(r,phi,teta);
+% [x_dat,y_dat] = pol2cart(phi_,r_);
+% [x_dat,y_dat,z_dat] = sph2cart(phi_,teta_,r_);
+
+phi      = linspace(0,2*pi,Nlong);
+phi=phi';
+
+aspect=0.35;
+
+%% PLOT
+ilat=Nlat/2;
+
+T.total = T.mean(:,:,:)+T.cond(:,:,:);
+T.total = T.total - min(min(min(T.total))); % Normalization is ok because of arbitrary integration constant
+
+f1 = figure('Name','TEMPERATURE','NumberTitle','off');
+set(f1, 'Position', [300, 150, 924, 400]);
+set(f1,'PaperPositionMode','auto');
+set(f1,'PaperOrientation','landscape');
+set(f1,'visible','on');
+
+position2 = [0.0,0.0,0.3,1.0];
+subplot('Position',position2);
+contourf(x_dat(:,:),y_dat(:,:),squeeze(double(T.total(:,:,ilat)')),50,'edgecolor','none');
+hold on;
+t = title(['Ttotal'],'interpreter','none');
+set(t,'FontSize',15);
+colorbar('southoutside');
+shading flat;
+axis square;
+caxis([0.4 1.3]);
+
+position3 = [0.33,0.,0.3,1.0];
+subplot('Position',position3);
+contourf(x_dat(:,:),y_dat(:,:),squeeze(real(T.mean(:,:,ilat)')),70,'edgecolor','none');
+hold on;
+t=title('Theta mean');
+set(t,'FontSize',15);
+colorbar('southoutside');
+shading flat;
+axis square;
+% caxis([-1,1]);
+
+position4 = [0.66,0.,0.3,1.0];
+subplot('Position',position4);
+contourf(x_dat(:,:),y_dat(:,:),squeeze(real(T.t(:,:,ilat)')),30,'edgecolor','none');
+hold on;
+t=title('T example');
+set(t,'FontSize',15);
+colorbar('southoutside');
+shading flat;
+axis square;
+
+% saveTightFigure(f1,[name '_T.pdf'])
+

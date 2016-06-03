@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  31 MAY 2016 17:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  3 JUN 2016 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -229,18 +229,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -336,11 +336,11 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -351,31 +351,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `thesis.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
  []
 
 [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 50.
+               Default added (so using `tbp') on input line 51.
 
 <sketches/spherical_coord.jpg, id=15, 252.945pt x 289.83281pt>
 File: sketches/spherical_coord.jpg Graphic file (type jpg)
 
 <use sketches/spherical_coord.jpg>
-Package pdftex.def Info: sketches/spherical_coord.jpg used on input line 52.
-(pdftex.def)             Requested size: 195.89594pt x 224.46773pt.
+Package pdftex.def Info: sketches/spherical_coord.jpg used on input line 53.
+(pdftex.def)             Requested size: 182.83665pt x 209.50203pt.
 
 <sketches/spherical_coord2.jpg, id=16, 209.28188pt x 216.05719pt>
 File: sketches/spherical_coord2.jpg Graphic file (type jpg)
 
 <use sketches/spherical_coord2.jpg>
-Package pdftex.def Info: sketches/spherical_coord2.jpg used on input line 57.
-(pdftex.def)             Requested size: 195.89594pt x 202.2366pt.
+Package pdftex.def Info: sketches/spherical_coord2.jpg used on input line 58.
+(pdftex.def)             Requested size: 204.60434pt x 211.22688pt.
  [4] [5 <./sketches/spherical_coord.jpg> <./sketches/spherical_coord2.jpg>] [6]
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--126
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
@@ -383,50 +383,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--126
 File: sketches/density_var.pdf Graphic file (type pdf)
 
 <use sketches/density_var.pdf>
-Package pdftex.def Info: sketches/density_var.pdf used on input line 131.
+Package pdftex.def Info: sketches/density_var.pdf used on input line 132.
 (pdftex.def)             Requested size: 186.27972pt x 120.69336pt.
 
-Overfull \hbox (0.5654pt too wide) in paragraph at lines 157--157
+Overfull \hbox (4.56534pt too wide) in paragraph at lines 158--158
 [] 
  []
 
 [7 <./sketches/density_var.pdf>] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
 
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 309--313
+Underfull \hbox (badness 10000) in paragraph at lines 314--318
 
  []
 
-[12] [13] [14] [15] [16] (./thesis.bbl [17]) [18] (./thesis.aux) ) 
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 345--347
+
+ []
+
+<graphs/theory/temp_field1-crop.pdf, id=60, 358.33875pt x 386.44376pt>
+File: graphs/theory/temp_field1-crop.pdf Graphic file (type pdf)
+
+<use graphs/theory/temp_field1-crop.pdf>
+Package pdftex.def Info: graphs/theory/temp_field1-crop.pdf used on input line 
+351.
+(pdftex.def)             Requested size: 141.0453pt x 152.10995pt.
+
+<graphs/theory/temp_field2-crop.png, id=61, 593.5776pt x 364.2408pt>
+File: graphs/theory/temp_field2-crop.png Graphic file (type png)
+
+<use graphs/theory/temp_field2-crop.png>
+Package pdftex.def Info: graphs/theory/temp_field2-crop.png used on input line 
+355.
+(pdftex.def)             Requested size: 242.90904pt x 149.05624pt.
+
+<sketches/eq_flux-trim.png, id=62, 609.02531pt x 289.08pt>
+File: sketches/eq_flux-trim.png Graphic file (type png)
+
+<use sketches/eq_flux-trim.png>
+Package pdftex.def Info: sketches/eq_flux-trim.png used on input line 364.
+(pdftex.def)             Requested size: 261.199pt x 123.98438pt.
+
+<sketches/pattern.jpg, id=63, 384.6872pt x 382.42876pt>
+File: sketches/pattern.jpg Graphic file (type jpg)
+
+<use sketches/pattern.jpg>
+Package pdftex.def Info: sketches/pattern.jpg used on input line 370.
+(pdftex.def)             Requested size: 140.17752pt x 139.35483pt.
+ [13] [14 <./graphs/theory/temp_field1-crop.pdf> <./graphs/theory/temp_field2-c
+rop.png> <./sketches/eq_flux-trim.png> <./sketches/pattern.jpg>] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 442--448
+
+ []
+
+[16] [17] (./thesis.bbl [18]) [19] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5036 strings out of 493315
- 70919 string characters out of 6145894
- 150983 words of memory out of 5000000
- 8382 multiletter control sequences out of 15000+600000
- 19928 words of font info for 73 fonts, out of 8000000 for 9000
+ 5068 strings out of 493315
+ 71708 string characters out of 6145894
+ 152160 words of memory out of 5000000
+ 8407 multiletter control sequences out of 15000+600000
+ 20274 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,38p,984b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/t
-exmf/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
-mex10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sha
-re/texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
-cmmib10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></
-usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
-share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (18 pages, 299100 bytes).
+ 38i,12n,41p,984b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/type
+1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/share/texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texmf/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/font
+s/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.p
+fb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/a
+msfonts/cm/cmr7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (19 pages, 1040783 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 163 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
