@@ -34,6 +34,12 @@ Dormy, E., Cardin, P., and Jault, D. (1998).
   conducting inner core, in a dipolar magnetic field.
 \newblock {\em Earth and Planetary Science Letters}, 160(1):15--30.
 
+\bibitem[Glatzmaier et~al., 1999]{glatzmaier1999role}
+Glatzmaier, G.~A., Coe, R.~S., Hongre, L., and Roberts, P.~H. (1999).
+\newblock The role of the earth's mantle in controlling the frequency of
+  geomagnetic reversals.
+\newblock {\em Nature}, 401(6756):885--890.
+
 \bibitem[Glatzmaier and Roberts, 1995]{glatzmaier1995three}
 Glatzmaier, G.~A. and Roberts, P.~H. (1995).
 \newblock A three-dimensional convective dynamo solution with rotating and
@@ -61,11 +67,24 @@ Kundu, P. and Cohen, I. (2008).
 \newblock Fluid mechanics.
 \newblock {\em Academic, San Diego}.
 
+\bibitem[Nakagawa and Tackley, 2008]{nakagawa2008lateral}
+Nakagawa, T. and Tackley, P.~J. (2008).
+\newblock Lateral variations in cmb heat flux and deep mantle seismic velocity
+  caused by a thermal--chemical-phase boundary layer in 3d spherical
+  convection.
+\newblock {\em Earth and Planetary Science Letters}, 271(1):348--358.
+
 \bibitem[Olson and Christensen, 2002]{olson2002time}
 Olson, P. and Christensen, U. (2002).
 \newblock The time-averaged magnetic field in numerical dynamos with
   non-uniform boundary heat flow.
 \newblock {\em Geophysical Journal International}, 151(3):809--823.
+
+\bibitem[Tian et~al., 2015]{tian2015magnetic}
+Tian, Z., Zuber, M.~T., and Stanley, S. (2015).
+\newblock Magnetic field modeling for mercury using dynamo models with a stable
+  layer and laterally variable heat flux.
+\newblock {\em Icarus}, 260:263--268.
 
 \bibitem[Tilgner, 2007]{Tilgner2007}
 Tilgner, A. (2007).

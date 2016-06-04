@@ -198,7 +198,7 @@ The \textit{induction equation}, a transport equation for the magnetic field, ca
 \end{equation}
 where $\eta = \frac{1}{\sigma \mu_0}$ is the magnetic diffusivity.
 
-\subsection{Conservation of energy}
+\subsection{Conservation of energy and the light component}
 \label{sec:internal_energy}
 The conservation of internal energy in a fluid reads
 \begin{equation}
@@ -211,9 +211,8 @@ where the internal energy per unit mass is described by $e$. It can be changed b
  \frac{D T}{D t} = \kappa_\textrm{\tiny T} \bm \nabla^2 T.
 \end{equation}
 Here, $\kappa_\textrm{\tiny T} = \frac{k}{c_\textrm{\tiny P} \rho}$ is the thermal diffusivity and $T$ the fluid temperature. Internal sources of $e$ in the liquid outer core are completely omitted in this study.\\
-The derivation of equation \eqref{eq:heat_equation} was adopted from \citet{kundu2008fluid}.
-
-\subsection{Conservation of the light component}
+The derivation of equation \eqref{eq:heat_equation} was adopted from \citet{kundu2008fluid}.\\
+\\
 The light component is released at the ICB as the inner core slowly crystallizes. It serves as an additional source of buoyancy. In this model, the light component per unit mass, $C$, can only change by a flux $\bm q_\textrm{\tiny C}$ through the surface of the fluid. According to the equation for the conservation of the internal energy in section \ref{sec:internal_energy},
 \begin{equation*}
  \rho \frac{D C}{Dt} = - \bm \nabla \cdot \bm q_\textrm{\tiny C}
@@ -278,7 +277,7 @@ The thermal BC is of the Neumann type and will be discussed in more detail in th
 A heat flux balance between the inner and the outer core boundary is assumed. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
 \begin{align}
  -\textrm{Q}_i &= \textrm{Q}_o\\
- \Leftrightarrow \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \kappa \nabla T\big|_\textrm{\tiny{ICB}} \cdot \bm e_r \, dS &= \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \kappa \nabla T\big|_\textrm{\tiny{CMB}} \cdot \bm e_r \, dS \\
+ \Leftrightarrow \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \kappa_\textrm{T} \nabla T\big|_\textrm{\tiny{ICB}} \cdot \bm e_r \, dS &= \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \kappa_\textrm{T} \nabla T\big|_\textrm{\tiny{CMB}} \cdot \bm e_r \, dS \\
  \label{eq:fluxbalance1}
  \Leftrightarrow \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{ICB}} \, dS &= \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{CMB}} \, dS 
 \end{align}
@@ -300,7 +299,7 @@ This allows to formulate a simple relation between the mean radial temperature g
 \label{eq:beta_relation}
 \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{\tiny{ICB}} = \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_\textrm{\tiny{CMB}} \frac{R_o^2}{R_i^2} = - \beta \frac{R_o^2}{R_i^2} = - \beta \frac{1}{a^2}
 \end{equation}
-with $\beta := - \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_{\textrm{\tiny{CMB}}}$ as prescribed temperature gradient at the CMB.\\
+with $\beta := - \left(\frac{\partial T}{\partial r}\right)_0^0\bigg|_{\textrm{\tiny{CMB}}}$ as prescribed temperature gradient of degree and order 0 at the CMB.\\
 Since no internal sources of heat are assumed, the stationary form of \eqref{eq:heat_equation} takes the form of a Laplace equation. It reads
 \begin{equation}
  \nabla ^2 T = 0 \label{eq:laplace}
@@ -312,9 +311,13 @@ and with \eqref{eq:beta_relation} the appropriate BC are
 \begin{equation}
   \textrm{at the CMB:} \quad \frac{\partial T}{\partial r}\bigg|_{\textrm{\tiny{CMB}}} = - \beta \mathcal{Y}_0^0 + Amp_l^m \mathcal{Y}_l^m \label{eq:BCcmb}.
 \end{equation}
-$Amp_l^m$ is the amplitude of the heat flux heterogeneity for a heat flux pattern $\mathcal{Y}_l^m$.\\
+$Amp_l^m$ is the amplitude of the heat flux heterogeneity for a heat flux pattern $\mathcal{Y}_l^m$. Its definition follows the work of \citet{hori2014ancient}:
+\begin{equation}
+ Amp = \frac{q_\textrm{\tiny{max}} - q_\textrm{\tiny{min}}}{2q_\textrm{\tiny{mean}}}
+\end{equation}
+The mean heat flux at the CMB $q_\textrm{\tiny{mean}}$ results from the temperature gradient $\beta$ at the CMB. $q_\textrm{\tiny{max}}$ and $q_\textrm{\tiny{max}}$ are the extrema of the lateral heat flux variation.  \\
 \\
-In order to implement the BC into the numerics, a (conductive) solution to \eqref{eq:laplace} has to be found. In spherical coordinates, it reads
+In order to implement the BC into the numerics, a (conductive) solution to \eqref{eq:laplace} has to be found. In the most general form, it reads
 \begin{equation}
  T = \sum \limits_{l,m} \left[ a_l^m r^l + b_l^m r^{-l-1} \right] \mathcal{Y}_l^m(\vartheta,\varphi) \label{eq:cond}
 \end{equation}
@@ -345,7 +348,7 @@ Inserting $a_2^2$, $b_2^2$ and $b_0^0$ into \eqref{eq:cond} gives a solution to 
 \end{equation}
 $a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the following. This conductive temperature profile with its spherically asymmetric part will be introduced into the equations in the density fluctuation part $\rho'$ in section \ref{sec:cond_conv}. \\
 \par
-The effect of the CMB - heat flux pattern on the conductive temperature field is shown in figure \ref{fig:conductives}. Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of lower heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures. 
+The effect of the CMB - heat flux pattern on the conductive temperature field is shown in figure \ref{fig:conductives}. Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures. 
 \begin{figure}[t]
  \begin{minipage}{0.36\textwidth}
   \includegraphics[width=0.9\textwidth]{graphs/theory/temp_field1-crop.pdf}
@@ -358,15 +361,16 @@ The effect of the CMB - heat flux pattern on the conductive temperature field is
 \label{fig:conductives}
 \end{figure}
 \\
-The amplitude of heterogeneity, $Amp$, plays an important role for the heat flux pattern. Figure \ref{fig:equator_flux} 
+\\
+The amplitude of heterogeneity, $Amp_2^2$, from now on referred to as $q^*$, plays a central role for the heat flux pattern. Figure \ref{fig:equator_flux} shows the core-mantle heat flux along the equator for two values of $q^*$. If the amplitude is chosen to be greater than 1, negative (inward) heat flux occurs in distinct regions around the flux minima. Heat flow from the mantle to the core produces gravitationally stable regions with respect to temperature. Together with an always destabilizing compositional gradient, this could yield nonlinear double-diffusive effects as fingering or layering. A scenario in which gravitationally stable regions play a role in core convection was recently discussed for mercury \citep{tian2015magnetic}. Yet for the Earth, where the heterogeneities in core-mantle heat flux are considered to be rather mild \citep{aubert2008thermochemical, olson2002time, glatzmaier1999role}, \citet{nakagawa2008lateral} expect that heat flows from the mantle to the core where compositionally dense piles settle at the base of the mantle. Because of that and due to the fact that this study aims to explore the effect of a heat flux pattern on core convection from a general perspective, values of $q^* >1$ are likewise regarded.
 \begin{figure}[H]
- \begin{minipage}[left]{0.6\textwidth}
+ \begin{minipage}[left]{0.7\textwidth}
   \includegraphics[width=1\textwidth]{sketches/eq_flux-trim.png}
-\caption{Plot of the CMB - heat flux along the equator for amplitudes of heterogeneity $Amp_2^2 = 1$ and $Amp_2^2 = 2$. For $Amp > 1$, heat partially flows from the mantle to the core (blue region). } 
+\caption{Plot of the CMB - heat flux along the equator for amplitudes of heterogeneity $q^* = 1$ and $q^* = 2$. For $q^* > 1$, heat partially flows from the mantle to the core (blue region). } 
  \label{fig:equator_flux}
  \end{minipage}
  \hfill
-  \begin{minipage}[right]{0.35\textwidth}
+  \begin{minipage}[right]{0.25\textwidth}
   \includegraphics[width=0.92\textwidth]{sketches/pattern.jpg}
  \caption{Sketch of the equatorial plain and the distribution of high and low heat flux at the CMB. }
  \label{fig:fluxsketch}
@@ -392,6 +396,7 @@ A common procedure in fluid dynamics is to \textit{rescale} the equations introd
  \label{tab:scales} 
 \end{table}
 The application of these scales to \eqref{eq:incompressible}, \eqref{eq:force_balance3}, \eqref{eq:heat_equation}, \eqref{eq:chemical_equation} and \eqref{eq:induction} yields a system of non dimensional equations:
+{\allowdisplaybreaks
 \begin{subequations} \label{eq:nondim}
  \begin{align}
 \label{eq:incompressible^}
@@ -406,7 +411,7 @@ The application of these scales to \eqref{eq:incompressible}, \eqref{eq:force_ba
   \label{eq:induction^}
  \frac{\partial \bm {\hat{B}}}{\partial \hat t} = & \quad  \bm{\hat \nabla} \times (\bm{\hat u} \times \bm{\hat{B}}) + \frac{1}{\textrm{Pr}_\textrm{\tiny m}} \hat{ \bm \nabla}^2 \bm{\hat {B}}.
  \end{align}
-\end{subequations}
+\end{subequations}}\\
 Nondimensional quantities are denoted by \^{} and they are related to their dimensional counterparts via $(\textrm{ }) = \textit{scale } \hat{(\textrm{ })}$. \\
 The following parameters of similarity appear in the equations:
 {\allowdisplaybreaks

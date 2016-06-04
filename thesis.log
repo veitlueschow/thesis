@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  3 JUN 2016 13:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  4 JUN 2016 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -390,18 +390,23 @@ Overfull \hbox (4.56534pt too wide) in paragraph at lines 158--158
 [] 
  []
 
-[7 <./sketches/density_var.pdf>] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
+[7 <./sketches/density_var.pdf>] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
 
  []
 
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 314--318
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 345--347
+[10] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 317--321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
 
  []
 
@@ -410,7 +415,7 @@ File: graphs/theory/temp_field1-crop.pdf Graphic file (type pdf)
 
 <use graphs/theory/temp_field1-crop.pdf>
 Package pdftex.def Info: graphs/theory/temp_field1-crop.pdf used on input line 
-351.
+354.
 (pdftex.def)             Requested size: 141.0453pt x 152.10995pt.
 
 <graphs/theory/temp_field2-crop.png, id=61, 593.5776pt x 364.2408pt>
@@ -418,37 +423,47 @@ File: graphs/theory/temp_field2-crop.png Graphic file (type png)
 
 <use graphs/theory/temp_field2-crop.png>
 Package pdftex.def Info: graphs/theory/temp_field2-crop.png used on input line 
-355.
+358.
 (pdftex.def)             Requested size: 242.90904pt x 149.05624pt.
 
-<sketches/eq_flux-trim.png, id=62, 609.02531pt x 289.08pt>
+<sketches/eq_flux-trim.png, id=62, 782.17218pt x 292.84406pt>
 File: sketches/eq_flux-trim.png Graphic file (type png)
 
 <use sketches/eq_flux-trim.png>
-Package pdftex.def Info: sketches/eq_flux-trim.png used on input line 364.
-(pdftex.def)             Requested size: 261.199pt x 123.98438pt.
+Package pdftex.def Info: sketches/eq_flux-trim.png used on input line 368.
+(pdftex.def)             Requested size: 304.72775pt x 114.08807pt.
 
 <sketches/pattern.jpg, id=63, 384.6872pt x 382.42876pt>
 File: sketches/pattern.jpg Graphic file (type jpg)
 
 <use sketches/pattern.jpg>
-Package pdftex.def Info: sketches/pattern.jpg used on input line 370.
-(pdftex.def)             Requested size: 140.17752pt x 139.35483pt.
- [13] [14 <./graphs/theory/temp_field1-crop.pdf> <./graphs/theory/temp_field2-c
-rop.png> <./sketches/eq_flux-trim.png> <./sketches/pattern.jpg>] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 442--448
+Package pdftex.def Info: sketches/pattern.jpg used on input line 374.
+(pdftex.def)             Requested size: 100.12506pt x 99.53416pt.
+
+Underfull \hbox (badness 3954) in paragraph at lines 375--375
+\OT1/cmr/m/n/10 low heat flux at the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--378
 
  []
 
-[16] [17] (./thesis.bbl [18]) [19] (./thesis.aux) ) 
+[13] [14 <./graphs/theory/temp_field1-crop.pdf> <./graphs/theory/temp_field2-cr
+op.png>] [15 <./sketches/eq_flux-trim.png> <./sketches/pattern.jpg>] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 447--453
+
+ []
+
+[17] [18] (./thesis.bbl [19]) [20] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5068 strings out of 493315
- 71708 string characters out of 6145894
- 152160 words of memory out of 5000000
- 8407 multiletter control sequences out of 15000+600000
+ 5077 strings out of 493315
+ 71939 string characters out of 6145894
+ 152267 words of memory out of 5000000
+ 8416 multiletter control sequences out of 15000+600000
  20274 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,41p,984b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,41p,1297b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/type
 1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
@@ -465,10 +480,10 @@ msfonts/cm/cmr7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb><
 nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 </usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (19 pages, 1040783 bytes).
+Output written on thesis.pdf (20 pages, 1048741 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
+ 166 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
