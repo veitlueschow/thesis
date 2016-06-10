@@ -22,11 +22,22 @@ Braginsky, S.~I. and Roberts, P.~H. (1995).
 \newblock Equations governing convection in earth's core and the geodynamo.
 \newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 79(1-4):1--97.
 
+\bibitem[Chandrasekhar, 1961]{chandrasekhar1970hydrodynamic}
+Chandrasekhar, S. (1961).
+\newblock {\em Hydrodynamic and hydromagnetic stability}, volume 196.
+\newblock Clarendon Press Oxford.
+
 \bibitem[Christensen and Aubert, 2006]{christensen2006scaling}
 Christensen, U. and Aubert, J. (2006).
 \newblock Scaling properties of convection-driven dynamos in rotating spherical
   shells and application to planetary magnetic fields.
 \newblock {\em Geophysical Journal International}, 166(1):97--114.
+
+\bibitem[Dietrich et~al., 2016]{dietrich2016core}
+Dietrich, W., Hori, K., and Wicht, J. (2016).
+\newblock Core flows and heat transfer induced by inhomogeneous cooling with
+  sub-and supercritical convection.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 251:36--51.
 
 \bibitem[Dormy et~al., 1998]{dormy1998mhd}
 Dormy, E., Cardin, P., and Jault, D. (1998).
@@ -102,10 +113,22 @@ Tr{\"u}mper, T., Breuer, M., and Hansen, U. (2012).
 \newblock Numerical study on double-diffusive convection in the earth's core.
 \newblock {\em Physics of the Earth and Planetary Interiors}, 194:55--63.
 
+\bibitem[Vallis, 2006]{vallis2006atmospheric}
+Vallis, G.~K. (2006).
+\newblock {\em Atmospheric and oceanic fluid dynamics: fundamentals and
+  large-scale circulation}.
+\newblock Cambridge University Press.
+
 \bibitem[Wicht, 2002]{wicht2002inner}
 Wicht, J. (2002).
 \newblock Inner-core conductivity in numerical dynamo simulations.
 \newblock {\em Physics of the Earth and Planetary Interiors}, 132(4):281--302.
+
+\bibitem[Zhang and Gubbins, 1992]{zhang1992convection}
+Zhang, K. and Gubbins, D. (1992).
+\newblock On convection in the earth's core driven by lateral temperature
+  variations in the lower mantle.
+\newblock {\em Geophysical journal international}, 108(1):247--255.
 
 \bibitem[Zhang and Busse, 1987]{zhang1987onset}
 Zhang, K.-K. and Busse, F. (1987).

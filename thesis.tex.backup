@@ -41,7 +41,7 @@ We observe that fixed flux conditions promote larger flow scales and an increase
  
 \section{Modeling core convection and dynamo action}
 
-Rotating convection and dynamo action in Earth's core is a topic that has been explored by many authors (REFS ???). There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for larger computers that allow to explore earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (REFS ???).\\
+Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied \citep{chandrasekhar1970hydrodynamic}. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for larger computers that allow to explore earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (REFS ???).\\
 A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions (BC) or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
 We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
 In the following all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short. The according references will be given in each section.\\
@@ -58,7 +58,7 @@ The LOC is constantly rotating about the z-axis of a Cartesian system. The angul
   \includegraphics[width=\textwidth]{sketches/spherical_coord2.jpg} 
   \caption*{(b)}
   \end{minipage}
-  \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian z-axis. (b) This work uses spherical coordinates with unit vectors $ \bm e_r$, $\bm e_\Phi$ and $\bm e_\vartheta$ \citep{trumper2014thermo}.}
+  \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian z-axis. (b) This work uses spherical coordinates with unit vectors $ \bm{e_r}$, $\bm{e_\Phi}$ and $\bm{e_\vartheta}$ \citep{trumper2014thermo}.}
 \end{figure}
 
 \subsection{Equation of continuity}
@@ -117,7 +117,7 @@ From now on, the subscripts $F$ and $R$ will be cut and all quantities will be m
   - \int_{\mathcal{V}} \rho \left( 2\bm \Omega \times \bm u + \bm \Omega \times (\bm \Omega \times \bm r) \right) d^3r.
   \label{eq:force_balance2}
 \end{align}
-Another pseudo force that generally appears in rotating systems is the \textit{Poincar\'{e} force}. Precession driven flows are the most prominent example from geophysics where it plays a dominant role \citep{Tilgner2007}.\\
+Another pseudo force that generally appears in rotating systems, but that is neglected here, is the \textit{Poincar\'{e} force}. Precession driven flows are the most prominent example from geophysics where it plays a dominant role \citep{Tilgner2007}. \\
 The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
 \begin{equation}
  \oint_{\partial \mathcal{V}} \bm t ds = \int_{\mathcal{V}} \bm \nabla \cdot \underline{\tau} d^3r,
@@ -130,7 +130,7 @@ In the following, the gravitational field $\bm g$ will be discussed in more deta
 \begin{figure}[H]
  \centering
  \includegraphics[scale = 0.24]{sketches/density_var.pdf} 
- \caption{Sketch of the density along the equator, near the CMB. The deviation (black) from the average density (red) results from the asymmetric heat flux at the CMB which has a asymmetric temperature field as a consequence. }
+ \caption{Sketch of the density along the equator, near the CMB. The deviation (black) from the average density (red) results from the asymmetric heat flux at the CMB which has a asymmetric temperature field as an consequence. }
  \label{fig:density_var}
 \end{figure}
 The total density can be split into one spherical symmetric part $\mathring{\rho}(r)$ that only depends on the radial level $r$ and the density variation due to the heat flux pattern $\delta \mathring{\rho}(r,\vartheta,\varphi)$:
@@ -148,7 +148,7 @@ Integration over a sphere of radius $r$ and application of Gauss's theorem yield
 \begin{align}
 % \label{eq:grav_balance}
 \nonumber
-\int\limits _{\mathcal{V}(r)} \bm \nabla \cdot \bm g dV &= \int\limits_0^\pi \int\limits_0^{2\pi} r^2sin(\vartheta )d\vartheta d\varphi \bm g \cdot \bm e_r= - 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 \rho(r,\vartheta,\varphi) \, dr' d\vartheta d\varphi\\
+\int\limits _{\mathcal{V}(r)} \bm \nabla \cdot \bm g dV &= \int\limits_0^\pi \int\limits_0^{2\pi} r^2sin(\vartheta )d\vartheta d\varphi \bm g \cdot \bm{e_r}= - 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 \rho(r,\vartheta,\varphi) \, dr' d\vartheta d\varphi\\
 \nonumber
 &=- 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 [\mathring{\rho}(r') + \delta \mathring {\rho}(r',\vartheta,\varphi)] \, dr' d\vartheta d\varphi \\
 \nonumber
@@ -198,7 +198,7 @@ The \textit{induction equation}, a transport equation for the magnetic field, ca
 \end{equation}
 where $\eta = \frac{1}{\sigma \mu_0}$ is the magnetic diffusivity.
 
-\subsection{Conservation of energy}
+\subsection{Conservation of energy and the light component}
 \label{sec:internal_energy}
 The conservation of internal energy in a fluid reads
 \begin{equation}
@@ -211,10 +211,9 @@ where the internal energy per unit mass is described by $e$. It can be changed b
  \frac{D T}{D t} = \kappa_\textrm{\tiny T} \bm \nabla^2 T.
 \end{equation}
 Here, $\kappa_\textrm{\tiny T} = \frac{k}{c_\textrm{\tiny P} \rho}$ is the thermal diffusivity and $T$ the fluid temperature. Internal sources of $e$ in the liquid outer core are completely omitted in this study.\\
-The derivation of equation \eqref{eq:heat_equation} was adopted from \citet{kundu2008fluid}.
-
-\subsection{Conservation of the light component}
-The light component is released at the ICB as the inner core slowly crystallizes. It serves as an additional source of buoyancy. In this model, the light component per unit mass, $C$, can only change by a flux $\bm q_\textrm{\tiny C}$ through the surface of the fluid. According to the equation for the conservation of the internal energy in section \ref{sec:internal_energy},
+The derivation of equation \eqref{eq:heat_equation} was adopted from \citet{kundu2008fluid}.\\
+\\
+The light component is released at the ICB as the inner core slowly crystallizes. It serves as an additional source of buoyancy. In this model, the light component per unit mass, $C$, can only change by a flux $\bm q_\textrm{\tiny C}$ through the surface of the fluid. According to the equation for the conservation of the internal energy above,
 \begin{equation*}
  \rho \frac{D C}{Dt} = - \bm \nabla \cdot \bm q_\textrm{\tiny C}
 \end{equation*}
@@ -234,7 +233,7 @@ Starting from an adiabatic reference state, density, pressure, temperature and c
 \end{align}
 Further on, it is assumed that the typical length scale of the system (here: the shell thickness $d$) is small compared to the scale heights in the reference state. Perturbations to that state shall be small compared to the adiabat. As a result, the reference state becomes independent of position.\\ 
 Whether the assumption of a negligible small superadiabaticity is valid in the context of core convection is still debated \citep{anufriev2005boussinesq}. The alternative is to model either the fully compressible equations or to use the anelastic approximation that, in contrast to the Boussinesq model, allows density stratification. \citet{jones2007thermal} extensively discusses the implications of the choice of one of these approaches.\\
-From the approximation it follows for the system of equations that
+From the Boussinesq approximation it follows for the system of equations that
 \begin{itemize}
  \item[-] the equation of state takes a linear form: 
  \begin{equation}
@@ -247,7 +246,7 @@ From the approximation it follows for the system of equations that
  \bm \nabla \cdot \bm u = 0 \quad \quad \quad \quad \text{(solenoidal character of } \bm u ).
 \end{equation}
 \item[-] the dissipative heating term can be neglected in the equation of momentum and internal energy (see section \ref{sec:momentum} and \ref{sec:internal_energy}).
-\item[-] the material properties such as $\alpha_\textrm{\tiny T}$, $\alpha_\textrm{\tiny C}$, $\mu$, $c_\textrm{\tiny P}$, $\eta$, $\kappa_\textrm{\tiny T}$ and $\kappa_\textrm{\tiny C}$ stay constant throughout the fluid.
+\item[-] the material properties such as $\alpha_\textrm{\tiny T}$, $\alpha_\textrm{\tiny C}$, $\mu_0$, $c_\textrm{\tiny P}$, $\eta$, $\kappa_\textrm{\tiny T}$ and $\kappa_\textrm{\tiny C}$ stay constant throughout the fluid.
 \end{itemize}
 An important advantage of the modified equations is that sound waves are \textit{filtered out}. This reduces the numerical costs without curtailing any relevant physical processes, since the short time scales of sound waves does not have to be resolved numerically.\\
 In the differential form, the equation of momentum \eqref{eq:force_balance2} now reads
@@ -259,9 +258,9 @@ where $\nu = \mu/\bar \rho$ is the new kinematic viscosity. The centrifugal pote
 \subsection{Boundary conditions}
 \label{sec:bc}
 This section is dedicated to the boundary conditions.\\ 
-For the velocity field they are chosen to be \textit{no-slip}, e.g. $\bm u = 0$ on the ICB ($r = R_i$) and the CMB ($r =R_0$), in order to be comparable to other studies. Several authors state that these \textit{rigid} BC reflect what is realistic for the interaction between the inner, the outer core and the mantle \citep{glatzmaier1995three, christensen2006scaling, trumper2012numerical}. On the other hand, \citet{zhang1987onset} or \citet{kuang1997earth} argue that the Ekman layers which result from rigid boundaries are be negligibly thin in the Earth's core due to its extremely small viscosity. Because today's numerical models are forced to use a far to high viscosity, they over emphasize the effect of Ekman layers and therefore \textit{stress-free} BC are more appropriate. For a better comparison, this work follows the approach that was used by related studies \citep{olson2002time, aubert2008thermochemical, hori2014ancient}. \\
-According to \citet{trumper2012numerical}, Derichlet type BC are chosen for the chemical component. A compositional gradient, $\Delta C = C'_\textrm{\tiny ICB} - C'_\textrm{\tiny CMB}$, is imposed across the shell. In a more earth-like scenario, one would apply Neumann type conditions with fixed compositional influx at the ICB and zero outflux at the CMB \cite{braginsky1995equations}. This would further increase the complexity of the model and is therefore adjourned in this case. \\
-The mantle is assumed to be an insulator due to its rocky content \citep{dormy1998mhd}. The question whether the inner core should be treated as an insulator or not was discussed by \citet{wicht2002inner}. He found that the effect of a conducting inner core on the flow field and the magnetic field is rather small. It is hence reasonable to chose $\sigma = 0$ in the inner core in order not to be obliged to solve the induction equation in the full sphere. In the mantle and the core, the magnetic field $\bm B$ is the solution to 
+For the velocity field they are chosen to be \textit{no-slip}, e.g. $\bm u = 0$ on the ICB ($r = R_i$) and the CMB ($r =R_0$), in order to be comparable to other studies. Several authors state that these \textit{rigid} BC reflect what is realistic for the interaction between the inner and outer core and the outer core and the mantle, respectively \citep{glatzmaier1995three, christensen2006scaling, trumper2012numerical}. On the other hand, \citet{zhang1987onset} or \citet{kuang1997earth} argue that the Ekman layers which result from rigid boundaries are be negligibly thin in the Earth's core due to its extremely small viscosity. Because today's numerical models are forced to use a far to high viscosity, they over emphasize the effect of Ekman layers and therefore \textit{stress-free} BC are more appropriate. For a better comparison, this work follows the approach that was used by related studies \citep{olson2002time, aubert2008thermochemical, hori2014ancient}. \\
+According to \citet{trumper2012numerical}, Derichlet type BC are chosen for the chemical component. A compositional gradient, $\Delta C = C'_\textrm{\tiny ICB} - C'_\textrm{\tiny CMB}$, is imposed across the shell. In a more earth-like scenario, one would apply Neumann type conditions with fixed compositional influx at the ICB and zero outflux at the CMB \citep{braginsky1995equations}. This would further increase the complexity of the model and is therefore adjourned in this case. \\
+The mantle is assumed to be an insulator due to its rocky content \citep{dormy1998mhd}. The question whether the inner core should be treated as an insulator or not was discussed by \citet{wicht2002inner}. He found that the effect of a conducting inner core on the flow field and the magnetic field is rather small. It is hence reasonable to choose $\sigma = 0$ in the inner core in order not to be obliged to solve the induction equation in the full sphere. In the mantle and the core, the magnetic field $\bm B$ is the solution to 
 \begin{equation}
  \label{eq:mag1}
  \bm B = - \bm \nabla \Phi
@@ -278,7 +277,7 @@ The thermal BC is of the Neumann type and will be discussed in more detail in th
 A heat flux balance between the inner and the outer core boundary is assumed. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
 \begin{align}
  -\textrm{Q}_i &= \textrm{Q}_o\\
- \Leftrightarrow \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \kappa \nabla T\big|_\textrm{\tiny{ICB}} \cdot \bm e_r \, dS &= \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \kappa \nabla T\big|_\textrm{\tiny{CMB}} \cdot \bm e_r \, dS \\
+ \Leftrightarrow \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \kappa_\textrm{T} \nabla T\big|_\textrm{\tiny{ICB}} \cdot \bm{e_r} \, dS &= \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \kappa_\textrm{T} \nabla T\big|_\textrm{\tiny{CMB}} \cdot \bm{e_r} \, dS \\
  \label{eq:fluxbalance1}
  \Leftrightarrow \int \limits_{\mathcal{S}_\textrm{\tiny{ICB}}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{ICB}} \, dS &= \int \limits_{\mathcal{S}_\textrm{\tiny{CMB}}} \frac{\partial T}{\partial r} \bigg|_\textrm{\tiny{CMB}} \, dS 
 \end{align}
@@ -318,7 +317,7 @@ $Amp_l^m$ is the amplitude of the heat flux heterogeneity for a heat flux patter
 \end{equation}
 The mean heat flux at the CMB $q_\textrm{\tiny{mean}}$ results from the temperature gradient $\beta$ at the CMB. $q_\textrm{\tiny{max}}$ and $q_\textrm{\tiny{max}}$ are the extrema of the lateral heat flux variation.  \\
 \\
-In order to implement the BC into the numerics, a (conductive) solution to \eqref{eq:laplace} has to be found. In the most general form, it reads
+In order to implement the BC into the numerical model, a (conductive) solution to \eqref{eq:laplace} has to be found. In the most general form, it reads
 \begin{equation}
  T = \sum \limits_{l,m} \left[ a_l^m r^l + b_l^m r^{-l-1} \right] \mathcal{Y}_l^m(\vartheta,\varphi) \label{eq:cond}
 \end{equation}
@@ -335,7 +334,7 @@ for $l=m=0$ and the algebraic equation
  la_l^m R_i^{l-1} - (l+1) b_l^m R_i^{-l-2} = 0 \label{eq:algebraicICB}
 \end{equation}
 follows for all $l>0$ and $m>0$.\\
-Fot the  CMB, \eqref{eq:BCcmb} and \eqref{eq:gradcond} yield
+For the  CMB, \eqref{eq:BCcmb} and \eqref{eq:gradcond} yield
 \begin{equation}
  l a_l^m R_o^{l-1} - (l+1)b_l^m R_o^{-l-2} = Amp_l^m. \label{eq:algebraicCMB}
 \end{equation}
@@ -349,7 +348,7 @@ Inserting $a_2^2$, $b_2^2$ and $b_0^0$ into \eqref{eq:cond} gives a solution to 
 \end{equation}
 $a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the following. This conductive temperature profile with its spherically asymmetric part will be introduced into the equations in the density fluctuation part $\rho'$ in section \ref{sec:cond_conv}. \\
 \par
-The effect of the CMB - heat flux pattern on the conductive temperature field is shown in figure \ref{fig:conductives}. Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures. 
+The effect of the CMB - heat flux pattern on the conductive temperature field is shown in figure \ref{fig:conductives}. Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
 \begin{figure}[t]
  \begin{minipage}{0.36\textwidth}
   \includegraphics[width=0.9\textwidth]{graphs/theory/temp_field1-crop.pdf}
@@ -363,15 +362,15 @@ The effect of the CMB - heat flux pattern on the conductive temperature field is
 \end{figure}
 \\
 \\
-The amplitude of heterogeneity, $Amp$, plays a central role for the heat flux pattern. Figure \ref{fig:equator_flux} shows the core-mantle heat flux along the equator for two values of $Amp$. If the amplitude is chosen to be greater than 1, negative (inward) heat flux occurs in distinct regions around the flux minima. Heat flow from the mantle to the core produces gravitationally stable regions with respect to temperature. Together with an always destabilizing compositional gradient, this could yield nonlinear double-diffusive effects as fingering or layering. A scenario in which gravitationally stable regions play a role in core convection was recently discussed for mercury \citep{tian2015magnetic}. Yet for the Earth, where the heterogeneities in core-mantle heat flux are considered to be rather mild \citep{aubert2008thermochemical, olson2002time, glatzmaier1999role}, \citet{nakagawa2008lateral} expect that heat flows from the mantle to the core where compositionally dense piles settle at the base of the mantle. Because of that and due to the fact that this study aims to explore the effect of a heat flux pattern on core convection from a general perspective, values of $Amp >1$ are regarded as well.
+The amplitude of heterogeneity, $Amp_2^2$, from now on referred to as $q^*$, plays a central role for the heat flux pattern. Figure \ref{fig:equator_flux} shows the core-mantle heat flux along the equator for two values of $q^*$. If the amplitude is chosen to be greater than 1, negative (inward) heat flux occurs in distinct regions around the flux minima. Heat flow from the mantle to the core produces gravitationally stable regions with respect to temperature. Together with an always destabilizing compositional gradient, this could yield nonlinear double-diffusive effects as fingering or layering. A scenario in which gravitationally stable regions play a role in core convection was recently discussed for mercury \citep{tian2015magnetic}. Yet for the Earth, where the heterogeneities in core-mantle heat flux are considered to be rather mild \citep{aubert2008thermochemical, olson2002time, glatzmaier1999role}, \citet{nakagawa2008lateral} expect that heat flows from the mantle to the core where compositionally dense piles settle at the base of the mantle. Because of that and due to the fact that this study aims to explore the effect of a heat flux pattern on core convection from a general perspective, values of $q^* >1$ are likewise regarded.
 \begin{figure}[H]
- \begin{minipage}[left]{0.6\textwidth}
+ \begin{minipage}[left]{0.7\textwidth}
   \includegraphics[width=1\textwidth]{sketches/eq_flux-trim.png}
-\caption{Plot of the CMB - heat flux along the equator for amplitudes of heterogeneity $Amp_2^2 = 1$ and $Amp_2^2 = 2$. For $Amp > 1$, heat partially flows from the mantle to the core (blue region). } 
+\caption{Plot of the CMB - heat flux along the equator for amplitudes of heterogeneity $q^* = 1$ and $q^* = 2$. For $q^* > 1$, heat partially flows from the mantle to the core (blue region). } 
  \label{fig:equator_flux}
  \end{minipage}
  \hfill
-  \begin{minipage}[right]{0.35\textwidth}
+  \begin{minipage}[right]{0.25\textwidth}
   \includegraphics[width=0.92\textwidth]{sketches/pattern.jpg}
  \caption{Sketch of the equatorial plain and the distribution of high and low heat flux at the CMB. }
  \label{fig:fluxsketch}
@@ -397,13 +396,14 @@ A common procedure in fluid dynamics is to \textit{rescale} the equations introd
  \label{tab:scales} 
 \end{table}
 The application of these scales to \eqref{eq:incompressible}, \eqref{eq:force_balance3}, \eqref{eq:heat_equation}, \eqref{eq:chemical_equation} and \eqref{eq:induction} yields a system of non dimensional equations:
+{\allowdisplaybreaks
 \begin{subequations} \label{eq:nondim}
  \begin{align}
 \label{eq:incompressible^}
 {\bm {\hat \nabla}} \cdot \bm{ \hat u} = & \quad0, \\
 \label{eq:momentum^} \nonumber
-\frac{D \bm{ \hat u}}{D \hat t} = &- \bm{ \hat \nabla} \hat \pi' - \frac{2}{\textrm{Ek}}\, \bm e_\textrm{\tiny{z}} \times \bm{ \hat u} + \bm{ \hat \nabla}^2 \bm{ \hat u} + \frac{1}{\textrm{Ek}  \textrm{Pr}_\textrm{\tiny{m}}} \left( \bm{ \hat \nabla} \times \hat{ \bm B} \right) \times \hat{ \bm B}  \\ 
- &+ (\textrm{Ra}_\textrm{\tiny {T}} \hat{ T'} + \textrm{Ra}_\textrm{\tiny {C}} \hat{ C'} )(1-a) \hat{r} \, \bm e_\textrm{\tiny r}, \\
+\frac{D \bm{ \hat u}}{D \hat t} = &- \bm{ \hat \nabla} \hat \pi' - \frac{2}{\textrm{Ek}}\, \bm{e_z} \times \bm{ \hat u} + \bm{ \hat \nabla}^2 \bm{ \hat u} + \frac{1}{\textrm{Ek}  \textrm{Pr}_\textrm{\tiny{m}}} \left( \bm{ \hat \nabla} \times \hat{ \bm B} \right) \times \hat{ \bm B}  \\ 
+ &+ (\textrm{Ra}_\textrm{\tiny {T}} \hat{ T'} + \textrm{Ra}_\textrm{\tiny {C}} \hat{ C'} )(1-a) \hat{r} \, \bm{e_r}, \\
 \label{eq:heat_equation^}
  \frac{D \hat T'}{D t} =& \quad \frac{1}{\textrm{Pr}_\textrm{\tiny T}} \bm{\hat \nabla}^2 \hat T',\\
  \label{eq:chemical_equation^}
@@ -411,7 +411,7 @@ The application of these scales to \eqref{eq:incompressible}, \eqref{eq:force_ba
   \label{eq:induction^}
  \frac{\partial \bm {\hat{B}}}{\partial \hat t} = & \quad  \bm{\hat \nabla} \times (\bm{\hat u} \times \bm{\hat{B}}) + \frac{1}{\textrm{Pr}_\textrm{\tiny m}} \hat{ \bm \nabla}^2 \bm{\hat {B}}.
  \end{align}
-\end{subequations}
+\end{subequations}}\\
 Nondimensional quantities are denoted by \^{} and they are related to their dimensional counterparts via $(\textrm{ }) = \textit{scale } \hat{(\textrm{ })}$. \\
 The following parameters of similarity appear in the equations:
 {\allowdisplaybreaks
@@ -460,13 +460,13 @@ $t_0^0(r)$ and and the spherical symmetric solution $C_\textrm{cond}(r)$ can be 
 \end{equation*}
 Yet, it is not possible to find a potential $\tau$ for the asymmetric part that satisfies
 \begin{equation*}
-\bm \nabla \tau = \textrm{Ra}_\textrm{\tiny T} \, t_2^2(r)(1-a) r \, \bm e_r,
+\bm \nabla \tau = \textrm{Ra}_\textrm{\tiny T} \, t_2^2(r)(1-a) r \, \bm{e_r},
 \end{equation*}
 since this would demand $\partial \tau/\partial \vartheta = \partial \tau/\partial \varphi = 0$, a condition that cannot be fulfilled by $t_2^2$ being a function of $\vartheta$ and $\varphi$. Thus, $t^2_2$ appears in the buoyancy term of the momentum equation:
 \begin{align}
 \nonumber
- \frac{D \bm{ u}}{D  t} = &- \bm{  \nabla}  \pi - \frac{2}{\textrm{Ek}}\, \bm e_\textrm{\tiny{z}} \times \bm{  u} + \bm{  \nabla}^2 \bm{  u} + \frac{1}{\textrm{Ek}  \textrm{Pr}_\textrm{\tiny{m}}} \left( \bm{  \nabla} \times { \bm B} \right) \times { \bm B}  \\ 
- &+ (\textrm{Ra}_\textrm{\tiny {T}}  [\theta + t_2^2] + \textrm{Ra}_\textrm{\tiny {C}} { \zeta} )(1-a) {r} \, \bm e_\textrm{\tiny r}
+ \frac{D \bm{ u}}{D  t} = &- \bm{  \nabla}  \pi - \frac{2}{\textrm{Ek}}\, \bm {e_z} \times \bm{  u} + \bm{  \nabla}^2 \bm{  u} + \frac{1}{\textrm{Ek}  \textrm{Pr}_\textrm{\tiny{m}}} \left( \bm{  \nabla} \times { \bm B} \right) \times { \bm B}  \\ 
+ &+ (\textrm{Ra}_\textrm{\tiny {T}}  [\theta + t_2^2] + \textrm{Ra}_\textrm{\tiny {C}} { \zeta} )(1-a) {r} \, \bm{e_r}
 \end{align}
 
 
@@ -476,13 +476,37 @@ since this would demand $\partial \tau/\partial \vartheta = \partial \tau/\parti
 
 \section{State of research}
 
+\section{Outline of the study}
+Describe the used parameters and show earth values
+\label{sec:parameters}
+
 \section{Thermo-chemical core convection}
+\label{sec:thermo-chemical}
+In this section, some typical features of nonmagnetic convection in a rotating spherical shell that is inhomogeneously cooled from above are described based on a few showcases. Therefore, the focus lies on the heat flux pattern at the CMB and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model.\\
+\begin{itemize}
+ \item kinetic energy increases with increasing $q^*$
+\end{itemize}
+
+\subsection{The geostrophic and the thermal wind balance}
+The rotation rate of the LOC, measured in terms of the inverse of the non dimensional Ekman number $\textrm{Ek}^{-1}$, is very high (see section \ref{sec:parameters}). The \textit{Rossby number} $Ro = \frac{\mathcal{U}}{\Omega \mathcal{L}}$ is a measure for the relative importance of inertia forces compared to the Coriolis force in the equation of momentum. If it is small, a system is predominantly rotationally constrained and this suggests simplifications, accordingly. The inertia term drops out and viscosity can be neglected as well due to $\textrm{Ek} = \frac{\nu}{\Omega D^2} \ll 1$. In the absence of gravitational instabilities, this yields the \textit{geostrophic balance}
+\begin{equation}
+\label{eq:geostrophy}
+ - \frac{2}{\textrm{Ek}}\bm{e_z} \times \bm u= \bm \nabla \pi,
+\end{equation}
+where the rotational force is balanced by the pressure gradient \citep{vallis2006atmospheric}. The \textit{Taylor-Proudman theorem} follows from \eqref{eq:geostrophy}, the curl is taken. No variations parallel to the axis of rotation $z$ in the velocity field are possible, since 
+\begin{equation}
+ (\bm{e_z} \cdot \bm \nabla) \bm u = 0
+\end{equation}
+
+\subsection{Generation of radial flux patches trough azimuthal temperature gradients}
+The non axisymmetric distribution of up- and downwellings in the time-averaged flow is a feature that is distinct to non homogeneous forcing provided by the heterogeneous core-mantle heat flux. \citet{zhang1992convection} and \citet{dietrich2016core} analytically show that the azimuthal position of in- und outward radial motion in the equatorial plain is determined by the azimuthal temperature gradient $\partial T / \partial \varphi$.
+
+
 
 \subsection{The temperature field}
 \subsection{The formation of stationary vortex columns attached to mantle heterogeneities}
 
 \section{Thermo-chemical dynamo action}
-\subsection{The creation of radial magnetic flux patches locked to the mantle}
 \subsection{The influence of chemical forcing on magnetic field properties}
 
 \section{Summary}

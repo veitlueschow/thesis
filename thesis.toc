@@ -13,13 +13,15 @@
 \contentsline {subsection}{\numberline {2.8}CMB - heat flux pattern}{12}
 \contentsline {subsection}{\numberline {2.9}Nondimensional equations}{15}
 \contentsline {subsection}{\numberline {2.10}Conductive and convective Fluctuations}{16}
-\contentsline {section}{\numberline {3}Numerical Method}{18}
-\contentsline {section}{\numberline {4}State of research}{18}
-\contentsline {section}{\numberline {5}Thermo-chemical core convection}{18}
-\contentsline {subsection}{\numberline {5.1}The temperature field}{18}
-\contentsline {subsection}{\numberline {5.2}The formation of stationary vortex columns attached to mantle heterogeneities}{18}
-\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{18}
-\contentsline {subsection}{\numberline {6.1}The creation of radial magnetic flux patches locked to the mantle}{18}
-\contentsline {subsection}{\numberline {6.2}The influence of chemical forcing on magnetic field properties}{18}
-\contentsline {section}{\numberline {7}Summary}{18}
-\contentsline {section}{\numberline {8}Conclusion and Outlook}{18}
+\contentsline {section}{\numberline {3}Numerical Method}{17}
+\contentsline {section}{\numberline {4}State of research}{17}
+\contentsline {section}{\numberline {5}Outline of the study}{17}
+\contentsline {section}{\numberline {6}Thermo-chemical core convection}{18}
+\contentsline {subsection}{\numberline {6.1}The geostrophic and the thermal wind balance}{18}
+\contentsline {subsection}{\numberline {6.2}Generation of radial flux patches trough azimuthal temperature gradients}{18}
+\contentsline {subsection}{\numberline {6.3}The temperature field}{19}
+\contentsline {subsection}{\numberline {6.4}The formation of stationary vortex columns attached to mantle heterogeneities}{19}
+\contentsline {section}{\numberline {7}Thermo-chemical dynamo action}{19}
+\contentsline {subsection}{\numberline {7.1}The influence of chemical forcing on magnetic field properties}{19}
+\contentsline {section}{\numberline {8}Summary}{19}
+\contentsline {section}{\numberline {9}Conclusion and Outlook}{19}
