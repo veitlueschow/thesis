@@ -46,7 +46,7 @@ A question that is closely related to the numerical costs and therefore to the a
 We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
 In the following all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short. The according references will be given in each section.\\
 \subsection{Frame of reference}
-The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and r$_o$: $ a = $ R$_i$ / R$_i$ = 0.35.\\
+The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and r$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
 The LOC is constantly rotating about the z-axis of a Cartesian system. The angular velocity $\Omega$ is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study,it is quite nearby to chose spherical coordinates (???). 
 \begin{figure}[]
  \begin{minipage}{0.42\textwidth}
@@ -60,7 +60,6 @@ The LOC is constantly rotating about the z-axis of a Cartesian system. The angul
   \end{minipage}
   \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian z-axis. (b) This work uses spherical coordinates with unit vectors $ \bm{e_r}$, $\bm{e_\Phi}$ and $\bm{e_\vartheta}$ \citep{trumper2014thermo}.}
 \end{figure}
-
 \subsection{Equation of continuity}
 \label{sec:continuity}
 Per definition, the mass $ \mathcal{M} $ of a material volume $ \mathcal{V}(t) $ with a density $\rho$, moving with a velocity $ \bm u(\bm r,t) $ in a fluid is conserved: 
@@ -79,17 +78,16 @@ the general form of the equation of continuity. The introduction of the \textit{
 \begin{equation}
  \frac{\partial \rho}{\partial t} + \rho \bm \nabla \cdot \bm u + \bm u \cdot \bm \nabla \rho =   \frac{D \rho}{D t} + \rho \bm \nabla \cdot \bm u = 0.
 \end{equation}
-
-
 \subsection{Equation of momentum}
 \label{sec:momentum}
 In an inertial, non-rotating frame of reference, the change of momentum of a material volume $\mathcal{V}$ can be written as 
+{\allowdisplaybreaks
 \begin{align*}
  \frac{d}{dt} \int_{\mathcal{V}(t)} (\rho u_j) d^3r &= \int_{\mathcal{V}(t)} \left[ \frac{\partial (\rho u_j)}{\partial t} + \frac{\partial}{\partial x_i} (\rho u_j)u_i \right]d^3r \\
     &=   \int_{\mathcal{V}(t)} \left[ \rho \frac{\partial u_j}{\partial t} + u_j \frac{\partial \rho}{\partial t}  +\rho u_j \frac{\partial u_i}{\partial x_i} + u_i \rho \frac{\partial u_j}{\partial x_i} + u_i u_j \frac{\partial \rho}{\partial x_i} \right] d^3r\\
     &= \int_{\mathcal{V}(t)} \left[ u_j\left( \frac{\partial \rho}{\partial t} + \rho \bm \nabla \cdot \bm u + \bm u \cdot \bm \nabla \rho \right) + \rho \left( \frac{\partial u_j}{\partial t} + \bm u \cdot \nabla u_j \right) \right]d^3r \\
     &= \int_{\mathcal{V}(t)}  \rho \frac{D u_j}{D t} d^3r.
-\end{align*}
+\end{align*}}
 Change of momentum can happen through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm t$:
 \begin{equation}
  \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds
@@ -133,30 +131,31 @@ In the following, the gravitational field $\bm g$ will be discussed in more deta
  \caption{Sketch of the density along the equator, near the CMB. The deviation (black) from the average density (red) results from the asymmetric heat flux at the CMB which has a asymmetric temperature field as an consequence. }
  \label{fig:density_var}
 \end{figure}
-The total density can be split into one spherical symmetric part $\mathring{\rho}(r)$ that only depends on the radial level $r$ and the density variation due to the heat flux pattern $\delta \mathring{\rho}(r,\vartheta,\varphi)$:
+The total density can be split into one spherical symmetric part $\mathring{\rho}(r)$ that only depends on the radial level $r$ and the density variation due to the heat flux pattern $\delta \mathring{\rho}(r,\vartheta,\phi)$:
 \begin{equation}
  \label{eq:density_split}
- \rho(r,\vartheta,\varphi) = \mathring{\rho}(r) + \delta \mathring{\rho}(r,\vartheta,\varphi).
+ \rho(r,\vartheta,\phi) = \mathring{\rho}(r) + \delta \mathring{\rho}(r,\vartheta,\phi).
 \end{equation}
-In case of a heat flux pattern proportional to the spherical harmonic $\mathcal{Y}_2^2$, the dependence of $\delta \mathring{\rho}$ on $\varphi$ is $\pi$-periodic (see Figure \ref{fig:density_var}) so that it can be expressed by the product $\delta \mathring{\rho}(r,\vartheta,\varphi) = \mathcal{C}(r,\vartheta) \cdot cos(2\varphi)$. $\mathcal{C}$ is only a function of $r$ and $\vartheta$. \\
+In case of a heat flux pattern proportional to the spherical harmonic $\mathcal{Y}_2^2$, the dependence of $\delta \mathring{\rho}$ on $\phi$ is $\pi$-periodic (see Figure \ref{fig:density_var}) so that it can be expressed by the product $\delta \mathring{\rho}(r,\vartheta,\phi) = \mathcal{C}(r,\vartheta) \cdot cos(2\phi)$. $\mathcal{C}$ is only a function of $r$ and $\vartheta$. \\
 \textit{Gauss's} gravity law \citep{blakely1996potential} states
 \begin{equation}
  \label{eq:gauss}
- \bm \nabla \cdot \bm g = - 4\pi G \rho(r,\vartheta,\varphi).
+ \bm \nabla \cdot \bm g = - 4\pi G \rho(r,\vartheta,\phi).
 \end{equation}
 Integration over a sphere of radius $r$ and application of Gauss's theorem yields
+{\allowdisplaybreaks
 \begin{align}
 % \label{eq:grav_balance}
 \nonumber
-\int\limits _{\mathcal{V}(r)} \bm \nabla \cdot \bm g dV &= \int\limits_0^\pi \int\limits_0^{2\pi} r^2sin(\vartheta )d\vartheta d\varphi \bm g \cdot \bm{e_r}= - 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 \rho(r,\vartheta,\varphi) \, dr' d\vartheta d\varphi\\
+\int\limits _{\mathcal{V}(r)} \bm \nabla \cdot \bm g dV &= \int\limits_0^\pi \int\limits_0^{2\pi} r^2sin(\vartheta )d\vartheta d\phi \bm g \cdot \bm{e_r}= - 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 \rho(r,\vartheta,\phi) \, dr' d\vartheta d\phi\\
 \nonumber
-&=- 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 [\mathring{\rho}(r') + \delta \mathring {\rho}(r',\vartheta,\varphi)] \, dr' d\vartheta d\varphi \\
+&=- 4 \pi G \int\limits_0 ^r \int\limits_0^\pi \int\limits_0^{2\pi} sin(\vartheta) r'^2 [\mathring{\rho}(r') + \delta \mathring {\rho}(r',\vartheta,\phi)] \, dr' d\vartheta d\phi \\
 \nonumber
-&=-8\pi^2 G\int\limits_0^r \mathring{\rho}(r') \, dr' -  4 \pi G \int\limits_0 ^r \int\limits_0^\pi sin(\vartheta) r'^2 \mathcal{C}(r',\vartheta) \left( \int\limits_0^{2\pi} cos(2\varphi) d\varphi \right) \, dr' d\vartheta \\
+&=-8\pi^2 G\int\limits_0^r \mathring{\rho}(r') \, dr' -  4 \pi G \int\limits_0 ^r \int\limits_0^\pi sin(\vartheta) r'^2 \mathcal{C}(r',\vartheta) \left( \int\limits_0^{2\pi} cos(2\phi) d\phi \right) \, dr' d\vartheta \\
 \nonumber
 &= -8\pi^2 G\int\limits_0^r \mathring{\rho}(r') \, dr'
-\end{align}
-Because the integration of $\delta \mathring {\rho}(r',\vartheta,\varphi)$ over $\varphi$ drops out for every value of $r$ and $\vartheta$, $\bm g$ can be expressed by
+\end{align}}
+Because the integration of $\delta \mathring {\rho}(r',\vartheta,\phi)$ over $\phi$ drops out for every value of $r$ and $\vartheta$, $\bm g$ can be expressed by
 \begin{equation}
 \label{eq:gravity_field}
  g(\bm r) = -\frac{4 \pi G}{r^2}\int_0^r \mathring{\rho}(r')r'^2 \, dr
@@ -268,7 +267,7 @@ The mantle is assumed to be an insulator due to its rocky content \citep{dormy19
 with $\Phi$ being a scalar potential that follows the Laplace equation 
 \begin{equation}
  \label{eq:mag2}
- \bm \nabla ^2 \phi = 0.
+ \bm \nabla ^2 \Phi = 0.
 \end{equation}
 The BC are expressed through the fact that $\bm B$ has to match the solution of \eqref{eq:mag1} at the ICB and the CMB.\\
 The thermal BC is of the Neumann type and will be discussed in more detail in the following section.
@@ -319,11 +318,11 @@ The mean heat flux at the CMB $q_\textrm{\tiny{mean}}$ results from the temperat
 \\
 In order to implement the BC into the numerical model, a (conductive) solution to \eqref{eq:laplace} has to be found. In the most general form, it reads
 \begin{equation}
- T = \sum \limits_{l,m} \left[ a_l^m r^l + b_l^m r^{-l-1} \right] \mathcal{Y}_l^m(\vartheta,\varphi) \label{eq:cond}
+ T = \sum \limits_{l,m} \left[ a_l^m r^l + b_l^m r^{-l-1} \right] \mathcal{Y}_l^m(\vartheta,\phi) \label{eq:cond}
 \end{equation}
 and its radial derivative 
 \begin{equation}
-\frac{\partial T}{\partial r} = \sum \limits_{l,m} \left[l a_l^m r^{l-1} - (l+1) b_l^m r^{-l-2}\right]  \mathcal{Y}_l^m(\vartheta,\varphi). \label{eq:gradcond}
+\frac{\partial T}{\partial r} = \sum \limits_{l,m} \left[l a_l^m r^{l-1} - (l+1) b_l^m r^{-l-2}\right]  \mathcal{Y}_l^m(\vartheta,\phi). \label{eq:gradcond}
 \end{equation}
 At the ICB, \eqref{eq:BCicb} and \eqref{eq:gradcond} yield
 \begin{equation}
@@ -344,11 +343,11 @@ Since only a heat flux pattern with $l=m=2$ will be used here, \eqref{eq:algebra
 \end{equation}
 Inserting $a_2^2$, $b_2^2$ and $b_0^0$ into \eqref{eq:cond} gives a solution to \eqref{eq:laplace} that respects the boundary conditions \eqref{eq:BCicb} and \eqref{eq:BCcmb}:
 \begin{equation}
- T_\textrm{cond}(r,\vartheta,\varphi) = \left( a_0^0 + \frac{R_o^2 \beta}{r} \right) \mathcal{Y}_0^0 + Amp_2^2\cdot \frac{R_o^22a^5r^3 - 3R_o^2(a-1)^5r^2}{6D^4(a-1)^2(1-a^5)} \mathcal{Y}_2^2(\vartheta,\varphi)
+ T_\textrm{cond}(r,\vartheta,\phi) = \left( a_0^0 + \frac{R_o^2 \beta}{r} \right) \mathcal{Y}_0^0 + Amp_2^2\cdot \frac{R_o^22a^5r^3 - 3R_o^2(a-1)^5r^2}{6D^4(a-1)^2(1-a^5)} \mathcal{Y}_2^2(\vartheta,\phi)
 \end{equation}
 $a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the following. This conductive temperature profile with its spherically asymmetric part will be introduced into the equations in the density fluctuation part $\rho'$ in section \ref{sec:cond_conv}. \\
 \par
-The effect of the CMB - heat flux pattern on the conductive temperature field is shown in figure \ref{fig:conductives}. Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
+The effect of the CMB - heat flux pattern on the conductive temperature field is shown in Figure \ref{fig:conductives}. Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
 \begin{figure}[t]
  \begin{minipage}{0.36\textwidth}
   \includegraphics[width=0.9\textwidth]{graphs/theory/temp_field1-crop.pdf}
@@ -357,7 +356,7 @@ The effect of the CMB - heat flux pattern on the conductive temperature field is
  \begin{minipage}{0.62\textwidth}
   \includegraphics[width=0.9\textwidth]{graphs/theory/temp_field2-crop.png}
  \end{minipage}
-\caption{Conductive temperature field $T_\textrm{cond}$ in the equatorial plain (left) and as a \textit{Hammer-Aitov-projection} at the CMB (right) in a non dimensional form (see section \ref{sec:nondim}). The amplitude of the heat flux heterogeneity is $Amp_2^2 = 1$, heat flux maxima are located at 90$^\circ$ and 270$^\circ$, respectively. See figure \ref{fig:fluxsketch} for a schematic overview. } 
+\caption{Conductive temperature field $T_\textrm{cond}$ in the equatorial plain (left) and as a \textit{Hammer-Aitov-projection} at the CMB (right) in a non dimensional form (see section \ref{sec:nondim}). The amplitude of the heat flux heterogeneity is $Amp_2^2 = 1$, heat flux maxima are located at 90$^\circ$ and 270$^\circ$, respectively. See Figure \ref{fig:fluxsketch} for a schematic overview. } 
 \label{fig:conductives}
 \end{figure}
 \\
@@ -431,7 +430,8 @@ The following parameters of similarity appear in the equations:
 The thermal and compositional Rayleigh numbers are measures for the vigor of convection due to thermal and compositional buoyancy sources, respectively. The definitions of $\textrm{Ra}_\textrm{\tiny {T}}$ and $\textrm{Ra}_\textrm{\tiny {C}}$ slightly differ because of the different scales chosen for temperature and composition (see table \ref{tab:scales}). $'\beta D'$ and $'\Delta C'$ refer to either Neumann or Derichlet type boundary conditions for $T$ and $C$, respectively.  \\
 Whether a fluid is constrained rather by rotation or viscosity is described via the Ekman number. \\
 The distinction between a thermal and a compositional Prandtl number is a key feature of this study. It allows for differences in the dynamical response of the system to either thermally or compositionally dominated convective forcing. Roughly spoken, a large Prandtl number promotes viscous effects in a fluid, whereas a small one promotes inertia effects. The magnetic Prandtl number relates viscous and magnetic diffusion and therefore decides how much kinetic energy is needed to sustain a magnetic field. \\
-In the following, all $\hat{(\textrm{ })}$ will be omitted, since only non dimensional quantities are mentioned.
+In the following, all $\hat{(\textrm{ })}$ will be omitted, since only non dimensional quantities are mentioned.\\
+The rescaled inner and outer radii of the spherical shell are R$_i = 0.539$ and R$_o = 1.539$, respectively.
 \subsection{Conductive and convective Fluctuations}
 \label{sec:cond_conv}
 The temperature field $T'$ and the chemical field $C'$, each reduced by the reference state fields $\bar T$ and $\bar C$, can be decomposed into a \textit{conductive part} which is the full solution if the system is subcritical and its \textit{convective perturbations} $\theta$ and $\zeta$:
@@ -451,9 +451,9 @@ when the decomposition is inserted. \\
 Furtheron, the equation of momentum splightly changes, when temperature and composition are split into two parts.\\ 
 $T_\textrm{cond}$ has a speherically symmetric and a spherically asymmetric part
 \begin{equation*}
-T_\textrm{cond}(r,\vartheta,\varphi) = t_0^0(r) + t_2^2(r,\vartheta,\varphi),
+T_\textrm{cond}(r,\vartheta,\phi) = t_0^0(r) + t_2^2(r,\vartheta,\phi),
 \end{equation*}
-where $t_0^0(r)$ is proportional to the constant $\mathcal{Y}_0^0$ and $t_2^2(r)$ to $\mathcal{Y}_2^2(\vartheta, \varphi)$ that is a function of $\vartheta$ and $\varphi$. \\
+where $t_0^0(r)$ is proportional to the constant $\mathcal{Y}_0^0$ and $t_2^2(r)$ to $\mathcal{Y}_2^2(\vartheta, \phi)$ that is a function of $\vartheta$ and $\phi$. \\
 $t_0^0(r)$ and and the spherical symmetric solution $C_\textrm{cond}(r)$ can be incorporated into the reduced pressure fluctuation term $\pi'$ via
 \begin{equation*}
 \pi = \pi' - (1-a)\left( \textrm{Ra}_\textrm{\tiny T} \int r t_0^0(r)\, dr + \textrm{Ra}_\textrm{\tiny C} \int r C_\textrm{cond}(r)\, dr \right).
@@ -462,14 +462,13 @@ Yet, it is not possible to find a potential $\tau$ for the asymmetric part that 
 \begin{equation*}
 \bm \nabla \tau = \textrm{Ra}_\textrm{\tiny T} \, t_2^2(r)(1-a) r \, \bm{e_r},
 \end{equation*}
-since this would demand $\partial \tau/\partial \vartheta = \partial \tau/\partial \varphi = 0$, a condition that cannot be fulfilled by $t_2^2$ being a function of $\vartheta$ and $\varphi$. Thus, $t^2_2$ appears in the buoyancy term of the momentum equation:
+since this would demand $\partial \tau/\partial \vartheta = \partial \tau/\partial \phi = 0$, a condition that cannot be fulfilled by $t_2^2$ being a function of $\vartheta$ and $\phi$. Thus, $t^2_2$ appears in the buoyancy term of the momentum equation:
 \begin{align}
 \nonumber
  \frac{D \bm{ u}}{D  t} = &- \bm{  \nabla}  \pi - \frac{2}{\textrm{Ek}}\, \bm {e_z} \times \bm{  u} + \bm{  \nabla}^2 \bm{  u} + \frac{1}{\textrm{Ek}  \textrm{Pr}_\textrm{\tiny{m}}} \left( \bm{  \nabla} \times { \bm B} \right) \times { \bm B}  \\ 
+ \label{eq:force_balance4}
  &+ (\textrm{Ra}_\textrm{\tiny {T}}  [\theta + t_2^2] + \textrm{Ra}_\textrm{\tiny {C}} { \zeta} )(1-a) {r} \, \bm{e_r}
 \end{align}
-
-
 
 
 \section{Numerical Method}
@@ -482,26 +481,73 @@ Describe the used parameters and show earth values
 
 \section{Thermo-chemical core convection}
 \label{sec:thermo-chemical}
-In this section, some typical features of nonmagnetic convection in a rotating spherical shell that is inhomogeneously cooled from above are described based on a few showcases. Therefore, the focus lies on the heat flux pattern at the CMB and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model.\\
+In this section, some typical features of nonmagnetic convection in a rotating spherical shell that is heterogeneously cooled from above are described based on a few showcases. Therefore, the focus lies on the heat flux pattern at the CMB and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model.\\
 \begin{itemize}
  \item kinetic energy increases with increasing $q^*$
 \end{itemize}
 
-\subsection{The geostrophic and the thermal wind balance}
-The rotation rate of the LOC, measured in terms of the inverse of the non dimensional Ekman number $\textrm{Ek}^{-1}$, is very high (see section \ref{sec:parameters}). The \textit{Rossby number} $Ro = \frac{\mathcal{U}}{\Omega \mathcal{L}}$ is a measure for the relative importance of inertia forces compared to the Coriolis force in the equation of momentum. If it is small, a system is predominantly rotationally constrained and this suggests simplifications, accordingly. The inertia term drops out and viscosity can be neglected as well due to $\textrm{Ek} = \frac{\nu}{\Omega D^2} \ll 1$. In the absence of gravitational instabilities, this yields the \textit{geostrophic balance}
+\subsection{The geostrophic and the thermo-chemical wind balance}
+The rotation rate of the LOC, measured in terms of the inverse of the non dimensional Ekman number $\textrm{Ek}^{-1}$, is very high (see section \ref{sec:parameters}). The \textit{Rossby number} $Ro = \frac{\mathcal{U}}{\Omega \mathcal{L}}$ quantifies the relative importance of the inertia force compared to the Coriolis force in the equation of momentum. If it is small, a system is predominantly rotationally constrained and this suggests simplifications, accordingly. The inertia term drops out and viscosity can be neglected as well due to $\textrm{Ek} = \frac{\nu}{\Omega D^2} \ll 1$. In the absence of gravitational instabilities, this yields the \textit{geostrophic balance}
 \begin{equation}
 \label{eq:geostrophy}
- - \frac{2}{\textrm{Ek}}\bm{e_z} \times \bm u= \bm \nabla \pi,
+ \frac{2}{\textrm{Ek}}\bm{e_z} \times \bm u= \bm \nabla \pi,
 \end{equation}
-where the rotational force is balanced by the pressure gradient \citep{vallis2006atmospheric}. The \textit{Taylor-Proudman theorem} follows from \eqref{eq:geostrophy}, the curl is taken. No variations parallel to the axis of rotation $z$ in the velocity field are possible, since 
+where the rotational force is balanced by the pressure gradient \citep{vallis2006atmospheric, jones2007thermal}. The \textit{Taylor-Proudman theorem} follows from \eqref{eq:geostrophy}, if the curl is applied:
 \begin{equation}
- (\bm{e_z} \cdot \bm \nabla) \bm u = 0
+ (\bm{e_z} \cdot \bm \nabla) \bm u = 0.
 \end{equation}
+It states that variations in the velocity field parallel to the axis of rotation ($z$-axis) are suppressed by rotation.\\
+Relation \eqref{eq:geostrophy} slightly changes, if buoyancy forces due to temperature or compositional variations cannot be neglected. The \textit{thermo-chemical wind balance} then describes, how lateral gradients in $T$ and $C$ cause flow gradients parallel to the axis of rotation \citep{jones2007thermal}: 
+\begin{align}
+ \label{eq:thermal_wind}
+-2 \frac{\partial \bm u}{\partial z}= (1-a) \textrm{Ek}\,\bm \nabla \times \left( \textrm{Ra}_\textrm{\tiny T}(\theta + t_2^2) + \textrm{Ra}_\textrm{\tiny C}\zeta \right)\bm r.
+%=& \quad  (1-a) \textrm{Ek}\textrm{Ra}_\textrm{\tiny T}\left( \frac{1}{\textrm{} \vartheta}\frac{\partial (\theta + t_2^2)}{\partial \phi}\, \bm{e_\vartheta} + \frac{\partial (\theta + t_2^2)}{\partial \vartheta}\, \bm{e_\phi} \right)
+\end{align}
+It can be obtained, when adding the buoyancy term from equation \eqref{eq:force_balance4} to the force balance \eqref{eq:geostrophy} and taking the curl again. Equation \eqref{eq:thermal_wind} will be important in the following, because the conductive response to the heat flux pattern, $t_2^2$, prescribes lateral temperature gradients to the system. Additionally, dynamical variations $\theta$ and $\zeta$, especially along the polar coordinate $\vartheta$, are assumed to drive thermo-chemical winds in the sphere \citep{trumper2012numerical}. 
 
 \subsection{Generation of radial flux patches trough azimuthal temperature gradients}
-The non axisymmetric distribution of up- and downwellings in the time-averaged flow is a feature that is distinct to non homogeneous forcing provided by the heterogeneous core-mantle heat flux. \citet{zhang1992convection} and \citet{dietrich2016core} analytically show that the azimuthal position of in- und outward radial motion in the equatorial plain is determined by the azimuthal temperature gradient $\partial T / \partial \varphi$.
-
-
+The non axisymmetric distribution of up- and downwellings in the time-averaged flow is a feature that is distinct to non homogeneous forcing provided by the heterogeneous core-mantle heat flux. \citet{zhang1992convection} and \citet{dietrich2016core} analytically show that the azimuthal position of in- and outward radial motion in the equatorial plain is determined by the azimuthal temperature gradient $\partial T / \partial \phi$. \\
+Equation \eqref{eq:thermal_wind} is used as a starting point, whereupon only thermal forcing is regarded ($\textrm{Ra}_\textrm{\tiny C} = 0$). Since the $z$-axis plays a central role in the geostrophic context, cylindrical coordinates are used with $s$ as a radial distance from the axis of rotation. According to \citet{dietrich2016core}, the velocity field is split into a geostrophic part $\bm u^g$ and an ageostrophic part $\bm u^a$ with $\bm u = \bm u^g(s,\phi) + \bm u^a(s,z,\phi)$, where the geostrophic part per definition is independent of the $z$-position. To compute the geostrophic flow, the $z$-average of the $z$-component of \eqref{eq:thermal_wind} is needed,
+\begin{equation}
+\label{eq:wind_z1}
+-2\,\Big \langle \frac{\partial u_z}{\partial z} \Big \rangle_z = {(1-a)\textrm{Ek}\textrm{Ra}_\textrm{\tiny T}} \, \langle \bm{e_z} \cdot \bm \nabla \times (\theta + t_2^2) \bm r \rangle_z,
+\end{equation}
+where the average of a function $f$ can be computed by
+\begin{equation*}
+ \langle f \rangle_z (s,\phi) = \frac{1}{2H} \int_{-H}^{+H} f(s,z,\phi) \, dz,
+\end{equation*}
+with $H = \sqrt{R_o^2 + s^2}$ as the half height of a cylinder at the radial position $s$ \citep{gillet2006quasi}. The right-hand-side (rhs) of \eqref{eq:wind_z1} can be transformed to (now in spherical coordinates)
+\begin{equation}
+\label{eq:wind_z2}
+ \textrm{rhs} = {(1-a)\textrm{Ek}\textrm{Ra}_\textrm{\tiny T}} \, \bigg \langle \bm{e_z} \cdot \left( \frac{1}{\textrm{sin}\vartheta} \frac{\partial}{\partial \phi}(\theta + t^2_2)\, \bm{e_\vartheta} - \frac{\partial}{\partial \vartheta} (\theta + t^2_2) \, \bm{e_\phi} \right) \bigg \rangle_z
+\end{equation}
+The conductive temperature profile $t_2^2$ is symmetric with respect to the equator, hence its lateral gradient antisymmetric and it drops out when averaged over the $z$-axis. The temperature variation $\theta$ is likely to be distributed equatorial symmetric as well and therefore it is neglected, likewise. In cylindrical coordinates, \eqref{eq:wind_z2} now reads
+\begin{equation}
+\label{eq:wind_z3}
+ \textrm{rhs} = (1-a) \textrm{Ek}\textrm{Ra}_\textrm{\tiny T} \frac{1}{s} \bigg \langle \frac{\partial}{\partial \phi} (\theta + t^2_2) \bm{e_z} \cdot \bm{e_\vartheta} \bigg \rangle_z.
+\end{equation}
+Following \citet{gillet2006quasi}, the left-hand-side of \eqref{eq:wind_z1} transforms to
+\begin{equation}
+\label{eq:wind_z4}
+-2\,\Big \langle \frac{\partial u_z}{\partial z} \Big \rangle_z = -\frac{1}{H} \int_{-H}^{+H} \frac{\partial u_z}{\partial z} \, dz = -\left( - u_s^g \, \frac{2s}{H^2} \right).
+\end{equation}
+The slope of the spherical boundary is responsible for the fact, that a radial velocity component enters the $z$-averaged equation.\\
+In the equatorial plain, $\bm{e_z}\cdot \bm{e_\vartheta} = -1$, $r=s$ and the radial velocity $ u_s^g$ in cylindrical coordinates equals the radial velocity $u_r^g$ in spherical coordinates. It can now be expressed in terms of the azimuthal temperature gradient:
+\begin{equation}
+ \label{eq:ugr}
+ u_r^g = -\frac{H^2}{2r^2}(1-a)\textrm{Ek}\textrm{Ra}_\textrm{\tiny T} \,\bigg \langle \frac{\partial}{\partial \phi}(\theta + t^2_2) \bigg \rangle_z.
+\end{equation}
+The position of maximum (minimum) azimuthal temperature gradient should thus coincide with radial downwellings (upwellings) (relation \eqref{eq:ugr} contains a minus sign) in the equatorial plain. Since only the $z$-averaged / geostrophic  part of the velocity field $\bm u$ contains radial components (\citep{dietrich2016core}, $u_r^g$ is the full radial flow in this approximation. \\
+\begin{figure}[t]
+ \centering
+ \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
+ \caption{Long-term averaged azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi$, here $-\partial T/\partial \phi$ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plain. As parameters, $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$, $\textrm{Pr}_\textrm{\tiny T} = 0.3$, $\textrm{Ek}=10^{-4}$ and $q^* = 2$ are used.}
+\label{fig:ur_dTp}
+ \end{figure}
+Figure \ref{fig:ur_dTp} shows two azimuthal profiles of the the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $\partial (\theta + t^2_2) / \partial \phi$ (dotted lines) in the equatorial plain. One is taken at mid depth (black lines), the other one on top of the free stream near the CMB (red lines). All values are normalized with respect to their maxima in order to make them comparable in one plot.\\ 
+The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$ that is slightly overcritical: $\textrm{Ra}_\textrm{\tiny T} \approx 3\cdot \textrm{Ra}_\textrm{crit}$. The critical Rayleigh number was taken from \citet{hori2012influence} who computed $\textrm{Ra}_\textrm{crit}$ for both, Neumann and and Derichlet type boundary conditions in the forcing component. \\
+It becomes clear that the $\phi$-gradient of the temperature serves well as an explanation for the location of the two radial downwellings near the CMB. The two negative extrema of the radial velocity coincide nearly perfectly with the maxima of the azimuthal temperature gradient. Only the small kinks in front of and behind the extrema of $u_r$ cannot be explained by $\partial (\theta + t_2^2)/\partial \phi$ in this first order approach.\\ 
+In a purely conductive regime with $\textrm{Ra}_\textrm{\tiny T} < \textrm{Ra}_\textrm{crit}$, the maxima of $\partial (\theta + t_2^2) / \partial \phi = \partial t_2^2 / \partial \phi$ (because $\theta=0$ in the subcritical case) would be located $45^\circ$ E of the heat flux maxima (located at $90^\circ$ E and $270^\circ$ E, see Figure \ref{fig:conductives} for the conductive temperature field). \citet{zhang1992convection} already described 
 
 \subsection{The temperature field}
 \subsection{The formation of stationary vortex columns attached to mantle heterogeneities}

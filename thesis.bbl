@@ -45,6 +45,12 @@ Dormy, E., Cardin, P., and Jault, D. (1998).
   conducting inner core, in a dipolar magnetic field.
 \newblock {\em Earth and Planetary Science Letters}, 160(1):15--30.
 
+\bibitem[Gillet and Jones, 2006]{gillet2006quasi}
+Gillet, N. and Jones, C. (2006).
+\newblock The quasi-geostrophic model for rapidly rotating spherical convection
+  outside the tangent cylinder.
+\newblock {\em Journal of Fluid Mechanics}, 554:343--369.
+
 \bibitem[Glatzmaier et~al., 1999]{glatzmaier1999role}
 Glatzmaier, G.~A., Coe, R.~S., Hongre, L., and Roberts, P.~H. (1999).
 \newblock The role of the earth's mantle in controlling the frequency of
@@ -56,6 +62,12 @@ Glatzmaier, G.~A. and Roberts, P.~H. (1995).
 \newblock A three-dimensional convective dynamo solution with rotating and
   finitely conducting inner core and mantle.
 \newblock {\em Physics of the Earth and Planetary Interiors}, 91(1):63--75.
+
+\bibitem[Hori et~al., 2012]{hori2012influence}
+Hori, K., Wicht, J., and Christensen, U. (2012).
+\newblock The influence of thermo-compositional boundary conditions on
+  convection and dynamos in a rotating spherical shell.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 196:32--48.
 
 \bibitem[Hori et~al., 2014]{hori2014ancient}
 Hori, K., Wicht, J., and Dietrich, W. (2014).
