@@ -1,18 +1,20 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{amsmath,bm} %mathematische Normen
 \numberwithin{equation}{section}
+\numberwithin{figure}{section}
 \usepackage[english]{babel} %neue deutsche Rechtschreibung und Formelsatz
 \usepackage{amsfonts} %Zusätzliche Formeln/Symbole/Sonderzeichen...
 \usepackage{amssymb} %Formelsatz
 \usepackage{graphicx} %Einbinden von Graphiken
 \usepackage{float} %Flussumgebungen
-\usepackage{cite}
-\usepackage{natbib}
+\usepackage[authoryear]{natbib}
+%\setcitestyle{authoryear}
 \usepackage[font=footnotesize]{caption}
 \usepackage{enumerate}
+\usepackage[labelfont=bf]{caption}
 %\usepackage[utf8]{inputenc} %linux
 \usepackage[ansinew]{inputenc} %windows
-\usepackage[left=3cm,right=2.7cm,top=2.5cm,bottom=2.7cm,includeheadfoot]{geometry}
+\usepackage[left=3.0cm,right=2.9cm,top=2.5cm,bottom=2.7cm,includeheadfoot]{geometry}
 
 
 \date {\today}
@@ -347,14 +349,16 @@ Inserting $a_2^2$, $b_2^2$ and $b_0^0$ into \eqref{eq:cond} gives a solution to 
 \end{equation}
 $a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the following. This conductive temperature profile with its spherically asymmetric part will be introduced into the equations in the density fluctuation part $\rho'$ in section \ref{sec:cond_conv}. \\
 \par
-The effect of the CMB - heat flux pattern on the conductive temperature field is shown in Figure \ref{fig:conductives}. Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
+The effect of the CMB - heat flux pattern on the conductive temperature field is shown in Figure \ref{fig:conductives}(a) and (b). Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
 \begin{figure}[t]
  \begin{minipage}{0.36\textwidth}
   \includegraphics[width=0.9\textwidth]{graphs/theory/temp_field1-crop.pdf}
+  \caption*{(a) Equatorial view}
  \end{minipage}
  \hfill
  \begin{minipage}{0.62\textwidth}
   \includegraphics[width=0.9\textwidth]{graphs/theory/temp_field2-crop.png}
+  \caption*{(b) Surface projection}
  \end{minipage}
 \caption{Conductive temperature field $T_\textrm{cond}$ in the equatorial plain (left) and as a \textit{Hammer-Aitov-projection} at the CMB (right) in a non dimensional form (see section \ref{sec:nondim}). The amplitude of the heat flux heterogeneity is $Amp_2^2 = 1$, heat flux maxima are located at 90$^\circ$ and 270$^\circ$, respectively. See Figure \ref{fig:fluxsketch} for a schematic overview. } 
 \label{fig:conductives}
@@ -442,6 +446,7 @@ The stationary solutions $T_\textrm{cond}$ and $C_\textrm{cond}$ can be obtained
  The temperature and chemical equation transform to 
 \begin{subequations} \label{cond_conv_heat_chem}
  \begin{align}
+ \label{eq:theta}
  \frac{D \theta}{D t} = & \frac{1}{\textrm{Pr}_\textrm{T}} \bm \nabla^2 \theta - (\bm u \cdot \bm \nabla) T_\textrm{cond} \\
  \frac{D \zeta}{D t} = & \frac{1}{\textrm{Pr}_\textrm{C}} \bm \nabla^2 \zeta - (\bm u \cdot \bm \nabla) C_\textrm{cond},
 \end{align}
@@ -476,17 +481,34 @@ since this would demand $\partial \tau/\partial \vartheta = \partial \tau/\parti
 \section{State of research}
 
 \section{Outline of the study}
-Describe the used parameters and show earth values
+Describe the parameters used and show earth values
 \label{sec:parameters}
 
-\section{Thermo-chemical core convection}
+\section{Thermo-chemical core convection under the influence of the CMB heat flux pattern}
 \label{sec:thermo-chemical}
-In this section, some typical features of nonmagnetic convection in a rotating spherical shell that is heterogeneously cooled from above are described based on a few showcases. Therefore, the focus lies on the heat flux pattern at the CMB and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model.\\
-\begin{itemize}
- \item kinetic energy increases with increasing $q^*$
-\end{itemize}
+In this section, some typical features of nonmagnetic convection in a rotating spherical shell that is heterogeneously cooled from above are described based on a few showcases (???). Therefore, the focus lies on the heat flux pattern at the CMB and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model. Nevertheless, a thermo-chemical case will play a role in section \ref{sec:vortex_clolumns}. \\
+The influence of the new boundary conditions can best be observed in the long-term averaged flow \citep{olson2002time}. Consequently, all data that is shown in this section refers to such averages, if not marked differently. The length of the data sets used is at least three viscous diffusion times.
 
+\subsection{The onset of convection in the uniform case}
+\label{sec:onset}
+
+In a rotating system that is homogeneously heated at the inner and cooled at the outer boundary, the onset of convection has the form of a thermal Rossby wave \citep{busse1970thermal, busse2002convective}. The \textit{Taylor-Proudman theorem} (see section \ref{sec:thermal_wind}) imposes a column like structure to the system that is aligned with the axis of rotation ($z$-axis, see Figure \ref{fig:sketch_busse}). Although motion parallel to the $z$-axis is strongly constrained by rotation (see Equation \eqref{eq:geostrophy2}), the spherical form of the boundaries necessarily relaxes this constraint locally and vertical vertical flow is unavoidable \citep{busse2002convective, gillet2006quasi}. An example for the relaxation of the Taylor-Proudman theorem that is relevant for the magnetic field production and distribution and therefore for this study is the \textit{secondary circulation} inside of vorticity columns \citep{olson1999numerical, aubert2008magnetic, christensen2011geodynamo}. The effect of \textit{Ekman pumping} and \textit{suction} in the viscous boundary layers as well as density gradients along the column axis cause flow perpendicular to the equatorial plain. A more detailed description and the consequences for this study follow in section \ref{sec:vortex_clolumns}.\\
+\begin{figure}[t]
+ \begin{minipage}[]{0.46\textwidth}
+ \centering
+ \includegraphics[width=1.05\textwidth]{sketches/busse_1975_onset.png}
+ \caption{Sketch of the onset of convection for a rotating spherical shell. Convection columns form adjacent to the tangential cylinder \citep{busse1970thermal}. The columns can be visualized by different quantities. Here, they are sketched as contours of constant vorticity.}
+ \label{fig:sketch_busse}
+\end{minipage}
+\hfill
+\begin{minipage}[]{0.47\textwidth}
+\includegraphics[width=\textwidth]{graphs/iso_440_ex_rad-crop.pdf}
+\caption{Snapshot of the radial velocity in the equatorial plain (view from the north pole, like all other equatorial views in the following) for a uniform case with  $\textrm{Ra}_\textrm{\tiny T} = 4.4\cdot 10^6$, $\textrm{Pr}_\textrm{\tiny T} = 0.3$, $\textrm{Ek}=10^{-4}$ and $q^* = 0$. The convection columns are tilted and slightly deformed compared to Figure \ref{fig:sketch_busse}. }
+\label{fig:radial_vel_ex}
+\end{minipage}
+\end{figure}
 \subsection{The geostrophic and the thermo-chemical wind balance}
+\label{sec:thermal_wind}
 The rotation rate of the LOC, measured in terms of the inverse of the non dimensional Ekman number $\textrm{Ek}^{-1}$, is very high (see section \ref{sec:parameters}). The \textit{Rossby number} $Ro = \frac{\mathcal{U}}{\Omega \mathcal{L}}$ quantifies the relative importance of the inertia force compared to the Coriolis force in the equation of momentum. If it is small, a system is predominantly rotationally constrained and this suggests simplifications, accordingly. The inertia term drops out and viscosity can be neglected as well due to $\textrm{Ek} = \frac{\nu}{\Omega D^2} \ll 1$. In the absence of gravitational instabilities, this yields the \textit{geostrophic balance}
 \begin{equation}
 \label{eq:geostrophy}
@@ -494,9 +516,10 @@ The rotation rate of the LOC, measured in terms of the inverse of the non dimens
 \end{equation}
 where the rotational force is balanced by the pressure gradient \citep{vallis2006atmospheric, jones2007thermal}. The \textit{Taylor-Proudman theorem} follows from \eqref{eq:geostrophy}, if the curl is applied:
 \begin{equation}
+\label{eq:geostrophy2}
  (\bm{e_z} \cdot \bm \nabla) \bm u = 0.
 \end{equation}
-It states that variations in the velocity field parallel to the axis of rotation ($z$-axis) are suppressed by rotation.\\
+It states that variations in the velocity field parallel to the axis of rotation ($z$-axis) are suppressed. The system tends to take on two dimensional solution, although this is never realizable in a sphere which naturally has sloping boundaries \citep{busse2002convective}.\\
 Relation \eqref{eq:geostrophy} slightly changes, if buoyancy forces due to temperature or compositional variations cannot be neglected. The \textit{thermo-chemical wind balance} then describes, how lateral gradients in $T$ and $C$ cause flow gradients parallel to the axis of rotation \citep{jones2007thermal}: 
 \begin{align}
  \label{eq:thermal_wind}
@@ -505,7 +528,8 @@ Relation \eqref{eq:geostrophy} slightly changes, if buoyancy forces due to tempe
 \end{align}
 It can be obtained, when adding the buoyancy term from equation \eqref{eq:force_balance4} to the force balance \eqref{eq:geostrophy} and taking the curl again. Equation \eqref{eq:thermal_wind} will be important in the following, because the conductive response to the heat flux pattern, $t_2^2$, prescribes lateral temperature gradients to the system. Additionally, dynamical variations $\theta$ and $\zeta$, especially along the polar coordinate $\vartheta$, are assumed to drive thermo-chemical winds in the sphere \citep{trumper2012numerical}. 
 
-\subsection{Generation of radial flux patches trough azimuthal temperature gradients}
+\subsection{The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}
+\label{sec:radial_flow}
 The non axisymmetric distribution of up- and downwellings in the time-averaged flow is a feature that is distinct to non homogeneous forcing provided by the heterogeneous core-mantle heat flux. \citet{zhang1992convection} and \citet{dietrich2016core} analytically show that the azimuthal position of in- and outward radial motion in the equatorial plain is determined by the azimuthal temperature gradient $\partial T / \partial \phi$. \\
 Equation \eqref{eq:thermal_wind} is used as a starting point, whereupon only thermal forcing is regarded ($\textrm{Ra}_\textrm{\tiny C} = 0$). Since the $z$-axis plays a central role in the geostrophic context, cylindrical coordinates are used with $s$ as a radial distance from the axis of rotation. According to \citet{dietrich2016core}, the velocity field is split into a geostrophic part $\bm u^g$ and an ageostrophic part $\bm u^a$ with $\bm u = \bm u^g(s,\phi) + \bm u^a(s,z,\phi)$, where the geostrophic part per definition is independent of the $z$-position. To compute the geostrophic flow, the $z$-average of the $z$-component of \eqref{eq:thermal_wind} is needed,
 \begin{equation}
@@ -531,26 +555,84 @@ Following \citet{gillet2006quasi}, the left-hand-side of \eqref{eq:wind_z1} tran
 \label{eq:wind_z4}
 -2\,\Big \langle \frac{\partial u_z}{\partial z} \Big \rangle_z = -\frac{1}{H} \int_{-H}^{+H} \frac{\partial u_z}{\partial z} \, dz = -\left( - u_s^g \, \frac{2s}{H^2} \right).
 \end{equation}
-The slope of the spherical boundary is responsible for the fact, that a radial velocity component enters the $z$-averaged equation.\\
+The slope of the spherical boundary is responsible for the fact, that a radial velocity component enters the $z$-averaged equation in order to balance the boundary condition.\\
 In the equatorial plain, $\bm{e_z}\cdot \bm{e_\vartheta} = -1$, $r=s$ and the radial velocity $ u_s^g$ in cylindrical coordinates equals the radial velocity $u_r^g$ in spherical coordinates. It can now be expressed in terms of the azimuthal temperature gradient:
 \begin{equation}
  \label{eq:ugr}
  u_r^g = -\frac{H^2}{2r^2}(1-a)\textrm{Ek}\textrm{Ra}_\textrm{\tiny T} \,\bigg \langle \frac{\partial}{\partial \phi}(\theta + t^2_2) \bigg \rangle_z.
 \end{equation}
-The position of maximum (minimum) azimuthal temperature gradient should thus coincide with radial downwellings (upwellings) (relation \eqref{eq:ugr} contains a minus sign) in the equatorial plain. Since only the $z$-averaged / geostrophic  part of the velocity field $\bm u$ contains radial components (\citep{dietrich2016core}, $u_r^g$ is the full radial flow in this approximation. \\
-\begin{figure}[t]
+The position of the maximum (minimum) azimuthal temperature gradient should thus coincide with radial downwellings (upwellings) (see relation \eqref{eq:ugr} that contains a minus sign) in the equatorial plain. Since only the $z$-averaged / geostrophic  part of the velocity field $\bm u$ contains radial components (\citep{dietrich2016core}, $u_r^g$ is the full radial flow in this approximation. \\
+\begin{figure}[H]
  \centering
  \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
- \caption{Long-term averaged azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi$, here $-\partial T/\partial \phi$ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plain. As parameters, $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$, $\textrm{Pr}_\textrm{\tiny T} = 0.3$, $\textrm{Ek}=10^{-4}$ and $q^* = 2$ are used.}
+ \caption{Azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi$, here $-\partial T/\partial \phi$ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plain. As parameters, $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$, $\textrm{Pr}_\textrm{\tiny T} = 0.3$, $\textrm{Ek}=10^{-4}$ and $q^* = 2$ are used.}
 \label{fig:ur_dTp}
  \end{figure}
 Figure \ref{fig:ur_dTp} shows two azimuthal profiles of the the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $\partial (\theta + t^2_2) / \partial \phi$ (dotted lines) in the equatorial plain. One is taken at mid depth (black lines), the other one on top of the free stream near the CMB (red lines). All values are normalized with respect to their maxima in order to make them comparable in one plot.\\ 
-The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$ that is slightly overcritical: $\textrm{Ra}_\textrm{\tiny T} \approx 3\cdot \textrm{Ra}_\textrm{crit}$. The critical Rayleigh number was taken from \citet{hori2012influence} who computed $\textrm{Ra}_\textrm{crit}$ for both, Neumann and and Derichlet type boundary conditions in the forcing component. \\
+The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$ that is slightly overcritical: $\textrm{Ra}_\textrm{\tiny T} \approx 3\cdot \textrm{Ra}_\textrm{crit}$. The critical Rayleigh number was taken from \citet{hori2012influence} who computed $\textrm{Ra}_\textrm{crit}$ for both, Neumann and and Derichlet type boundary conditions for the forcing component. \\ \par
+\begin{figure}[t]
+\centering
+\begin{minipage}[left]{0.32\textwidth}
+   \includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
+   \caption*{(a) Radial Velocity}
+\end{minipage}
+\hfill
+\begin{minipage}[center]{0.32\textwidth}
+   \includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
+   \caption*{(b) $\partial T / \partial \phi$, rescaled}
+\end{minipage}
+\hfill
+\begin{minipage}[right]{0.32\textwidth}
+    \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
+  \caption*{(c) Azimuthal velocity}
+\end{minipage}
+\caption{Equatorial contours of (a) the radial velocity, (b) the azimuthal temperature gradient $\partial (\theta + t_2^2) /\partial \phi$ and (c) the azimuthal velocity. The values in (b) are rescaled according to Equation \eqref{eq:ugr} (without the minus sign) in order to be comparable to (a). The case is the same as in Figure \ref{fig:ur_dTp}. }
+\label{fig:equatorial_vel_temp}
+\end{figure}
 It becomes clear that the $\phi$-gradient of the temperature serves well as an explanation for the location of the two radial downwellings near the CMB. The two negative extrema of the radial velocity coincide nearly perfectly with the maxima of the azimuthal temperature gradient. Only the small kinks in front of and behind the extrema of $u_r$ cannot be explained by $\partial (\theta + t_2^2)/\partial \phi$ in this first order approach.\\ 
-In a purely conductive regime with $\textrm{Ra}_\textrm{\tiny T} < \textrm{Ra}_\textrm{crit}$, the maxima of $\partial (\theta + t_2^2) / \partial \phi = \partial t_2^2 / \partial \phi$ (because $\theta=0$ in the subcritical case) would be located $45^\circ$ E of the heat flux maxima (located at $90^\circ$ E and $270^\circ$ E, see Figure \ref{fig:conductives} for the conductive temperature field) \citep{zhang1992convection}. The fact that the phase shift is only $30^\circ$ here (see Figure \ref{fig:ur_dTp}) can be attributed to the supercriticality of this case, more specifically to the azimuthal velocity field. 
+In a purely conductive regime with $\textrm{Ra}_\textrm{\tiny T} < \textrm{Ra}_\textrm{crit}$, the maxima of $\partial (\theta + t_2^2) / \partial \phi = \partial t_2^2 / \partial \phi$ (because $\theta=0$ in the subcritical case) would be located $45^\circ$ E of the heat flux maxima (located at $90^\circ$ E and $270^\circ$ E, see Figure \ref{fig:conductives} for the conductive temperature field) \citep{zhang1992convection}. The fact that the phase shift is only $30^\circ$ here (see Figure \ref{fig:ur_dTp}) can be attributed to the supercriticality of this case. More specifically, the azimuthal velocity field is responsible for the westward shift of the downwelling because it inhibits strong retrograde flow near the CMB around $135^\circ$ E (see Figure \ref{fig:equatorial_vel_temp}(c)). \\
+In the upper region of the core, the two downwellings (around 120$^\circ$ and 300$^\circ$ E) are more pronounced than the complementary upwellings (around 45$^\circ$ and 225$^\circ$ E, see Figures \ref{fig:ur_dTp} and \ref{fig:equatorial_vel_temp}(a)). \citet{dietrich2016core} explain this asymmetry with the azimuthal part of the nonlinear temperature advection term $-\frac{\partial \theta}{\partial \phi}u_\phi$ (see Equation \eqref{eq:theta} that promotes positive azimuthal temperature gradients and therefore downwellings at the corresponding longitudes.  \\ \par
 
-\subsection{The temperature field}
+\begin{figure}[t]
+ \centering
+ \includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
+ \caption{Horizontal velocity vectors in the equatorial plain, scaled by the corresponding flow magnitude. The background contour shows the full non dimensional temperature field $ T = \theta + T_\textrm{cond}$. The two strong upwelling plumes at the ICB (at $\sim 110^\circ$E and $\sim 290^\circ$E) and the bending jet like downwellings right above are clearly visible.}
+\label{fig:flowfield_temp}
+ \end{figure}
+
+The radial flow in the deeper regions of the core (e.g. the solid black line Figure \ref{fig:ur_dTp}) has a more complex form and is thus not as directly as in the upper layers related to the $\mathcal{Y}_2^2$ heat flux pattern. Broad and pronounced upwellings develop right under the CMB downwellings at $\sim110^\circ$E and $\sim290^\circ$E. They are also visible in the temperature field in Figure \ref{fig:flowfield_temp} in form of hot plumes. \\
+The downwellings observed at the CMB bend in jet like structures in retrograde direction towards the ICB (see Figure \ref{fig:equatorial_vel_temp}(a)). The bending happens due to strong zonal westward flows at mid depth at $\sim 90^\circ$E and $\sim 270^\circ$E, respectively (see Figure \ref{fig:equatorial_vel_temp}(c)).  \\ 
+Although the flow structure in the deeper core regions is more complex than at the CMB, equation \eqref{eq:ugr} and therefore the thermo-chemical wind relation provide a good explanation for the radial flow field (compare Figure \ref{fig:equatorial_vel_temp}(a) and (b)). \\ \par
+
+The small phase shift between $\partial T / \partial \phi$ and $u_r$, observable in Figure \ref{fig:ur_dTp} (dotted and solid lines), illustrates that the assumption of negligible viscosity (see section \ref{sec:thermal_wind}) is not fully justified in case of $\textrm{Ek} = 10^{-4}$. \citet{zhang1992convection} state that this shift vanishes if the rotation rate is further increased and therefore the influence of the viscosity decreased. \\ \par
+
+The azimuthal flow in the equatorial plain is, in reaction to the radial flow, convergent (divergent) in the neighborhood of downwellings (upwellings). This can be observed either in the full horizontal flow field (Figure \ref{fig:flowfield_temp}) or in the radial and azimuthal flow fields (Figure \ref{fig:equatorial_vel_temp}(a) and (c)). The downwellings are each 'fed' from the lateral direction and vice versa.
+
+\subsection{The effect of the flux pattern on the temperature field}
+\label{sec:temp_field}
+\begin{figure}[t]
+ \begin{minipage}[left]{0.33\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
+  \caption*{(a) Equatorial plain}
+ \end{minipage}
+ \hfill
+\begin{minipage}[right]{0.63\textwidth}
+ \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
+ \caption*{(b) Surface projection at the CMB}
+\end{minipage}
+\caption{Full temperature field $ T = \theta + T_\textrm{cond}$ for the same case as above in (a) the equatorial plain and (b) as a surface projection right under the CMB. (a) is the same graph as in Figure \ref{fig:flowfield_temp}, but the color map is 'shortened' in order to pronounce the the phase shift of the temperature field. }
+\label{fig:q2_200_temp}
+\end{figure}
+Figure \ref{fig:q2_200_temp}(a) shows the same equatorial view on the temperature field as Figure \ref{fig:flowfield_temp} in the previous section. The color map was slightly rescaled to make the phase shift between the temperature maxima at the CMB at $\sim 170^\circ$ and $\sim 350^\circ$ and the heat flux maxima (at $\sim 90^\circ$ and $\sim 270^\circ$) visible. The reason for the phase shift lies in the flow field and can be found in the previous chapter: Strong radial motion occurs predominantly in the region under the heat flux maxima. The up- and downwellings visible in Figure \ref{fig:flowfield_temp} intensify the cooling mechanism, thus go along with a colder core region. The hot regions coincide with strong azimuthal motion along the CMB that inhibit the transport of heat out of the core. (EKMAN dependence ???) \\
+The surface projection of the temperature field at the CMB (Figure \ref{fig:q2_200_temp}(b)) confirms that the temperature field in the slightly super critical case roughly is a phase shifted version of the conductive temperature field (Figure \ref{fig:conductives}(b)) \citep{zhang1992convection}. 
+
 \subsection{The formation of stationary vortex columns attached to mantle heterogeneities}
+\label{sec:vortex_clolumns}
+
+
+\subsection{kinetic energies, wave numbers..}
+kinetic energy increases with increasing $q^*$
 
 \section{Thermo-chemical dynamo action}
 \subsection{The influence of chemical forcing on magnetic field properties}
@@ -563,9 +645,7 @@ In a purely conductive regime with $\textrm{Ra}_\textrm{\tiny T} < \textrm{Ra}_\
 \newpage
  \bibliography{literatur}
  \bibliographystyle{apalike}
-% \bibliography{literatur}
-% \bibliographystyle{apalike}
-%\bibitem[1]{literatur} Experimentellen
+
 
 %\end{thebibliography}
 \end{document}

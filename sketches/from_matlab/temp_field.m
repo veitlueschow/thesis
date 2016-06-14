@@ -2,7 +2,7 @@ clear;
 addpath(genpath('~/Documents/master/masterarbeit/matlab'));
 
 
-load('q2_440_d100_field');
+load('q2_200_d080_field');
 
 %% compute conductive T-profile -------------------------------------------
 phi      = linspace(0,2*pi,Nlong);
@@ -67,9 +67,13 @@ set(f1, 'Position', [300, 150, 800, 1000]);
 [phi_,r_]     = meshgrid(phi,r);
 [x_dat,y_dat] = pol2cart(phi_,r_);
 contourf(x_dat(:,:),y_dat(:,:),squeeze(double(T.cond(:,:,ilat))), 15,'edgecolor','none');
+% colormap bluewhitered(100);
 hold on;
 axis square;
 axis off;
+caxis([0,5]);
+
+colormap bluewhitered(100);
 
 % DRAW inner and outer circle
 [phi_,r_]     = meshgrid(phi,r(120));

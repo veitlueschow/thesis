@@ -6,11 +6,16 @@ Anufriev, A., Jones, C., and Soward, A. (2005).
   the earth's core.
 \newblock {\em Physics of the Earth and Planetary Interiors}, 152(3):163--190.
 
-\bibitem[Aubert et~al., 2008]{aubert2008thermochemical}
-Aubert, J., Amit, H., Hulot, G., and Olson, P. (2008).
+\bibitem[Aubert et~al., 2008a]{aubert2008thermochemical}
+Aubert, J., Amit, H., Hulot, G., and Olson, P. (2008a).
 \newblock Thermochemical flows couple the earth's inner core growth to mantle
   heterogeneity.
 \newblock {\em Nature}, 454(7205):758--761.
+
+\bibitem[Aubert et~al., 2008b]{aubert2008magnetic}
+Aubert, J., Aurnou, J., and Wicht, J. (2008b).
+\newblock The magnetic structure of convection-driven numerical dynamos.
+\newblock {\em Geophysical Journal International}, 172(3):945--956.
 
 \bibitem[Blakely, 1996]{blakely1996potential}
 Blakely, R.~J. (1996).
@@ -22,6 +27,16 @@ Braginsky, S.~I. and Roberts, P.~H. (1995).
 \newblock Equations governing convection in earth's core and the geodynamo.
 \newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 79(1-4):1--97.
 
+\bibitem[Busse, 1970]{busse1970thermal}
+Busse, F.~H. (1970).
+\newblock Thermal instabilities in rapidly rotating systems.
+\newblock {\em Journal of Fluid Mechanics}, 44(03):441--460.
+
+\bibitem[Busse, 2002]{busse2002convective}
+Busse, F.~H. (2002).
+\newblock Convective flows in rapidly rotating spheres and their dynamo action.
+\newblock {\em Physics of Fluids (1994-present)}, 14(4):1301--1314.
+
 \bibitem[Chandrasekhar, 1961]{chandrasekhar1970hydrodynamic}
 Chandrasekhar, S. (1961).
 \newblock {\em Hydrodynamic and hydromagnetic stability}, volume 196.
@@ -32,6 +47,12 @@ Christensen, U. and Aubert, J. (2006).
 \newblock Scaling properties of convection-driven dynamos in rotating spherical
   shells and application to planetary magnetic fields.
 \newblock {\em Geophysical Journal International}, 166(1):97--114.
+
+\bibitem[Christensen, 2011]{christensen2011geodynamo}
+Christensen, U.~R. (2011).
+\newblock Geodynamo models: Tools for understanding properties of earth\'s
+  magnetic field.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 187(3):157--169.
 
 \bibitem[Dietrich et~al., 2016]{dietrich2016core}
 Dietrich, W., Hori, K., and Wicht, J. (2016).
@@ -102,6 +123,13 @@ Olson, P. and Christensen, U. (2002).
 \newblock The time-averaged magnetic field in numerical dynamos with
   non-uniform boundary heat flow.
 \newblock {\em Geophysical Journal International}, 151(3):809--823.
+
+\bibitem[Olson et~al., 1999]{olson1999numerical}
+Olson, P., Christensen, U., and Glatzmaier, G.~A. (1999).
+\newblock Numerical modeling of the geodynamo: mechanisms of field generation
+  and equilibration.
+\newblock {\em Journal of Geophysical Research: Solid Earth},
+  104(B5):10383--10404.
 
 \bibitem[Tian et~al., 2015]{tian2015magnetic}
 Tian, Z., Zuber, M.~T., and Stanley, S. (2015).

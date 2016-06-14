@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  11 JUN 2016 16:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  14 JUN 2016 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -154,24 +154,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box29
 )
-(/usr/share/texmf/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
-)
 (/usr/share/texmf/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-
-
-Package natbib Warning: The `cite' package should not be used
-(natbib)                with natbib. Use option `sort' instead.
-
 \bibhang=\skip46
 \bibsep=\skip47
 LaTeX Info: Redefining \cite on input line 694.
-LaTeX Info: Redefining \citenum on input line 708.
 \c@NAT@ctr=\count102
-) (/usr/share/texmf/tex/latex/caption/caption.sty
+)
+(/usr/share/texmf/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 (/usr/share/texmf/tex/latex/caption/caption3.sty
@@ -229,18 +219,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -310,11 +300,11 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(85.35826pt, 435.32727pt, 76.82234pt)
+* h-part:(L,W,R)=(85.35826pt, 429.6368pt, 82.51282pt)
 * v-part:(T,H,B)=(71.13188pt, 697.09262pt, 76.82234pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=435.32727pt
+* \textwidth=429.6368pt
 * \textheight=630.09262pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
@@ -336,11 +326,11 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -351,161 +341,235 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `thesis.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
 
  []
 
 [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 51.
+               Default added (so using `tbp') on input line 53.
 
 <sketches/spherical_coord.jpg, id=15, 252.945pt x 289.83281pt>
 File: sketches/spherical_coord.jpg Graphic file (type jpg)
 
 <use sketches/spherical_coord.jpg>
-Package pdftex.def Info: sketches/spherical_coord.jpg used on input line 53.
-(pdftex.def)             Requested size: 182.83665pt x 209.50203pt.
+Package pdftex.def Info: sketches/spherical_coord.jpg used on input line 55.
+(pdftex.def)             Requested size: 180.44666pt x 206.76451pt.
 
 <sketches/spherical_coord2.jpg, id=16, 209.28188pt x 216.05719pt>
 File: sketches/spherical_coord2.jpg Graphic file (type jpg)
 
 <use sketches/spherical_coord2.jpg>
-Package pdftex.def Info: sketches/spherical_coord2.jpg used on input line 58.
-(pdftex.def)             Requested size: 204.60434pt x 211.22688pt.
- [4] [5 <./sketches/spherical_coord.jpg> <./sketches/spherical_coord2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+Package pdftex.def Info: sketches/spherical_coord2.jpg used on input line 60.
+(pdftex.def)             Requested size: 201.92981pt x 208.46419pt.
+ [4] [5 <./sketches/spherical_coord.jpg> <./sketches/spherical_coord2.jpg>] [6]
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
-[6] <sketches/density_var.pdf, id=40, 776.14969pt x 502.87875pt>
+<sketches/density_var.pdf, id=41, 776.14969pt x 502.87875pt>
 File: sketches/density_var.pdf Graphic file (type pdf)
 
 <use sketches/density_var.pdf>
-Package pdftex.def Info: sketches/density_var.pdf used on input line 130.
+Package pdftex.def Info: sketches/density_var.pdf used on input line 132.
 (pdftex.def)             Requested size: 186.27972pt x 120.69336pt.
 
-Overfull \hbox (3.07925pt too wide) in paragraph at lines 157--157
+Overfull \hbox (8.76973pt too wide) in paragraph at lines 159--159
 [] 
  []
 
 [7 <./sketches/density_var.pdf>] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 211--216
+Underfull \hbox (badness 10000) in paragraph at lines 213--218
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
 
  []
 
 [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 316--320
+Underfull \hbox (badness 10000) in paragraph at lines 318--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--349
+Underfull \hbox (badness 10000) in paragraph at lines 349--351
 
  []
 
-<graphs/theory/temp_field1-crop.pdf, id=61, 358.33875pt x 386.44376pt>
+<graphs/theory/temp_field1-crop.pdf, id=62, 358.33875pt x 386.44376pt>
 File: graphs/theory/temp_field1-crop.pdf Graphic file (type pdf)
 
 <use graphs/theory/temp_field1-crop.pdf>
 Package pdftex.def Info: graphs/theory/temp_field1-crop.pdf used on input line 
-353.
-(pdftex.def)             Requested size: 141.0453pt x 152.10995pt.
+355.
+(pdftex.def)             Requested size: 139.2016pt x 150.12279pt.
 
-<graphs/theory/temp_field2-crop.png, id=62, 593.5776pt x 364.2408pt>
+<graphs/theory/temp_field2-crop.png, id=63, 593.5776pt x 364.2408pt>
 File: graphs/theory/temp_field2-crop.png Graphic file (type png)
 
 <use graphs/theory/temp_field2-crop.png>
 Package pdftex.def Info: graphs/theory/temp_field2-crop.png used on input line 
-357.
-(pdftex.def)             Requested size: 242.90904pt x 149.05624pt.
+360.
+(pdftex.def)             Requested size: 239.73381pt x 147.111pt.
 
-<sketches/eq_flux-trim.png, id=63, 782.17218pt x 292.84406pt>
+<sketches/eq_flux-trim.png, id=64, 782.17218pt x 292.84406pt>
 File: sketches/eq_flux-trim.png Graphic file (type png)
 
 <use sketches/eq_flux-trim.png>
-Package pdftex.def Info: sketches/eq_flux-trim.png used on input line 367.
-(pdftex.def)             Requested size: 304.72775pt x 114.08807pt.
+Package pdftex.def Info: sketches/eq_flux-trim.png used on input line 371.
+(pdftex.def)             Requested size: 300.74443pt x 112.60008pt.
 
-<sketches/pattern.jpg, id=64, 384.6872pt x 382.42876pt>
+<sketches/pattern.jpg, id=65, 384.6872pt x 382.42876pt>
 File: sketches/pattern.jpg Graphic file (type jpg)
 
 <use sketches/pattern.jpg>
-Package pdftex.def Info: sketches/pattern.jpg used on input line 373.
-(pdftex.def)             Requested size: 100.12506pt x 99.53416pt.
+Package pdftex.def Info: sketches/pattern.jpg used on input line 377.
+(pdftex.def)             Requested size: 98.81625pt x 98.23286pt.
 
-Underfull \hbox (badness 3954) in paragraph at lines 374--374
-\OT1/cmr/m/n/10 low heat flux at the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--377
+Underfull \hbox (badness 10000) in paragraph at lines 352--381
 
  []
 
 [13] [14 <./graphs/theory/temp_field1-crop.pdf> <./graphs/theory/temp_field2-cr
 op.png>] [15 <./sketches/eq_flux-trim.png> <./sketches/pattern.jpg>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 447--453
+Underfull \hbox (badness 10000) in paragraph at lines 452--458
 
  []
 
+[17] <sketches/busse_1975_onset.png, id=95, 422.32782pt x 478.78876pt>
+File: sketches/busse_1975_onset.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+<use sketches/busse_1975_onset.png>
+Package pdftex.def Info: sketches/busse_1975_onset.png used on input line 499.
+(pdftex.def)             Requested size: 207.51819pt x 235.26605pt.
 
+Overfull \hbox (9.88239pt too wide) in paragraph at lines 499--500
+ [][] 
  []
 
-[17]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 486.
+<graphs/iso_440_ex_rad-crop.pdf, id=96, 386.44376pt x 437.635pt>
+File: graphs/iso_440_ex_rad-crop.pdf Graphic file (type pdf)
 
- (/usr/share/texmf/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 486.
- [18] [19]
-<graphs/q2_200_ur_dTp-crop.pdf, id=101, 598.235pt x 413.545pt>
+<use graphs/iso_440_ex_rad-crop.pdf>
+Package pdftex.def Info: graphs/iso_440_ex_rad-crop.pdf used on input line 505.
+
+(pdftex.def)             Requested size: 201.92981pt x 228.68001pt.
+ [18] [19 <./sketches/busse_1975_onset.png> <./graphs/iso_440_ex_rad-crop.pdf>]
+ [20]
+<graphs/q2_200_ur_dTp-crop.pdf, id=115, 598.235pt x 413.545pt>
 File: graphs/q2_200_ur_dTp-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_ur_dTp-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_ur_dTp-crop.pdf used on input line 543.
-(pdftex.def)             Requested size: 435.32727pt x 300.9325pt.
- [20 <./graphs/q2_200_ur_dTp-crop.pdf>]
-[21] (./thesis.bbl [22]) [23] (./thesis.aux) ) 
+Package pdftex.def Info: graphs/q2_200_ur_dTp-crop.pdf used on input line 567.
+(pdftex.def)             Requested size: 429.6368pt x 297.00125pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--570
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--572
+
+ []
+
+[21 <./graphs/q2_200_ur_dTp-crop.pdf>]
+<graphs/q2_200_d080_rad-crop.pdf, id=141, 330.23375pt x 382.42876pt>
+File: graphs/q2_200_d080_rad-crop.pdf Graphic file (type pdf)
+
+<use graphs/q2_200_d080_rad-crop.pdf>
+Package pdftex.def Info: graphs/q2_200_d080_rad-crop.pdf used on input line 576
+.
+(pdftex.def)             Requested size: 137.48691pt x 159.21848pt.
+
+<graphs/q2_200_dTp-crop.pdf, id=142, 332.24126pt x 383.4325pt>
+File: graphs/q2_200_dTp-crop.pdf Graphic file (type pdf)
+
+<use graphs/q2_200_dTp-crop.pdf>
+Package pdftex.def Info: graphs/q2_200_dTp-crop.pdf used on input line 581.
+(pdftex.def)             Requested size: 137.48691pt x 158.67102pt.
+
+<graphs/q2_200_d080_az-crop.pdf, id=143, 330.23375pt x 382.42876pt>
+File: graphs/q2_200_d080_az-crop.pdf Graphic file (type pdf)
+
+<use graphs/q2_200_d080_az-crop.pdf>
+Package pdftex.def Info: graphs/q2_200_d080_az-crop.pdf used on input line 586.
+
+(pdftex.def)             Requested size: 137.48691pt x 159.21848pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--594
+
+ []
+
+<graphs/q2_200_temp_vel-crop2.pdf, id=144, 698.12822pt x 556.47902pt>
+File: graphs/q2_200_temp_vel-crop2.pdf Graphic file (type pdf)
+
+<use graphs/q2_200_temp_vel-crop2.pdf>
+Package pdftex.def Info: graphs/q2_200_temp_vel-crop2.pdf used on input line 59
+8.
+(pdftex.def)             Requested size: 349.06325pt x 278.23883pt.
+ [22 <./graphs/q2_200_d080_rad-crop.pdf> <./graphs/q2_200_dTp-crop.pdf> <./grap
+hs/q2_200_d080_az-crop.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--607
+
+ []
+
+[23 <./graphs/q2_200_temp_vel-crop2.pdf>]
+<graphs/q2_200_eq_temp_field2-crop.pdf, id=182, 330.23375pt x 382.42876pt>
+File: graphs/q2_200_eq_temp_field2-crop.pdf Graphic file (type pdf)
+
+<use graphs/q2_200_eq_temp_field2-crop.pdf>
+Package pdftex.def Info: graphs/q2_200_eq_temp_field2-crop.pdf used on input li
+ne 616.
+(pdftex.def)             Requested size: 141.78091pt x 164.19606pt.
+
+<graphs/q2_200_tammer-crop.pdf, id=183, 603.45451pt x 377.97209pt>
+File: graphs/q2_200_tammer-crop.pdf Graphic file (type pdf)
+
+<use graphs/q2_200_tammer-crop.pdf>
+Package pdftex.def Info: graphs/q2_200_tammer-crop.pdf used on input line 621.
+(pdftex.def)             Requested size: 270.67326pt x 169.53796pt.
+ [24 <./graphs/q2_200_eq_temp_field2-crop.pdf> <./graphs/q2_200_tammer-crop.pdf
+>] [25] (./thesis.bbl [26] [27]) [28]
+(./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5129 strings out of 493315
- 73020 string characters out of 6145894
- 152580 words of memory out of 5000000
- 8463 multiletter control sequences out of 15000+600000
+ 5096 strings out of 493315
+ 73651 string characters out of 6145894
+ 151795 words of memory out of 5000000
+ 8428 multiletter control sequences out of 15000+600000
  20274 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,41p,1297b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/type1/pub
-lic/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share
-/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sha
-re/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf/fonts/type1
-/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/c
-mextra/cmmib7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmmib8.
-pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texm
-f/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public
-/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr6.pf
-b></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf/f
-onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/am
-sfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (23 pages, 1108700 bytes).
+ 38i,12n,41p,1338b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></
+usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/ams
+fonts/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf
+/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf/fonts/type1/p
+ublic/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sha
+re/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (28 pages, 15176958 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 288 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

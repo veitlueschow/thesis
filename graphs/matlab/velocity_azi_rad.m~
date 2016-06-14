@@ -5,6 +5,7 @@ clear;
 iscase = 'q2_200_d080'
 
 load([iscase '_vel']);
+phi=linspace(0,2*pi,Nlong);
 
 
 % Further Geometry 
@@ -23,71 +24,78 @@ set(f1, 'Position', [1, 3, 15.,15.]);
 set(f1,'PaperPositionMode','auto');
 set(f1,'PaperOrientation','landscape');
 
-contour(x_dat,y_dat,squeeze(V.mean.r(:,:,ilat))',30);
-t=title([name ' Radial Velocity'],'interpreter','none');
-set(t,'FontSize',12);
-axis square;
+[r_,phi_]     = meshgrid(r,phi);
+[x_dat,y_dat] = pol2cart(phi_,r_);
+
+contourf(x_dat,y_dat,squeeze(V.mean.r(:,:,ilat))',100,'linestyle','none');
+colormap bluewhitered(500);
+caxis([-55 ,55]);
+
+% DRAW inner and outer circle
+[phi_,r_]     = meshgrid(phi,r(120));
+[x_dat,y_dat] = pol2cart(phi_,r_);
+line(x_dat,y_dat,'color','black','linesmoothing','on');
+hold on;
+
+[phi_,r_]     = meshgrid(phi,r(1));
+[x_dat,y_dat] = pol2cart(phi_,r_);
+line(x_dat,y_dat,'color','black');
+hold on;
+
+% Labels degree
+[phi_,r_]     = meshgrid(phi(1),(r(NR)+0.07));
+[x_dat,y_dat] = pol2cart(phi_,r_);
+text(x_dat,y_dat,'0°','fontsize',20)
+hold on;
+
+[phi_,r_]     = meshgrid(phi(Nlong/4+5),(r(NR)+0.13));
+[x_dat,y_dat] = pol2cart(phi_,r_);
+text(x_dat,y_dat,'90°','fontsize',20)
+hold on;
+
+[phi_,r_]     = meshgrid(phi(Nlong/2+2),(r(NR)+0.45));
+[x_dat,y_dat] = pol2cart(phi_,r_);
+text(x_dat,y_dat,'180°','fontsize',20,'rotation',90)
+hold on;
+
+[phi_,r_]     = meshgrid(phi(3*Nlong/4-3),(r(NR)+0.15));
+[x_dat,y_dat] = pol2cart(phi_,r_);
+text(x_dat,y_dat,'270°','fontsize',20)
+hold on;
+
+% Bars
+[phi_,r_]     = meshgrid(phi(1),(r(NR)+0.04));
+[x1,y1] = pol2cart(phi_,r_);
+[phi_,r_]     = meshgrid(phi(1),(r(NR)-0.04));
+[x2,y2] = pol2cart(phi_,r_);
+line([x1,x2],[y1,y2], 'linewidth',1.5, 'color','black');
+hold on;
+
+[phi_,r_]     = meshgrid(phi(Nlong/4+1),(r(NR)+0.04));
+[x1,y1] = pol2cart(phi_,r_);
+[phi_,r_]     = meshgrid(phi(Nlong/4+1),(r(NR)-0.04));
+[x2,y2] = pol2cart(phi_,r_);
+line([x1,x2],[y1,y2], 'linewidth',1.5, 'color','black');
+hold on;
+
+[phi_,r_]     = meshgrid(phi(Nlong/2+1),(r(NR)+0.04));
+[x1,y1] = pol2cart(phi_,r_);
+[phi_,r_]     = meshgrid(phi(Nlong/2+1),(r(NR)-0.04));
+[x2,y2] = pol2cart(phi_,r_);
+line([x1,x2],[y1,y2], 'linewidth',1.5, 'color','black');
+hold on;
+
+[phi_,r_]     = meshgrid(phi(3*Nlong/4+1),(r(NR)+0.04));
+[x1,y1] = pol2cart(phi_,r_);
+[phi_,r_]     = meshgrid(phi(3*Nlong/4+1),(r(NR)-0.04));
+[x2,y2] = pol2cart(phi_,r_);
+line([x1,x2],[y1,y2], 'linewidth',1.5, 'color','black');
+hold on;
+
+% t = title(['Ttotal'],'interpreter','none');
+% set(t,'FontSize',15);
+colorbar('southoutside','fontsize',20);
 shading flat;
-h = colorbar('eastoutside');
-
-% position2=[0.33,0.,0.3,0.3];
-subplot(1,3,2);
-contour(x_dat,y_dat,squeeze(V.mean.p(:,:,ilat))',30);
-t=title([name ' Azimuthal Velocity'],'interpreter','none');
-set(t,'FontSize',12);
+axis off;
 axis square;
-shading flat;
-h = colorbar('eastoutside');
-% 
-% position3=[0.66,0.,0.3,0.3];
-subplot(1,3,3);
-contour(x_dat,y_dat,squeeze(V.mean.t(:,:,ilat))',30);
-t=title([name ' Theta Velocity'],'interpreter','none');
-set(t,'FontSize',12);
-axis square;
-shading flat;
-h = colorbar('eastoutside');
- 
-% % this part of the script adjusts the paper size of the pdf-output
-% ti = get(gca,'TightInset');
-% set(gca,'Position',[ti(1) ti(2) 1-ti(3)-ti(1) 1-ti(4)-ti(2)]);
-% 
-% set(gca,'units','centimeters')
-% pos = get(gca,'Position');
-% ti = get(gca,'TightInset');
-% 
-% set(gcf, 'PaperUnits','centimeters');
-% set(gcf, 'PaperSize', [pos(3)+ti(1)+ti(3) pos(4)+ti(2)+ti(4)]);
-% set(gcf, 'PaperPositionMode', 'manual');
-% set(gcf, 'PaperPosition',[0 0 pos(3)+ti(1)+ti(3) pos(4)+ti(2)+ti(4)]);
-% %end paper size adjustment
 
-
-saveTightFigure(f1,[name '.pdf'])
-
-
-%% PLOT symmetry
-
- V.p_ = V.p_/double(Nlong);
-
-
-differ = max(V.p_) - min(V.p_);
-differ=differ/2;
-
-V.p_ = V.p_ + ( differ - max(V.p_));
-
-
-% f2=figure('name', [name 'azimuthal symmetry'],'visible','off');
-f2=figure('name', [name 'azimuthal symmetry'],'visible','on');
-
-plot(r,V.p_);
-title(name, 'interpreter','none','FontSize',20);
-
-% title(name,'interpreter','none','FontSize',20);
-xlabel('Radial position','FontSize',20);
-ylabel('azimuthal mean','FontSize',20);
-
-
-
-
-saveTightFigure(f2,[name '_sym.pdf'])
