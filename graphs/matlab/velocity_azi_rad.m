@@ -2,7 +2,7 @@
 addpath(genpath('~/Documents/master/masterarbeit/matlab'));
 
 clear;
-iscase = 'q2_5e-4'
+iscase = 'q2_8e-5'
 
 load(['../vel/' iscase '_vel']);
 % Nlong = length(lon);
@@ -30,8 +30,8 @@ set(f1,'PaperOrientation','landscape');
 [x_dat,y_dat] = pol2cart(phi_,r_);
 
 contourf(x_dat,y_dat,squeeze(V.mean.r(:,:,ilat))',50,'linestyle','none');
+caxis([-50 ,50]);
 colormap bluewhitered(500);
-% caxis([-120 ,120]);
 
 % DRAW inner and outer circle
 [phi_,r_]     = meshgrid(phi,r(NR));

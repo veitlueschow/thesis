@@ -1,9 +1,9 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Introduction and Motivation}{3}
-\contentsline {subsection}{\numberline {1.1}A thermo-chemical approach to dynamo modeling}{3}
-\contentsline {subsection}{\numberline {1.2}Why use heterogeneous heat flux boundary conditions?}{3}
-\contentsline {section}{\numberline {2}Modeling core convection and dynamo action}{3}
-\contentsline {subsection}{\numberline {2.1}Frame of reference}{4}
+\contentsline {section}{\numberline {1}Introduction and Motivation}{4}
+\contentsline {subsection}{\numberline {1.1}A thermo-chemical approach to dynamo modeling}{4}
+\contentsline {subsection}{\numberline {1.2}Why use heterogeneous heat flux boundary conditions?}{4}
+\contentsline {section}{\numberline {2}Modeling core convection and dynamo action}{4}
+\contentsline {subsection}{\numberline {2.1}Frame of reference}{5}
 \contentsline {subsection}{\numberline {2.2}Equation of continuity}{5}
 \contentsline {subsection}{\numberline {2.3}Equation of momentum}{6}
 \contentsline {subsection}{\numberline {2.4}Maxwell equations, Lorentz force and induction equation}{8}
@@ -12,18 +12,19 @@
 \contentsline {subsection}{\numberline {2.7}Boundary conditions}{11}
 \contentsline {subsection}{\numberline {2.8}CMB - heat flux pattern}{12}
 \contentsline {subsection}{\numberline {2.9}Nondimensional equations}{15}
-\contentsline {subsection}{\numberline {2.10}Conductive and convective Fluctuations}{16}
-\contentsline {section}{\numberline {3}Numerical Method}{17}
-\contentsline {section}{\numberline {4}State of research}{17}
-\contentsline {section}{\numberline {5}Outline of the study}{17}
-\contentsline {section}{\numberline {6}Thermo-chemical core convection under the influence of the CMB heat flux pattern}{18}
-\contentsline {subsection}{\numberline {6.1}The onset of convection in the uniform case}{18}
-\contentsline {subsection}{\numberline {6.2}The geostrophic and the thermo-chemical wind balance}{18}
-\contentsline {subsection}{\numberline {6.3}The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}{20}
-\contentsline {subsection}{\numberline {6.4}The effect of the flux pattern on the temperature field}{24}
-\contentsline {subsection}{\numberline {6.5}The formation of stationary vortex columns attached to mantle heterogeneities}{25}
-\contentsline {subsection}{\numberline {6.6}kinetic energies, wave numbers..}{25}
-\contentsline {section}{\numberline {7}Thermo-chemical dynamo action}{25}
-\contentsline {subsection}{\numberline {7.1}The influence of chemical forcing on magnetic field properties}{25}
-\contentsline {section}{\numberline {8}Summary}{25}
-\contentsline {section}{\numberline {9}Conclusion and Outlook}{25}
+\contentsline {subsection}{\numberline {2.10}Conductive and convective Fluctuations}{17}
+\contentsline {subsection}{\numberline {2.11}Diagnostics}{18}
+\contentsline {section}{\numberline {3}Numerical Method}{19}
+\contentsline {section}{\numberline {4}State of research}{19}
+\contentsline {section}{\numberline {5}Outline of the study}{19}
+\contentsline {section}{\numberline {6}Thermo-chemical core convection under the influence of the CMB heat flux pattern}{19}
+\contentsline {subsection}{\numberline {6.1}The onset of convection in the uniform case}{20}
+\contentsline {subsection}{\numberline {6.2}The geostrophic and the thermo-chemical wind balance}{21}
+\contentsline {subsection}{\numberline {6.3}The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}{21}
+\contentsline {subsection}{\numberline {6.4}The effect of the flux pattern on the temperature field}{26}
+\contentsline {subsection}{\numberline {6.5}Stationary vortex columns attached to mantle heterogeneities}{26}
+\contentsline {subsection}{\numberline {6.6}kinetic energies, wave numbers..}{28}
+\contentsline {section}{\numberline {7}Thermo-chemical dynamo action}{28}
+\contentsline {subsection}{\numberline {7.1}The influence of chemical forcing on magnetic field properties}{28}
+\contentsline {section}{\numberline {8}Summary}{28}
+\contentsline {section}{\numberline {9}Conclusion and Outlook}{28}

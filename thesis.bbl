@@ -54,6 +54,11 @@ Christensen, U.~R. (2011).
   magnetic field.
 \newblock {\em Physics of the Earth and Planetary Interiors}, 187(3):157--169.
 
+\bibitem[Davidson, 2001]{davidson2001introduction}
+Davidson, P.~A. (2001).
+\newblock {\em An Introduction to Magnetohydrodynamics}.
+\newblock Cambridge University Press.
+
 \bibitem[Dietrich et~al., 2016]{dietrich2016core}
 Dietrich, W., Hori, K., and Wicht, J. (2016).
 \newblock Core flows and heat transfer induced by inhomogeneous cooling with
@@ -65,6 +70,11 @@ Dormy, E., Cardin, P., and Jault, D. (1998).
 \newblock Mhd flow in a slightly differentially rotating spherical shell, with
   conducting inner core, in a dipolar magnetic field.
 \newblock {\em Earth and Planetary Science Letters}, 160(1):15--30.
+
+\bibitem[Dormy et~al., 2004]{dormy2004onset}
+Dormy, E., Soward, A., Jones, C., Jault, D., and Cardin, P. (2004).
+\newblock The onset of thermal convection in rotating spherical shells.
+\newblock {\em Journal of Fluid Mechanics}, 501:43--70.
 
 \bibitem[Gillet and Jones, 2006]{gillet2006quasi}
 Gillet, N. and Jones, C. (2006).
@@ -101,6 +111,16 @@ Jones, C. (2007).
 \newblock Thermal and compositional convection in the outer core.
 \newblock {\em Core Dynamics}, pages 131--185.
 
+\bibitem[Jones et~al., 2000]{jones2000onset}
+Jones, C.~A., Soward, A.~M., and Mussa, A.~I. (2000).
+\newblock The onset of thermal convection in a rapidly rotating sphere.
+\newblock {\em Journal of Fluid Mechanics}, 405:157--179.
+
+\bibitem[King et~al., 2009]{king2009boundary}
+King, E.~M., Stellmach, S., Noir, J., Hansen, U., and Aurnou, J.~M. (2009).
+\newblock Boundary layer control of rotating convection systems.
+\newblock {\em Nature}, 457(7227):301--304.
+
 \bibitem[Kuang and Bloxham, 1997]{kuang1997earth}
 Kuang, W. and Bloxham, J. (1997).
 \newblock An earth-like numerical dynamo model.
@@ -130,6 +150,16 @@ Olson, P., Christensen, U., and Glatzmaier, G.~A. (1999).
   and equilibration.
 \newblock {\em Journal of Geophysical Research: Solid Earth},
   104(B5):10383--10404.
+
+\bibitem[Pedlosky, 2013]{pedlosky2013geophysical}
+Pedlosky, J. (2013).
+\newblock {\em Geophysical fluid dynamics}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Roberts, 2007]{roberts2007theory}
+Roberts, P. (2007).
+\newblock Theory of the geodynamo.
+\newblock {\em Core Dynamics: Treatise on Geophysics}, pages 67--105.
 
 \bibitem[Tian et~al., 2015]{tian2015magnetic}
 Tian, Z., Zuber, M.~T., and Stanley, S. (2015).
