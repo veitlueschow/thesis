@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/TeX Live for SUSE Linux)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: apalike.bst
+Database file #1: literatur.bib
+Warning--empty publisher in Tilgner2007
+Warning--empty school in trumper2014thermo
+You've used 37 entries,
+            1935 wiz_defined-function locations,
+            697 strings with 9370 characters,
+and the built_in function-call counts, 14314 in all, are:
+= -- 1433
+> -- 503
+< -- 27
++ -- 185
+- -- 162
+* -- 1227
+:= -- 2478
+add.period$ -- 111
+call.type$ -- 37
+change.case$ -- 259
+chr.to.int$ -- 36
+cite$ -- 39
+duplicate$ -- 531
+empty$ -- 1034
+format.name$ -- 219
+if$ -- 2768
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 42
+newline$ -- 188
+num.names$ -- 111
+pop$ -- 205
+preamble$ -- 1
+purify$ -- 266
+quote$ -- 0
+skip$ -- 409
+stack$ -- 0
+substring$ -- 1160
+swap$ -- 55
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 210
+warning$ -- 2
+while$ -- 133
+width$ -- 0
+write$ -- 477
+(There were 2 warnings)
