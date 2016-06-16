@@ -1,0 +1,344 @@
+@article{kundu2008fluid,
+  title={Fluid Mechanics},
+  author={Kundu, PK and Cohen, IM},
+  journal={Academic, San Diego},
+  year={2008}
+}
+
+@BOOK{Tilgner2007,
+author={Tilgner, A.},
+title={Rotational Dynamics of the Core},
+journal={Treatise on Geophysics},
+year={2007},
+volume={8},
+pages={207-243},
+doi={10.1016/B978-044452748-6.00129-2},
+note={cited By 12},
+document_type={Book Chapter},
+source={Scopus},
+}
+
+@book{blakely1996potential,
+  title={Potential theory in gravity and magnetic applications},
+  author={Blakely, Richard J},
+  year={1996},
+  publisher={Cambridge University Press}
+}
+
+@article{anufriev2005boussinesq,
+  title={The Boussinesq and anelastic liquid approximations for convection in the Earth's core},
+  author={Anufriev, AP and Jones, CA and Soward, AM},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={152},
+  number={3},
+  pages={163--190},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{trumper2012numerical,
+  title={Numerical study on double-diffusive convection in the Earth's core},
+  author={Tr{\"u}mper, T and Breuer, M and Hansen, U},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={194},
+  pages={55--63},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{dormy1998mhd,
+  title={MHD flow in a slightly differentially rotating spherical shell, with conducting inner core, in a dipolar magnetic field},
+  author={Dormy, Emmanuel and Cardin, Philippe and Jault, Dominique},
+  journal={Earth and Planetary Science Letters},
+  volume={160},
+  number={1},
+  pages={15--30},
+  year={1998},
+  publisher={Elsevier}
+}
+
+@article{jones2007thermal,
+  title={Thermal and compositional convection in the outer core},
+  author={Jones, CA},
+  journal={Core Dynamics},
+  pages={131--185},
+  year={2007}
+}
+
+@article{wicht2002inner,
+  title={Inner-core conductivity in numerical dynamo simulations},
+  author={Wicht, Johannes},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={132},
+  number={4},
+  pages={281--302},
+  year={2002},
+  publisher={Elsevier}
+}
+
+@article{glatzmaier1995three,
+  title={A three-dimensional convective dynamo solution with rotating and finitely conducting inner core and mantle},
+  author={Glatzmaier, Gary A and Roberts, Paul H},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={91},
+  number={1},
+  pages={63--75},
+  year={1995},
+  publisher={Elsevier}
+}
+
+@article{christensen2006scaling,
+  title={Scaling properties of convection-driven dynamos in rotating spherical shells and application to planetary magnetic fields},
+  author={Christensen, UR and Aubert, Julien},
+  journal={Geophysical Journal International},
+  volume={166},
+  number={1},
+  pages={97--114},
+  year={2006},
+  publisher={Oxford University Press}
+}
+
+@article{zhang1987onset,
+  title={On the onset of convection in rotating spherical shells},
+  author={Zhang, K-K and Busse, FH},
+  journal={Geophysical \& Astrophysical Fluid Dynamics},
+  volume={39},
+  number={3},
+  pages={119--147},
+  year={1987},
+  publisher={Taylor \& Francis}
+}
+
+@article{kuang1997earth,
+  title={An Earth-like numerical dynamo model},
+  author={Kuang, Weijia and Bloxham, Jeremy},
+  journal={Nature},
+  volume={389},
+  number={6649},
+  pages={371--374},
+  year={1997},
+  publisher={Nature Publishing Group}
+}
+
+@article{aubert2008thermochemical,
+  title={Thermochemical flows couple the Earth's inner core growth to mantle heterogeneity},
+  author={Aubert, Julien and Amit, Hagay and Hulot, Gauthier and Olson, Peter},
+  journal={Nature},
+  volume={454},
+  number={7205},
+  pages={758--761},
+  year={2008},
+  publisher={Nature Publishing Group}
+}
+
+@article{olson2002time,
+  title={The time-averaged magnetic field in numerical dynamos with non-uniform boundary heat flow},
+  author={Olson, Peter and Christensen, UR},
+  journal={Geophysical Journal International},
+  volume={151},
+  number={3},
+  pages={809--823},
+  year={2002},
+  publisher={Oxford University Press}
+}
+
+@article{hori2014ancient,
+  title={Ancient dynamos of terrestrial planets more sensitive to core-mantle boundary heat flows},
+  author={Hori, K and Wicht, J and Dietrich, W},
+  journal={Planetary and Space Science},
+  volume={98},
+  pages={30--40},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{braginsky1995equations,
+  title={Equations governing convection in Earth's core and the geodynamo},
+  author={Braginsky, Stanislav I and Roberts, Paul H},
+  journal={Geophysical \& Astrophysical Fluid Dynamics},
+  volume={79},
+  number={1-4},
+  pages={1--97},
+  year={1995},
+  publisher={Taylor \& Francis}
+}
+
+@phdthesis{trumper2014thermo,
+  title={Thermo-chemical Convection and Dynamo Action in a Rotating Spherical Shell},
+  author={Tr{\"u}mper, Tobias},
+  year={2014}
+}
+
+@article{tian2015magnetic,
+  title={Magnetic field modeling for Mercury using dynamo models with a stable layer and laterally variable heat flux},
+  author={Tian, ZhenLiang and Zuber, Maria T and Stanley, Sabine},
+  journal={Icarus},
+  volume={260},
+  pages={263--268},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@article{nakagawa2008lateral,
+  title={Lateral variations in CMB heat flux and deep mantle seismic velocity caused by a thermal--chemical-phase boundary layer in 3D spherical convection},
+  author={Nakagawa, Takashi and Tackley, Paul J},
+  journal={Earth and Planetary Science Letters},
+  volume={271},
+  number={1},
+  pages={348--358},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{glatzmaier1999role,
+  title={The role of the Earth's mantle in controlling the frequency of geomagnetic reversals},
+  author={Glatzmaier, Gary A and Coe, Robert S and Hongre, Lionel and Roberts, Paul H},
+  journal={Nature},
+  volume={401},
+  number={6756},
+  pages={885--890},
+  year={1999},
+  publisher={Nature Publishing Group}
+}
+
+@book{chandrasekhar1970hydrodynamic,
+  title={Hydrodynamic and hydromagnetic stability},
+  author={Chandrasekhar, Subrahmanyan},
+  volume={196},
+  year={1961},
+  publisher={Clarendon Press Oxford}
+}
+
+@article{zhang1992convection,
+  title={On convection in the Earth's core driven by lateral temperature variations in the lower mantle},
+  author={Zhang, Keke and Gubbins, David},
+  journal={Geophysical journal international},
+  volume={108},
+  number={1},
+  pages={247--255},
+  year={1992},
+  publisher={Oxford University Press}
+}
+
+@article{dietrich2016core,
+  title={Core flows and heat transfer induced by inhomogeneous cooling with sub-and supercritical convection},
+  author={Dietrich, Wieland and Hori, Kumiko and Wicht, Johannes},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={251},
+  pages={36--51},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@book{vallis2006atmospheric,
+  title={Atmospheric and oceanic fluid dynamics: fundamentals and large-scale circulation},
+  author={Vallis, Geoffrey K},
+  year={2006},
+  publisher={Cambridge University Press}
+}
+
+@article{gillet2006quasi,
+  title={The quasi-geostrophic model for rapidly rotating spherical convection outside the tangent cylinder},
+  author={Gillet, N and Jones, CA},
+  journal={Journal of Fluid Mechanics},
+  volume={554},
+  pages={343--369},
+  year={2006},
+  publisher={Cambridge Univ Press}
+}
+
+@article{hori2012influence,
+  title={The influence of thermo-compositional boundary conditions on convection and dynamos in a rotating spherical shell},
+  author={Hori, K and Wicht, J and Christensen, UR},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={196},
+  pages={32--48},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{busse1970thermal,
+  title={Thermal instabilities in rapidly rotating systems},
+  author={Busse, Friedrich H},
+  journal={Journal of Fluid Mechanics},
+  volume={44},
+  number={03},
+  pages={441--460},
+  year={1970},
+  publisher={Cambridge Univ Press}
+}
+
+@article{busse2002convective,
+  title={Convective flows in rapidly rotating spheres and their dynamo action},
+  author={Busse, Friedrich H},
+  journal={Physics of Fluids (1994-present)},
+  volume={14},
+  number={4},
+  pages={1301--1314},
+  year={2002},
+  publisher={AIP Publishing}
+}
+
+@article{aubert2008magnetic,
+  title={The magnetic structure of convection-driven numerical dynamos},
+  author={Aubert, Julien and Aurnou, Jonathan and Wicht, Johannes},
+  journal={Geophysical Journal International},
+  volume={172},
+  number={3},
+  pages={945--956},
+  year={2008},
+  publisher={Oxford University Press}
+}
+
+@article{christensen2011geodynamo,
+  title={Geodynamo models: Tools for understanding properties of Earth\'s magnetic field},
+  author={Christensen, Ulrich R},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={187},
+  number={3},
+  pages={157--169},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{olson1999numerical,
+  title={Numerical modeling of the geodynamo: mechanisms of field generation and equilibration},
+  author={Olson, Peter and Christensen, Ulrich and Glatzmaier, Gary A},
+  journal={Journal of Geophysical Research: Solid Earth},
+  volume={104},
+  number={B5},
+  pages={10383--10404},
+  year={1999},
+  publisher={Wiley Online Library}
+}
+
+@article{king2009boundary,
+  title={Boundary layer control of rotating convection systems},
+  author={King, Eric M and Stellmach, Stephan and Noir, Jerome and Hansen, Ulrich and Aurnou, Jonathan M},
+  journal={Nature},
+  volume={457},
+  number={7227},
+  pages={301--304},
+  year={2009},
+  publisher={Nature Publishing Group}
+}
+
+@article{jones2011planetary,
+  title={Planetary magnetic fields and fluid dynamos},
+  author={Jones, Chris A},
+  journal={Annual Review of Fluid Mechanics},
+  volume={43},
+  pages={583--614},
+  year={2011},
+  publisher={Annual Reviews}
+}
+
+@article{dormy2004onset,
+  title={The onset of thermal convection in rotating spherical shells},
+  author={Dormy, E and Soward, AM and Jones, CA and Jault, D and Cardin, P},
+  journal={Journal of Fluid Mechanics},
+  volume={501},
+  pages={43--70},
+  year={2004},
+  publisher={Cambridge Univ Press}
+}
