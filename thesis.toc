@@ -21,9 +21,10 @@
 \contentsline {subsection}{\numberline {6.1}The onset of convection in the uniform case}{20}
 \contentsline {subsection}{\numberline {6.2}The geostrophic and the thermo-chemical wind balance}{21}
 \contentsline {subsection}{\numberline {6.3}The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}{21}
-\contentsline {subsection}{\numberline {6.4}The effect of the flux pattern on the temperature field}{26}
-\contentsline {subsection}{\numberline {6.5}Stationary vortex columns attached to mantle heterogeneities}{26}
-\contentsline {subsection}{\numberline {6.6}kinetic energies, wave numbers..}{28}
+\contentsline {subsection}{\numberline {6.4}The effect of the flux pattern on the temperature field}{24}
+\contentsline {subsection}{\numberline {6.5}Columns of constant vorticity}{25}
+\contentsline {subsection}{\numberline {6.6}Stationary vortex columns attached to mantle heterogeneities}{27}
+\contentsline {subsection}{\numberline {6.7}kinetic energies, wave numbers..}{28}
 \contentsline {section}{\numberline {7}Thermo-chemical dynamo action}{28}
 \contentsline {subsection}{\numberline {7.1}The influence of chemical forcing on magnetic field properties}{28}
 \contentsline {section}{\numberline {8}Summary}{28}

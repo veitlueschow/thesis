@@ -76,6 +76,12 @@ Dormy, E., Soward, A., Jones, C., Jault, D., and Cardin, P. (2004).
 \newblock The onset of thermal convection in rotating spherical shells.
 \newblock {\em Journal of Fluid Mechanics}, 501:43--70.
 
+\bibitem[Gibbons and Gubbins, 2000]{gibbons2000convection}
+Gibbons, S.~J. and Gubbins, D. (2000).
+\newblock Convection in the earth's core driven by lateral variations in the
+  core-mantle boundary heat flux.
+\newblock {\em Geophysical Journal International}, 142(2):631--642.
+
 \bibitem[Gillet and Jones, 2006]{gillet2006quasi}
 Gillet, N. and Jones, C. (2006).
 \newblock The quasi-geostrophic model for rapidly rotating spherical convection
@@ -110,6 +116,11 @@ Hori, K., Wicht, J., and Dietrich, W. (2014).
 Jones, C. (2007).
 \newblock Thermal and compositional convection in the outer core.
 \newblock {\em Core Dynamics}, pages 131--185.
+
+\bibitem[Jones, 2011]{jones2011planetary}
+Jones, C.~A. (2011).
+\newblock Planetary magnetic fields and fluid dynamos.
+\newblock {\em Annual Review of Fluid Mechanics}, 43:583--614.
 
 \bibitem[Jones et~al., 2000]{jones2000onset}
 Jones, C.~A., Soward, A.~M., and Mussa, A.~I. (2000).

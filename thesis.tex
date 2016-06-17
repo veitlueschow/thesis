@@ -610,7 +610,7 @@ In the equatorial plain, $\bm{e_z}\cdot \bm{e_\vartheta} = -1$, $r=s$ and the ra
 The position of the maximum (minimum) azimuthal temperature gradient should thus coincide with radial downwellings (upwellings) (see relation \eqref{eq:ugr} that contains a minus sign) in the equatorial plain. Since only the $z$-averaged / geostrophic  part of the velocity field $\bm u$ contains radial components (\citep{dietrich2016core}, $u_r^g$ is the full radial flow in this approximation. \\
 \begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
+%  \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
  \caption{Azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi$, here $-\partial T/\partial \phi$ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plain. As parameters, $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$ and $q^* = 2$ are used besides the Prandtl and Ekman number as mentioned above.}
 \label{fig:ur_dTp}
  \end{figure}
@@ -619,17 +619,17 @@ The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\
 \begin{figure}[t]
 \centering
 \begin{minipage}[left]{0.32\textwidth}
-   \includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
+%    \includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
    \caption*{(a) Radial Velocity}
 \end{minipage}
 \hfill
 \begin{minipage}[center]{0.32\textwidth}
-   \includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
+%    \includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
    \caption*{(b) $\partial T / \partial \phi$, rescaled}
 \end{minipage}
 \hfill
 \begin{minipage}[right]{0.32\textwidth}
-    \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
+%     \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
   \caption*{(c) Azimuthal velocity}
 \end{minipage}
 \caption{Equatorial contours of (a) the radial velocity, (b) the azimuthal temperature gradient $\partial (\theta + t_2^2) /\partial \phi$ and (c) the azimuthal velocity. The values in (b) are rescaled according to Equation \eqref{eq:ugr} (without the minus sign) in order to be comparable to (a). The case is the same as in Figure \ref{fig:ur_dTp}. }
@@ -641,7 +641,7 @@ In the upper region of the core, the two downwellings (around 120$^\circ$ and 30
 
 \begin{figure}[t]
  \centering
- \includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
+%  \includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
  \caption{Horizontal velocity vectors in the equatorial plain, scaled by the corresponding flow magnitude. The background contour shows the full non dimensional temperature field $ T = \theta + T_\textrm{cond}$. The two strong upwelling plumes at the ICB (at $\sim 110^\circ$E and $\sim 290^\circ$E) and the bending jet like downwellings right above are clearly visible.}
 \label{fig:flowfield_temp}
  \end{figure}
@@ -659,12 +659,12 @@ The azimuthal flow in the equatorial plain is, in reaction to the radial flow, c
 \begin{figure}[t]
  \begin{minipage}[left]{0.33\textwidth}
   \centering
-  \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
+%   \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
   \caption*{(a) Equatorial plain}
  \end{minipage}
  \hfill
 \begin{minipage}[right]{0.63\textwidth}
- \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
+%  \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
  \caption*{(b) Surface projection at the CMB}
 \end{minipage}
 \caption{Full temperature field $ T = \theta + T_\textrm{cond}$ for the same case as above in (a) the equatorial plain and (b) as a surface projection right under the CMB. (a) is the same graph as in Figure \ref{fig:flowfield_temp}, but the color map is 'shortened' in order to pronounce the the phase shift of the temperature field. }
@@ -673,38 +673,42 @@ The azimuthal flow in the equatorial plain is, in reaction to the radial flow, c
 Figure \ref{fig:q2_200_temp}(a) shows the same equatorial view on the temperature field as Figure \ref{fig:flowfield_temp} in the previous section. The color map was slightly rescaled to make the phase shift between the temperature maxima at the CMB at $\sim 170^\circ$ and $\sim 350^\circ$ and the heat flux maxima (at $\sim 90^\circ$ and $\sim 270^\circ$) visible. The reason for the phase shift lies in the flow field and can be found in the previous chapter: Strong radial motion occurs predominantly in the region under the heat flux maxima. The up- and downwellings visible in Figure \ref{fig:flowfield_temp} intensify the cooling mechanism, thus go along with a colder core region. The hot regions coincide with strong azimuthal motion along the CMB that inhibit the transport of heat out of the core. (EKMAN dependence ???) \\
 The surface projection of the temperature field at the CMB (Figure \ref{fig:q2_200_temp}(b)) confirms that the temperature field in the slightly super critical case nearly is a phase shifted version of the conductive temperature field (Figure \ref{fig:conductives}(b)) \citep{zhang1992convection}. 
 
-\subsection{Stationary vortex columns attached to mantle heterogeneities}
+\subsection{Columns of constant vorticity}
 \label{sec:vortex_clolumns}
-As mentioned above, convection in rapidly rotating systems is organized in a column like structure at onset \citep{busse1970thermal}. The question whether this structure is maintained, even in the highly super critical LOC, has important implications for the understanding of the geodynamo. The so called \textit{vortex columns}, visualized in Figures \ref{fig:sketch_busse} and \ref{fig:vort_uniform}, play a key role in the magnetic field production. \\
+As mentioned above, convection in rapidly rotating systems is organized in a column like structure at onset \citep{busse1970thermal}. The question whether this structure is maintained, even in the highly super critical LOC, has important implications for the understanding of the geodynamo. The so called \textit{vortex columns}, visualized in Figures \ref{fig:sketch_busse} and \ref{fig:vort_uniform} in the equatorial plain, play a key role in the magnetic field production. \\
 Although motion parallel to the $z$-axis is strongly constrained by rotation (see Equation \eqref{eq:geostrophy2}), the spherical form of the boundaries necessarily relaxes this constraint locally and vertical flow is unavoidable \citep{busse2002convective, gillet2006quasi}. An important example for the relaxation of the Taylor-Proudman theorem in this context is the \textit{secondary circulation} inside of vortex columns \citep{olson1999numerical, aubert2008magnetic, christensen2011geodynamo}, sketched in Figure \ref{fig:secondary_circulation}.\\
 \begin{figure}[H]
  \begin{minipage}[left]{0.49\textwidth}
-  \includegraphics[width =  \textwidth]{sketches/secondary_circulation-crop.pdf}
+  \includegraphics[width =  \textwidth]{sketches/seconadry_circulation-crop.pdf}
   \caption{Sketch of the secondary circulation induced by a pair of a cyclonic and an anticyclonic vortex. The two convection columns can be imagined as part of the sketch in Figure \ref{fig:sketch_busse}, a situation typical for the onset of convection.}
   \label{fig:secondary_circulation}
  \end{minipage}
 \hfill
 \begin{minipage}[right]{0.48\textwidth}
-\textit{Ekman pumping} and \textit{suction} are boundary layer effects that are distinct to systems with no-slip conditions (as in this study, see section \ref{sec:bc}). They evolve in the interplay between the rotation dominated bulk and the viscosity dominated Ekman layer. In \textit{cyclones}, i.e. vortex columns with positive vorticity $\omega > 0$, Ekman pumping induces a vertical flux away from the CMB towards the equator. Ekman suction causes motion towards the CMB in anticyclones, where $\omega < 0$. Although both mechanisms take place in the boundary layers, they potentially induce vertical motion in the whole column. A more detailed description can be found in \citet{pedlosky2013geophysical}.\\
-The variation of buoyancy along the $z$-axis inside of a vortex column acts as a second source of vertical motion \citep{olson1999numerical}. As in the case of Ekman suction and pumping, this motion is oriented equatorwards in cyclones and away from the equator in anticyclones. Yet, it is independent of the viscous boundary condition and therefore it makes this discussion applicable to a wider range of model configurations. 
+\textit{Ekman pumping} and \textit{suction} are boundary layer effects that are distinct to systems with no-slip conditions (as in this study, see section \ref{sec:bc}). They evolve in the interplay between the rotation dominated bulk and the viscosity dominated Ekman layer. In \textit{cyclones}, i.e. vortex columns with positive vorticity $\omega > 0$, Ekman pumping induces a vertical flux away from the CMB towards the equator. Ekman suction causes motion towards the CMB in \textit{anticyclones}, where $\omega < 0$. Although both mechanisms take place in the boundary layers, they potentially induce vertical motion in the whole column. A more detailed description can be found in \citet{pedlosky2013geophysical}.\\
+The variation of buoyancy along the $z$-axis inside of a vortex column acts as a second source of vertical motion \citep{olson1999numerical}. As in the case of Ekman suction and pumping, this motion is oriented equatorwards in cyclones and away from the equator in anticyclones. It is independent of the viscous boundary condition and therefore it makes this discussion applicable to a wider range of model configurations. 
 \end{minipage}
 \end{figure}
-Figure \ref{fig:secondary_circulation} shows how a cyclone causes a divergent flow at the equator, whereas an anticyclone acts converging at the equator. The opposite is true near the CMB. A cyclone and an anticyclone together, they commonly appear in pairs, form a \textit{circular} motion that superimposes the primary vortial motion. The interaction of a vorticity carrying fluid column and a vertical flow produces helicity $\mathcal{H}$. Besides the differential rotation that is necessary for the $\omega$-effect, the presence of helicity is a condition for the occurrence of the (macroscopic) $\alpha$-effect \citep{roberts2007theory, christensen2011geodynamo}.\\ \par
+Figure \ref{fig:secondary_circulation} shows how a cyclone causes a divergent flow at the equator, whereas an anticyclone acts converging at the equator. The opposite is true near the CMB. A cyclone and an anticyclone together form a \textit{circular} motion that superimposes the primary vortial motion. The interaction of a vorticity carrying fluid column and a vertical flow produces helicity $\mathcal{H}$. Besides the differential rotation that is necessary for the $\omega$-effect, the presence of helicity is a condition for the occurrence of the (macroscopic) $\alpha$-effect \citep{roberts2007theory, christensen2011geodynamo, jones2011planetary}. For a detailed explanation of the two effects and their importance for the geodynamo, the reader is referred to the literature cited above. For the moment it is sufficient to know that the $\omega$-effect is a potential source for toroidal magnetic field, whereas the $\alpha$-effect theoretically is responsible for both, the production of toroidal and poloidal field. \\ \par
 
+\subsection{Stationary vortex columns attached to mantle heterogeneities}
 
+The well structured Rossby wave solution is perturbed, if heterogeneous heat flux conditions are applied at the CMB. Nevertheless, columns of constant vorticity play an important role in the solution. The long-term averaged data bears a non axisymmetric vorticity pattern that can be related to the geometry of the CMB heat flux. This pattern contains \textit{stationary vortex columns} elongated through the whole sphere parallel to the axis of rotation. In contrast to that, all uniform cases regarded (e.g. the snapshot in Figure \ref{fig:vort_uniform}) yield axisymmetric distributions of vorticity in long-term averages because the Rossby wave solution constantly moves in azimuthal direction \citet{busse2002convective}. \\
+The secondary circulation is expected to have an effect on the flow that can be localized at a fixed position in the spherical shell, it is \textit{locked} to the mantle \citep{gibbons2000convection}. 
 \begin{figure}[H]
- \begin{minipage}[left]{0.5\textwidth}
-  The interplay of the azimuthal and the radial velocity field in the equatorial plain (Figure \ref{fig:equatorial_vel_temp}(a) and (b)) causes a vorticity distribution that is quite different from the one in the uniform case, depicted in Figure \ref{fig:vort_uniform} in form of a snapshot. 
- \end{minipage}
-\hfill
-\begin{minipage}[right]{0.45\textwidth}
- \includegraphics[width = \textwidth]{graphs/vorticity/q0_100_ex_vort-crop.pdf}
+\begin{minipage}[left]{0.47\textwidth}
+ \includegraphics[width =\textwidth]{graphs/vorticity/q0_100_ex_vort-crop.pdf}
  \caption{Snapshot of the $z$-component of vorticity in the equatorial plain for a slightly super critical, uniform case: $\textrm{Ra}_\textrm{\tiny T} = 10^{6}$.  }
  \label{fig:vort_uniform}
 \end{minipage}
-
+\hfill
+\begin{minipage}[right]{0.47\textwidth}
+ \includegraphics[width=0.96\textwidth]{graphs/vorticity/q2_200_d080_vort-crop.pdf}
+ \caption{Long-term averaged equatorial contour of the $z$-vorticity for the same case as described in Figure \ref{fig:equatorial_vel_temp}.}
+ \label{fig:q2_200_d080_vort}
+\end{minipage}
 \end{figure}
-
+The interplay of the azimuthal and the radial velocity field in the equatorial plain (Figure \ref{fig:equatorial_vel_temp}(a) and (b)) causes the vorticity distribution that is shown in Figure \ref{fig:q2_200_d080_vort}. Tilted patches of strong negative vorticity close to the ICB lie beneath prograde jets of positive vorticity right under the heat flux maxima at $90^\circ$E and $270^\circ$E. Additionally, a band of negative vorticity stretches between $90^\circ$ and $180^\circ$E and $270^\circ$ and $360^\circ$E. 
 
 \subsection{kinetic energies, wave numbers..}
 kinetic energy increases with increasing $q^*$

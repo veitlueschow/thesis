@@ -5,45 +5,45 @@ The style file: apalike.bst
 Database file #1: literatur.bib
 Warning--empty publisher in Tilgner2007
 Warning--empty school in trumper2014thermo
-You've used 37 entries,
+You've used 39 entries,
             1935 wiz_defined-function locations,
-            697 strings with 9370 characters,
-and the built_in function-call counts, 14314 in all, are:
-= -- 1433
-> -- 503
-< -- 27
-+ -- 185
-- -- 162
-* -- 1227
-:= -- 2478
-add.period$ -- 111
-call.type$ -- 37
-change.case$ -- 259
-chr.to.int$ -- 36
-cite$ -- 39
-duplicate$ -- 531
-empty$ -- 1034
-format.name$ -- 219
-if$ -- 2768
+            709 strings with 9669 characters,
+and the built_in function-call counts, 15076 in all, are:
+= -- 1513
+> -- 523
+< -- 29
++ -- 191
+- -- 168
+* -- 1292
+:= -- 2608
+add.period$ -- 117
+call.type$ -- 39
+change.case$ -- 272
+chr.to.int$ -- 38
+cite$ -- 41
+duplicate$ -- 559
+empty$ -- 1093
+format.name$ -- 229
+if$ -- 2917
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 42
-newline$ -- 188
-num.names$ -- 111
-pop$ -- 205
+missing$ -- 44
+newline$ -- 198
+num.names$ -- 117
+pop$ -- 212
 preamble$ -- 1
-purify$ -- 266
+purify$ -- 279
 quote$ -- 0
-skip$ -- 409
+skip$ -- 431
 stack$ -- 0
-substring$ -- 1160
-swap$ -- 55
+substring$ -- 1234
+swap$ -- 57
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 210
+type$ -- 222
 warning$ -- 2
-while$ -- 133
+while$ -- 141
 width$ -- 0
-write$ -- 477
+write$ -- 503
 (There were 2 warnings)
