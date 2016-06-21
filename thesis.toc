@@ -13,18 +13,17 @@
 \contentsline {subsection}{\numberline {2.8}CMB - heat flux pattern}{12}
 \contentsline {subsection}{\numberline {2.9}Non dimensional equations}{15}
 \contentsline {subsection}{\numberline {2.10}Conductive and convective Fluctuations}{17}
-\contentsline {subsection}{\numberline {2.11}Diagnostics (noch nicht vollst\"andig)}{18}
-\contentsline {subsection}{\numberline {2.12}Numerical Method}{19}
+\contentsline {subsection}{\numberline {2.11}Numerical Method (noch nicht fertig)}{18}
+\contentsline {subsection}{\numberline {2.12}Diagnostics (noch nicht vollst\"andig)}{19}
 \contentsline {section}{\numberline {3}State of research (bisher nur Notizen von mir)}{19}
-\contentsline {section}{\numberline {4}Outline of the study (Notizen)}{19}
-\contentsline {section}{\numberline {5}Thermo-chemical core convection under the influence of the CMB heat flux pattern}{19}
-\contentsline {subsection}{\numberline {5.1}The onset of convection in the uniform case}{20}
-\contentsline {subsection}{\numberline {5.2}The geostrophic and the thermo-chemical wind balance}{21}
-\contentsline {subsection}{\numberline {5.3}The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}{22}
-\contentsline {subsection}{\numberline {5.4}The effect of the flux pattern on the temperature field}{26}
+\contentsline {section}{\numberline {4}Outline of the study (Notizen)}{20}
+\contentsline {section}{\numberline {5}Thermo-chemical core convection under the influence of the CMB heat flux pattern}{20}
+\contentsline {subsection}{\numberline {5.1}The onset of convection in the uniform case}{21}
+\contentsline {subsection}{\numberline {5.2}The geostrophic and the thermo-chemical wind balance}{22}
+\contentsline {subsection}{\numberline {5.3}The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}{23}
+\contentsline {subsection}{\numberline {5.4}The effect of the flux pattern on the temperature field}{27}
 \contentsline {subsection}{\numberline {5.5}Columns of constant vorticity}{27}
 \contentsline {subsection}{\numberline {5.6}Stationary vortex columns attached to mantle heterogeneities}{29}
-\contentsline {subsection}{\numberline {5.7}kinetic energies, wave numbers..}{30}
 \contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{31}
 \contentsline {subsection}{\numberline {6.1}The influence of chemical forcing on magnetic field properties}{31}
 \contentsline {section}{\numberline {7}Summary}{31}

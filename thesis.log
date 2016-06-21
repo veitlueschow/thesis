@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  21 JUN 2016 21:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  21 JUN 2016 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,208 +440,205 @@ Underfull \hbox (badness 10000) in paragraph at lines 454--460
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 481--481
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
 [18]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 513.
+Underfull \hbox (badness 10000) in paragraph at lines 501--501
 
- (/usr/share/texmf/tex/latex/base/omscmr.fd
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 530.
+
+(/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 513.
-
-Underfull \hbox (badness 10000) in paragraph at lines 540--542
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 543--545
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 530.
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 557--559
 
  []
 
-<sketches/busse_1975_onset.png, id=102, 422.32782pt x 478.78876pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--562
+
+ []
+
+[20] <sketches/busse_1975_onset.png, id=105, 422.32782pt x 478.78876pt>
 File: sketches/busse_1975_onset.png Graphic file (type png)
 
 <use sketches/busse_1975_onset.png>
-Package pdftex.def Info: sketches/busse_1975_onset.png used on input line 551.
+Package pdftex.def Info: sketches/busse_1975_onset.png used on input line 568.
 (pdftex.def)             Requested size: 207.51819pt x 235.26605pt.
 
-Overfull \hbox (9.88239pt too wide) in paragraph at lines 551--552
+Overfull \hbox (9.88239pt too wide) in paragraph at lines 568--569
  [][] 
  []
 
-<graphs/iso_440_ex_rad-crop.pdf, id=103, 386.44376pt x 437.635pt>
+<graphs/iso_440_ex_rad-crop.pdf, id=106, 386.44376pt x 437.635pt>
 File: graphs/iso_440_ex_rad-crop.pdf Graphic file (type pdf)
 
 <use graphs/iso_440_ex_rad-crop.pdf>
-Package pdftex.def Info: graphs/iso_440_ex_rad-crop.pdf used on input line 557.
+Package pdftex.def Info: graphs/iso_440_ex_rad-crop.pdf used on input line 574.
 
 (pdftex.def)             Requested size: 201.92981pt x 228.68001pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--562
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 
  []
 
-[20 <./sketches/busse_1975_onset.png> <./graphs/iso_440_ex_rad-crop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+[21 <./sketches/busse_1975_onset.png> <./graphs/iso_440_ex_rad-crop.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
 
  []
 
-[21] [22] <graphs/q2_200_ur_dTp-crop.pdf, id=121, 598.235pt x 413.545pt>
+[22] [23] <graphs/q2_200_ur_dTp-crop.pdf, id=124, 598.235pt x 413.545pt>
 File: graphs/q2_200_ur_dTp-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_ur_dTp-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_ur_dTp-crop.pdf used on input line 623.
+Package pdftex.def Info: graphs/q2_200_ur_dTp-crop.pdf used on input line 640.
 (pdftex.def)             Requested size: 429.6368pt x 297.00125pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 619--626
+Underfull \hbox (badness 10000) in paragraph at lines 636--645
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
-
- []
-
-[23 <./graphs/q2_200_ur_dTp-crop.pdf>]
-<graphs/q2_200_d080_rad-crop.pdf, id=147, 330.23375pt x 382.42876pt>
+[24 <./graphs/q2_200_ur_dTp-crop.pdf>]
+<graphs/q2_200_d080_rad-crop.pdf, id=150, 330.23375pt x 382.42876pt>
 File: graphs/q2_200_d080_rad-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_d080_rad-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_d080_rad-crop.pdf used on input line 632
+Package pdftex.def Info: graphs/q2_200_d080_rad-crop.pdf used on input line 649
 .
 (pdftex.def)             Requested size: 137.48691pt x 159.21848pt.
 
-<graphs/q2_200_dTp-crop.pdf, id=148, 332.24126pt x 383.4325pt>
+<graphs/q2_200_dTp-crop.pdf, id=151, 332.24126pt x 383.4325pt>
 File: graphs/q2_200_dTp-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_dTp-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_dTp-crop.pdf used on input line 637.
+Package pdftex.def Info: graphs/q2_200_dTp-crop.pdf used on input line 654.
 (pdftex.def)             Requested size: 137.48691pt x 158.67102pt.
 
-<graphs/q2_200_d080_az-crop.pdf, id=149, 330.23375pt x 382.42876pt>
+<graphs/q2_200_d080_az-crop.pdf, id=152, 330.23375pt x 382.42876pt>
 File: graphs/q2_200_d080_az-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_d080_az-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_d080_az-crop.pdf used on input line 642.
+Package pdftex.def Info: graphs/q2_200_d080_az-crop.pdf used on input line 659.
 
 (pdftex.def)             Requested size: 137.48691pt x 159.21848pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--650
+Underfull \hbox (badness 10000) in paragraph at lines 665--667
 
  []
 
-[24 <./graphs/q2_200_d080_rad-crop.pdf> <./graphs/q2_200_dTp-crop.pdf> <./graph
-s/q2_200_d080_az-crop.pdf>]
-<graphs/q2_200_temp_vel-crop2.pdf, id=177, 698.12822pt x 556.47902pt>
+<graphs/q2_200_temp_vel-crop2.pdf, id=153, 698.12822pt x 556.47902pt>
 File: graphs/q2_200_temp_vel-crop2.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_temp_vel-crop2.pdf>
-Package pdftex.def Info: graphs/q2_200_temp_vel-crop2.pdf used on input line 65
-4.
+Package pdftex.def Info: graphs/q2_200_temp_vel-crop2.pdf used on input line 67
+1.
 (pdftex.def)             Requested size: 349.06325pt x 278.23883pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--661
+Underfull \hbox (badness 10000) in paragraph at lines 676--678
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 663--663
+[25 <./graphs/q2_200_d080_rad-crop.pdf> <./graphs/q2_200_dTp-crop.pdf> <./graph
+s/q2_200_d080_az-crop.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
 
  []
 
-[25 <./graphs/q2_200_temp_vel-crop2.pdf>]
-<graphs/q2_200_eq_temp_field2-crop.pdf, id=189, 330.23375pt x 382.42876pt>
+[26 <./graphs/q2_200_temp_vel-crop2.pdf>]
+<graphs/q2_200_eq_temp_field2-crop.pdf, id=192, 330.23375pt x 382.42876pt>
 File: graphs/q2_200_eq_temp_field2-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_eq_temp_field2-crop.pdf>
 Package pdftex.def Info: graphs/q2_200_eq_temp_field2-crop.pdf used on input li
-ne 672.
+ne 689.
 (pdftex.def)             Requested size: 141.78091pt x 164.19606pt.
 
-<graphs/q2_200_tammer-crop.pdf, id=190, 603.45451pt x 377.97209pt>
+<graphs/q2_200_tammer-crop.pdf, id=193, 603.45451pt x 377.97209pt>
 File: graphs/q2_200_tammer-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_tammer-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_tammer-crop.pdf used on input line 677.
+Package pdftex.def Info: graphs/q2_200_tammer-crop.pdf used on input line 694.
 (pdftex.def)             Requested size: 270.67326pt x 169.53796pt.
- [26 <./graphs/q2_200_eq_temp_field2-crop.pdf> <./graphs/q2_200_tammer-crop.pdf
->]
-<sketches/secondary_circulation-crop.pdf, id=210, 366.36874pt x 572.1375pt>
+
+<sketches/secondary_circulation-crop.pdf, id=194, 366.36874pt x 572.1375pt>
 File: sketches/secondary_circulation-crop.pdf Graphic file (type pdf)
 
 <use sketches/secondary_circulation-crop.pdf>
 Package pdftex.def Info: sketches/secondary_circulation-crop.pdf used on input 
-line 692.
+line 709.
 (pdftex.def)             Requested size: 210.52438pt x 328.76698pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--701
+Underfull \hbox (badness 10000) in paragraph at lines 705--718
 
  []
 
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 702--702
+[27 <./graphs/q2_200_eq_temp_field2-crop.pdf> <./graphs/q2_200_tammer-crop.pdf>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 719--719
 
  []
 
-<graphs/vorticity/q0_100_ex_vort-crop.pdf, id=214, 343.2825pt x 381.425pt>
+[28 <./sketches/secondary_circulation-crop.pdf>]
+<graphs/vorticity/q0_100_ex_vort-crop.pdf, id=229, 343.2825pt x 381.425pt>
 File: graphs/vorticity/q0_100_ex_vort-crop.pdf Graphic file (type pdf)
 
 <use graphs/vorticity/q0_100_ex_vort-crop.pdf>
 Package pdftex.def Info: graphs/vorticity/q0_100_ex_vort-crop.pdf used on input
- line 710.
+ line 725.
 (pdftex.def)             Requested size: 201.92981pt x 224.36366pt.
 
-<graphs/vorticity/q2_200_d080_vort-crop.pdf, id=215, 343.2825pt x 382.42876pt>
+<graphs/vorticity/q2_200_d080_vort-crop.pdf, id=230, 343.2825pt x 382.42876pt>
 File: graphs/vorticity/q2_200_d080_vort-crop.pdf Graphic file (type pdf)
 
 <use graphs/vorticity/q2_200_d080_vort-crop.pdf>
 Package pdftex.def Info: graphs/vorticity/q2_200_d080_vort-crop.pdf used on inp
-ut line 716.
+ut line 731.
 (pdftex.def)             Requested size: 193.85396pt x 215.95593pt.
-
-<graphs/vorticity/q2_200_vort.png, id=216, 562.35094pt x 335.75438pt>
+ [29 <./graphs/vorticity/q0_100_ex_vort-crop.pdf> <./graphs/vorticity/q2_200_d0
+80_vort-crop.pdf>]
+<graphs/vorticity/q2_200_vort.png, id=250, 562.35094pt x 335.75438pt>
 File: graphs/vorticity/q2_200_vort.png Graphic file (type png)
 
 <use graphs/vorticity/q2_200_vort.png>
-Package pdftex.def Info: graphs/vorticity/q2_200_vort.png used on input line 72
-4.
+Package pdftex.def Info: graphs/vorticity/q2_200_vort.png used on input line 74
+1.
 (pdftex.def)             Requested size: 393.64297pt x 235.02646pt.
- [28 <./sketches/secondary_circulation-crop.pdf>] [29 <./graphs/vorticity/q0_10
-0_ex_vort-crop.pdf> <./graphs/vorticity/q2_200_d080_vort-crop.pdf>] [30 <./grap
-hs/vorticity/q2_200_vort.png>] [31]
-(./thesis.bbl [32] [33]) [34] (./thesis.aux) ) 
+ [30 <./graphs/vorticity/q2_200_vort.png>] [31] (./thesis.bbl [32] [33]) [34] (
+./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5163 strings out of 493315
- 75452 string characters out of 6145894
- 152094 words of memory out of 5000000
- 8487 multiletter control sequences out of 15000+600000
+ 5169 strings out of 493315
+ 75579 string characters out of 6145894
+ 152155 words of memory out of 5000000
+ 8493 multiletter control sequences out of 15000+600000
  20274 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,12n,41p,1298b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/type1/pub
-lic/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
-bx10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texmf/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/
-public/amsfonts/cm/cmex10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sh
-are/texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm
-/cmmib10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><
-/usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/tex
-mf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf
-/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/am
-sfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pf
-b>
-Output written on thesis.pdf (34 pages, 22665910 bytes).
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
+sr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf/font
+s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsf
+onts/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/am
+sfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/
+fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf/fonts/type1/pu
+blic/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
+hare/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm
+/cmr7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
+msy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/shar
+e/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (34 pages, 22668998 bytes).
 PDF statistics:
  340 PDF objects out of 1000 (max. 8388607)
  218 compressed objects within 3 object streams
