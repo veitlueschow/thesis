@@ -50,8 +50,8 @@ A question that is closely related to the numerical costs and therefore to the a
 We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
 In the following all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short. The according references will be given in each section.\\
 \subsection{Frame of reference}
-The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and r$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
-The LOC is constantly rotating about the z-axis of a Cartesian system. The angular velocity $\Omega$ is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study,it is quite nearby to chose spherical coordinates (???). 
+The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
+The LOC is constantly rotating about the z-axis of a Cartesian system. The angular velocity $\Omega$ is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study, spherical coordinates are used. 
 \begin{figure}[]
  \begin{minipage}{0.42\textwidth}
   \includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
@@ -351,7 +351,7 @@ Inserting $a_2^2$, $b_2^2$ and $b_0^0$ into \eqref{eq:cond} gives a solution to 
 \end{equation}
 $a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the following. This conductive temperature profile with its spherically asymmetric part will be introduced into the equations in the density fluctuation part $\rho'$ in section \ref{sec:cond_conv}. \\
 \par
-The effect of the CMB - heat flux pattern on the conductive temperature field is shown in Figure \ref{fig:conductives}(a) and (b). Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
+The effect of the CMB - heat flux pattern on the conductive temperature field is shown in Figure \ref{fig:conductives}(a) and (b). Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east, see also the sketch in Figure \ref{fig:fluxsketch}), are characterized by relatively low temperatures because they are cooled more effectively. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
 \begin{figure}[t]
  \begin{minipage}{0.36\textwidth}
   \includegraphics[width=0.9\textwidth]{graphs/theory/temp_field1-crop.pdf}
@@ -381,7 +381,7 @@ The amplitude of heterogeneity, $Amp_2^2$, from now on referred to as $q^*$, pla
  \label{fig:fluxsketch}
   \end{minipage}
 \end{figure}
-\subsection{Nondimensional equations}
+\subsection{Non dimensional equations}
 \label{sec:nondim}
 A common procedure in fluid dynamics is to \textit{rescale} the equations introduced so far in order to reduce the number of parameters and to make the relevant physical processes intuitively more accessible. The new scales are adopted from \citet{trumper2012numerical}, they are summarized in table \ref{tab:scales}.
 \begin{table}[H]
@@ -477,7 +477,7 @@ since this would demand $\partial \tau/\partial \vartheta = \partial \tau/\parti
  &+ (\textrm{Ra}_\textrm{\tiny {T}}  [\theta + t_2^2] + \textrm{Ra}_\textrm{\tiny {C}} { \zeta} )(1-a) {r} \, \bm{e_r}
 \end{align}
 
-\subsection{Diagnostics}
+\subsection{Diagnostics (noch nicht vollständig)}
 This chapter briefly introduces the diagnostic quantities and techniques that are used in the course of this work:\\ \par
 \begin{itemize}
  \item[-] \textbf{Vorticity}\\
@@ -490,21 +490,24 @@ This chapter briefly introduces the diagnostic quantities and techniques that ar
  \begin{equation}
   \mathcal{H} = \bm u \cdot \bm \omega
  \end{equation}
- \item[-] \textbf{Magnetic Reynolds number}
- \item[-] \textbf{Rossby number}
- \item[-] \textbf{Elsasser number}
- \item[-] \textbf{Temporal average}
+%  \item[-] \textbf{Magnetic Reynolds number}
+%  \item[-] \textbf{Rossby number}
+%  \item[-] \textbf{Elsasser number}
+%  \item[-] \textbf{Temporal average}
+ \item[-] \textbf{Portion of thermal forcing}\\
+ The relative portion of thermal forcing compared to the total forcing is defined according to \citet{trumper2012numerical} by 
+ \begin{equation}
+  \delta = \frac{\textrm{Ra}_\textrm{\tiny T}}{\textrm{Ra}_\textrm{\tiny T}+ \textrm{Ra}_\textrm{\tiny C}} = \frac{\textrm{Ra}_\textrm{\tiny T}}{\textrm{Ra}_\textrm{total}}.
+ \end{equation}
+Hence, $\delta = 1$ means purely thermal and $\delta = 0$ purely compositional forcing.
  \end{itemize}
 
 
+\subsection{Numerical Method}
+\label{sec:numerics}
 
 
-
-
-
-\section{Numerical Method}
-
-\section{State of research}
+\section{State of research (bisher nur Notizen von mir)}
 
 On influence of Prandtl number:
 \begin{itemize}
@@ -514,31 +517,35 @@ Ont he collection of magnetic field lines by cyclones:
 \begin{itemize}
  \item Jones: Planetary magnetic fields and fluid dynamos
 \end{itemize}
-
+On double diffusive dynamos / thermo-chemical convection:
+\begin{itemize}
+ \item Trümper 2012
+ \item Takahashi 2014 (Dynamo)
+ \item Manglik 2010
+\end{itemize}
 
 The presence of a magnetic field has an effect on the flow field in a self-sustained dynamo via the Lorentz force term in equation \ref{eq:force_balance4}. Nevertheless, it is widely assumed that convection columns elongated parallel to the rotation axis persist, even if the influence of the Lorentz force term in Equation \ref{eq:force_balance4} is comparable to or higher than the Coriolis force term \citep{christensen2011geodynamo}. 
 
-
-\section{Outline of the study}
+ \section{Outline of the study (Notizen)}
 Describe the parameters used and show earth values
 \begin{itemize}
- \item  The Prandtl numbers with be held fixed at $\textrm{Pr}_\textrm{\tiny T} = 3$ and $\textrm{Pr}_\textrm{\tiny C} = 0.3$ during this
+ \item  The Prandtl numbers will be held fixed at $\textrm{Pr}_\textrm{\tiny T} = 3$ and $\textrm{Pr}_\textrm{\tiny C} = 0.3$ during this
 \item uniform refers to q=0
 \end{itemize}
 
-
 \label{sec:parameters}
+
 
 \section{Thermo-chemical core convection under the influence of the CMB heat flux pattern}
 \label{sec:thermo-chemical}
-In this section, some typical features of non magnetic convection in a rotating spherical shell that is heterogeneously cooled from above are described based on a few showcases. Therefore, the focus lies on the heat flux pattern at the CMB and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model. Nevertheless, a thermo-chemical case will play a role in section \ref{sec:vortex_clolumns}. The Prandtl numbers with be held fixed at $\textrm{Pr}_\textrm{\tiny T} = 3$ and $\textrm{Pr}_\textrm{\tiny C} = 0.3$, the Ekman number as well at $\textrm{Ek} = 10^{-4}$, if not marked differently. \\
-The influence of the new boundary conditions can best be observed in the long-term averaged flow \citep{olson2002time}. Consequently, all data that is shown in this section refers to such averages, if not marked differently. The length of the data sets used is at least three viscous diffusion times.
+In this section, some typical features of non magnetic convection in a rotating spherical shell that is heterogeneously cooled from above are described based on a few showcases. Therefore, the focus lies on the heat flux pattern at the CMB and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model. Nevertheless, a thermo-chemical case will play a role in section \ref{sec:vortex_clolumns}.\\ 
+A key feature of the non homogeneous model is the formation of stationary vortex columns that are attached to mantel heterogeneities. In contrast to the azimuthally drifting uniform Rossby wave solution (Section \ref{sec:onset}), the stationary columns can be made visible in the long-term behavior of the system, (Section \ref{sec:attached_columns}). \\
+Section \ref{sec:thermal_wind} introduces the geostrophic balance, that refers to rotationally dominated scenarios, and the thermal wind balance, that includes the effect of lateral density gradients to the geostrophic case. Section \ref{sec:radial_flow} applies these theoretical concepts to the numerical data in order to explain the structure of the flow field in the equatorial plain. This motivates the column formation, also in the rest of the sphere. What vortex columns mean to this study is explained in Section \ref{sec:vortex_clolumns}. \\ \par
+The Prandtl numbers will be held fixed at $\textrm{Pr}_\textrm{\tiny T} = 3$ and $\textrm{Pr}_\textrm{\tiny C} = 0.3$, the Ekman number as well at $\textrm{Ek} = 10^{-4}$, if not marked differently. \\
+The influence of the new boundary conditions can best be observed in temporal averages \citep{olson2002time}. Consequently, all data that is shown in this section refers to such averages, if not marked differently. The length of the data sets used is at least three viscous diffusion times.\\
 
 \subsection{The onset of convection in the uniform case}
 \label{sec:onset}
-In a rotating system that is homogeneously forced, convection sets in in the form of a thermal Rossby wave \citep{busse1970thermal, busse2002convective}. The \textit{Taylor-Proudman theorem} (see section \ref{sec:thermal_wind}) imposes a column like structure to the system that is aligned with the axis of rotation ($z$-axis, see Figure \ref{fig:sketch_busse}) and drifts in azimuthal direction. \citet{busse2002convective} describes a mean flow instability that leads to differential rotation (the variation of azimuthal velocity with radius), evolving under the influence of a spherical geometry. Differential rotation presumably plays a central role in the magnetic field generation as it is an ingredient for the $\alpha$-effect \citep{roberts2007theory}. \\ \par
-
-According to the analytical theories of \citet{jones2000onset} and \citet{dormy2004onset}, the azimuthal length scale of each convection column would be extremely small in case of the Earth's rotation rate. Therefore, this scenario is assumed to be unrealistic and the dominance of the relative influence of rotation compared to the one of buoyancy is questioned. The alternative is a rather three-dimensional, turbulent regime \citep{king2009boundary}, for which, on the other hand, the mechanism of the magnetic field production is an open question. \\ \par
 \begin{figure}[t]
  \begin{minipage}[]{0.46\textwidth}
  \centering
@@ -549,10 +556,14 @@ According to the analytical theories of \citet{jones2000onset} and \citet{dormy2
 \hfill
 \begin{minipage}[]{0.47\textwidth}
 \includegraphics[width=\textwidth]{graphs/iso_440_ex_rad-crop.pdf}
-\caption{Snapshot of the radial velocity in the equatorial plain (view from the north pole, like all other equatorial views in the following) for a uniform case with  $\textrm{Ra}_\textrm{\tiny T} = 4.4\cdot 10^6$, $\textrm{Pr}_\textrm{\tiny T} = 0.3$, $\textrm{Ek}=10^{-4}$ and $q^* = 0$. The convection columns are tilted and slightly deformed compared to Figure \ref{fig:sketch_busse}. }
+\caption{Snapshot of the radial velocity in the equatorial plain (view from the north pole, like all other equatorial views in the following) for a uniform case with  $\textrm{Ra}_\textrm{\tiny T} = \textrm{Ra}_\textrm{total} = 4.4\cdot 10^6$, $\textrm{Pr}_\textrm{\tiny T} = 0.3$, $\textrm{Ek}=10^{-4}$ and $q^* = 0$. The convection columns are tilted and slightly deformed compared to Figure \ref{fig:sketch_busse}. }
 \label{fig:radial_vel_ex}
 \end{minipage}
 \end{figure}
+In a rotating system that is homogeneously forced, convection sets in in the form of a thermal Rossby wave \citep{busse1970thermal, busse2002convective}. The \textit{Taylor-Proudman theorem} (see section \ref{sec:thermal_wind}) imposes a column like structure to the system that is aligned with the axis of rotation ($z$-axis, see Figure \ref{fig:sketch_busse}) and drifts in azimuthal direction. \citet{busse2002convective} describes a mean flow instability that leads to differential rotation (the variation of azimuthal velocity with radius), evolving under the influence of a spherical geometry. Differential rotation presumably plays a central role in the magnetic field generation as it is an ingredient for the $\alpha$-effect \citep{roberts2007theory}. \\ \par
+
+According to the analytical theories of \citet{jones2000onset} and \citet{dormy2004onset}, the azimuthal length scale of each convection column would be extremely small in case of the Earth's rotation rate. Therefore, this scenario is assumed to be unrealistic and the dominance of the relative influence of rotation compared to the one of buoyancy is questioned. The alternative is a rather three-dimensional, turbulent regime \citep{king2009boundary}, for which, on the other hand, the mechanism of the magnetic field production is an open question. \\ \par
+
 \subsection{The geostrophic and the thermo-chemical wind balance}
 \label{sec:thermal_wind}
 The rotation rate of the LOC, measured in terms of the inverse of the non dimensional Ekman number $\textrm{Ek}^{-1}$, is very high (see section \ref{sec:parameters}). The \textit{Rossby number} $Ro = \frac{\mathcal{U}}{\Omega \mathcal{L}}$ quantifies the relative importance of the inertia force compared to the Coriolis force in the equation of momentum. If it is small, a system is predominantly rotationally constrained and this suggests simplifications, accordingly. The inertia term drops out and viscosity can be neglected as well due to $\textrm{Ek} = \frac{\nu}{\Omega D^2} \ll 1$. In the absence of gravitational instabilities, this yields the \textit{geostrophic balance}
@@ -608,28 +619,28 @@ In the equatorial plain, $\bm{e_z}\cdot \bm{e_\vartheta} = -1$, $r=s$ and the ra
  u_r^g = -\frac{H^2}{2r^2}(1-a)\textrm{Ek}\textrm{Ra}_\textrm{\tiny T} \,\bigg \langle \frac{\partial}{\partial \phi}(\theta + t^2_2) \bigg \rangle_z.
 \end{equation}
 The position of the maximum (minimum) azimuthal temperature gradient should thus coincide with radial downwellings (upwellings) (see relation \eqref{eq:ugr} that contains a minus sign) in the equatorial plain. Since only the $z$-averaged / geostrophic  part of the velocity field $\bm u$ contains radial components (\citep{dietrich2016core}, $u_r^g$ is the full radial flow in this approximation. \\
-\begin{figure}[H]
+\begin{figure}[t]
  \centering
-%  \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
- \caption{Azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi$, here $-\partial T/\partial \phi$ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plain. As parameters, $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$ and $q^* = 2$ are used besides the Prandtl and Ekman number as mentioned above.}
+ \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
+ \caption{Azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi$, here $-\partial T/\partial \phi$ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plain. As parameters, $\textrm{Ra}_\textrm{\tiny T} = \textrm{Ra}_\textrm{total} = 2\cdot 10^6$ and $q^* = 2$ are used besides the Prandtl and Ekman number as mentioned above.}
 \label{fig:ur_dTp}
  \end{figure}
 Figure \ref{fig:ur_dTp} shows two azimuthal profiles of the the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $\partial (\theta + t^2_2) / \partial \phi$ (dotted lines) in the equatorial plain. One is taken at mid depth (black lines), the other one on top of the free stream near the CMB (red lines). All values are normalized with respect to their maxima in order to make them comparable in one plot.\\ 
-The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\textrm{\tiny T} = 2\cdot 10^6$ that is slightly overcritical: $\textrm{Ra}_\textrm{\tiny T} \approx 3\cdot \textrm{Ra}_\textrm{crit}$. The critical Rayleigh number was taken from \citet{hori2012influence} who computed $\textrm{Ra}_\textrm{crit}$ for both, Neumann and and Derichlet type boundary conditions for the forcing component. \\ \par
+The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\textrm{\tiny T} = \textrm{Ra}_\textrm{total} = 2\cdot 10^6$ that is slightly overcritical: $\textrm{Ra}_\textrm{\tiny T} \approx 3\cdot \textrm{Ra}_\textrm{crit}$. The critical Rayleigh number was taken from \citet{hori2012influence} who computed $\textrm{Ra}_\textrm{crit}$ for both, Neumann and and Derichlet type boundary conditions for the forcing component. \\ \par
 \begin{figure}[t]
 \centering
 \begin{minipage}[left]{0.32\textwidth}
-%    \includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
+   \includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
    \caption*{(a) Radial Velocity}
 \end{minipage}
 \hfill
 \begin{minipage}[center]{0.32\textwidth}
-%    \includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
+   \includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
    \caption*{(b) $\partial T / \partial \phi$, rescaled}
 \end{minipage}
 \hfill
 \begin{minipage}[right]{0.32\textwidth}
-%     \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
+    \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
   \caption*{(c) Azimuthal velocity}
 \end{minipage}
 \caption{Equatorial contours of (a) the radial velocity, (b) the azimuthal temperature gradient $\partial (\theta + t_2^2) /\partial \phi$ and (c) the azimuthal velocity. The values in (b) are rescaled according to Equation \eqref{eq:ugr} (without the minus sign) in order to be comparable to (a). The case is the same as in Figure \ref{fig:ur_dTp}. }
@@ -641,7 +652,7 @@ In the upper region of the core, the two downwellings (around 120$^\circ$ and 30
 
 \begin{figure}[t]
  \centering
-%  \includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
+ \includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
  \caption{Horizontal velocity vectors in the equatorial plain, scaled by the corresponding flow magnitude. The background contour shows the full non dimensional temperature field $ T = \theta + T_\textrm{cond}$. The two strong upwelling plumes at the ICB (at $\sim 110^\circ$E and $\sim 290^\circ$E) and the bending jet like downwellings right above are clearly visible.}
 \label{fig:flowfield_temp}
  \end{figure}
@@ -659,12 +670,12 @@ The azimuthal flow in the equatorial plain is, in reaction to the radial flow, c
 \begin{figure}[t]
  \begin{minipage}[left]{0.33\textwidth}
   \centering
-%   \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
+  \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
   \caption*{(a) Equatorial plain}
  \end{minipage}
  \hfill
 \begin{minipage}[right]{0.63\textwidth}
-%  \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
+ \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
  \caption*{(b) Surface projection at the CMB}
 \end{minipage}
 \caption{Full temperature field $ T = \theta + T_\textrm{cond}$ for the same case as above in (a) the equatorial plain and (b) as a surface projection right under the CMB. (a) is the same graph as in Figure \ref{fig:flowfield_temp}, but the color map is 'shortened' in order to pronounce the the phase shift of the temperature field. }
@@ -692,27 +703,31 @@ The variation of buoyancy along the $z$-axis inside of a vortex column acts as a
 Figure \ref{fig:secondary_circulation} shows how a cyclone causes a divergent flow at the equator, whereas an anticyclone acts converging at the equator. The opposite is true near the CMB. A cyclone and an anticyclone together form a \textit{circular} motion that superimposes the primary vortial motion. The interaction of a vorticity carrying fluid column and a vertical flow produces helicity $\mathcal{H}$. Besides the differential rotation that is necessary for the $\omega$-effect, the presence of helicity is a condition for the occurrence of the (macroscopic) $\alpha$-effect \citep{roberts2007theory, christensen2011geodynamo, jones2011planetary}. For a detailed explanation of the two effects and their importance for the geodynamo, the reader is referred to the literature cited above. For the moment it is sufficient to know that the $\omega$-effect is a potential source for toroidal magnetic field, whereas the $\alpha$-effect theoretically is responsible for both, the production of toroidal and poloidal field. \\ \par
 
 \subsection{Stationary vortex columns attached to mantle heterogeneities}
-
+\label{sec:attached_columns}
 The well structured Rossby wave solution is perturbed, if heterogeneous heat flux conditions are applied at the CMB. Nevertheless, columns of constant vorticity play an important role in the solution. The long-term averaged data bears a non axisymmetric vorticity pattern that can be related to the geometry of the CMB heat flux. This pattern contains \textit{stationary vortex columns} elongated through the whole sphere parallel to the axis of rotation. In contrast to that, all uniform cases regarded (e.g. the snapshot in Figure \ref{fig:vort_uniform}) yield axisymmetric distributions of vorticity in long-term averages because the Rossby wave solution constantly moves in azimuthal direction \citet{busse2002convective}. \\
 The secondary circulation is expected to have an effect on the flow that can be localized at a fixed position in the spherical shell, it is \textit{locked} to the mantle \citep{gibbons2000convection}. 
-\begin{figure}[H]
+\begin{figure}[t]
 \begin{minipage}[left]{0.47\textwidth}
- \includegraphics[width = \textwidth]{graphs/vorticity/q0_100_ex_vort-crop.pdf}
+ \includegraphics[width =\textwidth]{graphs/vorticity/q0_100_ex_vort-crop.pdf}
  \caption{Snapshot of the $z$-component of vorticity in the equatorial plain for a slightly super critical, uniform case: $\textrm{Ra}_\textrm{\tiny T} = 10^{6}$.  }
  \label{fig:vort_uniform}
 \end{minipage}
 \hfill
 \begin{minipage}[right]{0.47\textwidth}
- \includegraphics[width=\textwidth]{graphs/vorticity/q2_200_d080_vort-crop.pdf}
- \caption{Long-term averaged equatorial contour of the $z$-vorticity for the same case as described in Figure \ref{fig:equatorial_vel_temp}.}
+ \includegraphics[width=0.96\textwidth]{graphs/vorticity/q2_200_d080_vort-crop.pdf}
+ \caption{Long-term averaged equatorial contour of the $z$-vorticity for the same case as described in Figure \ref{fig:equatorial_vel_temp}. The vorticity in the boundary layers is not resolved.}
+ \label{fig:q2_200_d080_vort}
 \end{minipage}
-
-
 \end{figure}
-  The interplay of the azimuthal and the radial velocity field in the equatorial plain (Figure \ref{fig:equatorial_vel_temp}(a) and (b)) causes a vorticity distribution that is quite different from the one in the uniform case, depicted in Figure \ref{fig:vort_uniform} in form of a snapshot. 
-
-\subsection{kinetic energies, wave numbers..}
-kinetic energy increases with increasing $q^*$
+The interplay of the azimuthal and the radial velocity field in the equatorial plain (Figure \ref{fig:equatorial_vel_temp}(a) and (b)) causes the vorticity distribution that is shown in Figure \ref{fig:q2_200_d080_vort}. Tilted patches of strong negative vorticity close to the ICB lie beneath prograde jets of positive vorticity right under the heat flux maxima at $90^\circ$E and $270^\circ$E. Additionally, a band of negative vorticity is located between $90^\circ$ and $180^\circ$E and $270^\circ$ and $360^\circ$E. \\
+\begin{figure}[t]
+ \centering
+ \includegraphics[scale = 0.7]{graphs/vorticity/q2_200_vort.png}
+ \caption{\textbf{Left hemisphere}: $z$-component of the vorticity in the equatorial plain (see Figure \ref{fig:q2_200_d080_vort}) and contour surfaces at $\omega_z = -1200$ (blue) and $\omega_z = 1200$ (red). \textbf{Right hemisphere}: Compositional perturbation $\zeta$ close to the CMB at $ r = 1.5$. As parameters, $\textrm{Ra}_\textrm{total}=  2\cdot 10^6$, $\delta = 0.95$ and $q^* = 2$ are chosen.}
+ \label{fig:vort_chem}
+\end{figure}
+In Figure \ref{fig:vort_chem}, the long-term averaged vorticity distribution of a thermo-chemically driven case is shown in the left hemisphere, whereas the right hemisphere depicts the compositional perturbation $\zeta$. The forcing is predominantly of thermal origin, only a portion of 5\% uniform compositional forcing was included. The total Rayleigh number remains $\sim 3$ times supercritical in order to be comparable to the previous case. The vorticity contours in the left hemisphere yield the stationary vortex columns attached to the heat flux maxima mentioned above. An anticyclone (blue) elongates close to the tangential cylinder from the northern to the southern CMB. A cyclonic column (red) lies parallel to the anticyclone in the radially outward direction. The right hemisphere underlies the same vorticity distribution (see the symmetry in Figure \ref{fig:q2_200_d080_vort}). Here, the compositional perturbation yields a maximum at the intersection of the blue anticyclone with the CMB and a deficit when going towards the equator, i.e., where the red cyclone intersects the CMB. \\
+The excess and deficit composition results from the divergent and convergent flow at the peak of the anticyclone and the cyclone, respectively. The corresponding mechanism is sketched in Figure \ref{fig:secondary_circulation}. In this case, the compositional forcing rather acts as 'tracer' that visualizes the vertical transport from the ICB, where the chemical component is released, to the CMB. A portion of 5 \% compositional forcing is expected to have only a little effect on the dynamics of the system compared to the purely thermal case from above.
 
 \section{Thermo-chemical dynamo action}
 \subsection{The influence of chemical forcing on magnetic field properties}
