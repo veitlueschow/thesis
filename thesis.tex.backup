@@ -477,7 +477,7 @@ since this would demand $\partial \tau/\partial \vartheta = \partial \tau/\parti
  &+ (\textrm{Ra}_\textrm{\tiny {T}}  [\theta + t_2^2] + \textrm{Ra}_\textrm{\tiny {C}} { \zeta} )(1-a) {r} \, \bm{e_r}
 \end{align}
 
-\subsection{Numerical Method}
+\subsection{Numerical Method (noch nicht fertig)}
 \label{sec:numerics}
 The study makes use of the PARODY code \citep{dormy1997modelisation, dormy1998mhd} in a version that was extended by a compositional component in order to simulate double-diffusive forcing \citep{trumper2012numerical}. \\
 The velocity field and the magnetic field can both be represented in terms of their scalar toroidal and poloidal potentials, since they are solenoidal. This reduces the amount of unknown variables by two and implicitly respects the equation of continuity ($\bm \nabla \cdot \bm u = 0$) and the fact that no magnetic monopoles exist ($\bm \nabla \cdot \bm B = 0$). The poloidal-toroidal decomposition reads
@@ -495,7 +495,7 @@ A common next step is to choose a spectral representation of all variables in or
 \begin{equation}
  f(r,\vartheta,\phi) = \sum\limits_{l=0}^{\infty} \sum \limits_{m=0}^l \, f_l^m(r) \, \mathcal{Y}_l^m(\vartheta,\phi)
 \end{equation} 
-and the equations described in the previous sections are solved in the spectral domain. This simplifies the computation of lateral derivatives immensely. 
+and the equations described in the previous sections are solved in the spectral domain. This simplifies the computation of lateral derivatives immensely. Only the non linear terms appearing are calculated in the physical space and re-transformed to the spectral domain before entering the solution scheme. This is why the method is called \textit{pseudospectral}. 
 
 \subsection{Diagnostics (noch nicht vollständig)}
 This chapter briefly introduces the diagnostic quantities and techniques that are used in the course of this work:\\ \par
@@ -637,7 +637,7 @@ In the equatorial plain, $\bm{e_z}\cdot \bm{e_\vartheta} = -1$, $r=s$ and the ra
 The position of the maximum (minimum) azimuthal temperature gradient should thus coincide with radial downwellings (upwellings) (see relation \eqref{eq:ugr} that contains a minus sign) in the equatorial plain. Since only the $z$-averaged / geostrophic  part of the velocity field $\bm u$ contains radial components (\citep{dietrich2016core}, $u_r^g$ is the full radial flow in this approximation. \\
 \begin{figure}[t]
  \centering
-%  \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
+ \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
  \caption{Azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi$, here $-\partial T/\partial \phi$ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plain. As parameters, $\textrm{Ra}_\textrm{\tiny T} = \textrm{Ra}_\textrm{total} = 2\cdot 10^6$ and $q^* = 2$ are used besides the Prandtl and Ekman number as mentioned above.}
 \label{fig:ur_dTp}
  \end{figure}
@@ -646,17 +646,17 @@ The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\
 \begin{figure}[t]
 \centering
 \begin{minipage}[left]{0.32\textwidth}
-%    \includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
+   \includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
    \caption*{(a) Radial Velocity}
 \end{minipage}
 \hfill
 \begin{minipage}[center]{0.32\textwidth}
-%    \includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
+   \includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
    \caption*{(b) $\partial T / \partial \phi$, rescaled}
 \end{minipage}
 \hfill
 \begin{minipage}[right]{0.32\textwidth}
-%     \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
+    \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
   \caption*{(c) Azimuthal velocity}
 \end{minipage}
 \caption{Equatorial contours of (a) the radial velocity, (b) the azimuthal temperature gradient $\partial (\theta + t_2^2) /\partial \phi$ and (c) the azimuthal velocity. The values in (b) are rescaled according to Equation \eqref{eq:ugr} (without the minus sign) in order to be comparable to (a). The case is the same as in Figure \ref{fig:ur_dTp}. }
@@ -668,7 +668,7 @@ In the upper region of the core, the two downwellings (around 120$^\circ$ and 30
 
 \begin{figure}[t]
  \centering
-%  \includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
+ \includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
  \caption{Horizontal velocity vectors in the equatorial plain, scaled by the corresponding flow magnitude. The background contour shows the full non dimensional temperature field $ T = \theta + T_\textrm{cond}$. The two strong upwelling plumes at the ICB (at $\sim 110^\circ$E and $\sim 290^\circ$E) and the bending jet like downwellings right above are clearly visible.}
 \label{fig:flowfield_temp}
  \end{figure}
@@ -686,12 +686,12 @@ The azimuthal flow in the equatorial plain is, in reaction to the radial flow, c
 \begin{figure}[t]
  \begin{minipage}[left]{0.33\textwidth}
   \centering
-%   \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
+  \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
   \caption*{(a) Equatorial plain}
  \end{minipage}
  \hfill
 \begin{minipage}[right]{0.63\textwidth}
-%  \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
+ \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
  \caption*{(b) Surface projection at the CMB}
 \end{minipage}
 \caption{Full temperature field $ T = \theta + T_\textrm{cond}$ for the same case as above in (a) the equatorial plain and (b) as a surface projection right under the CMB. (a) is the same graph as in Figure \ref{fig:flowfield_temp}, but the color map is 'shortened' in order to pronounce the the phase shift of the temperature field. }
@@ -706,7 +706,7 @@ As mentioned above, convection in rapidly rotating systems is organized in a col
 Although motion parallel to the $z$-axis is strongly constrained by rotation (see Equation \eqref{eq:geostrophy2}), the spherical form of the boundaries necessarily relaxes this constraint locally and vertical flow is unavoidable \citep{busse2002convective, gillet2006quasi}. An important example for the relaxation of the Taylor-Proudman theorem in this context is the \textit{secondary circulation} inside of vortex columns \citep{olson1999numerical, aubert2008magnetic, christensen2011geodynamo}, sketched in Figure \ref{fig:secondary_circulation}.\\
 \begin{figure}[H]
  \begin{minipage}[left]{0.49\textwidth}
-%   \includegraphics[width =  \textwidth]{sketches/secondary_circulation-crop.pdf}
+  \includegraphics[width =  \textwidth]{sketches/secondary_circulation-crop.pdf}
   \caption{Sketch of the secondary circulation induced by a pair of a cyclonic and an anticyclonic vortex. The two convection columns can be imagined as part of the sketch in Figure \ref{fig:sketch_busse}, a situation typical for the onset of convection.}
   \label{fig:secondary_circulation}
  \end{minipage}
@@ -720,28 +720,29 @@ Figure \ref{fig:secondary_circulation} shows how a cyclone causes a divergent fl
 
 \subsection{Stationary vortex columns attached to mantle heterogeneities}
 \label{sec:attached_columns}
-The well structured Rossby wave solution is perturbed, if heterogeneous heat flux conditions are applied at the CMB. Nevertheless, columns of constant vorticity play an important role in the solution. The long-term averaged data bears a non axisymmetric vorticity pattern that can be related to the geometry of the CMB heat flux. This pattern contains \textit{stationary vortex columns} elongated through the whole sphere parallel to the axis of rotation. In contrast to that, all uniform cases regarded (e.g. the snapshot in Figure \ref{fig:vort_uniform}) yield axisymmetric distributions of vorticity in long-term averages because the Rossby wave solution constantly moves in azimuthal direction \citet{busse2002convective}. \\
-The secondary circulation is expected to have an effect on the flow that can be localized at a fixed position in the spherical shell, it is \textit{locked} to the mantle \citep{gibbons2000convection}. 
 \begin{figure}[t]
 \begin{minipage}[left]{0.47\textwidth}
-%  \includegraphics[width =\textwidth]{graphs/vorticity/q0_100_ex_vort-crop.pdf}
+ \includegraphics[width =\textwidth]{graphs/vorticity/q0_100_ex_vort-crop.pdf}
  \caption{Snapshot of the $z$-component of vorticity in the equatorial plain for a slightly super critical, uniform case: $\textrm{Ra}_\textrm{\tiny T} = 10^{6}$.  }
  \label{fig:vort_uniform}
 \end{minipage}
 \hfill
 \begin{minipage}[right]{0.47\textwidth}
-%  \includegraphics[width=0.96\textwidth]{graphs/vorticity/q2_200_d080_vort-crop.pdf}
+ \includegraphics[width=0.96\textwidth]{graphs/vorticity/q2_200_d080_vort-crop.pdf}
  \caption{Long-term averaged equatorial contour of the $z$-vorticity for the same case as described in Figure \ref{fig:equatorial_vel_temp}. The vorticity in the boundary layers is not resolved.}
  \label{fig:q2_200_d080_vort}
 \end{minipage}
 \end{figure}
-The interplay of the azimuthal and the radial velocity field in the equatorial plain (Figure \ref{fig:equatorial_vel_temp}(a) and (b)) causes the vorticity distribution that is shown in Figure \ref{fig:q2_200_d080_vort}. Tilted patches of strong negative vorticity close to the ICB lie beneath prograde jets of positive vorticity right under the heat flux maxima at $90^\circ$E and $270^\circ$E. Additionally, a band of negative vorticity is located between $90^\circ$ and $180^\circ$E and $270^\circ$ and $360^\circ$E. \\
+The well structured Rossby wave solution is perturbed, if heterogeneous heat flux conditions are applied at the CMB. Nevertheless, columns of constant vorticity play an important role in the solution. The long-term averaged data bears a non axisymmetric vorticity pattern that can be related to the geometry of the CMB heat flux. This pattern contains \textit{stationary vortex columns} elongated through the whole sphere parallel to the axis of rotation. In contrast to that, all uniform cases regarded (e.g. the snapshot in Figure \ref{fig:vort_uniform}) yield axisymmetric distributions of vorticity in long-term averages because the Rossby wave solution constantly moves in azimuthal direction \citet{busse2002convective}. \\
+The secondary circulation is expected to have an effect on the flow that can be localized at a fixed position in the spherical shell, it is \textit{locked} to the mantle \citep{gibbons2000convection}. 
+
 \begin{figure}[t]
  \centering
-%  \includegraphics[scale = 0.7]{graphs/vorticity/q2_200_vort.png}
+ \includegraphics[scale = 0.7]{graphs/vorticity/q2_200_vort.png}
  \caption{\textbf{Left hemisphere}: $z$-component of the vorticity in the equatorial plain (see Figure \ref{fig:q2_200_d080_vort}) and contour surfaces at $\omega_z = -1200$ (blue) and $\omega_z = 1200$ (red). \textbf{Right hemisphere}: Compositional perturbation $\zeta$ close to the CMB at $ r = 1.5$. As parameters, $\textrm{Ra}_\textrm{total}=  2\cdot 10^6$, $\delta = 0.95$ and $q^* = 2$ are chosen.}
  \label{fig:vort_chem}
 \end{figure}
+The interplay of the azimuthal and the radial velocity field in the equatorial plain (Figure \ref{fig:equatorial_vel_temp}(a) and (b)) causes the vorticity distribution that is shown in Figure \ref{fig:q2_200_d080_vort}. Tilted patches of strong negative vorticity close to the ICB lie beneath prograde jets of positive vorticity right under the heat flux maxima at $90^\circ$E and $270^\circ$E. Additionally, a band of negative vorticity is located between $90^\circ$ and $180^\circ$E and $270^\circ$ and $360^\circ$E. \\
 In Figure \ref{fig:vort_chem}, the long-term averaged vorticity distribution of a thermo-chemically driven case is shown in the left hemisphere, whereas the right hemisphere depicts the compositional perturbation $\zeta$. The forcing is predominantly of thermal origin, only a portion of 5\% uniform compositional forcing was included. The total Rayleigh number remains $\sim 3$ times supercritical in order to be comparable to the previous case. The vorticity contours in the left hemisphere yield the stationary vortex columns attached to the heat flux maxima mentioned above. An anticyclone (blue) elongates close to the tangential cylinder from the northern to the southern CMB. A cyclonic column (red) lies parallel to the anticyclone in the radially outward direction. The right hemisphere underlies the same vorticity distribution (see the symmetry in Figure \ref{fig:q2_200_d080_vort}). Here, the compositional perturbation yields a maximum at the intersection of the blue anticyclone with the CMB and a deficit when going towards the equator, i.e., where the red cyclone intersects the CMB. \\
 The excess and deficit composition results from the divergent and convergent flow at the peak of the anticyclone and the cyclone, respectively. The corresponding mechanism is sketched in Figure \ref{fig:secondary_circulation}. In this case, the compositional forcing rather acts as 'tracer' that visualizes the vertical transport from the ICB, where the chemical component is released, to the CMB. A portion of 5 \% compositional forcing is expected to have only a little effect on the dynamics of the system compared to the purely thermal case from above.
 
