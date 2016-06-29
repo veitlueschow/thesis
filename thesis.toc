@@ -19,12 +19,12 @@
 \contentsline {section}{\numberline {4}Outline of the study (Notizen)}{20}
 \contentsline {section}{\numberline {5}Thermo-chemical core convection under the influence of the CMB heat flux pattern}{21}
 \contentsline {subsection}{\numberline {5.1}The onset of convection in the uniform case}{22}
-\contentsline {subsection}{\numberline {5.2}Columns of constant vorticity}{23}
-\contentsline {subsection}{\numberline {5.3}The geostrophic and the thermo-chemical wind balance}{25}
+\contentsline {subsection}{\numberline {5.2}Columns of constant vorticity}{22}
+\contentsline {subsection}{\numberline {5.3}The geostrophic and the thermo-chemical wind balance}{24}
 \contentsline {subsection}{\numberline {5.4}The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}{25}
-\contentsline {subsection}{\numberline {5.5}Stationary vortex columns attached to mantle heterogeneities}{30}
-\contentsline {subsection}{\numberline {5.6}The effect of the flux pattern on the temperature field}{32}
-\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{33}
-\contentsline {subsection}{\numberline {6.1}The influence of chemical forcing on magnetic field properties}{33}
-\contentsline {section}{\numberline {7}Summary}{33}
-\contentsline {section}{\numberline {8}Conclusion and Outlook}{33}
+\contentsline {subsection}{\numberline {5.5}Stationary vortex columns attached to mantle heterogeneities}{28}
+\contentsline {subsection}{\numberline {5.6}The effect of the flux pattern on the temperature field}{30}
+\contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{30}
+\contentsline {subsection}{\numberline {6.1}The influence of chemical forcing on magnetic field properties}{30}
+\contentsline {section}{\numberline {7}Summary}{30}
+\contentsline {section}{\numberline {8}Conclusion and Outlook}{30}
