@@ -545,8 +545,14 @@ This chapter briefly introduces the diagnostic quantities and techniques that ar
  \begin{equation}
   \mathcal{H} = \bm u \cdot \bm \omega
  \end{equation}
-\end{itemize}
-%  \item[-] \textbf{Magnetic Reynolds number}
+\item[-] \textbf{Reynolds number and magnetic Reynolds number}\\
+ The Reynolds number $Re$ and the magnetic Reynolds number $Re_m$ measure the importance of inertia compared to viscous and magnetic diffusion in the fluid, respectively. They are defined via a typical flow velocity that is the rms-velocity in this case:
+ \begin{equation}
+ \textrm{Re} = \frac{D\,u_\textrm{rms}}{\nu}\quad\quad \textrm{     and    } \quad\quad \textrm{Re}_m = \frac{D\, u_\textrm{rms}}{\eta}
+ \end{equation}\noindent
+ \end{itemize}
+
+
 %  \item[-] \textbf{Rossby number}
 %  \item[-] \textbf{Elsasser number}
 %  \item[-] \textbf{Temporal average}
@@ -882,35 +888,42 @@ In contrast to that, figure \ref{fig:fluxpatches2_snapshots} shows the uniform c
  \end{minipage}
  \caption{Time series of a north polar view on the radial magnetic field at the CMB for a purely thermal case with \textbf{uniform} fixed flux conditions ($q^*=0$) and $\textrm{Ra}_\textrm{\tiny T}$ as in figure \ref{fig:fluxpatches1_snapshots}. Like above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit{one} flux patch. The color scale is as in figure \ref{fig:fluxpatches1_snapshots}. The \textbf{right end} shows the long-term averaged data.}
  \label{fig:fluxpatches2_snapshots}
-\end{figure}
+\end{figure} \noindent
 This section aims to explain the formation mechanism for flux patches in the heat flux pattern case. Analogies to the mantle-locked structures presented in section \ref{sec:thermo-chemical} exist (the reader is reminded of the compositional field heterogeneities shown in figure \ref{fig:vort_chem}), but the presence of the Lorentz force clearly changes the dynamics of the system.
+
+\begin{table}[H]
+ \centering
+ \begin{tabular}{l l l l l l l l}
+  \textbf{Case}	& $\textrm{Ra}_\textrm{\tiny T}$& $\textrm{Ra}_\textrm{\tiny C}$& $\gamma_\textrm{total}$& $\delta^*$& $\textrm{Re}_m$& $\Lambda$& $f_\textrm{dip}$ \\
+  \hline
+\rule{0pt}{4ex}    & $440\times 10^4$ &$0$ & $8.6$ & $1$ & 284.8 & 26.5 & 0.34 \\ 
+      & $352\times 10^4$ & $88\times 10^4$
+ \end{tabular}
+
+\end{table}
+
 
 \subsubsection{Showcase: $\textrm{Ra}_\textrm{total} \bm {= 4.4 \times 10^6}$,  $\bm {\delta^*} \bm= \bm{12}$\%}
 \label{sec:dyn_d020}
 The choice of the showcase with only a relatively mild portion of $\delta^* = 12$ \% thermal forcing will be justified in section \ref{sec:delta_dependence}. For the moment, the focus lies on the flux patch generation process. 
 \begin{figure}[H]
-\begin{minipage}{0.35\textwidth}
- Although the chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field component in figure . 
+\begin{minipage}{0.38\textwidth}
+ Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field component in figure \ref{fig:surface_Br_d20}. Patches of concentrated magnetic field lie at  $\sim$45$^\circ$ and $225^\circ$ in both, the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). In section \ref{sec:attached_columns}, the flow convergence and divergence
 \end{minipage}
 \hfill
-\begin{minipage}{0.6\textwidth}
-  \includegraphics[width = \textwidth]{graphs/dynamo/flux_patches_d20.png}
-  \caption{Hammer-Aitov surface projection of the radial magnetic field near the CMB at $r=1.485$. }
+\begin{minipage}{0.59\textwidth}
+  \includegraphics[width = \textwidth]{graphs/dynamo/flux_patches_d20_2.png}
+  \caption{Hammer-Aitov surface projection of the radial magnetic field near the CMB at $r=1.485$. Two patches of high intensity magnetic field are located at $\sim$45$^\circ$ and $225^\circ$ in the northern and the southern hemisphere.}
   \label{fig:surface_Br_d20}
 \end{minipage}
-
-
-\end{figure}
-
+\end{figure} \noindent
+at the top of anticyclones and cyclones, respectively, controls the surface distribution of the chemical component (see figure \ref{fig:vort_chem}). In a comparable way, magnetic field is intensified and weakened by cyclonic and anticyclonic motion at the CMB. A necessary condition for this process to happen can be understood in the framework \textit{Alfv\'{e}n's theorem} that states:\\ \par
+\textit{Magnetic flux tubes move with fluid particles as if they were frozen into it \textbf{if} the fluid has infinite conductivity} \citep{davidson2001introduction, roberts2007theory}.\\ \par \noindent
+This means that the relative importance of magnetic diffusion in the induction equation (the second term on the rhs of \eqref{eq:induction^}) decides whether flow convergence and divergence can serve as an explanation for the flux patches. The \textit{magnetic Reynolds number} estimates the ratio of inertia and magnetic diffusion and therefore is the relevant quantity in this context. 
 
 
 \subsubsection{Dependence on $\bm{\delta^*}$}
 \label{sec:delta_dependence}
-
-
-
-
-
 
 
 

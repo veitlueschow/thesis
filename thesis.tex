@@ -545,8 +545,14 @@ This chapter briefly introduces the diagnostic quantities and techniques that ar
  \begin{equation}
   \mathcal{H} = \bm u \cdot \bm \omega
  \end{equation}
-\end{itemize}
-%  \item[-] \textbf{Magnetic Reynolds number}
+\item[-] \textbf{Reynolds number and magnetic Reynolds number}\\
+ The Reynolds number $Re$ and the magnetic Reynolds number $Re_m$ measure the importance of inertia compared to viscous and magnetic diffusion in the fluid, respectively. They are defined via a typical flow velocity that is the rms-velocity in this case:
+ \begin{equation}
+ \textrm{Re} = \frac{D\,u_\textrm{rms}}{\nu}\quad\quad \textrm{     and    } \quad\quad \textrm{Re}_m = \frac{D\, u_\textrm{rms}}{\eta}
+ \end{equation}\noindent
+ \end{itemize}
+
+
 %  \item[-] \textbf{Rossby number}
 %  \item[-] \textbf{Elsasser number}
 %  \item[-] \textbf{Temporal average}
@@ -818,99 +824,94 @@ The presence of a magnetic field has an effect on the flow field in a self-susta
 The supercriticalities in this section are defined according to the critical Rayleigh numbers for the non magnetic case, described in section \ref{sec:thermal/chemical}.
 \subsection{Mantle-locked magnetic flux patches}
 \label{sec:flux_patches}
-The series of snapshots of the radial magnetic field component at the north pole shown in figure \ref{fig:fluxpatches1_snapshots} gives a first insight into the magnetic field behavior under the influence of the heat flux pattern ($q^*=2$): Patches of intense magnetic field wander, merge and detach again in a highly time-dependent manner. Yet, the number of \textit{two} patches seems to be preferred by the system and therefore the azimuthal wave number $m=2$ dominates the magnetic energy spectrum (not shown). This is attributed to the the heterogeneous BC at the CMB, that has the same azimuthal symmetry.\\ 
-In contrast to that, figure \ref{fig:fluxpatches2_snapshots} shows the uniform case ($q^*=0$) with the same Rayleigh number. The magnetic field strength is comparable but the magnetic energy in the $m=2$ mode does not dominate the spectrum. Instead the number of \textit{one} flux patch seems to be preferred. The long-term averaged fields at the right end of figure \ref{fig:fluxpatches1_snapshots} and \ref{fig:fluxpatches2_snapshots} confirm the impression that can be gained by the snapshots.  \\ 
-\begin{figure}[H]
- \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-0.png}
- \end{minipage}
- \hfill
-  \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-1.png}
- \end{minipage}
- \hfill
-  \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G-trim-27.png}
- \end{minipage}
- \hfill
-  \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-3.png}
- \end{minipage}
- \hfill
-  \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-4.png}
- \end{minipage}
- \hfill
-  \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-12.png}
- \end{minipage}
- \hfill
-  \begin{minipage}{0.16\textwidth}
- \includegraphics[width=1\textwidth]{graphs/dynamo/dyn_d100_mean_Br.png}
- \end{minipage}
-\caption{Time series of a north polar view on the radial magnetic field at the CMB for a purely thermal case with a \textbf{heat flux pattern} amplitude $q^*=2$ and $\textrm{Ra}_\textrm{\tiny T} = 4.4 \times 10^6$ (8.6 times supercritical). The field behavior is highly time dependent but a preference for a structure with \textit{two} red patches of high intensity (azimuthal wave number $m=2$) is discernible. The color scale ranges from -0.5 (dark blue) to 2.5 (dark red). The imposed heat flux maxima lie at the top and the bottom, the minima on the right and left hand side. The \textbf{right end} shows the long-term averaged data. }
-\label{fig:fluxpatches1_snapshots}
-\end{figure}
+The series of snapshots of the radial magnetic field component at the north pole shown in figure \ref{fig:fluxpatches_snapshots}, top row, gives a first insight into the magnetic field behavior under the influence of the heat flux pattern ($q^*=2$): Patches of intense magnetic field wander, merge and detach again in a highly time-dependent manner. Yet, the number of \textit{two} patches seems to be preferred by the system and therefore the azimuthal wave number $m=2$ dominates the magnetic energy spectrum (not shown). This is attributed to the the heterogeneous BC at the CMB, that has the same azimuthal symmetry.\\ 
+In contrast to that, figure \ref{fig:fluxpatches_snapshots}, bottom row, shows the uniform case ($q^*=0$) with the same Rayleigh number. The magnetic field strength is comparable but the magnetic energy in the $m=2$ mode does not dominate the spectrum. Instead the number of \textit{one} flux patch seems to be preferred. The long-term averaged fields at the right end of figure \ref{fig:fluxpatches_snapshots} confirm the impression that can be gained by the snapshots.  \\ 
 
-\begin{figure}[H]
+ \begin{figure}
  \begin{minipage}{0.13\textwidth}
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-0.png} \\
+ \vfill
  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-1.png}
  \end{minipage}
- \hfill
+\hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-2.png}
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-1.png}\\
+  \vfill
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-2.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-3.png}
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G-trim-27.png}\\
+ \vfill
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-3.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-4.png}
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-3.png}\\
+ \vfill
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-4.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-5.png}
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-4.png}\\
+ \vfill
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-5.png}
  \end{minipage}
- \hfill
+\hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-8.png}
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-12.png}\\
+ \vfill
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-8.png}
  \end{minipage}
- \hfill
+\hfill
   \begin{minipage}{0.16\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/dyn_d100_mean_q0_Br.png}
+ \includegraphics[width=1\textwidth]{graphs/dynamo/dyn_d100_mean_Br.png}\\
+ \vfill
+  \includegraphics[width=\textwidth]{graphs/dynamo/dyn_d100_mean_q0_Br.png}
  \end{minipage}
- \caption{Time series of a north polar view on the radial magnetic field at the CMB for a purely thermal case with \textbf{uniform} fixed flux conditions ($q^*=0$) and $\textrm{Ra}_\textrm{\tiny T}$ as in figure \ref{fig:fluxpatches1_snapshots}. Like above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit{one} flux patch. The color scale is as in figure \ref{fig:fluxpatches1_snapshots}. The \textbf{right end} shows the long-term averaged data.}
- \label{fig:fluxpatches2_snapshots}
-\end{figure}
+ \caption{Time series of a north polar view on the radial magnetic field at the CMB. \textbf{Top row:} Case \textbf{P100} (see table \ref{tab:data}). The field behavior is highly time dependent but a preference for a structure with \textit{two} red patches of high intensity (azimuthal wave number $m=2$) is discernible. The imposed heat flux maxima lie at the top and the bottom, the minima on the right and left hand side. \textbf{Bottom row:} Case \textbf{U100}. Like in case P100 above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit{one} flux patch. The color scale ranges from -0.5 (dark blue) to 2.5 (dark red). The \textbf{right end} shows the long-term averaged data. }
+ \label{fig:fluxpatches_snapshots}
+ \end{figure} \noindent
+
 This section aims to explain the formation mechanism for flux patches in the heat flux pattern case. Analogies to the mantle-locked structures presented in section \ref{sec:thermo-chemical} exist (the reader is reminded of the compositional field heterogeneities shown in figure \ref{fig:vort_chem}), but the presence of the Lorentz force clearly changes the dynamics of the system.
 
-\subsubsection{Showcase: $\textrm{Ra}_\textrm{total} \bm {= 4.4 \times 10^6}$,  $\bm {\delta^*} \bm= \bm{12}$\%}
+\begin{table}[t]
+ \centering
+ \begin{tabular}{l | c| c |c |c| c| c| c| c |c}
+  \textbf{Case} &  $q^*$ & Ek	& $\textrm{Ra}_\textrm{\tiny T}\times \textrm{Ek}$& $\textrm{Ra}_\textrm{\tiny C} \times \textrm{Ek}$& $\gamma_\textrm{total}$& $\delta^*$& $\textrm{Re}_m$& $\Lambda$& $f_\textrm{dip}$ \\
+  \hline
+\rule{0pt}{4ex}\textbf{P100} & 2&  $10^{-4}$ & $440$ &$0$ & $8.6$ & \textbf{100\%} & 284.8 & 26.5 & 34\% \\ 
+  \textbf{P69}   &2&  $10^{-4}$ & $352$ & $88$ & 10 & \textbf{69\%}	& 254.9 & 23.3 & 36\% \\       
+  \textbf{P36}    &2&  $10^{-4}$& 220 & 220 & 12 & \textbf{36\%} & 209.9 & 16.3 & 44\% \\
+  \textbf{P12}   &\textbf{2}&  $\bm{10^{-4}}$ & \textbf{88} & \textbf{352} & \textbf{14} & \textbf{12\%} & \textbf{170.3} & \textbf{7.4} & \textbf{57\%} \\
+  \textbf{P0}    &2&  $10^{-4}$& 0 & 440 & 15.4 &\textbf{0\%} & 139.5 & 4.8 & 64\% \\
+ \end{tabular}
+\caption{}
+\label{tab:data}
+\end{table}
+
+
+\subsubsection{Showcase: $\textrm{Ra}_\textrm{total} \bm {= 4.4 \times 10^6}$,  $\bm {\delta^*} = \bm{0.12}$}
 \label{sec:dyn_d020}
 The choice of the showcase with only a relatively mild portion of $\delta^* = 12$ \% thermal forcing will be justified in section \ref{sec:delta_dependence}. For the moment, the focus lies on the flux patch generation process. 
 \begin{figure}[H]
 \begin{minipage}{0.38\textwidth}
- Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field component in figure \ref{fig:surface_Br_d20}. Patches of concentrated magnetic field lie at  $\sim$45$^\circ$ and $225^\circ$ in both, the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). In section \ref{sec:vortex_clolumns}, the 
+ Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field component in figure \ref{fig:surface_Br_d20}. Patches of concentrated magnetic field lie at  $\sim$45$^\circ$ and $225^\circ$ in both, the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). In section \ref{sec:attached_columns}, the flow convergence and divergence
 \end{minipage}
 \hfill
 \begin{minipage}{0.59\textwidth}
-  \includegraphics[width = \textwidth]{graphs/dynamo/flux_patches_d20.png}
+  \includegraphics[width = \textwidth]{graphs/dynamo/flux_patches_d20_2.png}
   \caption{Hammer-Aitov surface projection of the radial magnetic field near the CMB at $r=1.485$. Two patches of high intensity magnetic field are located at $\sim$45$^\circ$ and $225^\circ$ in the northern and the southern hemisphere.}
   \label{fig:surface_Br_d20}
 \end{minipage}
-
-
-\end{figure}
-
+\end{figure} \noindent
+at the top of anticyclones and cyclones, respectively, controls the surface distribution of the chemical component (see figure \ref{fig:vort_chem}). In a comparable way, magnetic field is intensified and weakened by cyclonic and anticyclonic motion at the CMB. A necessary condition for this process to happen can be understood in the framework \textit{Alfv\'{e}n's theorem} that states:\\ \par
+\textit{Magnetic flux tubes move with fluid particles as if they were frozen into it \textbf{if} the fluid has infinite conductivity} \citep{davidson2001introduction, roberts2007theory}.\\ \par \noindent
+This means that the relative importance of magnetic diffusion in the induction equation (the second term on the rhs of \eqref{eq:induction^}) decides whether flow convergence and divergence can serve as an explanation for the flux patches. The \textit{magnetic Reynolds number} estimates the ratio of inertia and magnetic diffusion and therefore is the relevant quantity in this context. 
 
 
 \subsubsection{Dependence on $\bm{\delta^*}$}
 \label{sec:delta_dependence}
-
-
-
-
-
 
 
 

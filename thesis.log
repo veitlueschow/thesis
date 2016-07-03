@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  3 JUL 2016 16:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  3 JUL 2016 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,273 +460,311 @@ Underfull \hbox (badness 10000) in paragraph at lines 536--536
  []
 
 [20]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 561.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 567.
 
  (/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 561.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 567.
  [21] [22]
-Overfull \hbox (0.27296pt too wide) in paragraph at lines 613--613
+Overfull \hbox (0.27296pt too wide) in paragraph at lines 619--619
 []\OT1/cmr/bx/n/17.28 Core con-vec-tion un-der the in-flu-ence of the CMB
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--615
+Underfull \hbox (badness 10000) in paragraph at lines 621--621
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--622
+Underfull \hbox (badness 10000) in paragraph at lines 623--628
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--625
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 627--627
+Underfull \hbox (badness 10000) in paragraph at lines 633--633
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 643--643
+Underfull \hbox (badness 10000) in paragraph at lines 649--649
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--649
+Underfull \hbox (badness 10000) in paragraph at lines 653--655
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 651--663
+Underfull \hbox (badness 10000) in paragraph at lines 657--669
 
  []
 
 [25] [26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 720--727
+Underfull \hbox (badness 10000) in paragraph at lines 726--733
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 728--729
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--750
+Underfull \hbox (badness 10000) in paragraph at lines 736--756
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 757--757
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--755
+Underfull \hbox (badness 10000) in paragraph at lines 759--761
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--762
+Underfull \hbox (badness 10000) in paragraph at lines 768--768
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 768--781
+Underfull \hbox (badness 10000) in paragraph at lines 774--787
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 782--782
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--789
+Underfull \hbox (badness 10000) in paragraph at lines 789--795
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--798
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 796--810
+Underfull \hbox (badness 10000) in paragraph at lines 802--816
 
  []
 
 [31] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 827--829
+
+ []
+
 <graphs/dynamo/snapshots/G_trim-0.png, id=137, 270.2898pt x 269.808pt>
 File: graphs/dynamo/snapshots/G_trim-0.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots/G_trim-0.png>
 Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-0.png used on input lin
-e 825.
+e 832.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-<graphs/dynamo/snapshots/G_trim-1.png, id=138, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-1.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-1.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-1.png used on input lin
-e 829.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G-trim-27.png, id=139, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G-trim-27.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G-trim-27.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G-trim-27.png used on input li
-ne 833.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G_trim-3.png, id=140, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-3.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-3.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-3.png used on input lin
-e 837.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G_trim-4.png, id=141, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-4.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-4.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-4.png used on input lin
-e 841.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G_trim-12.png, id=142, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-12.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-12.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-12.png used on input li
-ne 845.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/dyn_d100_mean_Br.png, id=143, 241.65282pt x 201.00093pt>
-File: graphs/dynamo/dyn_d100_mean_Br.png Graphic file (type png)
-
-<use graphs/dynamo/dyn_d100_mean_Br.png>
-Package pdftex.def Info: graphs/dynamo/dyn_d100_mean_Br.png used on input line 
-849.
-(pdftex.def)             Requested size: 68.74345pt x 57.1785pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--853
+Underfull \hbox (badness 10000) in paragraph at lines 832--833
 
  []
 
-<graphs/dynamo/snapshots2/G_trim-1.png, id=144, 270.2898pt x 269.808pt>
+<graphs/dynamo/snapshots2/G_trim-1.png, id=138, 270.2898pt x 269.808pt>
 File: graphs/dynamo/snapshots2/G_trim-1.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-1.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-1.png used on input li
-ne 857.
+ne 834.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-<graphs/dynamo/snapshots2/G_trim-2.png, id=145, 270.2898pt x 269.808pt>
+<graphs/dynamo/snapshots/G_trim-1.png, id=139, 270.2898pt x 269.808pt>
+File: graphs/dynamo/snapshots/G_trim-1.png Graphic file (type png)
+
+<use graphs/dynamo/snapshots/G_trim-1.png>
+Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-1.png used on input lin
+e 838.
+(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 838--839
+
+ []
+
+<graphs/dynamo/snapshots2/G_trim-2.png, id=140, 270.2898pt x 269.808pt>
 File: graphs/dynamo/snapshots2/G_trim-2.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-2.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-2.png used on input li
-ne 861.
+ne 840.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-<graphs/dynamo/snapshots2/G_trim-3.png, id=146, 270.2898pt x 269.808pt>
+<graphs/dynamo/snapshots/G-trim-27.png, id=141, 270.2898pt x 269.808pt>
+File: graphs/dynamo/snapshots/G-trim-27.png Graphic file (type png)
+
+<use graphs/dynamo/snapshots/G-trim-27.png>
+Package pdftex.def Info: graphs/dynamo/snapshots/G-trim-27.png used on input li
+ne 844.
+(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--845
+
+ []
+
+<graphs/dynamo/snapshots2/G_trim-3.png, id=142, 270.2898pt x 269.808pt>
 File: graphs/dynamo/snapshots2/G_trim-3.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-3.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-3.png used on input li
-ne 865.
+ne 846.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-<graphs/dynamo/snapshots2/G_trim-4.png, id=147, 270.2898pt x 269.808pt>
+<graphs/dynamo/snapshots/G_trim-3.png, id=143, 270.2898pt x 269.808pt>
+File: graphs/dynamo/snapshots/G_trim-3.png Graphic file (type png)
+
+<use graphs/dynamo/snapshots/G_trim-3.png>
+Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-3.png used on input lin
+e 850.
+(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
+
+ []
+
+<graphs/dynamo/snapshots2/G_trim-4.png, id=144, 270.2898pt x 269.808pt>
 File: graphs/dynamo/snapshots2/G_trim-4.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-4.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-4.png used on input li
-ne 869.
+ne 852.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-<graphs/dynamo/snapshots2/G_trim-5.png, id=148, 270.2898pt x 269.808pt>
+<graphs/dynamo/snapshots/G_trim-4.png, id=145, 270.2898pt x 269.808pt>
+File: graphs/dynamo/snapshots/G_trim-4.png Graphic file (type png)
+
+<use graphs/dynamo/snapshots/G_trim-4.png>
+Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-4.png used on input lin
+e 856.
+(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
+
+ []
+
+<graphs/dynamo/snapshots2/G_trim-5.png, id=146, 270.2898pt x 269.808pt>
 File: graphs/dynamo/snapshots2/G_trim-5.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-5.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-5.png used on input li
-ne 873.
+ne 858.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-<graphs/dynamo/snapshots2/G_trim-8.png, id=149, 270.2898pt x 269.808pt>
+<graphs/dynamo/snapshots/G_trim-12.png, id=147, 270.2898pt x 269.808pt>
+File: graphs/dynamo/snapshots/G_trim-12.png Graphic file (type png)
+
+<use graphs/dynamo/snapshots/G_trim-12.png>
+Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-12.png used on input li
+ne 862.
+(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 862--863
+
+ []
+
+<graphs/dynamo/snapshots2/G_trim-8.png, id=148, 270.2898pt x 269.808pt>
 File: graphs/dynamo/snapshots2/G_trim-8.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-8.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-8.png used on input li
-ne 877.
+ne 864.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
+
+<graphs/dynamo/dyn_d100_mean_Br.png, id=149, 241.65282pt x 201.00093pt>
+File: graphs/dynamo/dyn_d100_mean_Br.png Graphic file (type png)
+
+<use graphs/dynamo/dyn_d100_mean_Br.png>
+Package pdftex.def Info: graphs/dynamo/dyn_d100_mean_Br.png used on input line 
+868.
+(pdftex.def)             Requested size: 68.74345pt x 57.1785pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--869
+
+ []
 
 <graphs/dynamo/dyn_d100_mean_q0_Br.png, id=150, 241.65282pt x 201.00093pt>
 File: graphs/dynamo/dyn_d100_mean_q0_Br.png Graphic file (type png)
 
 <use graphs/dynamo/dyn_d100_mean_q0_Br.png>
 Package pdftex.def Info: graphs/dynamo/dyn_d100_mean_q0_Br.png used on input li
-ne 881.
+ne 870.
 (pdftex.def)             Requested size: 68.74345pt x 57.1785pt.
- [33 <./graphs/dynamo/snapshots/G_trim-0.png> <./graphs/dynamo/snapshots/G_trim
--1.png> <./graphs/dynamo/snapshots/G-trim-27.png> <./graphs/dynamo/snapshots/G_
-trim-3.png> <./graphs/dynamo/snapshots/G_trim-4.png> <./graphs/dynamo/snapshots
-/G_trim-12.png> <./graphs/dynamo/dyn_d100_mean_Br.png>]
-<graphs/dynamo/flux_patches_d20.png, id=160, 634.62094pt x 378.66469pt>
-File: graphs/dynamo/flux_patches_d20.png Graphic file (type png)
 
-<use graphs/dynamo/flux_patches_d20.png>
-Package pdftex.def Info: graphs/dynamo/flux_patches_d20.png used on input line 
-897.
-(pdftex.def)             Requested size: 253.48413pt x 151.2494pt.
- [34 <./graphs/dynamo/snapshots2/G_trim-1.png> <./graphs/dynamo/snapshots2/G_tr
-im-2.png> <./graphs/dynamo/snapshots2/G_trim-3.png> <./graphs/dynamo/snapshots2
-/G_trim-4.png> <./graphs/dynamo/snapshots2/G_trim-5.png> <./graphs/dynamo/snaps
-hots2/G_trim-8.png> <./graphs/dynamo/dyn_d100_mean_q0_Br.png> <./graphs/dynamo/
-flux_patches_d20.png>] (./thesis.bbl
-[35] [36]) [37] (./thesis.aux) ) 
+<graphs/dynamo/flux_patches_d20_2.png, id=151, 685.05937pt x 423.83344pt>
+File: graphs/dynamo/flux_patches_d20_2.png Graphic file (type png)
+
+<use graphs/dynamo/flux_patches_d20_2.png>
+Package pdftex.def Info: graphs/dynamo/flux_patches_d20_2.png used on input lin
+e 903.
+(pdftex.def)             Requested size: 253.48413pt x 156.82237pt.
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 907--908
+
+ []
+
+[34 <./graphs/dynamo/snapshots/G_trim-0.png> <./graphs/dynamo/snapshots2/G_trim
+-1.png> <./graphs/dynamo/snapshots/G_trim-1.png> <./graphs/dynamo/snapshots2/G_
+trim-2.png> <./graphs/dynamo/snapshots/G-trim-27.png> <./graphs/dynamo/snapshot
+s2/G_trim-3.png> <./graphs/dynamo/snapshots/G_trim-3.png> <./graphs/dynamo/snap
+shots2/G_trim-4.png> <./graphs/dynamo/snapshots/G_trim-4.png> <./graphs/dynamo/
+snapshots2/G_trim-5.png> <./graphs/dynamo/snapshots/G_trim-12.png> <./graphs/dy
+namo/snapshots2/G_trim-8.png> <./graphs/dynamo/dyn_d100_mean_Br.png> <./graphs/
+dynamo/dyn_d100_mean_q0_Br.png> <./graphs/dynamo/flux_patches_d20_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 909--909
+
+ []
+
+[35] (./thesis.bbl [36] [37]) [38] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5192 strings out of 493315
- 76386 string characters out of 6145894
- 152350 words of memory out of 5000000
- 8517 multiletter control sequences out of 15000+600000
- 20274 words of font info for 74 fonts, out of 8000000 for 9000
+ 5194 strings out of 493315
+ 76401 string characters out of 6145894
+ 153348 words of memory out of 5000000
+ 8518 multiletter control sequences out of 15000+600000
+ 20633 words of font info for 75 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,13n,41p,1298b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/type1/public/amsfonts/c
-m/cmbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb>
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/a
-msfonts/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx8.pfb
-></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi7.p
-fb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf
-/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/fonts/type1/publi
-c/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cme
-xtra/cmmib8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/amsfont
-s/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
-are/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (37 pages, 1349891 bytes).
+ 38i,14n,41p,1298b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/type
+1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/
+cmextra/cmbsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/f
+onts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/public/am
+sfonts/cm/cmbx8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbxti10.p
+fb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texm
+f/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/tex
+mf/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/fonts/type1/pub
+lic/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/c
+mextra/cmmib8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/font
+s/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
+/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (38 pages, 1496694 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
+ 268 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
