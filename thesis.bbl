@@ -27,6 +27,12 @@ Braginsky, S.~I. and Roberts, P.~H. (1995).
 \newblock Equations governing convection in earth's core and the geodynamo.
 \newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 79(1-4):1--97.
 
+\bibitem[Breuer et~al., 2010]{breuer2010thermochemically}
+Breuer, M., Manglik, A., Wicht, J., Tr{\"u}mper, T., Harder, H., and Hansen, U.
+  (2010).
+\newblock Thermochemically driven convection in a rotating spherical shell.
+\newblock {\em Geophysical Journal International}, 183(1):150--162.
+
 \bibitem[Busse, 1970]{busse1970thermal}
 Busse, F.~H. (1970).
 \newblock Thermal instabilities in rapidly rotating systems.
@@ -110,12 +116,6 @@ Glatzmaier, G.~A. and Roberts, P.~H. (1995).
   finitely conducting inner core and mantle.
 \newblock {\em Physics of the Earth and Planetary Interiors}, 91(1):63--75.
 
-\bibitem[Hori et~al., 2012]{hori2012influence}
-Hori, K., Wicht, J., and Christensen, U. (2012).
-\newblock The influence of thermo-compositional boundary conditions on
-  convection and dynamos in a rotating spherical shell.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 196:32--48.
-
 \bibitem[Hori et~al., 2014]{hori2014ancient}
 Hori, K., Wicht, J., and Dietrich, W. (2014).
 \newblock Ancient dynamos of terrestrial planets more sensitive to core-mantle
@@ -151,6 +151,11 @@ Kuang, W. and Bloxham, J. (1997).
 Kundu, P. and Cohen, I. (2008).
 \newblock Fluid mechanics.
 \newblock {\em Academic, San Diego}.
+
+\bibitem[Kutzner and Christensen, 2000]{kutzner2000effects}
+Kutzner, C. and Christensen, U. (2000).
+\newblock Effects of driving mechanisms in geodynamo models.
+\newblock {\em Geophysical research letters}, 27(1):29--32.
 
 \bibitem[Nakagawa and Tackley, 2008]{nakagawa2008lateral}
 Nakagawa, T. and Tackley, P.~J. (2008).

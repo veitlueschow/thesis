@@ -156,7 +156,7 @@ shading flat;
 f2 = figure('name', 'test');
 set(f2, 'Position', [300, 150, 1200, 600]);
 set(f2,'PaperPositionMode','auto');
-set(f2,'PaperOrientation','portrait');
+set(f2,'PaperOrientation','landscape');
 axes('xlim',[-3.3 3.3],'ylim',[-2.1 1.8]);
 
 % create sky map using Hammer projection
