@@ -1,0 +1,6 @@
+set title "Test" font ",20"
+set key left
+plot "data_q0" u 1:4 w lp lc 1, 
+"data_q1" u 1:4
+
+pause -1
