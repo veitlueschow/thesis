@@ -1,6 +1,5 @@
+set terminal pdf
+set output "reldip.pdf"
 set title "Relative dipole" font ",20"
 set key right
-plot [-0.05:1.05] "data_q0" u 1:5 w lp lc 1
-replot "data_q1" u 1:5 w lp lc 3
-replot "data_q2" u 1:5 w lp lc 0
-pause -1
+plot [-0.05:1.05] "data_q0" u 1:5 w lp lc 1, "data_q1" u 1:5 w lp lc 3, "data_q2" u 1:5 w lp lc 2, "data_q4" u 1:5 w lp lc 7
