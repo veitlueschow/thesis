@@ -871,45 +871,45 @@ In contrast to that, figure \ref{fig:fluxpatches_snapshots}, bottom row, shows t
 
 \begin{figure}[t]
  \begin{minipage}{0.13\textwidth}
- %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-0.png} \\
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-0.png} \\
  \vfill
- %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-1.png}
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-1.png}
  \end{minipage}
 \hfill
   \begin{minipage}{0.13\textwidth}
- %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-1.png}\\
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-1.png}\\
   \vfill
-  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-2.png}
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-2.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G-trim-27.png}\\
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G-trim-27.png}\\
  \vfill
-  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-3.png}
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-3.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-3.png}\\
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-3.png}\\
  \vfill
-  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-4.png}
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-4.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-4.png}\\
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-4.png}\\
  \vfill
-  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-5.png}
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-5.png}
  \end{minipage}
 \hfill
   \begin{minipage}{0.13\textwidth}
- %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-12.png}\\
+ \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-12.png}\\
  \vfill
-  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-8.png}
+  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-8.png}
  \end{minipage}
 \hfill
   \begin{minipage}{0.16\textwidth}
- %\includegraphics[width=1\textwidth]{graphs/dynamo/dyn_d100_mean_Br.png}\\
+ \includegraphics[width=1\textwidth]{graphs/dynamo/dyn_d100_mean_Br.png}\\
  \vfill
-  %\includegraphics[width=\textwidth]{graphs/dynamo/dyn_d100_mean_q0_Br.png}
+  \includegraphics[width=\textwidth]{graphs/dynamo/dyn_d100_mean_q0_Br.png}
  \end{minipage}
  \caption{Time series of a north polar view on the radial magnetic field at the CMB. \textbf{Top row:} Case \textbf{PFF100} (see table \ref{tab:data}). The field behavior is highly time dependent but a preference for a structure with \textit{two} red patches of high intensity (azimuthal wave number $m=2$) is discernible. The imposed heat flux maxima lie at the top and the bottom, the minima on the right and left hand side. \textbf{Bottom row:} Case \textbf{UFT100}. Like in case PFF100 above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit{one} flux patch. The color scale ranges from -0.5 (dark blue) to 2.5 (dark red). The \textbf{right end} shows the long-term averaged data. }
  \label{fig:fluxpatches_snapshots}
@@ -936,7 +936,7 @@ The choice of the showcase PFF12 (see table \ref{tab:data}) with only a relative
 Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field in figure \ref{fig:surface_Br_d20}. Patches of concentrated magnetic field lie at  $\sim$45$^\circ$ and $225^\circ$E in the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). \\
 \begin{figure}[t]
 \centering
-      %\includegraphics[width = 0.7\textwidth]{graphs/dynamo/flux_patches_d20_2.png}
+      \includegraphics[width = 0.7\textwidth]{graphs/dynamo/flux_patches_d20_2.png}
   \caption{Hammer-Aitov surface projection of the radial magnetic field near the CMB at $r=1.485$. Two patches of high intensity magnetic field are located at $\sim$45$^\circ$ and $225^\circ$ in the northern and the southern hemisphere. The black line at a polar angle of $25^\circ$ is subject to the graph in figure \ref{fig:divLat_Br}.}
   \label{fig:surface_Br_d20}
 \end{figure} \noindent
@@ -951,7 +951,7 @@ Infinite conductivity goes along with zero magnetic diffusion. Therefore, the re
  \end{minipage}
  \hfill
  \begin{minipage}{0.4\textwidth}
-  %\includegraphics[width=\textwidth]{sketches/Patches_cyclones.png}
+  \includegraphics[width=\textwidth]{sketches/Patches_cyclones.png}
   \caption{Sketch of a north polar view on the vorticity distribution and the location of the magnetic flux patches for case PFF12, shown in figure \ref{fig:dyn_d20_vectorfield_Br}. Red patches mark cyclones, blue patches anticyclones and the black crosses indicate the position of the flux patches. The gray dashed line represents the intersection of the TC with the CMB. }
   \label{fig:sketch_patches}
  \end{minipage}
@@ -959,13 +959,13 @@ Infinite conductivity goes along with zero magnetic diffusion. Therefore, the re
 
 \begin{figure}[t]
 \begin{minipage}{0.48\textwidth}
- %\includegraphics[width = 0.97\textwidth]{graphs/dynamo/dyn_d20_vectorfield_Br.png}
+ \includegraphics[width = 0.97\textwidth]{graphs/dynamo/dyn_d20_vectorfield_Br.png}
  \caption{Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF12. In the front hemisphere a dominant anticyclone with the center at $\sim 315^\circ$E and a weaker, bended cyclone with the center at $\sim 230^\circ$E are visible. Intense magnetic field correlates with the cyclonic region. View from a polar angle of $20^\circ$.  }
  \label{fig:dyn_d20_vectorfield_Br}
 \end{minipage}
 \hfill
  \begin{minipage}{0.49\textwidth}
- %\includegraphics[width = \textwidth]{graphs/dynamo/divLat_Br_d20.pdf}
+ \includegraphics[width = \textwidth]{graphs/dynamo/divLat_Br_d20.pdf}
   \caption{Azimuthal profile of the radial magnetic field $B_r$ (blue) and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, normalized by its maximum (red). A negative (positive) divergence characterizes a convergent (divergent) flow, visible around $45^\circ$ and $235^\circ$E ($120^\circ$ and $300^\circ$E), where $B_r$ is maximum (minimum). Profile taken at $r=1.485$ and $\theta = 25^\circ$, the black line in figure \ref{fig:surface_Br_d20}. }
   \label{fig:divLat_Br}
  \end{minipage}
@@ -976,15 +976,11 @@ Infinite conductivity goes along with zero magnetic diffusion. Therefore, the re
 The key quality of a \textit{thermo-chemical} model of core convection is the possibility to explore the interplay of two different driving mechanisms with distinct Prandtl numbers in one system. To explore the dependence of the system dynamics on the choice of the ratio between thermal and compositional driving is is the central question, recently studied for the non magnetic case by \citet{breuer2010thermochemically} and \citet{trumper2012numerical} or the dynamo case by \citet{manglik2010dynamo} and \citet{takahashi2014double}. The choice of a distinct forcing ratio in case of the models cited above means to strengthen either the thermal component that is equipped with a Prandtl number $\textrm{Pr}_\textrm{\tiny T}<1$ or the chemical component that commonly goes along with $\textrm{Pr}_\textrm{\tiny T}\geq1$. If $\textrm{Pr}$ is less than unity, inertial processes gain importance, whereas $\textrm{Pr}$ greater one emphasizes diffusion of heat and composition, respectively.\\ \par \noindent
 In contrast to that, changing the forcing ratio $\delta^*$, as it is used here (see section \ref{sec:thermal/chemical}), has \textit{three} major implications:
 \begin{enumerate}[(a)]
- \item The thermal \textit{Prandtl number} is chosen to be $\textrm{Pr}_\textrm{\tiny T}=0.3$ and the chemical $\textrm{Pr}_\textrm{\tiny C}=3$.
  \item The BC for the thermal component is of the \textit{Neumann} type (fixed heat flux), whereas the compositional field underlies \textit{Derichlet} conditions (fixed composition).
+ \item The thermal \textit{Prandtl number} is chosen to be $\textrm{Pr}_\textrm{\tiny T}=0.3$ and the chemical $\textrm{Pr}_\textrm{\tiny C}=3$.
  \item Only the temperature field underlies the CMB \textit{heat flux pattern}, whereas the compositional BC is \textit{uniform}.
 \end{enumerate}
-Each of the points mentioned is expected to have an effect on the behavior of the system (the corresponding literature will be mentioned in the corresponding sections). The task is now to identify the individual effects of (a), (b) and (c) in the data and to separate them from each other as good as possible. 
-\subsubsection{From Derichlet to Neumann conditions}
-\label{sec:ff_to_isochemical}
-\citet{sakuraba2009generation} report the generation of a strong magnetic field in their dynamo model with a uniform heat flux imposed at the outer spherical boundary. The observation is remarkable because they used a comparatively low Ekman number ($\textrm{Ek} = 5 \times 10^{-7}$), for which the possibility of an efficient field production was questioned due to the extreme refinement of the azimuthal length scales when increasing the rotation rate \citep{sakuraba2009generation}. In contrast to the widely used fixed temperature condition, a fixed flux condition allows for lateral temperature gradients to develop at the CMB. \citet{gibbons2007convection} and \citet{sakuraba2009generation} therefore expect large scale zonal flows to develop in a thermal wind mechanism \citep{roberts2007theory}. As such flows are expected to be a necessary ingredient for an efficient dynamo process, the fixed flux condition indirectly has a positive effect on the magnetic field strength \citep{hori2012influence}.\\
-The Elsasser number $\Lambda$ compares the influence of the Lorentz force to that of the Coriolis force in the equation of momentum \citep{davidson2001introduction}. As the rotation rate is held constant here, $\Lambda$ serves as a measure for the strength of the magnetic field for the moment. Figure \ref{fig:els_reym}(a) shows $\Lambda$ for the different forcing ratios $\delta^*$, shown in table \ref{tab:data} and for different amplitudes of heterogeneity $q^*$.  For all values of $q^*$, the field strength increases roughly linearly with $\delta*$. According to the preceding discussion, this effect is attributed to the transition from a fixed composition BC at $\delta^* = 0$ to a fixed heat flux BC at $\delta^* = 1$. The increase of magnetic field strength can be observed for the uniform case UFF as well as for the case PFF. Yet, the heat flux pattern seems to additionally promote the magnetic field production.\\ \noindent
+Each of the points mentioned is expected to have an effect on the behavior of the system (the corresponding literature will be mentioned in the following sections). The task is now to identify the individual effects of (a), (b) and (c) in the data and to separate them from each other as good as possible. 
 \begin{figure}[t]
 \begin{minipage}{0.308\textwidth}
   \centering
@@ -1003,13 +999,26 @@ The Elsasser number $\Lambda$ compares the influence of the Lorentz force to tha
    \caption*{(c) Toroidal kin. energy $f_\textrm{tor}$}
  \includegraphics[width = 0.99 \textwidth]{results/relTor-crop.pdf}
 \end{minipage}
- \caption{(a) Elsasser number, (b) magnetic Reynolds number Re$_m$ and (c) portion of toroidal kinetic energy $f_\textrm{tor}$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ for the uniform case as well as for the case with $q^*=2$. The data originates from the statistically stationary state.}
+ \caption{(a) Elsasser number, (b) magnetic Reynolds number Re$_m$ and (c) portion of toroidal kinetic energy $f_\textrm{tor}$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ for the uniform case UFF as well as for the case PFF with $q^*=2$. The data originates from the statistically stationary state.}
    \label{fig:els_reym}
 \end{figure} \noindent
-The magnetic Reynolds number serves as a measure for the typical flow speed in a fluid compared to magnetic diffusion and as it contains the rms-velocity, it indirectly measures the kinetic energy. Like the Elsasser number, $\textrm{Re}_m$ increases linearly with $\delta^*$ (see figure \ref{fig:els_reym}(b)) for PFF and UFF.  The zonal flow mentioned above, originating in a thermal wind, is a possible explanation for the increase in Re$_m$. Figure \ref{fig:els_reym}(c) that shows the relative portion of toroidal kinetic energy $f_\textrm{tor}$, underlines this hypothesis: 
+
+\subsubsection{Boundary conditions: From Derichlet to Neumann}
+\label{sec:ff_to_isochemical}
+\citet{sakuraba2009generation} report the generation of a strong magnetic field in their dynamo model with a uniform heat flux imposed at the outer spherical boundary. The observation is remarkable because they used a comparatively low Ekman number ($\textrm{Ek} = 5 \times 10^{-7}$), for which the possibility of an efficient field production was questioned due to the extreme refinement of the azimuthal length scales when increasing the rotation rate \citep{sakuraba2009generation}. In contrast to the widely used fixed temperature condition, a fixed flux condition allows for lateral temperature gradients to develop at the CMB. \citet{gibbons2007convection} and \citet{sakuraba2009generation} therefore expect large scale zonal flows to develop in a thermal wind mechanism \citep{roberts2007theory}. As such flows are expected to be a necessary ingredient for an efficient dynamo process, the fixed flux condition indirectly has a positive effect on the magnetic field strength \citep{hori2012influence}.\\ \par
+
+The Elsasser number $\Lambda$ compares the influence of the Lorentz force to that of the Coriolis force in the equation of momentum \citep{davidson2001introduction}. As the rotation rate is held constant here, $\Lambda$ serves as a measure for the strength of the magnetic field for the moment. Figure \ref{fig:els_reym}(a) shows $\Lambda$ for the different forcing ratios $\delta^*$, shown in table \ref{tab:data} and for different amplitudes of heterogeneity $q^*$.  For all values of $q^*$, the field strength increases roughly linearly with $\delta*$. According to the preceding discussion, this effect is attributed to the transition from a fixed composition BC at $\delta^* = 0$ to a fixed heat flux BC at $\delta^* = 1$. The increase of magnetic field strength can be observed for the uniform case UFF as well as for the case PFF. Yet, the heat flux pattern seems to additionally promote the magnetic field production. This effect will be further discussed when it comes to the influence of the heat flux \textit{pattern} in section \ref{sec:effect_pattern}\\ \par
+
+The magnetic Reynolds number estimates relation between the advection and the diffusion of the magnetic field and as it contains the rms-velocity, it indirectly measures the kinetic energy. Like the Elsasser number, $\textrm{Re}_m$ increases linearly with $\delta^*$ (see figure \ref{fig:els_reym}(b)) for PFF and UFF.  \\
+The zonal flow mentioned above, originating in a thermal wind, is a possible explanation for the increase in Re$_m$. Figure \ref{fig:els_reym}(c) that shows the relative portion of toroidal kinetic energy $f_\textrm{tor}$, supports this hypothesis: The increase of kinetic energy originates at least partly in an increase of its toroidal part that basically represents the azimuthal component of the velocity field. Presumably, the intensification of the zonal flow due to the transition to fixed flux conditions plays a crucial role for the increase of Re$_m$. \\
+On the other hand, 
 
 
+\subsubsection{The role of inertia: From Pr$_\textrm{\tiny C} = 3$ to Pr$_\textrm{\tiny T} = 0.3$}
+\label{sec:effect_pr}
 
+\subsubsection{The effect of the heat flux pattern}
+\label{sec:effect_pattern}
 
 \begin{figure}[t]
 \begin{subfigure}[b]{0.49\textwidth}
@@ -1047,7 +1056,7 @@ The magnetic Reynolds number serves as a measure for the typical flow speed in a
 
 
 
-
+\newpage
 \section{Summary and Discussion}
 
 \begin{itemize}
