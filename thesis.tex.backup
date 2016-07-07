@@ -984,30 +984,30 @@ Each of the points mentioned is expected to have an effect on the behavior of th
 \subsubsection{From Derichlet to Neumann conditions}
 \label{sec:ff_to_isochemical}
 \citet{sakuraba2009generation} report the generation of a strong magnetic field in their dynamo model with a uniform heat flux imposed at the outer spherical boundary. The observation is remarkable because they used a comparatively low Ekman number ($\textrm{Ek} = 5 \times 10^{-7}$), for which the possibility of an efficient field production was questioned due to the extreme refinement of the azimuthal length scales when increasing the rotation rate \citep{sakuraba2009generation}. In contrast to the widely used fixed temperature condition, a fixed flux condition allows for lateral temperature gradients to develop at the CMB. \citet{gibbons2007convection} and \citet{sakuraba2009generation} therefore expect large scale zonal flows to develop in a thermal wind mechanism \citep{roberts2007theory}. As such flows are expected to be a necessary ingredient for an efficient dynamo process, the fixed flux condition indirectly has a positive effect on the magnetic field strength \citep{hori2012influence}.\\
-The Elsasser number $\Lambda$ compares the influence of the Lorentz force to that of the Coriolis force in the equation of momentum \citep{davidson2001introduction}. As the rotation rate is held constant here, $\Lambda$ serves as a measure for the strength of the magnetic field for the moment. Figure \ref{fig:els_reym}(a) shows $\Lambda$ for the different forcing ratios $\delta^*$, shown in table \ref{tab:data} and for different amplitudes of heterogeneity $q^*$.  For all values of $q^*$, the field strength increases roughly linearly with $\delta*$. According to the preceding discussion, this effect is attributed to the transition from a fixed composition BC at $\delta^* = 0$ to a fixed heat flux BC at $\delta^* = 1$. The increase of magnetic field strength can be observed for the uniform case UFF as well as for the case PFF. Yet, the heat flux pattern seems to additionally promote the magnetic field production.\\ 
+The Elsasser number $\Lambda$ compares the influence of the Lorentz force to that of the Coriolis force in the equation of momentum \citep{davidson2001introduction}. As the rotation rate is held constant here, $\Lambda$ serves as a measure for the strength of the magnetic field for the moment. Figure \ref{fig:els_reym}(a) shows $\Lambda$ for the different forcing ratios $\delta^*$, shown in table \ref{tab:data} and for different amplitudes of heterogeneity $q^*$.  For all values of $q^*$, the field strength increases roughly linearly with $\delta*$. According to the preceding discussion, this effect is attributed to the transition from a fixed composition BC at $\delta^* = 0$ to a fixed heat flux BC at $\delta^* = 1$. The increase of magnetic field strength can be observed for the uniform case UFF as well as for the case PFF. Yet, the heat flux pattern seems to additionally promote the magnetic field production.\\ \noindent
 \begin{figure}[t]
-\begin{minipage}{0.48\textwidth}
- \centering
+\begin{minipage}{0.308\textwidth}
+  \centering
+   \caption*{(a) Elsasser $\Lambda$}
  \includegraphics[width = 0.99\textwidth]{results/els-crop.pdf}
- \caption*{(a)}
 \end{minipage}
 \hfill
-\begin{minipage}{0.48\textwidth}
+\begin{minipage}{0.32\textwidth}
   \centering
+   \caption*{(b) Magnetic Reynolds Re$_m$}
  \includegraphics[width = 0.99\textwidth]{results/reym-crop.pdf}
- \caption*{(b)}
 \end{minipage}
- \caption{(a) Elsasser number and (b) magnetic Reynolds number Re$_m$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ and the uniform case as well as for the case with $q^*=2$.}
+\hfill
+\begin{minipage}{0.32\textwidth}
+  \centering
+   \caption*{(c) Toroidal kin. energy $f_\textrm{tor}$}
+ \includegraphics[width = 0.99 \textwidth]{results/relTor-crop.pdf}
+\end{minipage}
+ \caption{(a) Elsasser number, (b) magnetic Reynolds number Re$_m$ and (c) portion of toroidal kinetic energy $f_\textrm{tor}$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ for the uniform case as well as for the case with $q^*=2$. The data originates from the statistically stationary state.}
    \label{fig:els_reym}
 \end{figure} \noindent
-The magnetic Reynolds number serves as a measure for a typical flow speed in a fluid and as it contains the rms-velocity, it is an indirect measure for the kinetic energy. Like the Elsasser number, $\textrm{Re}_m$ increases linearly with $\delta^*$ (see figure \ref{fig:els_reym}(b)). 
+The magnetic Reynolds number serves as a measure for the typical flow speed in a fluid compared to magnetic diffusion and as it contains the rms-velocity, it indirectly measures the kinetic energy. Like the Elsasser number, $\textrm{Re}_m$ increases linearly with $\delta^*$ (see figure \ref{fig:els_reym}(b)) for PFF and UFF.  The zonal flow mentioned above, originating in a thermal wind, is a possible explanation for the increase in Re$_m$. Figure \ref{fig:els_reym}(c) that shows the relative portion of toroidal kinetic energy $f_\textrm{tor}$, underlines this hypothesis: 
 
-\begin{figure}[t]
- \centering
- \includegraphics[width = 0.5 \textwidth]{results/relTor-crop.pdf}
- \caption{Relative portion of toroidal kinetic energy $f_\textrm{tor}$ contained in the fluid (see section \ref{sec:diagnostics}).}
- \label{fig:relTor}
-\end{figure}
 
 
 
