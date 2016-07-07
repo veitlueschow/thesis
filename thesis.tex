@@ -17,6 +17,7 @@
 %\usepackage[utf8]{inputenc} %linux
 \usepackage[ansinew]{inputenc} %windows
 \usepackage[left=3.0cm,right=2.9cm,top=2.4cm,bottom=2.6cm,includeheadfoot]{geometry}
+\usepackage{subcaption}
 
 
 \date {\today}
@@ -56,7 +57,7 @@ The liquid outer core (LOC) is modeled in a spherical shell with an inner radius
 The LOC is constantly rotating about the z-axis of a Cartesian system. The angular velocity $\Omega$ is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study, spherical coordinates are used. 
 \begin{figure}[]
  \begin{minipage}{0.42\textwidth}
-  %\includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
+  %%\includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
   \caption*{(a)}
  \end{minipage}
  \hfill
@@ -555,7 +556,8 @@ This chapter briefly introduces the diagnostic quantities and techniques that ar
  \end{equation}\noindent
  \end{itemize}
 
-
+%  \item[-] \textbf{Portion of toroidal kinetic energy}
+%  \item[-] \textbf{Portion of dipolar magnetic field}
 %  \item[-] \textbf{Rossby number}
 %  \item[-] \textbf{Elsasser number}
 %  \item[-] \textbf{Temporal average}
@@ -569,56 +571,76 @@ On influence of Prandtl number:
 \begin{itemize}
  \item Zhang Spiralling columnar convection in rapidly rotating spherical fluid shells.
  \item Sreenivasan 2006 (Dynamos dominated rather by intertia than by rotation are less dipolar)
+ \item Dipole part becomes larger for larger Pr: Simitev and Busse 2005
+ \item convective scales become smaller if Pr is larger: Gibbons Gubbins 2007
 \end{itemize}
+
 Ont he collection of magnetic field lines by cyclones:
 \begin{itemize}
  \item Jones: Planetary magnetic fields and fluid dynamos
 \end{itemize}
+
 On double diffusive dynamos / thermo-chemical convection:
 \begin{itemize}
  \item Trümper 2012
  \item Takahashi 2014 (Dynamo)
  \item Manglik 2010
 \end{itemize}
+
 On the question whether heat flux heterogeneities destroy magnetic fields:
 \begin{itemize}
  \item Olson 2002
  \item Olson Glatzmaier 1996
 \end{itemize}
+
 Anticyclones are slightly stronger than cyclones
 \begin{itemize}
  \item Olson 2002
 \end{itemize}
+
 Convection inside the TC sets in at higher supercriticalities than outside...
 \begin{itemize}
  \item  Takahashi et al. 2003
  \item  Tilgner and Busse 1997
  \item Breuer 2010
 \end{itemize}
+
 Reynolds numver (kinetic) energy decreases with increasing Pr ( from thermal to chemical convection)
 \begin{itemize}
  \item Busse and Simitev 2006
  \item Breuer 2010
 \end{itemize}
+
 On lab experiments
 \begin{itemize}
  \item Olson 2011 (review)
 \end{itemize}
+
 On the influence of the thermal boundary condition (e.g. on the magnetic field strength):
 \begin{itemize}
  \item Larger scales and stronger magnetic field : Sakuraba and Roberts (2009)
  \item Hori 2010
  \item On the onset of convection and the scales: Sparrow et al., 1964
+ \item Larger scales, for cartesian box:  Chapman and Proctor (1980)
 \end{itemize}
-On the influence on magnetic field on the flowfield_temp
+
+On the influence on magnetic field on the flowfield temp
 \begin{itemize}
  \item Flow changes due to dynamo action compared to thermal convection: (Olson and Glatzmaier, 1996)
+ \item Convective scales become larger when magnetic field gains importance (Wicht, Stellmach 2010)
+ \item increase of $l_u$ by 20 \% if magnetic field active: Takahashi et al. (2008a) 
 \end{itemize}
 
 Explain reason, why anti cyclones clearly dominate the flow field:
 \begin{itemize}
  \item They need to store the large amounts of magnetic energy: Sakuraba, Kono 2000
 \end{itemize}
+
+Structure of the CMB heat pattern:
+\begin{itemize}
+ \item  Structure is of degree and order 2: Romanowicz,2003
+\end{itemize}
+
 
 
 
@@ -677,7 +699,7 @@ This section aims to explain the mechanism of helicity production inside of vort
 Although motion parallel to the $z$-axis is strongly constrained by rotation (see Equation \eqref{eq:geostrophy2}), the spherical form of the boundaries necessarily relaxes this constraint locally and vertical flow is unavoidable \citep{busse2002convective, gillet2006quasi}. An important example for the relaxation of the Taylor-Proudman theorem in this context is the \textit{secondary circulation} inside of vortex columns \citep{olson1999numerical, aubert2008magnetic, christensen2011geodynamo}, sketched in Figure \ref{fig:secondary_circulation}.\\
 \begin{figure}[H]
  \begin{minipage}[left]{0.49\textwidth}
-  %\includegraphics[width =  \textwidth]{sketches/secondary_circulation-crop.pdf}
+  %%\includegraphics[width =  \textwidth]{sketches/secondary_circulation-crop.pdf}
   \caption{Sketch of the secondary circulation induced by a pair of a cyclonic and an anticyclonic vortex. The two convection columns can be imagined as part of the sketch in Figure \ref{fig:sketch_busse}, a situation typical for the onset of convection.}
   \label{fig:secondary_circulation}
  \end{minipage}
@@ -809,7 +831,7 @@ The secondary circulation, which was described in section \ref{sec:vortex_clolum
 The interplay of the azimuthal and the radial velocity field in the equatorial plain (Figure \ref{fig:equatorial_vel_temp}(a) and (b)) causes the vorticity distribution that is shown in Figure \ref{fig:q2_200_d080_vort}. Tilted patches of strong negative vorticity close to the ICB lie beneath prograde jets of positive vorticity right under the heat flux maxima at $90^\circ$E and $270^\circ$E. Additionally, a band of negative vorticity is located between $90^\circ$ and $180^\circ$E and $270^\circ$ and $360^\circ$E. \\
 \begin{figure}[H]
  \centering
-%  \includegraphics[scale = 0.7]{graphs/vorticity/q2_200_vort.png}
+ %\includegraphics[scale = 0.7]{graphs/vorticity/q2_200_vort.png}
  \caption{\textbf{Left hemisphere}: $z$-component of the vorticity in the equatorial plain (see Figure \ref{fig:q2_200_d080_vort}) and contour surfaces at $\omega_z = -1200$ (blue) and $\omega_z = 1200$ (red). \textbf{Right hemisphere}: Compositional perturbation $\zeta$ close to the CMB at $ r = 1.5$. As parameters, $\textrm{Ra}_\textrm{total}=  2\times 10^6$, $\delta = 0.95$ and $q^* = 2$ are chosen.}
  \label{fig:vort_chem}
 \end{figure}
@@ -823,12 +845,12 @@ Figure \ref{fig:q2_200_temp}(a) shows the same equatorial view on the temperatur
 \begin{figure}[H]
  \begin{minipage}[left]{0.33\textwidth}
   \centering
-%   \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
+  %\includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
   \caption*{(a) Equatorial plain}
  \end{minipage}
  \hfill
 \begin{minipage}[right]{0.63\textwidth}
-%  \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
+ %\includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
  \caption*{(b) Surface projection at the CMB}
 \end{minipage}
 \caption{Full temperature field $ T = \theta + T_\textrm{cond}$ for the same case as above in (a) the equatorial plain and (b) as a surface projection right under the CMB at r = 1.485. (a) is the same graph as in Figure \ref{fig:flowfield_temp}, but the color map is 'shortened' in order to pronounce the phase shift of the temperature field. }
@@ -849,47 +871,47 @@ In contrast to that, figure \ref{fig:fluxpatches_snapshots}, bottom row, shows t
 
 \begin{figure}[t]
  \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-0.png} \\
+ %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-0.png} \\
  \vfill
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-1.png}
+ %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-1.png}
  \end{minipage}
 \hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-1.png}\\
+ %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-1.png}\\
   \vfill
-  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-2.png}
+  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-2.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G-trim-27.png}\\
+ %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G-trim-27.png}\\
  \vfill
-  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-3.png}
+  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-3.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-3.png}\\
+ %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-3.png}\\
  \vfill
-  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-4.png}
+  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-4.png}
  \end{minipage}
  \hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-4.png}\\
+ %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-4.png}\\
  \vfill
-  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-5.png}
+  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-5.png}
  \end{minipage}
 \hfill
   \begin{minipage}{0.13\textwidth}
- \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-12.png}\\
+ %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-12.png}\\
  \vfill
-  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-8.png}
+  %\includegraphics[width=\textwidth]{graphs/dynamo/snapshots2/G_trim-8.png}
  \end{minipage}
 \hfill
   \begin{minipage}{0.16\textwidth}
- \includegraphics[width=1\textwidth]{graphs/dynamo/dyn_d100_mean_Br.png}\\
+ %\includegraphics[width=1\textwidth]{graphs/dynamo/dyn_d100_mean_Br.png}\\
  \vfill
-  \includegraphics[width=\textwidth]{graphs/dynamo/dyn_d100_mean_q0_Br.png}
+  %\includegraphics[width=\textwidth]{graphs/dynamo/dyn_d100_mean_q0_Br.png}
  \end{minipage}
- \caption{Time series of a north polar view on the radial magnetic field at the CMB. \textbf{Top row:} Case \textbf{P100} (see table \ref{tab:data}). The field behavior is highly time dependent but a preference for a structure with \textit{two} red patches of high intensity (azimuthal wave number $m=2$) is discernible. The imposed heat flux maxima lie at the top and the bottom, the minima on the right and left hand side. \textbf{Bottom row:} Case \textbf{U100}. Like in case P100 above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit{one} flux patch. The color scale ranges from -0.5 (dark blue) to 2.5 (dark red). The \textbf{right end} shows the long-term averaged data. }
+ \caption{Time series of a north polar view on the radial magnetic field at the CMB. \textbf{Top row:} Case \textbf{PFF100} (see table \ref{tab:data}). The field behavior is highly time dependent but a preference for a structure with \textit{two} red patches of high intensity (azimuthal wave number $m=2$) is discernible. The imposed heat flux maxima lie at the top and the bottom, the minima on the right and left hand side. \textbf{Bottom row:} Case \textbf{UFT100}. Like in case PFF100 above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit{one} flux patch. The color scale ranges from -0.5 (dark blue) to 2.5 (dark red). The \textbf{right end} shows the long-term averaged data. }
  \label{fig:fluxpatches_snapshots}
  \end{figure} \noindent
  \begin{table}[b]
@@ -897,24 +919,24 @@ In contrast to that, figure \ref{fig:fluxpatches_snapshots}, bottom row, shows t
  \begin{tabular}{l | c| c |c |c| c| c| c| c |c}
   \textbf{Case} &  $q^*$ & Ek	& $\textrm{Ra}_\textrm{\tiny T}\times \textrm{Ek}$& $\textrm{Ra}_\textrm{\tiny C} \times \textrm{Ek}$& $\gamma_\textrm{total}$& $\delta^*$& $\textrm{Re}_m$& $\Lambda$& $f_\textrm{dip}$ \\
   \hline
-\rule{0pt}{4ex}\textbf{P100} & 2&  $10^{-4}$ & $440$ &$0$ & $8.6$ & \textbf{100\%} & 284.8 & 26.5 & 34\% \\ 
-  \textbf{P69}   &2&  $10^{-4}$ & $352$ & $88$ & 10 & \textbf{69\%}	& 254.9 & 23.3 & 36\% \\       
-  \textbf{P36}    &2&  $10^{-4}$& 220 & 220 & 12 & \textbf{36\%} & 209.9 & 16.3 & 44\% \\
-  \textbf{P12}   &\textbf{2}&  $\bm{10^{-4}}$ & \textbf{88} & \textbf{352} & \textbf{14} & \textbf{12\%} & \textbf{170.3} & \textbf{7.4} & \textbf{57\%} \\
-  \textbf{P0}    &2&  $10^{-4}$& 0 & 440 & 15.4 &\textbf{0\%} & 139.5 & 4.8 & 64\% \\
+\rule{0pt}{4ex}\textbf{PFF100} & 2&  $10^{-4}$ & $440$ &$0$ & $8.6$ & \textbf{100\%} & 284.8 & 26.5 & 34\% \\ 
+  \textbf{PFF69}   &2&  $10^{-4}$ & $352$ & $88$ & 10 & \textbf{69\%}	& 254.9 & 23.3 & 36\% \\       
+  \textbf{PFF36}    &2&  $10^{-4}$& 220 & 220 & 12 & \textbf{36\%} & 209.9 & 16.3 & 44\% \\
+  \textbf{PFF12}   &\textbf{2}&  $\bm{10^{-4}}$ & \textbf{88} & \textbf{352} & \textbf{14} & \textbf{12\%} & \textbf{170.3} & \textbf{7.4} & \textbf{57\%} \\
+  \textbf{PFF0}    &2&  $10^{-4}$& 0 & 440 & 15.4 &\textbf{0\%} & 139.5 & 4.8 & 64\% \\
  \end{tabular}
-\caption{Overview of the Parameters regarded in this section and the associated diagnostic quantities: Magnetic Reynolds number Re$_m$, Elsasser number $\Lambda$ and realtive strength of the magnetic dipole component $f_\textrm{dip}$, all defined in section \ref{sec:diagnostics}. The case P12, highlighted in bold, serves as showcase in section \ref{sec:dyn_d020}.}
+\caption{Overview of the Parameters regarded in this section and the associated diagnostic quantities: Magnetic Reynolds number Re$_m$, Elsasser number $\Lambda$ and realtive strength of the magnetic dipole component $f_\textrm{dip}$, all defined in section \ref{sec:diagnostics}. The case PFF12, highlighted in bold, serves as showcase in section \ref{sec:dyn_d020}.}
 \label{tab:data}
 \end{table}
 This section aims to explain the formation mechanism for flux patches in the heat flux pattern case. Analogies to the mantle-locked structures presented in section \ref{sec:thermo-chemical} exist (the reader is reminded of the compositional field heterogeneities shown in figure \ref{fig:vort_chem}), but the presence of the Lorentz force clearly changes the dynamics of the system.
 
-\subsubsection{Showcase: $\textrm{Ra}_\textrm{total} \bm {= 4.4 \times 10^6}$,  $\bm {\delta^*} = \bm{0.12}$}
+\subsection{The patch generation mechanism: A showcase}
 \label{sec:dyn_d020}
-The choice of the showcase with only a relatively mild portion of $\delta^* = 12$ \% thermal forcing will be justified in section \ref{sec:delta_dependence}. For the moment, the focus lies on the flux patch generation process. \\
+The choice of the showcase PFF12 (see table \ref{tab:data}) with only a relatively mild portion of $\delta^* = 12$ \% thermal forcing will be justified in section \ref{sec:delta_dependence}. For the moment, the focus lies on the flux patch generation process. \\
 Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field in figure \ref{fig:surface_Br_d20}. Patches of concentrated magnetic field lie at  $\sim$45$^\circ$ and $225^\circ$E in the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). \\
 \begin{figure}[t]
 \centering
-      \includegraphics[width = 0.7\textwidth]{graphs/dynamo/flux_patches_d20_2.png}
+      %\includegraphics[width = 0.7\textwidth]{graphs/dynamo/flux_patches_d20_2.png}
   \caption{Hammer-Aitov surface projection of the radial magnetic field near the CMB at $r=1.485$. Two patches of high intensity magnetic field are located at $\sim$45$^\circ$ and $225^\circ$ in the northern and the southern hemisphere. The black line at a polar angle of $25^\circ$ is subject to the graph in figure \ref{fig:divLat_Br}.}
   \label{fig:surface_Br_d20}
 \end{figure} \noindent
@@ -929,34 +951,110 @@ Infinite conductivity goes along with zero magnetic diffusion. Therefore, the re
  \end{minipage}
  \hfill
  \begin{minipage}{0.4\textwidth}
-  \includegraphics[width=\textwidth]{sketches/Patches_cyclones.png}
-  \caption{Sketch of a north polar view on the vorticity distribution and the location of the magnetic flux patches for case P12, shown in figure \ref{fig:dyn_d20_vectorfield_Br}. Red patches mark cyclones, blue patches anticyclones and the black crosses indicate the position of the flux patches. The gray dashed line represents the intersection of the TC with the CMB. }
+  %\includegraphics[width=\textwidth]{sketches/Patches_cyclones.png}
+  \caption{Sketch of a north polar view on the vorticity distribution and the location of the magnetic flux patches for case PFF12, shown in figure \ref{fig:dyn_d20_vectorfield_Br}. Red patches mark cyclones, blue patches anticyclones and the black crosses indicate the position of the flux patches. The gray dashed line represents the intersection of the TC with the CMB. }
   \label{fig:sketch_patches}
  \end{minipage}
 \end{figure}\noindent
 
 \begin{figure}[t]
 \begin{minipage}{0.48\textwidth}
- \includegraphics[width = 0.97\textwidth]{graphs/dynamo/dyn_d20_vectorfield_Br.png}
- \caption{Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case P12. In the front hemisphere a dominant anticyclone with the center at $\sim 315^\circ$E and a weaker, bended cyclone with the center at $\sim 230^\circ$E are visible. Intense magnetic field correlates with the cyclonic region. View from a polar angle of $20^\circ$.  }
+ %\includegraphics[width = 0.97\textwidth]{graphs/dynamo/dyn_d20_vectorfield_Br.png}
+ \caption{Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF12. In the front hemisphere a dominant anticyclone with the center at $\sim 315^\circ$E and a weaker, bended cyclone with the center at $\sim 230^\circ$E are visible. Intense magnetic field correlates with the cyclonic region. View from a polar angle of $20^\circ$.  }
  \label{fig:dyn_d20_vectorfield_Br}
 \end{minipage}
 \hfill
  \begin{minipage}{0.49\textwidth}
- \includegraphics[width = \textwidth]{graphs/dynamo/divLat_Br_d20.pdf}
+ %\includegraphics[width = \textwidth]{graphs/dynamo/divLat_Br_d20.pdf}
   \caption{Azimuthal profile of the radial magnetic field $B_r$ (blue) and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, normalized by its maximum (red). A negative (positive) divergence characterizes a convergent (divergent) flow, visible around $45^\circ$ and $235^\circ$E ($120^\circ$ and $300^\circ$E), where $B_r$ is maximum (minimum). Profile taken at $r=1.485$ and $\theta = 25^\circ$, the black line in figure \ref{fig:surface_Br_d20}. }
   \label{fig:divLat_Br}
  \end{minipage}
 \end{figure}
 
-\subsubsection{Dependence on $\bm{\delta^*}$}
+\subsection{Changing the driving mechanism}
 \label{sec:delta_dependence}
+The key quality of a \textit{thermo-chemical} model of core convection is the possibility to explore the interplay of two different driving mechanisms with distinct Prandtl numbers in one system. To explore the dependence of the system dynamics on the choice of the ratio between thermal and compositional driving is is the central question, recently studied for the non magnetic case by \citet{breuer2010thermochemically} and \citet{trumper2012numerical} or the dynamo case by \citet{manglik2010dynamo} and \citet{takahashi2014double}. The choice of a distinct forcing ratio in case of the models cited above means to strengthen either the thermal component that is equipped with a Prandtl number $\textrm{Pr}_\textrm{\tiny T}<1$ or the chemical component that commonly goes along with $\textrm{Pr}_\textrm{\tiny T}\geq1$. If $\textrm{Pr}$ is less than unity, inertial processes gain importance, whereas $\textrm{Pr}$ greater one emphasizes diffusion of heat and composition, respectively.\\ \par \noindent
+In contrast to that, changing the forcing ratio $\delta^*$, as it is used here (see section \ref{sec:thermal/chemical}), has \textit{three} major implications:
+\begin{enumerate}[(a)]
+ \item The thermal \textit{Prandtl number} is chosen to be $\textrm{Pr}_\textrm{\tiny T}=0.3$ and the chemical $\textrm{Pr}_\textrm{\tiny C}=3$.
+ \item The BC for the thermal component is of the \textit{Neumann} type (fixed heat flux), whereas the compositional field underlies \textit{Derichlet} conditions (fixed composition).
+ \item Only the temperature field underlies the CMB \textit{heat flux pattern}, whereas the compositional BC is \textit{uniform}.
+\end{enumerate}
+Each of the points mentioned is expected to have an effect on the behavior of the system (the corresponding literature will be mentioned in the corresponding sections). The task is now to identify the individual effects of (a), (b) and (c) in the data and to separate them from each other as good as possible. 
+\subsubsection{From Derichlet to Neumann conditions}
+\label{sec:ff_to_isochemical}
+\citet{sakuraba2009generation} report the generation of a strong magnetic field in their dynamo model with a uniform heat flux imposed at the outer spherical boundary. The observation is remarkable because they used a comparatively low Ekman number ($\textrm{Ek} = 5 \times 10^{-7}$), for which the possibility of an efficient field production was questioned due to the extreme refinement of the azimuthal length scales when increasing the rotation rate \citep{sakuraba2009generation}. In contrast to the widely used fixed temperature condition, a fixed flux condition allows for lateral temperature gradients to develop at the CMB. \citet{gibbons2007convection} and \citet{sakuraba2009generation} therefore expect large scale zonal flows to develop in a thermal wind mechanism \citep{roberts2007theory}. As such flows are expected to be a necessary ingredient for an efficient dynamo process, the fixed flux condition indirectly has a positive effect on the magnetic field strength \citep{hori2012influence}.\\
+The Elsasser number $\Lambda$ compares the influence of the Lorentz force to that of the Coriolis force in the equation of momentum \citep{davidson2001introduction}. As the rotation rate is held constant here, $\Lambda$ serves as a measure for the strength of the magnetic field for the moment. Figure \ref{fig:els_reym}(a) shows $\Lambda$ for the different forcing ratios $\delta^*$, shown in table \ref{tab:data} and for different amplitudes of heterogeneity $q^*$.  For all values of $q^*$, the field strength increases roughly linearly with $\delta*$. According to the preceding discussion, this effect is attributed to the transition from a fixed composition BC at $\delta^* = 0$ to a fixed heat flux BC at $\delta^* = 1$. The increase of magnetic field strength can be observed for the uniform case UFF as well as for the case PFF. Yet, the heat flux pattern seems to additionally promote the magnetic field production.\\ \noindent
+\begin{figure}[t]
+\begin{minipage}{0.48\textwidth}
+ \centering
+ \includegraphics[width = 0.99\textwidth]{results/els-crop.pdf}
+ \caption*{(a)}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+  \centering
+ \includegraphics[width = 0.99\textwidth]{results/reym-crop.pdf}
+ \caption*{(b)}
+\end{minipage}
+ \caption{(a) Elsasser number and (b) magnetic Reynolds number Re$_m$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ and the uniform case as well as for the case with $q^*=2$.}
+   \label{fig:els_reym}
+\end{figure} \noindent
+The magnetic Reynolds number serves as a measure for a typical flow speed in a fluid and as it contains the rms-velocity, it is an indirect measure for the kinetic energy. Like the Elsasser number, $\textrm{Re}_m$ increases linearly with $\delta^*$ (see figure \ref{fig:els_reym}(b)). The above mentioned zonal flow, originating in a thermal wind, is a possible explanation for the increase in Re$_m$. The relative portion of kinetic energy $f_\textrm{tor}$ shown in figure \ref{fig:relTor}  
+
+\begin{figure}[t]
+ \centering
+ \includegraphics[width = 0.5 \textwidth]{results/relTor-crop.pdf}
+ \caption{Relative portion of toroidal kinetic energy $f_\textrm{tor}$ contained in the fluid (see section \ref{sec:diagnostics}).}
+ \label{fig:relTor}
+\end{figure}
+
+
+
+\begin{figure}[t]
+\begin{subfigure}[b]{0.49\textwidth}
+ \caption*{\textbf{Case PFF12}}
+ \begin{minipage}{0.46 \textwidth}
+ \includegraphics[width = \textwidth]{graphs/dynamo/driving_mechs/d020_vorticity.png}\\
+ \vfill
+  \includegraphics[width = \textwidth]{graphs/dynamo/driving_mechs/d020_Br.png}
+ \end{minipage}
+\hfill
+ \begin{minipage}{0.46 \textwidth}
+ \includegraphics[width = \textwidth]{graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png}\\
+ \vfill
+  \includegraphics[width = \textwidth]{graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-trim.png} 
+ \end{minipage}
+ \hfill
+ \end{subfigure}
+ \begin{subfigure}[b]{0.49\textwidth}
+  \caption*{\textbf{Case PFF100}}
+ \vrule width 3pt
+ \hfill
+  \begin{minipage}{0.46 \textwidth}
+ \includegraphics[width = 1.\textwidth]{graphs/dynamo/driving_mechs/d100_vorticity.png}\\
+ \vfill
+  \includegraphics[width = 1.\textwidth]{graphs/dynamo/driving_mechs/d100_Br.png} 
+ \end{minipage}
+ \hfill
+  \begin{minipage}{0.46 \textwidth}
+ \includegraphics[width = \textwidth]{graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png}\\
+ \vfill
+  \includegraphics[width = \textwidth]{graphs/dynamo/driving_mechs/Br_d100-trim.png} 
+ \end{minipage}
+  \end{subfigure}
+\end{figure}
 
 
 
 
+\section{Summary and Discussion}
 
-\section{Summary}
+\begin{itemize}
+ \item \textbf{Wicht, Stellmach 2010:} The dynamo process is questioned to play a role at larger Ra and smaller Ek!
+ \item The vortex columns are only in a statistical sense locked to the mantle
+\end{itemize}
+
 
 \section{Conclusion and Outlook}
 

@@ -1,5 +1,9 @@
-set terminal pdf
+set terminal pdf enhanced font 'Verdana,18'
 set output "els.pdf"
-set title "Elsasser number" font ",20"
-set key left
-plot [-0.05:1.05] "data_q0" u 1:4 w lp lc 1, "data_q1" u 1:4 w lp lc 3, "data_q2" u 1:4 w lp lc 2, "data_q4" u 1:4 w lp lc 7, 
+set key bottom right
+set key font ",15"
+set key box linestyle 1 lc 7
+set ylabel 'Elsasser number  {/Symbol L}'
+set xlabel 'Fraction of thermal forcing {/Symbol d}*'
+set pointsize 0.8
+plot [-0.05:1.05] "data_q4" u 1:4 lc 7 lw 5  pt 6 t "q* = 4", "data_q2" u 1:4 lc 8 lw 5 pt 3 t "q* = 2", "data_q1" u 1:4 lc 3 pt 2 lw 5 t "q* = 1", "data_q0" u 1:4 lc 18 lw 5 pt 1 t "q* = 0"

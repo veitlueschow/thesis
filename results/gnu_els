@@ -2,4 +2,4 @@ set terminal pdf
 set output "els.pdf"
 set title "Elsasser number" font ",20"
 set key left
-plot [-0.05:1.05] "data_q0" u 1:4 w lp lc 1, "data_q0" u 1:4:6 w yerrorbars lc 1 notitle, "data_q1" u 1:4 w lp lc 3, "data_q1" u 1:4:6 w yerrorbars lc 3 notitle, "data_q2" u 1:4 w lp lc 2, "data_q2" u 1:4:6 w yerrorbars lc 2 notitle, "data_q4" u 1:4 w lp lc 7, "data_q4" u 1:4:6 w yerrorbars lc 7 notitle
+plot [-0.05:1.05] "data_q0" u 1:4 lc 1, "data_q0" u 1:4:6 w yerrorbars lc 1 notitle, "data_q1" u 1:4 lc 3, "data_q1" u 1:4:6 w yerrorbars lc 3 notitle, "data_q2" u 1:4 lc 2, "data_q2" u 1:4:6 w yerrorbars lc 2 notitle, "data_q4" u 1:4 lc 7, "data_q4" u 1:4:6 w yerrorbars lc 7 notitle

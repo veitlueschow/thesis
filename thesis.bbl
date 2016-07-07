@@ -92,6 +92,13 @@ Dormy, E., Soward, A., Jones, C., Jault, D., and Cardin, P. (2004).
 \newblock The onset of thermal convection in rotating spherical shells.
 \newblock {\em Journal of Fluid Mechanics}, 501:43--70.
 
+\bibitem[Gibbons et~al., 2007]{gibbons2007convection}
+Gibbons, S., Gubbins, D., and Zhang, K. (2007).
+\newblock Convection in rotating spherical fluid shells with inhomogeneous heat
+  flux at the outer boundary.
+\newblock {\em Geophysical and Astrophysical Fluid Dynamics},
+  101(5-6):347--370.
+
 \bibitem[Gibbons and Gubbins, 2000]{gibbons2000convection}
 Gibbons, S.~J. and Gubbins, D. (2000).
 \newblock Convection in the earth's core driven by lateral variations in the
@@ -115,6 +122,12 @@ Glatzmaier, G.~A. and Roberts, P.~H. (1995).
 \newblock A three-dimensional convective dynamo solution with rotating and
   finitely conducting inner core and mantle.
 \newblock {\em Physics of the Earth and Planetary Interiors}, 91(1):63--75.
+
+\bibitem[Hori et~al., 2012]{hori2012influence}
+Hori, K., Wicht, J., and Christensen, U. (2012).
+\newblock The influence of thermo-compositional boundary conditions on
+  convection and dynamos in a rotating spherical shell.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 196:32--48.
 
 \bibitem[Hori et~al., 2014]{hori2014ancient}
 Hori, K., Wicht, J., and Dietrich, W. (2014).
@@ -157,6 +170,11 @@ Kutzner, C. and Christensen, U. (2000).
 \newblock Effects of driving mechanisms in geodynamo models.
 \newblock {\em Geophysical research letters}, 27(1):29--32.
 
+\bibitem[Manglik et~al., 2010]{manglik2010dynamo}
+Manglik, A., Wicht, J., and Christensen, U.~R. (2010).
+\newblock A dynamo model with double diffusive convection for mercury's core.
+\newblock {\em Earth and Planetary Science Letters}, 289(3):619--628.
+
 \bibitem[Nakagawa and Tackley, 2008]{nakagawa2008lateral}
 Nakagawa, T. and Tackley, P.~J. (2008).
 \newblock Lateral variations in cmb heat flux and deep mantle seismic velocity
@@ -191,6 +209,18 @@ Rieutord, M. (2014).
 Roberts, P. (2007).
 \newblock Theory of the geodynamo.
 \newblock {\em Core Dynamics: Treatise on Geophysics}, pages 67--105.
+
+\bibitem[Sakuraba and Roberts, 2009]{sakuraba2009generation}
+Sakuraba, A. and Roberts, P.~H. (2009).
+\newblock Generation of a strong magnetic field using uniform heat flux at the
+  surface of the core.
+\newblock {\em Nature Geoscience}, 2(11):802--805.
+
+\bibitem[Takahashi, 2014]{takahashi2014double}
+Takahashi, F. (2014).
+\newblock Double diffusive convection in the earth's core and the morphology of
+  the geomagnetic field.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 226:83--87.
 
 \bibitem[Tian et~al., 2015]{tian2015magnetic}
 Tian, Z., Zuber, M.~T., and Stanley, S. (2015).
