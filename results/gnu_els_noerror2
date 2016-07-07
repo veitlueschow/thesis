@@ -1,0 +1,11 @@
+set terminal pdf enhanced font 'Verdana,18'
+set output "els.pdf"
+set key left
+set key font ",17"
+set key box linestyle 1 lc 7
+set ylabel 'Elsasser number  {/Symbol L}' offset 2,0,0
+set xlabel 'Fraction of thermal forcing {/Symbol d}*' offset 0,0.8,0
+set pointsize 0.8
+set ytics offset 0.6,0,0
+set xtics offset 0,0.4,0
+plot [-0.05:1.05] "data_q2" u 1:4 lc 7 lw 5 pt 3 t "q* = 2", "data_q0" u 1:4 lc 1 lw 5 pt 1 t "uniform"

@@ -28,7 +28,8 @@
 \contentsline {subsection}{\numberline {5.6}The effect of the flux pattern on the temperature field}{30}
 \contentsline {section}{\numberline {6}Thermo-chemical dynamo action}{32}
 \contentsline {subsection}{\numberline {6.1}Mantle-locked magnetic flux patches}{32}
-\contentsline {subsubsection}{\numberline {6.1.1}Showcase: $\textrm {Ra}_\textrm {total} \bm {= 4.4 \times 10^6}$, $\bm {\delta ^*} = \bm {0.12}$}{33}
-\contentsline {subsubsection}{\numberline {6.1.2}Dependence on $\bm {\delta ^*}$}{35}
-\contentsline {section}{\numberline {7}Summary}{35}
-\contentsline {section}{\numberline {8}Conclusion and Outlook}{35}
+\contentsline {subsection}{\numberline {6.2}The patch generation mechanism: A showcase}{33}
+\contentsline {subsection}{\numberline {6.3}Changing the driving mechanism}{34}
+\contentsline {subsubsection}{\numberline {6.3.1}From Derichlet to Neumann conditions}{35}
+\contentsline {section}{\numberline {7}Summary and Discussion}{36}
+\contentsline {section}{\numberline {8}Conclusion and Outlook}{37}

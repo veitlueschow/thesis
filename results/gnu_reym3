@@ -1,11 +1,14 @@
 set terminal pdf enhanced font 'Verdana,18'
 set output "reym.pdf"
 set key left
-set key font ",15"
+set key font ",17"
 set key box linestyle 1 lc 7
 set ylabel 'Magnetic Reynolds Re_m'
 set xlabel 'Fraction of thermal forcing {/Symbol d}*'
 set pointsize 0.8
 set ytics (150, 200, 250, 300)
 set yrange [125:340]
-plot [-0.05:1.05] "data_q4" u 1:3 lc 7 lw 5  pt 6 t "q* = 4", "data_q2" u 1:3 lc 8 lw 5 pt 3 t "q* = 2", "data_q1" u 1:3 lc 3 pt 2 lw 5 t "q* = 1", "data_q0" u 1:3 lc 18 lw 5 pt 1 t "q* = 0"
+set y2range [0.6:1.2]
+set y2label "relative tor"
+set y2tics ( 0.5, 0.6, 0.7, 0.8)
+plot [-0.05:1.05] "data_q2" u 1:3 lc 7 lw 5 pt 3 t "q* = 2", "data_q0" u 1:3 lc 1 lw 5 pt 1 t "q* = 0", "data_q2" u 1:9 axes x1y2

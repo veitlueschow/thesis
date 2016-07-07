@@ -1,0 +1,12 @@
+set terminal pdf enhanced font 'Verdana,17'
+set output "relTor.pdf"
+set key bottom right
+set key font ",17"
+set key box linestyle 1 lc 7
+set ylabel 'Relative toroidal kin. energy' offset 2.4,0,0
+set xlabel 'Fraction of thermal forcing {/Symbol d}*' offset 0,0.8,0
+set pointsize 0.8
+set yrange [0.66:0.82]
+set ytics (0.7, 0.75, 0.8) offset 0,0.4,0 offset 0.6,0,0
+set xtics offset 0,0.4,0
+plot [-0.05:1.05] "data_q2" u 1:9 lc 7 lw 5 pt 3 t "q* = 2", "data_q0" u 1:9 lc 1 lw 5 pt 1 t "uniform"
