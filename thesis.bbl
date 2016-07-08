@@ -43,6 +43,13 @@ Busse, F.~H. (2002).
 \newblock Convective flows in rapidly rotating spheres and their dynamo action.
 \newblock {\em Physics of Fluids (1994-present)}, 14(4):1301--1314.
 
+\bibitem[Busse and Simitev, 2006]{busse2006parameter}
+Busse, F.~H. and Simitev, R.~D. (2006).
+\newblock Parameter dependences of convection-driven dynamos in rotating
+  spherical fluid shells.
+\newblock {\em Geophysical and Astrophysical Fluid Dynamics},
+  100(4-5):341--361.
+
 \bibitem[Chandrasekhar, 1961]{chandrasekhar1970hydrodynamic}
 Chandrasekhar, S. (1961).
 \newblock {\em Hydrodynamic and hydromagnetic stability}, volume 196.
@@ -215,6 +222,12 @@ Sakuraba, A. and Roberts, P.~H. (2009).
 \newblock Generation of a strong magnetic field using uniform heat flux at the
   surface of the core.
 \newblock {\em Nature Geoscience}, 2(11):802--805.
+
+\bibitem[Simitev and Busse, 2005]{simitev2005prandtl}
+Simitev, R. and Busse, F. (2005).
+\newblock Prandtl-number dependence of convection-driven dynamos in rotating
+  spherical fluid shells.
+\newblock {\em Journal of Fluid Mechanics}, 532:365--388.
 
 \bibitem[Takahashi, 2014]{takahashi2014double}
 Takahashi, F. (2014).
