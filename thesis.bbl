@@ -142,6 +142,12 @@ Hori, K., Wicht, J., and Dietrich, W. (2014).
   boundary heat flows.
 \newblock {\em Planetary and Space Science}, 98:30--40.
 
+\bibitem[Ishihara and Kida, 2002]{ishihara2002dynamo}
+Ishihara, N. and Kida, S. (2002).
+\newblock Dynamo mechanism in a rotating spherical shell: competition between
+  magnetic field and convection vortices.
+\newblock {\em Journal of Fluid Mechanics}, 465:1--32.
+
 \bibitem[Jones, 2007]{jones2007thermal}
 Jones, C. (2007).
 \newblock Thermal and compositional convection in the outer core.
@@ -217,6 +223,12 @@ Roberts, P. (2007).
 \newblock Theory of the geodynamo.
 \newblock {\em Core Dynamics: Treatise on Geophysics}, pages 67--105.
 
+\bibitem[Sakuraba and Kono, 2000]{sakuraba2000effect}
+Sakuraba, A. and Kono, M. (2000).
+\newblock Effect of a uniform magnetic field on nonlinear magnetocenvection in
+  a rotating fluid spherical shell.
+\newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 92(3-4):255--287.
+
 \bibitem[Sakuraba and Roberts, 2009]{sakuraba2009generation}
 Sakuraba, A. and Roberts, P.~H. (2009).
 \newblock Generation of a strong magnetic field using uniform heat flux at the
@@ -273,6 +285,11 @@ Zhang, K. and Gubbins, D. (1992).
 \newblock On convection in the earth's core driven by lateral temperature
   variations in the lower mantle.
 \newblock {\em Geophysical journal international}, 108(1):247--255.
+
+\bibitem[Zhang and Schubert, 2000]{zhang2000magnetohydrodynamics}
+Zhang, K. and Schubert, G. (2000).
+\newblock Magnetohydrodynamics in rapidly rotating spherical systems.
+\newblock {\em Annual review of fluid mechanics}, 32(1):409--443.
 
 \bibitem[Zhang and Busse, 1987]{zhang1987onset}
 Zhang, K.-K. and Busse, F. (1987).

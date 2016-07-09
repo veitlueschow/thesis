@@ -6,45 +6,45 @@ Database file #1: literatur.bib
 Warning--empty school in dormy1997modelisation
 Warning--empty publisher in Tilgner2007
 Warning--empty school in trumper2014thermo
-You've used 50 entries,
+You've used 53 entries,
             1935 wiz_defined-function locations,
-            767 strings with 11286 characters,
-and the built_in function-call counts, 19361 in all, are:
-= -- 1944
-> -- 683
-< -- 36
-+ -- 245
-- -- 220
-* -- 1674
-:= -- 3355
-add.period$ -- 150
-call.type$ -- 50
-change.case$ -- 351
-chr.to.int$ -- 49
-cite$ -- 53
-duplicate$ -- 711
-empty$ -- 1397
-format.name$ -- 300
-if$ -- 3738
+            785 strings with 11853 characters,
+and the built_in function-call counts, 20541 in all, are:
+= -- 2067
+> -- 722
+< -- 39
++ -- 257
+- -- 232
+* -- 1779
+:= -- 3556
+add.period$ -- 159
+call.type$ -- 53
+change.case$ -- 372
+chr.to.int$ -- 52
+cite$ -- 56
+duplicate$ -- 753
+empty$ -- 1483
+format.name$ -- 321
+if$ -- 3968
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 55
-newline$ -- 253
-num.names$ -- 150
-pop$ -- 271
+missing$ -- 58
+newline$ -- 268
+num.names$ -- 159
+pop$ -- 283
 preamble$ -- 1
-purify$ -- 360
+purify$ -- 381
 quote$ -- 0
-skip$ -- 546
+skip$ -- 579
 stack$ -- 0
-substring$ -- 1581
-swap$ -- 68
+substring$ -- 1683
+swap$ -- 71
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 286
+type$ -- 304
 warning$ -- 3
-while$ -- 181
+while$ -- 193
 width$ -- 0
-write$ -- 644
+write$ -- 683
 (There were 3 warnings)
