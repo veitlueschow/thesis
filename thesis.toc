@@ -32,7 +32,8 @@
 \contentsline {subsection}{\numberline {6.3}Changing the driving mechanism}{35}
 \contentsline {subsubsection}{\numberline {6.3.1}Intensification of the magnetic field}{37}
 \contentsline {subsubsection}{\numberline {6.3.2}Increase of the kinetic energy}{38}
-\contentsline {subsubsection}{\numberline {6.3.3}The relative contribution of the magnetic dipole component}{38}
 \contentsline {subsection}{\numberline {6.4}The heat flux pattern in the context of a changing driving mechanism}{38}
-\contentsline {section}{\numberline {7}Summary and Discussion}{41}
-\contentsline {section}{\numberline {8}Conclusion and Outlook}{41}
+\contentsline {subsection}{\numberline {6.5}Relative dipole contribution}{41}
+\contentsline {subsection}{\numberline {6.6}Robustness of the results}{41}
+\contentsline {section}{\numberline {7}Summary and Discussion}{42}
+\contentsline {section}{\numberline {8}Conclusion and Outlook}{42}

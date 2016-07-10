@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  10 JUL 2016 00:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  10 JUL 2016 03:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,11 +350,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./thesis.toc)
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./thesis.toc [2])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [2] [3] [4]
+ [3] [4]
 Underfull \hbox (badness 10000) in paragraph at lines 51--55
 
  []
@@ -571,83 +571,144 @@ Package pdftex.def Info: graphs/dynamo/dyn_d20_vectorfield_Br.png used on input
  line 969.
 (pdftex.def)             Requested size: 200.03734pt x 191.37572pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 983--983
+<graphs/dynamo/d20_divLat_Br2.png, id=138, 640.794pt x 481.3182pt>
+File: graphs/dynamo/d20_divLat_Br2.png Graphic file (type png)
+
+<use graphs/dynamo/d20_divLat_Br2.png>
+Package pdftex.def Info: graphs/dynamo/d20_divLat_Br2.png used on input line 97
+5.
+(pdftex.def)             Requested size: 210.52438pt x 158.13045pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 984--984
 
  []
 
 [35 <./sketches/Patches_cyclones.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 990--990
+Underfull \hbox (badness 10000) in paragraph at lines 991--991
 
  []
 
-[36 <./graphs/dynamo/dyn_d20_vectorfield_Br.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1015--1016
+<results/els-crop.pdf, id=142, 192.72pt x 200.75pt>
+File: results/els-crop.pdf Graphic file (type pdf)
+ <use results/els-crop.pdf>
+Package pdftex.def Info: results/els-crop.pdf used on input line 996.
+(pdftex.def)             Requested size: 131.00499pt x 136.46223pt.
+
+<results/reym-crop.pdf, id=143, 200.75pt x 200.75pt>
+File: results/reym-crop.pdf Graphic file (type pdf)
+
+<use results/reym-crop.pdf>
+Package pdftex.def Info: results/reym-crop.pdf used on input line 1002.
+(pdftex.def)             Requested size: 136.1128pt x 136.12222pt.
+
+<results/relTor-crop.pdf, id=144, 203.76125pt x 200.75pt>
+File: results/relTor-crop.pdf Graphic file (type pdf)
+
+<use results/relTor-crop.pdf>
+Package pdftex.def Info: results/relTor-crop.pdf used on input line 1008.
+(pdftex.def)             Requested size: 136.1128pt x 134.10663pt.
+ [36 <./graphs/dynamo/dyn_d20_vectorfield_Br.png> <./graphs/dynamo/d20_divLat_B
+r2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1017
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1018--1018
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1019
 
  []
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 1065--1066
+[37 <./results/els-crop.pdf> <./results/reym-crop.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./results/reym-crop.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+> <./results/relTor-crop.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./results/relTor-crop.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1065
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1069
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1068
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1069--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1072
 
  []
 
 [39]
-<graphs/dynamo/dyn_d100_vectorfield_Br.png, id=154, 493.0922pt x 486.31688pt>
+<graphs/dynamo/dyn_d100_vectorfield_Br.png, id=212, 493.0922pt x 486.31688pt>
 File: graphs/dynamo/dyn_d100_vectorfield_Br.png Graphic file (type png)
 
 <use graphs/dynamo/dyn_d100_vectorfield_Br.png>
 Package pdftex.def Info: graphs/dynamo/dyn_d100_vectorfield_Br.png used on inpu
-t line 1077.
-(pdftex.def)             Requested size: 204.20891pt x 201.40219pt.
- [40 <./graphs/dynamo/dyn_d100_vectorfield_Br.png>] [41] (./thesis.bbl [42] [43
-] [44]) [45] (./thesis.aux) ) 
+t line 1075.
+(pdftex.def)             Requested size: 200.03734pt x 197.29118pt.
+
+<graphs/dynamo/d100_divLat_Br_mean.png, id=213, 534.3162pt x 420.6114pt>
+File: graphs/dynamo/d100_divLat_Br_mean.png Graphic file (type png)
+
+<use graphs/dynamo/d100_divLat_Br_mean.png>
+Package pdftex.def Info: graphs/dynamo/d100_divLat_Br_mean.png used on input li
+ne 1082.
+(pdftex.def)             Requested size: 200.03734pt x 157.46574pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1089
+
+ []
+
+[40 <./graphs/dynamo/dyn_d100_vectorfield_Br.png> <./graphs/dynamo/d100_divLat_
+Br_mean.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1089--1090
+
+ []
+
+<results/rel-crop.pdf, id=218, 197.73875pt x 204.765pt>
+File: results/rel-crop.pdf Graphic file (type pdf)
+
+<use results/rel-crop.pdf>
+Package pdftex.def Info: results/rel-crop.pdf used on input line 1095.
+(pdftex.def)             Requested size: 171.85208pt x 177.95975pt.
+ [41 <./results/rel-crop.pdf>] [42] (./thesis.bbl
+[43] [44] [45]) [46] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5250 strings out of 493315
- 75900 string characters out of 6145894
- 158987 words of memory out of 5000000
- 8587 multiletter control sequences out of 15000+600000
+ 5283 strings out of 493315
+ 76771 string characters out of 6145894
+ 159010 words of memory out of 5000000
+ 8613 multiletter control sequences out of 15000+600000
  21241 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,15n,41p,1298b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/c
-mbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></u
-sr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf/font
-s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsf
-onts/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf/f
-onts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/public/
-amsfonts/cm/cmmib10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/c
-mmib7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></us
-r/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfont
-s/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
-share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
-are/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type
-1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/c
-m/cmti12.pfb>
-Output written on thesis.pdf (45 pages, 1440484 bytes).
+ 38i,15n,41p,1531b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/type1/public/amsfo
+nts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmbsy8
+.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/pub
+lic/amsfonts/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx
+8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share
+/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sha
+re/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf/fonts/type1
+/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/c
+mextra/cmmib7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cmextra/cmmib8.
+pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texm
+f/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fo
+nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/am
+sfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (46 pages, 1537072 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
+ 340 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

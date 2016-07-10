@@ -958,7 +958,7 @@ Infinite conductivity goes along with zero magnetic diffusion. Therefore, the re
  \end{minipage}
  \hfill
  \begin{minipage}{0.4\textwidth}
-  %\includegraphics[width=\textwidth]{sketches/Patches_cyclones.png}
+  \includegraphics[width=\textwidth]{sketches/Patches_cyclones.png}
   \caption{Sketch of a north polar view on the vorticity distribution and the location of the magnetic flux patches for case PFF12, shown in figure \ref{fig:dyn_d20_vectorfield_Br}. Red patches mark cyclones, blue patches anticyclones and the black crosses indicate the position of the flux patches. The gray dashed line represents the intersection of the TC with the CMB. }
   \label{fig:sketch_patches}
  \end{minipage}
@@ -972,7 +972,8 @@ Infinite conductivity goes along with zero magnetic diffusion. Therefore, the re
 \end{minipage}
 \hfill
  \begin{minipage}{0.49\textwidth}
- %\includegraphics[width = \textwidth]{graphs/dynamo/divLat_Br_d20.pdf}
+ \includegraphics[width = \textwidth]{graphs/dynamo/d20_divLat_Br2.png}
+ \vspace*{3mm}
   \caption{Azimuthal profile of the radial magnetic field $B_r$ (blue) and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, normalized by its maximum (red). A negative (positive) divergence characterizes a convergent (divergent) flow, visible around $45^\circ$ and $235^\circ$E ($120^\circ$ and $300^\circ$E), where $B_r$ is maximum (minimum). Profile taken at $r=1.485$ and $\theta = 25^\circ$, the black line in figure \ref{fig:surface_Br_d20}. }
   \label{fig:divLat_Br}
  \end{minipage}
@@ -992,21 +993,21 @@ Each of the points mentioned is expected to have an effect on the behavior of th
 \begin{minipage}{0.308\textwidth}
   \centering
    \caption*{(a) Elsasser $\Lambda$}
- %\includegraphics[width = 0.99\textwidth]{results/els-crop.pdf}
+ \includegraphics[width = 0.99\textwidth]{results/els-crop.pdf}
 \end{minipage}
 \hfill
 \begin{minipage}{0.32\textwidth}
   \centering
    \caption*{(b) Magnetic Reynolds Re$_m$}
- %\includegraphics[width = 0.99\textwidth]{results/reym-crop.pdf}
+ \includegraphics[width = 0.99\textwidth]{results/reym-crop.pdf}
 \end{minipage}
 \hfill
 \begin{minipage}{0.32\textwidth}
   \centering
    \caption*{(c) Toroidal kin. energy $f_\textrm{tor}$}
- %\includegraphics[width = 0.99 \textwidth]{results/relTor-crop.pdf}
+ \includegraphics[width = 0.99 \textwidth]{results/relTor-crop.pdf}
 \end{minipage}
- \caption{(a) Elsasser number, (b) magnetic Reynolds number Re$_m$ and (c) portion of toroidal kinetic energy $f_\textrm{tor}$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ for the uniform case UFF as well as for the case PFF with $q^*=2$. The data originates from the statistically stationary state.}
+ \caption{(a) Elsasser number, (b) magnetic Reynolds number Re$_m$ and (c) portion of toroidal kinetic energy $f_\textrm{tor}$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ for the uniform case UFF as well as for the case PFF with $q^*=2$. The data originates from the statistically stationary state. The errorbars in (a) indicate the standard deviation.}
    \label{fig:els_reym}
 \end{figure} \noindent
 Figure \ref{fig:els_reym} summarizes some of the results of the Parameter study on the dependence on $\delta^*$. The heat flux pattern case PFF (black lines) is presented as well as the case UFF (red lines), that includes uniform heat flux boundary conditions in the thermal component (see also table \ref{tab:data}). The following sections are each dedicated to one specific observation induced by the transition from $\delta^*\!=\!0$ to $\delta^*\!=\!1$.
@@ -1024,9 +1025,7 @@ The zonal flow originating in a thermal wind, mentioned at the beginning of the 
 Figure \ref{fig:els_reym}(c) that shows the relative portion of toroidal kinetic energy $f_\textrm{tor}$ assists both ideas: For UFF, the increase of the kinetic energy involves an increase of its relative toroidal part, a representative for the azimuthal component of the velocity field. Whether this increase originates in a thermal wind like zonal flow (connected to (A)) or in the DR (connected to (B)) is difficult to decide here. \\
 For the heat flux pattern case PFF, figures \ref{fig:els_reym}(a) and (c) suggests the assumption that a thermal wind mechanism plays the major role in the behavior of Re$_m$. Lateral temperature gradients at the CMB, induced by the flux pattern, cause a significant increase of the toroidal kinetic energy if they enter the system to a minor degree ($\delta^* = 12\%$). With increasing $\delta^*$, this lateral heterogeneity impedes large scale zonal flows to develop at the cost of the toroidal kinetic energy (see the kink in the black curve in figure \ref{fig:els_reym}(c)). This again reduces Re$_m$ compared to the uniform case for $\delta^*\!=\!69\%$ and $\delta^*\!=\!100\%$.
 
-\subsubsection{The relative contribution of the magnetic dipole component}
-
-\subsection{The role of the heat flux pattern}
+\subsection{The heat flux pattern in the context of a changing driving mechanism}
 \label{sec:effect_pattern}
 \begin{figure}[t]
 \begin{subfigure}[b]{0.49\textwidth}
@@ -1069,11 +1068,36 @@ The intensification of the magnetic field, measured in terms of the Elsasser num
 A similar observation was made by \citet{ishihara2002dynamo} who performed a self-sustained dynamo simulation. They describe a cyclic process in which an anticyclone grows, increasingly collects and intensifies magnetic flux by field line stretching and then breaks down due to the rising power of the outward directed Lorentz force before it grows again. \\ \par \noindent
 Figure \ref{fig:anticyclones_dominance} shows equatorial views of the axial vorticity (top row) and the axial component of the magnetic field (bottom row). Case PFF12 is subject to the left panel, whereas the right panel depicts case PFF100. The left column in each panel shows snapshots ($ \bm{\omega_z}$ and $\bm{B_z}$), the right panel long-term averaged quantities ($\bm{\bar \omega_z}$ and $\bm{\bar {B}_z$}). \\
 When comparing the red and the blue regions in the snapshots of vorticity in case PFF100, a dominance of anticyclonic (blue) structures ($\bm{\omega_z} < 0$) over cyclonic (red) structures is discernible. Two large regions with $\bm{\omega_z}<0$ lie at $90^\circ$ and $270^\circ$E close to the ICB. They are each accompanied by patches of high intensity magnetic flux, visible in the subfigure beneath. \\
-In contrast to that, the vorticity pattern for PFF12 reveals smaller scales and the regions of negative and positive vorticity are present in equal measure. Nevertheless, a correlation between $\bm{\omega_z}$ and $\bm{B_z}$ exists, which is in line with what was described in the beginning of this section. The fact that the length scales in the predominantly compositionally driven case are smaller agrees with the work of \citet{trumper2012numerical} and can be explained with the lower compositional diffusivity (higher Prandtl number $\textrm{Pr}_\textrm{\tiny C}$) that makes the smoothing of small scale structures less effective than in the thermally driven case. \\
+In contrast to that, the vorticity pattern for PFF12 reveals smaller scales and the regions of negative and positive vorticity are present in equal measure. Nevertheless, a correlation between $\bm{\omega_z}$ and $\bm{B_z}$ exists, which is in line with what was described in the beginning of this section. The fact that the length scales in the predominantly compositionally driven case are smaller agrees with the work of \citet{trumper2012numerical} and can be explained with the relatively low compositional diffusivity (high Prandtl number $\textrm{Pr}_\textrm{\tiny C}$) that makes the smoothing of small scale structures less effective than in the thermally driven case. \\
 The long-term averaged fields (right column in each panel) support the impression received from the snapshots. In case PFF12, positive and negative vorticity are nearly equally distributed but clearly show the influence of the $\mathcal{Y}_2^2$ heat flux pattern. In the purely thermally driven case PFF100, the impact of the heterogeneous boundary condition is only visible close to the CMB, where two bands of positive vorticity got their maximum $\sim 30^\circ$ west of the longitude of maximum CMB heat flux. The averaged axial magnetic fields ($\bm{\bar {B}_z}$) reflect what could be seen in the vorticity distribution. In case PFF12, anticyclones intensify magnetic flux, whereas cyclones expel and therefore weaken the field. PFF100 provides, in line with the vorticity field, a nearly uniform distribution of  $\bm{\bar{B}_z}$. \\ \par \noindent
-The previously described observations from figure \ref{fig:anticyclones_dominance} are assumed to have their reason in the magnetic field strength, measured by the Elsasser number $\Lambda$. As it increases with increasing $\delta^*$ (see figure \ref{fig:els_reym}(a)), it promotes anticyclonic vortices in the equatorial plain and thereby suppresses cyclonic ones. This process agrees well with what \citet{sakuraba2000effect} and \citet{ishihara2002dynamo} report for their models. The dominance of negative vorticity close to the ICB in the equatorial plain has implications for the flow field and thereby for the magnetic field near the CMB. 
+\begin{figure}[t]
+ \begin{minipage}{0.48\textwidth}
+  \includegraphics[width = 0.97\textwidth]{graphs/dynamo/dyn_d100_vectorfield_Br.png}
+  \caption{Same as figure \ref{fig:dyn_d20_vectorfield_Br} but for case PFF100.}
+  \label{fig:d100_vectorfield_Br}
+ \end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+ \vspace{8mm}
+\includegraphics[width = 0.97\textwidth]{graphs/dynamo/d100_divLat_Br_mean.png}
+ \vspace{7mm}
+\caption{Same as figure \ref{fig:divLat_Br} but for case PFF100.}
+% \caption{Same as figure \ref{fig:divLat_Br} but for case PFF100. Here, instead of plotting $B_r$ and $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$ for one fixed latitude, the data is averaged over the surface region that contains the magnetic flux patch, i.e. from $\vartheta = 17^\circ$ to $\vartheta = 35^\circ$.}
+\label{fig:d100_divLat_Br_mean}
+\end{minipage}
+\end{figure}
+The previously described observations from figure \ref{fig:anticyclones_dominance} are assumed to have their reason in the magnetic field strength, measured by the Elsasser number $\Lambda$. As it increases with increasing $\delta^*$ (see figure \ref{fig:els_reym}(a)), it promotes anticyclonic vortices in the equatorial plain and thereby suppresses cyclonic ones. This process agrees well with what \citet{sakuraba2000effect} and \citet{ishihara2002dynamo} report for their models. The dominance of negative vorticity close to the ICB in the equatorial plain has implications for the flow field and thereby for the magnetic field near the CMB. \\ \par \noindent
+Figures \ref{fig:d100_vectorfield_Br} and \ref{fig:d100_divLat_Br_mean} refer to case PFF100 and correspond to figures \ref{fig:dyn_d20_vectorfield_Br} and \ref{fig:divLat_Br}  from section \ref{sec:dyn_d020}, where the flux patch generation mechanism was discussed exemplary for case PFF12. The dominance of the negative vorticity in the equatorial plain in case PFF100 matches the significant enlargement of the anticyclonic vortex visible in the surface flow field around $315^\circ$ (compare figure \ref{fig:d100_vectorfield_Br} and \ref{fig:dyn_d20_vectorfield_Br}). In return, the surface cyclone with its center at 230$^\circ$ shrinks and becomes weaker. This implicates an uneven distribution of the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, shown in figure \ref{fig:d100_divLat_Br_mean} (red line). The horizontal divergence (connected to anticyclones at the CMB) is significantly stronger than the convergence (negative divergence, connected to cyclones at the CMB). The magnetic field geometry at the CMB in case PFF100 is thus evoked rather by the \textit{expulsion} of magnetic flux than by the \textit{collection} of magnetic field lines. The divergent flow on top of the anticyclones pushes the field towards the regions in between, where stronger cyclones were located in case PFF12. Hence, flux patches are located on top of the cyclones like before, although these play only a minor role in their formation.\\ \par \noindent
 
+\subsection{Relative dipole contribution}
+\begin{figure}[t]
+ \centering
+ \includegraphics[width = 0.4\textwidth]{results/rel-crop.pdf}
+ \caption{bla}
+ \label{fig:reldip_relamp}
+\end{figure}
 
+\subsection{Robustness of the results}
 
 \newpage
 \section{Summary and Discussion}
