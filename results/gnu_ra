@@ -1,0 +1,13 @@
+set terminal pdf enhanced font 'Verdana,17'
+set output "ra_ek4.pdf"
+set size square 1,1
+set key top right
+set key font ",13"
+set key width -9.5
+set key box linestyle 1 lc 7
+set pointsize 0.8
+set ytics (0.45, 0.55, 0.65) offset 0.6,0,0
+set xtics (200, 400, 600, 800) offset 0,0.4,0
+set yrange [0.4:0.7]
+set xlabel 'Modified Rayleigh number Ra x Ek' offset 0,0.8,0
+plot [150:930] "ra_q2" u 1:3 axis x1y1 w lp lc 7 lw 5 pt 3 t "Relative patch amplitude", "ra_q2_2" u 1:3 axis x1y1 lc 1 lw 5 pt 3 t "PFF100"

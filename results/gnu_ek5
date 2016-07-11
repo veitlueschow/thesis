@@ -1,0 +1,16 @@
+set terminal pdf enhanced font 'Verdana,17'
+set output "ek5.pdf"
+set size square 1,1
+set key center right
+set key font ",13"
+set key width -6
+set key box linestyle 1 lc 7
+set pointsize 0.8
+set xlabel 'Fraction of thermal forcing {/Symbol d}*' offset 0,0.8,0
+set y2tics textcolor rgb "red"
+set ytics (10,20,30,40,50) offset 0.6,0,0
+set xtics (0, 0.25, 0.5, 0.75, 1) offset 0,0.4,0
+set y2range [0.19:0.51]
+set yrange [5:50]
+set y2tics (0.2, 0.3, 0.4, 0.5) offset -0.8,0,0 textcolor rgb "red"
+plot [-0.1:1.1] "ek5_q2" u 1:6 axis x1y1 w lp lc 7 lw 5 pt 3 t "Elsasser", "ek5_q2" u 1:7 axis x1y2 w lp lc 1 lw 5 pt 3 t "Relative dipole"

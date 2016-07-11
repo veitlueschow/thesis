@@ -9,4 +9,4 @@ set xlabel 'Fraction of thermal forcing {/Symbol d}*' offset 0,0.8,0
 set pointsize 0.8
 set ytics offset 0.6,0,0
 set xtics (0, 0.25, 0.5, 0.75, 1) offset 0,0.4,0
-plot [-0.05:1.05] "data_q2" u 1:11 axis x1y1 w lp lc 7 lw 5 pt 3 t "Dipole contribution", "data_q2" u 1:12 axis x1y1 w lp lc 1 lw 5 pt 3 t "Relative patch amplitude"
+plot [-0.05:1.05] "data_q2" u 1:11 axis x1y1 w lp lc 1 lw 5 pt 3 t "Relative dipole", "data_q2" u 1:12 axis x1y1 w lp lc 7 lw 5 pt 3 t "Relative patch amplitude"
