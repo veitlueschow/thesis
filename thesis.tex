@@ -50,11 +50,11 @@ We observe that fixed flux conditions promote larger flow scales and an increase
 
 Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied \citep{chandrasekhar1970hydrodynamic}. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for larger computers that allow to explore earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (REFS ???).\\
 A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions (BC) or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
-We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
-In the following all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short. The according references will be given in each section.\\
+We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
+In the following, all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short. The according references will be given in each section.\\
 \subsection{Frame of reference}
-The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
-The LOC is constantly rotating about the z-axis of a Cartesian system. The angular velocity $\Omega$ is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study, spherical coordinates are used. \\
+The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$ (see figure \ref{fig:FOC}(a)). It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
+The LOC is constantly rotating about the z-axis of a Cartesian system with an angular velocity $\Omega$ that is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study, spherical coordinates are used (see figure \ref{fig:FOC}(b) for the definition of the unit vectors).  \\
 \begin{figure}[H]
  \begin{minipage}{0.42\textwidth}
   \includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
@@ -66,6 +66,7 @@ The LOC is constantly rotating about the z-axis of a Cartesian system. The angul
   \caption*{(b)}
   \end{minipage}
   \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian z-axis. (b) This work uses spherical coordinates with unit vectors $ \bm{e_r}$, $\bm{e_\Phi}$ and $\bm{e_\vartheta}$ \citep{trumper2014thermo}.}
+  \label{fig:FOC}
 \end{figure}
 \subsection{Equation of continuity}
 \label{sec:continuity}
@@ -95,7 +96,7 @@ In an inertial, non rotating frame of reference, the change of momentum of a mat
     &= \int_{\mathcal{V}(t)} \left[ u_j\left( \frac{\partial \rho}{\partial t} + \rho \bm \nabla \cdot \bm u + \bm u \cdot \bm \nabla \rho \right) + \rho \left( \frac{\partial u_j}{\partial t} + \bm u \cdot \nabla u_j \right) \right]d^3r \\
     &= \int_{\mathcal{V}(t)}  \rho \frac{D u_j}{D t} d^3r.
 \end{align*}}
-Change of momentum can happen through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm t$:
+It can be (HERVORGERUFEN) through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm t$:
 \begin{equation}
  \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds
  \label{eq:force_balance1}
@@ -110,7 +111,7 @@ where the subscripts $F$ and $R$ indicate the \textit{fixed} and the \textit{rot
  \bm a_F = \bm a_R + 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r)
  \label{eq:frame_of_reference_accelerations}
 \end{equation}
-for accelerations $\bm a$. $2\bm \Omega \times \bm u_R$ is the Coriolis force and $\bm \Omega \times (\bm \Omega \times \bm r)$ the centripetal force. \\
+for an acceleration $\bm a$. $2\bm \Omega \times \bm u_R$ is the Coriolis force and $\bm \Omega \times (\bm \Omega \times \bm r)$ the centripetal force. \\
 With the help of \eqref{eq:frame_of_reference_accelerations}, $\frac{D \bm u}{D t}$ can be transferred from the inertial frame to the frame of reference:
 \begin{equation}
  \frac{D \bm u_F}{D t} = \frac{D \bm u_R}{D t} + 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r)
@@ -122,28 +123,27 @@ From now on, the subscripts $F$ and $R$ will be cut and all quantities will be m
   - \int_{\mathcal{V}} \rho \left( 2\bm \Omega \times \bm u + \bm \Omega \times (\bm \Omega \times \bm r) \right) d^3r.
   \label{eq:force_balance2}
 \end{align}
-Another pseudo force that generally appears in rotating systems, but that is neglected here, is the \textit{Poincar\'{e} force}. Precession driven flows are the most prominent example from geophysics where it plays a dominant role \citep{Tilgner2007}. \\
-The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
+Another pseudo force that generally appears in rotating systems, but that is neglected here, is the \textit{Poincar\'{e} force}. In a geophysical context, \textit{Precession driven flows} are the most prominent example where it plays a dominant role \citep{Tilgner2007}. \\ \par \noindent
+The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the surface normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
 \begin{equation}
  \oint_{\partial \mathcal{V}} \bm t ds = \int_{\mathcal{V}} \bm \nabla \cdot \underline{\tau} d^3r,
 \end{equation}
-where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq approximation (see section \ref{sec:boussinesq}). This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\
+where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq approximation (see section \ref{sec:boussinesq}). This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\ \par \noindent
 The body forces $\bm f$ are the \textit{buoyancy force} $\bm f_g =  \bm g \rho$ and the \textit{Lorentz force} $\bm f_l = \bm j \times \bm B$. The latter will be discussed in section \ref{sec:lorentz}.\\
-\par
-
-In the following, the gravitational field $\bm g$ will be discussed in more detail.As mentioned before, the system underlies an asymmetric heat flux at the CMB. This results in an asymmetric temperature field for which the penetration depth of the temperature perturbation to a spherical symmetric solution depends on the amplitude of the heat flux heterogeneity. Following the linear equation of state from the Boussinesq approximation (see section \ref{sec:boussinesq}), this results in a density variation proportional to the temperature variation: $\delta {\rho} \sim \delta {T}$.
+\par \noindent
+In the following, the gravitational field $\bm g$ will be discussed in more detail. As mentioned before, the system underlies an asymmetric heat flux at the CMB. This results in an asymmetric temperature field for which the penetration depth of the temperature perturbation to a spherical symmetric solution depends on the amplitude of the heat flux heterogeneity. Following the linear equation of state from the Boussinesq approximation (see section \ref{sec:boussinesq}), this results in a density variation proportional to the temperature variation: $\delta {\rho} \sim \delta {T}$. Figure \ref{fig:density_var} shows a sketch of the density variation along the equator at the CMB, evoked by the boundary induced lateral temperature variation.
 \begin{figure}[H]
  \centering
  \includegraphics[scale = 0.24]{sketches/density_var.pdf} 
  \caption{Sketch of the density along the equator, near the CMB. The deviation (black) from the average density (red) results from the asymmetric heat flux at the CMB which has a asymmetric temperature field as an consequence. }
  \label{fig:density_var}
-\end{figure}
-The total density can be split into one spherical symmetric part $\mathring{\rho}(r)$ that only depends on the radial level $r$ and the density variation due to the heat flux pattern $\delta \mathring{\rho}(r,\vartheta,\phi)$:
+\end{figure} \noindent
+The density field $\rho$ can be split into one spherical symmetric part $\mathring{\rho}(r)$, that only depends on the radial level $r$ and the density variation due to the heat flux pattern $\delta \mathring{\rho}(r,\vartheta,\phi)$:
 \begin{equation}
  \label{eq:density_split}
  \rho(r,\vartheta,\phi) = \mathring{\rho}(r) + \delta \mathring{\rho}(r,\vartheta,\phi).
 \end{equation}
-In case of a heat flux pattern proportional to the spherical harmonic $\mathcal{Y}_2^2$, the dependence of $\delta \mathring{\rho}$ on $\phi$ is $\pi$-periodic (see Figure \ref{fig:density_var}) so that it can be expressed by the product $\delta \mathring{\rho}(r,\vartheta,\phi) = \mathcal{C}(r,\vartheta) \cdot cos(2\phi)$. $\mathcal{C}$ is only a function of $r$ and $\vartheta$. \\
+In case of a heat flux pattern proportional to the spherical harmonic $\mathcal{Y}_2^2$, the dependence of $\delta \mathring{\rho}$ on $\phi$ is $\pi$-periodic (see Figure \ref{fig:density_var}). Thus, it can be expressed by the product $\delta \mathring{\rho}(r,\vartheta,\phi) = \mathcal{C}(r,\vartheta) \cdot cos(2\phi)$, where $\mathcal{C}$ is only a function of $r$ and $\vartheta$. \\ \par \noindent
 \textit{Gauss's} gravity law \citep{blakely1996potential} states
 \begin{equation}
  \label{eq:gauss}
@@ -168,11 +168,11 @@ Because the integration of $\delta \mathring {\rho}(r',\vartheta,\phi)$ over $\p
  g(\bm r) = -\frac{4 \pi G}{r^2}\int_0^r \mathring{\rho}(r')r'^2 \, dr
 \end{equation}
 and it is worth noticing that $\bm g$ has the same form as in the spherical symmetric case \citep{blakely1996potential}.\\
-The buoyancy force term $\bm g \rho$ will be further discussed in section \ref{sec:boussinesq}.
+The buoyancy force term $\bm g \rho$ will be further discussed in section \ref{sec:boussinesq}. (GENAUER ERKLÄREN, WESHALB DAS WICHTIG IST)
 
 \subsection{Maxwell equations, Lorentz force and induction equation}
 \label{sec:lorentz}
-The liquid outer core consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and influence the flow field. The induction equation is a transport equation for a magnetic fields $\bm B$ 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
+The liquid outer core consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and affect the flow field. The induction equation is a transport equation for a magnetic field $\bm B$ that is 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
 In the scope of core convection, a reduced form of the Maxwell equations (Pre-Maxwell equations) suffices \citep{davidson2001introduction}: 
 \begin{subequations} \label{eq:maxwell}
 \begin{align}
@@ -238,8 +238,8 @@ Starting from an adiabatic reference state, density, pressure, temperature and c
  \rho = \bar \rho(r) + \rho', \quad p = \bar p(r) + p' 
 \end{align}
 Further on, it is assumed that the typical length scale of the system (here: the shell thickness $d$) is small compared to the scale heights in the reference state. Perturbations to that state shall be small compared to the adiabat. As a result, the reference state becomes independent of position.\\ 
-Whether the assumption of a negligible small superadiabaticity is valid in the context of core convection is still debated \citep{anufriev2005boussinesq}. The alternative is to model either the fully compressible equations or to use the anelastic approximation that, in contrast to the Boussinesq model, allows density stratification. \citet{jones2007thermal} extensively discusses the implications of the choice of one of these approaches.\\
-From the Boussinesq approximation it follows for the system of equations that
+Whether the assumption of a negligible small superadiabaticity is valid in the context of core convection is still debated \citep{anufriev2005boussinesq}. The alternative is to model either the fully compressible equations or to use the anelastic approximation that, in contrast to the Boussinesq model, allows density stratification. \citet{jones2007thermal} extensively discusses the implications of the choice of one of these approaches.\\ \par \noindent
+From the Boussinesq approximation it follows that
 \begin{itemize}
  \item[-] the equation of state takes a linear form: 
  \begin{equation}
@@ -254,16 +254,16 @@ From the Boussinesq approximation it follows for the system of equations that
 \item[-] the dissipative heating term can be neglected in the equation of momentum and internal energy (see section \ref{sec:momentum} and \ref{sec:internal_energy}).
 \item[-] the material properties such as $\alpha_\textrm{\tiny T}$, $\alpha_\textrm{\tiny C}$, $\mu_0$, $c_\textrm{\tiny P}$, $\eta$, $\kappa_\textrm{\tiny T}$ and $\kappa_\textrm{\tiny C}$ stay constant throughout the fluid.
 \end{itemize}
-An important advantage of the modified equations is that sound waves are \textit{filtered out}. This reduces the numerical costs without curtailing any relevant physical processes, since the short time scales of sound waves does not have to be resolved numerically.\\
+An important advantage of the modified equations is that sound waves are \textit{filtered out}. This reduces the numerical costs without curtailing any relevant physical processes, since the short time scale of sound waves does not have to be resolved numerically.\\ \par \noindent
 In the differential form, the equation of momentum \eqref{eq:force_balance2} now reads
 \begin{equation}
  \frac{D \bm u}{D t} = -2\bm \Omega \times \bm u  - \bm \nabla \left( \frac{\pi'}{\bar \rho} \right) + \nu \bm \nabla^2 \bm u + \frac{1}{\mu_0 \bar \rho}(\bm \nabla \times \bm B) \times \bm B + \frac{\bm g}{\bar \rho} \rho',
 \label{eq:force_balance3}
 \end{equation}
-where $\nu = \mu/\bar \rho$ is the new kinematic viscosity. The centrifugal potential is incorporated into the pressure fluctuation term $\pi' = p' - \frac{\bar \rho \Omega^2 s^2}{2}$, where $s$ is the distance from the z-axis in cylindrical coordinates. The hydrostatic pressure gradient of the reference state $\bm \nabla \bar p$ is balanced by the gravity force $\bm g \bar \rho$ so that only $\rho'$ appears equation \eqref{eq:force_balance3}.\\
+where $\nu = \mu/\bar \rho$ is the new kinematic viscosity. The centrifugal potential is incorporated into the pressure fluctuation term $\pi' = p' - \frac{\bar \rho \Omega^2 s^2}{2}$, where $s$ is the distance from the z-axis in cylindrical coordinates. The hydrostatic pressure gradient of the reference state $\bm \nabla \bar p$ is balanced by the gravity force $\bm g \bar \rho$ so that only $\rho'$ appears in equation \eqref{eq:force_balance3}.\\
 \subsection{Boundary conditions}
 \label{sec:bc}
-This section is dedicated to the boundary conditions.\\ 
+(INTRODUCTION)\\
 For the velocity field they are chosen to be \textit{no-slip}, e.g. $\bm u = 0$ on the ICB ($r = R_i$) and the CMB ($r =R_0$), in order to be comparable to other studies. Several authors state that these \textit{rigid} BC reflect what is realistic for the interaction between the inner and outer core and the outer core and the mantle, respectively \citep{glatzmaier1995three, christensen2006scaling, trumper2012numerical}. On the other hand, \citet{zhang1987onset} or \citet{kuang1997earth} argue that the Ekman layers which result from rigid boundaries are be negligibly thin in the Earth's core due to its extremely small viscosity. Because today's numerical models are forced to use a far to high viscosity, they over emphasize the effect of Ekman layers and therefore \textit{stress-free} BC are more appropriate. For a better comparison, this work follows the approach that was used by related studies \citep{olson2002time, aubert2008thermochemical, hori2014ancient}. \\
 According to \citet{trumper2012numerical}, Derichlet type BC are chosen for the chemical component. A compositional gradient, $\Delta C = C'_\textrm{\tiny ICB} - C'_\textrm{\tiny CMB}$, is imposed across the shell. In a more earth-like scenario, one would apply Neumann type conditions with fixed compositional influx at the ICB and zero outflux at the CMB \citep{braginsky1995equations}. This would further increase the complexity of the model and is therefore adjourned in this case. \\
 The thermal BC is of the Neumann type and will be discussed in more detail in the following section.\\

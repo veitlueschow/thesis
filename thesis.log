@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  12 JUL 2016 12:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.12.15)  5 AUG 2016 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(/usr/share/texmf/tex/latex/base/article.cls
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,24 +23,24 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
@@ -81,7 +81,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texmf/tex/latex/tools/bm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
@@ -89,14 +89,14 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
 )
-(/usr/share/texmf/tex/generic/babel/babel.sty
-Package: babel 2013/05/16 v3.9f The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
 
-(/usr/share/texmf/tex/generic/babel-english/english.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-(/usr/share/texmf/tex/generic/babel/babel.def
-File: babel.def 2013/05/16 v3.9f Babel common definitions
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
 \babel@savecnt=\count99
 \U@D=\dimen112
 )
@@ -104,41 +104,41 @@ File: babel.def 2013/05/16 v3.9f Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texmf/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texmf/tex/generic/oberdiek/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texmf/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count100
@@ -146,7 +146,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-(/usr/share/texmf/tex/latex/wrapfig/wrapfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen115
 \WF@size=\dimen116
 \c@WF@wrappedlines=\count101
@@ -154,7 +154,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \WF@everypar=\toks20
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texmf/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count102
 \float@exts=\toks21
@@ -162,17 +162,17 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box30
 )
-(/usr/share/texmf/tex/latex/natbib/natbib.sty
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip46
 \bibsep=\skip47
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count103
 )
-(/usr/share/texmf/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/share/texmf/tex/latex/caption/caption3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen117
@@ -187,30 +187,30 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 Package caption Info: float package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-(/usr/share/texmf/tex/latex/tools/enumerate.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks23
 )
-(/usr/share/texmf/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
 
-(/usr/share/texmf/tex/latex/base/ansinew.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/ansinew.def
 File: ansinew.def 2008/03/30 v1.1d Input encoding file
 ))
-(/usr/share/texmf/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texmf/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texmf/tex/generic/oberdiek/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texmf/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count105
@@ -226,7 +226,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen131
 \Gm@dimlist=\toks26
 )
-(/usr/share/texmf/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count108
 \c@subtable=\count109
@@ -245,8 +245,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
-
-(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
 \scratchdimen=\dimen132
@@ -259,11 +258,11 @@ LaTeX Font Info:    ... okay on input line 27.
 \MPnumerator=\count114
 \makeMPintoPDFobject=\count115
 \everyMPtoPDFconversion=\toks28
-) (/usr/share/texmf/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texmf/tex/generic/oberdiek/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -272,22 +271,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texmf/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texmf/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/share/texmf/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/share/texmf/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/share/texmf/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -299,7 +298,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/share/texmf/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -341,16 +340,16 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 28.
-(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
-(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./thesis.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./thesis.toc)
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
@@ -373,13 +372,23 @@ File: sketches/spherical_coord2.jpg Graphic file (type jpg)
 Package pdftex.def Info: sketches/spherical_coord2.jpg used on input line 65.
 (pdftex.def)             Requested size: 201.92981pt x 208.46419pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--69
+Underfull \hbox (badness 10000) in paragraph at lines 56--70
 
  []
 
 [5] [6 <./sketches/spherical_coord.jpg> <./sketches/spherical_coord2.jpg>]
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
@@ -387,35 +396,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--132
 File: sketches/density_var.pdf Graphic file (type pdf)
 
 <use sketches/density_var.pdf>
-Package pdftex.def Info: sketches/density_var.pdf used on input line 137.
+Package pdftex.def Info: sketches/density_var.pdf used on input line 138.
 (pdftex.def)             Requested size: 186.27972pt x 120.69336pt.
- [8 <./sketches/density_var.pdf>]
-Overfull \hbox (8.76973pt too wide) in paragraph at lines 164--164
+ [8]
+Overfull \hbox (8.76973pt too wide) in paragraph at lines 165--165
 [] 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 218--223
+[9 <./sketches/density_var.pdf>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 219--224
 
  []
 
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 262--264
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 323--327
+Underfull \hbox (badness 10000) in paragraph at lines 324--328
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+Underfull \hbox (badness 10000) in paragraph at lines 355--357
 
  []
 
@@ -424,14 +433,14 @@ File: sketches/equatorial_conductive.png Graphic file (type png)
 
 <use sketches/equatorial_conductive.png>
 Package pdftex.def Info: sketches/equatorial_conductive.png used on input line 
-360.
+361.
 (pdftex.def)             Requested size: 139.2016pt x 144.51598pt.
 
 <sketches/surface_conductive.png, id=70, 599.99156pt x 370.38374pt>
 File: sketches/surface_conductive.png Graphic file (type png)
 
 <use sketches/surface_conductive.png>
-Package pdftex.def Info: sketches/surface_conductive.png used on input line 365
+Package pdftex.def Info: sketches/surface_conductive.png used on input line 366
 .
 (pdftex.def)             Requested size: 239.73381pt x 147.99261pt.
 
@@ -439,71 +448,71 @@ Package pdftex.def Info: sketches/surface_conductive.png used on input line 365
 File: sketches/eq_flux-trim.png Graphic file (type png)
 
 <use sketches/eq_flux-trim.png>
-Package pdftex.def Info: sketches/eq_flux-trim.png used on input line 376.
+Package pdftex.def Info: sketches/eq_flux-trim.png used on input line 377.
 (pdftex.def)             Requested size: 300.74443pt x 112.60008pt.
 
 <sketches/pattern.jpg, id=72, 384.6872pt x 382.42876pt>
 File: sketches/pattern.jpg Graphic file (type jpg)
 
 <use sketches/pattern.jpg>
-Package pdftex.def Info: sketches/pattern.jpg used on input line 382.
+Package pdftex.def Info: sketches/pattern.jpg used on input line 383.
 (pdftex.def)             Requested size: 98.81625pt x 98.23286pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--386
+Underfull \hbox (badness 10000) in paragraph at lines 358--387
 
  []
 
 [15 <./sketches/equatorial_conductive.png> <./sketches/surface_conductive.png>]
 [16 <./sketches/eq_flux-trim.png> <./sketches/pattern.jpg>] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 457--463
+Underfull \hbox (badness 10000) in paragraph at lines 458--464
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 540--540
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
 
  []
 
 [21]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 572.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 573.
 
- (/usr/share/texmf/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 572.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 573.
  [22] [23]
-Overfull \hbox (0.27296pt too wide) in paragraph at lines 661--661
+Overfull \hbox (0.27296pt too wide) in paragraph at lines 662--662
 []\OT1/cmr/bx/n/17.28 Core con-vec-tion un-der the in-flu-ence of the CMB
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--663
+Underfull \hbox (badness 10000) in paragraph at lines 664--664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 665--670
+Underfull \hbox (badness 10000) in paragraph at lines 666--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 671--673
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 675--675
+Underfull \hbox (badness 10000) in paragraph at lines 676--676
 
  []
 
@@ -511,10 +520,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 675--675
 File: sketches/busse_1975_onset.png Graphic file (type png)
 
 <use sketches/busse_1975_onset.png>
-Package pdftex.def Info: sketches/busse_1975_onset.png used on input line 680.
+Package pdftex.def Info: sketches/busse_1975_onset.png used on input line 681.
 (pdftex.def)             Requested size: 207.51819pt x 235.26605pt.
 
-Overfull \hbox (9.88239pt too wide) in paragraph at lines 680--681
+Overfull \hbox (9.88239pt too wide) in paragraph at lines 681--682
  [][] 
  []
 
@@ -522,16 +531,16 @@ Overfull \hbox (9.88239pt too wide) in paragraph at lines 680--681
 File: graphs/iso_440_ex_rad-crop.pdf Graphic file (type pdf)
 
 <use graphs/iso_440_ex_rad-crop.pdf>
-Package pdftex.def Info: graphs/iso_440_ex_rad-crop.pdf used on input line 686.
+Package pdftex.def Info: graphs/iso_440_ex_rad-crop.pdf used on input line 687.
 
 (pdftex.def)             Requested size: 201.92981pt x 228.68001pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--691
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 
  []
 
 [25 <./sketches/busse_1975_onset.png> <./graphs/iso_440_ex_rad-crop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 695--697
+Underfull \hbox (badness 10000) in paragraph at lines 696--698
 
  []
 
@@ -540,10 +549,10 @@ File: sketches/secondary_circulation-crop.pdf Graphic file (type pdf)
 
 <use sketches/secondary_circulation-crop.pdf>
 Package pdftex.def Info: sketches/secondary_circulation-crop.pdf used on input 
-line 702.
+line 703.
 (pdftex.def)             Requested size: 210.52438pt x 328.76698pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--711
+Underfull \hbox (badness 10000) in paragraph at lines 700--712
 
  []
 
@@ -552,15 +561,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 699--711
 File: graphs/q2_200_ur_dTp-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_ur_dTp-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_ur_dTp-crop.pdf used on input line 772.
+Package pdftex.def Info: graphs/q2_200_ur_dTp-crop.pdf used on input line 773.
 (pdftex.def)             Requested size: 429.6368pt x 297.00125pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--775
+Underfull \hbox (badness 10000) in paragraph at lines 769--776
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 776--777
+Underfull \hbox (badness 10000) in paragraph at lines 777--778
 
  []
 
@@ -568,7 +577,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 776--777
 File: graphs/q2_200_d080_rad-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_d080_rad-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_d080_rad-crop.pdf used on input line 783
+Package pdftex.def Info: graphs/q2_200_d080_rad-crop.pdf used on input line 784
 .
 (pdftex.def)             Requested size: 137.48691pt x 159.21848pt.
 
@@ -576,28 +585,28 @@ Package pdftex.def Info: graphs/q2_200_d080_rad-crop.pdf used on input line 783
 File: graphs/q2_200_dTp-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_dTp-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_dTp-crop.pdf used on input line 788.
+Package pdftex.def Info: graphs/q2_200_dTp-crop.pdf used on input line 789.
 (pdftex.def)             Requested size: 137.48691pt x 158.67102pt.
 
 <graphs/q2_200_d080_az-crop.pdf, id=151, 330.23375pt x 382.42876pt>
 File: graphs/q2_200_d080_az-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_d080_az-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_d080_az-crop.pdf used on input line 793.
+Package pdftex.def Info: graphs/q2_200_d080_az-crop.pdf used on input line 794.
 
 (pdftex.def)             Requested size: 137.48691pt x 159.21848pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--798
+Underfull \hbox (badness 10000) in paragraph at lines 779--799
 
  []
 
 [30 <./graphs/q2_200_ur_dTp-crop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 799--799
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 801--803
+Underfull \hbox (badness 10000) in paragraph at lines 802--804
 
  []
 
@@ -608,10 +617,10 @@ File: graphs/q2_200_temp_vel-crop2.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_temp_vel-crop2.pdf>
 Package pdftex.def Info: graphs/q2_200_temp_vel-crop2.pdf used on input line 80
-6.
+7.
 (pdftex.def)             Requested size: 349.06325pt x 278.23883pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 811--811
 
  []
 
@@ -620,7 +629,7 @@ File: graphs/vorticity/q0_100_ex_vort-crop.pdf Graphic file (type pdf)
 
 <use graphs/vorticity/q0_100_ex_vort-crop.pdf>
 Package pdftex.def Info: graphs/vorticity/q0_100_ex_vort-crop.pdf used on input
- line 819.
+ line 820.
 (pdftex.def)             Requested size: 201.92981pt x 224.36366pt.
 
 <graphs/vorticity/q2_200_d080_vort-crop.pdf, id=208, 343.2825pt x 382.42876pt>
@@ -628,15 +637,15 @@ File: graphs/vorticity/q2_200_d080_vort-crop.pdf Graphic file (type pdf)
 
 <use graphs/vorticity/q2_200_d080_vort-crop.pdf>
 Package pdftex.def Info: graphs/vorticity/q2_200_d080_vort-crop.pdf used on inp
-ut line 825.
+ut line 826.
 (pdftex.def)             Requested size: 193.85396pt x 215.95593pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 816--829
+Underfull \hbox (badness 10000) in paragraph at lines 817--830
 
  []
 
 [32 <./graphs/q2_200_temp_vel-crop2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 830--830
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
 
  []
 
@@ -645,16 +654,16 @@ File: graphs/vorticity/q2_200_vort.png Graphic file (type png)
 
 <use graphs/vorticity/q2_200_vort.png>
 Package pdftex.def Info: graphs/vorticity/q2_200_vort.png used on input line 83
-4.
+5.
 (pdftex.def)             Requested size: 393.64297pt x 235.02646pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 831--837
+Underfull \hbox (badness 10000) in paragraph at lines 832--838
 
  []
 
 [33 <./graphs/vorticity/q0_100_ex_vort-crop.pdf> <./graphs/vorticity/q2_200_d08
 0_vort-crop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 838--840
+Underfull \hbox (badness 10000) in paragraph at lines 839--841
 
  []
 
@@ -664,23 +673,23 @@ File: graphs/q2_200_eq_temp_field2-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_eq_temp_field2-crop.pdf>
 Package pdftex.def Info: graphs/q2_200_eq_temp_field2-crop.pdf used on input li
-ne 848.
+ne 849.
 (pdftex.def)             Requested size: 141.78091pt x 164.19606pt.
 
 <graphs/q2_200_tammer-crop.pdf, id=243, 603.45451pt x 377.97209pt>
 File: graphs/q2_200_tammer-crop.pdf Graphic file (type pdf)
 
 <use graphs/q2_200_tammer-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_tammer-crop.pdf used on input line 853.
+Package pdftex.def Info: graphs/q2_200_tammer-crop.pdf used on input line 854.
 (pdftex.def)             Requested size: 270.67326pt x 169.53796pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 844--858
+Underfull \hbox (badness 10000) in paragraph at lines 845--859
 
  []
 
 [35] [36 <./graphs/q2_200_eq_temp_field2-crop.pdf> <./graphs/q2_200_tammer-crop
 .pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 865--866
+Underfull \hbox (badness 10000) in paragraph at lines 866--867
 
  []
 
@@ -689,10 +698,10 @@ File: graphs/dynamo/snapshots/G_trim-0.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots/G_trim-0.png>
 Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-0.png used on input lin
-e 870.
+e 871.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--871
+Underfull \hbox (badness 10000) in paragraph at lines 871--872
 
  []
 
@@ -701,7 +710,7 @@ File: graphs/dynamo/snapshots2/G_trim-1.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-1.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-1.png used on input li
-ne 872.
+ne 873.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
 <graphs/dynamo/snapshots/G_trim-1.png, id=267, 270.2898pt x 269.808pt>
@@ -709,10 +718,10 @@ File: graphs/dynamo/snapshots/G_trim-1.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots/G_trim-1.png>
 Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-1.png used on input lin
-e 876.
+e 877.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--877
+Underfull \hbox (badness 10000) in paragraph at lines 877--878
 
  []
 
@@ -721,7 +730,7 @@ File: graphs/dynamo/snapshots2/G_trim-2.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-2.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-2.png used on input li
-ne 878.
+ne 879.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
 <graphs/dynamo/snapshots/G-trim-27.png, id=269, 270.2898pt x 269.808pt>
@@ -729,10 +738,10 @@ File: graphs/dynamo/snapshots/G-trim-27.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots/G-trim-27.png>
 Package pdftex.def Info: graphs/dynamo/snapshots/G-trim-27.png used on input li
-ne 882.
+ne 883.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 882--883
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
 
  []
 
@@ -741,7 +750,7 @@ File: graphs/dynamo/snapshots2/G_trim-3.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-3.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-3.png used on input li
-ne 884.
+ne 885.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
 <graphs/dynamo/snapshots/G_trim-3.png, id=271, 270.2898pt x 269.808pt>
@@ -749,10 +758,10 @@ File: graphs/dynamo/snapshots/G_trim-3.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots/G_trim-3.png>
 Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-3.png used on input lin
-e 888.
+e 889.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 888--889
+Underfull \hbox (badness 10000) in paragraph at lines 889--890
 
  []
 
@@ -761,7 +770,7 @@ File: graphs/dynamo/snapshots2/G_trim-4.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-4.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-4.png used on input li
-ne 890.
+ne 891.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
 <graphs/dynamo/snapshots/G_trim-4.png, id=273, 270.2898pt x 269.808pt>
@@ -769,10 +778,10 @@ File: graphs/dynamo/snapshots/G_trim-4.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots/G_trim-4.png>
 Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-4.png used on input lin
-e 894.
+e 895.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--895
+Underfull \hbox (badness 10000) in paragraph at lines 895--896
 
  []
 
@@ -781,7 +790,7 @@ File: graphs/dynamo/snapshots2/G_trim-5.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-5.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-5.png used on input li
-ne 896.
+ne 897.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
 <graphs/dynamo/snapshots/G_trim-12.png, id=275, 270.2898pt x 269.808pt>
@@ -789,10 +798,10 @@ File: graphs/dynamo/snapshots/G_trim-12.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots/G_trim-12.png>
 Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-12.png used on input li
-ne 900.
+ne 901.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 900--901
+Underfull \hbox (badness 10000) in paragraph at lines 901--902
 
  []
 
@@ -801,7 +810,7 @@ File: graphs/dynamo/snapshots2/G_trim-8.png Graphic file (type png)
 
 <use graphs/dynamo/snapshots2/G_trim-8.png>
 Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-8.png used on input li
-ne 902.
+ne 903.
 (pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
 
 <graphs/dynamo/dyn_d100_mean_Br.png, id=277, 241.65282pt x 201.00093pt>
@@ -809,10 +818,10 @@ File: graphs/dynamo/dyn_d100_mean_Br.png Graphic file (type png)
 
 <use graphs/dynamo/dyn_d100_mean_Br.png>
 Package pdftex.def Info: graphs/dynamo/dyn_d100_mean_Br.png used on input line 
-906.
+907.
 (pdftex.def)             Requested size: 68.74345pt x 57.1785pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--907
+Underfull \hbox (badness 10000) in paragraph at lines 907--908
 
  []
 
@@ -821,20 +830,20 @@ File: graphs/dynamo/dyn_d100_mean_q0_Br.png Graphic file (type png)
 
 <use graphs/dynamo/dyn_d100_mean_q0_Br.png>
 Package pdftex.def Info: graphs/dynamo/dyn_d100_mean_q0_Br.png used on input li
-ne 908.
+ne 909.
 (pdftex.def)             Requested size: 68.74345pt x 57.1785pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 913.
+               Default added (so using `tbp') on input line 914.
 
 
-Overfull \hbox (5.04199pt too wide) in paragraph at lines 915--931
+Overfull \hbox (5.04199pt too wide) in paragraph at lines 916--932
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 936--937
+Underfull \hbox (badness 10000) in paragraph at lines 937--938
 
  []
 
@@ -851,20 +860,20 @@ File: graphs/dynamo/flux_patches_d20_2.png Graphic file (type png)
 
 <use graphs/dynamo/flux_patches_d20_2.png>
 Package pdftex.def Info: graphs/dynamo/flux_patches_d20_2.png used on input lin
-e 941.
+e 942.
 (pdftex.def)             Requested size: 300.74443pt x 133.58467pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--945
+Underfull \hbox (badness 10000) in paragraph at lines 939--946
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 946--946
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 946--947
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
 
  []
 
@@ -872,7 +881,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 946--947
 File: sketches/Patches_cyclones.png Graphic file (type png)
 
 <use sketches/Patches_cyclones.png>
-Package pdftex.def Info: sketches/Patches_cyclones.png used on input line 956.
+Package pdftex.def Info: sketches/Patches_cyclones.png used on input line 957.
 (pdftex.def)             Requested size: 171.85208pt x 168.16852pt.
 
 <graphs/dynamo/dyn_d20_vectorfield_Br.png, id=303, 504.38437pt x 482.55281pt>
@@ -880,7 +889,7 @@ File: graphs/dynamo/dyn_d20_vectorfield_Br.png Graphic file (type png)
 
 <use graphs/dynamo/dyn_d20_vectorfield_Br.png>
 Package pdftex.def Info: graphs/dynamo/dyn_d20_vectorfield_Br.png used on input
- line 964.
+ line 965.
 (pdftex.def)             Requested size: 200.03734pt x 191.37572pt.
 
 <graphs/dynamo/d20_divLat_Br2.png, id=304, 640.794pt x 481.3182pt>
@@ -888,41 +897,41 @@ File: graphs/dynamo/d20_divLat_Br2.png Graphic file (type png)
 
 <use graphs/dynamo/d20_divLat_Br2.png>
 Package pdftex.def Info: graphs/dynamo/d20_divLat_Br2.png used on input line 97
-0.
+1.
 (pdftex.def)             Requested size: 210.52438pt x 158.13045pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 979--979
+Underfull \hbox (badness 10000) in paragraph at lines 980--980
 
  []
 
 [39 <./graphs/dynamo/flux_patches_d20_2.png> <./sketches/Patches_cyclones.png>]
 [40 <./graphs/dynamo/dyn_d20_vectorfield_Br.png> <./graphs/dynamo/d20_divLat_Br
 2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 986--986
+Underfull \hbox (badness 10000) in paragraph at lines 987--987
 
  []
 
 <results/els-crop.pdf, id=312, 192.72pt x 200.75pt>
 File: results/els-crop.pdf Graphic file (type pdf)
  <use results/els-crop.pdf>
-Package pdftex.def Info: results/els-crop.pdf used on input line 991.
+Package pdftex.def Info: results/els-crop.pdf used on input line 992.
 (pdftex.def)             Requested size: 131.00499pt x 136.46223pt.
 
 <results/reym-crop.pdf, id=313, 200.75pt x 200.75pt>
 File: results/reym-crop.pdf Graphic file (type pdf)
 
 <use results/reym-crop.pdf>
-Package pdftex.def Info: results/reym-crop.pdf used on input line 997.
+Package pdftex.def Info: results/reym-crop.pdf used on input line 998.
 (pdftex.def)             Requested size: 136.1128pt x 136.12222pt.
 
 <results/relTor-crop.pdf, id=314, 203.76125pt x 200.75pt>
 File: results/relTor-crop.pdf Graphic file (type pdf)
 
 <use results/relTor-crop.pdf>
-Package pdftex.def Info: results/relTor-crop.pdf used on input line 1003.
+Package pdftex.def Info: results/relTor-crop.pdf used on input line 1004.
 (pdftex.def)             Requested size: 136.1128pt x 134.10663pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
 
  []
 
@@ -935,7 +944,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./results/reym-crop.pdf): PDF inclusion
 pdfTeX warning: /usr/bin/pdflatex (file ./results/relTor-crop.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 1014--1014
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
 
  []
 
@@ -945,10 +954,10 @@ pt>
 File: graphs/dynamo/driving_mechs/d020_vorticity.png Graphic file (type png)
  <use graphs/dynamo/driving_mechs/d020_vorticity.png>
 Package pdftex.def Info: graphs/dynamo/driving_mechs/d020_vorticity.png used on
- input line 1029.
+ input line 1030.
 (pdftex.def)             Requested size: 96.84262pt x 108.02193pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1031
 
  []
 
@@ -957,7 +966,7 @@ File: graphs/dynamo/driving_mechs/d020_Br.png Graphic file (type png)
 
 <use graphs/dynamo/driving_mechs/d020_Br.png>
 Package pdftex.def Info: graphs/dynamo/driving_mechs/d020_Br.png used on input 
-line 1031.
+line 1032.
 (pdftex.def)             Requested size: 96.84262pt x 110.482pt.
 
 <graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png, id=375, 374.14781pt x 4
@@ -966,10 +975,10 @@ File: graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png Graphic file (type
 png)
  <use graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png>
 Package pdftex.def Info: graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png 
-used on input line 1035.
+used on input line 1036.
 (pdftex.def)             Requested size: 96.84262pt x 111.06656pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1035--1036
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
 
  []
 
@@ -981,7 +990,7 @@ File: graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-trim.png Graphic file
 
 <use graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-trim.png>
 Package pdftex.def Info: graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-tr
-im.png used on input line 1037.
+im.png used on input line 1038.
 (pdftex.def)             Requested size: 96.84262pt x 111.06656pt.
 
 <graphs/dynamo/driving_mechs/d100_vorticity.png, id=377, 384.6872pt x 429.10312
@@ -989,10 +998,10 @@ pt>
 File: graphs/dynamo/driving_mechs/d100_vorticity.png Graphic file (type png)
  <use graphs/dynamo/driving_mechs/d100_vorticity.png>
 Package pdftex.def Info: graphs/dynamo/driving_mechs/d100_vorticity.png used on
- input line 1046.
+ input line 1047.
 (pdftex.def)             Requested size: 96.84262pt x 108.02193pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1048
 
  []
 
@@ -1001,7 +1010,7 @@ File: graphs/dynamo/driving_mechs/d100_Br.png Graphic file (type png)
 
 <use graphs/dynamo/driving_mechs/d100_Br.png>
 Package pdftex.def Info: graphs/dynamo/driving_mechs/d100_Br.png used on input 
-line 1048.
+line 1049.
 (pdftex.def)             Requested size: 96.84262pt x 110.482pt.
 
 <graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png, id=379, 374.14781pt x 
@@ -1010,10 +1019,10 @@ File: graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png Graphic file (type
  png)
  <use graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png>
 Package pdftex.def Info: graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png
- used on input line 1052.
+ used on input line 1053.
 (pdftex.def)             Requested size: 96.84262pt x 110.482pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1053
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
 
  []
 
@@ -1023,15 +1032,15 @@ t>
 File: graphs/dynamo/driving_mechs/Br_d100-trim.png Graphic file (type png)
  <use graphs/dynamo/driving_mechs/Br_d100-trim.png>
 Package pdftex.def Info: graphs/dynamo/driving_mechs/Br_d100-trim.png used on i
-nput line 1054.
+nput line 1055.
 (pdftex.def)             Requested size: 96.84262pt x 110.482pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1060
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1061
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1063
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1064
 
  []
 
@@ -1041,7 +1050,7 @@ _mechs/d020_Br.png> <./graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png> <
 o/driving_mechs/d100_vorticity.png> <./graphs/dynamo/driving_mechs/d100_Br.png>
  <./graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png> <./graphs/dynamo/dr
 iving_mechs/Br_d100-trim.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1068
 
  []
 
@@ -1051,7 +1060,7 @@ File: graphs/dynamo/dyn_d100_vectorfield_Br.png Graphic file (type png)
 
 <use graphs/dynamo/dyn_d100_vectorfield_Br.png>
 Package pdftex.def Info: graphs/dynamo/dyn_d100_vectorfield_Br.png used on inpu
-t line 1070.
+t line 1071.
 (pdftex.def)             Requested size: 200.03734pt x 197.29118pt.
 
 <graphs/dynamo/d100_divLat_Br_mean.png, id=389, 534.3162pt x 420.6114pt>
@@ -1059,15 +1068,15 @@ File: graphs/dynamo/d100_divLat_Br_mean.png Graphic file (type png)
 
 <use graphs/dynamo/d100_divLat_Br_mean.png>
 Package pdftex.def Info: graphs/dynamo/d100_divLat_Br_mean.png used on input li
-ne 1077.
+ne 1078.
 (pdftex.def)             Requested size: 200.03734pt x 157.46574pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1067--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1084--1085
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1086
 
  []
 
@@ -1076,21 +1085,21 @@ Br_mean.png>] <results/rel-crop.pdf, id=394, 197.73875pt x 204.765pt>
 File: results/rel-crop.pdf Graphic file (type pdf)
 
 <use results/rel-crop.pdf>
-Package pdftex.def Info: results/rel-crop.pdf used on input line 1095.
+Package pdftex.def Info: results/rel-crop.pdf used on input line 1096.
 (pdftex.def)             Requested size: 168.41429pt x 174.40099pt.
 
 <results/ra_ek4-crop.pdf, id=395, 212.795pt x 200.75pt>
 File: results/ra_ek4-crop.pdf Graphic file (type pdf)
 
 <use results/ra_ek4-crop.pdf>
-Package pdftex.def Info: results/ra_ek4-crop.pdf used on input line 1106.
+Package pdftex.def Info: results/ra_ek4-crop.pdf used on input line 1107.
 (pdftex.def)             Requested size: 172.63153pt x 162.87003pt.
 
 <results/ek5-crop.pdf, id=396, 215.80624pt x 204.765pt>
 File: results/ek5-crop.pdf Graphic file (type pdf)
 
 <use results/ek5-crop.pdf>
-Package pdftex.def Info: results/ek5-crop.pdf used on input line 1113.
+Package pdftex.def Info: results/ek5-crop.pdf used on input line 1114.
 (pdftex.def)             Requested size: 178.947pt x 169.79553pt.
  [46 <./results/rel-crop.pdf> <./results/ra_ek4-crop.pdf
 
@@ -1102,35 +1111,39 @@ pdfTeX warning: /usr/bin/pdflatex (file ./results/ek5-crop.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >] [47] (./thesis.bbl [48] [49] [50]) [51] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5513 strings out of 493315
- 84902 string characters out of 6145894
- 158042 words of memory out of 5000000
- 8795 multiletter control sequences out of 15000+600000
+ 5526 strings out of 493304
+ 86513 string characters out of 6139870
+ 158557 words of memory out of 5000000
+ 8815 multiletter control sequences out of 15000+600000
  21241 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,15n,41p,1531b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fo
-nts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf/fonts/type1/public/a
-msfonts/cmextra/cmbsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
-/texmf/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/p
-ublic/amsfonts/cm/cmbx8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
-bxti10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
-are/texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
-hare/texmf/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf/fonts/t
-ype1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf/fonts/type1/public/am
-sfonts/cmextra/cmmib8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/te
-xmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/publ
-ic/amsfonts/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.p
-fb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/
-amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf
-/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (51 pages, 25278435 bytes).
+</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (51 pages, 25278502 bytes).
 PDF statistics:
  546 PDF objects out of 1000 (max. 8388607)
  330 compressed objects within 4 object streams

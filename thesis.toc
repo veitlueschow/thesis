@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.1}Frame of reference}{6}
 \contentsline {subsection}{\numberline {2.2}Equation of continuity}{6}
 \contentsline {subsection}{\numberline {2.3}Equation of momentum}{7}
-\contentsline {subsection}{\numberline {2.4}Maxwell equations, Lorentz force and induction equation}{9}
+\contentsline {subsection}{\numberline {2.4}Maxwell equations, Lorentz force and induction equation}{10}
 \contentsline {subsection}{\numberline {2.5}Conservation of energy and the light component}{10}
 \contentsline {subsection}{\numberline {2.6}The Boussinesq approximation}{11}
 \contentsline {subsection}{\numberline {2.7}Boundary conditions}{12}
