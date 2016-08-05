@@ -30,6 +30,13 @@
 \tableofcontents
 \newpage
 
+\section{TO DO OVERALL}
+\begin{itemize}
+ \item chapter 5 and six verbinden! Besonders in 6 mehr Bezüge zu 5 herstellen.
+ \item reihenfolge der abbildungen
+\end{itemize}
+
+
 \section*{Abstract}
 
 Thermal coupling between convection in Earth's mantle and core was proposed to explain asymmetric features of the geomagnetic field during the history of the Earth. The coupling is caused by laterally varying heat transport from the core to the mantle, induced by lateral temperature gradients in the lower-most mantle. Clues for the temperature gradients were found by seismic tomography.\\
@@ -50,11 +57,11 @@ We observe that fixed flux conditions promote larger flow scales and an increase
 
 Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied \citep{chandrasekhar1970hydrodynamic}. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for larger computers that allow to explore earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (REFS ???).\\
 A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions (BC) or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
-We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
-In the following all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short. The according references will be given in each section.\\
+We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
+In the following, all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short. The according references will be given in each section.\\
 \subsection{Frame of reference}
-The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$. It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
-The LOC is constantly rotating about the z-axis of a Cartesian system. The angular velocity $\Omega$ is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study, spherical coordinates are used. \\
+The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$ (see figure \ref{fig:FOC}(a)). It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
+The LOC is constantly rotating about the z-axis of a Cartesian system with an angular velocity $\Omega$ that is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study, spherical coordinates are used (see figure \ref{fig:FOC}(b) for the definition of the unit vectors).  \\
 \begin{figure}[H]
  \begin{minipage}{0.42\textwidth}
   \includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
@@ -66,6 +73,7 @@ The LOC is constantly rotating about the z-axis of a Cartesian system. The angul
   \caption*{(b)}
   \end{minipage}
   \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian z-axis. (b) This work uses spherical coordinates with unit vectors $ \bm{e_r}$, $\bm{e_\Phi}$ and $\bm{e_\vartheta}$ \citep{trumper2014thermo}.}
+  \label{fig:FOC}
 \end{figure}
 \subsection{Equation of continuity}
 \label{sec:continuity}
@@ -95,7 +103,7 @@ In an inertial, non rotating frame of reference, the change of momentum of a mat
     &= \int_{\mathcal{V}(t)} \left[ u_j\left( \frac{\partial \rho}{\partial t} + \rho \bm \nabla \cdot \bm u + \bm u \cdot \bm \nabla \rho \right) + \rho \left( \frac{\partial u_j}{\partial t} + \bm u \cdot \nabla u_j \right) \right]d^3r \\
     &= \int_{\mathcal{V}(t)}  \rho \frac{D u_j}{D t} d^3r.
 \end{align*}}
-Change of momentum can happen through either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm t$:
+It can be induced by either \textit{volume forces} $\bm f$ or \textit{surface forces} $\bm t$:
 \begin{equation}
  \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds
  \label{eq:force_balance1}
@@ -110,7 +118,7 @@ where the subscripts $F$ and $R$ indicate the \textit{fixed} and the \textit{rot
  \bm a_F = \bm a_R + 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r)
  \label{eq:frame_of_reference_accelerations}
 \end{equation}
-for accelerations $\bm a$. $2\bm \Omega \times \bm u_R$ is the Coriolis force and $\bm \Omega \times (\bm \Omega \times \bm r)$ the centripetal force. \\
+for an acceleration $\bm a$. $2\bm \Omega \times \bm u_R$ is the Coriolis force and $\bm \Omega \times (\bm \Omega \times \bm r)$ the centripetal force. \\
 With the help of \eqref{eq:frame_of_reference_accelerations}, $\frac{D \bm u}{D t}$ can be transferred from the inertial frame to the frame of reference:
 \begin{equation}
  \frac{D \bm u_F}{D t} = \frac{D \bm u_R}{D t} + 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r)
@@ -122,28 +130,27 @@ From now on, the subscripts $F$ and $R$ will be cut and all quantities will be m
   - \int_{\mathcal{V}} \rho \left( 2\bm \Omega \times \bm u + \bm \Omega \times (\bm \Omega \times \bm r) \right) d^3r.
   \label{eq:force_balance2}
 \end{align}
-Another pseudo force that generally appears in rotating systems, but that is neglected here, is the \textit{Poincar\'{e} force}. Precession driven flows are the most prominent example from geophysics where it plays a dominant role \citep{Tilgner2007}. \\
-The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
+Another pseudo force that generally appears in rotating systems, but that is neglected here, is the \textit{Poincar\'{e} force}. In a geophysical context, \textit{precession driven flows} are the most prominent example where it plays a dominant role \citep{Tilgner2007}. \\ \par \noindent
+The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the surface normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
 \begin{equation}
  \oint_{\partial \mathcal{V}} \bm t ds = \int_{\mathcal{V}} \bm \nabla \cdot \underline{\tau} d^3r,
 \end{equation}
-where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq approximation (see section \ref{sec:boussinesq}). This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\
+where $\bm \nabla \cdot \underline{\tau} = -\bm \nabla p + \mu \bm \nabla^2 \bm u$ will be used as a reasonable simplification in the context of the Boussinesq approximation (see section \ref{sec:boussinesq}). This expression of $\bm \nabla \cdot \underline{\tau}$ is valid for Newtonian fluids and it is based on the assumption of a solenoidal velocity field ($\bm \nabla \cdot \bm u = 0$) and a homogeneous dynamic viscosity $\mu $ throughout the fluid. \\ \par \noindent
 The body forces $\bm f$ are the \textit{buoyancy force} $\bm f_g =  \bm g \rho$ and the \textit{Lorentz force} $\bm f_l = \bm j \times \bm B$. The latter will be discussed in section \ref{sec:lorentz}.\\
-\par
-
-In the following, the gravitational field $\bm g$ will be discussed in more detail.As mentioned before, the system underlies an asymmetric heat flux at the CMB. This results in an asymmetric temperature field for which the penetration depth of the temperature perturbation to a spherical symmetric solution depends on the amplitude of the heat flux heterogeneity. Following the linear equation of state from the Boussinesq approximation (see section \ref{sec:boussinesq}), this results in a density variation proportional to the temperature variation: $\delta {\rho} \sim \delta {T}$.
+\par \noindent
+In the following, the gravitational field $\bm g$ will be discussed in more detail. As mentioned before, the system underlies an asymmetric heat flux at the CMB. This results in an asymmetric temperature field for which the penetration depth of the temperature perturbation to a spherical symmetric solution depends on the amplitude of the heat flux heterogeneity. Following the linear equation of state from the Boussinesq approximation (see section \ref{sec:boussinesq}), this results in a density variation proportional to the temperature variation: $\delta {\rho} \sim \delta {T}$. Figure \ref{fig:density_var} shows a sketch of the density variation along the equator at the CMB, evoked by the boundary induced lateral temperature variation.
 \begin{figure}[H]
  \centering
  \includegraphics[scale = 0.24]{sketches/density_var.pdf} 
  \caption{Sketch of the density along the equator, near the CMB. The deviation (black) from the average density (red) results from the asymmetric heat flux at the CMB which has a asymmetric temperature field as an consequence. }
  \label{fig:density_var}
-\end{figure}
-The total density can be split into one spherical symmetric part $\mathring{\rho}(r)$ that only depends on the radial level $r$ and the density variation due to the heat flux pattern $\delta \mathring{\rho}(r,\vartheta,\phi)$:
+\end{figure} \noindent
+The density field $\rho$ can be split into one spherical symmetric part $\mathring{\rho}(r)$, that only depends on the radial level $r$ and the density variation due to the heat flux pattern $\delta \mathring{\rho}(r,\vartheta,\phi)$:
 \begin{equation}
  \label{eq:density_split}
  \rho(r,\vartheta,\phi) = \mathring{\rho}(r) + \delta \mathring{\rho}(r,\vartheta,\phi).
 \end{equation}
-In case of a heat flux pattern proportional to the spherical harmonic $\mathcal{Y}_2^2$, the dependence of $\delta \mathring{\rho}$ on $\phi$ is $\pi$-periodic (see Figure \ref{fig:density_var}) so that it can be expressed by the product $\delta \mathring{\rho}(r,\vartheta,\phi) = \mathcal{C}(r,\vartheta) \cdot cos(2\phi)$. $\mathcal{C}$ is only a function of $r$ and $\vartheta$. \\
+In case of a heat flux pattern proportional to the spherical harmonic $\mathcal{Y}_2^2$, the dependence of $\delta \mathring{\rho}$ on $\phi$ is $\pi$-periodic (see Figure \ref{fig:density_var}). Thus, it can be expressed by the product $\delta \mathring{\rho}(r,\vartheta,\phi) = \mathcal{C}(r,\vartheta) \cdot cos(2\phi)$, where $\mathcal{C}$ is only a function of $r$ and $\vartheta$. \\ \par \noindent
 \textit{Gauss's} gravity law \citep{blakely1996potential} states
 \begin{equation}
  \label{eq:gauss}
@@ -168,11 +175,11 @@ Because the integration of $\delta \mathring {\rho}(r',\vartheta,\phi)$ over $\p
  g(\bm r) = -\frac{4 \pi G}{r^2}\int_0^r \mathring{\rho}(r')r'^2 \, dr
 \end{equation}
 and it is worth noticing that $\bm g$ has the same form as in the spherical symmetric case \citep{blakely1996potential}.\\
-The buoyancy force term $\bm g \rho$ will be further discussed in section \ref{sec:boussinesq}.
+The buoyancy force term $\bm g \rho$ will be further discussed in section \ref{sec:boussinesq}. (GENAUER ERKLÄREN, WESHALB DAS WICHTIG IST)
 
 \subsection{Maxwell equations, Lorentz force and induction equation}
 \label{sec:lorentz}
-The liquid outer core consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and influence the flow field. The induction equation is a transport equation for a magnetic fields $\bm B$ 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
+The liquid outer core consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and affect the flow field. The induction equation is a transport equation for a magnetic field $\bm B$ that is 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
 In the scope of core convection, a reduced form of the Maxwell equations (Pre-Maxwell equations) suffices \citep{davidson2001introduction}: 
 \begin{subequations} \label{eq:maxwell}
 \begin{align}
@@ -238,8 +245,8 @@ Starting from an adiabatic reference state, density, pressure, temperature and c
  \rho = \bar \rho(r) + \rho', \quad p = \bar p(r) + p' 
 \end{align}
 Further on, it is assumed that the typical length scale of the system (here: the shell thickness $d$) is small compared to the scale heights in the reference state. Perturbations to that state shall be small compared to the adiabat. As a result, the reference state becomes independent of position.\\ 
-Whether the assumption of a negligible small superadiabaticity is valid in the context of core convection is still debated \citep{anufriev2005boussinesq}. The alternative is to model either the fully compressible equations or to use the anelastic approximation that, in contrast to the Boussinesq model, allows density stratification. \citet{jones2007thermal} extensively discusses the implications of the choice of one of these approaches.\\
-From the Boussinesq approximation it follows for the system of equations that
+Whether the assumption of a negligible small superadiabaticity is valid in the context of core convection is still debated \citep{anufriev2005boussinesq}. The alternative is to model either the fully compressible equations or to use the anelastic approximation that, in contrast to the Boussinesq model, allows density stratification. \citet{jones2007thermal} extensively discusses the implications of the choice of one of these approaches.\\ \par \noindent
+From the Boussinesq approximation it follows that
 \begin{itemize}
  \item[-] the equation of state takes a linear form: 
  \begin{equation}
@@ -254,16 +261,16 @@ From the Boussinesq approximation it follows for the system of equations that
 \item[-] the dissipative heating term can be neglected in the equation of momentum and internal energy (see section \ref{sec:momentum} and \ref{sec:internal_energy}).
 \item[-] the material properties such as $\alpha_\textrm{\tiny T}$, $\alpha_\textrm{\tiny C}$, $\mu_0$, $c_\textrm{\tiny P}$, $\eta$, $\kappa_\textrm{\tiny T}$ and $\kappa_\textrm{\tiny C}$ stay constant throughout the fluid.
 \end{itemize}
-An important advantage of the modified equations is that sound waves are \textit{filtered out}. This reduces the numerical costs without curtailing any relevant physical processes, since the short time scales of sound waves does not have to be resolved numerically.\\
+An important advantage of the modified equations is that sound waves are \textit{filtered out}. This reduces the numerical costs without curtailing any relevant physical processes, since the short time scale of sound waves does not have to be resolved numerically.\\ \par \noindent
 In the differential form, the equation of momentum \eqref{eq:force_balance2} now reads
 \begin{equation}
  \frac{D \bm u}{D t} = -2\bm \Omega \times \bm u  - \bm \nabla \left( \frac{\pi'}{\bar \rho} \right) + \nu \bm \nabla^2 \bm u + \frac{1}{\mu_0 \bar \rho}(\bm \nabla \times \bm B) \times \bm B + \frac{\bm g}{\bar \rho} \rho',
 \label{eq:force_balance3}
 \end{equation}
-where $\nu = \mu/\bar \rho$ is the new kinematic viscosity. The centrifugal potential is incorporated into the pressure fluctuation term $\pi' = p' - \frac{\bar \rho \Omega^2 s^2}{2}$, where $s$ is the distance from the z-axis in cylindrical coordinates. The hydrostatic pressure gradient of the reference state $\bm \nabla \bar p$ is balanced by the gravity force $\bm g \bar \rho$ so that only $\rho'$ appears equation \eqref{eq:force_balance3}.\\
+where $\nu = \mu/\bar \rho$ is the new kinematic viscosity. The centrifugal potential is incorporated into the pressure fluctuation term $\pi' = p' - \frac{\bar \rho \Omega^2 s^2}{2}$, where $s$ is the distance from the z-axis in cylindrical coordinates. The hydrostatic pressure gradient of the reference state $\bm \nabla \bar p$ is balanced by the gravity force $\bm g \bar \rho$ so that only $\rho'$ appears in equation \eqref{eq:force_balance3}.\\
 \subsection{Boundary conditions}
 \label{sec:bc}
-This section is dedicated to the boundary conditions.\\ 
+(INTRODUCTION)\\
 For the velocity field they are chosen to be \textit{no-slip}, e.g. $\bm u = 0$ on the ICB ($r = R_i$) and the CMB ($r =R_0$), in order to be comparable to other studies. Several authors state that these \textit{rigid} BC reflect what is realistic for the interaction between the inner and outer core and the outer core and the mantle, respectively \citep{glatzmaier1995three, christensen2006scaling, trumper2012numerical}. On the other hand, \citet{zhang1987onset} or \citet{kuang1997earth} argue that the Ekman layers which result from rigid boundaries are be negligibly thin in the Earth's core due to its extremely small viscosity. Because today's numerical models are forced to use a far to high viscosity, they over emphasize the effect of Ekman layers and therefore \textit{stress-free} BC are more appropriate. For a better comparison, this work follows the approach that was used by related studies \citep{olson2002time, aubert2008thermochemical, hori2014ancient}. \\
 According to \citet{trumper2012numerical}, Derichlet type BC are chosen for the chemical component. A compositional gradient, $\Delta C = C'_\textrm{\tiny ICB} - C'_\textrm{\tiny CMB}$, is imposed across the shell. In a more earth-like scenario, one would apply Neumann type conditions with fixed compositional influx at the ICB and zero outflux at the CMB \citep{braginsky1995equations}. This would further increase the complexity of the model and is therefore adjourned in this case. \\
 The thermal BC is of the Neumann type and will be discussed in more detail in the following section.\\
@@ -436,10 +443,10 @@ The following parameters of similarity appear in the equations:
 &\textrm{Magnetic Prandtl number : } & \textrm{Pr}_\textrm{m} = \frac{\nu}{\eta} \\ \nonumber 
 \end{align} 
 }
-The thermal and compositional Rayleigh numbers are measures for the vigor of convection due to thermal and compositional buoyancy sources, respectively. The definitions of $\textrm{Ra}_\textrm{\tiny {T}}$ and $\textrm{Ra}_\textrm{\tiny {C}}$ slightly differ because of the different scales chosen for temperature and composition (see table \ref{tab:scales}). $'\beta D'$ and $'\Delta C'$ refer to either Neumann or Derichlet type boundary conditions for $T$ and $C$, respectively.  \\
+The thermal and compositional Rayleigh numbers are measures for the vigor of convection due to thermal and compositional buoyancy sources, respectively. The definitions of $\textrm{Ra}_\textrm{\tiny {T}}$ and $\textrm{Ra}_\textrm{\tiny {C}}$ slightly differ because of the different scales chosen for temperature and composition (see table \ref{tab:scales}). $'\beta D'$ and $'\Delta C'$ refer to Neumann and Derichlet type boundary conditions for $T$ and $C$, respectively.  \\
 Whether a fluid is constrained rather by rotation or viscosity is described via the Ekman number. \\
 The distinction between a thermal and a compositional Prandtl number is a key feature of this study. It allows for differences in the dynamical response of the system to either thermally or compositionally dominated convective forcing. Roughly spoken, a large Prandtl number promotes viscous effects in a fluid, whereas a small one promotes inertia effects. The magnetic Prandtl number relates viscous and magnetic diffusion and therefore decides how much kinetic energy is needed to sustain a magnetic field. \\
-In the following, all $\hat{(\textrm{ })}$ will be omitted, since only non dimensional quantities are mentioned.\\
+In the following, all $'\, \hat{}\,'$ will be omitted, since only non dimensional quantities are mentioned.\\
 The rescaled inner and outer radii of the spherical shell are R$_i = 0.539$ and R$_o = 1.539$, respectively.
 \subsection{Conductive and convective Fluctuations}
 \label{sec:cond_conv}
@@ -447,7 +454,7 @@ The temperature field $T'$ and the chemical field $C'$, each reduced by the refe
 \begin{equation*}
  T'(\bm r) = T_\textrm{cond}(\bm r) + \theta(\bm r) \quad \quad\quad C'(\bm r) = C_\textrm{cond}(\bm r) + \zeta(\bm r)
 \end{equation*}
-The stationary solutions $T_\textrm{cond}$ and $C_\textrm{cond}$ can be obtained analytically (see section \ref{sec:flux_pattern} for the temperature field), so that \textit{PARODY} has to solve only for $\theta$ and $\zeta$. The conductive solution $C_\textrm{cond}$ follows from the stationary form of \eqref{eq:chemical_equation} and the boundary conditions described in section \ref{sec:bc}.
+The stationary solutions $T_\textrm{cond}$ and $C_\textrm{cond}$ can be obtained analytically (see section \ref{sec:flux_pattern} for the temperature field), so that \textit{PARODY} needs to solve only for $\theta$ and $\zeta$. The conductive solution $C_\textrm{cond}$ follows from the stationary form of \eqref{eq:chemical_equation} and the boundary conditions described in section \ref{sec:bc}.
  The temperature and chemical equation transform to 
 \begin{subequations} \label{cond_conv_heat_chem}
  \begin{align}
@@ -456,7 +463,7 @@ The stationary solutions $T_\textrm{cond}$ and $C_\textrm{cond}$ can be obtained
  \frac{D \zeta}{D t} = & \frac{1}{\textrm{Pr}_\textrm{C}} \bm \nabla^2 \zeta - (\bm u \cdot \bm \nabla) C_\textrm{cond},
 \end{align}
 \end{subequations}
-when the decomposition is inserted. \\
+if the decomposition is inserted. \\
 \\
 Furthermore, the equation of momentum splightly changes, when temperature and composition are split into two parts.\\ 
 $T_\textrm{cond}$ has a speherically symmetric and a spherically asymmetric part
@@ -645,7 +652,7 @@ Structure of the CMB heat pattern:
 
 
 
-The presence of a magnetic field has an effect on the flow field in a self-sustained dynamo via the Lorentz force term in equation \ref{eq:force_balance4}. Nevertheless, it is widely assumed that convection columns elongated parallel to the rotation axis persist, even if the influence of the Lorentz force term in Equation \ref{eq:force_balance4} is comparable to or higher than the Coriolis force term \citep{christensen2011geodynamo}. 
+% The presence of a magnetic field has an effect on the flow field in a self-sustained dynamo via the Lorentz force term in equation \ref{eq:force_balance4}. Nevertheless, it is widely assumed that convection columns elongated parallel to the rotation axis persist, even if the influence of the Lorentz force term in Equation \ref{eq:force_balance4} is comparable to or higher than the Coriolis force term \citep{christensen2011geodynamo}. 
 
  \section{Outline of the study (Notizen)}
 Describe the parameters used and show earth values
@@ -665,14 +672,14 @@ The $\mathcal{Y}_2^2$ temperature boundary condition at the CMB means an inheren
 A key feature of the non homogeneous model is the formation of stationary vortex columns that are attached to mantle heterogeneities. The aim of this section is to explain their formation and their meaning for the system.\\
 In the beginning, sections \ref{sec:onset}, \ref{sec:vortex_clolumns} and \ref{sec:thermal_wind} provide the theoretical background for the explanation and interpretation of the results.
 As a start, the \textit{onset of convection in the uniform case} in form of an azimuthally drifting Rossby wave will be briefly discussed in section \ref{sec:onset}. The uniform solution inhibits \textit{columns of constant vorticity} that will be the topic of section \ref{sec:vortex_clolumns}. Although this section still deals with the uniform case, its results can be applied to the heterogeneous system. Section \ref{sec:thermal_wind} introduces the reader to the \textit{geostrophic and the thermo-chemical wind balance}. Especially the thermo-chemical wind balance, elsewhere called thermal wind balance, plays an important role here, because it considers lateral density gradients and they are emphasized by the laterally varying heat flux conditions. \\
-Section \ref{sec:radial_flow} applies the theoretical concepts described in the preceding section to the numerical data for a non homogeneous case in order to explain the structure of the flow field in the equatorial plain. A relation derived from the thermo-chemical wind balance serves well as an explanation for the distribution of radial up- and downwellings in the equatorial plain and therefore organizes the flow field.\\ 
+Section \ref{sec:radial_flow} applies the theoretical concepts described in the preceding sections to the numerical data for a non homogeneous case in order to explain the structure of the flow field in the equatorial plain. A relation derived from the thermo-chemical wind balance serves well as an explanation for the distribution of radial up- and downwellings in the equatorial plain and therefore organizes the flow field.\\ 
 The interplay of azimuthal and radial velocity creates a vorticity pattern that is locked to the heat flux heterogeneities imposed by the mantle. Section \ref{sec:attached_columns} shows and interprets the stationary vortex columns that got their origin in the equatorial plain but elongate through the whole sphere due to the geostrophic constraint that promotes vertically invariant structures (see section \ref{sec:thermal_wind}). \\
 Section \ref{sec:temp_field} stands somehow isolated within this chapter. It describes the long-term averaged temperature field that evolves under the influence of the heat flux pattern and is meant to allow the reader a better imagination of the scenario.\\ \par
 Throughout this section, the Prandtl numbers will be held fixed at $\textrm{Pr}_\textrm{\tiny T} = 3$ and $\textrm{Pr}_\textrm{\tiny C} = 0.3$, the Ekman number as well at $\textrm{Ek} = 10^{-4}$, if not marked differently. \\
 The influence of the heat flux boundary conditions can best be observed in temporal averages \citep{olson2002time}. Consequently, all data that is shown in this section refers to such averages. The averages are taken in the statistically stationary state.\\
 
 \subsection{The onset of convection in the uniform case}
-In a rotating system that is homogeneously forced, convection sets in in the form of a thermal Rossby wave \citep{busse1970thermal, busse2002convective}. The \textit{Taylor-Proudman theorem} (see section \ref{sec:thermal_wind}) imposes a column like structure to the system that is aligned with the axis of rotation ($z$-axis, see Figure \ref{fig:sketch_busse}) and drifts in azimuthal direction. The columns lie adjacent to the \textit{tangential cylinder} (TC), a cylindrical surface that touches the inner core at the equator. \citet{busse2002convective} describes a mean flow instability that leads to differential rotation (the variation of azimuthal velocity with radius, DR), evolving under the influence of a spherical geometry. Differential rotation presumably plays a central role in the magnetic field generation as it is an ingredient for the $\omega$-effect \citep{roberts2007theory}. \\ \par
+In a rotating system that is homogeneously forced, convection sets in in the form of a thermal Rossby wave \citep{busse1970thermal, busse2002convective}. The \textit{Taylor-Proudman theorem} (see section \ref{sec:thermal_wind}) imposes a column like structure to the system that is aligned with the axis of rotation ($z$-axis, see Figure \ref{fig:sketch_busse}) and drifts in azimuthal direction. The columns lie adjacent to the \textit{tangential cylinder} (TC), a cylindrical surface that touches the inner core at the equator. \citet{busse2002convective} describes a mean flow instability that leads to differential rotation (the variation of azimuthal velocity with radius, from now on referred to as DR), evolving under the influence of a spherical geometry. Differential rotation presumably plays a central role in the magnetic field generation as it is an ingredient for the $\omega$-effect \citep{roberts2007theory}. \\ \par
 \label{sec:onset}
 \begin{figure}[H]
  \begin{minipage}[]{0.46\textwidth}
@@ -693,7 +700,7 @@ According to the analytical theories of \citet{jones2000onset} and \citet{dormy2
 \subsection{Columns of constant vorticity}
 \label{sec:vortex_clolumns}
 As mentioned above, convection in rapidly rotating systems is organized in a column like structure at onset \citep{busse1970thermal}. The question whether this structure is maintained, even in the highly supercritical LOC, has important implications for the understanding of the geodynamo.\\ 
-Since the first findings of self sustained dynamos \citep{glatzmaier1995three, kuang1997earth}, different kinds of dynamo \textit{processes} have been discussed. Hence, the circular transformation between poloidal and toroidal magnetic energy is a necessary ingredient for all of them \citep{roberts2007theory}. The \textit{vortex columns}, visualized in Figures \ref{fig:sketch_busse} and \ref{fig:vort_uniform}, are important sources of \textit{helicity} and therefore necessary for the (macroscopic ERKLÄREN mit mean field MHD Tobi S. 107e) $\alpha$-effect, that can transform either poloidal to toroidal field or vice versa \citep{roberts2007theory,jones2011planetary}. For a detailed explanation of the $\alpha$-effect and its importance for the geodynamo, the reader is referred to the literature cited above. For the moment it suffices to know that helicity is a key quantity in the discussion of dynamo action. \\
+Since the first findings of self sustained dynamos \citep{glatzmaier1995three, kuang1997earth}, different kinds of dynamo \textit{processes} have been discussed. Hence, the circular transformation between poloidal and toroidal magnetic energy is a necessary ingredient for all of them \citep{roberts2007theory}. The \textit{vortex columns}, visualized in Figures \ref{fig:sketch_busse} and \ref{fig:vort_uniform}, are important sources of \textit{helicity} and therefore necessary for the macrospcopic $\alpha$-effect, that can transform either poloidal to toroidal field or vice versa \citep{roberts2007theory,jones2011planetary}. For a detailed explanation of the $\alpha$-effect and its importance for the geodynamo, the reader is referred to the literature cited above. For the moment it suffices to know that helicity is a key quantity in the discussion of dynamo action. \\
 This section aims to explain the mechanism of helicity production inside of vortex columns. \\ \par
 
 Although motion parallel to the $z$-axis is strongly constrained by rotation (see Equation \eqref{eq:geostrophy2}), the spherical form of the boundaries necessarily relaxes this constraint locally and vertical flow is unavoidable \citep{busse2002convective, gillet2006quasi}. An important example for the relaxation of the Taylor-Proudman theorem in this context is the \textit{secondary circulation} inside of vortex columns \citep{olson1999numerical, aubert2008magnetic, christensen2011geodynamo}, sketched in Figure \ref{fig:secondary_circulation}.\\
@@ -709,7 +716,7 @@ Although motion parallel to the $z$-axis is strongly constrained by rotation (se
 The variation of buoyancy along the $z$-axis inside of a vortex column acts as a second source of vertical motion \citep{olson1999numerical}. As in the case of Ekman suction and pumping, this motion is oriented equatorwards in cyclones and away from the equator in anticyclones. It is independent of the viscous boundary condition and therefore it makes this discussion applicable to a wider range of model configurations. 
 \end{minipage}
 \end{figure}
-Figure \ref{fig:secondary_circulation} shows a sketch of the secondary circulation. A cyclone (with flow \textit{towards} the equator in the northern and southern hemisphere), causes a divergent flow at the equator, whereas an anticyclone (with flow away from the equator) acts converging at the equator. The opposite is true near the CMB. A cyclone and an anticyclone together form a \textit{circular} motion that superimposes the primary vortial motion. The interaction of a vorticity carrying fluid column and a vertical flow produces helicity $\mathcal{H}$. \\
+Figure \ref{fig:secondary_circulation} shows a sketch of the secondary circulation. A cyclone (with flow \textit{towards} the equator in the northern and southern hemisphere), causes a divergent flow at the equator, whereas an anticyclone (with flow away from the equator) acts converging at the equator. The opposite is true near the CMB. A cyclone and an anticyclone together form a \textit{circular} motion that superimposes the primary vortical motion. The interaction of a vorticity carrying fluid column and a vertical flow produces helicity $\mathcal{H}$. \\
 The role of \textit{converging} and \textit{diverging} flow at the CMB plays a distinct role in the scope of this work. Converging flows tend to collect magnetic field lines in their vicinity, whereas a diverging flow acts expelling \citep{aubert2008magnetic, jones2011planetary}. This will be further discussed in section \ref{sec:dynamo}. The effect of the secondary circulation on the chemical field can be observed in section \ref{sec:attached_columns}.
 
 \subsection{The geostrophic and the thermo-chemical wind balance}
@@ -760,7 +767,7 @@ Following \citet{gillet2006quasi}, the left-hand-side of \eqref{eq:wind_z1} tran
 \label{eq:wind_z4}
 -2\,\Big \langle \frac{\partial u_z}{\partial z} \Big \rangle_z = -\frac{1}{H} \int_{-H}^{+H} \frac{\partial u_z}{\partial z} \, dz = -\left( - u_s^g \, \frac{2s}{H^2} \right).
 \end{equation}
-The slope of the spherical boundary is responsible for the fact, that a radial velocity component enters the $z$-averaged equation in order to balance the boundary condition.\\
+The slope of the spherical boundary is responsible for the fact, that a radial velocity component enters the $z$-averaged equation in order to balance the effect of the boundary condition.\\
 In the equatorial plain, $\bm{e_z}\cdot \bm{e_\vartheta} = -1$, $r=s$ and the radial velocity $ u_s^g$ in cylindrical coordinates equals the radial velocity $u_r^g$ in spherical coordinates. It can now be expressed in terms of the azimuthal temperature gradient:
 \begin{equation}
  \label{eq:ugr}
@@ -835,10 +842,10 @@ The interplay of the azimuthal and the radial velocity field in the equatorial p
  \caption{\textbf{Left hemisphere}: $z$-component of the vorticity in the equatorial plain (see Figure \ref{fig:q2_200_d080_vort}) and contour surfaces at $\omega_z = -1200$ (blue) and $\omega_z = 1200$ (red). \textbf{Right hemisphere}: Compositional perturbation $\zeta$ close to the CMB at $ r = 1.5$. As parameters, $\textrm{Ra}_\textrm{total}=  2\times 10^6$, $\delta = 0.95$ and $q^* = 2$ are chosen.}
  \label{fig:vort_chem}
 \end{figure}
-In Figure \ref{fig:vort_chem}, the long-term averaged vorticity distribution of a thermo-chemically driven case is shown in the left hemisphere, whereas the right hemisphere depicts the compositional perturbation $\zeta$. The forcing is now of a thermo-chemical origin, with a mild portion of 5\% uniform compositional forcing ($\delta^*=0.95$)). The total Rayleigh number remains $\sim 4$ times supercritical in order to be comparable to the previous case. The vorticity contours in the left hemisphere yield the stationary vortex columns attached to the heat flux maxima mentioned above, as in the previous cases. An anticyclone (blue) elongates close to the tangential cylinder from the northern to the southern CMB. A cyclonic column (red) lies parallel to the anticyclone in the radially outward direction. The right hemisphere underlies the same vorticity distribution (see the symmetry in Figure \ref{fig:q2_200_d080_vort}). Here, the compositional perturbation yields a maximum at the intersection of the blue anticyclone with the CMB and a deficit when going towards the equator, i.e., where the red cyclone intersects the CMB. \\
-The excess and deficit composition results from the divergent and convergent flow at the peak of the anticyclone and the cyclone, respectively. The corresponding mechanism is sketched in Figure \ref{fig:secondary_circulation}. The vertical upward flow inside the anticyclone constantly transports compositionally enriched material from the ICB (equator) towards the CMB and produces a local maximum there. For the cyclone, the process works the other way round but as the cyclones are less dominant than the anticyclonic columns, the compositional minima are also less pronounced than the maxima.\\
+In Figure \ref{fig:vort_chem}, the long-term averaged vorticity distribution of a thermo-chemically driven case is shown in the left hemisphere, whereas the right hemisphere depicts the compositional perturbation $\zeta$. The forcing is now of a thermo-chemical origin, with a mild portion of 5\% uniform compositional forcing ($\delta^*=0.95$)). The total Rayleigh number remains $\sim 4$ times supercritical in order to be comparable to the previous case. The vorticity contours in the left hemisphere yield the stationary vortex columns attached to the heat flux maxima mentioned above, as in the previous cases. An anticyclone (blue) elongates close to the TC from the northern to the southern CMB. A cyclonic column (red) lies parallel to the anticyclone in the radially outward direction. The right hemisphere underlies the same vorticity distribution (see the symmetry in Figure \ref{fig:q2_200_d080_vort}). Here, the compositional perturbation yields a maximum at the intersection of the blue anticyclone with the CMB and a deficit when going towards the equator, i.e., where the red cyclone intersects the CMB. \\
+The excess and deficit composition results from the divergent and convergent flow at the peak of the anticyclone and the cyclone, respectively. The corresponding mechanism is sketched in Figure \ref{fig:secondary_circulation}. The vertical upward flow inside the anticyclone successively transports compositionally enriched material from the ICB (equator) towards the CMB and produces a local maximum there. For the cyclone, the process works the other way round but as the cyclones are less dominant than the anticyclonic columns, the compositional minima are also less pronounced than the maxima.\\
 In the scenario regarded here, the compositional forcing rather acts as 'tracer' that visualizes the vertical transport from the ICB, where the chemical component is released, to the CMB. A portion of 5 \% compositional forcing is expected to have only a little effect on the dynamics of the system compared to the purely thermal case from above.\\ \par
-The chemical field shown in the right hemisphere of figure \ref{fig:q2_200_d080_vort} provide evidence that divergent and convergent flow near the CMB can be localized at fixed positions at the spherical surface. The ability of convergent flows to concentrate magnetic field lines and thereby intensify the field locally was discussed by several authors \citep{olson1999numerical, aubert2008magnetic, jones2011planetary}. In section \ref{sec:dynamo}, the reverse effect of expulsion of magnetic field lines by divergent flow will be important as well. Above all, it is important to mention that the flow properties found in this section can not be transferred to the dynamo case because of the action of the Lorentz force.
+The chemical field shown in the right hemisphere of figure \ref{fig:q2_200_d080_vort} provide evidence that divergent and convergent flow near the CMB can be localized at fixed positions at the spherical surface. The ability of convergent flows to concentrate magnetic field lines and thereby intensify the field locally was discussed by several authors \citep{olson1999numerical, aubert2008magnetic, jones2011planetary}. In section \ref{sec:dynamo}, the reverse effect of expulsion of magnetic field lines by divergent flow will be important as well. Above all, it is important to mention that the flow properties found in this section can not be transferred directly to the dynamo case because of the action of the Lorentz force.
 \subsection{The effect of the flux pattern on the temperature field}
 \label{sec:temp_field}
 Figure \ref{fig:q2_200_temp}(a) shows the same equatorial view on the temperature field as Figure \ref{fig:flowfield_temp} in section \ref{sec:radial_flow}. The color map was slightly rescaled to make the phase shift between the temperature maxima at the CMB at $\sim 170^\circ$ and $\sim 350^\circ$ and the heat flux maxima (at $\sim 90^\circ$ and $\sim 270^\circ$) visible. The reason for the phase shift lies in the flow field and can be explained by the observations in the previous chapter: Strong radial motion occurs predominantly in the region under the heat flux maxima. The up- and downwellings visible in Figure \ref{fig:flowfield_temp} intensify the cooling mechanism, thus go along with a colder core region. The hot regions coincide with strong azimuthal motion along the CMB that inhibit the transport of heat out of the core. \\
@@ -862,16 +869,10 @@ The surface projection of the temperature field at the CMB (Figure \ref{fig:q2_2
 
 \section{Thermo-chemical dynamo action}
 \label{sec:dynamo}
+(EINLEITUNG)\\
 The series of snapshots of the radial magnetic field component at the north pole shown in figure \ref{fig:fluxpatches_snapshots}, top row, gives a first insight into the behavior of the magnetic field under the influence of the heat flux pattern ($q^*=2$): Patches of intense magnetic field wander, merge and detach again in a highly time-dependent manner. Yet, the number of \textit{two} patches seems to be preferred by the system and therefore the azimuthal wave number $m=2$ dominates the magnetic energy spectrum (not shown). This is attributed to the the heterogeneous BC at the CMB that has the same azimuthal symmetry.\\
 In contrast to that, figure \ref{fig:fluxpatches_snapshots}, bottom row, shows the uniform case ($q^*=0$) with the same Rayleigh number. The magnetic field strength is comparable but the magnetic energy in the $m=2$ mode does not dominate the spectrum. Instead, the number of \textit{one} flux patch seems to be preferred. The long-term averaged fields at the right end of figure \ref{fig:fluxpatches_snapshots} confirm the impression received from the snapshots.  \\ \par \noindent
-This section presents magnetic field properties that are distinct to the $\mathcal{Y}_2^2$ boundary condition already applied in the previous, non magnetic case. It will be seen, that some of the features distinct to the flux pattern 
-
-
-The presence of a magnetic field has an effect on the flow field in a self-sustained dynamo via the Lorentz force term in equation 2.44. Nevertheless, it is widely assumed that column-like structures elongated parallel to the rotation axis can persist, even if the influence of the Lorentz force term in Equation 2.44 is comparable to or higher than the Coriolis force term \citep{christensen2011geodynamo}. \\ \par \noindent
-
-
-
-
+This section presents magnetic field and flow field properties that are distinct to the $\mathcal{Y}_2^2$ boundary condition in the dynamo case. It will be shown, that some of the results found in the previous section got their analogies here, although the presence of the Lorentz force clearly changes the system behavior.
 \begin{figure}[t]
  \begin{minipage}{0.13\textwidth}
  \includegraphics[width=\textwidth]{graphs/dynamo/snapshots/G_trim-0.png} \\
@@ -914,10 +915,10 @@ The presence of a magnetic field has an effect on the flow field in a self-susta
  \vfill
   \includegraphics[width=\textwidth]{graphs/dynamo/dyn_d100_mean_q0_Br.png}
  \end{minipage}
- \caption{Time series of a north polar view on the radial magnetic field at the CMB. \textbf{Top row:} Case \textbf{PFF100} (see table \ref{tab:data}). The field behavior is highly time dependent but a preference for a structure with \textit{two} red patches of high intensity (azimuthal wave number $m=2$) is discernible. The imposed heat flux maxima lie at the top and the bottom, the minima on the right and left hand side. \textbf{Bottom row:} Case \textbf{UFT100}. Like in case PFF100 above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit{one} flux patch. The color scale ranges from -0.5 (dark blue) to 2.5 (dark red). The \textbf{right end} shows the long-term averaged data. }
+ \caption{Time series of a north polar view on the radial magnetic field intensity at the CMB. \textbf{Top row:} Case \textbf{PFF100} (see table \ref{tab:data}). The field strength is highly time dependent but a preference for a structure with \textit{two} red patches of high intensity (azimuthal wave number $m=2$) is discernible. The imposed heat flux maxima lie at the top and the bottom, the minima on the right and left hand side. \textbf{Bottom row:} Case \textbf{UFT100}. Like in case PFF100 above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit{one} flux patch. The color scale ranges from -0.5 (dark blue) to 2.5 (dark red). The \textbf{right end} shows the long-term averaged data. }
  \label{fig:fluxpatches_snapshots}
  \end{figure} \noindent
- \begin{table}[]
+ \begin{table}[b!]
  \centering
  \begin{tabular}{l | c| c |c |c| c| c| c| c |c}
   \textbf{Case} &  $q^*$ & Ek	& $\textrm{Ra}_\textrm{\tiny T}\times \textrm{Ek}$& $\textrm{Ra}_\textrm{\tiny C} \times \textrm{Ek}$& $\gamma_\textrm{total}$& $\delta^*$& $\textrm{Re}_m$& $\Lambda$& $f_\textrm{dip}$ \\
@@ -940,51 +941,51 @@ The presence of a magnetic field has an effect on the flow field in a self-susta
 \end{table}
 \subsection{The patch generation mechanism: A showcase}
 \label{sec:dyn_d020}
-This section aims to explain the formation mechanism of intense magnetic patches in the heat flux pattern case. Analogies to the mantle-locked structures presented in section \ref{sec:thermo-chemical} for the non magnetic case exist (the reader is reminded of the compositional field heterogeneities shown in figure \ref{fig:vort_chem}), but the presence of the Lorentz force clearly changes the dynamics of the system.\\
-Case PFF12 (see table \ref{tab:data}) with only a relatively mild portion of $\delta^* = 12$ \% thermal forcing was chosen as a showcase. For the moment, the focus lies on the flux patch generation process and not on the influence of the dual forcing mechanism.  \\ \par
-Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field in figure \ref{fig:surface_Br_d20}. Patches of concentrated magnetic field lie at  $\sim$45$^\circ$ and $225^\circ$E in the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). \\
 \begin{figure}[t]
 \centering
       \includegraphics[width = 0.7\textwidth]{graphs/dynamo/flux_patches_d20_2.png}
   \caption{Hammer-Aitov surface projection of the radial magnetic field near the CMB at $r=1.485$. Two patches of high intensity magnetic field are located at $\sim$45$^\circ$ and $225^\circ$ in the northern and the southern hemisphere. The black line at a polar angle of $25^\circ$ is subject to the graph in figure \ref{fig:divLat_Br}.}
   \label{fig:surface_Br_d20}
 \end{figure} \noindent
-In section \ref{sec:attached_columns}, the flow convergence and divergence at the top of anticyclones and cyclones, respectively, controls the surface distribution of the chemical component (see figure \ref{fig:vort_chem}). In a comparable way, magnetic field can be collected (intensified) and expelled (weakened) by cyclonic and anticyclonic motion at the CMB in an advection process. A necessary condition for this to happen can be understood in the framework \textit{Alfv\'{e}n's theorem} that states:\\ \par
+In the following, the formation mechanism of patches of intense magnetic field at the CMB (visible in figure \ref{fig:fluxpatches_snapshots}) will be discussed. Similarities with the mantle-locked structures presented in section \ref{sec:thermo-chemical} for the non magnetic case exist (the reader is reminded of the compositional field heterogeneities shown in figure \ref{fig:vort_chem}).\\ \par \noindent
+Case PFF12 (see table \ref{tab:data}) with of portion of $\delta^* = 12$ \% thermal forcing was chosen as a showcase. For the moment, the focus lies on the flux patch generation process and not on the influence of the dual forcing mechanism.  \\ 
+Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field in figure \ref{fig:surface_Br_d20}. Patches of concentrated magnetic field lie at  $\sim$45$^\circ$ and $225^\circ$E in the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). \\ \par \noindent
+In section \ref{sec:attached_columns}, the flow convergence and divergence at the top of anticyclones and cyclones, respectively, controls the surface distribution of the chemical component (see figure \ref{fig:vort_chem}). In a comparable way, magnetic field can be collected (intensified) and expelled (weakened) by cyclonic and anticyclonic motion at the CMB in an advection process. A necessary condition for this to happen can be understood in the framework of \textit{Alfv\'{e}n's theorem} that states:\\ \par
 \textit{Magnetic flux tubes move with fluid particles as if they were frozen into it \textbf{if} the fluid has infinite conductivity} \citep{davidson2001introduction, roberts2007theory}.\\ \par \noindent
-Infinite conductivity goes along with zero magnetic diffusion. Therefore, the relative importance of magnetic diffusion in a system (see the the second term on the rhs of \eqref{eq:induction^}) decides whether magnetic field collection and expulsion by advection can serve as an explanation for the flux patches. The \textit{magnetic Reynolds number} estimates the ratio of magnetic advection to diffusion \citep{rieutord2014fluid} and therefore is the relevant quantity in this context \citep{christensen2011geodynamo}. Table \ref{tab:data} shows that the magnetic Reynolds number for this (Re$_m$ = 170.3) and for the other cases is of order $\mathcal{O}$(100). It becomes obvious that advection dominates diffusion by far and therefore the above process is likely to be responsible for the flux patches. \\ \par
-
+Infinite conductivity goes along with zero magnetic diffusion. Therefore, the relative importance of magnetic diffusion in a system (see the the second term on the rhs of equation \eqref{eq:induction^}) decides whether magnetic field collection and expulsion by advection can serve as an explanation for the flux patches. The \textit{magnetic Reynolds number} estimates the ratio of magnetic advection to diffusion \citep{rieutord2014fluid} and therefore is the relevant quantity in this context \citep{christensen2011geodynamo}. Table \ref{tab:data} shows that the magnetic Reynolds number for this (Re$_m$ = 170.3) and for the other cases is of order $\mathcal{O}$(100). It becomes obvious that advection dominates diffusion by far and therefore the above process is likely to be responsible for the flux patches. \\ \par \noindent
+Figure \ref{fig:dyn_d20_vectorfield_Br} shows a north polar view of the three dimensional surface of the spherical shell at a radial level $r=1.485$, tilted by the polar angle $\vartheta = 20^\circ$. A schematic overview of the important features of the velocity and the magnetic field in the north polar view can be found in figure \ref{fig:sketch_patches}, where red (blue) patches represent cyclones (anticyclones) and black crosses stand for patches of increased radial magnetic field strength (flux patches).  \\
+The surface flow field (black arrows in figure \ref{fig:dyn_d20_vectorfield_Br}) exhibits a pattern of two opposite regions of anticyclonic motion around $135^\circ$ and $315^\circ$E (blue patches in figure \ref{fig:sketch_patches}) 
 \begin{figure}[H]
- \begin{minipage}{0.57\textwidth}
-  The surface flow field shown in figure \ref{fig:dyn_d20_vectorfield_Br} exhibits a pattern of two opposite regions of anticyclonic motion around $135^\circ$ and $315^\circ$E (blue patches in figure \ref{fig:sketch_patches}) and two regions of cyclonic motion in between around $45^\circ$ and $235^\circ$ (red patches). Two fields of increased radial magnetic field strength (black crosses) form adjacent to the intersection of the TC and the CMB. The flux patch generation process can now be understood when regarding the azimuthal profile of the radial field $B_r$ and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$ in figure \ref{fig:divLat_Br}: \\
-  The radial magnetic field is locally intensified due to the convergent flow caused by a by the cyclonic motion at the CMB. At the same time, the divergent flow on top of the anticyclones expels field lines and therefore causes the field strength to decrease in that regions. Both mechanisms take part in determining the magnetic field geometry. 
+ \begin{minipage}{0.455\textwidth}
+  and two regions of cyclonic motion in between $45^\circ$ and $235^\circ$ (red patches). Two fields of increased radial magnetic field strength (black crosses) form adjacent to the intersection of the TC and the CMB. The flux patch generation process can be understood regarding the azimuthal profile of the radial field $B_r$ and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, shown in figure \ref{fig:divLat_Br}: \\
+  The radial magnetic field is locally intensified due to the convergent flow caused by the cyclonic motion at the CMB. At the same time, the divergent flow on top of the anticyclones expels field lines and therefore causes the field strength to decrease in that regions. Both mechanisms take part in determining the magnetic field geometry. 
  \end{minipage}
  \hfill
- \begin{minipage}{0.4\textwidth}
-  \includegraphics[width=\textwidth]{sketches/Patches_cyclones.png}
-  \caption{Sketch of a north polar view on the vorticity distribution and the location of the magnetic flux patches for case PFF12, shown in figure \ref{fig:dyn_d20_vectorfield_Br}. Red patches mark cyclones, blue patches anticyclones and the black crosses indicate the position of the flux patches. The gray dashed line represents the intersection of the TC with the CMB. }
-  \label{fig:sketch_patches}
+ \begin{minipage}{0.505\textwidth}
+   \includegraphics[width = 0.97\textwidth]{graphs/dynamo/dyn_d20_vectorfield_Br.png}
+ \caption{Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF12. In the front hemisphere, a dominant anticyclone with the center at $\sim 315^\circ$E and a weaker, bended cyclone with the center at $\sim 230^\circ$E are visible. Intense magnetic field correlates with the cyclonic region. View from a polar angle of $20^\circ$, the north polar is located in the middle of the central blue region.  }
+ \label{fig:dyn_d20_vectorfield_Br}
  \end{minipage}
 \end{figure}\noindent
 
 \begin{figure}[t]
-\begin{minipage}{0.48\textwidth}
- \includegraphics[width = 0.97\textwidth]{graphs/dynamo/dyn_d20_vectorfield_Br.png}
- \caption{Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF12. In the front hemisphere a dominant anticyclone with the center at $\sim 315^\circ$E and a weaker, bended cyclone with the center at $\sim 230^\circ$E are visible. Intense magnetic field correlates with the cyclonic region. View from a polar angle of $20^\circ$.  }
- \label{fig:dyn_d20_vectorfield_Br}
+\begin{minipage}{0.46\textwidth}
+  \includegraphics[width=\textwidth]{sketches/Patches_cyclones.png}
+  \caption{Sketch of a north polar view on the vorticity distribution and the location of the magnetic flux patches for case PFF12, shown in figure \ref{fig:dyn_d20_vectorfield_Br}. Red patches mark cyclones, blue patches anticyclones and the black crosses indicate the position of the flux patches. The gray dashed line represents the intersection of the TC with the CMB. }
+  \label{fig:sketch_patches}
 \end{minipage}
 \hfill
- \begin{minipage}{0.49\textwidth}
+ \begin{minipage}{0.51\textwidth}
  \includegraphics[width = \textwidth]{graphs/dynamo/d20_divLat_Br2.png}
  \vspace*{3mm}
-  \caption{Azimuthal profile of the radial magnetic field $B_r$ (blue) and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, normalized by its maximum (red). A negative (positive) divergence characterizes a convergent (divergent) flow, visible around $45^\circ$ and $235^\circ$E ($120^\circ$ and $300^\circ$E), where $B_r$ is maximum (minimum). Profile taken at $r=1.485$ and $\theta = 25^\circ$, the black line in figure \ref{fig:surface_Br_d20}. }
+  \caption{Azimuthal profile of the radial magnetic field $B_r$ (blue) and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, normalized by its maximum (red). A negative (positive) divergence characterizes a convergent (divergent) flow, visible around $45^\circ$ and $235^\circ$E ($120^\circ$ and $300^\circ$E), where $B_r$ is maximum (minimum). Profile taken at $r=1.485$ and $\theta = 25^\circ$, shown by the black line in figure \ref{fig:surface_Br_d20}. }
   \label{fig:divLat_Br}
  \end{minipage}
-\end{figure}
-
+\end{figure}\noindent
 \subsection{Changing the driving mechanism}
 \label{sec:delta_dependence}
-The key quality of a \textit{thermo-chemical} model of core convection is the possibility to explore the interplay of two different driving mechanisms with distinct Prandtl numbers in one system. To explore the dependence of the system dynamics on the choice of the ratio between thermal and compositional driving is is the central question, recently studied for the non magnetic case by \citet{breuer2010thermochemically} and \citet{trumper2012numerical} or the dynamo case by \citet{manglik2010dynamo} and \citet{takahashi2014double}. The choice of a distinct forcing ratio in case of the models cited above means to strengthen either the thermal component that is equipped with a Prandtl number $\textrm{Pr}_\textrm{\tiny T}<1$ or the chemical component that commonly goes along with $\textrm{Pr}_\textrm{\tiny T}\geq1$. If $\textrm{Pr}$ is less than unity, inertial processes gain importance, whereas $\textrm{Pr}$ greater one emphasizes diffusion of heat and composition, respectively.\\ \par \noindent
-In contrast to that, changing the forcing ratio $\delta^*$, as it is used here (see section \ref{sec:thermal/chemical}), has \textit{three} major implications:
+The key quality of a \textit{thermo-chemical} model of core convection is the possibility to explore the interplay of two different driving mechanisms with distinct Prandtl numbers in one system. To explore the dependence of the system dynamics on the choice of the ratio between thermal and compositional driving is the central question, recently studied for the non magnetic case by \citet{breuer2010thermochemically} and \citet{trumper2012numerical} or the dynamo case by \citet{manglik2010dynamo} and \citet{takahashi2014double}. The choice of a distinct forcing ratio in case of the models cited above means to strengthen either the thermal component that is equipped with a Prandtl number $\textrm{Pr}_\textrm{\tiny T}<1$ or the chemical component that commonly goes along with $\textrm{Pr}_\textrm{\tiny T}\geq1$. If $\textrm{Pr}$ is less than unity, inertial processes gain importance, whereas $\textrm{Pr}$ greater one emphasizes diffusion of heat and composition, respectively.\\ \par \noindent
+In contrast to that, changing the forcing ratio $\delta^*$, as it is done here (see section \ref{sec:thermal/chemical}), has \textit{three} major implications:
 \begin{enumerate}[(A)]
  \item The BC for the thermal component is of the \textit{Neumann} type (fixed heat flux), whereas the compositional field underlies \textit{Derichlet} conditions (fixed composition).
  \item The thermal \textit{Prandtl number} is chosen to be $\textrm{Pr}_\textrm{\tiny T}=0.3$ and the chemical $\textrm{Pr}_\textrm{\tiny C}=3$.
@@ -1016,9 +1017,9 @@ Figure \ref{fig:els_reym} summarizes some of the results of the Parameter study 
 \subsubsection{Intensification of the magnetic field}
 \label{sec:magnetic_field_strength}
 \citet{sakuraba2009generation} report the generation of a strong magnetic field in their dynamo model with a uniform heat flux imposed at the outer spherical boundary. The observation is remarkable because they used a comparatively low Ekman number ($\textrm{Ek} = 5 \times 10^{-7}$). In this regime, the possibility of an efficient field production was questioned due to the extreme refinement of the azimuthal length scales when increasing the rotation rate \citep{sakuraba2009generation}. In contrast to the widely used fixed temperature condition, a fixed flux condition allows lateral temperature gradients to develop at the CMB. \citet{gibbons2007convection} and \citet{sakuraba2009generation} therefore expect large scale zonal flows to develop in a thermal wind mechanism (Roberts, 2007; see also section \ref{sec:thermal_wind}). As such flows are assumed to be a necessary ingredient for an efficient dynamo process, the fixed flux condition indirectly has a positive effect on the magnetic field strength \citep{hori2012influence}.\\ 
-The dependence of the magnetic field morphology and efficiency of the dynamo process on the Prandtl number was studied by \citet{simitev2005prandtl} and \citet{busse2006parameter}. The amount of differential rotation generated by Reynolds stresses (see \citet{busse2002convective, christensen2011geodynamo}) is inversely related to the Prandtl number \citep{simitev2005prandtl}: In the low Prandtl number thermal regime, the DR is much stronger than in the compositional regime with $\textrm{Pr}_\textrm{\tiny C} >1$. As a consequence, the toroidal magnetic field produced by DR in an $\omega$-effect is stronger in a thermally than in a compositionally driven case. The result is an intensification of the dynamo process and therefore the magnetic field.  \\ \par \noindent
+The dependence of the magnetic field morphology and efficiency of the dynamo process on the Prandtl number was studied by \citet{simitev2005prandtl} and \citet{busse2006parameter}. The amount of DR generated by Reynolds stresses (see \citet{busse2002convective, christensen2011geodynamo}) is inversely related to the Prandtl number \citep{simitev2005prandtl}: In the low Prandtl number thermal regime, the DR is much stronger than in the compositional regime with $\textrm{Pr}_\textrm{\tiny C} >1$. As a consequence, the toroidal magnetic field produced by DR in an $\omega$-effect is stronger in a thermally than in a compositionally driven case. The result is an intensification of the dynamo process and therefore the magnetic field.  \\ \par \noindent
 
-The Elsasser number $\Lambda$ compares the influence of the Lorentz force to that of the Coriolis force in the equation of momentum \citep{davidson2001introduction}. As the rotation rate is held constant here, $\Lambda$ serves as a measure for the strength of the magnetic field. Figure \ref{fig:els_reym}(a) shows $\Lambda$ for the different forcing ratios $\delta^*$ (see table \ref{tab:data}) for the uniform case UFF and for the heat flux pattern case PFF with $q^*\!=\!2$.  In both scenarios, the field strength increases roughly linearly with $\delta*$. According to the preceding discussion, this effect can be attributed to either the transition from a fixed composition BC at $\delta^* = 0$ to a fixed heat flux BC at $\delta^* = 1$ or to a transition from the low to the high Prandtl number regime. A combination of both reasons is likely to be an explanation. A more detailed discussion is beyond the scope of this study. Yet, the heat flux pattern seems to additionally promote the magnetic field production (compare the red and the black curve in figure \ref{fig:els_reym}(a)). This effect will be further discussed when it comes to the influence of the heat flux \textit{pattern} in section \ref{sec:effect_pattern}\\ \par
+The Elsasser number $\Lambda$ compares the influence of the Lorentz force to that of the Coriolis force in the equation of momentum \citep{davidson2001introduction}. As the rotation rate is held constant here, $\Lambda$ serves as a measure for the strength of the magnetic field. Figure \ref{fig:els_reym}(a) shows $\Lambda$ for the different forcing ratios $\delta^*$ (see table \ref{tab:data}) for the uniform case UFF and for the heat flux pattern case PFF with $q^*\!=\!2$.  In both scenarios, the field strength increases roughly linearly with $\delta*$. According to the preceding discussion, this effect can be attributed to either the transition from a fixed composition BC at $\delta^* = 0$ to a fixed heat flux BC at $\delta^* = 1$ or to a transition from the low to the high Prandtl number regime. A combination of both reasons is likely to be an explanation. A more detailed discussion is beyond the scope of this study. However, the heat flux pattern seems to additionally promote the magnetic field production (compare the red and the black curve in figure \ref{fig:els_reym}(a)). This effect will be further discussed when it comes to the influence of the heat flux \textit{pattern} in section \ref{sec:effect_pattern}\\ \par
 
 \subsubsection{Increase of the kinetic energy}
 \label{sec:kinetic_energy}
@@ -1064,18 +1065,18 @@ For the heat flux pattern case PFF, figures \ref{fig:els_reym}(a) and (c) sugges
   \caption{Equatorial views on the $z$-component of vorticity (top row) and the the axial magnetic magnetic field for case PFF12 ($\delta^* = 12$\%, left panel) and PFF100 ($\delta^*=100$\%, right panel). The first column in each panel shows snapshots ($ \bm{\omega_z}$ and $\bm{B_z}$), the second column long-term averages ($\bm{\bar \omega_z}$ and $\bm{\bar {B}_z$}). }
   \label{fig:anticyclones_dominance}
 \end{figure} \noindent
-The goal of this section is to integrate the findings of section \ref{sec:dyn_d020} about the magnetic flux patch generation into the context of the changing driving mechanism discussed in section \ref{sec:delta_dependence}. It was already shown that the effect of the heat flux pattern persists even if the relative influence of the thermal driving component makes up only 12\%. A justification for the choice of PFF12 as a showcase in the above section has to be given and the relation between the corresponding effect and the changing of the forcing ratio clarified. \\ \par \noindent
+The goal of this section is to integrate the findings of section \ref{sec:dyn_d020} concerning the magnetic flux patch generation into the context of the changing driving mechanism discussed in section \ref{sec:delta_dependence}. It was already shown that the effect of the heat flux pattern persists even if the relative influence of the thermal driving component makes up only 12\%. A justification for the choice of PFF12 as a showcase in the above section will be given and the relation between the corresponding effect and the changing of the forcing ratio clarified. \\ \par \noindent
 The intensification of the magnetic field, measured in terms of the Elsasser number, originating in the increase of the thermal forcing ratio can be related to the behavior of the dynamo under the influence of the heat flux pattern. Regarding the ratios of magnetic to kinetic energy (it is at least of order $\mathcal{O}$(10) for all cases, not shown here) and the Elsasser numbers (see table \ref{tab:data}) which measures the relative importance of the Lorentz force compared to the Coriolis force, it is reasonable to assume that the system belongs to the \textit{strong field regime} \citep{zhang2000magnetohydrodynamics}. This means that the Lorentz force has a significant effect on the flow field. \\
 \citet{sakuraba2000effect} apply a uniform magnetic field $\bm B_0$ parallel to the rotation axis to their magnetoconvection model in order to explore the influence of the strength of $\bm B_0$ on the convection dynamics. For the strong field regime, they find an enhancement of anticyclonic vortices in the equatorial plain that is explained with the need to store the large amounts of magnetic field present in the system. Anticyclones create a convergent flow in the equatorial plain (see the sketch in figure \ref{fig:secondary_circulation}) that gather magnetic flux and therefore serve as a storage for magnetic energy. The Lorentz force in an anticyclone is oriented outward and therefore works together with the pressure gradient force against the inward directed Coriolis force. As a result, the anticyclone grows in order to balance the additional impact of the Lorentz force \citep{sakuraba2000effect}. \\
 A similar observation was made by \citet{ishihara2002dynamo} who performed a self-sustained dynamo simulation. They describe a cyclic process in which an anticyclone grows, increasingly collects and intensifies magnetic flux by field line stretching and then breaks down due to the rising power of the outward directed Lorentz force before it grows again. \\ \par \noindent
 Figure \ref{fig:anticyclones_dominance} shows equatorial views of the axial vorticity (top row) and the axial component of the magnetic field (bottom row). Case PFF12 is subject to the left panel, whereas the right panel depicts case PFF100. The left column in each panel shows snapshots ($ \bm{\omega_z}$ and $\bm{B_z}$), the right panel long-term averaged quantities ($\bm{\bar \omega_z}$ and $\bm{\bar {B}_z$}). \\
 When comparing the red and the blue regions in the snapshots of vorticity in case PFF100, a dominance of anticyclonic (blue) structures ($\bm{\omega_z} < 0$) over cyclonic (red) structures is discernible. Two large regions with $\bm{\omega_z}<0$ lie at $90^\circ$ and $270^\circ$E close to the ICB. They are each accompanied by patches of high intensity magnetic flux, visible in the subfigure beneath. \\
-In contrast to that, the vorticity pattern for PFF12 reveals smaller scales and the regions of negative and positive vorticity are present in equal measure. Nevertheless, a correlation between $\bm{\omega_z}$ and $\bm{B_z}$ exists, which is in line with what was described in the beginning of this section. The fact that the length scales in the predominantly compositionally driven case are smaller agrees with the work of \citet{trumper2012numerical} and can be explained with the relatively low compositional diffusivity (high Prandtl number $\textrm{Pr}_\textrm{\tiny C}$) that makes the smoothing of small scale structures less effective than in the thermally driven case. \\
-The long-term averaged fields (right column in each panel) support the impression received from the snapshots. In case PFF12, positive and negative vorticity are nearly equally distributed but clearly show the influence of the $\mathcal{Y}_2^2$ heat flux pattern. In the purely thermally driven case PFF100, the impact of the heterogeneous boundary condition is only visible close to the CMB, where two bands of positive vorticity got their maximum $\sim 30^\circ$ west of the longitude of maximum CMB heat flux. The averaged axial magnetic fields ($\bm{\bar {B}_z}$) reflect what could be seen in the vorticity distribution. In case PFF12, anticyclones intensify magnetic flux, whereas cyclones expel and therefore weaken the field. PFF100 provides, in line with the vorticity field, a nearly uniform distribution of  $\bm{\bar{B}_z}$. \\ \par \noindent
+In contrast to that, the vorticity pattern for PFF12 reveals smaller scales and the regions of negative and positive vorticity are present to the same extent. Nevertheless, a correlation between $\bm{\omega_z}$ and $\bm{B_z}$ exists, which is in line with what was described in the beginning of this section. The fact that the length scales in the predominantly compositionally driven case are smaller agrees with the work of \citet{trumper2012numerical} and can be explained with the relatively low compositional diffusivity (high Prandtl number $\textrm{Pr}_\textrm{\tiny C}$) that makes the smoothing of small scale structures less effective than in the thermally driven case. \\
+The long-term averaged fields (right column in each panel in figure \ref{fig:anticyclones_dominance}) support the impression received from the snapshots. In case PFF12, positive and negative vorticity are nearly equally distributed but clearly show the influence of the $\mathcal{Y}_2^2$ heat flux pattern. In the purely thermally driven case PFF100, the impact of the heterogeneous boundary condition is only visible close to the CMB, where two bands of positive vorticity got their maximum $\sim 30^\circ$ west of the longitude of maximum CMB heat flux. The averaged axial magnetic fields ($\bm{\bar {B}_z}$) reflect what could be seen in the vorticity distribution. In case PFF12, anticyclones intensify magnetic flux, whereas cyclones expel and therefore weaken the field. PFF100 provides, in line with the vorticity field, a nearly uniform distribution of  $\bm{\bar{B}_z}$. \\ \par \noindent
 \begin{figure}[t]
  \begin{minipage}{0.48\textwidth}
   \includegraphics[width = 0.97\textwidth]{graphs/dynamo/dyn_d100_vectorfield_Br.png}
-  \caption{Same as figure \ref{fig:dyn_d20_vectorfield_Br} but for case PFF100.}
+  \caption{Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF100. In the front hemisphere, a dominant anticyclone with the center at $\sim 315^\circ$E is visible. The cyclonic region around 230$^\circ$ is less pronounced than in case PFF12, shown in figure \ref{fig:dyn_d20_vectorfield_Br}. View from a polar angle of $20^\circ$, the north polar is located in the middle of the central blue region.}
   \label{fig:d100_vectorfield_Br}
  \end{minipage}
 \hfill
@@ -1091,7 +1092,7 @@ The long-term averaged fields (right column in each panel) support the impressio
 The previously described observations from figure \ref{fig:anticyclones_dominance} are assumed to have their reason in the magnetic field strength, measured by the Elsasser number $\Lambda$. As it increases with increasing $\delta^*$ (see figure \ref{fig:els_reym}(a)), it promotes anticyclonic vortices in the equatorial plain and thereby suppresses cyclonic ones. This process agrees well with what \citet{sakuraba2000effect} and \citet{ishihara2002dynamo} report for their models. The dominance of negative vorticity close to the ICB in the equatorial plain has implications for the flow field and thereby for the magnetic field near the CMB. \\ \par \noindent
 Figures \ref{fig:d100_vectorfield_Br} and \ref{fig:d100_divLat_Br_mean} refer to case PFF100 and correspond to figures \ref{fig:dyn_d20_vectorfield_Br} and \ref{fig:divLat_Br}  from section \ref{sec:dyn_d020}, where the flux patch generation mechanism was discussed exemplary for case PFF12. The dominance of the negative vorticity in the equatorial plain in case PFF100 matches the significant enlargement of the anticyclonic vortex visible in the surface flow field around $315^\circ$ (compare figure \ref{fig:d100_vectorfield_Br} and \ref{fig:dyn_d20_vectorfield_Br}). In return, the surface cyclone with its center at 230$^\circ$ shrinks and becomes weaker. This implicates an uneven distribution of the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, shown in figure \ref{fig:d100_divLat_Br_mean} (red line). The horizontal divergence (connected to anticyclones at the CMB) is significantly stronger than the convergence (negative divergence, connected to cyclones at the CMB). The magnetic field geometry at the CMB in case PFF100 is thus evoked rather by the \textit{expulsion} of magnetic flux than by the \textit{collection} of magnetic field lines. The divergent flow on top of the anticyclones pushes the field towards the regions in between, where stronger cyclones were located in case PFF12. Hence, flux patches are located on top of the cyclones like before, although these play only a minor role in their formation.\\ \par \noindent
 
-\subsection{Relative dipole contribution and flux patch amplitude}
+\subsection{Relative dipole contribution and flux patch amplitude (fehlt noch)}
 
 \begin{figure}[H]
 \begin{minipage}{0.5\textwidth}
@@ -1105,9 +1106,9 @@ Figures \ref{fig:d100_vectorfield_Br} and \ref{fig:d100_divLat_Br_mean} refer to
  \end{minipage}
 \end{figure}
 
-\subsection{Robustness of the results}
+\subsection{Robustness of the results (fehlt noch)}
 \label{sec:robustness}
-\begin{figure}[t]
+\begin{figure}[H]
  \begin{minipage}{0.49\textwidth}
  \centering
  \includegraphics[width = 0.82 \textwidth]{results/ra_ek4-crop.pdf}
@@ -1118,7 +1119,7 @@ Figures \ref{fig:d100_vectorfield_Br} and \ref{fig:d100_divLat_Br_mean} refer to
   \begin{minipage}{0.49\textwidth}
  \centering
  \includegraphics[width = 0.85 \textwidth]{results/ek5-crop.pdf}
- \caption{...}
+ \caption{$\textrm{Ek}= 10^{-5}$}
  \label{fig:ek5}
  \end{minipage}
 \end{figure}
@@ -1126,7 +1127,7 @@ Figures \ref{fig:d100_vectorfield_Br} and \ref{fig:d100_divLat_Br_mean} refer to
 
 
 \newpage
-\section{Summary and Discussion}
+\section{Summary and Discussion (NUR Notizen)}
 
 \begin{itemize}
  \item \textbf{Wicht, Stellmach 2010:} The dynamo process is questioned to play a role at larger Ra and smaller Ek!
