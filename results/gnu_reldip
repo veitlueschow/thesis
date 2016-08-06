@@ -1,5 +1,13 @@
-set terminal pdf
+set terminal pdf enhanced font 'Verdana,17'
 set output "reldip.pdf"
-set title "Relative dipole" font ",20"
+set size square 1,1
 set key right
-plot [-0.05:1.05] "data_q0" u 1:5 w lp lc 1, "data_q1" u 1:5 w lp lc 3, "data_q2" u 1:5 w lp lc 2, "data_q4" u 1:5 w lp lc 7
+set key font ",13"
+set key width -1.5
+set key box linestyle 1 lc 7
+set xlabel 'Fraction of thermal forcing {/Symbol d}*' offset 0,0.8,0
+set pointsize 0.8
+set ytics (0.3, 0.4, 0.5, 0.6) offset 0.6,0,0
+set yrange [0.26:0.66]
+set xtics (0, 0.25, 0.5, 0.75, 1) offset 0,0.4,0
+plot [-0.05:1.05] "data_q2" u 1:5 w lp lc 7 lw 5 pt 3 t "q*=2", "data_q0" u 1:5 w lp lc 1 lw 5 t "uniform"

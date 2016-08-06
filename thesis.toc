@@ -30,10 +30,10 @@
 \contentsline {section}{\numberline {7}Thermo-chemical dynamo action}{38}
 \contentsline {subsection}{\numberline {7.1}The patch generation mechanism: A showcase}{39}
 \contentsline {subsection}{\numberline {7.2}Changing the driving mechanism}{41}
-\contentsline {subsubsection}{\numberline {7.2.1}Intensification of the magnetic field}{43}
-\contentsline {subsubsection}{\numberline {7.2.2}Increase of the kinetic energy}{44}
+\contentsline {subsubsection}{\numberline {7.2.1}Magnetic field strength}{43}
+\contentsline {subsubsection}{\numberline {7.2.2}Kinetic energy}{44}
+\contentsline {subsubsection}{\numberline {7.2.3}Dipolarity of the magnetic field}{45}
 \contentsline {subsection}{\numberline {7.3}The heat flux pattern in the context of a changing driving mechanism}{45}
-\contentsline {subsection}{\numberline {7.4}Relative dipole contribution and flux patch amplitude (fehlt noch)}{48}
-\contentsline {subsection}{\numberline {7.5}Robustness of the results (fehlt noch)}{49}
+\contentsline {subsection}{\numberline {7.4}Robustness of the results}{49}
 \contentsline {section}{\numberline {8}Summary and Discussion (NUR Notizen)}{50}
 \contentsline {section}{\numberline {9}Conclusion and Outlook}{50}
