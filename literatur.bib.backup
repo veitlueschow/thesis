@@ -342,3 +342,215 @@ source={Scopus},
   year={2004},
   publisher={Cambridge Univ Press}
 }
+
+@article{jones2000convection,
+  title={Convection--driven geodynamo models},
+  author={Jones, CA},
+  journal={Philosophical Transactions of the Royal Society of London A: Mathematical, Physical and Engineering Sciences},
+  volume={358},
+  number={1768},
+  pages={873--897},
+  year={2000},
+  publisher={The Royal Society}
+}
+
+@article{jones2000onset,
+  title={The onset of thermal convection in a rapidly rotating sphere},
+  author={Jones, Chris A and Soward, Andrew M and Mussa, Ali I},
+  journal={Journal of Fluid Mechanics},
+  volume={405},
+  pages={157--179},
+  year={2000},
+  publisher={Cambridge Univ Press}
+}
+
+@article{roberts2007theory,
+  title={Theory of the Geodynamo},
+  author={Roberts, PH},
+  journal={Core Dynamics: Treatise on Geophysics},
+  pages={67-105},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@book{pedlosky2013geophysical,
+  title={Geophysical fluid dynamics},
+  author={Pedlosky, Joseph},
+  year={2013},
+  publisher={Springer Science \& Business Media}
+}
+
+@book{davidson2001introduction,
+  title={An Introduction to Magnetohydrodynamics},
+  author={Davidson, Peter Alan},
+  year={2001},
+  publisher={Cambridge University Press}
+}
+
+@article{moffatt1978magnetic,
+  title={Magnetic field generation in electrically conducting fluids},
+  author={Moffatt, HK},
+  journal={Cambridge Uni},
+  year={1978}
+}
+
+@article{gibbons2000convection,
+  title={Convection in the Earth's core driven by lateral variations in the core-mantle boundary heat flux},
+  author={Gibbons, Steven John and Gubbins, David},
+  journal={Geophysical Journal International},
+  volume={142},
+  number={2},
+  pages={631--642},
+  year={2000},
+  publisher={Oxford University Press}
+}
+
+@phdthesis{dormy1997modelisation,
+  title={Mod{\'e}lisation num{\'e}rique de la dynamo terrestre},
+  author={Dormy, Emmanuel},
+  year={1997}
+}
+
+@article{christensen1999numerical,
+  title={Numerical modelling of the geodynamo: a systematic parameter study},
+  author={Christensen, U and Olson, P and Glatzmaier, GA},
+  journal={Geophysical Journal International},
+  volume={138},
+  number={2},
+  pages={393--409},
+  year={1999},
+  publisher={Oxford University Press}
+}
+
+@article{breuer2010thermochemically,
+  title={Thermochemically driven convection in a rotating spherical shell},
+  author={Breuer, M and Manglik, A and Wicht, J and Tr{\"u}mper, T and Harder, H and Hansen, U},
+  journal={Geophysical Journal International},
+  volume={183},
+  number={1},
+  pages={150--162},
+  year={2010},
+  publisher={Oxford University Press}
+}
+
+@article{kutzner2000effects,
+  title={Effects of driving mechanisms in geodynamo models},
+  author={Kutzner, Carsten and Christensen, Ulrich},
+  journal={Geophysical research letters},
+  volume={27},
+  number={1},
+  pages={29--32},
+  year={2000},
+  publisher={Wiley Online Library}
+}
+
+@book{rieutord2014fluid,
+  title={Fluid Dynamics: An Introduction},
+  author={Rieutord, Michel},
+  year={2014},
+  publisher={Springer}
+}
+
+@article{manglik2010dynamo,
+  title={A dynamo model with double diffusive convection for Mercury's core},
+  author={Manglik, Ajay and Wicht, Johannes and Christensen, Ulrich R},
+  journal={Earth and Planetary Science Letters},
+  volume={289},
+  number={3},
+  pages={619--628},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{takahashi2014double,
+  title={Double diffusive convection in the Earth's core and the morphology of the geomagnetic field},
+  author={Takahashi, Futoshi},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={226},
+  pages={83--87},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{sakuraba2009generation,
+  title={Generation of a strong magnetic field using uniform heat flux at the surface of the core},
+  author={Sakuraba, Ataru and Roberts, Paul H},
+  journal={Nature Geoscience},
+  volume={2},
+  number={11},
+  pages={802--805},
+  year={2009},
+  publisher={Nature Publishing Group}
+}
+
+@article{gibbons2007convection,
+  title={Convection in rotating spherical fluid shells with inhomogeneous heat flux at the outer boundary},
+  author={Gibbons, SJ and Gubbins, D and Zhang, K},
+  journal={Geophysical and Astrophysical Fluid Dynamics},
+  volume={101},
+  number={5-6},
+  pages={347--370},
+  year={2007},
+  publisher={Taylor \& Francis}
+}
+
+@article{busse2006parameter,
+  title={Parameter dependences of convection-driven dynamos in rotating spherical fluid shells},
+  author={Busse, Friedrich H and Simitev, Radostin D},
+  journal={Geophysical and Astrophysical Fluid Dynamics},
+  volume={100},
+  number={4-5},
+  pages={341--361},
+  year={2006},
+  publisher={Taylor \& Francis}
+}
+
+@article{simitev2005prandtl,
+  title={Prandtl-number dependence of convection-driven dynamos in rotating spherical fluid shells},
+  author={Simitev, R and Busse, FH},
+  journal={Journal of Fluid Mechanics},
+  volume={532},
+  pages={365--388},
+  year={2005},
+  publisher={Cambridge Univ Press}
+}
+
+@article{zhang2000magnetohydrodynamics,
+  title={Magnetohydrodynamics in rapidly rotating spherical systems},
+  author={Zhang, Keke and Schubert, Gerald},
+  journal={Annual review of fluid mechanics},
+  volume={32},
+  number={1},
+  pages={409--443},
+  year={2000},
+  publisher={Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}
+}
+
+@article{sakuraba2000effect,
+  title={Effect of a uniform magnetic field on nonlinear magnetocenvection in a rotating fluid spherical shell},
+  author={Sakuraba, ATARU and Kono, MASARU},
+  journal={Geophysical \& Astrophysical Fluid Dynamics},
+  volume={92},
+  number={3-4},
+  pages={255--287},
+  year={2000},
+  publisher={Taylor \& Francis}
+}
+
+@article{ishihara2002dynamo,
+  title={Dynamo mechanism in a rotating spherical shell: competition between magnetic field and convection vortices},
+  author={Ishihara, Norio and Kida, Shigeo},
+  journal={Journal of Fluid Mechanics},
+  volume={465},
+  pages={1--32},
+  year={2002},
+  publisher={Cambridge Univ Press}
+}
+
+@article{bloxham1987thermal,
+  title={Thermal core--mantle interactions},
+  author={Bloxham, Jeremy and Gubbins, David},
+  year={1987},
+  publisher={Nature Publishing Group}
+}
+

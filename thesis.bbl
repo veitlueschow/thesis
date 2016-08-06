@@ -22,6 +22,10 @@ Blakely, R.~J. (1996).
 \newblock {\em Potential theory in gravity and magnetic applications}.
 \newblock Cambridge University Press.
 
+\bibitem[Bloxham and Gubbins, 1987]{bloxham1987thermal}
+Bloxham, J. and Gubbins, D. (1987).
+\newblock Thermal core-mantle interactions.
+
 \bibitem[Braginsky and Roberts, 1995]{braginsky1995equations}
 Braginsky, S.~I. and Roberts, P.~H. (1995).
 \newblock Equations governing convection in earth's core and the geodynamo.
@@ -207,6 +211,13 @@ Olson, P., Christensen, U., and Glatzmaier, G.~A. (1999).
   and equilibration.
 \newblock {\em Journal of Geophysical Research: Solid Earth},
   104(B5):10383--10404.
+
+\bibitem[Olson et~al., 2010]{olson2010geodynamo}
+Olson, P.~L., Coe, R.~S., Driscoll, P.~E., Glatzmaier, G.~A., and Roberts,
+  P.~H. (2010).
+\newblock Geodynamo reversal frequency and heterogeneous core-mantle boundary
+  heat flow.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 180(1):66--79.
 
 \bibitem[Pedlosky, 2013]{pedlosky2013geophysical}
 Pedlosky, J. (2013).
