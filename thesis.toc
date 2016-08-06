@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {7.2}Changing the driving mechanism}{41}
 \contentsline {subsubsection}{\numberline {7.2.1}Intensification of the magnetic field}{43}
 \contentsline {subsubsection}{\numberline {7.2.2}Increase of the kinetic energy}{44}
-\contentsline {subsection}{\numberline {7.3}The heat flux pattern in the context of a changing driving mechanism}{44}
+\contentsline {subsection}{\numberline {7.3}The heat flux pattern in the context of a changing driving mechanism}{45}
 \contentsline {subsection}{\numberline {7.4}Relative dipole contribution and flux patch amplitude (fehlt noch)}{48}
 \contentsline {subsection}{\numberline {7.5}Robustness of the results (fehlt noch)}{49}
 \contentsline {section}{\numberline {8}Summary and Discussion (NUR Notizen)}{50}
