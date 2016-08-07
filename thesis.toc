@@ -28,14 +28,14 @@
 \contentsline {subsection}{\numberline {6.5}Stationary vortex columns attached to mantle heterogeneities}{31}
 \contentsline {subsection}{\numberline {6.6}The effect of the flux pattern on the temperature field}{33}
 \contentsline {section}{\numberline {7}Thermo-chemical dynamo action}{34}
-\contentsline {subsection}{\numberline {7.1}The patch generation mechanism: A showcase}{35}
+\contentsline {subsection}{\numberline {7.1}The patch generation mechanism: A showcase}{36}
 \contentsline {subsection}{\numberline {7.2}Changing the driving mechanism}{37}
 \contentsline {subsubsection}{\numberline {7.2.1}Magnetic field strength}{39}
 \contentsline {subsubsection}{\numberline {7.2.2}Kinetic energy}{40}
 \contentsline {subsubsection}{\numberline {7.2.3}Dipolarity of the magnetic field}{41}
-\contentsline {subsection}{\numberline {7.3}The heat flux pattern in the context of a changing driving mechanism}{41}
-\contentsline {subsection}{\numberline {7.4}Robustness of the results}{45}
-\contentsline {subsubsection}{\numberline {7.4.1}Towards a higher supercriticality}{45}
-\contentsline {subsubsection}{\numberline {7.4.2}Towards a higher rotation rate}{46}
-\contentsline {section}{\numberline {8}Summary and Discussion (NUR Notizen)}{48}
-\contentsline {section}{\numberline {9}Conclusion and Outlook}{48}
+\contentsline {subsection}{\numberline {7.3}The heat flux pattern in the context of a changing driving mechanism}{42}
+\contentsline {subsection}{\numberline {7.4}Robustness of the results}{46}
+\contentsline {subsubsection}{\numberline {7.4.1}Towards a higher supercriticality}{46}
+\contentsline {subsubsection}{\numberline {7.4.2}Towards a higher rotation rate}{47}
+\contentsline {section}{\numberline {8}Summary and Discussion (NUR Notizen)}{49}
+\contentsline {section}{\numberline {9}Conclusion and Outlook}{49}
