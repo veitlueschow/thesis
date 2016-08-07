@@ -561,9 +561,10 @@ This chapter briefly introduces the diagnostic quantities and techniques that ar
  \begin{equation}
  \textrm{Re} = \frac{D\,u_\textrm{rms}}{\nu}\quad\quad \textrm{     and    } \quad\quad \textrm{Re}_m = \frac{D\, u_\textrm{rms}}{\eta}
  \end{equation}\noindent 
+ \item[-] \textbf{Relative dipole strength}\\
+ Only the first twelve spectral degrees of the relative strength of the magnetic dipole at the CMB $f_\textrm{dip}$ are measurable for the geomagnetic field, due to the filtering effect of the overlying mantle. Therefore, $f_\textrm{dip}$ is defined as the ratio of the rms axial dipole component to the total rms field up to the harmonic degree $l=12$. 
  \end{itemize}
 
-%  \item[-] \textbf{Portion of toroidal kinetic energy}
 %  \item[-] \textbf{Rossby number}
 %  \item[-] \textbf{Elsasser number}
 %  \item[-] \textbf{Temporal average}
@@ -874,17 +875,17 @@ The surface projection of the temperature field at the CMB (Figure \ref{fig:q2_2
   \textbf{Case} &  $q^*$ & Ek	& $\textrm{Ra}_\textrm{\tiny T}\times \textrm{Ek}$& $\textrm{Ra}_\textrm{\tiny C} \times \textrm{Ek}$& $\gamma_\textrm{total}$& $\delta^*$& $\textrm{Re}_m$& $\Lambda$& $f_\textrm{dip}$ \\
   \hline
   \hline
-\rule{0pt}{4ex}\textbf{PFF100} & 2&  $10^{-4}$ & $440$ &$0$ & $8.6$ & \textbf{100\%} & 284.8 & 26.5 & 34\% \\ 
-  \textbf{PFF69}   &2&  $10^{-4}$ & $352$ & $88$ & 10 & \textbf{69\%}	& 254.9 & 23.3 & 36\% \\       
-  \textbf{PFF36}    &2&  $10^{-4}$& 220 & 220 & 12 & \textbf{36\%} & 209.9 & 16.3 & 44\% \\
-  \textbf{PFF12}   &\textbf{2}&  $\bm{10^{-4}}$ & \textbf{88} & \textbf{352} & \textbf{14} & \textbf{12\%} & \textbf{170.3} & \textbf{7.4} & \textbf{57\%} \\
-  \textbf{PFF0}    &2&  $10^{-4}$& 0 & 440 & 15.4 &\textbf{0\%} & 139.5 & 4.8 & 64\% \\
+\rule{0pt}{4ex}\textbf{PFF100} & 2&  $10^{-4}$ & $440$ &$0$ & $8.6$ & \textbf{100\%} & 284.8 & 26.5 & 62\% \\ 
+  \textbf{PFF69}   &2&  $10^{-4}$ & $352$ & $88$ & 10 & \textbf{69\%}	& 254.9 & 23.3 & 64\% \\       
+  \textbf{PFF36}    &2&  $10^{-4}$& 220 & 220 & 12 & \textbf{36\%} & 209.9 & 16.3 & 72\% \\
+  \textbf{PFF12}   &\textbf{2}&  $\bm{10^{-4}}$ & \textbf{88} & \textbf{352} & \textbf{14} & \textbf{12\%} & \textbf{170.3} & \textbf{7.4} & \textbf{85\%} \\
+  \textbf{PFF0}    &2&  $10^{-4}$& 0 & 440 & 15.4 &\textbf{0\%} & 139.5 & 4.8 & 92\% \\
   \hline
- \rule{0pt}{4ex}\textbf{UFF100} & 0&  $10^{-4}$ & $400$ & $0$ & 8.6 & \textbf{100\%}	& 300.5&	19.1&	31\% \\
-  \textbf{UFF69} & 0 &  $10^{-4}$& 352 & 88 & 10 & \textbf{69\%} & 276.7&	15.3&	35\% \\
-  \textbf{UFF36}    &0&  $10^{-4}$& 220 & 220 & 12 & \textbf{36\%} & 210.2&	12.4&	44\% \\
-  \textbf{UFF12} & 0 &  $10^{-4}$ & 88 & 352 & 14 & \textbf{12\%} & 151.8&	6.9&	60\% \\
-  \textbf{UFF0}	& 0 & $10^{-4}$& 0 & 440 & 15.4 &\textbf{0\%} & 139.5&	4.8&	64\% 
+ \rule{0pt}{4ex}\textbf{UFF100} & 0&  $10^{-4}$ & $400$ & $0$ & 8.6 & \textbf{100\%}	& 300.5&	19.1&	59\% \\
+  \textbf{UFF69} & 0 &  $10^{-4}$& 352 & 88 & 10 & \textbf{69\%} & 276.7&	15.3&	63\% \\
+  \textbf{UFF36}    &0&  $10^{-4}$& 220 & 220 & 12 & \textbf{36\%} & 210.2&	12.4&	72\% \\
+  \textbf{UFF12} & 0 &  $10^{-4}$ & 88 & 352 & 14 & \textbf{12\%} & 151.8&	6.9&	88\% \\
+  \textbf{UFF0}	& 0 & $10^{-4}$& 0 & 440 & 15.4 &\textbf{0\%} & 139.5&	4.8&	92\% 
  \end{tabular}
 \caption{Overview of the Parameters regarded in this section and the associated diagnostic quantities: Magnetic Reynolds number Re$_m$, Elsasser number $\Lambda$ and realtive strength of the magnetic dipole component $f_\textrm{dip}$, all defined in section \ref{sec:diagnostics}. The case PFF12, highlighted in bold, serves as showcase in section \ref{sec:dyn_d020}. PFF stands for a fixed flux condition including the heat flux pattern, UFF for the uniform fixed flux BC.}
 \label{tab:data}
@@ -997,19 +998,19 @@ Each of the points mentioned is expected to have an effect on the behavior of th
 \begin{minipage}{0.308\textwidth}
   \centering
    \caption*{(a) Elsasser $\Lambda$}
- %\includegraphics[width = 0.99\textwidth]{results/els-crop.pdf}
+ \includegraphics[width = 0.99\textwidth]{results/els-crop.pdf}
 \end{minipage}
 \hfill
 \begin{minipage}{0.32\textwidth}
   \centering
    \caption*{(b) Magnetic Reynolds Re$_m$}
- %\includegraphics[width = 0.99\textwidth]{results/reym-crop.pdf}
+ \includegraphics[width = 0.99\textwidth]{results/reym-crop.pdf}
 \end{minipage}
 \hfill
 \begin{minipage}{0.32\textwidth}
   \centering
    \caption*{(c) Toroidal kin. energy $f_\textrm{tor}$}
- %\includegraphics[width = 0.99 \textwidth]{results/relTor-crop.pdf}
+ \includegraphics[width = 0.99 \textwidth]{results/relTor-crop.pdf}
 \end{minipage}
  \caption{(a) Elsasser number, (b) magnetic Reynolds number Re$_m$ and (c) portion of toroidal kinetic energy $f_\textrm{tor}$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ for the uniform case UFF as well as for the case PFF with $q^*=2$. The data originates from the statistically stationary state. The errorbars in (a) indicate the standard deviation.}
    \label{fig:els_reym}
@@ -1032,17 +1033,21 @@ For the heat flux pattern case PFF, figures \ref{fig:els_reym}(a) and (c) sugges
 
 \subsubsection{Dipolarity of the magnetic field}
 \label{sec:reldip}
-The relative strength of the magnetic dipole component at the CMB is a measure that is accessible for dynamo simulations as well as for the geomagnetic field. Therefore it may serve as one indicators for the degree to which a dynamo model can be called Earth-like. The mantle, overlying the geodynamo, has a filtering effect on the magnetic field, so that only the first 12 spectral degrees of the geomagnetic field at the CMB are measurable at the Earth's surface. The relative dipole strength $f_\textrm{dip}$ is thus defined as the ratio of the rms axial dipole component to the total rms field up to the harmonic degree $l=12$. 
+The relative strength of the magnetic dipole component at the CMB is a measure that is accessible for dynamo simulations as well as for the geomagnetic field. Therefore it may serve as an indicator for the degree to which a dynamo model can be called Earth-like. The definition of the dipole strength $f_\textrm{dip}$ is given in section \ref{sec:diagnostics}.
 \begin{figure}[H]
 \begin{minipage}{0.5\textwidth}
-
+Figure \ref{fig:reldip} shows a decrease of $f_\textrm{dip}$ for the transition from purely chemical ($\delta^*=0$) to purely thermal convection ($\delta^*=1$) for the heat flux pattern case PFF (black line) as well es for the uniform case UFF (red line). \citet{sreenivasan2006role} as well as \citet{christensen2006scaling} argue that the the Rossby number $Ro$, measuring the importance of inertia compared to that of rotation in the force balance, plays a crucial role for the dipolarity of the magnetic field. This suggests that the transition from Pr$_\textrm{\tiny C} = 3$ to Pr$_\textrm{\tiny T}=0.3$ is responsible for the drop in $f_\textrm{dip}$ because the Prandtl number weights the inertia term in the equation of momentum. 
+reason in Prandtl number\\
+in line with other peoples findings (Takahashi 2014, Busse Simitev 2005, Christensen?)
 \end{minipage}
 \hfill
  \begin{minipage}{0.4\textwidth}
  \centering
     \caption*{Relative dipole $f_\textrm{dip}$}
-   %\includegraphics[width = 0.98\textwidth]{results/reldip-crop.pdf}
- \caption{bla}
+    \centering
+   \includegraphics[width = 0.95\textwidth]{results/reldip-crop.pdf}
+   \vspace{5mm}
+ \caption{Relative dipole strength $f_\textrm{dip}$ (see section \ref{sec:diagnostics} for a definition) for different $\delta^*$ for the heat flux pattern case PFF (black line) and the uniform case UFF (red line). The black dotted line shows the value for today's geomagnetic field $f_\textrm{dip} = 0.65$ \citep{finlay2010international}.}
  \label{fig:reldip}
  \end{minipage}
 \end{figure}
@@ -1127,33 +1132,42 @@ $\mathcal{P}$, a measure for the strength of the effect of the $\mathcal{Y}_2^2$
  \end{figure}
 \subsection{Robustness of the results}
 \label{sec:robustness}
-All results presented so far in section \ref{sec:dynamo} refer to the cases PFF and UFF that were all conducted with a total Rayleigh number $\textrm{Ra}_\textrm{total} = 440\times 10^4$ and an Ekman number Ek$=10^{-4}$ (see table \ref{tab:data}). In order to draw any conclusions relevant for the field of planetary cores, the robustness of the observations has to be checked, i.e. the study has to be extended to other parameters. Although it is impossible to reach a \textit{realistic} parameter regime, as in most problems linked to dynamos, a step in the right direction can be done. \\ \par \noindent
-At first, the total Rayleigh number is varied while keeping $\delta^*=100\%$ fixed, so that the forcing is of purely thermal origin, i.e., $\textrm{Ra}_\textrm{total} = \textrm{Ra}_\textrm{\tiny T}$. The Ekman number is as above, Ek=$10^{-4}$. Figure \ref{fig:ra_ek4} shows the relative magnetic flux patch amplitude $\mathcal{P}$ (introduced in the preceding section) for different Rayleigh numbers $\textrm{Ra}_\textrm{\tiny T}$. A trend towards lower flux patch amplitudes for higher Rayleigh numbers is clearly discernible. Increasing the Rayleigh number means to increase the convective vigor and therefore the turbulent mixing. A more efficient mixing process tends to equilibrate large scale temperature gradients. Consequently, the influence of the boundary induced temperature variation is expected to be weakened and $\mathcal{P}$ to decrease. This is in line with the findings of \citet{hori2014ancient}, who reports the same behavior for internally heated dynamos. 
-
+All results presented so far in section \ref{sec:dynamo} refer to the cases PFF and UFF that were all conducted with a total Rayleigh number $\textrm{Ra}_\textrm{total} = 440\times 10^4$ and an Ekman number Ek$=10^{-4}$ (see table \ref{tab:data}). In order to draw any conclusions relevant for the field of planetary cores, the robustness of the observations has to be checked, i.e. the study has to be extended to other parameters. Although it is impossible to reach a \textit{realistic} parameter regime, as in most problems linked to dynamos, a step in the right direction can be made. The heat flux pattern amplitude will be held fixed at $q^*=2$. 
 \begin{figure}[t]
- \begin{minipage}{0.47\textwidth}
+ \begin{minipage}[t]{0.47\textwidth}
  \centering
- \includegraphics[width = 0.82 \textwidth]{results/ra_ek4-crop.pdf}
- \caption{Relative flux patch amplitude for various Rayleigh numbers in a purely thermally driven case ($\delta^*=100\%$). The heat flux pattern amplitude is $q^*=2$, as above. The red point marks case PFF100 that was already discussed in section \ref{sec:effect_pattern}. }
+ \vspace{0pt}
+     \caption*{Relative patch amplitude $\mathcal{P}$}
+ \includegraphics[width = 0.86 \textwidth]{results/ra_ek4-crop.pdf}
+ \vspace{4mm}
+ \caption{Relative flux patch amplitude $\mathcal{P}$ for various Rayleigh numbers in a purely thermally driven case ($\delta^*=100\%$). The heat flux pattern amplitude is $q^*=2$, as above. The red point marks case PFF100 that was already discussed in section \ref{sec:effect_pattern}. }
  \label{fig:ra_ek4}
  \end{minipage}
  \hfill
-  \begin{minipage}{0.47\textwidth}
+  \begin{minipage}[t]{0.47\textwidth}
  \centering
- \includegraphics[width = 0.85 \textwidth]{results/ek5-crop.pdf}
- \caption{Elsasser number $\Lambda$ (black line, left ordinate) and relative dipole strength (red line, right ordinate) for different forcing ratios $\delta^*$. The total Rayleigh number is $\textrm{Ra}_\textrm{total} = 1000 \times 10^5$ and the Ekman number $\textrm{Ek}= 10^{-5}$ (critical Rayleigh numbers in table \ref{tab:crit}).}
+ \vspace{0pt}
+     \caption*{Relative patch amplitude $\mathcal{P}$}
+ \includegraphics[width = 0.8 \textwidth]{results/ek5_2-crop.pdf}
+ \vspace{4mm}
+ \caption{Relative flux patch amplitude $\mathcal{P}$ for different forcing ratios $\delta^*$. The total Rayleigh number is $\textrm{Ra}_\textrm{total} = 1000 \times 10^5$, the Ekman number $\textrm{Ek}= 10^{-5}$ and the flux patch amplitude $q^*=2$. }
  \label{fig:ek5}
  \end{minipage}
-\end{figure}
-
-
-
+\end{figure} \noindent
+\subsubsection{Towards a higher supercriticality}
+At first, the total Rayleigh number is varied while keeping $\delta^*=100\%$ fixed, so that the forcing is of purely thermal origin, i.e., $\textrm{Ra}_\textrm{total} = \textrm{Ra}_\textrm{\tiny T}$. The Ekman number is chosen as above, Ek=$10^{-4}$. Figure \ref{fig:ra_ek4} shows the relative magnetic flux patch amplitude $\mathcal{P}$ (introduced in the preceding section) for different Rayleigh numbers $\textrm{Ra}_\textrm{\tiny T}$. A trend towards lower values of $\mathcal{P}$ for higher Rayleigh numbers is clearly discernible. Increasing the Rayleigh number means to increase the convective vigor and therefore the turbulent mixing. A more efficient mixing process tends to equilibrate large scale temperature gradients. Consequently, the influence of the boundary induced temperature variation is expected to be weakened and $\mathcal{P}$ to decrease. This is in line with the findings of \citet{hori2014ancient}, who reports the same behavior for internally heated dynamos. However, the question whether the influence of the $\mathcal{Y}_2^2$ BC completely vanishes if the Rayleigh number approaches a regime that is realistic for the LOC, remains open.
+\subsubsection{Towards a higher rotation rate}
+In a second step, the Ekman number is reduced to Ek$=10^{-5}$. As for the scenario with Ek$=10^{-4}$, numerical simulations for five different forcing ratios $\delta^*$ are conducted. The total Rayleigh number is $\textrm{Ra}_\textrm{total} = 1000 \times 10^5$, which is $\sim 9$ times supercritical in the purely thermal case and $\sim 21$ times supercritical in the purely chemical case, respectively (see table \ref{tab:crit}). This choice was made in order to obtain data that is comparable to the Ek$=10^{-4}$ cases, discussed in sections \ref{sec:dyn_d020} to \ref{sec:effect_pattern}, with respect to its supercriticality. \\
+Figure \ref{fig:ek5} that is showing $\mathcal{P}$ for the different $\delta^*$ reveals a similar picture as figure \ref{fig:relamp} from the above case with the lower rotation rate. The flux patch amplitude lies in between 0.33 and 0.43 for all cases that include thermal forcing and herewith are affected by the $\mathcal{Y}_2^2$ BC. The behavior of the Elsasser number $\Lambda$, the magnetic Reynolds number Re$_m$ and the dipole strength $f_\textrm{dip}$ (all not shown) likewise agree well with what was shown in the corresponding figures \ref{fig:els_reym}(a), \ref{fig:els_reym}(b) and \ref{fig:reldip} for Ek$=10^{-4}$. Furthermore, the differences in the magnetic field strength between the uniform case UFF and the heat flux pattern case PFF (see figure \ref{fig:els_reym}(a), red and black line), discussed at the end of section \ref{sec:magnetic_field_strength}, can be observed at Ek$=10^{-5}$, too.\\
+The above discussion on the effect of the heat flux pattern in the context of a changing $\delta^*$ (sections \ref{sec:dyn_d020} to \ref{sec:effect_pattern}) seems to be applicable to higher rotation rates. If the decisive relation to control the flow dynamics is a thermal wind balance, as it was said in section \ref{sec:radial_flow}, this is not astonishing because it is grounded on small values of Ek \citep{zhang1992convection,dietrich2016core}. Then, the system behavior is not expected to change if Ek is further decreased. Yet, section \ref{sec:radial_flow} as well as the above cited studies refer to non magnetic convection and the role of the Lorentz force is not quite clear, when going to higher rotation rates. 
 \newpage
 \section{Summary and Discussion (NUR Notizen)}
 
 \begin{itemize}
  \item \textbf{Wicht, Stellmach 2010:} The dynamo process is questioned to play a role at larger Ra and smaller Ek!
  \item The vortex columns are only in a statistical sense locked to the mantle
+ \item Kein grund zu glauben, das pattern hat keinen einfluss bei Ek gegen 0 hat
+ \item Es findet ein Übergang von high intertia ($\delta^* = 1$) zu low inertia statt. Das hat einen Einfluss auf die Dipolarität
 \end{itemize}
 
 

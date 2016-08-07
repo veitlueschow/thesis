@@ -19,21 +19,23 @@
 \contentsline {subsection}{\numberline {3.13}Diagnostics (noch nicht vollst\"andig)}{20}
 \contentsline {subsection}{\numberline {3.14}INITIAL CONDITIONS!!!}{21}
 \contentsline {section}{\numberline {4}State of research (bisher nur Notizen von mir)}{21}
-\contentsline {section}{\numberline {5}Outline of the study (Notizen)}{22}
-\contentsline {section}{\numberline {6}Core convection under the influence of the CMB heat flux pattern}{23}
-\contentsline {subsection}{\numberline {6.1}The onset of convection in the uniform case}{24}
-\contentsline {subsection}{\numberline {6.2}Columns of constant vorticity}{24}
-\contentsline {subsection}{\numberline {6.3}The geostrophic and the thermo-chemical wind balance}{27}
-\contentsline {subsection}{\numberline {6.4}The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}{27}
-\contentsline {subsection}{\numberline {6.5}Stationary vortex columns attached to mantle heterogeneities}{30}
-\contentsline {subsection}{\numberline {6.6}The effect of the flux pattern on the temperature field}{32}
-\contentsline {section}{\numberline {7}Thermo-chemical dynamo action}{33}
-\contentsline {subsection}{\numberline {7.1}The patch generation mechanism: A showcase}{34}
-\contentsline {subsection}{\numberline {7.2}Changing the driving mechanism}{36}
-\contentsline {subsubsection}{\numberline {7.2.1}Magnetic field strength}{37}
-\contentsline {subsubsection}{\numberline {7.2.2}Kinetic energy}{39}
-\contentsline {subsubsection}{\numberline {7.2.3}Dipolarity of the magnetic field}{39}
-\contentsline {subsection}{\numberline {7.3}The heat flux pattern in the context of a changing driving mechanism}{39}
-\contentsline {subsection}{\numberline {7.4}Robustness of the results}{42}
-\contentsline {section}{\numberline {8}Summary and Discussion (NUR Notizen)}{44}
-\contentsline {section}{\numberline {9}Conclusion and Outlook}{44}
+\contentsline {section}{\numberline {5}Outline of the study (Notizen)}{23}
+\contentsline {section}{\numberline {6}Core convection under the influence of the CMB heat flux pattern}{24}
+\contentsline {subsection}{\numberline {6.1}The onset of convection in the uniform case}{25}
+\contentsline {subsection}{\numberline {6.2}Columns of constant vorticity}{25}
+\contentsline {subsection}{\numberline {6.3}The geostrophic and the thermo-chemical wind balance}{28}
+\contentsline {subsection}{\numberline {6.4}The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}{28}
+\contentsline {subsection}{\numberline {6.5}Stationary vortex columns attached to mantle heterogeneities}{31}
+\contentsline {subsection}{\numberline {6.6}The effect of the flux pattern on the temperature field}{33}
+\contentsline {section}{\numberline {7}Thermo-chemical dynamo action}{34}
+\contentsline {subsection}{\numberline {7.1}The patch generation mechanism: A showcase}{35}
+\contentsline {subsection}{\numberline {7.2}Changing the driving mechanism}{37}
+\contentsline {subsubsection}{\numberline {7.2.1}Magnetic field strength}{39}
+\contentsline {subsubsection}{\numberline {7.2.2}Kinetic energy}{40}
+\contentsline {subsubsection}{\numberline {7.2.3}Dipolarity of the magnetic field}{41}
+\contentsline {subsection}{\numberline {7.3}The heat flux pattern in the context of a changing driving mechanism}{41}
+\contentsline {subsection}{\numberline {7.4}Robustness of the results}{45}
+\contentsline {subsubsection}{\numberline {7.4.1}Towards a higher supercriticality}{45}
+\contentsline {subsubsection}{\numberline {7.4.2}Towards a higher rotation rate}{46}
+\contentsline {section}{\numberline {8}Summary and Discussion (NUR Notizen)}{48}
+\contentsline {section}{\numberline {9}Conclusion and Outlook}{48}
