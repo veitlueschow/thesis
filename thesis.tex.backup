@@ -34,6 +34,7 @@
 \begin{itemize}
  \item chapter 5 and six verbinden! Besonders in 6 mehr Bezüge zu 5 herstellen.
  \item reihenfolge der abbildungen
+ \item Nochmal auf flux patch amplitude eingehen
 \end{itemize}
 
 
@@ -56,7 +57,10 @@ We observe that fixed flux conditions promote larger flow scales and an increase
 \subsection{State of research}
 \textbf{On heat flux pattern}\\
 The longitudes at which the magnetic flux lobes are found remaining approximately stationary in time (Gubbins and Bloxham, 1987)\\
-This is difficult to explain in the context of a uniform dynamo model, where the solution should steadily drift in time (Knobloch, 1994) and thus heterogeneities average out in long-term averages (Sarson, 1997)
+This is difficult to explain in the context of a uniform dynamo model, where the solution should steadily drift in time (Knobloch, 1994) and thus heterogeneities average out in long-term averages. The existence of geomagnetic features that persist on time scales larger than the average time scale of the LOC has led to the hypothesis that a coupling between the core and the mantle, with a its much larger time scales, takes place (Sarson, 1997).\\ \par \noindent
+\textbf{On dual forcing mechanism}\\
+Compositional forcing is expected to be larger than thermal(e.g. Braginsky, 1964)\\
+
  
 \section{Modeling core convection and dynamo action}
 
@@ -69,12 +73,12 @@ The liquid outer core (LOC) is modeled in a spherical shell with an inner radius
 The LOC is constantly rotating about the z-axis of a Cartesian system with an angular velocity $\Omega$ that is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study, spherical coordinates are used (see figure \ref{fig:FOC}(b) for the definition of the unit vectors).  \\
 \begin{figure}[H]
  \begin{minipage}{0.42\textwidth}
-  %\includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
+  \includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
   \caption*{(a)}
  \end{minipage}
  \hfill
 \begin{minipage}{0.47\textwidth}
-  %\includegraphics[width=\textwidth]{sketches/spherical_coord2.jpg} 
+  \includegraphics[width=\textwidth]{sketches/spherical_coord2.jpg} 
   \caption*{(b)}
   \end{minipage}
   \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian $z$-axis. (b) This work uses spherical coordinates with unit vectors $ \bm{e_r}$, $\bm{e_\Phi}$ and $\bm{e_\vartheta}$ \citep{trumper2014thermo}.}
@@ -146,7 +150,7 @@ The body forces $\bm f$ are the \textit{buoyancy force} $\bm f_g =  \bm g \rho$ 
 In the following, the gravitational field $\bm g$ will be discussed in more detail. As mentioned before, the system underlies an asymmetric heat flux at the CMB. This results in an asymmetric temperature field for which the penetration depth of the temperature perturbation to a spherical symmetric solution depends on the amplitude of the heat flux heterogeneity. Following the linear equation of state from the Boussinesq approximation (see section \ref{sec:boussinesq}), this results in a density variation proportional to the temperature variation: $\delta {\rho} \sim \delta {T}$. Figure \ref{fig:density_var} shows a sketch of the density variation along the equator at the CMB, evoked by the boundary induced lateral temperature variation.
 \begin{figure}[H]
  \centering
- %\includegraphics[scale = 0.24]{sketches/density_var.pdf} 
+ \includegraphics[scale = 0.24]{sketches/density_var.pdf} 
  \caption{Sketch of the density along the equator, near the CMB. The deviation (black) from the average density (red) results from the asymmetric heat flux at the CMB which has a asymmetric temperature field as an consequence. }
  \label{fig:density_var}
 \end{figure} \noindent
@@ -369,12 +373,12 @@ $a_0^0$ is an arbitrary integration constant that is chosen to be 0 in the follo
 The effect of the CMB - heat flux pattern on the conductive temperature field is shown in Figure \ref{fig:conductives}(a) and (b). Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east, see also the sketch in Figure \ref{fig:fluxsketch}), are characterized by relatively low temperatures because they are cooled more efficiently. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
 \begin{figure}[t]
  \begin{minipage}{0.36\textwidth}
-  %\includegraphics[width=0.9\textwidth]{sketches/equatorial_conductive.png}
+  \includegraphics[width=0.9\textwidth]{sketches/equatorial_conductive.png}
   \caption*{(a) Equatorial view}
  \end{minipage}
  \hfill
  \begin{minipage}{0.62\textwidth}
-  %\includegraphics[width=0.9\textwidth]{sketches/surface_conductive.png}
+  \includegraphics[width=0.9\textwidth]{sketches/surface_conductive.png}
   \caption*{(b) Surface projection}
  \end{minipage}
 \caption{Conductive temperature field $T_\textrm{cond}$ in the equatorial plain (left) and as a \textit{Hammer-Aitov-projection} at the CMB (right) in a non dimensional form (see section \ref{sec:nondim}). The amplitude of the heat flux heterogeneity is $Amp_2^2 = 1$, heat flux maxima are located at 90$^\circ$ and 270$^\circ$, respectively. See Figure \ref{fig:fluxsketch} for a schematic overview. } 
@@ -385,13 +389,13 @@ The effect of the CMB - heat flux pattern on the conductive temperature field is
 The amplitude of heterogeneity, $Amp_2^2$, from now on referred to as $q^*$, plays a central role for the heat flux pattern. Figure \ref{fig:equator_flux} shows the core-mantle heat flux along the equator for two values of $q^*$. If the amplitude is chosen to be greater than 1, negative (inward) heat flux occurs in distinct regions around the flux minima. Heat flow from the mantle to the core produces gravitationally stable regions with respect to temperature. Together with an always destabilizing compositional gradient, this could yield non linear double-diffusive effects as fingering or layering. A scenario in which gravitationally stable regions play a role in core convection was recently discussed for mercury \citep{tian2015magnetic}. Yet for the Earth, where the heterogeneities in core-mantle heat flux are considered to be rather mild \citep{aubert2008thermochemical, olson2002time, glatzmaier1999role}, \citet{nakagawa2008lateral} expect that heat flows from the mantle to the core where compositionally dense piles settle at the base of the mantle. Because of that and due to the fact that this study aims to explore the effect of a heat flux pattern on core convection from a general perspective, values of $q^* >1$ are likewise regarded.
 \begin{figure}[H]
  \begin{minipage}[left]{0.7\textwidth}
-  %\includegraphics[width=1\textwidth]{sketches/eq_flux-trim.png}
+  \includegraphics[width=1\textwidth]{sketches/eq_flux-trim.png}
 \caption{Plot of the CMB - heat flux along the equator for amplitudes of heterogeneity $q^* = 1$ and $q^* = 2$. For $q^* > 1$, heat partially flows from the mantle to the core (blue region). } 
  \label{fig:equator_flux}
  \end{minipage}
  \hfill
   \begin{minipage}[right]{0.25\textwidth}
-  %\includegraphics[width=0.92\textwidth]{sketches/pattern.jpg}
+  \includegraphics[width=0.92\textwidth]{sketches/pattern.jpg}
  \caption{Sketch of the equatorial plain and the distribution of high and low heat flux at the CMB. }
  \label{fig:fluxsketch}
   \end{minipage}
@@ -601,6 +605,7 @@ On the question whether heat flux heterogeneities destroy magnetic fields:
 \begin{itemize}
  \item Olson 2002
  \item Olson Glatzmaier 1996
+ \item Sarson 1997: dynamo action persists until relatively high pattern amplitudes. He applies only a m=2 symmetry study
 \end{itemize}
 
 Anticyclones are slightly stronger than cyclones
@@ -669,46 +674,43 @@ Describe the parameters used and show earth values
 
 \section{Core convection under the influence of the CMB heat flux pattern}
 \label{sec:thermo-chemical}
-The $\mathcal{Y}_2^2$ temperature boundary condition at the CMB means an inherent axial asymmetry for the system that is visible in the flow field as well as in the temperature and chemical field. This section aims to point out the most important characteristics that are distinct to non magnetic convection under the influence of the new boundary conditions. Therefore, the focus lies on the heat flux pattern and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model. Nevertheless, a thermo-chemical case will also be discussed in the following.\\ \par
-
+The $\mathcal{Y}_2^2$ temperature boundary condition at the CMB implies an inherent axial asymmetry for the system that is visible in the flow field as well as in the temperature and chemical field. This section aims to point out the most important characteristics that are distinct to non magnetic convection under the influence of the new boundary conditions. Therefore, the focus lies on the heat flux pattern and thus on the thermal driving, not on the thermo-\textit{chemical} nature of the model. Nevertheless, one thermo-chemical case will be discussed in the following. It will be seen that the heterogeneous thermal BC strongly affects the distribution of the light component. \\ \par \noindent
 A key feature of the non homogeneous model is the formation of stationary vortex columns that are attached to mantle heterogeneities. The aim of this section is to explain their formation and their meaning for the system.\\
 In the beginning, sections \ref{sec:onset}, \ref{sec:vortex_clolumns} and \ref{sec:thermal_wind} provide the theoretical background for the explanation and interpretation of the results.
-As a start, the \textit{onset of convection in the uniform case} in form of an azimuthally drifting Rossby wave will be briefly discussed in section \ref{sec:onset}. The uniform solution inhibits \textit{columns of constant vorticity} that will be the topic of section \ref{sec:vortex_clolumns}. Although this section still deals with the uniform case, its results can be applied to the heterogeneous system. Section \ref{sec:thermal_wind} introduces the reader to the \textit{geostrophic and the thermo-chemical wind balance}. Especially the thermo-chemical wind balance, elsewhere called thermal wind balance, plays an important role here, because it considers lateral density gradients and they are emphasized by the laterally varying heat flux conditions. \\
+As a start, the \textit{onset of convection in the uniform case} in form of an azimuthally drifting Rossby wave will be briefly discussed in section \ref{sec:onset}. The uniform solution inhibits \textit{columns of constant vorticity} that will be the topic of section \ref{sec:vortex_clolumns}. Although this section still deals with the uniform case, its results can be applied to the heterogeneous system. Section \ref{sec:thermal_wind} introduces the reader to the \textit{geostrophic and the thermo-chemical wind balance}. Especially the latter plays an important role here, because it considers lateral density gradients and they are emphasized by the laterally varying heat flux conditions. \\
 Section \ref{sec:radial_flow} applies the theoretical concepts described in the preceding sections to the numerical data for a non homogeneous case in order to explain the structure of the flow field in the equatorial plain. A relation derived from the thermo-chemical wind balance serves well as an explanation for the distribution of radial up- and downwellings in the equatorial plain and therefore organizes the flow field.\\ 
-The interplay of azimuthal and radial velocity creates a vorticity pattern that is locked to the heat flux heterogeneities imposed by the mantle. Section \ref{sec:attached_columns} shows and interprets the stationary vortex columns that got their origin in the equatorial plain but elongate through the whole sphere due to the geostrophic constraint that promotes vertically invariant structures (see section \ref{sec:thermal_wind}). \\
-Section \ref{sec:temp_field} stands somehow isolated within this chapter. It describes the long-term averaged temperature field that evolves under the influence of the heat flux pattern and is meant to allow the reader a better imagination of the scenario.\\ \par
+The interplay of azimuthal and radial velocity creates a vorticity pattern that is locked to the heat flux heterogeneities imposed by the mantle. Section \ref{sec:attached_columns} shows and interprets the stationary vortex columns that got their origin in the equatorial plain but elongate through the whole sphere due to the geostrophic constraint that promotes vertically invariant structures (see section \ref{sec:thermal_wind}). In this context, some implications for the compositional field will be discussed.\\
+Section \ref{sec:temp_field} stands somehow isolated within this chapter. It describes the long-term averaged temperature field that evolves under the influence of the heat flux pattern and is meant to allow the reader a better imagination of the scenario.\\ \par \noindent
 Throughout this section, the Prandtl numbers will be held fixed at $\textrm{Pr}_\textrm{\tiny T} = 3$ and $\textrm{Pr}_\textrm{\tiny C} = 0.3$, the Ekman number as well at $\textrm{Ek} = 10^{-4}$, if not marked differently. \\
 The influence of the heat flux boundary conditions can best be observed in temporal averages \citep{olson2002time}. Consequently, all data that is shown in this section refers to such averages. The averages are taken in the statistically stationary state.\\
 
 \subsection{The onset of convection in the uniform case}
-In a rotating system that is homogeneously forced, convection sets in in the form of a thermal Rossby wave \citep{busse1970thermal, busse2002convective}. The \textit{Taylor-Proudman theorem} (see section \ref{sec:thermal_wind}) imposes a column like structure to the system that is aligned with the axis of rotation ($z$-axis, see Figure \ref{fig:sketch_busse}) and drifts in azimuthal direction. The columns lie adjacent to the \textit{tangential cylinder} (TC), a cylindrical surface that touches the inner core at the equator. \citet{busse2002convective} describes a mean flow instability that leads to differential rotation (the variation of azimuthal velocity with radius, from now on referred to as DR), evolving under the influence of a spherical geometry. Differential rotation presumably plays a central role in the magnetic field generation as it is an ingredient for the $\omega$-effect \citep{roberts2007theory}. \\ \par
 \label{sec:onset}
-\begin{figure}[H]
+In a rotating system that is homogeneously forced, convection sets in in the form of a thermal Rossby wave \citep{busse1970thermal, busse2002convective}. The \textit{Taylor-Proudman theorem} (see section \ref{sec:thermal_wind}) imposes a column like structure to the system that is aligned with the axis of rotation ($z$-axis, see Figure \ref{fig:sketch_busse}) and drifts in azimuthal direction. The columns lie adjacent to the \textit{tangential cylinder} (TC), a cylindrical surface that touches the inner core at the equator. \citet{busse2002convective} describes a mean flow instability that leads to differential rotation (the variation of azimuthal velocity with radius, in the following referred to as DR), evolving under the influence of a spherical geometry. Differential rotation presumably plays a central role in the magnetic field generation as it is an ingredient for the $\omega$-effect \citep{roberts2007theory}. \\ \par \noindent
+\begin{figure}[t]
  \begin{minipage}[]{0.46\textwidth}
  \centering
- %\includegraphics[width=1.05\textwidth]{sketches/busse_1975_onset.png}
+ \includegraphics[width=1.05\textwidth]{sketches/busse_1975_onset.png}
  \caption{Sketch of the onset of convection for a rotating spherical shell. Convection columns form adjacent to the TC \citep{busse1970thermal}. The columns can be visualized by different quantities. Here, they are sketched as contours of constant vorticity.}
  \label{fig:sketch_busse}
 \end{minipage}
 \hfill
 \begin{minipage}[]{0.47\textwidth}
-%\includegraphics[width=\textwidth]{graphs/iso_440_ex_rad-crop.pdf}
+\includegraphics[width=\textwidth]{graphs/iso_440_ex_rad-crop.pdf}
 \caption{Snapshot of the radial velocity in the equatorial plain (view from the north pole, like all other equatorial views in the following) for a uniform case with  $\textrm{Ra}_\textrm{\tiny T} = \textrm{Ra}_\textrm{total} = 4.4\times 10^6$, $\textrm{Pr}_\textrm{\tiny T} = 0.3$, $\textrm{Ek}=10^{-4}$ and $q^* = 0$. The convection columns are tilted and slightly deformed compared to Figure \ref{fig:sketch_busse}. }
 \label{fig:radial_vel_ex}
 \end{minipage}
-\end{figure}
-According to the analytical theories of \citet{jones2000onset} and \citet{dormy2004onset}, the azimuthal length scale of each convection column would be extremely small in case of the Earth's rotation rate. Therefore, this scenario is assumed to be unrealistic and the dominance of the relative importance of rotation compared to the one of buoyancy is questioned. The alternative is a rather three-dimensional, turbulent regime \citep{king2009boundary}, for which, on the other hand, the mechanism of the magnetic field production is an open question. \\ \par
-
+\end{figure} \noindent
+According to the analytical theories of \citet{jones2000onset} and \citet{dormy2004onset}, the azimuthal length scale of each convection column would be extremely small in case of the Earth's rotation rate. Therefore, this scenario is assumed to be unrealistic and the dominance of the relative importance of rotation compared to the one of buoyancy is questioned. The alternative is a rather three-dimensional, turbulent regime \citep{king2009boundary}, for which, on the other hand, the mechanism of the magnetic field production is an open question.
 \subsection{Columns of constant vorticity}
 \label{sec:vortex_clolumns}
 As mentioned above, convection in rapidly rotating systems is organized in a column like structure at onset \citep{busse1970thermal}. The question whether this structure is maintained, even in the highly supercritical LOC, has important implications for the understanding of the geodynamo.\\ 
 Since the first findings of self sustained dynamos \citep{glatzmaier1995three, kuang1997earth}, different kinds of dynamo \textit{processes} have been discussed. Hence, the circular transformation between poloidal and toroidal magnetic energy is a necessary ingredient for all of them \citep{roberts2007theory}. The \textit{vortex columns}, visualized in Figures \ref{fig:sketch_busse} and \ref{fig:vort_uniform}, are important sources of \textit{helicity} and therefore necessary for the macrospcopic $\alpha$-effect, that can transform either poloidal to toroidal field or vice versa \citep{roberts2007theory,jones2011planetary}. For a detailed explanation of the $\alpha$-effect and its importance for the geodynamo, the reader is referred to the literature cited above. For the moment it suffices to know that helicity is a key quantity in the discussion of dynamo action. \\
-This section aims to explain the mechanism of helicity production inside of vortex columns. \\ \par
-
+This section aims to explain the mechanism of helicity production inside of vortex columns. \\ \par \noindent
 Although motion parallel to the $z$-axis is strongly constrained by rotation (see Equation \eqref{eq:geostrophy2}), the spherical form of the boundaries necessarily relaxes this constraint locally and vertical flow is unavoidable \citep{busse2002convective, gillet2006quasi}. An important example for the relaxation of the Taylor-Proudman theorem in this context is the \textit{secondary circulation} inside of vortex columns \citep{olson1999numerical, aubert2008magnetic, christensen2011geodynamo}, sketched in Figure \ref{fig:secondary_circulation}.\\
 \begin{figure}[H]
  \begin{minipage}[left]{0.49\textwidth}
-  %\includegraphics[width =  \textwidth]{sketches/secondary_circulation-crop.pdf}
+  \includegraphics[width =  \textwidth]{sketches/secondary_circulation-crop.pdf}
   \caption{Sketch of the secondary circulation induced by a pair of a cyclonic and an anticyclonic vortex. The two convection columns can be imagined as part of the sketch in Figure \ref{fig:sketch_busse}, a situation typical for the onset of convection.}
   \label{fig:secondary_circulation}
  \end{minipage}
@@ -717,10 +719,9 @@ Although motion parallel to the $z$-axis is strongly constrained by rotation (se
 \textit{Ekman pumping} and \textit{suction} are boundary layer effects that are distinct to systems with no-slip conditions (as in this study, see section \ref{sec:bc}). They evolve due to the interplay between the rotation dominated bulk and the viscosity dominated Ekman layer. In \textit{cyclones}, i.e. vortex columns with positive vorticity $\omega > 0$, Ekman pumping induces a vertical flux away from the CMB towards the equator. Ekman suction causes motion towards the CMB in \textit{anticyclones}, where $\omega < 0$. Although both mechanisms take place in the boundary layers, they potentially induce vertical motion in the whole column. A more detailed description can be found in \citet{pedlosky2013geophysical}.\\
 The variation of buoyancy along the $z$-axis inside of a vortex column acts as a second source of vertical motion \citep{olson1999numerical}. As in the case of Ekman suction and pumping, this motion is oriented equatorwards in cyclones and away from the equator in anticyclones. It is independent of the viscous boundary condition and therefore it makes this discussion applicable to a wider range of model configurations. 
 \end{minipage}
-\end{figure}
+\end{figure} \noindent
 Figure \ref{fig:secondary_circulation} shows a sketch of the secondary circulation. A cyclone (with flow \textit{towards} the equator in the northern and southern hemisphere), causes a divergent flow at the equator, whereas an anticyclone (with flow away from the equator) acts converging at the equator. The opposite is true near the CMB. A cyclone and an anticyclone together form a \textit{circular} motion that superimposes the primary vortical motion. The interaction of a vorticity carrying fluid column and a vertical flow produces helicity $\mathcal{H}$. \\
 The role of \textit{converging} and \textit{diverging} flow at the CMB plays a distinct role in the scope of this work. Converging flows tend to collect magnetic field lines in their vicinity, whereas a diverging flow acts expelling \citep{aubert2008magnetic, jones2011planetary}. This will be further discussed in section \ref{sec:dynamo}. The effect of the secondary circulation on the chemical field can be observed in section \ref{sec:attached_columns}.
-
 \subsection{The geostrophic and the thermo-chemical wind balance}
 \label{sec:thermal_wind}
 The rotation rate of the LOC, measured in terms of the inverse of the non dimensional Ekman number $\textrm{Ek}^{-1}$, is very high (see section \ref{sec:parameters}). The \textit{Rossby number} $Ro = \frac{\mathcal{U}}{\Omega \mathcal{L}}$ quantifies the relative importance of the inertia force compared to the Coriolis force in the equation of momentum. If it is small, a system is predominantly rotationally constrained and this suggests simplifications, accordingly. The inertia term drops out and viscosity can be neglected as well due to $\textrm{Ek} = \frac{\nu}{\Omega D^2} \ll 1$. In the absence of gravitational instabilities, this yields the \textit{geostrophic balance}
@@ -741,7 +742,6 @@ Relation \eqref{eq:geostrophy} slightly changes, if buoyancy forces due to tempe
 %=& \quad  (1-a) \textrm{Ek}\textrm{Ra}_\textrm{\tiny T}\left( \frac{1}{\textrm{} \vartheta}\frac{\partial (\theta + t_2^2)}{\partial \phi}\, \bm{e_\vartheta} + \frac{\partial (\theta + t_2^2)}{\partial \vartheta}\, \bm{e_\phi} \right)
 \end{align}
 This equation is obtained, when adding the buoyancy term from equation \eqref{eq:force_balance4} to the force balance \eqref{eq:geostrophy} and taking the curl again. Equation \eqref{eq:thermal_wind} will be important in the following, because the conductive response to the heat flux pattern, $t_2^2$, prescribes lateral temperature gradients to the system. Additionally, dynamical variations $\theta$ and $\zeta$, especially along the polar coordinate $\vartheta$, are assumed to drive thermo-chemical winds in the sphere \citep{trumper2012numerical}. 
-
 \subsection{The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}
 \label{sec:radial_flow}
 The non axisymmetric distribution of up- and downwellings in the time-averaged flow is a feature that is distinct to non homogeneous forcing provided by the heterogeneous core-mantle heat flux. \citet{zhang1992convection} and \citet{dietrich2016core} analytically show that the azimuthal position of in- and outward radial motion in the equatorial plain is determined by the azimuthal temperature gradient $\partial T / \partial \phi$. \\
@@ -778,94 +778,92 @@ In the equatorial plain, $\bm{e_z}\cdot \bm{e_\vartheta} = -1$, $r=s$ and the ra
 The position of the maximum (minimum) azimuthal temperature gradient should thus coincide with radial downwellings (upwellings) (see relation \eqref{eq:ugr} that contains a minus sign) in the equatorial plain. Since only the $z$-averaged / geostrophic  part of the velocity field $\bm u$ contains radial components (\citep{dietrich2016core}, $u_r^g$ is the full radial flow in this approximation. \\
 \begin{figure}[H]
  \centering
- %\includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
+ \includegraphics[width=\textwidth]{graphs/q2_200_ur_dTp-crop.pdf}
  \caption{Azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi$, here $-\partial T/\partial \phi$ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plain. As parameters, $\textrm{Ra}_\textrm{\tiny T} = \textrm{Ra}_\textrm{total} = 2\times 10^6$ and $q^* = 2$ are used besides the Prandtl and Ekman number as mentioned above.}
 \label{fig:ur_dTp}
- \end{figure}
+ \end{figure} \noindent
 Figure \ref{fig:ur_dTp} shows two azimuthal profiles of the the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $\partial (\theta + t^2_2) / \partial \phi$ (dotted lines) in the equatorial plain. One is taken at mid depth (black lines), the other one on top of the free stream, i.e. right under the viscous boundary layer, near the CMB (red lines). All values are normalized with respect to their maxima in order to make them comparable in one plot.\\ 
-The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\textrm{\tiny T} = \textrm{Ra}_\textrm{total} = 2\times 10^6$ that is slightly overcritical: $\textrm{Ra}_\textrm{\tiny T} \approx 3.9 \times \textrm{Ra}_\textrm{crit}$ (see table \ref{tab:crit}). \\ \par
+The forcing in this case is purely thermal with a Rayleigh number $\textrm{Ra}_\textrm{\tiny T} = \textrm{Ra}_\textrm{total} = 2\times 10^6$ that is slightly overcritical: $\textrm{Ra}_\textrm{\tiny T} \approx 3.9 \times \textrm{Ra}_\textrm{crit}$ (see table \ref{tab:crit}). \\ \par \noindent
 It becomes clear that the $\phi$-gradient of the temperature serves well as an explanation for the location of the two radial downwellings near the CMB. The two negative extrema of the radial velocity coincide nearly perfectly with the maxima of the azimuthal temperature gradient. Only the small kinks in front of and behind the extrema of $u_r$ cannot be explained by $\partial (\theta + t_2^2)/\partial \phi$ in this first order approach.\\ 
 In a purely conductive regime with $\textrm{Ra}_\textrm{\tiny T} < \textrm{Ra}_\textrm{crit}$, the maxima of $\partial (\theta + t_2^2) / \partial \phi = \partial t_2^2 / \partial \phi$ (because $\theta=0$ in the subcritical case) would be located $45^\circ$ E of the heat flux maxima (located at $90^\circ$ E and $270^\circ$ E, see Figure \ref{fig:conductives} for the conductive temperature field) \citep{zhang1992convection}. The fact that the phase shift is only $30^\circ$ here (see Figure \ref{fig:ur_dTp}) can be attributed to the supercriticality of this case. More specifically, the azimuthal velocity field is responsible for the westward shift of the downwelling because it inhibits strong retrograde flow near the CMB around $135^\circ$ E (see Figure \ref{fig:equatorial_vel_temp}(c)). \\
 \begin{figure}[H]
 \centering
 \begin{minipage}[left]{0.32\textwidth}
-   %\includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
+   \includegraphics[width = \textwidth]{graphs/q2_200_d080_rad-crop.pdf}
    \caption*{(a) Radial Velocity}
 \end{minipage}
 \hfill
 \begin{minipage}[center]{0.32\textwidth}
-   %\includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
+   \includegraphics[width = \textwidth]{graphs/q2_200_dTp-crop.pdf}
    \caption*{(b) $\partial T / \partial \phi$, rescaled}
 \end{minipage}
 \hfill
 \begin{minipage}[right]{0.32\textwidth}
-    %\includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
+    \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
   \caption*{(c) Azimuthal velocity}
 \end{minipage}
 \caption{Equatorial contours of (a) the radial velocity, (b) the azimuthal temperature gradient $\partial (\theta + t_2^2) /\partial \phi$ and (c) the azimuthal velocity. The values in (b) are rescaled according to Equation \eqref{eq:ugr} (without the minus sign) in order to be comparable to (a). The case is the same as in Figure \ref{fig:ur_dTp}. }
 \label{fig:equatorial_vel_temp}
-\end{figure}
-In the outer region of the core, the two downwellings (around 120$^\circ$ and 300$^\circ$ E) are more pronounced than the complementary upwellings (around 45$^\circ$ and 225$^\circ$ E, see Figures \ref{fig:ur_dTp} and \ref{fig:equatorial_vel_temp}(a)). \citet{dietrich2016core} explain this asymmetry with the azimuthal part of the non linear temperature advection term $-\frac{\partial \theta}{\partial \phi}u_\phi$ (see Equation \eqref{eq:theta} that promotes positive azimuthal temperature gradients and therefore downwellings at the corresponding longitudes.  \\ \par
-
+\end{figure} \noindent
+In the outer region of the core, the two downwellings (around 120$^\circ$ and 300$^\circ$ E) are more pronounced than the complementary upwellings (around 45$^\circ$ and 225$^\circ$ E, see Figures \ref{fig:ur_dTp} and \ref{fig:equatorial_vel_temp}(a)). \citet{dietrich2016core} explain this asymmetry with the azimuthal part of the non linear temperature advection term $-\frac{\partial \theta}{\partial \phi}u_\phi$ (see Equation \eqref{eq:theta} that promotes positive azimuthal temperature gradients and therefore downwellings at the corresponding longitudes.  \\ \par \noindent
 The radial flow in the deeper regions of the core (e.g. the solid black line Figure \ref{fig:ur_dTp}) has a more complex form and is thus not as directly as in the upper layers related to the $\mathcal{Y}_2^2$ heat flux pattern. Broad and pronounced upwellings develop right under the CMB downwellings at $\sim110^\circ$E and $\sim290^\circ$E. They are also visible in the temperature field in Figure \ref{fig:flowfield_temp} in form of hot plumes. \\
 The downwellings observed at the CMB bend in jet-like structures in retrograde direction towards the ICB (see Figure \ref{fig:equatorial_vel_temp}(a)). The bending happens due to strong zonal westward flows at mid depth at $\sim 90^\circ$E and $\sim 270^\circ$E, respectively (see Figure \ref{fig:equatorial_vel_temp}(c)).  \\ 
 Although the flow structure in the deeper core regions is more complex than at the CMB, equation \eqref{eq:ugr} and therefore the thermo-chemical wind relation provide a good explanation for the radial flow field (compare Figure \ref{fig:equatorial_vel_temp}(a) and (b)). \\ \par
 \begin{figure}[H]
  \centering
- %\includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
+ \includegraphics[scale=0.5]{graphs/q2_200_temp_vel-crop2.pdf}
  \caption{Horizontal velocity vectors in the equatorial plain, scaled by the corresponding flow magnitude. The background contour shows the full non dimensional temperature field $ T = \theta + T_\textrm{cond}$. The two strong upwelling plumes at the ICB (at $\sim 110^\circ$E and $\sim 290^\circ$E) and the bending jet-like downwellings right above are clearly visible.}
 \label{fig:flowfield_temp}
- \end{figure}
-The small phase shift between $\partial T / \partial \phi$ and $u_r$, observable in Figure \ref{fig:ur_dTp} (dotted and solid lines), illustrates that the assumption of negligible viscosity (see section \ref{sec:thermal_wind}) is not fully justified in case of $\textrm{Ek} = 10^{-4}$. \citet{zhang1992convection} state that this shift vanishes if the rotation rate is further increased and therefore the influence of viscosity decreases. \\ \par
-
+ \end{figure} \noindent
+The small phase shift between $\partial T / \partial \phi$ and $u_r$, observable in Figure \ref{fig:ur_dTp} (dotted and solid lines), illustrates that the assumption of negligible viscosity (see section \ref{sec:thermal_wind}) is not fully justified in case of $\textrm{Ek} = 10^{-4}$. \citet{zhang1992convection} state that this shift vanishes if the rotation rate is further increased and therefore the influence of viscosity decreases. \\ \par \noindent
 The azimuthal flow in the equatorial plain is, in reaction to the radial flow, convergent (divergent) in the neighborhood of downwellings (upwellings). This can be observed either in the full horizontal flow field (Figure \ref{fig:flowfield_temp}) or in the radial and azimuthal flow fields (Figure \ref{fig:equatorial_vel_temp}(a) and (c)). In order to preserve mass conservation, a downwelling attracts azimuthal flow whereas an upwelling rather expels fluid particles and therefore causes azimuthally diverging flow.
-
 \subsection{Stationary vortex columns attached to mantle heterogeneities}
 \label{sec:attached_columns}
 The well structured Rossby wave solution is perturbed, if heterogeneous heat flux conditions are applied at the CMB. Nevertheless, columns of constant vorticity play an important role in the solution. The long-term averaged data bears a non axisymmetric vorticity pattern that can be related to the geometry of the CMB heat flux. This pattern contains \textit{stationary vortex columns} elongated through the whole sphere parallel to the axis of rotation. In contrast to that, all uniform cases regarded (e.g. the snapshot in Figure \ref{fig:vort_uniform}) yield axisymmetric distributions of vorticity in long-term averages because the Rossby wave solution constantly moves in azimuthal direction \citet{busse2002convective}. \\
 \begin{figure}[H]
 \begin{minipage}[left]{0.47\textwidth}
- %\includegraphics[width =\textwidth]{graphs/vorticity/q0_100_ex_vort-crop.pdf}
+ \includegraphics[width =\textwidth]{graphs/vorticity/q0_100_ex_vort-crop.pdf}
  \caption{Snapshot of the $z$-component of vorticity in the equatorial plain for a slightly supercritical, uniform case: $\textrm{Ra}_\textrm{\tiny T} = 10^{6}$.  }
  \label{fig:vort_uniform}
 \end{minipage}
 \hfill
 \begin{minipage}[right]{0.47\textwidth}
- %\includegraphics[width=0.96\textwidth]{graphs/vorticity/q2_200_d080_vort-crop.pdf}
+ \includegraphics[width=0.96\textwidth]{graphs/vorticity/q2_200_d080_vort-crop.pdf}
  \caption{Long-term averaged equatorial contour of the $z$-vorticity for the same case as described in Figure \ref{fig:equatorial_vel_temp}. The vorticity in the boundary layers is not resolved.}
  \label{fig:q2_200_d080_vort}
 \end{minipage}
-\end{figure}
-The secondary circulation, which was described in section \ref{sec:vortex_clolumns}, is expected to have an effect on the flow that can be localized at a fixed position in the spherical shell, it is \textit{locked} to the mantle \citep{gibbons2000convection}. \\ \par
+\end{figure} \noindent
+The secondary circulation, which was described in section \ref{sec:vortex_clolumns}, is expected to have an effect on the flow that can be localized at a fixed position in the spherical shell, it is \textit{locked} to the mantle \citep{gibbons2000convection}. \\ \par \noindent
 The interplay of the azimuthal and the radial velocity field in the equatorial plain (Figure \ref{fig:equatorial_vel_temp}(a) and (b)) causes the vorticity distribution that is shown in Figure \ref{fig:q2_200_d080_vort}. Tilted patches of strong negative vorticity close to the ICB lie beneath prograde jets of positive vorticity right under the heat flux maxima at $90^\circ$E and $270^\circ$E. Additionally, a band of negative vorticity is located between $90^\circ$ and $180^\circ$E and $270^\circ$ and $360^\circ$E. \\
 \begin{figure}[H]
  \centering
- %\includegraphics[scale = 0.7]{graphs/vorticity/q2_200_vort.png}
- \caption{\textbf{Left hemisphere}: $z$-component of the vorticity in the equatorial plain (see Figure \ref{fig:q2_200_d080_vort}) and contour surfaces at $\omega_z = -1200$ (blue) and $\omega_z = 1200$ (red). \textbf{Right hemisphere}: Compositional perturbation $\zeta$ close to the CMB at $ r = 1.5$. As parameters, $\textrm{Ra}_\textrm{total}=  2\times 10^6$, $\delta = 0.95$ and $q^* = 2$ are chosen.}
+ \includegraphics[scale = 0.7]{graphs/vorticity/q2_200_vort.png}
+ \caption{\textbf{Left hemisphere}: $z$-component of the vorticity in the equatorial plain (see Figure \ref{fig:q2_200_d080_vort}) and contour surfaces at $\omega_z = -1200$ (blue) and $\omega_z = 1200$ (red). \textbf{Right hemisphere}: Compositional perturbation $\zeta$ close to the CMB at $ r = 1.5$. As parameters, $\textrm{Ra}_\textrm{total}=  2\times 10^6$, $\delta = 95\%$ and $q^* = 2$ are chosen.}
  \label{fig:vort_chem}
-\end{figure}
-In Figure \ref{fig:vort_chem}, the long-term averaged vorticity distribution of a thermo-chemically driven case is shown in the left hemisphere, whereas the right hemisphere depicts the compositional perturbation $\zeta$. The forcing is now of a thermo-chemical origin, with a mild portion of 5\% uniform compositional forcing ($\delta^*=0.95$)). The total Rayleigh number remains $\sim 4$ times supercritical in order to be comparable to the previous case. The vorticity contours in the left hemisphere yield the stationary vortex columns attached to the heat flux maxima mentioned above, as in the previous cases. An anticyclone (blue) elongates close to the TC from the northern to the southern CMB. A cyclonic column (red) lies parallel to the anticyclone in the radially outward direction. The right hemisphere underlies the same vorticity distribution (see the symmetry in Figure \ref{fig:q2_200_d080_vort}). Here, the compositional perturbation yields a maximum at the intersection of the blue anticyclone with the CMB and a deficit when going towards the equator, i.e., where the red cyclone intersects the CMB. \\
+\end{figure} \noindent
+In Figure \ref{fig:vort_chem}, the long-term averaged vorticity distribution of a thermo-chemically driven case is shown in the left hemisphere, whereas the right hemisphere depicts the compositional perturbation $\zeta$. The forcing is now of a thermo-chemical origin, with a mild portion of 5\% uniform compositional forcing ($\delta^*=0.95$)). The total Rayleigh number remains $\sim 4$ times supercritical in order to be comparable to the previous case. The vorticity contours in the left hemisphere yield the stationary vortex columns attached to the heat flux maxima mentioned above, as in the previous cases. An anticyclone (blue) elongates close to the TC from the northern to the southern CMB. A cyclonic column (red) lies parallel to the anticyclone in the radially outward direction. The right hemisphere underlies the same vorticity distribution (see the symmetry in Figure \ref{fig:q2_200_d080_vort}). Here, the compositional perturbation yields a maximum at the intersection of the blue anticyclone with the CMB and a deficit when going towards the equator in lateral direction, i.e., where the red cyclone intersects the CMB. \\
 The excess and deficit composition results from the divergent and convergent flow at the peak of the anticyclone and the cyclone, respectively. The corresponding mechanism is sketched in Figure \ref{fig:secondary_circulation}. The vertical upward flow inside the anticyclone successively transports compositionally enriched material from the ICB (equator) towards the CMB and produces a local maximum there. For the cyclone, the process works the other way round but as the cyclones are less dominant than the anticyclonic columns, the compositional minima are also less pronounced than the maxima.\\
-In the scenario regarded here, the compositional forcing rather acts as 'tracer' that visualizes the vertical transport from the ICB, where the chemical component is released, to the CMB. A portion of 5 \% compositional forcing is expected to have only a little effect on the dynamics of the system compared to the purely thermal case from above.\\ \par
+In the scenario regarded here, the compositional forcing rather acts as 'tracer' that visualizes the vertical transport from the ICB, where the chemical component is released, to the CMB. A portion of 5 \% compositional forcing is expected to have only a little effect on the dynamics of the system compared to the purely thermal case from above. Nevertheless, the principal behavior described in this section is not restricted to those cases with only a minor degree of compositional forcing. Patches of compositionally enriched fluid near the CMB can be found even in scenarios with $\delta^* = 12 \%$, i.e., only a small degree of thermal forcing. The above mechanism is thus expected to be persistent over a wide range of $\delta^*$. \\
+The observation made here has implications for the inner core (a) as well as for the structure of the CMB (b). (a) The extraction of compositionally enriched material from the inner core is amplified at the intersection between anticyclones and the ICB (due to the convergent flow there, see figure \ref{fig:secondary_circulation}). \citet{aubert2008thermochemical} states that this could enhance the inner core growth locally. (b) The successive dynamical accumulation of compositionally enriched material in certain regions near the CMB, visible in figure \ref{fig:vort_chem}, may lead to a saturation and a herewith connected sedimentation of the originally soluted chemical element. \\ \par \noindent
 The chemical field shown in the right hemisphere of figure \ref{fig:q2_200_d080_vort} provide evidence that divergent and convergent flow near the CMB can be localized at fixed positions at the spherical surface. The ability of convergent flows to concentrate magnetic field lines and thereby intensify the field locally was discussed by several authors \citep{olson1999numerical, aubert2008magnetic, jones2011planetary}. In section \ref{sec:dynamo}, the reverse effect of expulsion of magnetic field lines by divergent flow will be important as well. Above all, it is important to mention that the flow properties found in this section can not be transferred directly to the dynamo case because of the action of the Lorentz force.
 \subsection{The effect of the flux pattern on the temperature field}
 \label{sec:temp_field}
-Figure \ref{fig:q2_200_temp}(a) shows the same equatorial view on the temperature field as Figure \ref{fig:flowfield_temp} in section \ref{sec:radial_flow}. The color map was slightly rescaled to make the phase shift between the temperature maxima at the CMB at $\sim 170^\circ$ and $\sim 350^\circ$ and the heat flux maxima (at $\sim 90^\circ$ and $\sim 270^\circ$) visible. The reason for the phase shift lies in the flow field and can be explained by the observations in the previous chapter: Strong radial motion occurs predominantly in the region under the heat flux maxima. The up- and downwellings visible in Figure \ref{fig:flowfield_temp} intensify the cooling mechanism, thus go along with a colder core region. The hot regions coincide with strong azimuthal motion along the CMB that inhibit the transport of heat out of the core. \\
+Figure \ref{fig:q2_200_temp}(a) shows the same equatorial view on the temperature field as Figure \ref{fig:flowfield_temp} in section \ref{sec:radial_flow}. The color map was slightly rescaled to make the phase shift between the temperature maxima at the CMB at $\sim 170^\circ$ and $\sim 350^\circ$ and the heat flux maxima (at $\sim 90^\circ$ and $\sim 270^\circ$) visible. The reason for the phase shift lies in the flow field and can be explained by the observations in the previous chapter: Strong radial motion occurs predominantly in the region under the heat flux maxima. The up- and downwellings visible in Figure \ref{fig:flowfield_temp} intensify the cooling mechanism, thus go along with a colder core region. The hot regions coincide with strong azimuthal motion along the CMB that inhibit the transport of heat out of the core. \\ \par \noindent
+The surface projection of the temperature field at the CMB (Figure \ref{fig:q2_200_temp}(b)) confirms that the temperature field in the slightly supercritical case is nearly a phase shifted version of the conductive temperature field (Figure \ref{fig:conductives}(b)) \citep{zhang1992convection}. 
 \begin{figure}[H]
  \begin{minipage}[left]{0.33\textwidth}
   \centering
-  %\includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
+  \includegraphics[width=\textwidth]{graphs/q2_200_eq_temp_field2-crop.pdf}
   \caption*{(a) Equatorial plain}
  \end{minipage}
  \hfill
 \begin{minipage}[right]{0.63\textwidth}
- %\includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
+ \includegraphics[width=\textwidth]{graphs/q2_200_tammer-crop.pdf}
  \caption*{(b) Surface projection at the CMB}
 \end{minipage}
 \caption{Full temperature field $ T = \theta + T_\textrm{cond}$ for the same case as above in (a) the equatorial plain and (b) as a surface projection right under the CMB at r = 1.485. (a) is the same graph as in Figure \ref{fig:flowfield_temp}, but the color map is 'shortened' in order to pronounce the phase shift of the temperature field. }
 \label{fig:q2_200_temp}
-\end{figure}
-The surface projection of the temperature field at the CMB (Figure \ref{fig:q2_200_temp}(b)) confirms that the temperature field in the slightly supercritical case is nearly a phase shifted version of the conductive temperature field (Figure \ref{fig:conductives}(b)) \citep{zhang1992convection}. 
+\end{figure} \noindent
 
 \newpage
 
@@ -1161,8 +1159,13 @@ In a second step, the Ekman number is reduced to Ek$=10^{-5}$. As for the scenar
 Figure \ref{fig:ek5} that is showing $\mathcal{P}$ for the different $\delta^*$ reveals a similar picture as figure \ref{fig:relamp} from the above case with the lower rotation rate. The flux patch amplitude lies in between 0.33 and 0.43 for all cases that include thermal forcing and herewith are affected by the $\mathcal{Y}_2^2$ BC. The behavior of the Elsasser number $\Lambda$, the magnetic Reynolds number Re$_m$ and the dipole strength $f_\textrm{dip}$ (all not shown) likewise agree well with what was shown in the corresponding figures \ref{fig:els_reym}(a), \ref{fig:els_reym}(b) and \ref{fig:reldip} for Ek$=10^{-4}$. Furthermore, the differences in the magnetic field strength between the uniform case UFF and the heat flux pattern case PFF (see figure \ref{fig:els_reym}(a), red and black line), discussed at the end of section \ref{sec:magnetic_field_strength}, can be observed at Ek$=10^{-5}$, too.\\
 The above discussion on the effect of the heat flux pattern in the context of a changing $\delta^*$ (sections \ref{sec:dyn_d020} to \ref{sec:effect_pattern}) seems to be applicable to higher rotation rates. If the decisive relation to control the flow dynamics is a thermal wind balance, as it was said in section \ref{sec:radial_flow}, this is not astonishing because it is grounded on small values of Ek \citep{zhang1992convection,dietrich2016core}. Then, the system behavior is not expected to change if Ek is further decreased. Yet, section \ref{sec:radial_flow} as well as the above cited studies refer to non magnetic convection and the role of the Lorentz force is not quite clear, when going to higher rotation rates. 
 \newpage
-\section{Summary and Discussion (NUR Notizen)}
+\section{Summary and Discussion}
 
+\subsection{Non magnetic convection}
+Non magnetic, thermo-chemical convection under the influence of the $\mathcal{Y}_2^2$ thermal BC was studied in section \ref{sec:thermo-chemical}. Special attention was payed to a characteristic feature of the flow field: Stationary vortex columns, elongated through the whole sphere parallel to the axis of rotation.  
+
+
+The observation made here bears the potential to enhance the understanding of seismic anomalies near the CMB as well as in the upper inner core. The extraction of compositionally enriched material from the inner core is amplified at the intersection between anticyclones and the ICB (due to the convergent flow there, see figure \ref{fig:secondary_circulation}). This enhances the inner core growth locally. Furthermore, the accumulation of compositionally enriched material near the CMB, visible in figure \ref{fig:vort_chem}, could lead to sedimentation, . \citet{aubert2008thermochemical} conducted a single forcing numerical experiment with a heterogeneous heat flux imposed at the CMB, in which he observed (SEITE 91 in TOBIS ARBEIT!)
 \begin{itemize}
  \item \textbf{Wicht, Stellmach 2010:} The dynamo process is questioned to play a role at larger Ra and smaller Ek!
  \item The vortex columns are only in a statistical sense locked to the mantle
@@ -1173,6 +1176,7 @@ The above discussion on the effect of the heat flux pattern in the context of a 
 
 \section{Conclusion and Outlook}
 
+Maybe construct a model that includes sedimentation in order to create chemical heterogeneities, e.g. at the CMB. 
 
 \newpage
  \bibliography{literatur}
