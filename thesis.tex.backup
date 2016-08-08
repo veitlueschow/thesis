@@ -49,9 +49,14 @@ We observe that fixed flux conditions promote larger flow scales and an increase
 
 \section{Introduction and Motivation}
 
-\subsection{A thermo-chemical approach to dynamo modeling}
 \subsection{Why use heterogeneous heat flux boundary conditions?}
 
+\subsection{A thermo-chemical approach to dynamo modeling}
+
+\subsection{State of research}
+\textbf{On heat flux pattern}\\
+The longitudes at which the magnetic flux lobes are found remaining approximately stationary in time (Gubbins and Bloxham, 1987)\\
+This is difficult to explain in the context of a uniform dynamo model, where the solution should steadily drift in time (Knobloch, 1994) and thus heterogeneities average out in long-term averages (Sarson, 1997)
  
 \section{Modeling core convection and dynamo action}
 
@@ -486,32 +491,9 @@ since this would demand $\partial \tau/\partial \vartheta = \partial \tau/\parti
  \label{eq:force_balance4}
  &+ (\textrm{Ra}_\textrm{\tiny {T}}  [\theta + t_2^2] + \textrm{Ra}_\textrm{\tiny {C}} { \zeta} )(1-a) {r} \, \bm{e_r}
 \end{align}
-
-\subsection{Numerical Method (noch nicht fertig)}
-\label{sec:numerics}
-The study makes use of the PARODY code \citep{dormy1997modelisation, dormy1998mhd} in a version that was extended by a compositional component in order to simulate double-diffusive forcing \citep{trumper2012numerical}. \\
-The velocity field and the magnetic field can both be represented in terms of their scalar toroidal and poloidal potentials, since they are solenoidal. This reduces the amount of unknown variables by two and implicitly respects the equation of continuity ($\bm \nabla \cdot \bm u = 0$) and the fact that no magnetic monopoles exist ($\bm \nabla \cdot \bm B = 0$). The poloidal-toroidal decomposition reads
-\begin{equation}
-\label{eq:poltor_u}
- \bm u = \bm \nabla \times \bm \nabla \times (u_p \, \bm r) + \bm \nabla\times (u_t \, \bm r)
-\end{equation}
-for the velocity field and 
-\begin{equation}
-\label{eq:poltor_B}
- \bm B = \bm \nabla \times \bm \nabla \times (B_p \, \bm r) + \bm \nabla\times (B_t \, \bm r)
-\end{equation}
-for the magnetic field, where the subscript $t$ denotes the toroidal and $p$ the poloidal part. The equation of momentum \eqref{eq:force_balance4} can be reformulated according to \eqref{eq:poltor_u} and the induction equation \eqref{eq:induction^} according to \eqref{eq:poltor_B}, whereas the heat equation \eqref{eq:heat_equation^} and the compositional equation \eqref{eq:chemical_equation^} do not transform under the decomposition. For a detailed description of the resulting system of equations, the reader is referred to the work of \citet{dormy1997modelisation}. \\ \par
-A common next step is to choose a spectral representation of all variables in order to make use of the special geometry of the problem. Already \citet{glatzmaier1995three} and \citet{kuang1997earth} in their early dynamo models used a spherical harmonics expansion in their codes. A variable in PARODY, now represented by $f(r,\vartheta,\phi)$, is expanded in spherical harmonics according to
-\begin{equation}
- f(r,\vartheta,\phi) = \sum\limits_{l=0}^{\infty} \sum \limits_{m=0}^l \, f_l^m(r) \, \mathcal{Y}_l^m(\vartheta,\phi)
-\end{equation} 
-and the equations described in the previous sections are solved in the spectral domain. This simplifies the computation of lateral derivatives immensely. Only the non linear terms appearing are calculated in the physical space and re-transformed to the spectral domain before entering the solution scheme. This is why the method is called \textit{pseudospectral}. \\ \par
-
-The spectral resolution follows a criteria by \citet{christensen1999numerical} according to which the power spectra of all quantities computed drops by at least two orders of magnitude between the highest and the lowest spectral degree. 
-
 \subsection{Thermal and chemical forcing}
 \label{sec:thermal/chemical}
-This studies aims to explore the combined effect of the heat flux pattern at the CMB \textit{and} the double diffusive nature of the problem. Therefore, the system contains two distinct transport equations for temperature and composition (see section \ref{sec:internal_energy}) and the buoyancy term in the equation of momentum \eqref{eq:force_balance4} consists of a thermal and a compositional part that are each controlled by one Rayleigh number, $\textrm{Ra}_\textrm{\tiny T}$ and $\textrm{Ra}_\textrm{\tiny C}$. In order to range different scenarios according to the relative importance of the two driving mechanisms, \citet{breuer2010thermochemically} defined the \textit{fraction of thermal forcing}
+This work aims to explore the combined effect of the heat flux pattern at the CMB \textit{and} the double diffusive nature of the problem. Therefore, the system contains two distinct transport equations for temperature and composition (see section \ref{sec:internal_energy}) and the buoyancy term in the equation of momentum \eqref{eq:force_balance4} consists of a thermal and a compositional part that are each controlled by one Rayleigh number, $\textrm{Ra}_\textrm{\tiny T}$ and $\textrm{Ra}_\textrm{\tiny C}$. In order to range different scenarios according to the relative importance of the two driving mechanisms, \citet{breuer2010thermochemically} defined the \textit{fraction of thermal forcing}
 \begin{equation}
 \delta =  \frac{\textrm{Ra}_\textrm{\tiny T}}{\textrm{Ra}_\textrm{\tiny T} + \textrm{Ra}_\textrm{\tiny C}} = \frac{\textrm{Ra}_\textrm{\tiny T}}{\textrm{Ra}_\textrm{\tiny {total}}}
 \end{equation}
@@ -542,7 +524,29 @@ For each scenario with $\textrm{Ra}_\textrm{total} = \textrm{Ra}_\textrm{\tiny T
  \delta^* := \frac{\gamma_\textrm{\tiny T}}{\gamma_\textrm{\tiny T}+ \gamma_\textrm{\tiny C}} = \frac{\gamma_\textrm{\tiny T}}{\gamma_\textrm{total}}.
 \end{equation}
 Due to the limited time available for this work, critical Rayleigh numbers are computed only for the non magnetic case. Thus, the classification of the dynamo cases in section \ref{sec:dynamo} will be made according to these, too. This is not correct for the reason that the presence of a magnetic field can affect the onset of convection \citep{chandrasekhar1970hydrodynamic}. 
-\subsection{Diagnostics (noch nicht vollständig)}
+\subsection{Numerical Method}
+\label{sec:numerics}
+The study makes use of the code PARODY \citep{dormy1997modelisation, dormy1998mhd} in a version that was extended by a compositional component in order to simulate double-diffusive forcing \citep{trumper2012numerical}. \\
+The velocity field and the magnetic field can both be represented in terms of their scalar toroidal and poloidal potentials, since they are solenoidal. This reduces the amount of unknown variables by two and implicitly respects the equation of continuity ($\bm \nabla \cdot \bm u = 0$) and the fact that no magnetic monopoles exist ($\bm \nabla \cdot \bm B = 0$). The poloidal-toroidal decomposition reads
+\begin{equation}
+\label{eq:poltor_u}
+ \bm u = \bm \nabla \times \bm \nabla \times (u_p \, \bm r) + \bm \nabla\times (u_t \, \bm r)
+\end{equation}
+for the velocity field and 
+\begin{equation}
+\label{eq:poltor_B}
+ \bm B = \bm \nabla \times \bm \nabla \times (B_p \, \bm r) + \bm \nabla\times (B_t \, \bm r)
+\end{equation}
+for the magnetic field, where the subscript $t$ denotes the toroidal and $p$ the poloidal part. The equation of momentum \eqref{eq:force_balance4} can be reformulated according to \eqref{eq:poltor_u} and the induction equation \eqref{eq:induction^} according to \eqref{eq:poltor_B}, whereas the heat equation \eqref{eq:heat_equation^} and the compositional equation \eqref{eq:chemical_equation^} do not transform under the decomposition. For a detailed description of the resulting system of equations, the reader is referred to the work of \citet{dormy1997modelisation} and \citet{trumper2014thermo}. \\ \par
+A common next step is to choose a spectral representation of all variables in order to make use of the special geometry of the problem. \citet{glatzmaier1995three} and \citet{kuang1997earth} already made use of a a spherical harmonics expansion in the numerical solution schemes for their early dynamo models. A random variable in PARODY, represented by $f(r,\vartheta,\phi)$, is expanded in spherical harmonics according to
+\begin{equation}
+ f(r,\vartheta,\phi) = \sum\limits_{l=0}^{\infty} \sum \limits_{m=0}^l \, f_l^m(r) \, \mathcal{Y}_l^m(\vartheta,\phi)
+\end{equation} 
+and the equations described in the previous sections are solved in the spectral domain. This simplifies the computation of lateral derivatives immensely. Only the non linear terms appearing are calculated in the physical space and re-transformed to the spectral domain before entering the solution scheme. This is why the method is called \textit{pseudospectral}. \\
+In the radial direction, the numerical scheme makes use of a second order finite difference discretization. The grid is refined at the boundaries in order to better resolve small scale boundary effects.\\ A combination of an implicit and an explicit method is applied for the time integration. With the help of an implicit Crank-Nicolson scheme, the diffusion terms are integrated, whereas an explicit Adams-Bashforth method is used for the non-linear and force terms.\\ \par \noindent 
+The spectral resolution follows a criteria by \citet{christensen1999numerical} according to which the power spectra of all quantities computed drops by at least two orders of magnitude between the highest and the lowest spectral degree. \\ \par \noindent
+As initial condition for all cases shown here, zero velocity and a small perturbation in all modes of the temperature and compositional field are used. In the magnetic cases, an additional perturbation is applied to the toroidal as well as the poloidal part of the magnetic field. A more detailed description can be found in \citet{trumper2014thermo}.
+\subsection{Diagnostics}
 \label{sec:diagnostics}
 This chapter briefly introduces the diagnostic quantities and techniques that are used in the course of this work:\\ \par
 \begin{itemize}
@@ -561,16 +565,15 @@ This chapter briefly introduces the diagnostic quantities and techniques that ar
  \begin{equation}
  \textrm{Re} = \frac{D\,u_\textrm{rms}}{\nu}\quad\quad \textrm{     and    } \quad\quad \textrm{Re}_m = \frac{D\, u_\textrm{rms}}{\eta}
  \end{equation}\noindent 
+   \item[-] \textbf{Elsasser number}\\
+ The Elsasser number $\Lambda$ compares the importance of the Lorentz force to that of the Coriolis force in a magnetohydrodynamic problem. As the scaling of the magnetic field includes the rotation rate $\Omega$, $\Lambda$ can be easily computed by
+ \begin{equation}
+  \Lambda = \langle \bm B^2 \rangle_{r,\vartheta,\phi},
+ \end{equation}
+where $\langle \quad \rangle$ is an averaging operator.
  \item[-] \textbf{Relative dipole strength}\\
- Only the first twelve spectral degrees of the relative strength of the magnetic dipole at the CMB $f_\textrm{dip}$ are measurable for the geomagnetic field, due to the filtering effect of the overlying mantle. Therefore, $f_\textrm{dip}$ is defined as the ratio of the rms axial dipole component to the total rms field up to the harmonic degree $l=12$. 
+ Only the first twelve spectral degrees of the relative strength of the magnetic dipole at the CMB $f_\textrm{dip}$ are measurable for the geomagnetic field because ofthe filtering effect of the overlying mantle. Therefore, $f_\textrm{dip}$ is defined as the ratio of the rms axial dipole component to the total rms field up to the harmonic degree $l=12$. 
  \end{itemize}
-
-%  \item[-] \textbf{Rossby number}
-%  \item[-] \textbf{Elsasser number}
-%  \item[-] \textbf{Temporal average}
-
-
-\subsection{INITIAL CONDITIONS!!!}
 
 \section{State of research (bisher nur Notizen von mir)}
 
@@ -645,9 +648,8 @@ Explain reason, why anti cyclones clearly dominate the flow field:
 
 Structure of the CMB heat pattern:
 \begin{itemize}
- \item  Structure is of degree and order 2: Romanowicz,2003
+ \item  Structure is of degree and order 2: Romanowicz,2003 ... Masters 2002 (oder 2012??)
 \end{itemize}
-
 
 
 
@@ -915,13 +917,11 @@ The surface projection of the temperature field at the CMB (Figure \ref{fig:q2_2
  \label{fig:fluxpatches_snapshots}
  \end{figure} \noindent
 The effect of a $\mathcal{Y}_2^2$ heat flux condition on thermo-chemical core convection was subject to the preceding section. In order to explore the influence of the new set of boundary conditions in a geophysically more realistic context, i.e., planetary dynamos, a magnetic field will be included in this section. Although the term 'more realistic' is used here, the reader is reminded of the fact that the accessible parameter range, especially concerning the Ekman number, is far from being Earth-like. Furthermore, only some distinct properties of the geodynamo can be regarded in the scope of this study. \\
-A heterogeneous heat flux at the CMB (often referred to as \textit{core-mantle coupling}) was recently explored by several authors and provided good explanations for certain features of the geomagnetic field. \citet{bloxham1987thermal} make core-mantle interaction responsible for heterogeneities in the secular variation in the geomagnetic data of the last two centuries, \citet{glatzmaier1999role} and \citet{olson2010geodynamo} relate lateral temperature gradients at CMB to the uneven distribution of geomagnetic reversals in Earth's history and \citet{olson2002time} and \citet{aubert2008thermochemical} find that the structure of the CMB heat flux is connected to persistent patches of high intensity magnetic flux in geomagnetic data. This study puts an emphasis on the latter point. The generation of magnetic flux patches will be regarded in the context of a  \textit{thermo-chemical} dynamo model.\\ \par \noindent
+A heterogeneous heat flux at the CMB (often referred to as \textit{core-mantle coupling}) was recently explored by several authors and provided good explanations for certain features of the geomagnetic field: \citet{bloxham1987thermal} make core-mantle interaction responsible for heterogeneities in the secular variation in the geomagnetic data of the last two centuries, \citet{glatzmaier1999role} and \citet{olson2010geodynamo} relate lateral temperature gradients at the CMB to the uneven distribution of geomagnetic reversals in Earth's history and \citet{olson2002time} and \citet{aubert2008thermochemical} find that the structure of the CMB heat flux is connected to persistent patches of high intensity magnetic flux in geomagnetic data. This study addresses the latter point, the generation of magnetic flux patches will be regarded in the context of a  \textit{thermo-chemical} dynamo model.\\ \par \noindent
 A series of snapshots of the radial magnetic field component at the north pole, shown in figure \ref{fig:fluxpatches_snapshots}, top row, gives a first insight into the behavior of the magnetic field under the influence of the heat flux pattern: Patches of intense magnetic field wander, merge and detach again in a highly time-dependent manner. Yet, the number of \textit{two} patches seems to be preferred by the system and therefore the azimuthal wave number $m=2$ dominates the magnetic energy spectrum (not shown). This is attributed to the the heterogeneous BC at the CMB that has the same azimuthal symmetry.\\
 In contrast to that, figure \ref{fig:fluxpatches_snapshots}, bottom row, shows the uniform case with the same Rayleigh number. The magnetic field strength is comparable but the magnetic energy in the $m=2$ mode does not dominate the spectrum. Instead, the number of \textit{one} flux patch seems to be preferred. The corresponding long-term averaged fields at the right end of figure \ref{fig:fluxpatches_snapshots} confirm the impression received from the snapshots.  \\ \par \noindent
-This part of the study is structured as follows: As an introduction, section \ref{sec:dyn_d020} explains the formation of the magnetic flux patches, visible in figure \ref{fig:fluxpatches_snapshots} and induced by the heat flux pattern, with the help of a showcase. The subsequent chapter \ref{sec:delta_dependence} deals with the thermo-chemical nature of the problem, before section \ref{sec:effect_pattern}
-
-
-In the following, all uniform cases will be denoted by \textbf{UFF} (uniform fixed flux), whereas \textbf{PFF} refers to the heat flux pattern cases. The former imply $q^*\!=\!0$, the latter $q^*\!=\!2$. All simulations conducted here, are characterized by a high degree of time dependence and the signature of the heat flux pattern is hard to identify in snapshots. If not marked differently, only long-term averaged data from the statistically stationary state will be shown.
+This part of the study is structured as follows: As an introduction, section \ref{sec:dyn_d020} explains the formation of the magnetic flux patches, visible in figure \ref{fig:fluxpatches_snapshots} and induced by the heat flux pattern, with the help of a showcase. The subsequent chapter \ref{sec:delta_dependence} deals with the dual-forcing nature of the problem, before section \ref{sec:effect_pattern} relates the two preceding ones to each other and describes the effect of the heat flux pattern in the context of a changing driving mechanism. At last, chapter \ref{sec:robustness} checks the robustness of the results for other parameter regimes.\\
+In the following, all uniform cases will be denoted by \textbf{UFF} (uniform fixed flux), whereas \textbf{PFF} refers to the heat flux pattern cases. The former imply $q^*\!=\!0$, the latter $q^*\!=\!2$. All simulations conducted here are characterized by a high degree of time dependence so that the signature of the heat flux pattern is hard to identify in snapshots. Therefore, if not marked differently, only long-term averaged data from the statistically stationary state will be shown.
 \begin{table}[H]
  \centering
  \begin{tabular}{l | c| c |c |c| c| c| c| c |c}
@@ -952,16 +952,15 @@ In the following, all uniform cases will be denoted by \textbf{UFF} (uniform fix
   \label{fig:surface_Br_d20}
 \end{figure} \noindent
 This section is dedicated to the formation mechanism of patches of intense magnetic field at the CMB (visible in figure \ref{fig:fluxpatches_snapshots}). It will be seen that analogies to the preceding chapter \ref{sec:thermo-chemical} exist, where the compositional field heterogeneities shown in figure \ref{fig:vort_chem} got a similar origin as the magnetic flux patches in the dynamo case.\\ \par \noindent
-Case PFF12 (see table \ref{tab:data}) with of portion of $\delta^* = 12$ \% thermal forcing was chosen as a showcase. For the moment, the focus lies on the flux patch generation process and not on the influence of the dual forcing mechanism.  \\ 
-Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field in figure \ref{fig:surface_Br_d20}. Patches of intense magnetic flux lie at  $\sim$45$^\circ$ and $225^\circ$E in the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). \\ \par \noindent
-In section \ref{sec:attached_columns}, the flow convergence and divergence at the top of anticyclones and cyclones, respectively, controls the surface distribution of the chemical component (see figure \ref{fig:vort_chem}). In a comparable way, magnetic field can be collected (intensified) and expelled (weakened) by cyclonic and anticyclonic motion at the CMB in an advection process. A necessary condition for this to happen can be understood in the framework of \textit{Alfv\'{e}n's theorem} that states:\\ \par
+Case PFF12 (see table \ref{tab:data}) with of portion of $\delta^* = 12$ \% thermal forcing was chosen as a showcase. Although the uniform chemical forcing dominates in this case, the influence of the heat flux pattern is clearly visible in the surface projection of the radial magnetic field in figure \ref{fig:surface_Br_d20}. Patches of intense magnetic flux lie at  $\sim$45$^\circ$ and $225^\circ$E in the northern and the southern hemisphere. They are each shifted $45^\circ$ west of the longitudes of maximum heat flux ($90^\circ$ and $270^\circ$, see figure \ref{fig:fluxsketch}). \\ \par \noindent
+In section \ref{sec:attached_columns}, the flow convergence and divergence at the top of anticyclones and cyclones, respectively, controls the surface distribution of the chemical component (see figure \ref{fig:vort_chem}). In a comparable way, magnetic field can be locally collected (intensified) and expelled (weakened) by cyclonic and anticyclonic motion at the CMB in an advection process. A necessary condition for this to happen can be understood in the framework of \textit{Alfv\'{e}n's theorem} that states:\\ \par
 \textit{Magnetic flux tubes move with fluid particles as if they were frozen into it \textbf{if} the fluid has infinite conductivity} \citep{davidson2001introduction, roberts2007theory}.\\ \par \noindent
 Infinite conductivity goes along with zero magnetic diffusion. Therefore, the relative importance of magnetic diffusion in a system (see the the second term on the rhs of equation \eqref{eq:induction^}) decides whether magnetic field collection and expulsion by advection can serve as an explanation for the flux patches. The \textit{magnetic Reynolds number} estimates the ratio of magnetic advection to diffusion \citep{rieutord2014fluid} and therefore is the relevant quantity in this context \citep{christensen2011geodynamo}. Table \ref{tab:data} shows that the magnetic Reynolds number for this (Re$_m$ = 170.3) and for the other cases is of order $\mathcal{O}$(100). It becomes obvious that advection dominates diffusion by far and therefore the above process is likely play a role in the generation of the flux patches. \\ \par \noindent
 Figure \ref{fig:dyn_d20_vectorfield_Br} shows a north polar view of the three dimensional surface of the spherical shell at a radial level $r=1.485$, tilted by the polar angle $\vartheta = 20^\circ$. A schematic overview of the important features of the velocity and the magnetic field in this view can be found in figure \ref{fig:sketch_patches}, where red (blue) patches represent cyclones (anticyclones) and black crosses stand for patches of increased radial magnetic field strength (flux patches).  \\
-The surface flow field (black arrows in figure \ref{fig:dyn_d20_vectorfield_Br}) exhibits a pattern of two opposite regions of anticyclonic motion around $135^\circ$ and $315^\circ$E (blue patches in figure \ref{fig:sketch_patches}) 
+The surface flow field (black arrows in figure \ref{fig:dyn_d20_vectorfield_Br}) exhibits a pattern of two regions of anticyclonic motion around $135^\circ$ and $315^\circ$E  
 \begin{figure}[H]
  \begin{minipage}{0.455\textwidth}
-  and two regions of cyclonic motion in between at $45^\circ$ and $235^\circ$ (red patches). Two fields of increased radial magnetic field strength (black crosses) form adjacent to the intersection of the TC and the CMB. The flux patch generation process can be understood regarding the azimuthal profile of the radial field $B_r$ and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, shown in figure \ref{fig:divLat_Br}: \\
+  (blue patches in figure \ref{fig:sketch_patches}) and two regions of cyclonic motion in between at $45^\circ$ and $235^\circ$ (red patches). Two fields of increased radial magnetic field strength (black crosses) form adjacent to the intersection of the TC and the CMB. The flux patch generation process can be understood regarding the azimuthal profile of the radial field $B_r$ and the horizontal divergence of the velocity field $[\bm \nabla \cdot \bm u]_\textrm{\tiny H}$, shown in figure \ref{fig:divLat_Br}: \\
   The radial magnetic field is locally intensified due to the convergent flow caused by the cyclonic motion at the CMB. At the same time, the divergent flow on top of the anticyclones expels field lines and therefore causes the field strength to decrease in that regions. Thus, both mechanisms, field collection and expulsion, take part in determining the magnetic field geometry. 
  \end{minipage}
  \hfill
@@ -988,7 +987,7 @@ The surface flow field (black arrows in figure \ref{fig:dyn_d20_vectorfield_Br})
 \end{figure}\noindent
 \subsection{Changing the driving mechanism}
 \label{sec:delta_dependence}
-The key quality of a \textit{thermo-chemical} model of core convection is the possibility to explore the interplay of two different driving mechanisms with distinct Prandtl numbers in one system. To explore the dependence of the system dynamics on the choice of the ratio between thermal and compositional driving is the central question. It was recently studied for the non magnetic case by \citet{breuer2010thermochemically} and \citet{trumper2012numerical} or the dynamo case by \citet{manglik2010dynamo} and \citet{takahashi2014double}. The choice of a distinct forcing ratio in case of the models cited above means to strengthen either the thermal component that is equipped with a Prandtl number $\textrm{Pr}_\textrm{\tiny T}<1$ or the chemical component that commonly goes along with $\textrm{Pr}_\textrm{\tiny T}\geq1$. If $\textrm{Pr}$ is less than unity, inertial processes gain importance, whereas $\textrm{Pr}$ greater one emphasizes diffusion of heat and composition, respectively.\\ \par \noindent
+The key quality of a \textit{thermo-chemical} model of core convection is the possibility to explore the interplay of two different driving mechanisms with distinct Prandtl numbers in one system.How the system dynamics depend on the choice of the ratio between thermal and compositional driving is the central question. It was recently studied for the non magnetic case by \citet{breuer2010thermochemically} and \citet{trumper2012numerical} or the dynamo case by \citet{manglik2010dynamo} and \citet{takahashi2014double}. The choice of a distinct forcing ratio in case of the models cited above means to strengthen either the thermal component that is equipped with a Prandtl number $\textrm{Pr}_\textrm{\tiny T}<1$ or the chemical component that commonly goes along with $\textrm{Pr}_\textrm{\tiny T}\geq1$. If $\textrm{Pr}$ is less than unity, inertial processes gain importance, whereas $\textrm{Pr}$ greater one emphasizes diffusion of heat and composition, respectively.\\ \par \noindent
 In contrast to that, changing the forcing ratio $\delta^*$, as it is done here (see section \ref{sec:thermal/chemical}), has \textit{three} major implications:
 \begin{enumerate}[(A)]
  \item The BC for the thermal component is of the \textit{Neumann} type (fixed heat flux), whereas the compositional field underlies \textit{Derichlet} conditions (fixed composition).
@@ -1014,7 +1013,7 @@ Each of the points mentioned is expected to have an effect on the behavior of th
    \caption*{(c) Toroidal kin. energy $f_\textrm{tor}$}
  \includegraphics[width = 0.99 \textwidth]{results/relTor-crop.pdf}
 \end{minipage}
- \caption{(a) Elsasser number, (b) magnetic Reynolds number Re$_m$ and (c) portion of toroidal kinetic energy $f_\textrm{tor}$ (see section \ref{sec:diagnostics}) for different forcing ratios $\delta^*$ for the uniform case UFF as well as for the case PFF with $q^*=2$. The data originates from the statistically stationary state. The errorbars in (a) indicate the standard deviation.}
+ \caption{(a) Elsasser number, (b) magnetic Reynolds number Re$_m$ and (c) portion of toroidal kinetic energy $f_\textrm{tor}$ (ratio of the toroidal kinetic energy to the total kinetic energy) for different forcing ratios $\delta^*$ for the uniform case UFF as well as for the case PFF with $q^*=2$. The data originates from the statistically stationary state. The errorbars in (a) indicate the standard deviation.}
    \label{fig:els_reym}
 \end{figure} \noindent
 Figure \ref{fig:els_reym} summarizes some of the results of the Parameter study on the dependence on $\delta^*$. The heat flux pattern case PFF (black lines) is presented as well as the case UFF (red lines), that includes uniform heat flux boundary conditions in the thermal component (see also table \ref{tab:data}). The following sections are each dedicated to one specific observation induced by the transition from $\delta^*\!=\!0$ to $\delta^*\!=\!1$.
@@ -1038,8 +1037,7 @@ For the heat flux pattern case PFF, figures \ref{fig:els_reym}(a) and (c) sugges
 The relative strength of the magnetic dipole component at the CMB is a measure that is accessible for dynamo simulations as well as for the geomagnetic field. Therefore it may serve as an indicator for the degree to which a dynamo model can be called Earth-like. The definition of the dipole strength $f_\textrm{dip}$ is given in section \ref{sec:diagnostics}.
 \begin{figure}[H]
 \begin{minipage}{0.55\textwidth}
-Figure \ref{fig:reldip} shows a decrease of $f_\textrm{dip}$ for the transition from purely chemical ($\delta^*=0$) to purely thermal convection ($\delta^*=1$) for the heat flux pattern case PFF (black line) as well es for the uniform case UFF (red line). \citet{sreenivasan2006role} as well as \citet{christensen2006scaling} argue that the the Rossby number $Ro$, measuring the importance of inertia compared to that of rotation in the force balance, plays a crucial role for the dipolarity of the magnetic field. This suggests that the transition from Pr$_\textrm{\tiny C} = 3$ to Pr$_\textrm{\tiny T}=0.3$ (B) is responsible for the drop in $f_\textrm{dip}$ because the Prandtl number weights the inertia term in the equation of momentum. \citet{busse2006parameter} likewise report an inverse dependence between dipolarity and Prandtl number. \\
-An explanation with the heat flux pattern (C) can be neglected, because PFF and UFF do not differ significantly and (A) as well is expected to play a minor role for the dipolarity. 
+Figure \ref{fig:reldip} shows a decrease of $f_\textrm{dip}$ for the transition from purely chemical ($\delta^*=0$) to purely thermal convection ($\delta^*=1$) for the heat flux pattern case PFF (black line) as well es for the uniform case UFF (red line). \citet{sreenivasan2006role} and \citet{christensen2006scaling} argue that the the Rossby number $Ro$, measuring the importance of inertia compared to that of rotation in the force balance, plays a crucial role for the dipolarity of the magnetic field. This suggests that the transition from Pr$_\textrm{\tiny C} = 3$ to Pr$_\textrm{\tiny T}=0.3$ (B) is responsible for the drop in $f_\textrm{dip}$ because the Prandtl number weights the inertia term in the equation of momentum. \citet{busse2006parameter} likewise report a reciprocal dependence between dipolarity and Prandtl number. An explanation with the heat flux pattern (C) can be neglected, as PFF and UFF do not differ significantly in their behavior and (A) as well is expected to play only a minor role for the dipolarity. 
 \end{minipage}
 \hfill
  \begin{minipage}{0.4\textwidth}
@@ -1051,8 +1049,9 @@ An explanation with the heat flux pattern (C) can be neglected, because PFF and 
  \caption{Relative dipole strength $f_\textrm{dip}$ (see section \ref{sec:diagnostics} for a definition) for different $\delta^*$ for the heat flux pattern case PFF (black line) and the uniform case UFF (red line). The black dotted line shows the value for today's geomagnetic field $f_\textrm{dip} = 0.65$ \citep{finlay2010international}.}
  \label{fig:reldip}
  \end{minipage}
-\end{figure}
-
+\end{figure} \noindent
+The black dotted line in figure \ref{fig:reldip} represents the relative dipole strength of the present geomagnetic field, $f_\textrm{dip}=0.65$ \citep{finlay2010international}. \citet{takahashi2014double} studies thermo-chemical dynamo action with regard to the dipolarity and defines this value of $f_\textrm{dip}$ as a threshold for the \textit{dipolar regime} (the Earth' present magnetic field is supposed to be in a state of a relatively low dipole strength). He expects dynamos to be part of this regime as long as their high Prandtl number chemical forcing accounts for at least $40\%$ of the total forcing. The definition of the forcing ratio and the choice of the Prandtl numbers Pr$_\textrm{\tiny T}$ and Pr$_\textrm{\tiny C}$ in this work slightly differ from his model, nevertheless, \ref{fig:reldip} reveals a similar behavior. The purely thermally driven case PFF100 is characterized by a value of $f_\textrm{dip}$ that seems unrealistic for the present state of the Earth. Only PFF0, PFF12 and PFF36 clearly exceed the threshold for the dipolar regime. \\
+The observations made in this section are in line with the findings of \citet{takahashi2014double} and suggest that a certain portion of chemical forcing is mandatory in order to reach Earth-like values for the relative dipole strength. Furthermore, it is important to notice that the magnetic dipole remains unaffected by the heterogeneity of the thermal BC. 
 \subsection{The heat flux pattern in the context of a changing driving mechanism}
 \label{sec:effect_pattern}
 The goal of this section is to integrate the findings of section \ref{sec:dyn_d020} concerning the magnetic flux patch generation into the context of the changing driving mechanism discussed in section \ref{sec:delta_dependence}. It was already shown that the effect of the heat flux pattern persists even if the relative influence of the thermal driving component makes up only 12\% (see also figure \ref{fig:relamp} at the end of this section). A justification for the choice of PFF12 as a showcase in the above section will be given and the relation between the corresponding effect and the changing of the forcing ratio clarified. \\ \par \noindent
