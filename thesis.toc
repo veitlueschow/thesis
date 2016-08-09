@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {3.7}Boundary conditions}{13}
 \contentsline {subsection}{\numberline {3.8}CMB - heat flux pattern}{14}
 \contentsline {subsection}{\numberline {3.9}Non dimensional equations}{17}
-\contentsline {subsection}{\numberline {3.10}Conductive and convective Fluctuations}{19}
+\contentsline {subsection}{\numberline {3.10}Conductive and convective fluctuations}{19}
 \contentsline {subsection}{\numberline {3.11}Thermal and chemical forcing}{20}
 \contentsline {subsection}{\numberline {3.12}Numerical Method}{21}
 \contentsline {subsection}{\numberline {3.13}Diagnostics}{22}

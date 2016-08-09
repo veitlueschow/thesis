@@ -65,13 +65,13 @@ Compositional forcing is expected to be larger than thermal(e.g. Braginsky, 1964
  
 \section{Modeling core convection and dynamo action}
 
-Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied \citep{chandrasekhar1970hydrodynamic}. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters expected for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for larger computers that allow to explore earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (REFS ???).\\
-A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions (BC) or spherical shell models. The latter are of course more realistic for the Earth but numerically more costly and therefore even less earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
-We model the electrically conducting liquid outer core. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Derichlet BC). The thermal forcing is maintained by introducing a fixed in - and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be insulating and therefore have no influence on the evolution of magnetic fields. \\ 
-In the following, all relevant equations are introduced. There exist numerous detailed derivations so that this description will be held relatively short. The according references will be given in each section.\\
+Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied \citep{chandrasekhar1970hydrodynamic}. There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically efficient as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters supposed for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for larger computers that allow to explore Earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (REFS ???).\\
+A question that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions (BC) or spherical shell models. The latter are more realistic for the Earth but numerically more costly and therefore even less Earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as Earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
+We model the electrically conducting liquid outer core (LOC). It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by destabilizing thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Dirichlet BC). The thermal forcing is maintained by introducing a fixed in- and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be electrically insulating and therefore have no influence on the evolution of magnetic fields. \\ 
+In the following, all relevant equations are introduced. There exist numerous detailed derivations so that the description will be held relatively short, here. The according references will be given in each section.\\
 \subsection{Frame of reference}
-The liquid outer core (LOC) is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$ (see figure \ref{fig:FOC}(a)). It is bounded by the ICB at the bottom the CMB at the top. The shell thickness is chosen according to what is expected for today's state of the Earth and defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
-The LOC is constantly rotating about the z-axis of a Cartesian system with an angular velocity $\Omega$ that is invariant in time. The effect of the rotation on the frame of reference will be discussed when it comes to the equation of motion. In the course of this study, spherical coordinates are used (see figure \ref{fig:FOC}(b) for the definition of the unit vectors).  \\
+The LOC is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$ (see figure \ref{fig:FOC}(a)). It is bounded by the ICB at the bottom and the CMB at the top. The shell thickness is chosen according to what is supposed for today's state of the Earth and is defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
+The system is constantly rotating about the z-axis of a Cartesian system with an angular velocity $\Omega$ that is invariant in time. The effect of rotation on the frame of reference will be discussed later in the context of the equation of motion. In the course of this study, spherical coordinates are used (see figure \ref{fig:FOC}(b) for the definition of the unit vectors).  \\
 \begin{figure}[H]
  \begin{minipage}{0.42\textwidth}
   \includegraphics[width=\textwidth]{sketches/spherical_coord.jpg} 
@@ -82,7 +82,7 @@ The LOC is constantly rotating about the z-axis of a Cartesian system with an an
   \includegraphics[width=\textwidth]{sketches/spherical_coord2.jpg} 
   \caption*{(b)}
   \end{minipage}
-  \caption{(a) Sketch of the liquid outer core. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian $z$-axis. (b) This work uses spherical coordinates with unit vectors $ \bm{e_r}$, $\bm{e_\Phi}$ and $\bm{e_\vartheta}$ \citep{trumper2014thermo}.}
+  \caption{(a) Sketch of the LOC. It is bounded by the two spheres of radii R$_i$ and R$_o$. The rotation axis is the cartesian $z$-axis. (b) This work uses spherical coordinates with unit vectors $ \bm{e_r}$, $\bm{e_\Phi}$ and $\bm{e_\vartheta}$ \citep{trumper2014thermo}.}
   \label{fig:FOC}
 \end{figure}
 \subsection{Equation of continuity}
@@ -123,25 +123,25 @@ If a frame of reference is rotating - as in this case - it is no longer an inert
 \left(\frac{d \bm P}{dt}\right)_F = \left(\frac{d \bm P}{dt}\right)_R + \bm \Omega \times \bm P,
 \label{eq:frame_of_reference_rule}
 \end{equation}
-where the subscripts $F$ and $R$ indicate the \textit{fixed} and the \textit{rotating} frame. Applying rule \eqref{eq:frame_of_reference_rule} twice to a position vector $\bm r$ yields 
+where the subscripts $F$ and $R$ denote the \textit{fixed} and the \textit{rotating} frame. Applying rule \eqref{eq:frame_of_reference_rule} twice to a position vector $\bm r$ yields 
 \begin{equation}
  \bm a_F = \bm a_R + 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r)
  \label{eq:frame_of_reference_accelerations}
 \end{equation}
 for an acceleration $\bm a$. $2\bm \Omega \times \bm u_R$ is the Coriolis force and $\bm \Omega \times (\bm \Omega \times \bm r)$ the centripetal force. \\
-With the help of \eqref{eq:frame_of_reference_accelerations}, $\frac{D \bm u}{D t}$ can be transferred from the inertial frame to the frame of reference:
+With equation \eqref{eq:frame_of_reference_accelerations}, $\frac{D \bm u}{D t}$ can be transferred from the inertial frame to the frame of reference:
 \begin{equation}
  \frac{D \bm u_F}{D t} = \frac{D \bm u_R}{D t} + 2\bm \Omega \times \bm u_R + \bm \Omega \times (\bm \Omega \times \bm r)
  \label{eq:frame_of_reference_material}
 \end{equation}
-From now on, the subscripts $F$ and $R$ will be cut and all quantities will be measured in the rotating frame. With \eqref{eq:frame_of_reference_material}, \eqref{eq:force_balance1} changes to
+From now on, the subscripts $F$ and $R$ will be cut and all quantities will be measured in the rotating frame. Using equation \eqref{eq:frame_of_reference_material}, equation \eqref{eq:force_balance1} changes to
 \begin{align}
   \int_{\mathcal{V}} \rho \frac{D \bm u}{D t} d^3r = \int_{\mathcal{V}} \bm f d^3r + \oint_{\partial \mathcal{V}} \bm t ds 
   - \int_{\mathcal{V}} \rho \left( 2\bm \Omega \times \bm u + \bm \Omega \times (\bm \Omega \times \bm r) \right) d^3r.
   \label{eq:force_balance2}
 \end{align}
 Another pseudo force that generally appears in rotating systems, but that is neglected here, is the \textit{Poincar\'{e} force}. In a geophysical context, \textit{precession driven flows} are the most prominent example where it plays a dominant role \citep{Tilgner2007}. \\ \par \noindent
-The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the surface normal vector. The surface term in  \eqref{eq:force_balance2} can thus be transformed to
+The \textit{Cauchy Theorem} relates the surface forces $\bm t$ to the stress tensor $\underline{\tau}$ linearly via $\bm t = \underline{\tau} \cdot \bm n$, where $\bm n$ is the surface normal vector. The surface term in equation \eqref{eq:force_balance2} can thus be transformed to
 \begin{equation}
  \oint_{\partial \mathcal{V}} \bm t ds = \int_{\mathcal{V}} \bm \nabla \cdot \underline{\tau} d^3r,
 \end{equation}
@@ -189,7 +189,7 @@ The buoyancy force term $\bm g \rho$ will be further discussed in section \ref{s
 
 \subsection{Maxwell equations, Lorentz force and induction equation}
 \label{sec:lorentz}
-The liquid outer core consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and affect the flow field. The induction equation is a transport equation for a magnetic field $\bm B$ that is 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
+The LOC consists of a metallic and therefore conducting fluid. Electric currents may evolve, create magnetic fields and these again may generate currents and affect the flow field. The induction equation is a transport equation for a magnetic field $\bm B$ that is 'hosted' by a fluid moving with a velocity $\bm u$. The Lorentz force characterizes the influence of the magnetic field on the flow field, whereas the Maxwell equations describe how electric and magnetic fields interact through charges and currents. They form a basis for the 'magnetic part' of Magnetohydrodynamics (MHD).\\
 In the scope of core convection, a reduced form of the Maxwell equations (Pre-Maxwell equations) suffices \citep{davidson2001introduction}: 
 \begin{subequations} \label{eq:maxwell}
 \begin{align}
@@ -214,7 +214,7 @@ and an expression for the \textit{Lorentz force}
  \bm f_l = \bm j \times \bm B = \frac{1}{\mu_0} (\bm \nabla \times \bm B \times \bm B)
 \end{equation}
 are needed. $\bm E$ describes the electric field, $\bm j$ the current density, $\mu_0$ the vacuum permeability and $\sigma$ the conductivity of the fluid.\\
-The \textit{induction equation}, a transport equation for the magnetic field, can be derived using \eqref{eq:faraday}, \eqref{eq:ohm} and the solenoidal character of $\bm B$ \eqref{eq:no_magnetic_monopoles} and $\bm u$:
+The \textit{induction equation}, a transport equation for the magnetic field, can be derived using equations \eqref{eq:faraday}, \eqref{eq:ohm} and the solenoidal character of $\bm B$, \eqref{eq:no_magnetic_monopoles} and $\bm u$:
 \begin{equation}
  \label{eq:induction}
  \frac{\partial \bm B}{\partial t} = \bm \nabla (\bm u \times \bm B) + \eta \bm \nabla^2 \bm B,
@@ -233,7 +233,7 @@ where the internal energy per unit mass is described by $e$. It can be changed b
  \label{eq:heat_equation}
  \frac{D T}{D t} = \kappa_\textrm{\tiny T} \bm \nabla^2 T.
 \end{equation}
-Here, $\kappa_\textrm{\tiny T} = \frac{k}{c_\textrm{\tiny P} \rho}$ is the thermal diffusivity and $T$ the fluid temperature. Internal sources of $e$ in the liquid outer core are completely omitted in this study.\\
+Here, $\kappa_\textrm{\tiny T} = \frac{k}{c_\textrm{\tiny P} \rho}$ is the thermal diffusivity and $T$ the fluid temperature. Internal sources of $e$ in the LOC are completely omitted in this study.\\
 The derivation of equation \eqref{eq:heat_equation} was adopted from \citet{kundu2008fluid}.\\
 \\
 The light component is released at the ICB as the inner core slowly crystallizes. It serves as an additional source of buoyancy. In this model, the light component per unit mass, $C$, can only change by a flux $\bm q_\textrm{\tiny C}$ through the surface of the fluid. According to the equation for the conservation of the internal energy above,
@@ -282,7 +282,7 @@ where $\nu = \mu/\bar \rho$ is the new kinematic viscosity. The centrifugal pote
 \label{sec:bc}
 (INTRODUCTION)\\
 For the velocity field they are chosen to be \textit{no-slip}, e.g. $\bm u = 0$ on the ICB ($r = R_i$) and the CMB ($r =R_0$), in order to be comparable to other studies. Several authors state that these \textit{rigid} BC reflect what is realistic for the interaction between the inner and outer core and the outer core and the mantle, respectively \citep{glatzmaier1995three, christensen2006scaling, trumper2012numerical}. On the other hand, \citet{zhang1987onset} or \citet{kuang1997earth} argue that the Ekman layers which result from rigid boundaries are be negligibly thin in the Earth's core due to its extremely small viscosity. Because today's numerical models are forced to use a far to high viscosity, they over emphasize the effect of Ekman layers and therefore \textit{stress-free} BC are more appropriate. For a better comparison, this work follows the approach that was used by related studies \citep{olson2002time, aubert2008thermochemical, hori2014ancient}. \\
-According to \citet{trumper2012numerical}, Derichlet type BC are chosen for the chemical component. A compositional gradient, $\Delta C = C'_\textrm{\tiny ICB} - C'_\textrm{\tiny CMB}$, is imposed across the shell. In a more earth-like scenario, one would apply Neumann type conditions with fixed compositional influx at the ICB and zero outflux at the CMB \citep{braginsky1995equations}. This would further increase the complexity of the model and is therefore adjourned in this case. \\
+According to \citet{trumper2012numerical}, Dirichlet type BC are chosen for the chemical component. A compositional gradient, $\Delta C = C'_\textrm{\tiny ICB} - C'_\textrm{\tiny CMB}$, is imposed across the shell. In a more Earth-like scenario, one would apply Neumann type conditions with fixed compositional influx at the ICB and zero outflux at the CMB \citep{braginsky1995equations}. This would further increase the complexity of the model and is therefore adjourned in this case. \\
 The thermal BC is of the Neumann type and will be discussed in more detail in the following section.\\
 The mantle is assumed to be an insulator due to its rocky content \citep{dormy1998mhd}. The question whether the inner core should be treated as an insulator or not was discussed by \citet{wicht2002inner}. He found that the effect of a conducting inner core on the flow field and the magnetic field is rather small. It is hence reasonable to choose $\sigma = 0$ in the inner core in order not to be obliged to solve the induction equation in the full sphere. In the mantle and the core, the magnetic field $\bm B$ is the solution to 
 \begin{equation}
@@ -453,7 +453,7 @@ The following parameters of similarity appear in the equations:
 &\textrm{Magnetic Prandtl number : } & \textrm{Pr}_\textrm{m} = \frac{\nu}{\eta} \\ \nonumber 
 \end{align} 
 }
-The thermal and compositional Rayleigh numbers are measures for the vigor of convection due to thermal and compositional buoyancy sources, respectively. The definitions of $\textrm{Ra}_\textrm{\tiny {T}}$ and $\textrm{Ra}_\textrm{\tiny {C}}$ slightly differ because of the different scales chosen for temperature and composition (see table \ref{tab:scales}). $'\beta D'$ and $'\Delta C'$ refer to Neumann and Derichlet type boundary conditions for $T$ and $C$, respectively.  \\
+The thermal and compositional Rayleigh numbers are measures for the vigor of convection due to thermal and compositional buoyancy sources, respectively. The definitions of $\textrm{Ra}_\textrm{\tiny {T}}$ and $\textrm{Ra}_\textrm{\tiny {C}}$ slightly differ because of the different scales chosen for temperature and composition (see table \ref{tab:scales}). $'\beta D'$ and $'\Delta C'$ refer to Neumann and Dirichlet type boundary conditions for $T$ and $C$, respectively.  \\
 Whether a fluid is constrained rather by rotation or viscosity is described via the Ekman number. \\
 The distinction between a thermal and a compositional Prandtl number is a key feature of this study. It allows for differences in the dynamical response of the system to either thermally or compositionally dominated convective forcing. Roughly spoken, a large Prandtl number promotes viscous effects in a fluid, whereas a small one promotes inertia effects. The magnetic Prandtl number relates viscous and magnetic diffusion and therefore decides how much kinetic energy is needed to sustain a magnetic field. \\
 In the following, all $'\, \hat{}\,'$ will be omitted, since only non dimensional quantities are mentioned.\\
@@ -503,7 +503,7 @@ This work aims to explore the combined effect of the heat flux pattern at the CM
 \delta =  \frac{\textrm{Ra}_\textrm{\tiny T}}{\textrm{Ra}_\textrm{\tiny T} + \textrm{Ra}_\textrm{\tiny C}} = \frac{\textrm{Ra}_\textrm{\tiny T}}{\textrm{Ra}_\textrm{\tiny {total}}}
 \end{equation}
 for their model with isothermal and isochemical BC. According to this definition, the end member cases with $\delta = 100\%$ and $\delta = 0\%$ are controlled exclusively by thermal and chemical forcing, respectively. Using this classification, one has to be aware that the choice of two different Prandtl numbers, $\textrm{Pr}_\textrm{T} = 0.3$ and $\textrm{Pr}_\textrm{C} = 3$, as in this study, affects the critical Rayleigh numbers $\textrm{Ra}_\textrm{\tiny T}^\textrm{crit}$ and $\textrm{Ra}_\textrm{\tiny C}^\textrm{crit}$. The consequence is, that when keeping $\textrm{Ra}_\textrm{ total}$ fixed, the purely chemical case ($\delta = 0\%$) is to a higher degree super critical than the corresponding purely thermal case ($\delta = 100\%$) \citep{trumper2012numerical}. \\
-In this model, Derichlet type BC are applied for the chemical and Neumann type conditions for temperature field (see section \ref{sec:bc}). Thus, 
+In this model, Dirichlet type BC are applied for the chemical and Neumann type conditions for temperature field (see section \ref{sec:bc}). Thus, 
 \begin{equation}
  \textrm{Ra}_\textrm{\tiny C} = \frac{\alpha_\textrm{\tiny C} g \Delta C D^3}{\nu^2}
 \end{equation}
@@ -663,7 +663,7 @@ Structure of the CMB heat pattern:
 % The presence of a magnetic field has an effect on the flow field in a self-sustained dynamo via the Lorentz force term in equation \ref{eq:force_balance4}. Nevertheless, it is widely assumed that convection columns elongated parallel to the rotation axis persist, even if the influence of the Lorentz force term in Equation \ref{eq:force_balance4} is comparable to or higher than the Coriolis force term \citep{christensen2011geodynamo}. 
 
  \section{Outline of the study (Notizen)}
-Describe the parameters used and show earth values
+Describe the parameters used and show Earth values
 \begin{itemize}
  \item  The Prandtl numbers will be held fixed at $\textrm{Pr}_\textrm{\tiny T} = 3$ and $\textrm{Pr}_\textrm{\tiny C} = 0.3$ during this
 \item uniform refers to q=0
@@ -708,7 +708,7 @@ According to the analytical theories of \citet{jones2000onset} and \citet{dormy2
 As mentioned above, convection in rapidly rotating systems is organized in a column like structure at onset \citep{busse1970thermal}. The question whether this structure is maintained, even in the highly supercritical LOC, has important implications for the understanding of the geodynamo.\\ 
 Since the first findings of self sustained dynamos \citep{glatzmaier1995three, kuang1997earth}, different kinds of dynamo \textit{processes} have been discussed. Hence, the circular transformation between poloidal and toroidal magnetic energy is a necessary ingredient for all of them \citep{roberts2007theory}. The \textit{vortex columns}, visualized in Figures \ref{fig:sketch_busse} and \ref{fig:vort_uniform}, are important sources of \textit{helicity} and therefore necessary for the macrospcopic $\alpha$-effect, that can transform either poloidal to toroidal field or vice versa \citep{roberts2007theory,jones2011planetary}. For a detailed explanation of the $\alpha$-effect and its importance for the geodynamo, the reader is referred to the literature cited above. For the moment it suffices to know that helicity is a key quantity in the discussion of dynamo action. \\
 This section aims to explain the mechanism of helicity production inside of vortex columns. \\ \par \noindent
-Although motion parallel to the $z$-axis is strongly constrained by rotation (see Equation \eqref{eq:geostrophy2}), the spherical form of the boundaries necessarily relaxes this constraint locally and vertical flow is unavoidable \citep{busse2002convective, gillet2006quasi}. An important example for the relaxation of the Taylor-Proudman theorem in this context is the \textit{secondary circulation} inside of vortex columns \citep{olson1999numerical, aubert2008magnetic, christensen2011geodynamo}, sketched in Figure \ref{fig:secondary_circulation}.\\
+Although motion parallel to the $z$-axis is strongly constrained by rotation (see equation \eqref{eq:geostrophy2}), the spherical form of the boundaries necessarily relaxes this constraint locally and vertical flow is unavoidable \citep{busse2002convective, gillet2006quasi}. An important example for the relaxation of the Taylor-Proudman theorem in this context is the \textit{secondary circulation} inside of vortex columns \citep{olson1999numerical, aubert2008magnetic, christensen2011geodynamo}, sketched in Figure \ref{fig:secondary_circulation}.\\
 \begin{figure}[H]
  \begin{minipage}[left]{0.49\textwidth}
   \includegraphics[width =  \textwidth]{sketches/secondary_circulation-crop.pdf}
@@ -730,7 +730,7 @@ The rotation rate of the LOC, measured in terms of the inverse of the non dimens
 \label{eq:geostrophy}
  -\frac{2}{\textrm{Ek}}\bm{e_z} \times \bm u= \bm \nabla \pi,
 \end{equation}
-where the rotational force is balanced by the pressure gradient \citep{vallis2006atmospheric, jones2007thermal}. The \textit{Taylor-Proudman theorem} follows from \eqref{eq:geostrophy}, if the curl is applied:
+where the rotational force is balanced by the pressure gradient \citep{vallis2006atmospheric, jones2007thermal}. The \textit{Taylor-Proudman theorem} follows from equation \eqref{eq:geostrophy}, if the curl is applied:
 \begin{equation}
 \label{eq:geostrophy2}
  (\bm{e_z} \cdot \bm \nabla) \bm u = 0.
@@ -746,7 +746,7 @@ This equation is obtained, when adding the buoyancy term from equation \eqref{eq
 \subsection{The formation of radial flux patches by azimuthal temperature gradients in the equatorial plain}
 \label{sec:radial_flow}
 The non axisymmetric distribution of up- and downwellings in the time-averaged flow is a feature that is distinct to non homogeneous forcing provided by the heterogeneous core-mantle heat flux. \citet{zhang1992convection} and \citet{dietrich2016core} analytically show that the azimuthal position of in- and outward radial motion in the equatorial plain is determined by the azimuthal temperature gradient $\partial T / \partial \phi$. \\
-Equation \eqref{eq:thermal_wind} is used as a starting point, whereupon only thermal forcing is regarded ($\textrm{Ra}_\textrm{\tiny C} = 0$). Since the $z$-axis plays a central role in the geostrophic context, cylindrical coordinates are used with $s$ as a radial distance from the axis of rotation. According to \citet{dietrich2016core}, the velocity field is split into a geostrophic part $\bm u^g$ and an ageostrophic part $\bm u^a$ with $\bm u = \bm u^g(s,\phi) + \bm u^a(s,z,\phi)$, where the geostrophic part per definition is independent of the $z$-position. To compute the geostrophic flow, the $z$-average of the $z$-component of \eqref{eq:thermal_wind} is needed,
+Equation \eqref{eq:thermal_wind} is used as a starting point, whereupon only thermal forcing is regarded ($\textrm{Ra}_\textrm{\tiny C} = 0$). Since the $z$-axis plays a central role in the geostrophic context, cylindrical coordinates are used with $s$ as a radial distance from the axis of rotation. According to \citet{dietrich2016core}, the velocity field is split into a geostrophic part $\bm u^g$ and an ageostrophic part $\bm u^a$ with $\bm u = \bm u^g(s,\phi) + \bm u^a(s,z,\phi)$, where the geostrophic part per definition is independent of the $z$-position. To compute the geostrophic flow, the $z$-average of the $z$-component of equation \eqref{eq:thermal_wind} is needed,
 \begin{equation}
 \label{eq:wind_z1}
 -2\,\Big \langle \frac{\partial u_z}{\partial z} \Big \rangle_z = {(1-a)\textrm{Ek}\textrm{Ra}_\textrm{\tiny T}} \, \langle \bm{e_z} \cdot \bm \nabla \times (\theta + t_2^2) \bm r \rangle_z,
@@ -755,17 +755,17 @@ where the average of a function $f$ can be computed by
 \begin{equation*}
  \langle f \rangle_z (s,\phi) = \frac{1}{2H} \int_{-H}^{+H} f(s,z,\phi) \, dz,
 \end{equation*}
-with $H = \sqrt{R_o^2 + s^2}$ as the half height of a cylinder at the radial position $s$ \citep{gillet2006quasi}. The right-hand-side (rhs) of \eqref{eq:wind_z1} can be transformed to (now in spherical coordinates)
+with $H = \sqrt{R_o^2 + s^2}$ as the half height of a cylinder at the radial position $s$ \citep{gillet2006quasi}. The right-hand-side (rhs) of equation \eqref{eq:wind_z1} can be transformed to (now in spherical coordinates)
 \begin{equation}
 \label{eq:wind_z2}
  \textrm{rhs} = {(1-a)\textrm{Ek}\textrm{Ra}_\textrm{\tiny T}} \, \bigg \langle \bm{e_z} \cdot \left( \frac{1}{\textrm{sin}\vartheta} \frac{\partial}{\partial \phi}(\theta + t^2_2)\, \bm{e_\vartheta} - \frac{\partial}{\partial \vartheta} (\theta + t^2_2) \, \bm{e_\phi} \right) \bigg \rangle_z
 \end{equation}
-The conductive temperature profile $t_2^2$ is symmetric with respect to the equator, hence its lateral gradient antisymmetric and it drops out when averaged over the $z$-axis. The temperature variation $\theta$ is likely to be distributed equatorial symmetric as well and therefore it is neglected, likewise. In cylindrical coordinates, \eqref{eq:wind_z2} now reads
+The conductive temperature profile $t_2^2$ is symmetric with respect to the equator, hence its lateral gradient antisymmetric and it drops out when averaged over the $z$-axis. The temperature variation $\theta$ is likely to be distributed equatorial symmetric as well and therefore it is neglected, likewise. In cylindrical coordinates, equation \eqref{eq:wind_z2} now reads
 \begin{equation}
 \label{eq:wind_z3}
  \textrm{rhs} = (1-a) \textrm{Ek}\textrm{Ra}_\textrm{\tiny T} \frac{1}{s} \bigg \langle \frac{\partial}{\partial \phi} (\theta + t^2_2) \bm{e_z} \cdot \bm{e_\vartheta} \bigg \rangle_z.
 \end{equation}
-Following \citet{gillet2006quasi}, the left-hand-side of \eqref{eq:wind_z1} transforms to
+Following \citet{gillet2006quasi}, the left-hand-side of equation \eqref{eq:wind_z1} transforms to
 \begin{equation}
 \label{eq:wind_z4}
 -2\,\Big \langle \frac{\partial u_z}{\partial z} \Big \rangle_z = -\frac{1}{H} \int_{-H}^{+H} \frac{\partial u_z}{\partial z} \, dz = -\left( - u_s^g \, \frac{2s}{H^2} \right).
@@ -803,10 +803,10 @@ In a purely conductive regime with $\textrm{Ra}_\textrm{\tiny T} < \textrm{Ra}_\
     \includegraphics[width = \textwidth]{graphs/q2_200_d080_az-crop.pdf}
   \caption*{(c) Azimuthal velocity}
 \end{minipage}
-\caption{Equatorial contours of (a) the radial velocity, (b) the azimuthal temperature gradient $\partial (\theta + t_2^2) /\partial \phi$ and (c) the azimuthal velocity. The values in (b) are rescaled according to Equation \eqref{eq:ugr} (without the minus sign) in order to be comparable to (a). The case is the same as in Figure \ref{fig:ur_dTp}. }
+\caption{Equatorial contours of (a) the radial velocity, (b) the azimuthal temperature gradient $\partial (\theta + t_2^2) /\partial \phi$ and (c) the azimuthal velocity. The values in (b) are rescaled according to equation \eqref{eq:ugr} (without the minus sign) in order to be comparable to (a). The case is the same as in Figure \ref{fig:ur_dTp}. }
 \label{fig:equatorial_vel_temp}
 \end{figure} \noindent
-In the outer region of the core, the two downwellings (around 120$^\circ$ and 300$^\circ$ E) are more pronounced than the complementary upwellings (around 45$^\circ$ and 225$^\circ$ E, see Figures \ref{fig:ur_dTp} and \ref{fig:equatorial_vel_temp}(a)). \citet{dietrich2016core} explain this asymmetry with the azimuthal part of the non linear temperature advection term $-\frac{\partial \theta}{\partial \phi}u_\phi$ (see Equation \eqref{eq:theta} that promotes positive azimuthal temperature gradients and therefore downwellings at the corresponding longitudes.  \\ \par \noindent
+In the outer region of the core, the two downwellings (around 120$^\circ$ and 300$^\circ$ E) are more pronounced than the complementary upwellings (around 45$^\circ$ and 225$^\circ$ E, see Figures \ref{fig:ur_dTp} and \ref{fig:equatorial_vel_temp}(a)). \citet{dietrich2016core} explain this asymmetry with the azimuthal part of the non linear temperature advection term $-\frac{\partial \theta}{\partial \phi}u_\phi$ (see equation \eqref{eq:theta} that promotes positive azimuthal temperature gradients and therefore downwellings at the corresponding longitudes.  \\ \par \noindent
 The radial flow in the deeper regions of the core (e.g. the solid black line Figure \ref{fig:ur_dTp}) has a more complex form and is thus not as directly as in the upper layers related to the $\mathcal{Y}_2^2$ heat flux pattern. Broad and pronounced upwellings develop right under the CMB downwellings at $\sim110^\circ$E and $\sim290^\circ$E. They are also visible in the temperature field in Figure \ref{fig:flowfield_temp} in form of hot plumes. \\
 The downwellings observed at the CMB bend in jet-like structures in retrograde direction towards the ICB (see Figure \ref{fig:equatorial_vel_temp}(a)). The bending happens due to strong zonal westward flows at mid depth at $\sim 90^\circ$E and $\sim 270^\circ$E, respectively (see Figure \ref{fig:equatorial_vel_temp}(c)).  \\ 
 Although the flow structure in the deeper core regions is more complex than at the CMB, equation \eqref{eq:ugr} and therefore the thermo-chemical wind relation provide a good explanation for the radial flow field (compare Figure \ref{fig:equatorial_vel_temp}(a) and (b)). \\ \par
@@ -989,7 +989,7 @@ The surface flow field (black arrows in figure \ref{fig:dyn_d20_vectorfield_Br})
 The key quality of a \textit{thermo-chemical} model of core convection is the possibility to explore the interplay of two different driving mechanisms with distinct Prandtl numbers in one system.How the system dynamics depend on the choice of the ratio between thermal and compositional driving is the central question. It was recently studied for the non magnetic case by \citet{breuer2010thermochemically} and \citet{trumper2012numerical} or the dynamo case by \citet{manglik2010dynamo} and \citet{takahashi2014double}. The choice of a distinct forcing ratio in case of the models cited above means to strengthen either the thermal component that is equipped with a Prandtl number $\textrm{Pr}_\textrm{\tiny T}<1$ or the chemical component that commonly goes along with $\textrm{Pr}_\textrm{\tiny T}\geq1$. If $\textrm{Pr}$ is less than unity, inertial processes gain importance, whereas $\textrm{Pr}$ greater one emphasizes diffusion of heat and composition, respectively.\\ \par \noindent
 In contrast to that, changing the forcing ratio $\delta^*$, as it is done here (see section \ref{sec:thermal/chemical}), has \textit{three} major implications:
 \begin{enumerate}[(A)]
- \item The BC for the thermal component is of the \textit{Neumann} type (fixed heat flux), whereas the compositional field underlies \textit{Derichlet} conditions (fixed composition).
+ \item The BC for the thermal component is of the \textit{Neumann} type (fixed heat flux), whereas the compositional field underlies \textit{Dirichlet} conditions (fixed composition).
  \item The thermal \textit{Prandtl number} is chosen to be $\textrm{Pr}_\textrm{\tiny T}=0.3$ and the chemical $\textrm{Pr}_\textrm{\tiny C}=3$.
  \item Only the temperature field underlies the CMB \textit{heat flux pattern}, whereas the compositional BC is \textit{uniform}.
 \end{enumerate}
@@ -1167,9 +1167,8 @@ schreiben, dass man ein eher allgemeines modell untersucht und z.b. kein wirklic
 \subsection{Non magnetic convection}
 Non magnetic, thermo-chemical convection under the influence of the $\mathcal{Y}_2^2$ thermal BC was studied in section \ref{sec:thermo-chemical}. Special attention was payed to a characteristic feature of the flow field: Stationary vortex columns, elongated through the whole sphere parallel to the axis of rotation. \\
 It was shown that their origin lies in the equatorial plain and can be explained with the help of a thermo-chemical wind relation. The columns of constant vorticity are thus expected to be a robust feature of convection under the influence of lower Ekman numbers, likewise. If they persist in scenarios characterized by a higher degree of supercriticality (the cases regarded was 4 times supercritical), remains unclear for the moment. \\
-The potential of the vortex columns to affect other system properties, e.g. the distribution of the light element, was analyzed by introducing a concept named secondary circulation. Cyclonic columns involve vertical motion from the CMB towards the equator whereas anticyclonic columns induce vertical motion away from the equator towards the CMB. As a consequence, a stream of compositionally rich material from the ICB to the CMB parallel to the $z$-axis develops and successively accumulates the light element in patches located near the CMB. As this feature persists over a wide range of different thermo-chemical forcing scenarios, it potentially provides an explanation for certain seismic travel time anomalies in the upper region of the outer core. The use of the more realistic fixed flux compositional BC and an extended model that includes the saturation and sedimentation of composition could enhance the understanding of this process.\\
-
-The purpose of this section was to understand the effect of the heat flux pattern on the flow field and therefore the thermo-chemical aspect played a minor role. 
+The potential of the vortex columns to affect other system properties, e.g. the distribution of the light element, was analyzed by introducing a concept named secondary circulation. Cyclonic columns involve vertical motion from the CMB towards the equator whereas anticyclonic columns induce vertical motion away from the equator towards the CMB. As a consequence, a stream of compositionally rich material from the ICB to the CMB parallel to the $z$-axis develops and successively accumulates the light element in patches located near the CMB. As this feature persists over a wide range of different thermo-chemical forcing scenarios, it potentially provides an explanation for certain seismic travel time anomalies in the upper region of the outer core. The use of the more realistic fixed flux compositional BC and an extended model that includes the saturation and sedimentation of composition could enhance the understanding of this process. In return to the localized accumulation of the light element at the CMB, its extraction from the inner core is locally amplified by the secondary circulation. As this could explain an uneven growth of the inner core, it could be relevant for seismology as well.  \\
+The purpose of this section was to understand the effect of the heat flux pattern on the flow field and therefore the thermo-chemical nature of the model played only a minor role. Nevertheless, the capability of a dual forcing approach to explain features of the LOC that are hidden to single forcing codensity models, was indicated by the non uniform behavior of the light element, mentioned above.
 
 \begin{itemize}
  \item \textbf{Wicht, Stellmach 2010:} The dynamo process is questioned to play a role at larger Ra and smaller Ek!
