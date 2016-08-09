@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/TeX Live for SUSE Linux)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: apalike.bst
@@ -7,45 +7,45 @@ Warning--empty journal in bloxham1987thermal
 Warning--empty school in dormy1997modelisation
 Warning--empty publisher in Tilgner2007
 Warning--empty school in trumper2014thermo
-You've used 57 entries,
+You've used 59 entries,
             1935 wiz_defined-function locations,
-            802 strings with 12522 characters,
-and the built_in function-call counts, 22419 in all, are:
-= -- 2243
-> -- 834
-< -- 41
-+ -- 299
-- -- 272
-* -- 1961
-:= -- 3888
-add.period$ -- 170
-call.type$ -- 57
-change.case$ -- 411
-chr.to.int$ -- 56
-cite$ -- 61
-duplicate$ -- 808
-empty$ -- 1593
-format.name$ -- 369
-if$ -- 4318
+            813 strings with 12806 characters,
+and the built_in function-call counts, 23260 in all, are:
+= -- 2328
+> -- 870
+< -- 42
++ -- 311
+- -- 284
+* -- 2038
+:= -- 4034
+add.period$ -- 176
+call.type$ -- 59
+change.case$ -- 427
+chr.to.int$ -- 58
+cite$ -- 63
+duplicate$ -- 836
+empty$ -- 1650
+format.name$ -- 385
+if$ -- 4479
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 62
-newline$ -- 287
-num.names$ -- 171
-pop$ -- 316
+missing$ -- 64
+newline$ -- 297
+num.names$ -- 177
+pop$ -- 327
 preamble$ -- 1
-purify$ -- 420
+purify$ -- 436
 quote$ -- 0
-skip$ -- 622
+skip$ -- 643
 stack$ -- 0
-substring$ -- 1808
-swap$ -- 74
+substring$ -- 1876
+swap$ -- 76
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 328
+type$ -- 340
 warning$ -- 4
-while$ -- 207
+while$ -- 215
 width$ -- 0
-write$ -- 732
+write$ -- 758
 (There were 4 warnings)

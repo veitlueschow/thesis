@@ -34,9 +34,10 @@
 \contentsline {subsubsection}{\numberline {7.2.2}Kinetic energy}{45}
 \contentsline {subsubsection}{\numberline {7.2.3}Dipolarity of the magnetic field}{46}
 \contentsline {subsection}{\numberline {7.3}The heat flux pattern in the context of a changing driving mechanism}{48}
-\contentsline {subsection}{\numberline {7.4}Robustness of the results}{51}
-\contentsline {subsubsection}{\numberline {7.4.1}Towards a higher supercriticality}{51}
-\contentsline {subsubsection}{\numberline {7.4.2}Towards a higher rotation rate}{52}
+\contentsline {subsection}{\numberline {7.4}Robustness of the results}{52}
+\contentsline {subsubsection}{\numberline {7.4.1}Towards a higher supercriticality}{52}
+\contentsline {subsubsection}{\numberline {7.4.2}Towards a higher rotation rate}{53}
 \contentsline {section}{\numberline {8}Summary and Discussion}{54}
 \contentsline {subsection}{\numberline {8.1}Non magnetic convection}{54}
+\contentsline {subsection}{\numberline {8.2}Dynamo action}{54}
 \contentsline {section}{\numberline {9}Conclusion and Outlook}{55}
