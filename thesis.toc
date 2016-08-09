@@ -39,4 +39,4 @@
 \contentsline {subsubsection}{\numberline {7.4.2}Towards a higher rotation rate}{52}
 \contentsline {section}{\numberline {8}Summary and Discussion}{54}
 \contentsline {subsection}{\numberline {8.1}Non magnetic convection}{54}
-\contentsline {section}{\numberline {9}Conclusion and Outlook}{54}
+\contentsline {section}{\numberline {9}Conclusion and Outlook}{55}
