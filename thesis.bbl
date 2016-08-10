@@ -103,6 +103,11 @@ Dormy, E., Soward, A., Jones, C., Jault, D., and Cardin, P. (2004).
 \newblock The onset of thermal convection in rotating spherical shells.
 \newblock {\em Journal of Fluid Mechanics}, 501:43--70.
 
+\bibitem[Ernst-Hullermann et~al., 2013]{ernst2013finite}
+Ernst-Hullermann, J., Harder, H., and Hansen, U. (2013).
+\newblock Finite volume simulations of dynamos in ellipsoidal planets.
+\newblock {\em Geophysical Journal International}, 195(3):1395--1405.
+
 \bibitem[Finlay et~al., 2010]{finlay2010international}
 Finlay, C., Maus, S., Beggan, C., Bondar, T., Chambodut, A., Chernova, T.,
   Chulliat, A., Golovkov, V., Hamilton, B., Hamoudi, M., et~al. (2010).
@@ -273,6 +278,13 @@ Simitev, R. and Busse, F. (2005).
 Sreenivasan, B. and Jones, C.~A. (2006).
 \newblock The role of inertia in the evolution of spherical dynamos.
 \newblock {\em Geophysical Journal International}, 164(2):467--476.
+
+\bibitem[Stellmach et~al., 2014]{stellmach2014approaching}
+Stellmach, S., Lischper, M., Julien, K., Vasil, G., Cheng, J., Ribeiro, A.,
+  King, E., and Aurnou, J. (2014).
+\newblock Approaching the asymptotic regime of rapidly rotating convection:
+  Boundary layers versus interior dynamics.
+\newblock {\em Physical review letters}, 113(25):254501.
 
 \bibitem[Takahashi, 2014]{takahashi2014double}
 Takahashi, F. (2014).
