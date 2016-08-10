@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.13}Diagnostics}{22}
 \contentsline {section}{\numberline {4}State of research (bisher nur Notizen von mir)}{23}
 \contentsline {section}{\numberline {5}Outline of the study (Notizen)}{25}
-\contentsline {section}{\numberline {6}Core convection under the influence of the CMB heat flux pattern}{26}
+\contentsline {section}{\numberline {6}Non magnetic thermo-chemical convection}{26}
 \contentsline {subsection}{\numberline {6.1}The onset of convection in the uniform case}{27}
 \contentsline {subsection}{\numberline {6.2}Columns of constant vorticity}{28}
 \contentsline {subsection}{\numberline {6.3}The geostrophic and the thermo-chemical wind balance}{30}
@@ -38,6 +38,6 @@
 \contentsline {subsubsection}{\numberline {7.4.1}Towards a higher supercriticality}{52}
 \contentsline {subsubsection}{\numberline {7.4.2}Towards a higher rotation rate}{53}
 \contentsline {section}{\numberline {8}Summary and Discussion}{54}
-\contentsline {subsection}{\numberline {8.1}Non magnetic convection}{54}
-\contentsline {subsection}{\numberline {8.2}Dynamo action}{54}
-\contentsline {section}{\numberline {9}Conclusion and Outlook}{55}
+\contentsline {subsection}{\numberline {8.1}Non magnetic thermo-chemical convection}{54}
+\contentsline {subsection}{\numberline {8.2}Thermo-chemical dynamo action}{54}
+\contentsline {section}{\numberline {9}Conclusion and Outlook}{56}
