@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  11 AUG 2016 01:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.8.6)  11 AUG 2016 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,559 +355,237 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `thesis.toc'.
 
  [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
 <graphs/pics/pomm_2009.png, id=18, 565.36218pt x 283.81032pt>
 File: graphs/pics/pomm_2009.png Graphic file (type png)
 
 <use graphs/pics/pomm_2009.png>
-Package pdftex.def Info: graphs/pics/pomm_2009.png used on input line 62.
+Package pdftex.def Info: graphs/pics/pomm_2009.png used on input line 66.
 (pdftex.def)             Requested size: 343.71074pt x 172.54373pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
 [5 <./graphs/pics/pomm_2009.png>]
-<sketches/spherical_coord.jpg, id=24, 252.945pt x 289.83281pt>
-File: sketches/spherical_coord.jpg Graphic file (type jpg)
-
-<use sketches/spherical_coord.jpg>
-Package pdftex.def Info: sketches/spherical_coord.jpg used on input line 89.
-(pdftex.def)             Requested size: 180.44666pt x 206.76451pt.
-
-<sketches/spherical_coord2.jpg, id=25, 209.28188pt x 216.05719pt>
-File: sketches/spherical_coord2.jpg Graphic file (type jpg)
-
-<use sketches/spherical_coord2.jpg>
-Package pdftex.def Info: sketches/spherical_coord2.jpg used on input line 94.
-(pdftex.def)             Requested size: 201.92981pt x 208.46419pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--99
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
 
  []
 
-[6] [7 <./sketches/spherical_coord.jpg> <./sketches/spherical_coord2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--103
+
+ []
+
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-<sketches/density_var.pdf, id=50, 776.14969pt x 502.87875pt>
-File: sketches/density_var.pdf Graphic file (type pdf)
 
-<use sketches/density_var.pdf>
-Package pdftex.def Info: sketches/density_var.pdf used on input line 166.
-(pdftex.def)             Requested size: 186.27972pt x 120.69336pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-[9 <./sketches/density_var.pdf>]
-Overfull \hbox (8.76973pt too wide) in paragraph at lines 193--193
+Overfull \hbox (8.76973pt too wide) in paragraph at lines 197--197
 [] 
  []
 
-[10]
-Overfull \hbox (10.6341pt too wide) in paragraph at lines 227--230
+[9]
+Overfull \hbox (10.6341pt too wide) in paragraph at lines 231--234
 \OT1/cmr/m/n/12 The \OT1/cmr/m/it/12 in-duc-tion equa-tion \OT1/cmr/m/n/12 can 
 be de-rived us-ing equa-tions [], [] and the solenoidal
  []
 
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 251--256
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--252
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--286
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 312--314
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 308--310
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 356--360
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 352--356
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--418
 
  []
 
-<sketches/equatorial_conductive.png, id=74, 551.81157pt x 572.89032pt>
-File: sketches/equatorial_conductive.png Graphic file (type png)
-
-<use sketches/equatorial_conductive.png>
-Package pdftex.def Info: sketches/equatorial_conductive.png used on input line 
-388.
-(pdftex.def)             Requested size: 139.2016pt x 144.51598pt.
-
-<sketches/surface_conductive.png, id=75, 599.99156pt x 370.38374pt>
-File: sketches/surface_conductive.png Graphic file (type png)
-
-<use sketches/surface_conductive.png>
-Package pdftex.def Info: sketches/surface_conductive.png used on input line 393
-.
-(pdftex.def)             Requested size: 239.73381pt x 147.99261pt.
-
-<sketches/eq_flux-trim.png, id=76, 782.17218pt x 292.84406pt>
-File: sketches/eq_flux-trim.png Graphic file (type png)
-
-<use sketches/eq_flux-trim.png>
-Package pdftex.def Info: sketches/eq_flux-trim.png used on input line 404.
-(pdftex.def)             Requested size: 300.74443pt x 112.60008pt.
-
-<sketches/pattern.jpg, id=77, 384.6872pt x 382.42876pt>
-File: sketches/pattern.jpg Graphic file (type jpg)
-
-<use sketches/pattern.jpg>
-Package pdftex.def Info: sketches/pattern.jpg used on input line 410.
-(pdftex.def)             Requested size: 98.81625pt x 98.23286pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 384--414
+[15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 489--495
 
  []
 
-[16 <./sketches/equatorial_conductive.png> <./sketches/surface_conductive.png>]
-[17 <./sketches/eq_flux-trim.png> <./sketches/pattern.jpg>] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 485--491
+[18] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
-[19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 560--562
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 562--563
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
+Underfull \hbox (badness 10000) in paragraph at lines 571--571
 
  []
 
 [22]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 598.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 602.
 
  (/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 598.
- [23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 602.
+ [23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--695
+Underfull \hbox (badness 10000) in paragraph at lines 693--699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--698
+Underfull \hbox (badness 10000) in paragraph at lines 699--702
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 705--705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 723--725
 
  []
 
-[26] <sketches/busse_1975_onset.png, id=117, 422.32782pt x 478.78876pt>
-File: sketches/busse_1975_onset.png Graphic file (type png)
-
-<use sketches/busse_1975_onset.png>
-Package pdftex.def Info: sketches/busse_1975_onset.png used on input line 705.
-(pdftex.def)             Requested size: 207.51819pt x 235.26605pt.
-
-Overfull \hbox (9.88239pt too wide) in paragraph at lines 705--706
- [][] 
- []
-
-<graphs/iso_440_ex_rad-crop.pdf, id=118, 386.44376pt x 437.635pt>
-File: graphs/iso_440_ex_rad-crop.pdf Graphic file (type pdf)
-
-<use graphs/iso_440_ex_rad-crop.pdf>
-Package pdftex.def Info: graphs/iso_440_ex_rad-crop.pdf used on input line 711.
-
-(pdftex.def)             Requested size: 201.92981pt x 228.68001pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 719--721
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 725--738
 
  []
 
-[27 <./sketches/busse_1975_onset.png> <./graphs/iso_440_ex_rad-crop.pdf>]
-<sketches/secondary_circulation-crop.pdf, id=130, 366.36874pt x 572.1375pt>
-File: sketches/secondary_circulation-crop.pdf Graphic file (type pdf)
-
-<use sketches/secondary_circulation-crop.pdf>
-Package pdftex.def Info: sketches/secondary_circulation-crop.pdf used on input 
-line 725.
-(pdftex.def)             Requested size: 210.52438pt x 328.76698pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 721--734
+[27] [28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 793--800
 
  []
 
-[28] [29 <./sketches/secondary_circulation-crop.pdf>] [30]
-<graphs/q2_200_ur_dTp-crop.pdf, id=152, 598.235pt x 413.545pt>
-File: graphs/q2_200_ur_dTp-crop.pdf Graphic file (type pdf)
 
-<use graphs/q2_200_ur_dTp-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_ur_dTp-crop.pdf used on input line 793.
-(pdftex.def)             Requested size: 429.6368pt x 297.00125pt.
+Underfull \hbox (badness 10000) in paragraph at lines 800--802
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--796
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 802--823
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 824--827
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 837--850
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 796--798
-
- []
-
-<graphs/q2_200_d080_rad-crop.pdf, id=157, 330.23375pt x 382.42876pt>
-File: graphs/q2_200_d080_rad-crop.pdf Graphic file (type pdf)
-
-<use graphs/q2_200_d080_rad-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_d080_rad-crop.pdf used on input line 804
-.
-(pdftex.def)             Requested size: 137.48691pt x 159.21848pt.
-
-<graphs/q2_200_dTp-crop.pdf, id=158, 332.24126pt x 383.4325pt>
-File: graphs/q2_200_dTp-crop.pdf Graphic file (type pdf)
-
-<use graphs/q2_200_dTp-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_dTp-crop.pdf used on input line 809.
-(pdftex.def)             Requested size: 137.48691pt x 158.67102pt.
-
-<graphs/q2_200_d080_az-crop.pdf, id=159, 330.23375pt x 382.42876pt>
-File: graphs/q2_200_d080_az-crop.pdf Graphic file (type pdf)
-
-<use graphs/q2_200_d080_az-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_d080_az-crop.pdf used on input line 814.
-
-(pdftex.def)             Requested size: 137.48691pt x 159.21848pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--819
-
- []
-
-[32 <./graphs/q2_200_ur_dTp-crop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 819--820
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--823
+Underfull \hbox (badness 10000) in paragraph at lines 851--858
 
  []
 
-[33 <./graphs/q2_200_d080_rad-crop.pdf> <./graphs/q2_200_dTp-crop.pdf> <./graph
-s/q2_200_d080_az-crop.pdf>]
-<graphs/q2_200_temp_vel-crop2.pdf, id=213, 698.12822pt x 556.47902pt>
-File: graphs/q2_200_temp_vel-crop2.pdf Graphic file (type pdf)
 
-<use graphs/q2_200_temp_vel-crop2.pdf>
-Package pdftex.def Info: graphs/q2_200_temp_vel-crop2.pdf used on input line 82
-6.
-(pdftex.def)             Requested size: 349.06325pt x 278.23883pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 829--830
+Underfull \hbox (badness 10000) in paragraph at lines 858--862
 
  []
 
-<graphs/vorticity/q0_100_ex_vort-crop.pdf, id=214, 343.2825pt x 381.425pt>
-File: graphs/vorticity/q0_100_ex_vort-crop.pdf Graphic file (type pdf)
-
-<use graphs/vorticity/q0_100_ex_vort-crop.pdf>
-Package pdftex.def Info: graphs/vorticity/q0_100_ex_vort-crop.pdf used on input
- line 837.
-(pdftex.def)             Requested size: 201.92981pt x 224.36366pt.
-
-<graphs/vorticity/q2_200_d080_vort-crop.pdf, id=215, 343.2825pt x 382.42876pt>
-File: graphs/vorticity/q2_200_d080_vort-crop.pdf Graphic file (type pdf)
-
-<use graphs/vorticity/q2_200_d080_vort-crop.pdf>
-Package pdftex.def Info: graphs/vorticity/q2_200_d080_vort-crop.pdf used on inp
-ut line 843.
-(pdftex.def)             Requested size: 193.85396pt x 215.95593pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 834--847
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 866--866
 
  []
 
-[34 <./graphs/q2_200_temp_vel-crop2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 847--848
-
- []
-
-<graphs/vorticity/q2_200_vort.png, id=226, 562.35094pt x 335.75438pt>
-File: graphs/vorticity/q2_200_vort.png Graphic file (type png)
-
-<use graphs/vorticity/q2_200_vort.png>
-Package pdftex.def Info: graphs/vorticity/q2_200_vort.png used on input line 85
-2.
-(pdftex.def)             Requested size: 393.64297pt x 235.02646pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 848--855
-
- []
-
-[35 <./graphs/vorticity/q0_100_ex_vort-crop.pdf> <./graphs/vorticity/q2_200_d08
-0_vort-crop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 855--859
-
- []
-
-[36 <./graphs/vorticity/q2_200_vort.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
-
- []
-
-<graphs/q2_200_eq_temp_field2-crop.pdf, id=249, 330.23375pt x 382.42876pt>
-File: graphs/q2_200_eq_temp_field2-crop.pdf Graphic file (type pdf)
-
-<use graphs/q2_200_eq_temp_field2-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_eq_temp_field2-crop.pdf used on input li
-ne 868.
-(pdftex.def)             Requested size: 141.78091pt x 164.19606pt.
-
-<graphs/q2_200_tammer-crop.pdf, id=250, 603.45451pt x 377.97209pt>
-File: graphs/q2_200_tammer-crop.pdf Graphic file (type pdf)
-
-<use graphs/q2_200_tammer-crop.pdf>
-Package pdftex.def Info: graphs/q2_200_tammer-crop.pdf used on input line 873.
-(pdftex.def)             Requested size: 270.67326pt x 169.53796pt.
- [37] [38 <./graphs/q2_200_eq_temp_field2-crop.pdf> <./graphs/q2_200_tammer-cro
-p.pdf>]
-<graphs/dynamo/snapshots/G_trim-0.png, id=273, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-0.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-0.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-0.png used on input lin
-e 886.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--887
-
- []
-
-<graphs/dynamo/snapshots2/G_trim-1.png, id=274, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots2/G_trim-1.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots2/G_trim-1.png>
-Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-1.png used on input li
-ne 888.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G_trim-1.png, id=275, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-1.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-1.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-1.png used on input lin
-e 892.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 892--893
-
- []
-
-<graphs/dynamo/snapshots2/G_trim-2.png, id=276, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots2/G_trim-2.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots2/G_trim-2.png>
-Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-2.png used on input li
-ne 894.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G-trim-27.png, id=277, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G-trim-27.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G-trim-27.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G-trim-27.png used on input li
-ne 898.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 898--899
-
- []
-
-<graphs/dynamo/snapshots2/G_trim-3.png, id=278, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots2/G_trim-3.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots2/G_trim-3.png>
-Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-3.png used on input li
-ne 900.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G_trim-3.png, id=279, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-3.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-3.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-3.png used on input lin
-e 904.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 904--905
-
- []
-
-<graphs/dynamo/snapshots2/G_trim-4.png, id=280, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots2/G_trim-4.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots2/G_trim-4.png>
-Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-4.png used on input li
-ne 906.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G_trim-4.png, id=281, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-4.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-4.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-4.png used on input lin
-e 910.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 910--911
-
- []
-
-<graphs/dynamo/snapshots2/G_trim-5.png, id=282, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots2/G_trim-5.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots2/G_trim-5.png>
-Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-5.png used on input li
-ne 912.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/snapshots/G_trim-12.png, id=283, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots/G_trim-12.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots/G_trim-12.png>
-Package pdftex.def Info: graphs/dynamo/snapshots/G_trim-12.png used on input li
-ne 916.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 916--917
-
- []
-
-<graphs/dynamo/snapshots2/G_trim-8.png, id=284, 270.2898pt x 269.808pt>
-File: graphs/dynamo/snapshots2/G_trim-8.png Graphic file (type png)
-
-<use graphs/dynamo/snapshots2/G_trim-8.png>
-Package pdftex.def Info: graphs/dynamo/snapshots2/G_trim-8.png used on input li
-ne 918.
-(pdftex.def)             Requested size: 55.85487pt x 55.75151pt.
-
-<graphs/dynamo/dyn_d100_mean_Br.png, id=285, 241.65282pt x 201.00093pt>
-File: graphs/dynamo/dyn_d100_mean_Br.png Graphic file (type png)
-
-<use graphs/dynamo/dyn_d100_mean_Br.png>
-Package pdftex.def Info: graphs/dynamo/dyn_d100_mean_Br.png used on input line 
-922.
-(pdftex.def)             Requested size: 68.74345pt x 57.1785pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 922--923
-
- []
-
-<graphs/dynamo/dyn_d100_mean_q0_Br.png, id=286, 241.65282pt x 201.00093pt>
-File: graphs/dynamo/dyn_d100_mean_q0_Br.png Graphic file (type png)
-
-<use graphs/dynamo/dyn_d100_mean_q0_Br.png>
-Package pdftex.def Info: graphs/dynamo/dyn_d100_mean_q0_Br.png used on input li
-ne 924.
-(pdftex.def)             Requested size: 68.74345pt x 57.1785pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 928--930
+[33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 931--933
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 930--932
+Underfull \hbox (badness 10000) in paragraph at lines 933--935
 
  []
 
-[39 <./graphs/dynamo/snapshots/G_trim-0.png> <./graphs/dynamo/snapshots2/G_trim
--1.png> <./graphs/dynamo/snapshots/G_trim-1.png> <./graphs/dynamo/snapshots2/G_
-trim-2.png> <./graphs/dynamo/snapshots/G-trim-27.png> <./graphs/dynamo/snapshot
-s2/G_trim-3.png> <./graphs/dynamo/snapshots/G_trim-3.png> <./graphs/dynamo/snap
-shots2/G_trim-4.png> <./graphs/dynamo/snapshots/G_trim-4.png> <./graphs/dynamo/
-snapshots2/G_trim-5.png> <./graphs/dynamo/snapshots/G_trim-12.png> <./graphs/dy
-namo/snapshots2/G_trim-8.png> <./graphs/dynamo/dyn_d100_mean_Br.png> <./graphs/
-dynamo/dyn_d100_mean_q0_Br.png>]
-Overfull \hbox (5.04199pt too wide) in paragraph at lines 937--953
+
+Overfull \hbox (5.04199pt too wide) in paragraph at lines 940--956
  [][] 
  []
 
-<graphs/dynamo/flux_patches_d20_2.png, id=302, 647.41875pt x 287.57437pt>
-File: graphs/dynamo/flux_patches_d20_2.png Graphic file (type png)
-
-<use graphs/dynamo/flux_patches_d20_2.png>
-Package pdftex.def Info: graphs/dynamo/flux_patches_d20_2.png used on input lin
-e 960.
-(pdftex.def)             Requested size: 300.74443pt x 133.58467pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 963--964
-
- []
-
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 964--965
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 965--966
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 967--967
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 966--967
 
  []
 
@@ -916,251 +594,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 967--968
 
  []
 
-[41 <./graphs/dynamo/flux_patches_d20_2.png>]
-<graphs/dynamo/dyn_d20_vectorfield_Br.png, id=312, 504.38437pt x 482.55281pt>
-File: graphs/dynamo/dyn_d20_vectorfield_Br.png Graphic file (type png)
-
-<use graphs/dynamo/dyn_d20_vectorfield_Br.png>
-Package pdftex.def Info: graphs/dynamo/dyn_d20_vectorfield_Br.png used on input
- line 978.
-(pdftex.def)             Requested size: 210.45987pt x 201.35278pt.
-
-<sketches/Patches_cyclones.png, id=313, 527.72156pt x 516.42938pt>
-File: sketches/Patches_cyclones.png Graphic file (type png)
-
-<use sketches/Patches_cyclones.png>
-Package pdftex.def Info: sketches/Patches_cyclones.png used on input line 986.
-(pdftex.def)             Requested size: 197.6358pt x 193.4005pt.
-
-<graphs/dynamo/d20_divLat_Br3.png, id=314, 584.93532pt x 458.46281pt>
-File: graphs/dynamo/d20_divLat_Br3.png Graphic file (type png)
-
-<use graphs/dynamo/d20_divLat_Br3.png>
-Package pdftex.def Info: graphs/dynamo/d20_divLat_Br3.png used on input line 99
-3.
-(pdftex.def)             Requested size: 219.1124pt x 171.73424pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
-
- []
-
-[42 <./graphs/dynamo/dyn_d20_vectorfield_Br.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
-
- []
-
-[43 <./sketches/Patches_cyclones.png> <./graphs/dynamo/d20_divLat_Br3.png>]
-<results/els-crop.pdf, id=322, 192.72pt x 200.75pt>
-File: results/els-crop.pdf Graphic file (type pdf)
- <use results/els-crop.pdf>
-Package pdftex.def Info: results/els-crop.pdf used on input line 1013.
-(pdftex.def)             Requested size: 131.00499pt x 136.46223pt.
-
-<results/reym-crop.pdf, id=323, 200.75pt x 200.75pt>
-File: results/reym-crop.pdf Graphic file (type pdf)
-
-<use results/reym-crop.pdf>
-Package pdftex.def Info: results/reym-crop.pdf used on input line 1019.
-(pdftex.def)             Requested size: 136.1128pt x 136.12222pt.
-
-<results/relTor-crop.pdf, id=324, 203.76125pt x 200.75pt>
-File: results/relTor-crop.pdf Graphic file (type pdf)
-
-<use results/relTor-crop.pdf>
-Package pdftex.def Info: results/relTor-crop.pdf used on input line 1025.
-(pdftex.def)             Requested size: 136.1128pt x 134.10663pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1034
-
- []
-
-[44 <./results/els-crop.pdf> <./results/reym-crop.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./results/reym-crop.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
-> <./results/relTor-crop.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./results/relTor-crop.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
-
- []
-
-[45] <results/reldip-crop.pdf, id=383, 197.73875pt x 200.75pt>
-File: results/reldip-crop.pdf Graphic file (type pdf)
-
-<use results/reldip-crop.pdf>
-Package pdftex.def Info: results/reldip-crop.pdf used on input line 1058.
-(pdftex.def)             Requested size: 163.25894pt x 165.74637pt.
- [46]
-Underfull \hbox (badness 10000) in paragraph at lines 1068--1068
-
- []
-
-[47 <./results/reldip-crop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1068--1071
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 968--969
 
  []
 
 
-<graphs/dynamo/driving_mechs/d020_vorticity.png, id=409, 384.6872pt x 429.10312
-pt>
-File: graphs/dynamo/driving_mechs/d020_vorticity.png Graphic file (type png)
- <use graphs/dynamo/driving_mechs/d020_vorticity.png>
-Package pdftex.def Info: graphs/dynamo/driving_mechs/d020_vorticity.png used on
- input line 1076.
-(pdftex.def)             Requested size: 96.84262pt x 108.02193pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1076--1077
-
- []
-
-<graphs/dynamo/driving_mechs/d020_Br.png, id=410, 374.14781pt x 426.84468pt>
-File: graphs/dynamo/driving_mechs/d020_Br.png Graphic file (type png)
-
-<use graphs/dynamo/driving_mechs/d020_Br.png>
-Package pdftex.def Info: graphs/dynamo/driving_mechs/d020_Br.png used on input 
-line 1078.
-(pdftex.def)             Requested size: 96.84262pt x 110.482pt.
-
-<graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png, id=411, 374.14781pt x 4
-29.10312pt>
-File: graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png Graphic file (type 
-png)
- <use graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png>
-Package pdftex.def Info: graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.png 
-used on input line 1082.
-(pdftex.def)             Requested size: 96.84262pt x 111.06656pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1082--1083
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
 
  []
 
 
-<graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-trim.png, id=412, 374.1478
-1pt x 429.10312pt>
-File: graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-trim.png Graphic file
- (type png)
-
-<use graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-trim.png>
-Package pdftex.def Info: graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-tr
-im.png used on input line 1084.
-(pdftex.def)             Requested size: 96.84262pt x 111.06656pt.
-
-<graphs/dynamo/driving_mechs/d100_vorticity.png, id=413, 384.6872pt x 429.10312
-pt>
-File: graphs/dynamo/driving_mechs/d100_vorticity.png Graphic file (type png)
- <use graphs/dynamo/driving_mechs/d100_vorticity.png>
-Package pdftex.def Info: graphs/dynamo/driving_mechs/d100_vorticity.png used on
- input line 1093.
-(pdftex.def)             Requested size: 96.84262pt x 108.02193pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1094
+Underfull \hbox (badness 10000) in paragraph at lines 970--971
 
  []
 
-<graphs/dynamo/driving_mechs/d100_Br.png, id=414, 374.14781pt x 426.84468pt>
-File: graphs/dynamo/driving_mechs/d100_Br.png Graphic file (type png)
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 
-<use graphs/dynamo/driving_mechs/d100_Br.png>
-Package pdftex.def Info: graphs/dynamo/driving_mechs/d100_Br.png used on input 
-line 1095.
-(pdftex.def)             Requested size: 96.84262pt x 110.482pt.
+ []
 
-<graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png, id=415, 374.14781pt x 
-426.84468pt>
-File: graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png Graphic file (type
- png)
- <use graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png>
-Package pdftex.def Info: graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png
- used on input line 1099.
-(pdftex.def)             Requested size: 96.84262pt x 110.482pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1100
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
 
  []
 
 
-<graphs/dynamo/driving_mechs/Br_d100-trim.png, id=416, 374.14781pt x 426.84468p
-t>
-File: graphs/dynamo/driving_mechs/Br_d100-trim.png Graphic file (type png)
- <use graphs/dynamo/driving_mechs/Br_d100-trim.png>
-Package pdftex.def Info: graphs/dynamo/driving_mechs/Br_d100-trim.png used on i
-nput line 1101.
-(pdftex.def)             Requested size: 96.84262pt x 110.482pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1110
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
 
  []
 
-[48] [49 <./graphs/dynamo/driving_mechs/d020_vorticity.png> <./graphs/dynamo/dr
-iving_mechs/d020_Br.png> <./graphs/dynamo/driving_mechs/vorticity_eq_d20-trim.p
-ng> <./graphs/dynamo/driving_mechs/dyn_q2_440_d020_mean_Br-trim.png> <./graphs/
-dynamo/driving_mechs/d100_vorticity.png> <./graphs/dynamo/driving_mechs/d100_Br
-.png> <./graphs/dynamo/driving_mechs/vorticity_eq_d100-trim.png> <./graphs/dyna
-mo/driving_mechs/Br_d100-trim.png>]
-<graphs/dynamo/dyn_d100_vectorfield_Br.png, id=424, 493.0922pt x 486.31688pt>
-File: graphs/dynamo/dyn_d100_vectorfield_Br.png Graphic file (type png)
-
-<use graphs/dynamo/dyn_d100_vectorfield_Br.png>
-Package pdftex.def Info: graphs/dynamo/dyn_d100_vectorfield_Br.png used on inpu
-t line 1113.
-(pdftex.def)             Requested size: 208.3741pt x 205.5132pt.
-
-<graphs/dynamo/d100_divLat_Br_mean.png, id=425, 534.3162pt x 420.6114pt>
-File: graphs/dynamo/d100_divLat_Br_mean.png Graphic file (type png)
-
-<use graphs/dynamo/d100_divLat_Br_mean.png>
-Package pdftex.def Info: graphs/dynamo/d100_divLat_Br_mean.png used on input li
-ne 1120.
-(pdftex.def)             Requested size: 191.70697pt x 150.90654pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1110--1127
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 1037--1038
 
  []
 
-<results/relamp-crop.pdf, id=426, 197.73875pt x 201.75375pt>
-File: results/relamp-crop.pdf Graphic file (type pdf)
-
-<use results/relamp-crop.pdf>
-Package pdftex.def Info: results/relamp-crop.pdf used on input line 1138.
-(pdftex.def)             Requested size: 164.20619pt x 167.54176pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1127--1143
+[40] [41]
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
 
  []
 
-[50 <./graphs/dynamo/dyn_d100_vectorfield_Br.png> <./graphs/dynamo/d100_divLat_
-Br_mean.png>] [51 <./results/relamp-crop.pdf>]
-<results/ra_ek4-crop.pdf, id=452, 209.78375pt x 188.705pt>
-File: results/ra_ek4-crop.pdf Graphic file (type pdf)
-
-<use results/ra_ek4-crop.pdf>
-Package pdftex.def Info: results/ra_ek4-crop.pdf used on input line 1154.
-(pdftex.def)             Requested size: 173.65974pt x 156.21046pt.
-
-<results/ek5_2-crop.pdf, id=453, 207.77625pt x 200.75pt>
-File: results/ek5_2-crop.pdf Graphic file (type pdf)
-
-<use results/ek5_2-crop.pdf>
-Package pdftex.def Info: results/ek5_2-crop.pdf used on input line 1164.
-(pdftex.def)             Requested size: 161.54445pt x 156.08812pt.
- [52 <./results/ra_ek4-crop.pdf> <./results/ek5_2-crop.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./results/ek5_2-crop.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
->] [53]
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1189
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1074
 
  []
 
-[54] [55] [56] (./thesis.bbl [57] [58] [59] [60]) [61] (./thesis.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1113
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1130
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1146
+
+ []
+
+[45] [46] [47]
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1192
+
+ []
+
+[48] [49] [50] (./thesis.bbl [51] [52] [53] [54]) [55] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5552 strings out of 493315
- 85878 string characters out of 6145894
- 155385 words of memory out of 5000000
- 8831 multiletter control sequences out of 15000+600000
+ 5271 strings out of 493315
+ 76195 string characters out of 6145894
+ 158384 words of memory out of 5000000
+ 8611 multiletter control sequences out of 15000+600000
  21241 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,15n,41p,1513b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1185,10 +689,10 @@ share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (61 pages, 25843135 bytes).
+Output written on thesis.pdf (55 pages, 962811 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
+ 289 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
