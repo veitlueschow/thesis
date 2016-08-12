@@ -35,7 +35,6 @@
 %  \item chapter 5 and six verbinden! Besonders in 6 mehr Bezüge zu 5 herstellen.
 %  \item reihenfolge der abbildungen
 %  \item Cases in non-magnetic chapter klarmachen
-%  \item Einleitung CMB - heat flux pattern
 %  \item Abstract überarbeiten
 %  \item Introduction
 %  \item state of research
@@ -45,45 +44,45 @@
 
 \section*{Abstract}
 
-Thermal coupling between convection in Earth's mantle and core was proposed to explain asymmetric features of the geomagnetic field during the history of the Earth. The coupling is caused by laterally varying heat transport from the core to the mantle, induced by lateral temperature gradients in the lower-most mantle. Clues for the temperature gradients were found by seismic tomography.\\
+Thermal coupling between convection in Earth's mantle and core was proposed to explain asymmetric features of the geomagnetic field during the history of the Earth. The coupling is caused by laterally varying heat transport from the core to the mantle, induced by lateral temperature gradients in the lower-most mantle. Hints for the temperature gradients were found by seismic tomography.\\
 This numerical study aims to explore the influence of these non-uniform boundary conditions, as compared to uniform heat flux and isothermal boundary conditions on thermo-chemical core convection and some distinct dynamo properties. \\ 
 In our model the heat flux pattern is modeled by a single spherical harmonic of degree and order 2. This setting conserves equatorial symmetry, but imposes azimuthal heat flux gradients. \\
 Today, convection in the Earth's core is assumed to be driven predominantly by a combination of thermal and compositional buoyancy sources located at the inner-core boundary. Thermal and compositional diffusivities differ by orders of magnitude. The resulting differences in the dynamical behavior of the two components demand an approach with distinct transport equations and boundary conditions for temperature and chemical concentration. Simulations for five different ratios of thermal and chemical driving are made. \\
 We observe that fixed flux conditions promote larger flow scales and an increase of mean kinetic energy densities. The imposed flux pattern locks the outer core flow to the mantle and therefore breaks its azimuthal symmetry, even for relatively low thermal forcing ratios of 20 \%. Despite of the symmetry breaking, stable and dipolar dynamos can be maintained due to the partly chemical forcing with its uniform boundary conditions. Additionally, the chemical component partly adopts to the geometry of the heat flux pattern because advective transport of concentration is more efficient in regions of increased heat flux.
-
 \newpage
-
 \section{Introduction and Motivation}
-Throughout history, the Earth and its inhabitants have immensely profited from the existence of a magnetic field in many different ways. The evolution of the Earth's biosphere was made possible by a magnetic shield deflecting harmful solar radiation and since more than thousand years, people make use of compasses in the seafaring. Today, the geomagnetic field is of great scientific value since it is one phenomenon out of few that originate deep in the Earth while being measurable at the surface.  
-
-
-Sources for the dynamo: thermal and compositional convection, tidal forces, precession\\
-
-\subsection{Why use heterogeneous heat flux boundary conditions?}
+Throughout history, the Earth and its inhabitants have immensely benefited from the existence of a magnetic field in many different ways. The evolution of the Earth's biosphere was made possible by a magnetic shield deflecting harmful solar radiation and since about thousand years, people make use of compasses in the seafaring. Today, the geomagnetic field is of great scientific value since it is one phenomenon out of few that originate in the Earth's outer core while being easily measurable at its surface. A given model of the outer core can be considered realistic only if it is capable of producing a magnetic field that shares common characteristics with the Earth's field. \\
+The idea that the geomagnetic field is generated in the electrically conducting liquid outer core (LOC) was first proposed by \citet{larmor1919could} and is known as 'geodynamo hypothesis' today. Since 1919 and even before, the geodynamo has been subject to extensive research by means of laboratory and numerical experiments as well as theoretical considerations. That magnetic field can be created by fluid motion in the core, which consists mainly of iron, was promptly accepted while the question how a dynamo process of that extent can be powered, is debated until today. Besides the commonly regarded thermal and compositional convection, tidal and precessional forcing come into account as energy sources \citep{malkus1994energy, tilgner2007kinematic}. The first findings of self-sustaining convection driven numerical dynamo action by \citet{glatzmaier1995three} and \citet{kuang1997earth} can be considered as final validation of the geodynamo hypothesis and hence were a great success. Key features of the geomagnetic field (e.g. a dominant axial dipole, field reversals and the westward drift of the field) could be reproduced in their models. Nevertheless, many questions concerning the dynamo problem remain unanswered. \\
+This study concentrates on two of them: (a) How does the mantle as a \textit{heat extracting engine} affect the dynamics? (b) What is the role of a \textit{dual-forcing mechanism} in this context? These questions are further explained in the subsequent sections.\\ \par \noindent
+\subsection*{(a) Core-mantle coupling}
+The existence of patches of intense radial magnetic field at high latitudes (see figure \ref{fig:pomm}) that persist on time scales longer than the typical time scale of the LOC has led to the hypothesis that the mantle, including significantly larger time scales, induces these long-lasting features in the geomagnetic field \citep{bloxham1987thermal}. This process is referred to as \textit{core-mantle coupling} and is based on the fact that the amount of heat extracted from the core is controlled by the lower-most region of overlying mantle. \\
+The general idea is that a laterally heterogeneous, hence non axisymmetric, heat flux from the core to the mantle results in a non axisymmetric magnetic field geometry, including magnetic flux patches, for example. Evidence for such a non uniform heat flux comes out of two directions: Lateral gradients in the shear wave velocity close to the core-mantle boundary (CMB), found through seismic tomography, are supposed to result from lateral temperature gradients in that region \citep{su1994degree}. These translate to an increased core-mantle heat flux in relatively cold mantle regions and a decreased heat flux in hot regions. On the other hand, mantle global circulation models (often referred to as mantle GCMs) were recently used to predict the core-mantle heat flux under consideration of many different aspects such as plate tectonics or the chemical composition of the lower-most mantle regions \citep{nakagawa2008lateral}. Tomography as well as the mantle GCMs roughly agree on the geometry of the heterogeneity while its amplitude is intensely debated.\\
 
 \begin{figure}[t]
  \centering
  \includegraphics[width=0.8\textwidth]{graphs/pics/pomm_2009.png}
- \caption{bla}
+ \caption{, where dark blue and dark orange patches are visible in both hemispheres at high latitudes}
  \label{fig:pomm}
 \end{figure}
 
 
-\subsection{A thermo-chemical approach to dynamo modeling}
+\subsection*{(b) A thermo-chemical approach to dynamo modeling}
 
-\subsection{State of research}
+\subsection*{State of research}
 \textbf{On heat flux pattern}\\
 The longitudes at which the magnetic flux lobes are found remaining approximately stationary in time (Gubbins and Bloxham, 1987)\\
 This is difficult to explain in the context of a uniform dynamo model, where the solution should steadily drift in time (Knobloch, 1994) and thus heterogeneities average out in long-term averages. The existence of geomagnetic features that persist on time scales larger than the average time scale of the LOC has led to the hypothesis that a coupling between the core and the mantle, with a its much larger time scales, takes place (Sarson, 1997).\\ \par \noindent
 \textbf{On dual forcing mechanism}\\
 Compositional forcing is expected to be larger than thermal(e.g. Braginsky, 1964)\\
 
- 
+Patches of intense radial magnetic field were observed in historic geomagnetic data that last for over 400 years whereas the typical time scales of the geodynamo are measured in centuries \cite{gubbins2007correlation}. 
+
+\newpage
 \section{Modeling core convection and dynamo action}
 
 Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied (see \citet{jones2011planetary} for a recent review). There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically efficient as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters supposed for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for faster computers that allow to explore Earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (e.g. \citep{stellmach2014approaching}).\\
 An aspect that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions (BC) or spherical shell models. The latter are more realistic for the Earth but numerically more costly and therefore even less Earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as Earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
-The electrically conducting liquid outer core (LOC) is modeled. It is enclosed by the inner-core boundary (ICB) at the bottom and the core-mantle boundary (CMB) at the top. Convection is driven by supercritical thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Dirichlet BC). The thermal forcing is maintained by introducing a fixed in- and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be electrically insulating and therefore have no influence on the evolution of magnetic fields. \\ 
+The electrically LOC is modeled. It is enclosed by the inner-core boundary (ICB) at the bottom and the CMB at the top. Convection is driven by supercritical thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Dirichlet BC). The thermal forcing is maintained by introducing a fixed in- and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be electrically insulating and therefore have no influence on the evolution of magnetic fields. \\ 
 In the following, all relevant equations are introduced. There exist numerous detailed derivations so that the description will be held relatively short, here. The according references will be given in each section.\\
 \subsection{Frame of reference}
 The LOC is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$ (see figure \ref{fig:FOC}(a)). It is bounded by the ICB at the bottom and the CMB at the top. The shell thickness is chosen according to what is supposed for today's state of the Earth and is defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
@@ -313,6 +312,7 @@ with $\Phi$ being a scalar potential that follows the Laplace equation
 The BCs are expressed through the fact that $\bm B$ has to match the solution of equation \eqref{eq:mag1} at the ICB and the CMB.\\
 \subsection{CMB - heat flux pattern}
 \label{sec:flux_pattern}
+The amount of heat extracted from the core is controlled by the overlying mantle. As the typical velocities in the core and the mantle differ by at least 5 orders of magnitude with the core being more mobile \citep{sakuraba2009generation}, their interaction at the CMB is supposed to be asymmetric due to different mixing times. Seen from the mantle, the core acts as a perfectly mixed isothermal fluid. Seen from the core, the mantle imposes a fixed flux condition to it, since changes in the core occur on time scales that are too small to affect the mantle \citep{olson2015mantle}. This is the reason why Neumann type BCs are supposed to be appropriate for the thermal component. Lateral temperature gradients in the lower most mantle then translate to a lateral variation of the fixed flux condition that is proportional to the spherical harmonic $\mathcal{Y}_2^2$ in the framework of this study. In the following, the mathematical formulation of such BCs will be explained. \\ \par \noindent
 A heat flux balance between the inner and the outer core boundary is assumed. The total influx at the ICB Q$_i$ equals the total outflux Q$_o$ at the CMB:
 \begin{align}
  -\textrm{Q}_i &= \textrm{Q}_o\\

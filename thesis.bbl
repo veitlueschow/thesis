@@ -151,6 +151,12 @@ Gubbins, D. and Bloxham, J. (1987).
   geodynamo.
 \newblock {\em Nature}, 325(6104):509--511.
 
+\bibitem[Gubbins et~al., 2007]{gubbins2007correlation}
+Gubbins, D., Willis, A.~P., and Sreenivasan, B. (2007).
+\newblock Correlation of earth's magnetic field with lower mantle thermal and
+  seismic structure.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 162(3):256--260.
+
 \bibitem[Hori et~al., 2012]{hori2012influence}
 Hori, K., Wicht, J., and Christensen, U. (2012).
 \newblock The influence of thermo-compositional boundary conditions on
@@ -204,6 +210,16 @@ Kutzner, C. and Christensen, U. (2000).
 \newblock Effects of driving mechanisms in geodynamo models.
 \newblock {\em Geophysical research letters}, 27(1):29--32.
 
+\bibitem[Larmor, 1919]{larmor1919could}
+Larmor, J. (1919).
+\newblock How could a rotating body such as the sun become a magnet.
+\newblock {\em Rep. Brit. Assoc. Adv. Sci}, 159:412.
+
+\bibitem[Malkus, 1994]{malkus1994energy}
+Malkus, W. (1994).
+\newblock Energy sources for planetary dynamos.
+\newblock In {\em Lectures on solar and planetary dynamos}, page 161.
+
 \bibitem[Manglik et~al., 2010]{manglik2010dynamo}
 Manglik, A., Wicht, J., and Christensen, U.~R. (2010).
 \newblock A dynamo model with double diffusive convection for mercury's core.
@@ -215,6 +231,11 @@ Nakagawa, T. and Tackley, P.~J. (2008).
   caused by a thermal--chemical-phase boundary layer in 3d spherical
   convection.
 \newblock {\em Earth and Planetary Science Letters}, 271(1):348--358.
+
+\bibitem[Olson, 2015]{olson2015mantle}
+Olson, P. (2015).
+\newblock Mantle control of the geodynamo: Consequences of top-down regulation.
+\newblock {\em Geochemistry, Geophysics, Geosystems}.
 
 \bibitem[Olson and Christensen, 2002]{olson2002time}
 Olson, P. and Christensen, U. (2002).
@@ -286,6 +307,12 @@ Stellmach, S., Lischper, M., Julien, K., Vasil, G., Cheng, J., Ribeiro, A.,
   Boundary layers versus interior dynamics.
 \newblock {\em Physical review letters}, 113(25):254501.
 
+\bibitem[Su et~al., 1994]{su1994degree}
+Su, W.-j., Woodward, R.~L., and Dziewonski, A.~M. (1994).
+\newblock Degree 12 model of shear velocity heterogeneity in the mantle.
+\newblock {\em Journal of Geophysical Research: Solid Earth},
+  99(B4):6945--6980.
+
 \bibitem[Takahashi, 2014]{takahashi2014double}
 Takahashi, F. (2014).
 \newblock Double diffusive convection in the earth's core and the morphology of
@@ -298,8 +325,13 @@ Tian, Z., Zuber, M.~T., and Stanley, S. (2015).
   layer and laterally variable heat flux.
 \newblock {\em Icarus}, 260:263--268.
 
-\bibitem[Tilgner, 2007]{Tilgner2007}
-Tilgner, A. (2007).
+\bibitem[Tilgner, 2007a]{tilgner2007kinematic}
+Tilgner, A. (2007a).
+\newblock Kinematic dynamos with precession driven flow in a sphere.
+\newblock {\em Geophysical and Astrophysical Fluid Dynamics}, 101(1):1--9.
+
+\bibitem[Tilgner, 2007b]{Tilgner2007}
+Tilgner, A. (2007b).
 \newblock {\em Rotational Dynamics of the Core}, volume~8.
 \newblock cited By 12.
 
