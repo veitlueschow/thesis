@@ -7,45 +7,45 @@ Warning--empty journal in bloxham1987thermal
 Warning--empty school in dormy1997modelisation
 Warning--empty publisher in Tilgner2007
 Warning--empty school in trumper2014thermo
-You've used 67 entries,
+You've used 69 entries,
             1935 wiz_defined-function locations,
-            858 strings with 14006 characters,
-and the built_in function-call counts, 26433 in all, are:
-= -- 2637
-> -- 995
-< -- 47
-+ -- 354
-- -- 326
-* -- 2312
-:= -- 4588
-add.period$ -- 200
-call.type$ -- 67
-change.case$ -- 488
-chr.to.int$ -- 65
-cite$ -- 71
-duplicate$ -- 958
-empty$ -- 1877
-format.name$ -- 435
-if$ -- 5096
+            871 strings with 14561 characters,
+and the built_in function-call counts, 27354 in all, are:
+= -- 2731
+> -- 1031
+< -- 49
++ -- 368
+- -- 338
+* -- 2389
+:= -- 4739
+add.period$ -- 206
+call.type$ -- 69
+change.case$ -- 504
+chr.to.int$ -- 67
+cite$ -- 73
+duplicate$ -- 993
+empty$ -- 1939
+format.name$ -- 451
+if$ -- 5281
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 72
-newline$ -- 337
-num.names$ -- 201
-pop$ -- 377
+missing$ -- 74
+newline$ -- 347
+num.names$ -- 207
+pop$ -- 390
 preamble$ -- 1
-purify$ -- 497
+purify$ -- 513
 quote$ -- 0
-skip$ -- 733
+skip$ -- 763
 stack$ -- 0
-substring$ -- 2105
-swap$ -- 91
-text.length$ -- 5
+substring$ -- 2180
+swap$ -- 100
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 388
+type$ -- 400
 warning$ -- 4
-while$ -- 242
+while$ -- 251
 width$ -- 0
-write$ -- 861
+write$ -- 887
 (There were 4 warnings)

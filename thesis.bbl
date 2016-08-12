@@ -225,6 +225,14 @@ Manglik, A., Wicht, J., and Christensen, U.~R. (2010).
 \newblock A dynamo model with double diffusive convection for mercury's core.
 \newblock {\em Earth and Planetary Science Letters}, 289(3):619--628.
 
+\bibitem[Masters et~al., 2000]{masters2000relative}
+Masters, G., Laske, G., Bolton, H., and Dziewonski, A. (2000).
+\newblock The relative behavior of shear velocity, bulk sound speed, and
+  compressional velocity in the mantle: implications for chemical and thermal
+  structure.
+\newblock {\em Earth's deep interior: mineral physics and tomography from the
+  atomic to the global scale}, pages 63--87.
+
 \bibitem[Nakagawa and Tackley, 2008]{nakagawa2008lateral}
 Nakagawa, T. and Tackley, P.~J. (2008).
 \newblock Lateral variations in cmb heat flux and deep mantle seismic velocity
@@ -276,6 +284,12 @@ Rieutord, M. (2014).
 Roberts, P. (2007).
 \newblock Theory of the geodynamo.
 \newblock {\em Core Dynamics: Treatise on Geophysics}, pages 67--105.
+
+\bibitem[Romanowicz and Gung, 2002]{romanowicz2002superplumes}
+Romanowicz, B. and Gung, Y. (2002).
+\newblock Superplumes from the core-mantle boundary to the lithosphere:
+  Implications for heat flux.
+\newblock {\em Science}, 296(5567):513--516.
 
 \bibitem[Sakuraba and Kono, 2000]{sakuraba2000effect}
 Sakuraba, A. and Kono, M. (2000).

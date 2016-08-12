@@ -39,33 +39,52 @@
 %  \item Introduction
 %  \item state of research
 %  \item Conclusion + outlook
+%  \item realistic parameters in tabelle
 % \end{itemize}
+% \item Einleitung für summary notiz christian
 
 
 \section*{Abstract}
 
-Thermal coupling between convection in Earth's mantle and core was proposed to explain asymmetric features of the geomagnetic field during the history of the Earth. The coupling is caused by laterally varying heat transport from the core to the mantle, induced by lateral temperature gradients in the lower-most mantle. Hints for the temperature gradients were found by seismic tomography.\\
-This numerical study aims to explore the influence of these non-uniform boundary conditions, as compared to uniform heat flux and isothermal boundary conditions on thermo-chemical core convection and some distinct dynamo properties. \\ 
-In our model the heat flux pattern is modeled by a single spherical harmonic of degree and order 2. This setting conserves equatorial symmetry, but imposes azimuthal heat flux gradients. \\
-Today, convection in the Earth's core is assumed to be driven predominantly by a combination of thermal and compositional buoyancy sources located at the inner-core boundary. Thermal and compositional diffusivities differ by orders of magnitude. The resulting differences in the dynamical behavior of the two components demand an approach with distinct transport equations and boundary conditions for temperature and chemical concentration. Simulations for five different ratios of thermal and chemical driving are made. \\
-We observe that fixed flux conditions promote larger flow scales and an increase of mean kinetic energy densities. The imposed flux pattern locks the outer core flow to the mantle and therefore breaks its azimuthal symmetry, even for relatively low thermal forcing ratios of 20 \%. Despite of the symmetry breaking, stable and dipolar dynamos can be maintained due to the partly chemical forcing with its uniform boundary conditions. Additionally, the chemical component partly adopts to the geometry of the heat flux pattern because advective transport of concentration is more efficient in regions of increased heat flux.
+Thermal coupling between convection in Earth's mantle and core was proposed to explain asymmetric features of the geomagnetic field during the history of the Earth. The coupling is caused by laterally varying heat flux from the core to the mantle, induced by lateral temperature gradients and compositional heterogeneities in the lower-most mantle. Hints for the laterally varying heat flux were found by seismic tomography as well as by geodynamic models of the mantle.\\
+This numerical study aims to explore the influence of these non-uniform boundary conditions, as compared to uniform heat flux boundary conditions on thermo-chemical core convection and some distinct dynamo properties. \\ 
+In our model, the heat flux pattern is modeled by a single spherical harmonic of degree and order 2. This setting conserves equatorial symmetry, but imposes azimuthal and polar heat flux gradients. \\
+Today, convection in the Earth's core is assumed to be driven predominantly by a combination of thermal and compositional buoyancy sources located at the inner-core boundary. Thermal and compositional diffusivities differ by orders of magnitude. The resulting differences in the dynamical behavior of the two components demand an approach with distinct transport equations and boundary conditions for temperature and chemical concentration. Simulations for different ratios of thermal and chemical driving are made. \\
+We observe that the imposed flux pattern locks the outer core flow to the mantle and therefore breaks its azimuthal symmetry, even for relatively low thermal forcing ratios of 12 \%. Despite of the symmetry breaking, stable and dipolar dynamos can be maintained due to the partly chemical forcing with its uniform boundary conditions. Additionally, the chemical component partly adopts to the geometry of the heat flux pattern because advective transport of concentration is more efficient in regions of increased heat flux.
 \newpage
 \section{Introduction and Motivation}
 Throughout history, the Earth and its inhabitants have immensely benefited from the existence of a magnetic field in many different ways. The evolution of the Earth's biosphere was made possible by a magnetic shield deflecting harmful solar radiation and since about thousand years, people make use of compasses in the seafaring. Today, the geomagnetic field is of great scientific value since it is one phenomenon out of few that originate in the Earth's outer core while being easily measurable at its surface. A given model of the outer core can be considered realistic only if it is capable of producing a magnetic field that shares common characteristics with the Earth's field. \\
 The idea that the geomagnetic field is generated in the electrically conducting liquid outer core (LOC) was first proposed by \citet{larmor1919could} and is known as 'geodynamo hypothesis' today. Since 1919 and even before, the geodynamo has been subject to extensive research by means of laboratory and numerical experiments as well as theoretical considerations. That magnetic field can be created by fluid motion in the core, which consists mainly of iron, was promptly accepted while the question how a dynamo process of that extent can be powered, is debated until today. Besides the commonly regarded thermal and compositional convection, tidal and precessional forcing come into account as energy sources \citep{malkus1994energy, tilgner2007kinematic}. The first findings of self-sustaining convection driven numerical dynamo action by \citet{glatzmaier1995three} and \citet{kuang1997earth} can be considered as final validation of the geodynamo hypothesis and hence were a great success. Key features of the geomagnetic field (e.g. a dominant axial dipole, field reversals and the westward drift of the field) could be reproduced in their models. Nevertheless, many questions concerning the dynamo problem remain unanswered. \\
 This study concentrates on two of them: (a) How does the mantle as a \textit{heat extracting engine} affect the dynamics? (b) What is the role of a \textit{dual-forcing mechanism} in this context? These questions are further explained in the subsequent sections.\\ \par \noindent
 \subsection*{(a) Core-mantle coupling}
-The existence of patches of intense radial magnetic field at high latitudes (see figure \ref{fig:pomm}) that persist on time scales longer than the typical time scale of the LOC has led to the hypothesis that the mantle, including significantly larger time scales, induces these long-lasting features in the geomagnetic field \citep{bloxham1987thermal}. This process is referred to as \textit{core-mantle coupling} and is based on the fact that the amount of heat extracted from the core is controlled by the lower-most region of overlying mantle. \\
-The general idea is that a laterally heterogeneous, hence non axisymmetric, heat flux from the core to the mantle results in a non axisymmetric magnetic field geometry, including magnetic flux patches, for example. Evidence for such a non uniform heat flux comes out of two directions: Lateral gradients in the shear wave velocity, found through seismic tomography, close to the core-mantle boundary (CMB) are supposed to result from lateral temperature gradients in that region \citep{su1994degree}. These translate to an increased core-mantle heat flux in relatively cold mantle regions and a decreased heat flux in hot regions. Furthermore, global mantle circulation models that base on many 
-
-
-
+The existence of patches of intense radial magnetic field at high latitudes (see figure \ref{fig:pomm}) that persist on time scales longer than the typical time scale of the LOC has led to the hypothesis that the mantle, including significantly larger time scales, induces these long-lasting features in the geomagnetic field \citep{bloxham1987thermal}. This process is referred to as \textit{core-mantle coupling} and is based on the fact that the amount of heat extracted from the core is controlled by the lower-most region of the overlying mantle and therefore the mantle imposes an inherent asymmetry to the system dynamics. \\
+The general idea is that a laterally heterogeneous, hence non axisymmetric, heat flux from the core to the mantle results in a non axisymmetric magnetic field geometry, including magnetic flux patches, for example. Evidence for such a non uniform heat flux comes out of two directions: Lateral gradients in the shear wave velocity close to the core-mantle boundary (CMB), found through seismic tomography, are supposed to result from lateral temperature gradients in that region \citep{su1994degree}. These translate to an increased core-mantle heat flux in relatively cold mantle regions and a decreased heat flux in hot regions. On the other hand, mantle global circulation models (often referred to as mantle GCMs) were recently used to predict the core-mantle heat flux under consideration of many different aspects such as plate tectonics or the chemical composition of the lower-most mantle region \citep{nakagawa2008lateral}. \\
 \begin{figure}[t]
  \centering
- \includegraphics[width=0.8\textwidth]{graphs/pics/pomm_2009.png}
- \caption{, where dark blue and dark orange patches are visible in both hemispheres at high latitudes}
+ \includegraphics[width=0.75\textwidth]{graphs/pics/pomm_2009.png}
+ \caption{Present-day radial geomagnetic field intensity at the CMB (http://geomag.org/index.html). Special attention lies on the two dark blue (dark orange) patches of high intensity field at high latitudes in the northern (southern) hemisphere.}
  \label{fig:pomm}
-\end{figure}
+\end{figure}\noindent
+\begin{figure}[b!]
+ \begin{minipage}{0.45\textwidth}
+ \centering
+ \includegraphics[width=\textwidth]{graphs/olson_pattern.png}
+  \end{minipage}
+ \begin{minipage}{0.09\textwidth}
+\vspace*{\fill}
+\centering	
+\huge{$\Rightarrow$}
+\vspace*{\fill}
+  \end{minipage}
+   \begin{minipage}{0.45\textwidth}
+ \centering
+ \includegraphics[width=\textwidth]{graphs/Y22_pattern.png}
+  \end{minipage}
+   \caption{\textbf{Left:} Present-day core-mantle heat flux computed in a mantle GCM (changed after \citet{olson2015core}). \textbf{Right:} Heat flux pattern approximation proportional to the spherical harmonic of degree and order 2. This pattern is used in the course of this study. }
+\label{fig:approx_pattern}
+\end{figure}\noindent
+Tomography as well as the mantle GCMs roughly agree on the geometry of the heterogeneity that reveals a dominance of the spherical harmonic mode of degree and order 2 \citep{masters2000relative, romanowicz2002superplumes}. The study at hand makes use of this fact and applies a fixed flux boundary condition at the CMB that is proportional to the spherical harmonic $\mathcal{Y}_2^2$ in order to model the non-uniform core-mantle heat flux. Figure \ref{fig:approx_pattern} (left) shows the present-day CMB heat flux inferred from a mantle GCM \citep{olson2015core} and its equivalent in the used model (right). It becomes clear that the $\mathcal{Y}_2^2$ BC is a reasonable first order approximation to the situation at the CMB. Nevertheless, this approach 
+
 
 
 \subsection*{(b) A thermo-chemical approach to dynamo modeling}
@@ -79,11 +98,94 @@ Compositional forcing is expected to be larger than thermal(e.g. Braginsky, 1964
 
 Patches of intense radial magnetic field were observed in historic geomagnetic data that last for over 400 years whereas the typical time scales of the geodynamo are measured in centuries \cite{gubbins2007correlation}. 
 
+\section{State of research (bisher nur Notizen von mir)}
+
+On influence of Prandtl number:
+\begin{itemize}
+ \item Zhang Spiralling columnar convection in rapidly rotating spherical fluid shells.
+ \item Sreenivasan 2006 (Dynamos dominated rather by intertia than by rotation are less dipolar)
+ \item Dipole part becomes larger for larger Pr: Simitev and Busse 2005
+ \item convective scales become smaller if Pr is larger: Gibbons Gubbins 2007
+\end{itemize}
+
+Ont he collection of magnetic field lines by cyclones:
+\begin{itemize}
+ \item Jones: Planetary magnetic fields and fluid dynamos
+\end{itemize}
+
+On double diffusive dynamos / thermo-chemical convection:
+\begin{itemize}
+ \item Trümper 2012
+ \item Takahashi 2014 (Dynamo)
+ \item Manglik 2010
+\end{itemize}
+
+On the question whether heat flux heterogeneities destroy magnetic fields:
+\begin{itemize}
+ \item Olson 2002
+ \item Olson Glatzmaier 1996
+ \item Sarson 1997: dynamo action persists until relatively high pattern amplitudes. He applies only a m=2 symmetry study
+\end{itemize}
+
+Anticyclones are slightly stronger than cyclones
+\begin{itemize}
+ \item Olson 2002
+\end{itemize}
+
+Convection inside the TC sets in at higher supercriticalities than outside...
+\begin{itemize}
+ \item  Takahashi et al. 2003
+ \item  Tilgner and Busse 1997
+ \item Breuer 2010
+\end{itemize}
+
+Reynolds numver (kinetic) energy decreases with increasing Pr ( from thermal to chemical convection)
+\begin{itemize}
+ \item Busse and Simitev 2006
+ \item Breuer 2010
+\end{itemize}
+
+On lab experiments
+\begin{itemize}
+ \item Olson 2011 (review)
+\end{itemize}
+
+On the influence of the thermal boundary condition (e.g. on the magnetic field strength):
+\begin{itemize}
+ \item Larger scales and stronger magnetic field : Sakuraba and Roberts (2009)
+ \item Hori 2010
+ \item On the onset of convection and the scales: Sparrow et al., 1964
+ \item Larger scales, for cartesian box:  Chapman and Proctor (1980)
+\end{itemize}
+
+On the influence on magnetic field on the flowfield temp
+\begin{itemize}
+ \item Flow changes due to dynamo action compared to thermal convection: (Olson and Glatzmaier, 1996)
+ \item Convective scales become larger when magnetic field gains importance (Wicht, Stellmach 2010)
+ \item increase of $l_u$ by 20 \% if magnetic field active: Takahashi et al. (2008a) 
+\end{itemize}
+
+Explain reason, why anti cyclones clearly dominate the flow field:
+\begin{itemize}
+ \item They need to store the large amounts of magnetic energy: Sakuraba, Kono 2000
+\end{itemize}
+
+Structure of the CMB heat pattern:
+\begin{itemize}
+ \item  Structure is of degree and order 2: Romanowicz,2003 ... Masters 2002 (oder 2012??)
+\end{itemize}
+
+
+
+
+% The presence of a magnetic field has an effect on the flow field in a self-sustained dynamo via the Lorentz force term in equation \ref{eq:force_balance4}. Nevertheless, it is widely assumed that convection columns elongated parallel to the rotation axis persist, even if the influence of the Lorentz force term in Equation \ref{eq:force_balance4} is comparable to or higher than the Coriolis force term \citep{christensen2011geodynamo}. 
+
+
 \newpage
 \section{Modeling core convection and dynamo action}
 
 Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied (see \citet{jones2011planetary} for a recent review). There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically efficient as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters supposed for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for faster computers that allow to explore Earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (e.g. \citep{stellmach2014approaching}).\\
-An aspect that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic boundary conditions (BC) or spherical shell models. The latter are more realistic for the Earth but numerically more costly and therefore even less Earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as Earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
+An aspect that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic BC or spherical shell models. The latter are more realistic for the Earth but numerically more costly and therefore even less Earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as Earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
 The electrically LOC is modeled. It is enclosed by the inner-core boundary (ICB) at the bottom and the CMB at the top. Convection is driven by supercritical thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Dirichlet BC). The thermal forcing is maintained by introducing a fixed in- and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be electrically insulating and therefore have no influence on the evolution of magnetic fields. \\ 
 In the following, all relevant equations are introduced. There exist numerous detailed derivations so that the description will be held relatively short, here. The according references will be given in each section.\\
 \subsection{Frame of reference}
@@ -597,88 +699,7 @@ where $\langle \quad \rangle$ is an averaging operator.
  Only the first twelve spectral degrees of the relative strength of the magnetic dipole at the CMB $f_\textrm{dip}$ are measurable for the geomagnetic field because ofthe filtering effect of the overlying mantle. Therefore, $f_\textrm{dip}$ is defined as the ratio of the rms axial dipole component to the total rms field up to the harmonic degree $l=12$. 
  \end{itemize}
 
-\section{State of research (bisher nur Notizen von mir)}
-
-On influence of Prandtl number:
-\begin{itemize}
- \item Zhang Spiralling columnar convection in rapidly rotating spherical fluid shells.
- \item Sreenivasan 2006 (Dynamos dominated rather by intertia than by rotation are less dipolar)
- \item Dipole part becomes larger for larger Pr: Simitev and Busse 2005
- \item convective scales become smaller if Pr is larger: Gibbons Gubbins 2007
-\end{itemize}
-
-Ont he collection of magnetic field lines by cyclones:
-\begin{itemize}
- \item Jones: Planetary magnetic fields and fluid dynamos
-\end{itemize}
-
-On double diffusive dynamos / thermo-chemical convection:
-\begin{itemize}
- \item Trümper 2012
- \item Takahashi 2014 (Dynamo)
- \item Manglik 2010
-\end{itemize}
-
-On the question whether heat flux heterogeneities destroy magnetic fields:
-\begin{itemize}
- \item Olson 2002
- \item Olson Glatzmaier 1996
- \item Sarson 1997: dynamo action persists until relatively high pattern amplitudes. He applies only a m=2 symmetry study
-\end{itemize}
-
-Anticyclones are slightly stronger than cyclones
-\begin{itemize}
- \item Olson 2002
-\end{itemize}
-
-Convection inside the TC sets in at higher supercriticalities than outside...
-\begin{itemize}
- \item  Takahashi et al. 2003
- \item  Tilgner and Busse 1997
- \item Breuer 2010
-\end{itemize}
-
-Reynolds numver (kinetic) energy decreases with increasing Pr ( from thermal to chemical convection)
-\begin{itemize}
- \item Busse and Simitev 2006
- \item Breuer 2010
-\end{itemize}
-
-On lab experiments
-\begin{itemize}
- \item Olson 2011 (review)
-\end{itemize}
-
-On the influence of the thermal boundary condition (e.g. on the magnetic field strength):
-\begin{itemize}
- \item Larger scales and stronger magnetic field : Sakuraba and Roberts (2009)
- \item Hori 2010
- \item On the onset of convection and the scales: Sparrow et al., 1964
- \item Larger scales, for cartesian box:  Chapman and Proctor (1980)
-\end{itemize}
-
-On the influence on magnetic field on the flowfield temp
-\begin{itemize}
- \item Flow changes due to dynamo action compared to thermal convection: (Olson and Glatzmaier, 1996)
- \item Convective scales become larger when magnetic field gains importance (Wicht, Stellmach 2010)
- \item increase of $l_u$ by 20 \% if magnetic field active: Takahashi et al. (2008a) 
-\end{itemize}
-
-Explain reason, why anti cyclones clearly dominate the flow field:
-\begin{itemize}
- \item They need to store the large amounts of magnetic energy: Sakuraba, Kono 2000
-\end{itemize}
-
-Structure of the CMB heat pattern:
-\begin{itemize}
- \item  Structure is of degree and order 2: Romanowicz,2003 ... Masters 2002 (oder 2012??)
-\end{itemize}
-
-
-
-
-% The presence of a magnetic field has an effect on the flow field in a self-sustained dynamo via the Lorentz force term in equation \ref{eq:force_balance4}. Nevertheless, it is widely assumed that convection columns elongated parallel to the rotation axis persist, even if the influence of the Lorentz force term in Equation \ref{eq:force_balance4} is comparable to or higher than the Coriolis force term \citep{christensen2011geodynamo}. 
-
+\newpage
  \section{Outline of the study (Notizen)}
 Describe the parameters used and show Earth values
 \begin{itemize}
@@ -1040,7 +1061,7 @@ The dependence of the magnetic field morphology and efficiency of the dynamo pro
 The Elsasser number $\Lambda$ compares the influence of the Lorentz force to that of the Coriolis force in the equation of momentum \citep{davidson2001introduction}. As the rotation rate is held constant here, $\Lambda$ serves as a measure for the strength of the magnetic field. Figure \ref{fig:els_reym}(a) shows $\Lambda$ for the different forcing ratios $\delta^*$ (see table \ref{tab:data}) for the uniform case UFF and for the heat flux pattern case PFF with $q^*\!=\!2$.  In both scenarios, the field strength increases roughly linearly with $\delta*$. According to the preceding discussion, this effect can be attributed to either the transition from a fixed composition BC at $\delta^* = 0$ to a fixed heat flux BC at $\delta^* = 1$ or to a transition from the low to the high Prandtl number regime. A combination of both reasons is likely to be an explanation. A more detailed discussion is beyond the scope of this study. However, the heat flux pattern seems to additionally promote the magnetic field production (compare the red and the black curve in figure \ref{fig:els_reym}(a)). This effect will be further discussed when it comes to the influence of the heat flux pattern in section \ref{sec:effect_pattern}.\\ \par \noindent
 Figure \ref{fig:els_reym}(a) allows two more observations: (a) The standard deviation of the temporal averages of $\Lambda$ increases with increasing $\delta^*$ for case PFF and UFF. (b) The magnetic energy is higher for the heterogeneous case PFF (black line) than for the uniform case UFF (red line). \\
 The standard deviation measures the strength of the temporal variation of the magnetic field. As this observation cannot be attributed to the heat flux pattern, it has its origin either in the the varying Prandtl number or in the transition from Dirichlet to Neumann BCs. A further investigation of this question would be interesting. E.g. a comparison with the temporal variation of the geomagnetic field data could offer information about the driving mechanism in the Earth's core. \\
-Observation (b) is likely to be a consequence of the enlargement of the \textit{mean} azimuthal flow scale due to the enhancement of the (low) azimuthal mode $m\!=\!2$, induced by the $\mathcal{Y}^2_2$ heat flux pattern (the mode enhancement through the pattern were also reported by \citet{hori2014ancient} and \citet{dietrich2016core}). As previously discussed, flow scale refinement impedes the magnetic field production, whereas the heterogeneous temperature BC promotes large scales on which the dynamo process works more efficient. A more detailed discussion is beyond the scope of this study.
+Observation (b) is likely to be a consequence of the enlargement of the \textit{mean} azimuthal flow scale due to the enhancement of the (low) azimuthal mode $m\!=\!2$, induced by the $\mathcal{Y}^2_2$ heat flux pattern (the mode enhancement through the pattern was also reported by \citet{hori2014ancient} and \citet{dietrich2016core}). As previously discussed, flow scale refinement impedes the magnetic field production, whereas the heterogeneous temperature BC promotes large scales on which the dynamo process works more efficient. A more detailed discussion is beyond the scope of this study.
 \subsubsection{Kinetic energy}
 \label{sec:kinetic_energy}
 The magnetic Reynolds number estimates the relation between the advection and the diffusion of the magnetic field. As it contains the rms-velocity, it indirectly measures the kinetic energy. Like the Elsasser number, $\textrm{Re}_m$ increases roughly linearly with $\delta^*$ (see figure \ref{fig:els_reym}(b)) for PFF and UFF.  \\
@@ -1053,7 +1074,7 @@ For the heat flux pattern case PFF, figures \ref{fig:els_reym}(a) and (c) sugges
 The relative strength of the magnetic dipole component at the CMB is a measure that is accessible for dynamo simulations as well as for the geomagnetic field. Therefore it may serve as an indicator for the degree to which a dynamo model can be called Earth-like. The definition of the dipole strength $f_\textrm{dip}$ is given in section \ref{sec:diagnostics}.
 \begin{figure}[H]
 \begin{minipage}{0.55\textwidth}
-Figure \ref{fig:reldip} shows a decrease of $f_\textrm{dip}$ for the transition from purely chemical ($\delta^*=0\%$) to purely thermal convection ($\delta^*=100\%$) for the heat flux pattern case PFF (black line) as well es for the uniform case UFF (red line). \citet{sreenivasan2006role} and \citet{christensen2006scaling} argue that the the Rossby number $Ro$, measuring the importance of inertia compared to that of rotation in the force balance, plays a crucial role for the dipolarity of the magnetic field. This suggests that the transition from Pr$_\textrm{\tiny C} = 3$ to Pr$_\textrm{\tiny T}=0.3$ (B) is responsible for the drop in $f_\textrm{dip}$ because the Prandtl number weights the inertia term in the equation of momentum. \citet{busse2006parameter} likewise report a reciprocal dependence between dipolarity and Prandtl number. An explanation with the heat flux pattern (C) can be neglected, as PFF and UFF do not differ significantly in their behavior and (A) as well is expected to play only a minor role for the dipolarity. 
+Figure \ref{fig:reldip} shows a decrease of $f_\textrm{dip}$ for the transition from purely chemical ($\delta^*=0\%$) to purely thermal convection ($\delta^*=100\%$) for the heat flux pattern case PFF (black line) as well es for the uniform case UFF (red line). \citet{sreenivasan2006role} and \citet{christensen2006scaling} argue that the Rossby number $Ro$, measuring the importance of inertia compared to that of rotation in the force balance, plays a crucial role for the dipolarity of the magnetic field. This suggests that the transition from Pr$_\textrm{\tiny C} = 3$ to Pr$_\textrm{\tiny T}=0.3$ (B) is responsible for the drop in $f_\textrm{dip}$ because the Prandtl number weights the inertia term in the equation of momentum. \citet{busse2006parameter} likewise report a reciprocal dependence between dipolarity and Prandtl number. An explanation with the heat flux pattern (C) can be neglected, as PFF and UFF do not differ significantly in their behavior and (A) as well is expected to play only a minor role for the dipolarity. 
 \end{minipage}
 \hfill
  \begin{minipage}{0.4\textwidth}
@@ -1066,7 +1087,7 @@ Figure \ref{fig:reldip} shows a decrease of $f_\textrm{dip}$ for the transition 
  \label{fig:reldip}
  \end{minipage}
 \end{figure} \noindent
-The black dotted line in figure \ref{fig:reldip} represents the relative dipole strength of the present geomagnetic field, $f_\textrm{dip}=0.65$ \citep{finlay2010international}. \citet{takahashi2014double} studies thermo-chemical dynamo action with regard to the dipolarity and defines this value of $f_\textrm{dip}$ as a threshold for the \textit{dipolar regime} (the Earth' present magnetic field is supposed to be in a state of a relatively low dipole strength). He expects dynamos to be part of this regime as long as their high Prandtl number chemical forcing accounts for at least $40\%$ of the total forcing. The definition of the forcing ratio and the choice of the Prandtl numbers Pr$_\textrm{\tiny T}$ and Pr$_\textrm{\tiny C}$ in this work slightly differ from his model, nevertheless, \ref{fig:reldip} reveals a similar behavior. The purely thermally driven case PFF100 is characterized by a value of $f_\textrm{dip}$ that seems unrealistic for the present state of the Earth. Only PFF0, PFF12 and PFF36 clearly exceed the threshold for the dipolar regime. \\
+The black dotted line in figure \ref{fig:reldip} represents the relative dipole strength of the present geomagnetic field, $f_\textrm{dip}=0.65$ \citep{finlay2010international}. \citet{takahashi2014double} studies thermo-chemical dynamo action with regard to the dipolarity and defines this value of $f_\textrm{dip}$ as a threshold for the \textit{dipolar regime} (the Earth' present magnetic field is supposed to be in a state of a relatively low dipole strength). He expects dynamos to be part of this regime as long as their high Prandtl number chemical forcing accounts for at least $40\%$ of the total forcing. The definition of the forcing ratio and the choice of the Prandtl numbers Pr$_\textrm{\tiny T}$ and Pr$_\textrm{\tiny C}$ in this work slightly differ from his model, nevertheless, figure \ref{fig:reldip} reveals a similar behavior. The purely thermally driven case PFF100 is characterized by a value of $f_\textrm{dip}$ that seems unrealistic for the present state of the Earth. Only PFF0, PFF12 and PFF36 clearly exceed the threshold for the dipolar regime. \\
 The observations made in this section are in line with the findings of \citet{takahashi2014double} and suggest that a certain portion of chemical forcing is mandatory in order to reach Earth-like values for the relative dipole strength. Furthermore, it is important to notice that the magnetic dipole remains unaffected by the heterogeneity of the thermal BC. 
 \subsection{The heat flux pattern in the context of a changing driving mechanism}
 \label{sec:effect_pattern}
@@ -1134,7 +1155,7 @@ Figures \ref{fig:d100_vectorfield_Br} and \ref{fig:d100_divLat_Br_mean} refer to
 \begin{figure}[H]
 \begin{minipage}{0.57\textwidth}
 Figure \ref{fig:relamp} shows the relative flux patch amplitude $\mathcal{P}$ for the different values of $\delta^*$. It is defined as the ratio of the amplitude of the radial magnetic flux patches to the mean value of the radial magnetic field in the corresponding latitude.  \\
-$\mathcal{P}$, a measure for the strength of the effect of the $\mathcal{Y}_2^2$ heat flux pattern, does not significantly decrease as the thermal forcing loses importance for decreasing values of $\delta^*$. In section \ref{sec:dyn_d020} and \ref{sec:effect_pattern} the flux patch generation mechanisms for case PFF12 and PFF100 were discussed in detail. Obviously, the two are nearly equally efficient and not dependent on the relative importance of the thermal forcing. The fact that the uniform chemical forcing does not impede the flux patch formation supports the view that the characteristic features of thermally and compositionally driven convection rather \textit{superpose} each other than really \textit{interact} \citep{trumper2012numerical}.
+$\mathcal{P}$, a measure for the strength of the effect of the $\mathcal{Y}_2^2$ heat flux pattern, does not significantly decrease as the thermal forcing loses importance for decreasing values of $\delta^*$. In section \ref{sec:dyn_d020} and \ref{sec:effect_pattern} the flux patch generation mechanisms for case PFF12 and PFF100 were discussed in detail. Obviously, the two are nearly equally efficient and do not depend on the relative importance of the thermal forcing. The fact that the uniform chemical forcing does not impede the flux patch formation supports the view that the characteristic features of thermally and compositionally driven convection rather \textit{superpose} each other than really \textit{interact} \citep{trumper2012numerical}.
 \end{minipage}
 \hfill
  \begin{minipage}{0.39\textwidth}
@@ -1146,11 +1167,11 @@ $\mathcal{P}$, a measure for the strength of the effect of the $\mathcal{Y}_2^2$
  \label{fig:relamp}
  \end{minipage}
  \end{figure} \noindent
-A comparison of the magnetic field that emerges under the influence of the $\mathcal{Y}_2^2$ BC  (e.g. figure \ref{fig:surface_Br_d20} for $\delta^* = 12\%$) and the present geomagnetic field that is depicted in figure \ref{fig:pomm} shows that the heterogeneous BC is able reproduce the two magnetic flux lobes in each hemisphere at high latitudes properly. Other features of figure \ref{fig:pomm}, i.e., a more complex structure, reverse flux patches, remain unaddressed in the scope of this study. The use of a more realistic and hence more complex heat flux pattern is one possibility to improve the agreement with geomagnetic data \citep{olson2015core}. \\  
-The model at hand allows to study the joint action of a thermally forcing component equipped with the heterogeneous CMB heat flux condition and a uniform chemically forcing agent which is only indirectly affected by the pattern (see figure \ref{fig:vort_chem}) for various $\delta^*$. According to figure \ref{fig:relamp} and the above discussion, the effect of the heat flux pattern persists over a wide range of the $\delta^*$-space. It is hence possible to observe its characteristic features (e.g. long lasting, stationary magnetic flux patches \citet{gubbins1987morphology}) in scenarios which are predominantly compositionally forced (as it is supposed to be in case of the Earth \citep{braginsky1995equations}) and therefore yield typical properties of that forcing agent, too. One of the properties typical of the compositionally dominated cases is a strong magnetic dipole, discussed in section \ref{sec:reldip}, other can be found in \citet{trumper2012numerical} and \citet{trumper2014thermo}. Compared to the single forcing (codensity) models that were recently used to study heterogeneous CMB heat flux \citep{olson2002time,aubert2008thermochemical,hori2014ancient}, this model is able to produce a wider range of different behavior observable in the Earth's and other planetary dynamos.
+A comparison of the magnetic field that emerges under the influence of the $\mathcal{Y}_2^2$ BC  (e.g. figure \ref{fig:surface_Br_d20} for $\delta^* = 12\%$) and the present geomagnetic field that is depicted in figure \ref{fig:pomm} shows that the heterogeneous BC is able to properly reproduce the two magnetic flux lobes in each hemisphere at high latitudes. Other features of figure \ref{fig:pomm}, i.e., a more complex structure and reverse flux patches, remain unaddressed in the scope of this study. The use of a more realistic and hence more complex heat flux pattern is one possibility to improve the agreement with geomagnetic data \citep{olson2015core}. \\  
+The model at hand allows to study the joint action of a thermally forcing component equipped with the heterogeneous CMB heat flux condition and a uniform chemically forcing agent which is only indirectly affected by the pattern (see figure \ref{fig:vort_chem}) for various $\delta^*$. According to figure \ref{fig:relamp} and the above discussion, the effect of the heat flux pattern persists over a wide range of the $\delta^*$-space. It is hence possible to observe its characteristic features (e.g. long lasting, stationary magnetic flux patches \citep{gubbins1987morphology}) in scenarios which are predominantly compositionally forced (as it is supposed to be for the Earth \citep{braginsky1995equations}) and therefore yield typical properties of that forcing agent, too. One of the properties typical of the compositionally dominated cases is a strong magnetic dipole, discussed in section \ref{sec:reldip}, additional can be found in \citet{trumper2012numerical} and \citet{trumper2014thermo}. Compared to the single forcing (codensity) models that were recently used to study heterogeneous CMB heat flux \citep{olson2002time,aubert2008thermochemical,hori2014ancient}, this model is able to produce a wider range of different behavior observable in the Earth's and other planetary dynamos by using a dual forcing approach.
 \subsection{Robustness of the results}
 \label{sec:robustness}
-All results presented so far in section \ref{sec:dynamo} refer to the cases PFF and UFF that were all conducted with a total Rayleigh number $\textrm{Ra}_\textrm{total} = 440\times 10^4$ and an Ekman number Ek$=10^{-4}$ (see table \ref{tab:data}). In order to draw any conclusions relevant for the field of planetary cores, the robustness of the observations has to be checked, i.e. the study has to be extended to other parameters. Although it is impossible to reach a \textit{realistic} parameter regime, as in most problems linked to dynamos, a step in the right direction can be made. The heat flux pattern amplitude will be held fixed at $q^*=2$. 
+All results presented so far in section \ref{sec:dynamo} refer to the cases PFF and UFF that were all conducted with a total Rayleigh number $\textrm{Ra}_\textrm{total} = 440\times 10^4$ and an Ekman number Ek$=10^{-4}$ (see table \ref{tab:data}). In order to draw any conclusions relevant for the field of planetary cores, the robustness of the observations has to be checked, i.e. the study has to be extended to other parameters. Although it is impossible to reach a \textit{realistic} parameter regime, as in most problems linked to dynamos, a step in the right direction can be made. In the following, the heat flux pattern amplitude will be held fixed at $q^*=2$. 
 \begin{figure}[t]
  \begin{minipage}[t]{0.47\textwidth}
  \centering
@@ -1177,15 +1198,15 @@ At first, the total Rayleigh number is varied while keeping $\delta^*=100\%$ fix
 \subsubsection{Towards a higher rotation rate}
 In a second step, the Ekman number is reduced to Ek$=10^{-5}$. As for the scenario with Ek$=10^{-4}$, numerical simulations for five different forcing ratios $\delta^*$ are conducted. The total Rayleigh number is $\textrm{Ra}_\textrm{total} = 1000 \times 10^5$, which is $\sim 9$ times supercritical in the purely thermal case and $\sim 21$ times supercritical in the purely chemical case, respectively (see table \ref{tab:crit}). This choice was made in order to obtain data that is comparable to the Ek$=10^{-4}$ cases, discussed in sections \ref{sec:dyn_d020} to \ref{sec:effect_pattern}, with respect to its supercriticality. \\
 Figure \ref{fig:ek5} that is showing $\mathcal{P}$ for the different $\delta^*$ reveals a similar picture as figure \ref{fig:relamp} from the above case with the lower rotation rate. The flux patch amplitude lies in between 0.33 and 0.43 for all cases that include thermal forcing and herewith are affected by the $\mathcal{Y}_2^2$ BC. The behavior of the Elsasser number $\Lambda$, the magnetic Reynolds number Re$_m$ and the dipole strength $f_\textrm{dip}$ (all not shown) likewise agree well with what was shown in the corresponding figures \ref{fig:els_reym}(a), \ref{fig:els_reym}(b) and \ref{fig:reldip} for Ek$=10^{-4}$. Furthermore, the differences in the magnetic field strength between the uniform case UFF and the heat flux pattern case PFF (see figure \ref{fig:els_reym}(a), red and black line), discussed at the end of section \ref{sec:magnetic_field_strength}, can be observed at Ek$=10^{-5}$, too.\\
-The above discussion on the effect of the heat flux pattern in the context of a changing $\delta^*$ (sections \ref{sec:dyn_d020} to \ref{sec:effect_pattern}) seems to be applicable to higher rotation rates. If the decisive relation to control the flow dynamics is a thermal wind balance, as it was said in section \ref{sec:radial_flow}, this is not astonishing because it is grounded on small values of Ek \citep{zhang1992convection,dietrich2016core}. Then, the system behavior is not expected to change if Ek is further decreased. Yet, section \ref{sec:radial_flow} as well as the above cited studies refer to non-magnetic convection and the role of the Lorentz force is not quite clear when increasing the rotation rate. 
+The above discussion on the effect of the heat flux pattern in the context of a changing $\delta^*$ (sections \ref{sec:dyn_d020} to \ref{sec:effect_pattern}) seems to be applicable to higher rotation rates. If the decisive relation to control the flow dynamics is a thermal wind balance, as was discussed in section \ref{sec:radial_flow}, this is not astonishing because it is grounded on small values of Ek \citep{zhang1992convection,dietrich2016core}. Then, the system behavior is not expected to change if Ek is further decreased. Yet, section \ref{sec:radial_flow} as well as the above cited studies refer to non-magnetic convection and the role of the Lorentz force is not quite clear when increasing the rotation rate. 
 \newpage
 \section{Summary and Discussion}
-In the course of this study, rapidly rotating thermo-chemical convection in a spherical shell was studied in non-magnetic as well as in dynamo scenarios. A heterogeneous heat flux condition proportional to the spherical harmonic $\mathcal{Y}_2^2$ was applied as an outer BC for the thermal component in order to model lateral temperature variations expected in the lower-most mantle. The inner thermal and the two compositional BCs stayed uniform. The aim was to clarify the role of the non-uniform temperature BC in a dually forced convection system with respect to the flow dynamics, the magnetic field morphology and the distribution of the light component.
+In the course of this study, rapidly rotating thermo-chemical convection in a spherical shell was studied in non-magnetic as well as in dynamo scenarios. A heterogeneous heat flux condition proportional to the spherical harmonic $\mathcal{Y}_2^2$ was applied as an outer BC for the thermal component in order to model lateral temperature variations expected in the lower-most mantle. The inner thermal and the two compositional BCs stayed uniform. The aim was to clarify the role of the non-uniform temperature BC in a dually forced convection system with respect to the flow dynamics, the magnetic field morphology and the distribution of the light component. In contrast to that, recent studies explored the heterogeneous thermal BC with only one forcing component in a codensity approach. 
 \subsection{Thermo-chemical core convection}
 Non-magnetic, thermo-chemical convection under the influence of the $\mathcal{Y}_2^2$ thermal BC was studied in section \ref{sec:thermo-chemical}. Special attention was payed to a characteristic feature of the flow field: Stationary vortex columns, elongated through the whole sphere parallel to the axis of rotation. \\
 It was shown that their origin lies in the equatorial plane and can be explained with the help of a thermo-chemical wind relation. The mantle-locked columns of constant vorticity are thus expected to be a robust feature of convection under the influence of rotation, likewise at lower Ekman numbers. If they persist in scenarios characterized by a higher degree of supercriticality (the cases regarded was 4 times supercritical), remains an open question here. \\
 The potential of the vortex columns to affect other system properties, e.g. the distribution of the light element, was analyzed by introducing a concept named secondary circulation. Cyclonic columns involve vertical motion from the CMB towards the equator whereas anticyclonic columns induce vertical motion away from the equator towards the CMB. As a consequence, a stream of compositionally rich material from the ICB to the CMB parallel to the $z$-axis develops and successively accumulates the light element in patches located near the CMB. As this feature persists over a wide range of different thermo-chemical forcing scenarios, it potentially provides an explanation for certain seismic travel time anomalies in the upper region of the outer core. The use of the more realistic fixed flux compositional BC and an extended model that includes the saturation and sedimentation of composition could enhance the understanding of this process. In return to the localized accumulation of the light element at the CMB, its extraction from the inner core is locally amplified by the secondary circulation. As this could explain an uneven growth of the inner core, it could be relevant for the understanding of inner core anisotropy observed in seismic data.  \\
-The purpose of this section was to understand the effect of the heat flux pattern on the flow field and therefore the thermo-chemical nature of the model played only a minor role. Nevertheless, the capability of a dual forcing approach to explain features of the LOC that are hidden to single forcing codensity models was indicated by the non-uniform behavior of the light element mentioned above. 
+The purpose of section \ref{sec:thermo-chemical} was to understand the effect of the heat flux pattern on the flow field and therefore the thermo-chemical nature of the model played only a minor role. Nevertheless, the capability of a dual forcing approach to explain features of the LOC that are hidden to single forcing codensity models was indicated by the non-uniform behavior of the light element mentioned above. 
 \subsection{Thermo-chemical dynamo action}
 In section \ref{sec:dynamo}, the heterogeneous thermal BC at the CMB was studied in the context of a thermo-chemical dynamo model with respect to the magnetic field morphology. Under the influence of the heat flux pattern, patches of intense radial magnetic flux that resemble observations made in the geomagnetic field evolve. The formation of the characteristic field geometry can be understood in terms of local flux collection and expulsion, induced by the secondary circulation mechanism that was discussed in the preceding section. Due to a relatively high magnetic Reynolds number ($\mathcal{O}(100)$) it is plausible that the magnetic field geometry is controlled in such an advection process. \\
 In the predominantly compositionally driven scenarios, flux collection (on top of cyclones) and expulsion (on top of anticyclones) are responsible for the flux patches in equal measure. A significantly larger magnetic field strength in the mainly thermally driven cases causes the anticyclones to grow and in return the cyclones to weaken. As a consequence, the field geometry is controlled rather by flux expulsion than by flux collection. Although their formation mechanism slightly changes with varying forcing mechanism, the flux patches are a robust feature of all dually forced cases that were analyzed, i.e., they appear in the whole $\delta^*$-space except for $\delta^*=0\%$.\\
@@ -1193,7 +1214,7 @@ The fact that Earth-like magnetic field patches evolve even in predominantly com
 Although the pattern induced magnetic flux patches properly match particular features of the geomagnetic field it is important to notice that the model explored in this study crucially differs from the 'real' Earth. The convective vigor as well as the rotation rate are chosen several orders of magnetic too low due to computational constraints. The robustness of the results with respect to the latter was approved in the scope of the computational resources available (up to Ek $=10^{-5}$). The fact that the flow field is expected to be controlled by a thermo-chemical wind balance suggests that the above behavior persists even beyond the reachable parameter range concerning the Ekman number. In contrast to that, it was shown that the effect of the heat flux pattern decreases with increasing Rayleigh number. The question whether a dynamo at Earth-like forcing strengths is completely unaffected by a non-uniform heat flux at the CMB has to be answered in the future. \\
 The magnetic field strength in the cases equipped with the heterogeneous thermal boundary condition was observed to be higher than in the corresponding uniform scenarios. This is supposed to be consequence of an enlargement of the mean azimuthal flow scale induced by the large scale temperature variation originating in the heat flux pattern at the CMB. The boundary induced scale enlargement might offer the possibility to produce strong magnetic fields in the low Ekman number regime for which small flow scales, that impede an efficient field production, are expected in classical, uniform dynamo models. \\ \par \noindent
 Two additional remarks concerning the model have to be made: \\
-(a) Dirichlet type BCs for the compositional component were chosen according to what is common practice in the majority of the existing codensity dynamo models. Section \ref{sec:delta_dependence} revealed that the application of Neumnann type conditions for the thermal \textit{and} the compositional field would have been more suitable. In doing so, the variation of the driving mechanism would have had one implication less (so the problem would have been less complex) because besides the structure of the BC (uniform or heterogeneous), its type (Neumann or Dirichlet) has a significant effect on the flow dynamics. Furthermore, a Neumann BC with a constant compositional influx and zero outflux is expected to be more appropriate for the Earth than isochemical conditions \citep{anufriev2005boussinesq}. \\
+(a) Dirichlet type BCs for the compositional component were chosen according to what is common practice in the majority of the existing codensity dynamo models. Section \ref{sec:delta_dependence} revealed that the application of Neumnann type conditions for the thermal \textit{and} the compositional field would have been more suitable. In doing so, a transition from a thermally driven to a compositionally driven scenario would not have implied a transition in the type of the BC which made the identification of the pattern effect more complicated. Because besides the structure of the BC (uniform or heterogeneous), its type (Neumann or Dirichlet) has a significant effect on the flow dynamics. Furthermore, a Neumann BC with a constant compositional influx and zero outflux is expected to be more appropriate for the Earth than isochemical conditions \citep{anufriev2005boussinesq}. \\
 (b) The heat flux pattern amplitude was held constant at $q^*\!=\!2$ throughout the study. It was chosen relatively large (but within the range of what is expected to be realistic for the Earth) in order to make the effect of the heat flux pattern clearly discernible.The question whether the obtained results significantly change when $q^*$ takes on other values was not answered. \\
 Moreover, a pattern amplitude $q^*\!>\!1$ implies stable thermal stratification in those regions of the core that lie close to the heat flux minima (due to a heat transport from the mantle to the core, see section \ref{sec:flux_pattern}). Together with an always destabilizing compositional component, this could yield interesting non-linear phenomena that could be explored in a subsequent study. 
 \section{Conclusion and Outlook}
