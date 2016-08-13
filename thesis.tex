@@ -19,7 +19,6 @@
 \usepackage[left=3.0cm,right=2.9cm,top=2.4cm,bottom=2.6cm,includeheadfoot]{geometry}
 \usepackage{subcaption}
 
-
 \date {\today}
 \author{Veit Lüschow}
 \title{Heterogeneous core-mantle boundary heat flux in thermo-chemical core convection}
@@ -65,14 +64,14 @@ The existence of patches of intense radial magnetic field at high latitudes (see
 The general idea is that a laterally heterogeneous, hence non axisymmetric, heat flux from the core to the mantle results in a non axisymmetric magnetic field geometry, including magnetic flux patches, for example. Evidence for such a non uniform heat flux comes out of two directions: Lateral gradients in the shear wave velocity close to the core-mantle boundary (CMB), found through seismic tomography, are supposed to result from lateral temperature gradients in that region \citep{su1994degree}. These translate to an increased core-mantle heat flux in relatively cold mantle regions and a decreased heat flux in hot regions. On the other hand, mantle global circulation models (often referred to as mantle GCMs) were recently used to predict the core-mantle heat flux under consideration of many different aspects such as plate tectonics or the chemical composition of the lower-most mantle region \citep{nakagawa2008lateral}. \\
 \begin{figure}[t]
  \centering
- \includegraphics[width=0.75\textwidth]{graphs/pics/pomm_2009.png}
+ %\includegraphics[width=0.75\textwidth]{graphs/pics/pomm_2009.png}
  \caption{Present-day radial geomagnetic field intensity at the CMB, where red represents positive (outward directed) and blue negative (inward directed) values (http://geomag.org/index.html). The two dark blue (dark orange) patches of high intensity field at high latitudes in the northern (southern) hemisphere are of special interest for the present study.}
  \label{fig:pomm}
 \end{figure}\noindent
 \begin{figure}[b!]
  \begin{minipage}{0.45\textwidth}
  \centering
- \includegraphics[width=\textwidth]{graphs/olson_pattern.png}
+ %\includegraphics[width=\textwidth]{graphs/olson_pattern.png}
   \end{minipage}
  \begin{minipage}{0.09\textwidth}
 \vspace*{\fill}
@@ -82,7 +81,7 @@ The general idea is that a laterally heterogeneous, hence non axisymmetric, heat
   \end{minipage}
    \begin{minipage}{0.45\textwidth}
  \centering
- \includegraphics[width=\textwidth]{graphs/Y22_pattern.png}
+ %\includegraphics[width=\textwidth]{graphs/Y22_pattern.png}
   \end{minipage}
    \caption{\textbf{Left:} Present-day core-mantle heat flux computed in a mantle GCM (changed after \citet{olson2015core}). \textbf{Right:} Heat flux pattern approximation proportional to the spherical harmonic of degree and order 2. This pattern is used in the course of this study as an outer thermal BC. }
 \label{fig:approx_pattern}
@@ -92,7 +91,7 @@ Tomography as well as the mantle GCMs roughly agree on the geometry of the heter
 The outer core of the Earth is assumed to be composed of an iron-nickel alloy that contains a portion of light elements. Their exact composition is still unknown but silicon and oxygen seem likely to make up a great part of it \citep{tsuno2013simultaneous}. Originating at the inner-core freezing front where they are released during the crystallization process, their appearance in the outer core is a direct consequence of the inner-core growth. If injected into the core fluid, they decrease its density, so that the light elements are a potential source of buoyancy at the inner-core boundary (ICB). It exists general agreement on the assumption that such compositional buoyancy sources at the bottom of the outer core account for a significant part of the total convective forcing \citep{braginsky1995equations}. The second basal source of buoyancy is latent heat likewise being released at the inner-core freezing front. The role of internal heat sources is expected to play a minor role for today's core \citep{nimmo2007thermal} and is therefore not regarded in this study.  \\
 It is common practice in the dynamo community to combine compositional and thermal buoyancy sources in one variable named \textit{codensity}. An important argument for this approach is based on the presumably turbulent nature of core convection. In order to overcome the herewith connected small-scale structure of the flow, artificially high turbulent diffusivities are introduced \citep{braginsky1995equations}. This leads to the assumption that differences in the diffusivities of composition and temperature average out and therefore the two can be treated jointly. \\
 In the Earth's core, the diffusivity of heat is expected to be several orders of magnitude larger than that of the light component, which translates to a difference in their associated Prandtl numbers (the ratio of viscosity to diffusivity) of $\sim\!10^3$ \citep{braginsky1995equations}. Several studies recently addressed the influence of the Prandtl number on certain system properties such as the mean flow scales \citep{cardin1992experimental} or the morphology of the resulting magnetic field \citep{simitev2005prandtl}. A significant dependence on that system parameter was reported by all of them. Following these results, a few authors explored models in which temperature and composition act as two distinct driving agents (dually forced or thermo-chemical models). \citet{trumper2012numerical} found a drastic change in the mean flow properties when varying the ratio of thermal to compositional driving forces in a non-magnetic convection system. A dually forced dynamo model was subject to the work of \citet{takahashi2014double}, who found a sensible dependence of the magnetic dipole component on the thermo-chemical forcing scenario. \\
-In the scope of this study, the possibility to apply two distinct sets of BCs for the thermal \textit{and} the compositional component is the strongest argument in favor of a thermo-chemical approach. According to the above discussion it seems reasonable to assume a laterally heterogeneous core-mantle heat flux. In contrast to that, the situation for the compositional component is less clear. \citet{braginsky1995equations} suppose that the CMB is impermeable for the light element, hence a zero-flux condition the most realistic choice. Likewise the sedimentation of chemical constituents as well as chemical reactions at the CMB are discussed as sinks for the compositional field \citep{buffett2007core}, which would suggest a fixed flux condition. However, it exists no reason to assume that the compositional BC is identical to the heterogeneous heat flux condition that is applied to the temperature field. 
+In the scope of this study, the possibility to apply two distinct sets of BCs for the thermal \textit{and} the compositional component, especially at the CMB, is the strongest argument in favor of a thermo-chemical approach. According to the above discussion it seems reasonable to assume a laterally heterogeneous core-mantle heat flux. In contrast to that, the situation for the compositional component is less clear. \citet{braginsky1995equations} suppose that the CMB is impermeable for the light element, hence a zero-flux condition the most realistic choice. Likewise, the sedimentation of chemical constituents as well as chemical reactions at the CMB are discussed as sinks for the compositional field \citep{buffett2007core}, which would suggest a fixed flux condition. However, from the current point of view there is no reason to suppose that the compositional BC is identical to the heterogeneous heat flux condition that is applied to the temperature field, an assumption that is intrinsic to codensity models that address a heterogeneous core-mantle heat flux.
 
 \subsection*{State of research}
 \textbf{On heat flux pattern}\\
@@ -488,7 +487,7 @@ $a_0^0$ is an arbitrary constant of integration that is chosen to be 0 in the fo
 The effect of the CMB - heat flux pattern on the conductive temperature field is shown in Figure \ref{fig:conductives}(a) and (b). Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east, see also the sketch in Figure \ref{fig:fluxsketch}), are characterized by relatively low temperatures because they are cooled more efficiently. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
 \begin{figure}[t]
  \begin{minipage}{0.36\textwidth}
-  %%\includegraphics[width=0.9\textwidth]{sketches/equatorial_conductive.png}
+  %\includegraphics[width=0.9\textwidth]{sketches/equatorial_conductive.png}
   \caption*{(a) Equatorial view}
  \end{minipage}
  \hfill
@@ -501,7 +500,7 @@ The effect of the CMB - heat flux pattern on the conductive temperature field is
 \end{figure}
 \\
 \\
-The amplitude of heterogeneity, $Amp_2^2$, from now on referred to as $q^*$, plays a central role for the heat flux pattern. Figure \ref{fig:equator_flux} shows the core-mantle heat flux along the equator for two values of $q^*$. If the amplitude is chosen to be greater than 1, negative (inward) heat flux occurs in distinct regions around the flux minima. Heat flow from the mantle to the core produces gravitationally stable regions with respect to the temperature. Together with an always destabilizing compositional gradient, this can yield non-linear double-diffusive effects as fingering or layering. A scenario in which gravitationally stable regions play a role in core convection was recently discussed for mercury \citep{tian2015magnetic}. Likewise for the Earth, where the heterogeneities in core-mantle heat flux are generally considered to be rather mild \citep{aubert2008thermochemical, olson2002time, glatzmaier1999role}, \citet{nakagawa2008lateral} expect that heat locally flows from the mantle to the core where compositionally dense piles settle at the base of the mantle. Because of that and due to the fact that this study aims to explore the effect of a heat flux pattern on core convection from a general perspective, a relatively large value of $q^*\!=\!2$ is chosen in order to ensure a clearly discernible pattern effect. The choice of $q^* = 0$ refers to a uniform fixed flux boundary condition.
+The amplitude of heterogeneity, $Amp_2^2$, from now on referred to as $q^*$, plays a central role for the heat flux pattern. Figure \ref{fig:equator_flux} shows the core-mantle heat flux along the equator for two values of $q^*$. If the amplitude is chosen to be greater than 1, negative (inward) heat flux occurs in distinct regions around the flux minima. Heat flow from the mantle to the core produces gravitationally stable regions with respect to the temperature. Together with an always destabilizing compositional gradient, this can yield non-linear double-diffusive effects as fingering or layering. A scenario in which gravitationally stable regions play a role in core convection was recently discussed for Mercury \citep{tian2015magnetic}. Likewise for the Earth, where the heterogeneities in core-mantle heat flux are generally considered to be rather mild \citep{aubert2008thermochemical, olson2002time, glatzmaier1999role}, \citet{nakagawa2008lateral} expect that heat locally flows from the mantle to the core where compositionally dense piles settle at the base of the mantle. Because of that and due to the fact that this study aims to explore the effect of a heat flux pattern on core convection from a general perspective, a relatively large value of $q^*\!=\!2$ is chosen in order to ensure a clearly discernible pattern effect. The choice of $q^* = 0$ refers to a uniform fixed flux boundary condition.
 \begin{figure}[H]
  \begin{minipage}[left]{0.7\textwidth}
   %\includegraphics[width=1\textwidth]{sketches/eq_flux-trim.png}
@@ -1212,16 +1211,36 @@ Two additional remarks concerning the model have to be made: \\
 (a) Dirichlet type BCs for the compositional component were chosen according to what is common practice in the majority of the existing codensity dynamo models. Section \ref{sec:delta_dependence} revealed that the application of Neumnann type conditions for the thermal \textit{and} the compositional field would have been more suitable. In doing so, a transition from a thermally driven to a compositionally driven scenario would not have implied a transition in the type of the BC which made the identification of the pattern effect more complicated. Because besides the structure of the BC (uniform or heterogeneous), its type (Neumann or Dirichlet) has a significant effect on the flow dynamics. Furthermore, a Neumann BC with a constant compositional influx and zero outflux is expected to be more appropriate for the Earth than isochemical conditions \citep{anufriev2005boussinesq}. \\
 (b) The heat flux pattern amplitude was held constant at $q^*\!=\!2$ throughout the study. It was chosen relatively large (but within the range of what is expected to be realistic for the Earth) in order to make the effect of the heat flux pattern clearly discernible.The question whether the obtained results significantly change when $q^*$ takes on other values was not answered. \\
 Moreover, a pattern amplitude $q^*\!>\!1$ implies stable thermal stratification in those regions of the core that lie close to the heat flux minima (due to a heat transport from the mantle to the core, see section \ref{sec:flux_pattern}). Together with an always destabilizing compositional component, this could yield interesting non-linear phenomena that could be explored in a subsequent study. 
+\newpage
 \section{Conclusion and Outlook}
 % schreiben, dass man ein eher allgemeines modell untersucht und z.b. kein wirklich tomographisches heat flux pattern\\
 % Maybe construct a model that includes sedimentation in order to create chemical heterogeneities, e.g. at the CMB. \\
 % Seismic wave propagation\\
 % einerseits Earth-like, andererseits eher eine studie die den prinzipiellen character des pattern erforschen möchte
-
 \newpage
  \bibliography{literatur}
  \bibliographystyle{apalike}
-
-
-%\end{thebibliography}
+ \newpage
+\cleardoublepage  
+\thispagestyle{empty}
+\pagestyle{empty}
+\section*{}
+\newpage
+ \section*{Acknowledgments}
+ \newpage
+ \section*{Declaration of Academic Integrity}
+ \vspace{1.5cm}
+ I hereby confirm that this thesis on\\ \par \noindent
+ \textbf{Heterogeneous core-mantle boundary heat flux in thermo-chemical core convection} \\ \par \noindent
+ is solely my own work and that I have used no sources or aids other than the ones stated. All passages in my thesis for which other sources, including electronic media, have been used, be it direct quotes or content references, have been acknowledged as such and the sources cited.\\
+ \section*{}
+%  \vspace*{0.5cm}
+ \noindent\rule{8cm}{0.4pt}\\
+ (date and signature of student)\\
+\vspace{2cm}\\
+I agree to have my thesis checked in order to rule out potential similarities with other works and to have my thesis stored in a database for this purpose.\\
+ \section*{}
+%  \vspace*{0.5cm}
+ \noindent\rule{8cm}{0.4pt}\\
+ (date and signature of student)\\
 \end{document}

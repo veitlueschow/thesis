@@ -36,4 +36,4 @@
 \contentsline {section}{\numberline {7}Summary and Discussion}{52}
 \contentsline {subsection}{\numberline {7.1}Thermo-chemical core convection}{52}
 \contentsline {subsection}{\numberline {7.2}Thermo-chemical dynamo action}{53}
-\contentsline {section}{\numberline {8}Conclusion and Outlook}{54}
+\contentsline {section}{\numberline {8}Conclusion and Outlook}{55}

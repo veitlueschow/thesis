@@ -2,13 +2,14 @@
 
 \bibitem[Anufriev et~al., 2005]{anufriev2005boussinesq}
 Anufriev, A., Jones, C., and Soward, A. (2005).
-\newblock The boussinesq and anelastic liquid approximations for convection in
-  the earth's core.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 152(3):163--190.
+\newblock The {Boussinesq} and anelastic liquid approximations for convection
+  in the {Earth}'s core.
+\newblock {\em Physics of the {Earth} and Planetary Interiors},
+  152(3):163--190.
 
 \bibitem[Aubert et~al., 2008a]{aubert2008thermochemical}
 Aubert, J., Amit, H., Hulot, G., and Olson, P. (2008a).
-\newblock Thermochemical flows couple the earth's inner core growth to mantle
+\newblock Thermochemical flows couple the {Earth}'s inner core growth to mantle
   heterogeneity.
 \newblock {\em Nature}, 454(7205):758--761.
 
@@ -28,7 +29,7 @@ Bloxham, J. and Gubbins, D. (1987).
 
 \bibitem[Braginsky and Roberts, 1995]{braginsky1995equations}
 Braginsky, S.~I. and Roberts, P.~H. (1995).
-\newblock Equations governing convection in earth's core and the geodynamo.
+\newblock Equations governing convection in {Earth}'s core and the geodynamo.
 \newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 79(1-4):1--97.
 
 \bibitem[Breuer et~al., 2010]{breuer2010thermochemically}
@@ -61,8 +62,8 @@ Busse, F.~H. and Simitev, R.~D. (2006).
 
 \bibitem[Cardin and Olson, 1992]{cardin1992experimental}
 Cardin, P. and Olson, P. (1992).
-\newblock An experimental approach to thermochemical convection in the earth's
-  core.
+\newblock An experimental approach to thermochemical convection in the
+  {Earth}'s core.
 \newblock {\em Geophysical research letters}, 19(20):1995--1998.
 
 \bibitem[Chandrasekhar, 1961]{chandrasekhar1970hydrodynamic}
@@ -83,9 +84,10 @@ Christensen, U., Olson, P., and Glatzmaier, G. (1999).
 
 \bibitem[Christensen, 2011]{christensen2011geodynamo}
 Christensen, U.~R. (2011).
-\newblock Geodynamo models: Tools for understanding properties of earth\'s
+\newblock Geodynamo models: Tools for understanding properties of {Earth}'s
   magnetic field.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 187(3):157--169.
+\newblock {\em Physics of the {Earth} and Planetary Interiors},
+  187(3):157--169.
 
 \bibitem[Davidson, 2001]{davidson2001introduction}
 Davidson, P.~A. (2001).
@@ -96,7 +98,7 @@ Davidson, P.~A. (2001).
 Dietrich, W., Hori, K., and Wicht, J. (2016).
 \newblock Core flows and heat transfer induced by inhomogeneous cooling with
   sub-and supercritical convection.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 251:36--51.
+\newblock {\em Physics of the {Earth} and Planetary Interiors}, 251:36--51.
 
 \bibitem[Dormy, 1997]{dormy1997modelisation}
 Dormy, E. (1997).
@@ -107,7 +109,7 @@ Dormy, E. (1997).
 Dormy, E., Cardin, P., and Jault, D. (1998).
 \newblock Mhd flow in a slightly differentially rotating spherical shell, with
   conducting inner core, in a dipolar magnetic field.
-\newblock {\em Earth and Planetary Science Letters}, 160(1):15--30.
+\newblock {\em {Earth} and Planetary Science Letters}, 160(1):15--30.
 
 \bibitem[Dormy et~al., 2004]{dormy2004onset}
 Dormy, E., Soward, A., Jones, C., Jault, D., and Cardin, P. (2004).
@@ -134,7 +136,7 @@ Gibbons, S., Gubbins, D., and Zhang, K. (2007).
 
 \bibitem[Gibbons and Gubbins, 2000]{gibbons2000convection}
 Gibbons, S.~J. and Gubbins, D. (2000).
-\newblock Convection in the earth's core driven by lateral variations in the
+\newblock Convection in the {Earth}'s core driven by lateral variations in the
   core-mantle boundary heat flux.
 \newblock {\em Geophysical Journal International}, 142(2):631--642.
 
@@ -146,7 +148,7 @@ Gillet, N. and Jones, C. (2006).
 
 \bibitem[Glatzmaier et~al., 1999]{glatzmaier1999role}
 Glatzmaier, G.~A., Coe, R.~S., Hongre, L., and Roberts, P.~H. (1999).
-\newblock The role of the earth's mantle in controlling the frequency of
+\newblock The role of the {Earth}'s mantle in controlling the frequency of
   geomagnetic reversals.
 \newblock {\em Nature}, 401(6756):885--890.
 
@@ -154,7 +156,7 @@ Glatzmaier, G.~A., Coe, R.~S., Hongre, L., and Roberts, P.~H. (1999).
 Glatzmaier, G.~A. and Roberts, P.~H. (1995).
 \newblock A three-dimensional convective dynamo solution with rotating and
   finitely conducting inner core and mantle.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 91(1):63--75.
+\newblock {\em Physics of the {Earth} and Planetary Interiors}, 91(1):63--75.
 
 \bibitem[Gubbins and Bloxham, 1987]{gubbins1987morphology}
 Gubbins, D. and Bloxham, J. (1987).
@@ -164,15 +166,16 @@ Gubbins, D. and Bloxham, J. (1987).
 
 \bibitem[Gubbins et~al., 2007]{gubbins2007correlation}
 Gubbins, D., Willis, A.~P., and Sreenivasan, B. (2007).
-\newblock Correlation of earth's magnetic field with lower mantle thermal and
+\newblock Correlation of {Earth}'s magnetic field with lower mantle thermal and
   seismic structure.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 162(3):256--260.
+\newblock {\em Physics of the {Earth} and Planetary Interiors},
+  162(3):256--260.
 
 \bibitem[Hori et~al., 2012]{hori2012influence}
 Hori, K., Wicht, J., and Christensen, U. (2012).
 \newblock The influence of thermo-compositional boundary conditions on
   convection and dynamos in a rotating spherical shell.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 196:32--48.
+\newblock {\em Physics of the {Earth} and Planetary Interiors}, 196:32--48.
 
 \bibitem[Hori et~al., 2014]{hori2014ancient}
 Hori, K., Wicht, J., and Dietrich, W. (2014).
@@ -208,7 +211,7 @@ King, E.~M., Stellmach, S., Noir, J., Hansen, U., and Aurnou, J.~M. (2009).
 
 \bibitem[Kuang and Bloxham, 1997]{kuang1997earth}
 Kuang, W. and Bloxham, J. (1997).
-\newblock An earth-like numerical dynamo model.
+\newblock An {Earth}-like numerical dynamo model.
 \newblock {\em Nature}, 389(6649):371--374.
 
 \bibitem[Kundu and Cohen, 2008]{kundu2008fluid}
@@ -233,15 +236,15 @@ Malkus, W. (1994).
 
 \bibitem[Manglik et~al., 2010]{manglik2010dynamo}
 Manglik, A., Wicht, J., and Christensen, U.~R. (2010).
-\newblock A dynamo model with double diffusive convection for mercury's core.
-\newblock {\em Earth and Planetary Science Letters}, 289(3):619--628.
+\newblock A dynamo model with double diffusive convection for {Mercury}'s core.
+\newblock {\em {Earth} and Planetary Science Letters}, 289(3):619--628.
 
 \bibitem[Masters et~al., 2000]{masters2000relative}
 Masters, G., Laske, G., Bolton, H., and Dziewonski, A. (2000).
 \newblock The relative behavior of shear velocity, bulk sound speed, and
   compressional velocity in the mantle: implications for chemical and thermal
   structure.
-\newblock {\em Earth's deep interior: mineral physics and tomography from the
+\newblock {\em {Earth}'s deep interior: mineral physics and tomography from the
   atomic to the global scale}, pages 63--87.
 
 \bibitem[Nakagawa and Tackley, 2008]{nakagawa2008lateral}
@@ -249,12 +252,12 @@ Nakagawa, T. and Tackley, P.~J. (2008).
 \newblock Lateral variations in cmb heat flux and deep mantle seismic velocity
   caused by a thermal--chemical-phase boundary layer in 3d spherical
   convection.
-\newblock {\em Earth and Planetary Science Letters}, 271(1):348--358.
+\newblock {\em {Earth} and Planetary Science Letters}, 271(1):348--358.
 
 \bibitem[Nimmo, 2007]{nimmo2007thermal}
 Nimmo, F. (2007).
 \newblock Thermal and compositional evolution of the core.
-\newblock {\em Evolution of the Earth, Treatise on Geophysics}, 9:217--241.
+\newblock {\em Evolution of the {Earth}, Treatise on Geophysics}, 9:217--241.
 
 \bibitem[Olson, 2015]{olson2015mantle}
 Olson, P. (2015).
@@ -269,22 +272,22 @@ Olson, P. and Christensen, U. (2002).
 
 \bibitem[Olson et~al., 1999]{olson1999numerical}
 Olson, P., Christensen, U., and Glatzmaier, G.~A. (1999).
-\newblock Numerical modeling of the geodynamo: mechanisms of field generation
+\newblock Numerical modeling of the geodynamo: {Mechanisms} of field generation
   and equilibration.
-\newblock {\em Journal of Geophysical Research: Solid Earth},
+\newblock {\em Journal of Geophysical Research: Solid {Earth}},
   104(B5):10383--10404.
 
 \bibitem[Olson et~al., 2015]{olson2015core}
 Olson, P., Deguen, R., Rudolph, M.~L., and Zhong, S. (2015).
 \newblock Core evolution driven by mantle global circulation.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 243:44--55.
+\newblock {\em Physics of the {Earth} and Planetary Interiors}, 243:44--55.
 
 \bibitem[Olson et~al., 2010]{olson2010geodynamo}
 Olson, P.~L., Coe, R.~S., Driscoll, P.~E., Glatzmaier, G.~A., and Roberts,
   P.~H. (2010).
 \newblock Geodynamo reversal frequency and heterogeneous core-mantle boundary
   heat flow.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 180(1):66--79.
+\newblock {\em Physics of the {Earth} and Planetary Interiors}, 180(1):66--79.
 
 \bibitem[Pedlosky, 2013]{pedlosky2013geophysical}
 Pedlosky, J. (2013).
@@ -340,19 +343,19 @@ Stellmach, S., Lischper, M., Julien, K., Vasil, G., Cheng, J., Ribeiro, A.,
 \bibitem[Su et~al., 1994]{su1994degree}
 Su, W.-j., Woodward, R.~L., and Dziewonski, A.~M. (1994).
 \newblock Degree 12 model of shear velocity heterogeneity in the mantle.
-\newblock {\em Journal of Geophysical Research: Solid Earth},
+\newblock {\em Journal of Geophysical Research: Solid {Earth}},
   99(B4):6945--6980.
 
 \bibitem[Takahashi, 2014]{takahashi2014double}
 Takahashi, F. (2014).
-\newblock Double diffusive convection in the earth's core and the morphology of
-  the geomagnetic field.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 226:83--87.
+\newblock Double diffusive convection in the {Earth}'s core and the morphology
+  of the geomagnetic field.
+\newblock {\em Physics of the {Earth} and Planetary Interiors}, 226:83--87.
 
 \bibitem[Tian et~al., 2015]{tian2015magnetic}
 Tian, Z., Zuber, M.~T., and Stanley, S. (2015).
-\newblock Magnetic field modeling for mercury using dynamo models with a stable
-  layer and laterally variable heat flux.
+\newblock Magnetic field modeling for {Mercury} using dynamo models with a
+  stable layer and laterally variable heat flux.
 \newblock {\em Icarus}, 260:263--268.
 
 \bibitem[Tilgner, 2007a]{tilgner2007kinematic}
@@ -373,13 +376,13 @@ Tr{\"u}mper, T. (2014).
 
 \bibitem[Tr{\"u}mper et~al., 2012]{trumper2012numerical}
 Tr{\"u}mper, T., Breuer, M., and Hansen, U. (2012).
-\newblock Numerical study on double-diffusive convection in the earth's core.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 194:55--63.
+\newblock Numerical study on double-diffusive convection in the {Earth}'s core.
+\newblock {\em Physics of the {Earth} and Planetary Interiors}, 194:55--63.
 
 \bibitem[Tsuno et~al., 2013]{tsuno2013simultaneous}
 Tsuno, K., Frost, D.~J., and Rubie, D.~C. (2013).
-\newblock Simultaneous partitioning of silicon and oxygen into the earth's core
-  during early earth differentiation.
+\newblock Simultaneous partitioning of silicon and oxygen into the {Earth}'s
+  core during early {Earth} differentiation.
 \newblock {\em Geophysical Research Letters}, 40(1):66--71.
 
 \bibitem[Vallis, 2006]{vallis2006atmospheric}
@@ -391,11 +394,12 @@ Vallis, G.~K. (2006).
 \bibitem[Wicht, 2002]{wicht2002inner}
 Wicht, J. (2002).
 \newblock Inner-core conductivity in numerical dynamo simulations.
-\newblock {\em Physics of the Earth and Planetary Interiors}, 132(4):281--302.
+\newblock {\em Physics of the {Earth} and Planetary Interiors},
+  132(4):281--302.
 
 \bibitem[Zhang and Gubbins, 1992]{zhang1992convection}
 Zhang, K. and Gubbins, D. (1992).
-\newblock On convection in the earth's core driven by lateral temperature
+\newblock On convection in the {Earth}'s core driven by lateral temperature
   variations in the lower mantle.
 \newblock {\em Geophysical journal international}, 108(1):247--255.
 
