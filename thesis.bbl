@@ -7,6 +7,12 @@ Anufriev, A., Jones, C., and Soward, A. (2005).
 \newblock {\em Physics of the {Earth} and Planetary Interiors},
   152(3):163--190.
 
+\bibitem[Aubert et~al., 2007]{aubert2007detecting}
+Aubert, J., Amit, H., and Hulot, G. (2007).
+\newblock Detecting thermal boundary control in surface flows from numerical
+  dynamos.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 160(2):143--156.
+
 \bibitem[Aubert et~al., 2008a]{aubert2008thermochemical}
 Aubert, J., Amit, H., Hulot, G., and Olson, P. (2008a).
 \newblock Thermochemical flows couple the {Earth}'s inner core growth to mantle
@@ -100,6 +106,12 @@ Dietrich, W., Hori, K., and Wicht, J. (2016).
   sub-and supercritical convection.
 \newblock {\em Physics of the {Earth} and Planetary Interiors}, 251:36--51.
 
+\bibitem[Dietrich and Wicht, 2013]{dietrich2013hemispherical}
+Dietrich, W. and Wicht, J. (2013).
+\newblock A hemispherical dynamo model: Implications for the {Martian} crustal
+  magnetization.
+\newblock {\em Physics of the Earth and Planetary Interiors}, 217:10--21.
+
 \bibitem[Dormy, 1997]{dormy1997modelisation}
 Dormy, E. (1997).
 \newblock {\em Mod{\'e}lisation num{\'e}rique de la dynamo terrestre}.
@@ -164,13 +176,6 @@ Gubbins, D. and Bloxham, J. (1987).
   geodynamo.
 \newblock {\em Nature}, 325(6104):509--511.
 
-\bibitem[Gubbins et~al., 2007]{gubbins2007correlation}
-Gubbins, D., Willis, A.~P., and Sreenivasan, B. (2007).
-\newblock Correlation of {Earth}'s magnetic field with lower mantle thermal and
-  seismic structure.
-\newblock {\em Physics of the {Earth} and Planetary Interiors},
-  162(3):256--260.
-
 \bibitem[Hori et~al., 2012]{hori2012influence}
 Hori, K., Wicht, J., and Christensen, U. (2012).
 \newblock The influence of thermo-compositional boundary conditions on
@@ -224,6 +229,12 @@ Kutzner, C. and Christensen, U. (2000).
 \newblock Effects of driving mechanisms in geodynamo models.
 \newblock {\em Geophysical research letters}, 27(1):29--32.
 
+\bibitem[Kutzner and Christensen, 2004]{kutzner2004simulated}
+Kutzner, C. and Christensen, U.~R. (2004).
+\newblock Simulated geomagnetic reversals and preferred virtual geomagnetic
+  pole paths.
+\newblock {\em Geophysical Journal International}, 157(3):1105--1118.
+
 \bibitem[Larmor, 1919]{larmor1919could}
 Larmor, J. (1919).
 \newblock How could a rotating body such as the sun become a magnet.
@@ -253,6 +264,12 @@ Nakagawa, T. and Tackley, P.~J. (2008).
   caused by a thermal--chemical-phase boundary layer in 3d spherical
   convection.
 \newblock {\em {Earth} and Planetary Science Letters}, 271(1):348--358.
+
+\bibitem[Nakagawa and Tackley, 2013]{nakagawa2013implications}
+Nakagawa, T. and Tackley, P.~J. (2013).
+\newblock Implications of high core thermal conductivity on {Earth}'s coupled
+  mantle and core evolution.
+\newblock {\em Geophysical Research Letters}, 40(11):2652--2656.
 
 \bibitem[Nimmo, 2007]{nimmo2007thermal}
 Nimmo, F. (2007).
@@ -321,6 +338,11 @@ Sakuraba, A. and Roberts, P.~H. (2009).
 \newblock Generation of a strong magnetic field using uniform heat flux at the
   surface of the core.
 \newblock {\em Nature Geoscience}, 2(11):802--805.
+
+\bibitem[Sarson et~al., 1997]{sarson1997influence}
+Sarson, G., Jones, C., and Longbottom, A. (1997).
+\newblock The influence of boundary region heterogeneities on the geodynamo.
+\newblock {\em Physics of the earth and planetary interiors}, 101(1):13--32.
 
 \bibitem[Simitev and Busse, 2005]{simitev2005prandtl}
 Simitev, R. and Busse, F. (2005).
@@ -396,6 +418,11 @@ Wicht, J. (2002).
 \newblock Inner-core conductivity in numerical dynamo simulations.
 \newblock {\em Physics of the {Earth} and Planetary Interiors},
   132(4):281--302.
+
+\bibitem[Young and Lay, 1987]{young1987core}
+Young, C.~J. and Lay, T. (1987).
+\newblock The core-mantle boundary.
+\newblock {\em Annual Review of Earth and Planetary Sciences}, 15:25.
 
 \bibitem[Zhang and Gubbins, 1992]{zhang1992convection}
 Zhang, K. and Gubbins, D. (1992).
