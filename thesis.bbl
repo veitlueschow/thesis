@@ -37,6 +37,11 @@ Breuer, M., Manglik, A., Wicht, J., Tr{\"u}mper, T., Harder, H., and Hansen, U.
 \newblock Thermochemically driven convection in a rotating spherical shell.
 \newblock {\em Geophysical Journal International}, 183(1):150--162.
 
+\bibitem[Buffett, 2007]{buffett2007core}
+Buffett, B. (2007).
+\newblock Core-mantle interactions.
+\newblock {\em Treatise on Geophysics}, 8:345--358.
+
 \bibitem[Busse, 1970]{busse1970thermal}
 Busse, F.~H. (1970).
 \newblock Thermal instabilities in rapidly rotating systems.
@@ -53,6 +58,12 @@ Busse, F.~H. and Simitev, R.~D. (2006).
   spherical fluid shells.
 \newblock {\em Geophysical and Astrophysical Fluid Dynamics},
   100(4-5):341--361.
+
+\bibitem[Cardin and Olson, 1992]{cardin1992experimental}
+Cardin, P. and Olson, P. (1992).
+\newblock An experimental approach to thermochemical convection in the earth's
+  core.
+\newblock {\em Geophysical research letters}, 19(20):1995--1998.
 
 \bibitem[Chandrasekhar, 1961]{chandrasekhar1970hydrodynamic}
 Chandrasekhar, S. (1961).
@@ -240,6 +251,11 @@ Nakagawa, T. and Tackley, P.~J. (2008).
   convection.
 \newblock {\em Earth and Planetary Science Letters}, 271(1):348--358.
 
+\bibitem[Nimmo, 2007]{nimmo2007thermal}
+Nimmo, F. (2007).
+\newblock Thermal and compositional evolution of the core.
+\newblock {\em Evolution of the Earth, Treatise on Geophysics}, 9:217--241.
+
 \bibitem[Olson, 2015]{olson2015mantle}
 Olson, P. (2015).
 \newblock Mantle control of the geodynamo: Consequences of top-down regulation.
@@ -359,6 +375,12 @@ Tr{\"u}mper, T. (2014).
 Tr{\"u}mper, T., Breuer, M., and Hansen, U. (2012).
 \newblock Numerical study on double-diffusive convection in the earth's core.
 \newblock {\em Physics of the Earth and Planetary Interiors}, 194:55--63.
+
+\bibitem[Tsuno et~al., 2013]{tsuno2013simultaneous}
+Tsuno, K., Frost, D.~J., and Rubie, D.~C. (2013).
+\newblock Simultaneous partitioning of silicon and oxygen into the earth's core
+  during early earth differentiation.
+\newblock {\em Geophysical Research Letters}, 40(1):66--71.
 
 \bibitem[Vallis, 2006]{vallis2006atmospheric}
 Vallis, G.~K. (2006).

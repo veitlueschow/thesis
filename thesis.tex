@@ -43,6 +43,9 @@
 % \end{itemize}
 % \item Einleitung für summary notiz christian
 % mathe-mode bei Ek, Ra, Pr???
+% bibliography
+% corrections judith
+% 
 
 
 \section*{Abstract}
@@ -63,7 +66,7 @@ The general idea is that a laterally heterogeneous, hence non axisymmetric, heat
 \begin{figure}[t]
  \centering
  \includegraphics[width=0.75\textwidth]{graphs/pics/pomm_2009.png}
- \caption{Present-day radial geomagnetic field intensity at the CMB (http://geomag.org/index.html). The two dark blue (dark orange) patches of high intensity field at high latitudes in the northern (southern) hemisphere are of special interest for the present study.}
+ \caption{Present-day radial geomagnetic field intensity at the CMB, where red represents positive (outward directed) and blue negative (inward directed) values (http://geomag.org/index.html). The two dark blue (dark orange) patches of high intensity field at high latitudes in the northern (southern) hemisphere are of special interest for the present study.}
  \label{fig:pomm}
 \end{figure}\noindent
 \begin{figure}[b!]
@@ -84,27 +87,21 @@ The general idea is that a laterally heterogeneous, hence non axisymmetric, heat
    \caption{\textbf{Left:} Present-day core-mantle heat flux computed in a mantle GCM (changed after \citet{olson2015core}). \textbf{Right:} Heat flux pattern approximation proportional to the spherical harmonic of degree and order 2. This pattern is used in the course of this study as an outer thermal BC. }
 \label{fig:approx_pattern}
 \end{figure}\noindent
-Tomography as well as the mantle GCMs roughly agree on the geometry of the heterogeneity that reveals a dominance of the spherical harmonic mode of degree and order 2 \citep{masters2000relative, romanowicz2002superplumes}. The study at hand makes use of this fact and applies a fixed flux boundary condition at the CMB that is proportional to the spherical harmonic $\mathcal{Y}_2^2$ in order to model the non-uniform core-mantle heat flux. Figure \ref{fig:approx_pattern} (left) shows the present-day CMB heat flux inferred from a mantle GCM \citep{olson2015core} and its equivalent in the used model (right). It becomes clear that the $\mathcal{Y}_2^2$ BC is a reasonable first order approximation to the situation at the CMB. However, this approach may not claim to produce magnetic field data that is comparable to the geomagnetic field in a quantitative way. The aim is rather to study the principal behavior of the core-mantle coupling mechanism in the context of a dual-forcing scenario. 
+Tomography as well as the mantle GCMs roughly agree on the geometry of the heterogeneity that reveals a dominance of the spherical harmonic mode of degree and order 2 \citep{masters2000relative, romanowicz2002superplumes}. The study at hand makes use of this fact and applies a fixed flux boundary condition (BC) at the CMB that is proportional to the spherical harmonic $\mathcal{Y}_2^2$ in order to model the non-uniform core-mantle heat flux. Figure \ref{fig:approx_pattern} (left) shows the present-day CMB heat flux inferred from a mantle GCM \citep{olson2015core} and its equivalent in the used model (right). It becomes clear that the $\mathcal{Y}_2^2$ BC is a reasonable first order approximation to the situation at the CMB. However, this approach may not claim to produce magnetic field data that is comparable to the geomagnetic field in a quantitative way. Hence, the aim is rather to study the principal behavior of the core-mantle coupling mechanism in the context of a dual-forcing scenario. 
 \subsection*{(b) A thermo-chemical approach to dynamo modeling}
+The outer core of the Earth is assumed to be composed of an iron-nickel alloy that contains a portion of light elements. Their exact composition is still unknown but silicon and oxygen seem likely to make up a great part of it \citep{tsuno2013simultaneous}. Originating at the inner-core freezing front where they are released during the crystallization process, their appearance in the outer core is a direct consequence of the inner-core growth. If injected into the core fluid, they decrease its density, so that the light elements are a potential source of buoyancy at the inner-core boundary (ICB). It exists general agreement on the assumption that such compositional buoyancy sources at the bottom of the outer core account for a significant part of the total convective forcing \citep{braginsky1995equations}. The second basal source of buoyancy is latent heat likewise being released at the inner-core freezing front. The role of internal heat sources is expected to play a minor role for today's core \citep{nimmo2007thermal} and is therefore not regarded in this study.  \\
+It is common practice in the dynamo community to combine compositional and thermal buoyancy sources in one variable named \textit{codensity}. An important argument for this approach is based on the presumably turbulent nature of core convection. In order to overcome the herewith connected small-scale structure of the flow, artificially high turbulent diffusivities are introduced \citep{braginsky1995equations}. This leads to the assumption that differences in the diffusivities of composition and temperature average out and therefore the two can be treated jointly. \\
+In the Earth's core, the diffusivity of heat is expected to be several orders of magnitude larger than that of the light component, which translates to a difference in their associated Prandtl numbers (the ratio of viscosity to diffusivity) of $\sim\!10^3$ \citep{braginsky1995equations}. Several studies recently addressed the influence of the Prandtl number on certain system properties such as the mean flow scales \citep{cardin1992experimental} or the morphology of the resulting magnetic field \citep{simitev2005prandtl}. A significant dependence on that system parameter was reported by all of them. Following these results, a few authors explored models in which temperature and composition act as two distinct driving agents (dually forced or thermo-chemical models). \citet{trumper2012numerical} found a drastic change in the mean flow properties when varying the ratio of thermal to compositional driving forces in a non-magnetic convection system. A dually forced dynamo model was subject to the work of \citet{takahashi2014double}, who found a sensible dependence of the magnetic dipole component on the thermo-chemical forcing scenario. \\
+In the scope of this study, the possibility to apply two distinct sets of BCs for the thermal \textit{and} the compositional component is the strongest argument in favor of a thermo-chemical approach. According to the above discussion it seems reasonable to assume a laterally heterogeneous core-mantle heat flux. In contrast to that, the situation for the compositional component is less clear. \citet{braginsky1995equations} suppose that the CMB is impermeable for the light element, hence a zero-flux condition the most realistic choice. Likewise the sedimentation of chemical constituents as well as chemical reactions at the CMB are discussed as sinks for the compositional field \citep{buffett2007core}, which would suggest a fixed flux condition. However, it exists no reason to assume that the compositional BC is identical to the heterogeneous heat flux condition that is applied to the temperature field. 
 
 \subsection*{State of research}
 \textbf{On heat flux pattern}\\
 The longitudes at which the magnetic flux lobes are found remaining approximately stationary in time (Gubbins and Bloxham, 1987)\\
 This is difficult to explain in the context of a uniform dynamo model, where the solution should steadily drift in time (Knobloch, 1994) and thus heterogeneities average out in long-term averages. The existence of geomagnetic features that persist on time scales larger than the average time scale of the LOC has led to the hypothesis that a coupling between the core and the mantle, with a its much larger time scales, takes place (Sarson, 1997).\\ \par \noindent
-\textbf{On dual-forcing mechanism}\\
-Compositional forcing is expected to be larger than thermal(e.g. Braginsky, 1964)\\
 
 Patches of intense radial magnetic field were observed in historic geomagnetic data that last for over 400 years whereas the typical time scales of the geodynamo are measured in centuries \cite{gubbins2007correlation}. 
 
-\section{State of research (bisher nur Notizen von mir)}
-
-On influence of Prandtl number:
-\begin{itemize}
- \item Zhang Spiralling columnar convection in rapidly rotating spherical fluid shells.
- \item Sreenivasan 2006 (Dynamos dominated rather by intertia than by rotation are less dipolar)
- \item Dipole part becomes larger for larger Pr: Simitev and Busse 2005
- \item convective scales become smaller if Pr is larger: Gibbons Gubbins 2007
-\end{itemize}
+\section{State of research (NOTIZEN)}
 
 Ont he collection of magnetic field lines by cyclones:
 \begin{itemize}
@@ -184,7 +181,7 @@ Structure of the CMB heat pattern:
 
 Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied (see \citet{jones2011planetary} for a recent review). There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically efficient as possible. Computation time is the limiting factor when it comes to the question how realistic models of the inner core can be. The gap between the relevant physical parameters supposed for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for faster computers that allow to explore Earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (e.g. \citep{stellmach2014approaching}).\\
 An aspect that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic BC or spherical shell models. The latter are more realistic for the Earth but numerically more costly and therefore even less Earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as Earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
-The electrically LOC is modeled. It is enclosed by the inner-core boundary (ICB) at the bottom and the CMB at the top. Convection is driven by supercritical thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Dirichlet BC). The thermal forcing is maintained by introducing a fixed in- and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be electrically insulating and therefore have no influence on the evolution of magnetic fields. \\ 
+The electrically LOC is modeled. It is enclosed by the ICB at the bottom and the CMB at the top. Convection is driven by supercritical thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Dirichlet BC). The thermal forcing is maintained by introducing a fixed in- and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be electrically insulating and therefore have no influence on the evolution of magnetic fields. \\ 
 In the following, all relevant equations are introduced. There exist numerous detailed derivations so that the description will be held relatively short, here. The according references will be given in each section.\\
 \subsection{Frame of reference}
 The LOC is modeled in a spherical shell with an inner radius R$_i$ and an outer radius R$_o$ (see figure \ref{fig:FOC}(a)). It is bounded by the ICB at the bottom and the CMB at the top. The shell thickness is chosen according to what is supposed for today's state of the Earth and is defined over the ratio between R$_i$ and R$_o$: $ a = $ R$_i$ / R$_o$ = 0.35.\\
@@ -268,7 +265,7 @@ The body forces $\bm f$ are the \textit{buoyancy force} $\bm f_g =  \bm g \rho$ 
 In the following, the gravitational field $\bm g$ will be discussed in more detail. As mentioned before, the system underlies an asymmetric heat flux at the CMB. This results in an asymmetric temperature field for which the penetration depth of the temperature perturbation to a spherically symmetric solution depends on the amplitude of the heat flux heterogeneity. Following the linear equation of state from the Boussinesq approximation (see section \ref{sec:boussinesq}), this results in a density variation proportional to the temperature variation: $\delta {\rho} \sim \delta {T}$. Figure \ref{fig:density_var} shows a sketch of the density variation along the equator at the CMB, evoked by the boundary induced lateral temperature variation.
 \begin{figure}[H]
  \centering
- %\includegraphics[scale = 0.24]{sketches/density_var.pdf} 
+ %%\includegraphics[scale = 0.24]{sketches/density_var.pdf} 
  \caption{Sketch of the density along the equator, near the CMB. The deviation (black) from the average density (red) results from the asymmetric heat flux at the CMB which has an asymmetric temperature field as a consequence. }
  \label{fig:density_var}
 \end{figure} \noindent
@@ -491,7 +488,7 @@ $a_0^0$ is an arbitrary constant of integration that is chosen to be 0 in the fo
 The effect of the CMB - heat flux pattern on the conductive temperature field is shown in Figure \ref{fig:conductives}(a) and (b). Regions, where the heat flux from the core to the mantle is increased (heat flux maxima are located at 90$^\circ$ and 270$^\circ$ east, see also the sketch in Figure \ref{fig:fluxsketch}), are characterized by relatively low temperatures because they are cooled more efficiently. Vice versa, regions of reduced heat flux (heat flux minima are located at 0$^\circ$ and 180$^\circ$) show higher temperatures than average. 
 \begin{figure}[t]
  \begin{minipage}{0.36\textwidth}
-  %\includegraphics[width=0.9\textwidth]{sketches/equatorial_conductive.png}
+  %%\includegraphics[width=0.9\textwidth]{sketches/equatorial_conductive.png}
   \caption*{(a) Equatorial view}
  \end{minipage}
  \hfill
