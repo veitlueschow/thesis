@@ -27,7 +27,7 @@
 \newlabel{fig:pomm}{{1.1}{6}}
 \citation{masters2000relative,romanowicz2002superplumes}
 \citation{olson2015core}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces \textbf  {Left:} Present-day core-mantle heat flux computed in a mantle GCM (changed after \citet  {olson2015core}). \textbf  {Right:} Heat flux pattern approximation proportional to the spherical harmonic of degree and order 2. This pattern is used in the course of this study as an outer thermal BC. \relax }}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces \textbf  {Left:} Present-day core-mantle heat flux computed in a mantle GCM (figure changed after \citet  {olson2015core}). \textbf  {Right:} Heat flux pattern approximation proportional to the spherical harmonic of degree and order 2. This pattern is used in the course of this study as an outer thermal BC. \relax }}{7}}
 \newlabel{fig:approx_pattern}{{1.2}{7}}
 \citation{tsuno2013simultaneous}
 \citation{braginsky1995equations}
@@ -42,6 +42,7 @@
 \citation{buffett2007core}
 \citation{jones2011planetary}
 \citation{stellmach2014approaching}
+\citation{braginsky1995equations}
 \citation{christensen2011geodynamo}
 \citation{christensen2011geodynamo}
 \citation{trumper2014thermo}
@@ -99,6 +100,7 @@
 \citation{braginsky1995equations}
 \citation{dormy1998mhd}
 \citation{wicht2002inner}
+\newlabel{eq:equation_of_state}{{2.22}{17}}
 \newlabel{eq:incompressible}{{2.23}{17}}
 \newlabel{eq:force_balance3}{{2.24}{17}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Boundary conditions}{17}}
@@ -122,6 +124,7 @@
 \newlabel{eq:gradcond}{{2.36}{20}}
 \newlabel{eq:algebraicICB}{{2.38}{20}}
 \newlabel{eq:algebraicCMB}{{2.39}{20}}
+\newlabel{eq:t_cond_cmb}{{2.41}{20}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Conductive temperature field $T_\textrm  {cond}$ in the equatorial plane (left) and as a \textit  {Hammer-Aitov-projection} at the CMB (right) in a non dimensional form (see section \ref  {sec:nondim}). The amplitude of the heat flux heterogeneity is $Amp_2^2 = 1$, heat flux maxima are located at 90$^\circ $ and 270$^\circ $, respectively. See Figure \ref  {fig:fluxsketch} for a schematic overview. \relax }}{21}}
 \newlabel{fig:conductives}{{2.3}{21}}
 \citation{trumper2012numerical}
@@ -139,18 +142,19 @@
 \newlabel{eq:heat_equation^}{{2.42c}{22}}
 \newlabel{eq:chemical_equation^}{{2.42d}{23}}
 \newlabel{eq:induction^}{{2.42e}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.10}Conductive and convective fluctuations}{23}}
+\newlabel{sec:cond_conv}{{2.10}{23}}
 \citation{breuer2010thermochemically}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.10}Conductive and convective fluctuations}{24}}
-\newlabel{sec:cond_conv}{{2.10}{24}}
 \newlabel{cond_conv_heat_chem}{{2.43}{24}}
 \newlabel{eq:theta}{{2.43a}{24}}
 \newlabel{eq:force_balance4}{{2.44}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.11}Thermal and chemical forcing}{24}}
+\newlabel{sec:thermal/chemical}{{2.11}{24}}
 \citation{trumper2012numerical}
 \citation{kutzner2000effects}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.11}Thermal and chemical forcing}{25}}
-\newlabel{sec:thermal/chemical}{{2.11}{25}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Numerically determined critical Rayleigh numbers for the purely thermal and the purely chemical case with their distinct BCs. Two different Ekman numbers $\textrm  {Ek} = 10^{-4}$ and $\textrm  {Ek} = 10^{-5}$ are regarded.\relax }}{25}}
 \newlabel{tab:crit}{{2.3}{25}}
+\newlabel{eq:delta_new}{{2.48}{25}}
 \citation{chandrasekhar1970hydrodynamic}
 \citation{dormy1997modelisation,dormy1998mhd}
 \citation{trumper2012numerical}
@@ -158,8 +162,7 @@
 \citation{trumper2014thermo}
 \citation{glatzmaier1995three}
 \citation{kuang1997earth}
-\newlabel{eq:delta_new}{{2.48}{26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.12}Numerical Method}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.12}Numerical method}{26}}
 \newlabel{sec:numerics}{{2.12}{26}}
 \newlabel{eq:poltor_u}{{2.49}{26}}
 \newlabel{eq:poltor_B}{{2.50}{26}}
@@ -221,7 +224,7 @@
 \newlabel{eq:wind_z4}{{3.7}{34}}
 \newlabel{eq:ugr}{{3.8}{34}}
 \citation{dietrich2016core}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi $, here $-\partial T/\partial \phi $ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plane. As parameters, $\textrm  {Ra}_\textrm  {\relax \fontsize  {6}{7}\selectfont  T} = \textrm  {Ra}_\textrm  {total} = 2\times 10^6$ and $q^* = 2$ are used besides the Prandtl and Ekman number as mentioned above.\relax }}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Azimuthal profiles of the radial velocity $u_r$ (solid lines) and the negative azimuthal temperature gradient $-\partial (\theta + t_2^2)/\partial \phi $, here referred to as $-\partial T/\partial \phi $ (dotted lines), at mid depth (black, $r=0.873$) and at the top of the free stream near the CMB (red, $r=1.485$), normalized with respect to their individual maximum value. All values are measured in the equatorial plane. As parameters, $\textrm  {Ra}_\textrm  {\relax \fontsize  {6}{7}\selectfont  T} = \textrm  {Ra}_\textrm  {total} = 2\times 10^6$ and $q^* = 2$ are used besides the Prandtl and Ekman number as mentioned above.\relax }}{35}}
 \newlabel{fig:ur_dTp}{{3.4}{35}}
 \citation{busse2002convective}
 \citation{gibbons2000convection}
@@ -244,36 +247,31 @@
 \newlabel{sec:temp_field}{{3.6}{40}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Full temperature field $ T = \theta + T_\textrm  {cond}$ for the same case as above in (a) the equatorial plane and (b) as a surface projection right under the CMB at r = 1.485. (a) is the same graph as in Figure \ref  {fig:flowfield_temp}, but the color map is 'shortened' in order to pronounce the phase shift of the temperature field. \relax }}{40}}
 \newlabel{fig:q2_200_temp}{{3.10}{40}}
-\citation{bloxham1987thermal}
-\citation{glatzmaier1999role}
-\citation{olson2010geodynamo}
-\citation{olson2002time}
-\citation{aubert2008thermochemical}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Thermo-chemical dynamo action}{41}}
 \newlabel{sec:dynamo}{{4}{41}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Time series of a north polar view on the radial magnetic field intensity at the CMB. \textbf  {Top row:} Case \textbf  {PFF100} (see table \ref  {tab:data}). The field strength is highly time dependent but a preference for a structure with \textit  {two} red patches of high intensity (azimuthal wave number $m=2$) is discernible. The imposed heat flux maxima lie at the top and the bottom, the minima on the right and left hand side in this view (see figure \ref  {fig:fluxsketch}). \textbf  {Bottom row:} Case \textbf  {UFT100}. Like in case PFF100 above, the field behavior is highly time-dependent but in contrast to the heat flux pattern case, the system rather promotes structures with \textit  {one} flux patch. The color scale ranges from -0.5 (dark blue) to 2.5 (dark red). The \textbf  {right end} shows the long-term averaged data. \relax }}{41}}
 \newlabel{fig:fluxpatches_snapshots}{{4.1}{41}}
 \@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Overview of the parameters and the cases regarded in this section with the associated diagnostic quantities: Magnetic Reynolds number Re$_m$, Elsasser number $\Lambda $ and relative strength of the magnetic dipole component $f_\textrm  {dip}$, all defined in section \ref  {sec:diagnostics}. The case PFF12, highlighted in bold, serves as showcase in section \ref  {sec:dyn_d020}. \textbf  {PFF} stands for a fixed flux condition including the heat flux pattern, \textbf  {UFF} for the uniform fixed flux BC.\relax }}{42}}
 \newlabel{tab:data}{{4.1}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The patch generation mechanism: A showcase}{42}}
+\newlabel{sec:dyn_d020}{{4.1}{42}}
 \citation{davidson2001introduction,roberts2007theory}
 \citation{rieutord2014fluid}
 \citation{christensen2011geodynamo}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Hammer-Aitov surface projection of the radial magnetic field near the CMB at $r=1.485$. Two patches of high intensity magnetic field are located at $\sim $45$^\circ $ and $225^\circ $ in the northern and the southern hemisphere. The black line at a polar angle of $25^\circ $ is subject to the graph in figure \ref  {fig:divLat_Br}.\relax }}{43}}
 \newlabel{fig:surface_Br_d20}{{4.2}{43}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The patch generation mechanism: A showcase}{43}}
-\newlabel{sec:dyn_d020}{{4.1}{43}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF12. In the facing hemisphere, a dominant anticyclone with the center at $\sim 315^\circ $E and a weaker, bended cyclone with the center at $\sim 230^\circ $E are visible. Intense magnetic field correlates with the cyclonic region. View from a polar angle of $20^\circ $, the north polar is located in the middle of the central blue region. \relax }}{44}}
-\newlabel{fig:dyn_d20_vectorfield_Br}{{4.3}{44}}
 \citation{breuer2010thermochemically}
 \citation{trumper2012numerical}
 \citation{manglik2010dynamo}
 \citation{takahashi2014double}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF12. In the facing hemisphere, a dominant anticyclone with the center at $\sim 315^\circ $E and a weaker, bended cyclone with the center at $\sim 230^\circ $E are visible. Intense magnetic field correlates with the cyclonic region. View from a polar angle of $20^\circ $, the north pole is located in the middle of the central blue region. \relax }}{44}}
+\newlabel{fig:dyn_d20_vectorfield_Br}{{4.3}{44}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Changing the driving mechanism}{44}}
+\newlabel{sec:delta_dependence}{{4.2}{44}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Sketch of a north polar view on the vorticity distribution and the location of the magnetic flux patches for case PFF12, shown in figure \ref  {fig:dyn_d20_vectorfield_Br}. Red patches mark cyclones, blue patches anticyclones and the black crosses indicate the position of the flux patches. The gray dashed line represents the intersection of the TC with the CMB. \relax }}{45}}
 \newlabel{fig:sketch_patches}{{4.4}{45}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Azimuthal profile of the radial magnetic field $B_r$ (blue) and the horizontal divergence of the velocity field $[\bm  {\nabla }\cdot \bm  {u}]_\textrm  {\relax \fontsize  {6}{7}\selectfont  H}$ (red), normalized by its maximum. A negative (positive) divergence characterizes a convergent (divergent) flow, visible around $45^\circ $ and $235^\circ $E ($120^\circ $ and $300^\circ $E), where $B_r$ is maximum (minimum). Profile taken at $r=1.485$ and $\theta = 25^\circ $, shown by the black line in figure \ref  {fig:surface_Br_d20}. \relax }}{45}}
 \newlabel{fig:divLat_Br}{{4.5}{45}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Changing the driving mechanism}{45}}
-\newlabel{sec:delta_dependence}{{4.2}{45}}
 \citation{sakuraba2009generation}
 \citation{sakuraba2009generation}
 \citation{gibbons2007convection}
@@ -291,35 +289,31 @@
 \citation{hori2014ancient}
 \citation{dietrich2016core}
 \citation{breuer2010thermochemically}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Kinetic energy}{47}}
+\newlabel{sec:kinetic_energy}{{4.2.2}{47}}
 \citation{sreenivasan2006role}
 \citation{christensen2006scaling}
 \citation{busse2006parameter}
 \citation{finlay2010international}
 \citation{takahashi2014double}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Kinetic energy}{48}}
-\newlabel{sec:kinetic_energy}{{4.2.2}{48}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Dipolarity of the magnetic field}{48}}
-\newlabel{sec:reldip}{{4.2.3}{48}}
 \citation{takahashi2014double}
 \citation{finlay2010international}
 \citation{finlay2010international}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Relative dipole strength $f_\textrm  {dip}$ (see section \ref  {sec:diagnostics} for a definition) for different $\delta ^*$ for the heat flux pattern case PFF (black line) and the uniform case UFF (red line). The black dotted line shows the value for today's geomagnetic field $f_\textrm  {dip} = 0.65$ \citep  {finlay2010international}.\relax }}{49}}
-\newlabel{fig:reldip}{{4.7}{49}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Dipolarity of the magnetic field}{48}}
+\newlabel{sec:reldip}{{4.2.3}{48}}
 \citation{zhang2000magnetohydrodynamics}
 \citation{sakuraba2000effect}
 \citation{sakuraba2000effect}
 \citation{ishihara2002dynamo}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Relative dipole strength $f_\textrm  {dip}$ (see section \ref  {sec:diagnostics} for a definition) for different $\delta ^*$ for the heat flux pattern case PFF (black line) and the uniform case UFF (red line). The black dotted line shows the value for today's geomagnetic field $f_\textrm  {dip} = 0.65$ \citep  {finlay2010international}.\relax }}{49}}
+\newlabel{fig:reldip}{{4.7}{49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}The heat flux pattern in the context of a changing driving mechanism}{49}}
+\newlabel{sec:effect_pattern}{{4.3}{49}}
 \citation{trumper2012numerical}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}The heat flux pattern in the context of a changing driving mechanism}{50}}
-\newlabel{sec:effect_pattern}{{4.3}{50}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Equatorial views on the $z$-component of vorticity (top row) and the the axial magnetic magnetic field for case PFF12 ($\delta ^* = 12$\%, left panel) and PFF100 ($\delta ^*=100$\%, right panel). The first column in each panel shows snapshots ($ \bm  {\omega _z}$ and $\bm  {B_z}$), the second column long-term averages ($\bm  {\mathaccentV {bar}016\omega _z}$ and $\bm  {\mathaccentV {bar}016{B}_z$}). \relax }}{51}}
-\newlabel{fig:anticyclones_dominance}{{4.8}{51}}
 \citation{sakuraba2000effect}
 \citation{ishihara2002dynamo}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF100. In the front hemisphere, a dominant anticyclone with the center at $\sim 315^\circ $E is visible. The cyclonic region around 230$^\circ $ is less pronounced than in case PFF12, shown in figure \ref  {fig:dyn_d20_vectorfield_Br}. Magnetic flux patches are located in between the anticyclones. View from a polar angle of $20^\circ $, the north polar is located in the middle of the central blue region.\relax }}{52}}
-\newlabel{fig:d100_vectorfield_Br}{{4.9}{52}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Azimuthal profile of the radial magnetic field $B_r$ (blue) and the horizontal divergence of the velocity field $[\bm  {\nabla }\cdot \bm  {u}]_\textrm  {\relax \fontsize  {6}{7}\selectfont  H}$ (red), normalized by its maximum. Divergent flow (related to positive lateral divergence, $120^\circ $ and $300^\circ $E)) dominates in this case and correlates with the minima of $B_r$ (same graph as in figure \ref  {fig:divLat_Br}, but for case PFF100).\relax }}{52}}
-\newlabel{fig:d100_divLat_Br_mean}{{4.10}{52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Equatorial views on the $z$-component of vorticity (top row) and the the axial magnetic magnetic field for case PFF12 ($\delta ^* = 12$\%, left panel) and PFF100 ($\delta ^*=100$\%, right panel). The first column in each panel shows snapshots ($ \bm  {\omega _z}$ and $\bm  {B_z}$), the second column long-term averages ($\bm  {\mathaccentV {bar}016\omega _z}$ and $\bm  {\mathaccentV {bar}016{B}_z$}). \relax }}{51}}
+\newlabel{fig:anticyclones_dominance}{{4.8}{51}}
 \citation{trumper2012numerical}
 \citation{olson2015core}
 \citation{gubbins1987morphology}
@@ -327,25 +321,29 @@
 \citation{trumper2012numerical}
 \citation{trumper2014thermo}
 \citation{olson2002time,aubert2008thermochemical,hori2014ancient}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Surface flow field (scaled by the flow magnitude) and radial magnetic field component near the CMB at $r = 1.485$ for case PFF100. In the facing hemisphere, a dominant anticyclone with the center at $\sim 315^\circ $E is visible. The cyclonic region around 230$^\circ $ is less pronounced than in case PFF12, shown in figure \ref  {fig:dyn_d20_vectorfield_Br}. Magnetic flux patches are located in between the anticyclones. View from a polar angle of $20^\circ $, the north pole is located in the middle of the central blue region.\relax }}{52}}
+\newlabel{fig:d100_vectorfield_Br}{{4.9}{52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Azimuthal profile of the radial magnetic field $B_r$ (blue) and the horizontal divergence of the velocity field $[\bm  {\nabla }\cdot \bm  {u}]_\textrm  {\relax \fontsize  {6}{7}\selectfont  H}$ (red), normalized by its maximum. Divergent flow (related to positive lateral divergence, $120^\circ $ and $300^\circ $E)) dominates in this case and correlates with the minima of $B_r$ (same graph as in figure \ref  {fig:divLat_Br}, but for case PFF100).\relax }}{52}}
+\newlabel{fig:d100_divLat_Br_mean}{{4.10}{52}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Relative amplitude of the magnetic flux patches $\mathcal  {P}$ for the different forcing ratios $\delta ^*$ for case PFF. The data is taken from the statistically stationary state. \relax }}{53}}
 \newlabel{fig:relamp}{{4.11}{53}}
 \citation{hori2014ancient}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Relative flux patch amplitude $\mathcal  {P}$ for various Rayleigh numbers in purely thermally driven cases ($\delta ^*=100\%$). The heat flux pattern amplitude is $q^*=2$, the Ekman number $\textrm  {Ek}=10^{-4}$, as above. The red point marks case PFF100 that was already discussed in section \ref  {sec:effect_pattern}. \relax }}{54}}
+\newlabel{fig:ra_ek4}{{4.12}{54}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Relative flux patch amplitude $\mathcal  {P}$ for different forcing ratios $\delta ^*$. The total Rayleigh number is $\textrm  {Ra}_\textrm  {total} = 1000 \times 10^5$, the Ekman number $\textrm  {Ek}= 10^{-5}$ and the flux patch amplitude $q^*=2$. \relax }}{54}}
+\newlabel{fig:ek5}{{4.13}{54}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Robustness of the results}{54}}
 \newlabel{sec:robustness}{{4.4}{54}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Towards a higher supercriticality}{54}}
 \citation{zhang1992convection,dietrich2016core}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Relative flux patch amplitude $\mathcal  {P}$ for various Rayleigh numbers in a purely thermally driven case ($\delta ^*=100\%$). The heat flux pattern amplitude is $q^*=2$, the Ekman number $\textrm  {Ek}=10^{-4}$, as above. The red point marks case PFF100 that was already discussed in section \ref  {sec:effect_pattern}. \relax }}{55}}
-\newlabel{fig:ra_ek4}{{4.12}{55}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Relative flux patch amplitude $\mathcal  {P}$ for different forcing ratios $\delta ^*$. The total Rayleigh number is $\textrm  {Ra}_\textrm  {total} = 1000 \times 10^5$, the Ekman number $\textrm  {Ek}= 10^{-5}$ and the flux patch amplitude $q^*=2$. \relax }}{55}}
-\newlabel{fig:ek5}{{4.13}{55}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Towards a higher rotation rate}{55}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Summary and Discussion}{57}}
-\newlabel{sec:summary}{{5}{57}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Thermo-chemical core convection}{57}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Thermo-chemical dynamo action}{58}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Summary and Discussion}{56}}
+\newlabel{sec:summary}{{5}{56}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Thermo-chemical core convection}{56}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Thermo-chemical dynamo action}{57}}
 \citation{anufriev2005boussinesq}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion and Outlook}{60}}
-\newlabel{sec:conclusion}{{6}{60}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion and Outlook}{59}}
+\newlabel{sec:conclusion}{{6}{59}}
 \bibdata{literatur}
 \bibcite{anufriev2005boussinesq}{{1}{2005}{{Anufriev et~al.}}{{}}}
 \bibcite{aubert2007detecting}{{2}{2007}{{Aubert et~al.}}{{}}}
