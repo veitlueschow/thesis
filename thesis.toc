@@ -1,5 +1,5 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Introduction and Motivation}{5}
+\contentsline {section}{\numberline {1}Introduction and motivation}{5}
 \contentsline {section}{\numberline {2}Modeling core convection and dynamo action}{10}
 \contentsline {subsection}{\numberline {2.1}Frame of reference}{11}
 \contentsline {subsection}{\numberline {2.2}Equation of continuity}{11}
