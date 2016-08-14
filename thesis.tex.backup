@@ -34,7 +34,6 @@
 %  \item chapter 5 and six verbinden! Besonders in 6 mehr Bezüge zu 5 herstellen.
 %  \item reihenfolge der abbildungen
 %  \item Cases in non-magnetic chapter klarmachen
-%  \item realistic parameters in tabelle
 % \end{itemize}
 % \item Einleitung für summary notiz christian
 % mathe-mode bei Ek, Ra, Pr???
@@ -58,7 +57,7 @@ This study concentrates on two of them: (a) How does the mantle as a \textit{hea
 The persistence of patches of intense radial magnetic field at high latitudes (see figure \ref{fig:pomm}) on time scales longer than the typical time scale of the LOC has led to the hypothesis that the mantle, including significantly larger time scales, induces these long-lasting features in the geomagnetic field \citep{bloxham1987thermal, sarson1997influence}. This process is referred to as \textit{core-mantle coupling} and is based on the fact that the amount of heat extracted from the core is controlled by the lower-most region of the overlying mantle. As this region is supposed to be among the most heterogeneous in the Earth \citep{young1987core}, the cooling effect of the mantle on the core can be expected to be non-uniform. \\
 \begin{figure}[t]
  \centering
- %\includegraphics[width=0.8\textwidth]{graphs/pics/pomm_2009.png}
+ \includegraphics[width=0.8\textwidth]{graphs/pics/pomm_2009.png}
  \caption{Present-day radial geomagnetic field intensity at the CMB, where red represents positive (outward directed) and blue negative (inward directed) values (http://geomag.org/index.html). The two dark blue (dark orange) patches of high intensity field at high latitudes in the northern (southern) hemisphere are of special interest for the present study.}
  \label{fig:pomm}
 \end{figure}\noindent
@@ -66,7 +65,7 @@ The general idea is that a laterally heterogeneous, hence non-axisymmetric, heat
 \begin{figure}[t]
  \begin{minipage}{0.45\textwidth}
  \centering
- %\includegraphics[width=\textwidth]{graphs/olson_pattern.png}
+ \includegraphics[width=\textwidth]{graphs/olson_pattern.png}
   \end{minipage}
  \begin{minipage}{0.09\textwidth}
 \vspace*{\fill}
@@ -76,7 +75,7 @@ The general idea is that a laterally heterogeneous, hence non-axisymmetric, heat
   \end{minipage}
    \begin{minipage}{0.45\textwidth}
  \centering
- %\includegraphics[width=\textwidth]{graphs/Y22_pattern.png}
+ \includegraphics[width=\textwidth]{graphs/Y22_pattern.png}
   \end{minipage}
    \caption{\textbf{Left:} Present-day core-mantle heat flux computed in a mantle GCM (changed after \citet{olson2015core}). \textbf{Right:} Heat flux pattern approximation proportional to the spherical harmonic of degree and order 2. This pattern is used in the course of this study as an outer thermal BC. }
 \label{fig:approx_pattern}
@@ -105,7 +104,7 @@ This study aims to explore a thermo-chemically driven model of the LOC in which 
 \section{Modeling core convection and dynamo action}
 \label{sec:modeling}
 Rotating convection and dynamo action in Earth's core is a topic that has been extensively studied (see \citet{jones2011planetary} for a recent review). There exist various ideas of how to formulate a set of equations that depicts all relevant physical processes and that is still as simple and therefore numerically economical as possible. Computation time is the limiting factor when it comes to the question how realistic models of the outer core can be. The gap between the relevant physical parameters supposed for the Earth and the parameters that are in range of numerical modeling is still big. It cannot be expected that this gap will be closed only with the help of the increasing computational resources that will become available within the next years. Alternatives to waiting for faster computers that allow to explore Earth-like parameters have to be found. Asymptotic models are one possibility already revealing promising results (e.g. \citep{stellmach2014approaching}).\\
-An aspect that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic BC or spherical shell models. The latter are more realistic for the Earth but numerically more costly and therefore even less Earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as Earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. \\
+An aspect that is closely related to the numerical costs and therefore to the accessible parameter range is the choice of the geometry. Most models are either Cartesian with periodic BC or spherical shell models. The latter are more realistic for the Earth but numerically more costly and therefore even less Earth-like with regard to computational feasible parameters. In this work, a spherical model is used in order to be as Earth-like as possible in a geometrical way. As a trade-off, parameter regimes in which Cartesian models could advance, are unreachable here. Typical values for the relevant control parameters in the LOC and in this study can be found in table \ref{tab:parameter}. \\
 The electrically conducting LOC is modeled. It is enclosed by the ICB at the bottom and the CMB at the top. Convection is driven by supercritical thermal and compositional gradients across the sphere. For the compositional component, fixed chemical concentrations at the ICB and the CMB are imposed (Dirichlet BC). The thermal forcing is maintained by introducing a fixed in- and outflux of heat (Neumann BC). The heat flux at the CMB is laterally heterogeneous, i.e., there exist regions of higher and lower heat flux than the lateral average. The inner core and mantle are assumed to be electrically insulating and therefore have no influence on the evolution of magnetic fields. \\ 
 In the following, all relevant equations are introduced. There exist numerous detailed derivations so that the description will be held relatively short, here. The according references will be given in each section.\\
 \begin{table}[b!]
@@ -113,9 +112,11 @@ In the following, all relevant equations are introduced. There exist numerous de
  \begin{tabular}{l|l|l}
  Control parameter & \textbf{Rayleigh number} & \textbf{Ekman number }\\
  \hline
- \hline
- \rule{0pt}{4ex} Earth's core & $10^4\times\textrm{Ra}_\textrm{crit}$ & $10^{-15}-10^{-14}$ \\
+ Earth's core & $10^4\times\textrm{Ra}_\textrm{crit}$ & $10^{-15}-10^{-14}$ \\
+ Model & $(4-24)\times\textrm{Ra}_\textrm{crit}$ &$10^{-5} - 10^{-4}$\\
  \end{tabular}
+ \caption{Typical values of control parameters assumed for the LOC and the values regarded in this study \citep{christensen2011geodynamo}.}
+ \label{tab:parameter}
 \end{table}
 
 \subsection{Frame of reference}
@@ -1155,6 +1156,13 @@ The robustness of the results over the range of all thermo-chemical forcing scen
 \section*{}
 \newpage
  \section*{Acknowledgments}
+ Firstly, I would like to thank Prof. Dr. Ulrich Hansen who gave me the opportunity to work on this thesis. In addition to his support in scientific as well as in organizational issues, I am grateful for his conscientious proof-reading.\\ \par \noindent
+ Special thanks go to Tobias Trümper for introducing me to the topic of my thesis and in particular for giving me the chance to use his extended version of the numerical code 'PARODY'. Furthermore, I thank him for pleasant and helpful discussions as well as for his comments on the manuscript.\\ \par \noindent
+ I am grateful for the help of Christian Maas in numerous scientific as well as technical issues. He guided the development of this thesis and gave valuable comments on many occasions.  \\  \par \noindent
+ I would like to thank Dr. Stephan Stellmach who always had an open ear to my questions on various scientific issues. Additionally, I thank him for acting as a co-referee. \\ \par \noindent
+ I am particularly thankful to the 
+ 
+ 
  \newpage
  \section*{Declaration of Academic Integrity}
  \vspace{1.5cm}
